@@ -99,8 +99,7 @@ body {
 }
 
 @media (max-width: 420px) {
-  [class*="text-["] { font-size: 0.75rem !important; }
-  .text-xs { font-size: 0.8rem !important; }
+  html { font-size: clamp(16px, 1vw + 14px, 17px); }
   section > .px-4 { padding-left: 0.75rem; padding-right: 0.75rem; }
   .grid-cols-2.gap-1 { gap: 0.375rem; }
 }
