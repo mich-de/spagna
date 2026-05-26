@@ -22,7 +22,20 @@
     "beach_quality": 9,
     "authenticity": 9,
     "cost_level": "medio-alto",
-    "social_ease": 7
+    "social_ease": 7,
+    "videos": [
+      "https://www.youtube.com/watch?v=_p48aPaVjgc",
+      "https://www.youtube.com/watch?v=kwkvmp-ZJtM",
+      "https://www.youtube.com/watch?v=ronOs-MxuPs",
+      "https://www.youtube.com/watch?v=1UVEFm2Loe4"
+    ],
+    "transcript_insights": [
+      "Marbella descritta come 'ein ganz anderen Level' rispetto a Mallorca — più esclusiva, più qualità",
+      "Puerto Banús ha 'geile Restaurants, geile Clubs' secondo vlogger tedesco",
+      "Disponibili beach club con 4 piscine + piscina beach club",
+      "Ristorante Picasso a Puerto Banús citato come meta affidabile",
+      "Avvertimento: 'molti Betrügern' (truffatori) dove c'è tanto denaro"
+    ]
   },
   {
     "name": "Benalmádena",
@@ -47,7 +60,27 @@
     "beach_quality": 6,
     "authenticity": 4,
     "cost_level": "medio",
-    "social_ease": 8
+    "social_ease": 8,
+    "videos": [
+      "https://www.youtube.com/watch?v=XXGBSaAnaWQ",
+      "https://www.youtube.com/watch?v=653y_5dsDjg",
+      "https://www.youtube.com/watch?v=sb83E2t_n6M",
+      "https://www.youtube.com/watch?v=1SvMpmZYlnI",
+      "https://www.youtube.com/watch?v=FLW3g2Rcya0"
+    ],
+    "transcript_insights": [
+      "320+ giorni di sole all'anno, clima perfetto tutto l'anno",
+      "Porto Marina ha ristoranti consigliati: 'Asia' (all-you-can-eat, €20), 'W Restaurant' (cucina asiatica)",
+      "Menu del día (3 portate) €13-15, lun-ven 12:00-16:00 — miglior rapporto qualità/prezzo",
+      "Birra piccola €1.50-2, caffè €1.30, bottiglia vino €7.50, pinta San Miguel €3",
+      "Taxi da AGP 20min (€20-25), treno per Arroyo de la Miel €3",
+      "Palestra gratuita all'aperto sul lungomare",
+      "Spiaggia con chiringuito sulla sabbia, camerieri in acqua",
+      "Sea Life Centre consigliato per famiglie (sconto con Groupon)",
+      "Mercato di Fuengirola il martedì — copie di marca a poco prezzo",
+      "Scherzato: 'Britain in the sun' — grande comunità britannica/irlandese/tedesca/scandinava",
+      "Gita in Marocco via catamarano da Tarifa (45min) consigliata"
+    ]
   },
   {
     "name": "Estepona",
@@ -72,7 +105,26 @@
     "beach_quality": 9,
     "authenticity": 9,
     "cost_level": "medio",
-    "social_ease": 5
+    "social_ease": 5,
+    "videos": [
+      "https://www.youtube.com/watch?v=FxbwAMf13Ss",
+      "https://www.youtube.com/watch?v=PaifPnJVj6o",
+      "https://www.youtube.com/watch?v=TzruQTWoiT4"
+    ],
+    "transcript_insights": [
+      "Soprannome: 'The Garden of the Costa del Sol'",
+      "325+ giorni di sole all'anno, microclima privilegiato",
+      "20km di costa, centro storico con vie colorate e vasi di fiori",
+      "Plaza de las Flores: il cuore della città, piena di caffetterie",
+      "Playa del Cristo: baia riparata, acqua calma, perfetta per famiglie",
+      "Selwo Aventura: safari park con 2000+ animali",
+      "Ruta de los Murales Artistici: oltre 50 murales nelle strade",
+      "Paseo Marítimo: lungomare frequentato da locali per jogging/passeggiate",
+      "Orquidario: 1500 specie di orchidee in serra di vetro",
+      "Ristoranti: Los Pescadores (pesce, porto), El Patio de Macarena (tapas autentiche, patio fiorito)",
+      "Mercato domenicale al porto per souvenir",
+      "80km da Málaga, ~1hr sulla A-7"
+    ]
   },
   {
     "name": "Marbella (Centro/Casco Antiguo)",
@@ -96,6 +148,23 @@
     "beach_quality": 7,
     "authenticity": 6,
     "cost_level": "alto",
-    "social_ease": 9
+    "social_ease": 9,
+    "videos": [
+      "https://www.youtube.com/watch?v=_p48aPaVjgc",
+      "https://www.youtube.com/watch?v=kwkvmp-ZJtM",
+      "https://www.youtube.com/watch?v=ronOs-MxuPs",
+      "https://www.youtube.com/watch?v=WujtSTv4hYY",
+      "https://www.youtube.com/watch?v=1UVEFm2Loe4"
+    ],
+    "transcript_insights": [
+      "Puerto Banús descritto come 'Herz 4 von Marbella' — cuore pulsante",
+      "Parcheggio porto: '25000€ per 3 Monaten' (yacht) — standard di lusso estremo",
+      "Ristorante Picasso a Puerto Banús: pizza, insalata, avocado — citato come meta sicura",
+      "Gran Marbella Resort: 4 piscine + beach club, architettura rustica, palestra con functional training",
+      "Beach club 'Coba Beach Club' a Puerto Banús — consigliato per giornate relax/lusso",
+      "Volo da Germania 3.5h — 'Super gemütlich' per weekende lunghi",
+      "Avvertimento: attenzione ai costi gonfiati in alta stagione a Puerto Banús",
+      "Marbella definita 'ein wunderschöner Ort' — città bellissima da entrambi i vlogger"
+    ]
   }
 ]

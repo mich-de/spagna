@@ -130,5 +130,38 @@
     "pairWith": "Giro centro + gelato",
     "priority": "consigliato",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Murales+Estepona"
+  },
+  {
+    "name": "Selwo Aventura",
+    "zone": "Estepona",
+    "whyVisit": "Safari park con oltre 2.000 animali in condizioni semi-selvagge. Esperienza simile a un safari africano. Consigliato dalla guida video locale.",
+    "duration": "3-4h",
+    "parking": "Parcheggio gratuito",
+    "cost": "€25-30",
+    "pairWith": "Mezza giornata — abbinabile a Playa del Cristo",
+    "priority": "se hai tempo",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Selwo+Aventura+Estepona"
+  },
+  {
+    "name": "Orquidario de Estepona",
+    "zone": "Estepona",
+    "whyVisit": "Giardino botanico con oltre 1.500 specie di orchidee in una spettacolare serra di vetro. Oasi di pace in centro città.",
+    "duration": "1h",
+    "parking": "Parking Centro",
+    "cost": "€5",
+    "pairWith": "Giro centro + murales",
+    "priority": "consigliato",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Orquidario+Estepona"
+  },
+  {
+    "name": "Sea Life Centre Benalmádena",
+    "zone": "Benalmádena",
+    "whyVisit": "Acquario sul Porto Marina con specie ittiche locali e tropicali. Perfetto per famiglie. Consigliato dalla guida video.",
+    "duration": "1-2h",
+    "parking": "Parking Puerto Deportivo",
+    "cost": "€15-20 (sconti con Groupon)",
+    "pairWith": "Giro Porto Marina + pranzo",
+    "priority": "se hai bambini",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Sea+Life+Benalmadena"
   }
 ]

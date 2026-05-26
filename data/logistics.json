@@ -18,7 +18,8 @@
     "estepona": "Parking Centro (€1/h), Lungomare (€1.5/h)",
     "puerto_banus": "Parking Puerto Banús (€3/h). Costoso ma sicuro",
     "benalmadena": "Parking Puerto Deportivo (€1.5/h)",
-    "general_tip": "MAI lasciare oggetti visibili in auto. MAI. Anche per 5 minuti. ZTL esistono a Málaga e Marbella — segui i cartelli 'Zona Peatonal'"
+    "general_tip": "MAI lasciare oggetti visibili in auto. MAI. Anche per 5 minuti. ZTL esistono a Málaga e Marbella — segui i cartelli 'Zona Peatonal'",
+    "public_transport_tip": "Per Benalmádena in treno dall'aeroporto: la fermata è 'Arroyo de la Miel'. Non esiste una fermata chiamata 'Benalmádena'."
   },
   "night_mobility": {
     "taxi": "Disponibili ovunque. App: Uber, Bolt, Cabify. Funzionano bene",

@@ -17,7 +17,11 @@
     "drive_time_min": 25,
     "energy_level": "relax",
     "budget_level": "medio",
-    "local_tip": "Non fare troppo il primo giorno. Entra nel ritmo: cena dopo le 21:00, passeggiata dopo cena. Gli spagnoli cenano tardi, abituati subito."
+    "local_tip": "Non fare troppo il primo giorno. Entra nel ritmo: cena dopo le 21:00, passeggiata dopo cena. Gli spagnoli cenano tardi, abituati subito. Dai video emerge che Benalmádena ha ristoranti all-you-can-eat come 'Asia' (€20) sul Porto Marina — alternativa economica per la prima cena.",
+    "videos": [
+      "https://www.youtube.com/watch?v=XXGBSaAnaWQ",
+      "https://www.youtube.com/watch?v=sb83E2t_n6M"
+    ]
   },
   {
     "date": "2026-06-20",
@@ -37,7 +41,11 @@
     "drive_time_min": 40,
     "energy_level": "medio",
     "budget_level": "alto",
-    "local_tip": "Puerto Banús è bello da vedere ma i prezzi sono folli. Prendi UN drink e goditi lo spettacolo. La vera vita locale è a Marbella centro."
+    "local_tip": "Puerto Banús è bello da vedere ma i prezzi sono folli. Prendi UN drink e goditi lo spettacolo. La vera vita locale è a Marbella centro. Il vlog tedesco avverte: 'dove c'è tanto denaro ci sono anche molti truffatori' — occhio a offerte troppo belle e ai venditori ambulanti insistente.",
+    "videos": [
+      "https://www.youtube.com/watch?v=_p48aPaVjgc",
+      "https://www.youtube.com/watch?v=ronOs-MxuPs"
+    ]
   },
   {
     "date": "2026-06-21",
@@ -48,7 +56,7 @@
     "lunch": "Casa Lola — tapas moderne. Bravas, croquetas, montaditos. Veloce, buono, economico.",
     "afternoon": "Alcazaba di Málaga (1h). Poi passeggiata nel Mercado de Atarazanas — esplosione di colori, pesce, frutta. Compra qualcosa per un picnic.",
     "sunset": "Terrazza del Centre Pompidou Málaga (El Cubo) — vista sul porto. Drink al tramonto.",
-    "evening": "Cena da La Deriva (Pedregalejo) — espetos de sardinas sulla spiaggia. Tavolo fuori, piedi nella sabbia.",
+    "evening": "Cena da La Deriva (Soho) — piatti creativi e atmosfera trendy.",
     "night": "Notte a Málaga. Zona Soho e Calle Marín García. Locali: La Tranca (vino), Orellana (cocktail), Velvet (musica). Gente giovane, vibe autentica.",
     "beach": "Pedregalejo",
     "restaurant": "La Deriva",
@@ -57,7 +65,8 @@
     "drive_time_min": 45,
     "energy_level": "intenso",
     "budget_level": "medio",
-    "local_tip": "La domenica Málaga è più tranquilla. I musei sono meno affollati. Per cena, Pedregalejo è la scelta migliore: spiaggia, chiringuiti, atmosfera rilassata."
+    "local_tip": "La domenica Málaga è più tranquilla. I musei sono meno affollati. Per cena, il Soho è vibrante e pieno di locali interessanti.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Tourist+Map"
   },
   {
     "date": "2026-06-22",
@@ -77,7 +86,11 @@
     "drive_time_min": 65,
     "energy_level": "medio",
     "budget_level": "medio",
-    "local_tip": "Mijas la mattina presto è magica — arrivare prima delle 11:00. Evita le ore centrali. A Estepona, i murales sono sparsi per tutto il centro, non solo sul lungomare."
+    "local_tip": "Mijas la mattina presto è magica — arrivare prima delle 11:00. Evita le ore centrali. A Estepona, i murales sono sparsi per tutto il centro, non solo sul lungomare. La guida video locale consiglia anche Los Pescadores (marina) per pesce fresco e El Patio de Macarena per tapas autentiche con patio fiorito.",
+    "videos": [
+      "https://www.youtube.com/watch?v=FxbwAMf13Ss",
+      "https://www.youtube.com/watch?v=PaifPnJVj6o"
+    ]
   },
   {
     "date": "2026-06-23",
@@ -137,6 +150,11 @@
     "drive_time_min": 20,
     "energy_level": "intenso",
     "budget_level": "alto",
-    "local_tip": "Se vai al beach club, PRENOTA con 1-2 settimane di anticipo. Amàre e Nikki Beach volano a giugno. Entra subito in acqua appena arrivato — il mare è perfetto."
+    "local_tip": "Se vai al beach club, PRENOTA con 1-2 settimane di anticipo. Amàre e Nikki Beach volano a giugno. Entra subito in acqua appena arrivato — il mare è perfetto. Dal vlog del Gran Marbella Resort: il beach club ha 4 piscine + area spa (in ristrutturazione), architettura rustica, no sovraffollamento. Al porto, il ristorante Picasso è citato come meta affidabile per pizza e insalate.",
+    "videos": [
+      "https://www.youtube.com/watch?v=WujtSTv4hYY",
+      "https://www.youtube.com/watch?v=1UVEFm2Loe4",
+      "https://www.youtube.com/watch?v=1SvMpmZYlnI"
+    ]
   }
 ]

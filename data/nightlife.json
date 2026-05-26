@@ -76,7 +76,11 @@
     "transport": "taxi (€10-15)",
     "socialEase": 7,
     "notes": "Marbella è più 'formale' per socializzare. Più status, più apparenza. Ma la qualità è alta.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Marbella+Old+Town+Nightlife"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Marbella+Old+Town+Nightlife",
+    "videos": [
+      "https://www.youtube.com/watch?v=_p48aPaVjgc",
+      "https://www.youtube.com/watch?v=ronOs-MxuPs"
+    ]
   },
   {
     "zone": "Puerto Banús",
@@ -119,7 +123,12 @@
     "transport": "taxi/Uber (€15-20) o auto (parcheggio porto €3/h)",
     "socialEase": 5,
     "notes": "Socializzare qui è più difficile. Gruppi chiusi, barriere sociali. Meglio andarci come esperienza visiva.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Nightlife"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Nightlife",
+    "videos": [
+      "https://www.youtube.com/watch?v=ronOs-MxuPs",
+      "https://www.youtube.com/watch?v=1UVEFm2Loe4",
+      "https://www.youtube.com/watch?v=WujtSTv4hYY"
+    ]
   },
   {
     "zone": "Benalmádena Marina",
@@ -148,7 +157,11 @@
     "transport": "taxi (€5-10 in zona)",
     "socialEase": 8,
     "notes": "Benalmádena è easy. Pentita in vacanza, atmosfera leggera. Non è autentica ma è divertente.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Benalmadena+Marina+Nightlife"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Benalmadena+Marina+Nightlife",
+    "videos": [
+      "https://www.youtube.com/watch?v=1SvMpmZYlnI",
+      "https://www.youtube.com/watch?v=FLW3g2Rcya0"
+    ]
   },
   {
     "zone": "Estepona centro",

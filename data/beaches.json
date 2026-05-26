@@ -51,7 +51,7 @@
     "chiringuitos": true,
     "bestTime": "mattina",
     "distance_min": 25,
-    "localTip": "Carina ma turistica. Usala per un'ora se sei in zona, non è il top",
+    "localTip": "Carina ma turistica. Usala per un'ora se sei in zona, non è il top. La guida video sottolinea che il lungomare ha una palestra gratuita all'aperto e chiringuiti con camerieri che servono nella sabbia.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Bil+Bil+Benalmadena"
   },
@@ -107,7 +107,7 @@
     "chiringuitos": true,
     "bestTime": "mattina fino alle 15:00 (poi ombra parziale)",
     "distance_min": 20,
-    "localTip": "Acqua caldissima e piatta. Perfetta per nuotare lontano. I chiringuiti sulla sinistra sono i migliori",
+    "localTip": "Acqua caldissima e piatta. Perfetta per nuotare lontano. I chiringuiti sulla sinistra sono i migliori. La guida video locale la descrive come 'baia riparata con acque calme e sabbi morbide — ideale per famiglie'. Vicino c'è Sonora Beach Club per socializzare con musica dal vivo.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cristo+Estepona"
   },
@@ -156,14 +156,14 @@
   {
     "name": "Playa de la Carihuela",
     "zone": "Torremolinos",
-    "description": "Spiaggia storica dei pescatori, oggi piena di chiringuiti. Vivace e colorata.",
-    "atmosphere": "vivace/giovane",
+    "description": "Spiaggia storica dei pescatori, oggi piena di chiringuiti. Vivace e colorata. Atmosfera pittoresca con edifici bassi.",
+    "atmosphere": "vivace/tradizionale",
     "parking": "Parking Carihuela (€1.5/h)",
     "sand": "sabbia scura",
     "chiringuitos": true,
     "bestTime": "pranzo (mangiare + bagno)",
     "distance_min": 35,
-    "localTip": "I chiringuiti qui sono leggendari per il pesce. Vieni per mangiare, non per prendere il sole",
+    "localTip": "I chiringuiti qui sono leggendari per il pesce. Molto frequentata dalla comunità olandese. Perfetta per lo shopping e passeggiate tra Torremolinos e Benalmádena.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos"
   },

@@ -19,6 +19,126 @@
   "weather": {
     "temp_min": 22,
     "temp_max": 32,
-    "conditions": "soleggiato, brezza marina (Terral)"
-  }
+    "conditions": "soleggiato, brezza marina (Terral)",
+    "sun_days_per_year": 325
+  },
+  "videos": [
+    {
+      "title": "Benalmádena: The Ultimate Travel Guide (4K)",
+      "url": "https://www.youtube.com/watch?v=XXGBSaAnaWQ",
+      "id": "XXGBSaAnaWQ",
+      "type": "guide",
+      "zone": "Benalmádena",
+      "duration_min": 15,
+      "year": 2024
+    },
+    {
+      "title": "Benalmadena Spain | Complete Travel Guide 2025",
+      "url": "https://www.youtube.com/watch?v=653y_5dsDjg",
+      "id": "653y_5dsDjg",
+      "type": "guide",
+      "zone": "Benalmádena",
+      "duration_min": 12,
+      "year": 2025
+    },
+    {
+      "title": "Everyday Life Benalmadena Walking Tour 4K (2026)",
+      "url": "https://www.youtube.com/watch?v=sb83E2t_n6M",
+      "id": "sb83E2t_n6M",
+      "type": "walking",
+      "zone": "Benalmádena",
+      "duration_min": 20,
+      "year": 2026
+    },
+    {
+      "title": "Benalmadena Marina Nightlife 2025",
+      "url": "https://www.youtube.com/watch?v=1SvMpmZYlnI",
+      "id": "1SvMpmZYlnI",
+      "type": "nightlife",
+      "zone": "Benalmádena",
+      "duration_min": 15,
+      "year": 2025
+    },
+    {
+      "title": "Puerto Marina Vibrant Nightlife 2025",
+      "url": "https://www.youtube.com/watch?v=FLW3g2Rcya0",
+      "id": "FLW3g2Rcya0",
+      "type": "nightlife",
+      "zone": "Benalmádena",
+      "duration_min": 10,
+      "year": 2025
+    },
+    {
+      "title": "Marbella Summer 2025 Walk (4K)",
+      "url": "https://www.youtube.com/watch?v=_p48aPaVjgc",
+      "id": "_p48aPaVjgc",
+      "type": "walking",
+      "zone": "Marbella",
+      "duration_min": 20,
+      "year": 2025
+    },
+    {
+      "title": "Marbella September 2025 Walking Tour",
+      "url": "https://www.youtube.com/watch?v=kwkvmp-ZJtM",
+      "id": "kwkvmp-ZJtM",
+      "type": "walking",
+      "zone": "Marbella",
+      "duration_min": 18,
+      "year": 2025
+    },
+    {
+      "title": "Marbella Vlog – Beach Club, Yacht, Nightlife",
+      "url": "https://www.youtube.com/watch?v=ronOs-MxuPs",
+      "id": "ronOs-MxuPs",
+      "type": "vlog",
+      "zone": "Marbella",
+      "duration_min": 20,
+      "year": 2025
+    },
+    {
+      "title": "Gran Marbella Resort & Beach Club",
+      "url": "https://www.youtube.com/watch?v=WujtSTv4hYY",
+      "id": "WujtSTv4hYY",
+      "type": "beach",
+      "zone": "Marbella",
+      "duration_min": 12,
+      "year": 2025
+    },
+    {
+      "title": "Marbella Vlog 2026 – Beach clubs & nightlife",
+      "url": "https://www.youtube.com/watch?v=1UVEFm2Loe4",
+      "id": "1UVEFm2Loe4",
+      "type": "vlog",
+      "zone": "Marbella",
+      "duration_min": 18,
+      "year": 2026
+    },
+    {
+      "title": "Estepona Walking Tour 4K",
+      "url": "https://www.youtube.com/watch?v=FxbwAMf13Ss",
+      "id": "FxbwAMf13Ss",
+      "type": "walking",
+      "zone": "Estepona",
+      "duration_min": 22,
+      "year": 2024
+    },
+    {
+      "title": "Estepona Travel Guide 2025 (Local)",
+      "url": "https://www.youtube.com/watch?v=PaifPnJVj6o",
+      "id": "PaifPnJVj6o",
+      "type": "guide",
+      "zone": "Estepona",
+      "duration_min": 10,
+      "year": 2025
+    },
+    {
+      "title": "Estepona Promenade Walk 4K",
+      "url": "https://www.youtube.com/watch?v=TzruQTWoiT4",
+      "id": "TzruQTWoiT4",
+      "type": "walking",
+      "zone": "Estepona",
+      "duration_min": 15,
+      "year": 2024
+    }
+  ]
 }
