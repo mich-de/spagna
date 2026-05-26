@@ -19,7 +19,7 @@
 /* ─── Root ─── */
 html {
   scroll-behavior: smooth;
-  font-size: clamp(15px, 0.5vw + 14px, 16px);
+  font-size: clamp(16px, 1vw + 15px, 18px);
 }
 
 body {
@@ -205,7 +205,6 @@ body {
 
 /* ─── Mobile fixes ─── */
 @media (max-width: 420px) {
-  html { font-size: clamp(16px, 1vw + 14px, 17px); }
   section > .px-4 { padding-left: 0.75rem; padding-right: 0.75rem; }
   .grid-cols-2.gap-1 { gap: 0.375rem; }
 }
