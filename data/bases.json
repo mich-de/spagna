@@ -1,0 +1,101 @@
+[
+  {
+    "name": "San Pedro de Alcántara",
+    "score": 9,
+    "pros": [
+      "Posizione centrale tra Marbella e Estepona",
+      "Spiagge lunghe e poco affollate",
+      "Atmosfera da vero pueblo andaluso",
+      "Parcheggi più facili di Marbella",
+      "Ristoranti locali eccellenti",
+      "Vita serale autentica non esclusiva"
+    ],
+    "cons": [
+      "Meno nightlife estrema rispetto a Puerto Banús",
+      "Pochi grandi beach club (devi spostarti)",
+      "Negozi/comfort meno internazionali di Marbella"
+    ],
+    "distance_airport_min": 50,
+    "distance_marbella_min": 12,
+    "parking_ease": 7,
+    "nightlife_level": 6,
+    "beach_quality": 9,
+    "authenticity": 9,
+    "cost_level": "medio-alto",
+    "social_ease": 7
+  },
+  {
+    "name": "Benalmádena",
+    "score": 7.5,
+    "pros": [
+      "Vicina all'aeroporto di Málaga (20min)",
+      "Marina con nightlife vivace",
+      "Ottima per la prima notte",
+      "Prezzi più contenuti",
+      "Spiagge carine e ben servite"
+    ],
+    "cons": [
+      "Molto turistica, meno autentica",
+      "Lontana da Marbella (40min)",
+      "Spostamento quotidiano stancante",
+      "Vibe più 'vacanza al pacchetto'"
+    ],
+    "distance_airport_min": 20,
+    "distance_marbella_min": 40,
+    "parking_ease": 6,
+    "nightlife_level": 8,
+    "beach_quality": 6,
+    "authenticity": 4,
+    "cost_level": "medio",
+    "social_ease": 8
+  },
+  {
+    "name": "Estepona",
+    "score": 8,
+    "pros": [
+      "Centro storico bellissimo e autentico",
+      "Spiagge eccellenti (Playa del Cristo)",
+      "Atmosfera rilassata e genuina",
+      "Perfetta per giorni slow",
+      "Ristoranti locali di pesce incredibili"
+    ],
+    "cons": [
+      "Lontana da Málaga (65min auto)",
+      "Nightlife quasi assente",
+      "Scomoda per andare a Málaga o Benalmádena",
+      "Richiede più guida per variare"
+    ],
+    "distance_airport_min": 65,
+    "distance_marbella_min": 25,
+    "parking_ease": 8,
+    "nightlife_level": 3,
+    "beach_quality": 9,
+    "authenticity": 9,
+    "cost_level": "medio",
+    "social_ease": 5
+  },
+  {
+    "name": "Marbella (Centro/Casco Antiguo)",
+    "score": 8.5,
+    "pros": [
+      "Cultura + lusso + autenticità",
+      "Casco antiguo meraviglioso",
+      "Nightlife varia e di qualità",
+      "Spiagge curate"
+    ],
+    "cons": [
+      "Parcheggio difficilissimo",
+      "Costi elevati",
+      "Traffico intenso",
+      "Alta stagione = sovraffollata"
+    ],
+    "distance_airport_min": 45,
+    "distance_marbella_min": 0,
+    "parking_ease": 3,
+    "nightlife_level": 9,
+    "beach_quality": 7,
+    "authenticity": 6,
+    "cost_level": "alto",
+    "social_ease": 9
+  }
+]

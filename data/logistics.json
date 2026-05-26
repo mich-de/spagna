@@ -1,0 +1,39 @@
+{
+  "carRental": {
+    "airport": "Málaga AGP — uffici nel Terminal Arrivi (Avis, Hertz, Sixt, Europcar, RecordGo)",
+    "recommended": "RecordGo (miglior rapporto qualità/prezzo) o Sixt (flotta premium)",
+    "tip": "Prenota CON ALMENO 2 SETTIMANE di anticipo. Giugno è alta stagione. Prendi assicurazione completa con zero franchigia",
+    "size": "Berlina media o SUV piccolo. Niente macchina enorme — le strade nei borghi sono strette"
+  },
+  "driving": {
+    "highway": "AP-7 (autostrada costiera, pedaggio) o A-7 (gratuita). AP-7 costa ~€12 da Málaga a Estepona ma è più veloce",
+    "recommendation": "Usa AP-7 per spostamenti lunghi e di fretta. A-7 per tratti brevi o panoramici",
+    "traffic_warning": "EVITA: 07:30-09:30 e 17:00-19:30 (ingresso/uscita Málaga e Marbella). SABATO pomeriggio = peggiore",
+    "summer_heat": "Stimata del traffico a giugno: medio-alta. Spostamenti brevi (Marbella-Estepona) gestibili"
+  },
+  "parking": {
+    "malaga": "Parking Alcazaba (€2/h), Parking La Malagueta (€2/h), Parking Centro (€1.5/h)",
+    "marbella": "Parking Casco Antiguo (€2.5/h), Parking Fontanilla (€2/h). ZTL limitata — segui i cartelli",
+    "san_pedro": "Lungomare gratuito (vasta area). Raramente pieno",
+    "estepona": "Parking Centro (€1/h), Lungomare (€1.5/h)",
+    "puerto_banus": "Parking Puerto Banús (€3/h). Costoso ma sicuro",
+    "benalmadena": "Parking Puerto Deportivo (€1.5/h)",
+    "general_tip": "MAI lasciare oggetti visibili in auto. MAI. Anche per 5 minuti. ZTL esistono a Málaga e Marbella — segui i cartelli 'Zona Peatonal'"
+  },
+  "night_mobility": {
+    "taxi": "Disponibili ovunque. App: Uber, Bolt, Cabify. Funzionano bene",
+    "cost": "Málaga centro €8-12, Marbella €10-15, Puerto Banús €15-20",
+    "tip": "SE BEVI >2 drink, NON GUIDARE. I controlli della Guardia Civil a giugno sono frequenti. Le multe per alcol sono salate (€500+)"
+  },
+  "drive_times": {
+    "malaga_airport_to_benalmadena": "20min",
+    "malaga_airport_to_marbella": "45min",
+    "malaga_airport_to_san_pedro": "50min",
+    "malaga_airport_to_estepona": "65min",
+    "marbella_to_estepona": "25min",
+    "marbella_to_benalmadena": "35min",
+    "marbella_to_malaga": "40min",
+    "san_pedro_to_estepona": "15min",
+    "san_pedro_to_marbella": "12min"
+  }
+}

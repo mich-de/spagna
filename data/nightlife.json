@@ -1,0 +1,162 @@
+[
+  {
+    "zone": "Málaga centro",
+    "clientType": "giovani, studenti, internazionali, artisti",
+    "vibe": "autentica, sociale, varia",
+    "bestTime": "23:00-03:00",
+    "start": "Calle Marín García o Plaza de la Merced",
+    "continueTo": "Soho (zona MUAC) o Tejeros",
+    "venues": [
+      {
+        "name": "La Tranca",
+        "type": "bar de vinos",
+        "price": "€",
+        "vibe": "vino, conversazione, autentico"
+      },
+      {
+        "name": "Orellana",
+        "type": "cocktail bar",
+        "price": "€€",
+        "vibe": "speakeasy, cocktail di qualità"
+      },
+      {
+        "name": "Velvet",
+        "type": "club",
+        "price": "€€",
+        "vibe": "musica, dance, giovane"
+      },
+      {
+        "name": "La Cochera",
+        "type": "live music",
+        "price": "€",
+        "vibe": "flamenco, autentico, piccolo"
+      }
+    ],
+    "dressCode": "casual chic",
+    "transport": "taxi/Uber (€8-12 in centro)",
+    "socialEase": 9,
+    "notes": "Málaga è la città più facile per socializzare. La gente è aperta, ci sono molti locali, i prezzi sono bassi. Perfetta per la sera."
+  },
+  {
+    "zone": "Marbella casco antiguo",
+    "clientType": "middle-up, internazionali, coppie, gruppi",
+    "vibe": "elegante, raffinato, conversazione",
+    "bestTime": "22:00-01:00",
+    "start": "Plaza de los Naranjos o Calle Nueva",
+    "continueTo": "Puerto Banús",
+    "venues": [
+      {
+        "name": "The Farm",
+        "type": "cocktail bar",
+        "price": "€€€",
+        "vibe": "naturale, fresco, giardino"
+      },
+      {
+        "name": "La Plaza",
+        "type": "wine bar",
+        "price": "€€",
+        "vibe": "elegante, conversazione"
+      },
+      {
+        "name": "Gran Marbella",
+        "type": "club",
+        "price": "€€€",
+        "vibe": "classico, esclusivo"
+      }
+    ],
+    "dressCode": "elegante curato",
+    "transport": "taxi (€10-15)",
+    "socialEase": 7,
+    "notes": "Marbella è più 'formale' per socializzare. Più status, più apparenza. Ma la qualità è alta."
+  },
+  {
+    "zone": "Puerto Banús",
+    "clientType": "VIP, modelle, turisti ricchi, celebrità wannabe",
+    "vibe": "lusso, esibizione, party",
+    "bestTime": "01:00-06:00",
+    "start": "Cena in un ristorante sul porto",
+    "continueTo": "Discoteche del porto",
+    "venues": [
+      {
+        "name": "TIBU Marbella",
+        "type": "club",
+        "price": "€€€€",
+        "vibe": "party, internazionale, glamour"
+      },
+      {
+        "name": "Mirage",
+        "type": "club",
+        "price": "€€€€",
+        "vibe": "high-end, visual incredibili"
+      },
+      {
+        "name": "Olivia Valère",
+        "type": "club iconico",
+        "price": "€€€€€",
+        "vibe": "lussuoso, orientale, vedere e farsi vedere"
+      },
+      {
+        "name": "Mogli Marbella",
+        "type": "pool club/nightlife",
+        "price": "€€€€",
+        "vibe": "Mayan vibes, trendy, party in piscina"
+      }
+    ],
+    "dressCode": "elegante/serale (niente shorts o ciabatte)",
+    "transport": "taxi/Uber (€15-20) o auto (parcheggio porto €3/h)",
+    "socialEase": 5,
+    "notes": "Socializzare qui è più difficile. Gruppi chiusi, barriere sociali. Meglio andarci come esperienza visiva."
+  },
+  {
+    "zone": "Benalmádena Marina",
+    "clientType": "turisti, giovani, famiglie",
+    "vibe": "vivace, easy, accessibile",
+    "bestTime": "22:00-03:00",
+    "start": "Bar sulla marina",
+    "continueTo": "Discoteche vicino",
+    "venues": [
+      {
+        "name": "Palacio de la Papaya",
+        "type": "club",
+        "price": "€€",
+        "vibe": "latino, dance, divertente"
+      },
+      {
+        "name": "Lin's Irish Pub",
+        "type": "pub",
+        "price": "€",
+        "vibe": "birra, internazionale"
+      }
+    ],
+    "dressCode": "casual",
+    "transport": "taxi (€5-10 in zona)",
+    "socialEase": 8,
+    "notes": "Benalmádena è easy. Gente in vacanza, atmosfera leggera. Non è autentica ma è divertente."
+  },
+  {
+    "zone": "Estepona centro",
+    "clientType": "residenti, coppie, over 30",
+    "vibe": "tranquillo, chilleroso, conversazione",
+    "bestTime": "21:00-00:00",
+    "start": "Plaza de las Flores",
+    "continueTo": "Bar sul paseo",
+    "venues": [
+      {
+        "name": "La Casita",
+        "type": "wine bar",
+        "price": "€",
+        "vibe": "vino, chiacchiere"
+      },
+      {
+        "name": "Bar La Plaza",
+        "type": "tapas bar",
+        "price": "€",
+        "vibe": "locale, autentico"
+      }
+    ],
+    "dressCode": "casual",
+    "transport": "auto o taxi",
+    "socialEase": 6,
+    "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare."
+  }
+]

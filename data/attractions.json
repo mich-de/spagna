@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Centro storico di Málaga",
+    "zone": "Málaga",
+    "whyVisit": "Cuore pulsante della città. Piazze, viuzze, negozi, chiese, vita ovunque.",
+    "duration": "2-3h",
+    "parking": "Parking Alcazaba o Centro",
+    "cost": "gratuito",
+    "pairWith": "Museo Picasso + pranzo da Casa Lola",
+    "priority": "must"
+  },
+  {
+    "name": "Museo Picasso Málaga",
+    "zone": "Málaga",
+    "whyVisit": "Oltre 200 opere del genio malagueño. Allestimento curato. Visita essenziale.",
+    "duration": "1.5h",
+    "parking": "Parking Alcazaba (€2/h)",
+    "cost": "€10",
+    "pairWith": "Alcazaba + pranzo zona centro",
+    "priority": "must"
+  },
+  {
+    "name": "Alcazaba di Málaga",
+    "zone": "Málaga",
+    "whyVisit": "Fortezza araba dell'XI secolo. Viste spettacolari, giardini, storia.",
+    "duration": "1-1.5h",
+    "parking": "Parking Alcazaba",
+    "cost": "€5",
+    "pairWith": "Castillo Gibralfaro (salita a piedi 15min)",
+    "priority": "must"
+  },
+  {
+    "name": "Castillo de Gibralfaro",
+    "zone": "Málaga",
+    "whyVisit": "Vista panoramica su Málaga e il mare. Imperdibile al tramonto.",
+    "duration": "1h",
+    "parking": "Strada in salita (parcheggio ridotto)",
+    "cost": "€3.50 (combinato Alcazaba €5.50)",
+    "pairWith": "Alcazaba + aperitivo al Parador",
+    "priority": "must"
+  },
+  {
+    "name": "Mercado de Atarazanas",
+    "zone": "Málaga",
+    "whyVisit": "Mercato coperto con vetrata colorata all'ingresso. Pesce, frutta, tapas al banco.",
+    "duration": "45min-1h",
+    "parking": "Parking Centro",
+    "cost": "gratuito (cibo extra)",
+    "pairWith": "Pranzo al banco del mercato",
+    "priority": "consigliato"
+  },
+  {
+    "name": "Centre Pompidou Málaga",
+    "zone": "Málaga",
+    "whyVisit": "Sede satellite del Pompidou. Il 'Cubo' colorato sul porto. Arte moderna.",
+    "duration": "1-1.5h",
+    "parking": "Parking Muelle Uno",
+    "cost": "€9",
+    "pairWith": "Passeggiata Muelle Uno + aperitivo",
+    "priority": "se piace arte moderna"
+  },
+  {
+    "name": "Casco antiguo di Marbella",
+    "zone": "Marbella",
+    "whyVisit": "Il centro storico più bello della Costa del Sol. Plaza de los Naranjos, viuzze bianche, fiori.",
+    "duration": "1-2h",
+    "parking": "Parking Casco Antiguo (€2/h)",
+    "cost": "gratuito",
+    "pairWith": "Pranzo da Bar El Estrecho",
+    "priority": "must"
+  },
+  {
+    "name": "Puerto Banús",
+    "zone": "Marbella",
+    "whyVisit": "Il porto dei superyacht. Negozi di lusso, ristoranti, atmosfera internazionale.",
+    "duration": "1-2h",
+    "parking": "Parking Puerto Banús (€3/h)",
+    "cost": "gratuito (caffè €5)",
+    "pairWith": "Cena da Trocadero + passeggiata",
+    "priority": "esperienza"
+  },
+  {
+    "name": "Mijas Pueblo",
+    "zone": "Mijas",
+    "whyVisit": "Il borgo bianco per antonomasia. Asinelli, vista costa, negozi artigianato.",
+    "duration": "2-3h",
+    "parking": "Parking Mijas (€1.5/h)",
+    "cost": "gratuito",
+    "pairWith": "Pranzo da La Taberna de Mijas + Estepona",
+    "priority": "must"
+  },
+  {
+    "name": "Ronda",
+    "zone": "Ronda",
+    "whyVisit": "Uno dei borghi più spettacolari di Spagna. El Tajo, Puente Nuevo, tori, vino.",
+    "duration": "4-5h (mezza giornata)",
+    "parking": "Parking Ronda centro (€2/h)",
+    "cost": "gratuito (musei extra)",
+    "pairWith": "Giornata intera — pranzo a Ronda",
+    "priority": "se hai tempo"
+  },
+  {
+    "name": "Centro storico di Estepona",
+    "zone": "Estepona",
+    "whyVisit": "Murales colorati sui muri, fiori ovunque, atmosfera tranquilla e autentica.",
+    "duration": "1-2h",
+    "parking": "Parking Centro (€1/h)",
+    "cost": "gratuito",
+    "pairWith": "Spiaggia del Cristo + cena La Escollera",
+    "priority": "consigliato"
+  },
+  {
+    "name": "Murales di Estepona",
+    "zone": "Estepona",
+    "whyVisit": "Oltre 50 murales sparsi per il centro. Percorso artistico a cielo aperto.",
+    "duration": "1h (a piedi)",
+    "parking": "Parking Centro",
+    "cost": "gratuito",
+    "pairWith": "Giro centro + gelato",
+    "priority": "consigliato"
+  }
+]

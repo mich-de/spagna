@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Espetos de sardinas",
+    "description": "Sardine infilzate in canna e cotte sulla brace sulla spiaggia. Il re della Costa del Sol.",
+    "when": "pranzo sulla spiaggia",
+    "where": "chiringuiti di Pedregalejo o Cabopino",
+    "pairing": "birra ben fredda o tinto de verano",
+    "authenticity": 10
+  },
+  {
+    "name": "Pescaíto frito",
+    "description": "Frittura di pesce piccolo (boquerones, calamares, chanquetes, pijotas). Leggera e croccante.",
+    "when": "pranzo o aperitivo",
+    "where": "Bar El Estrecho o La Escollera",
+    "pairing": "birra o manzanilla",
+    "authenticity": 10
+  },
+  {
+    "name": "Boquerones en vinagre",
+    "description": "Acciughe marinate in aceto, aglio e prezzemolo. Fresche, leggere, incredibili.",
+    "when": "aperitivo",
+    "where": "qualsiasi bar de tapas",
+    "pairing": "vino bianco o birra",
+    "authenticity": 10
+  },
+  {
+    "name": "Gazpacho",
+    "description": "Zuppa fredda di pomodoro, cetriolo, peperone. Rinfrescante e salutare.",
+    "when": "pranzo (caldo) o cena leggera",
+    "where": "ovunque",
+    "pairing": "vino bianco",
+    "authenticity": 10
+  },
+  {
+    "name": "Salmorejo",
+    "description": "Più denso del gazpacho. Pomodoro, pane, aglio, olio. Guarnito con uovo sodo e jamón.",
+    "when": "pranzo",
+    "where": "Casa Eladio o El Pimpi",
+    "pairing": "vino della casa",
+    "authenticity": 9
+  },
+  {
+    "name": "Ajoblanco",
+    "description": "Zuppa fredda di mandorle, aglio, pane, olio. Dolceamaro unico.",
+    "when": "estate, pranzo",
+    "where": "ristoranti tradizionali",
+    "pairing": "vino dolce o birra",
+    "authenticity": 8
+  },
+  {
+    "name": "Porra Antequerana",
+    "description": "Variante del salmorejo ma più densa. Originaria di Antequera. Cremosa.",
+    "when": "pranzo",
+    "where": "Trattorie di Málaga e Antequera",
+    "pairing": "vino rosso leggero",
+    "authenticity": 8
+  },
+  {
+    "name": "Gambas pil-pil",
+    "description": "Gamberi saltati in olio bollente, aglio e peperoncino. Serviti sfrigolanti.",
+    "when": "aperitivo o cena",
+    "where": "Bar El Estrecho",
+    "pairing": "birra o vino bianco",
+    "authenticity": 9
+  },
+  {
+    "name": "Jamón ibérico",
+    "description": "Prosciutto di ghianda. Fette sottili, sapore pieno. Non serve nient'altro.",
+    "when": "aperitivo",
+    "where": "El Pimpi o enoteca",
+    "pairing": "vino rosso o manzanilla",
+    "authenticity": 10
+  },
+  {
+    "name": "Croquetas",
+    "description": "Crocchette cremose. Jamón, bacalao, pollo, funghi. Ogni bar ha le sue.",
+    "when": "aperitivo o tapas crawl",
+    "where": "ovunque",
+    "pairing": "birra",
+    "authenticity": 9
+  },
+  {
+    "name": "Tortilla española",
+    "description": "Uova e patate. Cotta o poco cotta. Con o senza cipolla. Dibattito nazionale.",
+    "when": "pranzo o tapas",
+    "where": "Casa Lola o bar locale",
+    "pairing": "vino o birra",
+    "authenticity": 10
+  },
+  {
+    "name": "Churros con chocolate",
+    "description": "Fritti di pasta choux, cioccolato denso. Colazione o dopo-festa.",
+    "when": "colazione (08:00) o notte(04:00)",
+    "where": "Churrería Los Arcos",
+    "pairing": "cioccolato caldo",
+    "authenticity": 10
+  },
+  {
+    "name": "Tinto de verano",
+    "description": "Vino rosso + limonata + ghiaccio. Il drink dell'estate spagnola. Più locale della sangria.",
+    "when": "sempre",
+    "where": "ovunque",
+    "pairing": "tappo — è il drink",
+    "authenticity": 10
+  },
+  {
+    "name": "Vermut",
+    "description": "Vino aromatizzato. Servito con ghiaccio, oliva e arancia. Rito del pre-cena.",
+    "when": "aperitivo (13:00 o 20:00)",
+    "where": "bar tradizionali",
+    "pairing": "olive + patatine",
+    "authenticity": 9
+  },
+  {
+    "name": "Vino dulce de Málaga",
+    "description": "Vino dolce passito. Moscato o Pedro Ximénez. Oro liquido.",
+    "when": "dopo cena",
+    "where": "El Pimpi o enoteca",
+    "pairing": "dessert o da solo",
+    "authenticity": 10
+  }
+]

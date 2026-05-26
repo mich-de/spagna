@@ -1,0 +1,79 @@
+{
+  "title": "🔥 Noche de San Juan — 23→24 Giugno 2026",
+  "description": "La notte più magica dell'estate spagnola. Solstizio d'estate: falò in spiaggia, bagni a mezzanotte e lo spirito andaluso al massimo. 2026: Martedì 23 giugno.",
+  "recommendedSpot": "Playa de la Misericordia (Málaga)",
+  "spots": [
+    {
+      "name": "Playa de la Misericordia",
+      "zone": "Málaga ovest",
+      "vibe": "Epicentro ufficiale, concerti, folla oceanica",
+      "pros": "Falò gigante (Júa), fuochi d'artificio (00:00), musica live",
+      "cons": "Affollatissima, difficile parcheggiare",
+      "parking": "Zona Paseo Antonio Banderas (pieno dalle 20:00)",
+      "transport": "Bus linee 7, 15, 40 o Metro L2 (fino alle 02:00)",
+      "social": 10,
+      "authenticity": 9
+    },
+    {
+      "name": "Playa de Pedregalejo",
+      "zone": "Málaga est",
+      "vibe": "Tradizionale, quartiere pescatori, autentico",
+      "pros": "Meno caotico di Misericordia, chiringuiti storici",
+      "cons": "Spiagge strette, difficile trovare spazio",
+      "parking": "Parcheggio remoto + 15min a piedi",
+      "transport": "Bus linee 3, 11 o Taxi",
+      "social": 8,
+      "authenticity": 10
+    },
+    {
+      "name": "Playa de la Malagueta",
+      "zone": "Málaga centro",
+      "vibe": "Centrale, giovane, mix turisti/locali",
+      "pros": "Vicino al centro, facile arrivarci a piedi",
+      "cons": "Sabbia sporca presto, prezzi chiringuiti alti",
+      "parking": "Parking Muelle Uno (€20+ notte)",
+      "transport": "A piedi dal centro",
+      "social": 9,
+      "authenticity": 7
+    },
+    {
+      "name": "Cabopino",
+      "zone": "Marbella area",
+      "vibe": "Naturale, suggestivo tra le dune",
+      "pros": "Atmosfera magica, meno inquinamento luminoso",
+      "cons": "Nessun evento organizzato dal comune",
+      "parking": "Parcheggio dune (arriva presto)",
+      "transport": "Solo auto (30min da Málaga)",
+      "social": 6,
+      "authenticity": 8
+    }
+  ],
+  "schedule": {
+    "18:00": "Siesta pomeridiana: è una notte lunghissima, non stancarti",
+    "20:30": "Cena precoce: Tapas veloci a Málaga centro o Soho",
+    "21:30": "Spostamento verso Playa de la Misericordia (o Pedregalejo)",
+    "22:30": "Concerti live sul Paseo Marítimo Antonio Banderas",
+    "23:45": "Tutti pronti sul bagnasciuga con i desideri scritti su carta",
+    "00:00": "🔥 Falò del Júa + Fuochi d'artificio + Bagno a mezzanotte",
+    "00:30": "Musica, balli e brindisi (Tinto de Verano o Birra)",
+    "02:00": "Giro tra i gruppi: la gente è aperta, socializza!",
+    "04:00": "Churros con chocolate al porto o in centro",
+    "06:00": "Pulizia spiagge: la polizia inizia a sgomberare (norma comunale)"
+  },
+  "whatToBring": [
+    "Costume e asciugamano (bagno obbligatorio)",
+    "Foglietto con i desideri da bruciare",
+    "Calzature comode (sabbia + braci)",
+    "Felpa leggera (brezza notturna)",
+    "Borsa frigo con ghiaccio e drink",
+    "Powerbank per foto e taxi",
+    "Sacchetto per i rifiuti (rispetta la spiaggia)"
+  ],
+  "restrictions": [
+    "Vietati falò privati direttamente sulla sabbia (solo contenitori metallici)",
+    "Vietate bottiglie di vetro (controlli polizia)",
+    "Vietate lanterne volanti (rischio incendi)",
+    "Vietato il campeggio notturno",
+    "Sgombero obbligatorio alle 06:00 per pulizia meccanica"
+  ]
+}

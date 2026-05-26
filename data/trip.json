@@ -1,0 +1,24 @@
+{
+  "destination": "Costa del Sol",
+  "title": "Sol & Local — Costa del Sol 2026",
+  "subtitle": "Vivere come un locale tra mare, cultura e notti andaluse",
+  "dates": {
+    "start": "2026-06-19",
+    "end": "2026-06-25"
+  },
+  "arrival": "Málaga Airport (AGP)",
+  "transport": "auto a noleggio (necessaria)",
+  "style": "mediterranean lifestyle & authentic vibes",
+  "badges": [
+    "🌊 Mare Cristallino",
+    "🎨 Musei Málaga",
+    "🍤 Espetos & Tapas",
+    "🔥 San Juan Night",
+    "🤝 Local Lifestyle"
+  ],
+  "weather": {
+    "temp_min": 22,
+    "temp_max": 32,
+    "conditions": "soleggiato, brezza marina (Terral)"
+  }
+}
