@@ -1,7 +1,8 @@
 {
   "carRental": {
     "airport": "Málaga AGP — uffici nel Terminal Arrivi (Avis, Hertz, Sixt, Europcar, RecordGo)",
-    "recommended": "RecordGo (miglior rapporto qualità/prezzo) o Sixt (flotta premium)",
+    "recommended": "RecordGo (miglior rapporto qualità/prezzo), Sixt (flotta premium) o All In Car Hire Malaga (ottimo rapporto qualità/prezzo)",
+    "recommendedMapLink": "https://www.google.com/maps/place/All+In+Car+Hire+Malaga/@36.6678562,-4.4724437,16z/data=!4m6!3m5!1s0xd72f98f3d81f619:0x26d926761f9813d8!8m2!3d36.66783!4d-4.4723978!16s%2Fg%2F11b75qnydk?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D",
     "tip": "Prenota CON ALMENO 2 SETTIMANE di anticipo. Giugno è alta stagione. Prendi assicurazione completa con zero franchigia",
     "size": "Berlina media o SUV piccolo. Niente macchina enorme — le strade nei borghi sono strette"
   },

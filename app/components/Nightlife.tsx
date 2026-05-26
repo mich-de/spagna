@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Users, Clock, VenetianMask, DollarSign, MapPin } from 'lucide-react'
+import { Users, Clock, VenetianMask, DollarSign, MapPin, Map, Star } from 'lucide-react'
 import nightlife from '@/data/nightlife.json'
 
 export default function Nightlife() {
   return (
-    <section id="nightlife" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="nightlife" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,16 +45,53 @@ export default function Nightlife() {
                   <p className="text-sm text-mare-700/70 mb-3">{zone.vibe.charAt(0).toUpperCase() + zone.vibe.slice(1)}</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
                     {zone.venues.map((v: any) => (
-                      <div key={v.name} className="flex items-center gap-2 p-2 bg-terracotta-50/50 rounded-lg">
-                        <span className="text-xs font-medium text-terracotta-600 shrink-0">{v.name}</span>
-                        <span className="text-[10px] text-mare-500">{v.type}</span>
-                        <span className="text-[10px] ml-auto font-medium text-mare-600">{v.price}</span>
+                      <div key={v.name} className="flex flex-col gap-1 p-2 bg-terracotta-50/50 rounded-lg">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-medium text-terracotta-600 shrink-0">{v.name}</span>
+                          <span className="text-[10px] text-mare-500">{v.type}</span>
+                          <span className="text-[10px] ml-auto font-medium text-mare-600">{v.price}</span>
+                        </div>
+                        <div className="flex gap-1.5">
+                          <a
+                            href={v.mapLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
+                          >
+                            <Map className="w-2.5 h-2.5" /> Maps
+                          </a>
+                          <a
+                            href={v.tripadvisorLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
+                          >
+                            <Star className="w-2.5 h-2.5" /> TA
+                          </a>
+                        </div>
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-mare-700/50">
-                    <MapPin className="w-3 h-3" /> Inizia da: <span className="font-medium text-mare-700/80">{zone.start}</span>
+                  <div className="flex flex-wrap items-center gap-2 text-xs text-mare-700/50">
+                    <MapPin className="w-3 h-3" /> {zone.start}
                     <span className="mx-1">→</span> {zone.continueTo}
+                    <span className="mx-1 text-mare-300">|</span>
+                    <a
+                      href={zone.mapLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
+                    >
+                      <Map className="w-3 h-3" /> Maps
+                    </a>
+                    <a
+                      href={zone.tripadvisorLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
+                    >
+                      <Star className="w-3 h-3" /> TA
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-row sm:flex-col items-center gap-3 sm:min-w-[100px]">

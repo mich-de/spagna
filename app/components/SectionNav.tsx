@@ -23,6 +23,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 })
 
   useEffect(() => {
@@ -38,6 +39,13 @@ export default function SectionNav({ activeSection, onSectionChange }: {
     }
   }, [activeSection])
 
+  useEffect(() => {
+    if (!mobileOpen) return
+    const handleScroll = () => setMobileOpen(false)
+    window.addEventListener('scroll', handleScroll, { once: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [mobileOpen])
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-sabbia/90 backdrop-blur-xl border-b border-terracotta-100/50">
@@ -47,7 +55,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               <div className="w-8 h-8 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded-lg flex items-center justify-center">
                 <Compass className="w-4 h-4 text-white" />
               </div>
-              <span className="font-display text-lg font-semibold text-notte hidden sm:block">
+              <span className="font-display text-base sm:text-lg font-semibold text-notte">
                 Sol & Local
               </span>
             </div>
@@ -86,29 +94,39 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 
         <AnimatePresence>
           {mobileOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden border-t border-terracotta-100/50 bg-sabbia/95 backdrop-blur-xl overflow-hidden"
-            >
-              <div className="grid grid-cols-2 gap-1 p-4">
-                {sections.map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => { onSectionChange(s.id); setMobileOpen(false) }}
-                    className={`flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm transition-all ${
-                      activeSection === s.id
-                        ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 font-medium shadow-sm shadow-terracotta-500/20'
-                        : 'text-mare-700/60 hover:text-terracotta-700 hover:bg-terracotta-100/50'
-                    }`}
-                  >
-                    <s.icon className="w-4 h-4" />
-                    {s.label}
-                  </button>
-                ))}
-              </div>
-            </motion.div>
+            <>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setMobileOpen(false)}
+                className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              />
+              <motion.div
+                ref={menuRef}
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                className="lg:hidden border-t border-terracotta-100/50 bg-sabbia/95 backdrop-blur-xl overflow-hidden relative z-50"
+              >
+                <div className="grid grid-cols-2 gap-1 p-4 pb-6">
+                  {sections.map((s) => (
+                    <button
+                      key={s.id}
+                      onClick={() => { onSectionChange(s.id); setMobileOpen(false) }}
+                      className={`flex items-center gap-2.5 px-3 py-3 rounded-lg text-sm transition-all ${
+                        activeSection === s.id
+                          ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 font-medium shadow-sm shadow-terracotta-500/20'
+                          : 'text-mare-700/60 hover:text-terracotta-700 hover:bg-terracotta-100/50'
+                      }`}
+                    >
+                      <s.icon className="w-4 h-4" />
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </nav>

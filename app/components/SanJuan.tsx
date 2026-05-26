@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Flame, Clock, AlertTriangle, Backpack, MapPin, Sparkles } from 'lucide-react'
+import { Flame, Clock, AlertTriangle, Backpack, MapPin, Sparkles, Map, Star } from 'lucide-react'
 import sj from '@/data/san-juan.json'
 
 export default function SanJuan() {
   return (
-    <section id="sanjuan" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="sanjuan" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -97,6 +97,24 @@ export default function SanJuan() {
               <div className="mt-2 text-[11px] text-mare-500">
                 <p>🚗 {spot.parking}</p>
                 <p>🚕 {spot.transport}</p>
+              </div>
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                <a
+                  href={spot.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
+                >
+                  <Map className="w-3 h-3" /> Maps
+                </a>
+                <a
+                  href={spot.tripadvisorLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
+                >
+                  <Star className="w-3 h-3" /> TA
+                </a>
               </div>
             </motion.div>
           ))}

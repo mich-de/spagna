@@ -12,35 +12,40 @@
         "type": "bar de vinos",
         "price": "€",
         "vibe": "vino, conversazione, autentico",
-        "mapLink": "https://www.google.com/maps/place/La+Tranca/@36.7242,-4.4178,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Tranca%20Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Tranca+M%C3%A1laga%20centro"
       },
       {
         "name": "Orellana",
         "type": "cocktail bar",
         "price": "€€",
         "vibe": "speakeasy, cocktail di qualità",
-        "mapLink": "https://www.google.com/maps/place/Orellana/@36.7215,-4.4185,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Orellana%20Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Orellana+M%C3%A1laga%20centro"
       },
       {
         "name": "Velvet",
         "type": "club",
         "price": "€€",
         "vibe": "musica, dance, giovane",
-        "mapLink": "https://www.google.com/maps/place/Velvet+Club+M%C3%A1laga/@36.7225,-4.4215,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Velvet%20Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Velvet+M%C3%A1laga%20centro"
       },
       {
         "name": "La Cochera",
         "type": "live music",
         "price": "€",
         "vibe": "flamenco, autentico, piccolo",
-        "mapLink": "https://www.google.com/maps/place/La+Cochera+Cabaret/@36.7025,-4.4445,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Cochera%20Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Cochera+M%C3%A1laga%20centro"
       }
     ],
     "dressCode": "casual chic",
     "transport": "taxi/Uber (€8-12 in centro)",
     "socialEase": 9,
     "notes": "Málaga è la città più facile per socializzare. La gente è aperta, ci sono molti locali, i prezzi sono bassi. Perfetta per la sera.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Nightlife"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Nightlife",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=M%C3%A1laga%20centro+Nightlife+Costa+del+Sol"
   },
   {
     "zone": "Marbella casco antiguo",
@@ -55,21 +60,24 @@
         "type": "cocktail bar",
         "price": "€€€",
         "vibe": "naturale, fresco, giardino",
-        "mapLink": "https://www.google.com/maps/place/The+Farm/@36.5108,-4.8838,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=The%20Farm%20Marbella%20Old%20Town",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=The%20Farm+Marbella%20casco%20antiguo"
       },
       {
         "name": "La Plaza",
         "type": "wine bar",
         "price": "€€",
         "vibe": "elegante, conversazione",
-        "mapLink": "https://www.google.com/maps/place/La+Plaza+Village/@36.5025,-4.9185,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Plaza%20Marbella%20Old%20Town",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Plaza+Marbella%20casco%20antiguo"
       },
       {
         "name": "Gran Marbella",
         "type": "club",
         "price": "€€€",
         "vibe": "classico, esclusivo",
-        "mapLink": "https://www.google.com/maps/place/Casino+Marbella/@36.4885,-4.9655,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Gran%20Marbella%20Marbella%20Old%20Town",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Gran%20Marbella+Marbella%20casco%20antiguo"
       }
     ],
     "dressCode": "elegante curato",
@@ -80,7 +88,8 @@
     "videos": [
       "https://www.youtube.com/watch?v=_p48aPaVjgc",
       "https://www.youtube.com/watch?v=ronOs-MxuPs"
-    ]
+    ],
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Marbella%20casco%20antiguo+Nightlife+Costa+del+Sol"
   },
   {
     "zone": "Puerto Banús",
@@ -95,28 +104,32 @@
         "type": "club",
         "price": "€€€€",
         "vibe": "party, internazionale, glamour",
-        "mapLink": "https://www.google.com/maps/place/TIBU+Marbella/@36.4875,-4.9535,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=TIBU%20Marbella%20Puerto%20Banus%20Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=TIBU%20Marbella+Puerto%20Ban%C3%BAs"
       },
       {
         "name": "Mirage",
         "type": "club",
         "price": "€€€€",
         "vibe": "high-end, visual incredibili",
-        "mapLink": "https://www.google.com/maps/place/Mirage+Marbella/@36.4895,-4.9585,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Mirage%20Puerto%20Banus%20Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mirage+Puerto%20Ban%C3%BAs"
       },
       {
         "name": "Olivia Valère",
         "type": "club iconico",
         "price": "€€€€€",
         "vibe": "lussuoso, orientale, vedere e farsi vedere",
-        "mapLink": "https://www.google.com/maps/place/Olivia+Val%C3%A8re/@36.5025,-4.9215,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Olivia%20Val%C3%A8re%20Puerto%20Banus%20Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Olivia%20Val%C3%A8re+Puerto%20Ban%C3%BAs"
       },
       {
         "name": "Mogli Marbella",
         "type": "pool club/nightlife",
         "price": "€€€€",
         "vibe": "Mayan vibes, trendy, party in piscina",
-        "mapLink": "https://www.google.com/maps/place/Mogli+Marbella/@36.4915,-4.9545,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Mogli%20Marbella%20Puerto%20Banus%20Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mogli%20Marbella+Puerto%20Ban%C3%BAs"
       }
     ],
     "dressCode": "elegante/serale (niente shorts o ciabatte)",
@@ -128,7 +141,8 @@
       "https://www.youtube.com/watch?v=ronOs-MxuPs",
       "https://www.youtube.com/watch?v=1UVEFm2Loe4",
       "https://www.youtube.com/watch?v=WujtSTv4hYY"
-    ]
+    ],
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Puerto%20Ban%C3%BAs+Nightlife+Costa+del+Sol"
   },
   {
     "zone": "Benalmádena Marina",
@@ -143,14 +157,16 @@
         "type": "club",
         "price": "€€",
         "vibe": "latino, dance, divertente",
-        "mapLink": "https://www.google.com/maps/place/Palacio+de+la+Papaya/@36.5985,-4.5125,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20la%20Papaya%20Benalmadena%20Marina",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Palacio%20de%20la%20Papaya+Benalm%C3%A1dena%20Marina"
       },
       {
         "name": "Lin's Irish Pub",
         "type": "pub",
         "price": "€",
         "vibe": "birra, internazionale",
-        "mapLink": "https://www.google.com/maps/place/Lin's+Irish+Pub/@36.5965,-4.5145,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Lin's%20Irish%20Pub%20Benalmadena%20Marina",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Lin's%20Irish%20Pub+Benalm%C3%A1dena%20Marina"
       }
     ],
     "dressCode": "casual",
@@ -161,7 +177,8 @@
     "videos": [
       "https://www.youtube.com/watch?v=1SvMpmZYlnI",
       "https://www.youtube.com/watch?v=FLW3g2Rcya0"
-    ]
+    ],
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Benalm%C3%A1dena%20Marina+Nightlife+Costa+del+Sol"
   },
   {
     "zone": "Estepona centro",
@@ -176,20 +193,23 @@
         "type": "wine bar",
         "price": "€",
         "vibe": "vino, chiacchiere",
-        "mapLink": "https://www.google.com/maps/place/La+Casita+de+Estepona/@36.4265,-5.1465,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Casita%20Estepona",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Casita+Estepona%20centro"
       },
       {
         "name": "Bar La Plaza",
         "type": "tapas bar",
         "price": "€",
         "vibe": "locale, autentico",
-        "mapLink": "https://www.google.com/maps/place/Bar+La+Plaza+Estepona/@36.4255,-5.1455,17z"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Bar%20La%20Plaza%20Estepona",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Bar%20La%20Plaza+Estepona%20centro"
       }
     ],
     "dressCode": "casual",
     "transport": "auto o taxi",
     "socialEase": 6,
     "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Centro+Nightlife"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Centro+Nightlife",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Estepona%20centro+Nightlife+Costa+del+Sol"
   }
 ]

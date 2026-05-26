@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Car, ParkingCircle, AlertTriangle, Clock, Gauge, ShieldCheck } from 'lucide-react'
+import { Car, ParkingCircle, AlertTriangle, Clock, Gauge, ShieldCheck, ExternalLink } from 'lucide-react'
 import log from '@/data/logistics.json'
 
 export default function Logistics() {
   return (
-    <section id="logistics" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="logistics" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,20 @@ export default function Logistics() {
                 <Car className="w-5 h-5 text-terracotta-500" /> Noleggio auto
               </h3>
               <p className="text-sm text-mare-700/70 mb-2"><strong>Aeroporto:</strong> {log.carRental.airport}</p>
-              <p className="text-sm text-mare-700/70 mb-2"><strong>Consigliato:</strong> {log.carRental.recommended}</p>
+              <p className="text-sm text-mare-700/70 mb-2">
+                <strong>Consigliato:</strong>{' '}
+                {log.carRental.recommended}
+                {log.carRental.recommendedMapLink && (
+                  <a
+                    href={log.carRental.recommendedMapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-1 text-terracotta-500 hover:text-terracotta-600 transition-colors inline-flex items-center gap-0.5"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+              </p>
               <p className="text-sm text-mare-700/70 mb-2"><strong>Taglia:</strong> {log.carRental.size}</p>
               <div className="p-3 bg-amber-50 rounded-xl text-xs text-amber-800">
                 <AlertTriangle className="w-4 h-4 inline mr-1" /> {log.carRental.tip}

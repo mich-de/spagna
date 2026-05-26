@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Map, Star } from 'lucide-react'
 import foods from '@/data/food.json'
 import restaurants from '@/data/restaurants.json'
 
@@ -8,7 +9,7 @@ const zones = ['Tutte', ...new Set(restaurants.map((r: any) => r.zone).sort())]
 
 export default function Food() {
   return (
-    <section id="food" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="food" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +75,7 @@ export default function Food() {
                 <p className="text-xs text-mare-500 mb-1">{r.zone} · {r.type}</p>
                 <p className="text-xs text-mare-700/60 mb-2">{r.description}</p>
                 <p className="text-xs font-medium text-terracotta-600 mb-2">🔥 {r.specialty}</p>
-                <div className="flex flex-wrap gap-1.5 text-xs">
+                <div className="flex flex-wrap gap-1.5 text-xs mb-3">
                   <span className={`px-2 py-0.5 rounded ${
                     r.reservation.includes('no') ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
                   }`}>
@@ -83,6 +84,26 @@ export default function Food() {
                   <span className="px-2 py-0.5 bg-terracotta-50 text-mare-700 rounded">
                     🕐 {r.bestTime}
                   </span>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <a
+                    href={r.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
+                  >
+                    <Map className="w-3.5 h-3.5" />
+                    Maps
+                  </a>
+                  <a
+                    href={r.tripadvisorLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
+                  >
+                    <Star className="w-3.5 h-3.5" />
+                    TripAdvisor
+                  </a>
                 </div>
                 {r.localTip && (
                   <p className="text-xs text-terracotta-600 mt-2 italic border-t border-terracotta-100/30 pt-2">

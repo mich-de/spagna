@@ -11,7 +11,8 @@
     "distance_min": 40,
     "localTip": "Qui si viene per vedere la 'Ola del Melillero' (l'onda del traghetto da Melilla che bagna tutti alle 19:30).",
     "turismLevel": "medio",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Misericordia+Costa+del+Sol"
   },
   {
     "name": "Playa de la Malagueta",
@@ -25,7 +26,8 @@
     "distance_min": 45,
     "localTip": "Perfetta per un tuffo veloce dopo il centro. Noleggia ombrellone in anticipo a giugno",
     "turismLevel": "alto",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Malagueta+Costa+del+Sol"
   },
   {
     "name": "Playa de Pedregalejo",
@@ -39,7 +41,8 @@
     "distance_min": 50,
     "localTip": "Vieni per mangiare. I chiringuiti qui sono i migliori della città. Ordina espetos de sardinas",
     "turismLevel": "medio",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Pedregalejo+Costa+del+Sol"
   },
   {
     "name": "Playa de Bil Bil",
@@ -53,7 +56,8 @@
     "distance_min": 25,
     "localTip": "Carina ma turistica. Usala per un'ora se sei in zona, non è il top. La guida video sottolinea che il lungomare ha una palestra gratuita all'aperto e chiringuiti con camerieri che servono nella sabbia.",
     "turismLevel": "alto",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Bil+Bil+Benalmadena"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Bil+Bil+Benalmadena",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Bil%20Bil+Costa+del+Sol"
   },
   {
     "name": "Playa de Carvajal",
@@ -67,7 +71,8 @@
     "distance_min": 25,
     "localTip": "Ombrelloni economici rispetto a Marbella. Ottima per una giornata senza pretese",
     "turismLevel": "medio",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carvajal+Fuengirola"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carvajal+Fuengirola",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carvajal+Costa+del+Sol"
   },
   {
     "name": "Playa de Cabopino",
@@ -81,7 +86,8 @@
     "distance_min": 15,
     "localTip": "LA MIGLIORE nei dintorni di Marbella. Parcheggio gratuito, acqua pulita, atmosfera rilassata. Vai presto in stagione",
     "turismLevel": "medio-basso",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Cabopino+Marbella"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Cabopino+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Cabopino+Costa+del+Sol"
   },
   {
     "name": "Playa de Nagüeles",
@@ -95,7 +101,8 @@
     "distance_min": 10,
     "localTip": "È la spiaggia dove va chi ha casa a Marbella. Meno turistica del previsto, molto civile",
     "turismLevel": "medio",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Nagüeles+Marbella"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Nagüeles+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Nag%C3%BCeles+Costa+del+Sol"
   },
   {
     "name": "Playa del Cristo",
@@ -109,7 +116,8 @@
     "distance_min": 20,
     "localTip": "Acqua caldissima e piatta. Perfetta per nuotare lontano. I chiringuiti sulla sinistra sono i migliori. La guida video locale la descrive come 'baia riparata con acque calme e sabbi morbide — ideale per famiglie'. Vicino c'è Sonora Beach Club per socializzare con musica dal vivo.",
     "turismLevel": "medio",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cristo+Estepona"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cristo+Estepona",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Cristo+Costa+del+Sol"
   },
   {
     "name": "Playa de la Rada",
@@ -123,7 +131,8 @@
     "distance_min": 22,
     "localTip": "Dopo le 18:00 si riempie di locali che fanno sport. Bel mix di gente",
     "turismLevel": "medio-basso",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Rada+Costa+del+Sol"
   },
   {
     "name": "Playa de San Pedro de Alcántara",
@@ -137,7 +146,8 @@
     "distance_min": 5,
     "localTip": "Il parcheggio è gratis sul lungomare. Meno famosa delle vicine, quindi più spaziosa. Perfetta per giornate intere",
     "turismLevel": "basso",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+San+Pedro+de+Alcantara"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+San+Pedro+de+Alcantara",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20San%20Pedro%20de%20Alc%C3%A1ntara+Costa+del+Sol"
   },
   {
     "name": "Playa de Fontanilla",
@@ -151,7 +161,8 @@
     "distance_min": 10,
     "localTip": "Il sabato pomeriggio è un runway della moda marbellí. Divertente da guardare la gente",
     "turismLevel": "alto",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Fontanilla+Marbella"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Fontanilla+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Fontanilla+Costa+del+Sol"
   },
   {
     "name": "Playa de la Carihuela",
@@ -165,7 +176,8 @@
     "distance_min": 35,
     "localTip": "I chiringuiti qui sono leggendari per il pesce. Molto frequentata dalla comunità olandese. Perfetta per lo shopping e passeggiate tra Torremolinos e Benalmádena.",
     "turismLevel": "alto",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Carihuela+Costa+del+Sol"
   },
   {
     "name": "Playa de la Viborilla",
@@ -179,6 +191,7 @@
     "distance_min": 18,
     "localTip": "Porta ombrellone, acqua e cibo. Non ci sono servizi. È selvaggia e bellissima",
     "turismLevel": "bassissimo",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Viborilla+Benalmadena"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Viborilla+Benalmadena",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Viborilla+Costa+del+Sol"
   }
 ]

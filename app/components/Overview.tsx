@@ -7,7 +7,7 @@ import recommendedBase from '@/data/recommended-base.json'
 
 export default function Overview() {
   return (
-    <section id="overview" className="px-4 sm:px-6 pt-8 pb-4">
+    <section id="overview" className="scroll-mt-20 px-4 sm:px-6 pt-8 pb-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -12,7 +12,9 @@
       "parking": "Zona Paseo Antonio Banderas (pieno dalle 20:00)",
       "transport": "Bus linee 7, 15, 40 o Metro L2 (fino alle 02:00)",
       "social": 10,
-      "authenticity": 9
+      "authenticity": 9,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Misericordia+Malaga"
     },
     {
       "name": "Playa de Pedregalejo",
@@ -23,7 +25,9 @@
       "parking": "Parcheggio remoto + 15min a piedi",
       "transport": "Bus linee 3, 11 o Taxi",
       "social": 8,
-      "authenticity": 10
+      "authenticity": 10,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Pedregalejo+Malaga"
     },
     {
       "name": "Playa de la Malagueta",
@@ -34,7 +38,9 @@
       "parking": "Parking Muelle Uno (€20+ notte)",
       "transport": "A piedi dal centro",
       "social": 9,
-      "authenticity": 7
+      "authenticity": 7,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Malagueta+Malaga"
     },
     {
       "name": "Cabopino",
@@ -45,7 +51,9 @@
       "parking": "Parcheggio dune (arriva presto)",
       "transport": "Solo auto (30min da Málaga)",
       "social": 6,
-      "authenticity": 8
+      "authenticity": 8,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Cabopino+Playa+Marbella",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cabopino+Playa+Marbella"
     }
   ],
   "schedule": {

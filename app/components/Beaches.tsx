@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { Search, MapPin, Waves, Car, Clock } from 'lucide-react'
+import { Search, MapPin, Waves, Car, Clock, Map, Star } from 'lucide-react'
 import beaches from '@/data/beaches.json'
 
 const zones = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.zone))).sort()]
@@ -23,7 +23,7 @@ export default function Beaches() {
   [search, zoneFilter, atmosFilter])
 
   return (
-    <section id="beaches" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="beaches" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -102,6 +102,26 @@ export default function Beaches() {
                   <Waves className="w-3 h-3 text-terracotta-400" />
                   {beach.sand}{beach.chiringuitos ? ' · Chiringuiti ✅' : ''}
                 </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-3">
+                <a
+                  href={beach.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
+                >
+                  <Map className="w-3.5 h-3.5" />
+                  Maps
+                </a>
+                <a
+                  href={beach.tripadvisorLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
+                >
+                  <Star className="w-3.5 h-3.5" />
+                  TripAdvisor
+                </a>
               </div>
               {beach.localTip && (
                 <div className="p-2.5 bg-gradient-to-r from-terracotta-50 to-crema/50 rounded-lg">

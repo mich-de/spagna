@@ -28,7 +28,8 @@ export default function Home() {
     setActiveSection(id)
     const el = document.getElementById(id)
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const top = el.getBoundingClientRect().top + window.scrollY - 80
+      window.scrollTo({ top, behavior: 'smooth' })
     }
   }, [])
 
@@ -42,7 +43,7 @@ export default function Home() {
           }
         }
       },
-      { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
+      { rootMargin: '-80px 0px -50% 0px', threshold: 0 }
     )
 
     sections.forEach((id) => {

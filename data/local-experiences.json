@@ -4,111 +4,143 @@
     "where": "Qualsiasi bar locale — Central Malagueta a Málaga",
     "when": "08:00-10:00",
     "cost": "€3-5",
-    "tip": "Ordina 'tostada con tomate y aceite' (o un pitufo) + café con leche. Impara i 9 modi di chiedere il caffè a Málaga."
+    "tip": "Ordina 'tostada con tomate y aceite' (o un pitufo) + café con leche. Impara i 9 modi di chiedere il caffè a Málaga.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Central+Malagueta+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Central+Malagueta+Malaga"
   },
   {
     "title": "Passeggiata sul Paseo Marítimo",
     "where": "Málaga, Marbella, Estepona — tutti i lungomare",
     "when": "19:00-21:00 (la ora del paseo)",
     "cost": "gratuito",
-    "tip": "È il rito sociale spagnolo. Vestiti bene, cammina lentamente, guarda la gente"
+    "tip": "È il rito sociale spagnolo. Vestiti bene, cammina lentamente, guarda la gente",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Paseo+Maritimo+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Paseo+Maritimo+Costa+del+Sol"
   },
   {
     "title": "Tapas crawl",
     "where": "Málaga — Calle Marín García o Calle Granada",
     "when": "20:00-22:00",
     "cost": "€15-25 (3-4 tapas bar)",
-    "tip": "Ordina UNA tapa + UNA birra per bar. Non sederti, sta' al bancone. Poi cambia locale"
+    "tip": "Ordina UNA tapa + UNA birra per bar. Non sederti, sta' al bancone. Poi cambia locale",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Calle+Marin+Garcia+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Calle+Marin+Garcia+Malaga"
   },
   {
     "title": "Mercado de Atarazanas",
     "where": "Málaga centro",
     "when": "Mattina (09:00-14:00)",
     "cost": "gratuito (cibo extra)",
-    "tip": "Entra, guarda, annusa. Compra frutta secca o olive. Mangia al banco di pesce"
+    "tip": "Entra, guarda, annusa. Compra frutta secca o olive. Mangia al banco di pesce",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mercado+de+Atarazanas+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mercado+Atarazanas+Malaga"
   },
   {
     "title": "Aperitivo al tramonto in chiringuito",
     "where": "Qualsiasi spiaggia — Cabopino è il top",
     "when": "20:00-21:30",
     "cost": "€10-20",
-    "tip": "Ordina un tinto de verano e delle olive. Guarda il sole. Non serve altro"
+    "tip": "Ordina un tinto de verano e delle olive. Guarda il sole. Non serve altro",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Cabopino+Playa+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cabopino+Beach+Marbella"
   },
   {
     "title": "Cena tardi come gli spagnoli",
     "where": "Ovunque",
     "when": "21:30-23:00 (MAI prima delle 21:00)",
     "cost": "varia",
-    "tip": "I turisti cenano alle 19:00-20:00. I locali dopo le 21:30. Cenare tardi = essere locale"
+    "tip": "I turisti cenano alle 19:00-20:00. I locali dopo le 21:30. Cenare tardi = essere locale",
+    "mapLink": null,
+    "tripadvisorLink": null
   },
   {
     "title": "Giornata lenta in spiaggia",
     "where": "San Pedro de Alcántara o Cabopino",
     "when": "11:00-18:00",
     "cost": "€0-20 (ombrellone)",
-    "tip": "Libro, musica, bagni ogni ora, pranzo al chiringuito. Non fare niente. È la vacanza"
+    "tip": "Libro, musica, bagni ogni ora, pranzo al chiringuito. Non fare niente. È la vacanza",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=San+Pedro+de+Alcantara+Playa",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=San+Pedro+de+Alcantara+Beach"
   },
   {
     "title": "Flamenco in un tablao locale",
     "where": "La Cochera (Málaga) o piccolo tablao a Marbella",
     "when": "22:00",
     "cost": "€15-25",
-    "tip": "Evita i tablao turistici. Cerca posti piccoli con artisti locali. Più veri, più belli"
+    "tip": "Evita i tablao turistici. Cerca posti piccoli con artisti locali. Più veri, più belli",
+    "mapLink": "https://www.google.com/maps/place/La+Cochera+Cabaret/@36.7025,-4.4445,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La+Cochera+Cabaret+Malaga"
   },
   {
     "title": "Mercadillo (mercatino locale)",
     "where": "Mercadillo di Marbella (lunedì) o Estepona (mercoledì)",
     "when": "09:00-14:00",
     "cost": "gratuito",
-    "tip": "Abbigliamento, artigianato, cibo. Più per l'esperienza che per comprare"
+    "tip": "Abbigliamento, artigianato, cibo. Più per l'esperienza che per comprare",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mercadillo+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mercadillo+Marbella"
   },
   {
     "title": "Mercato di Fuengirola (martedì)",
     "where": "Fuengirola — fermata autobus Recinto Ferial",
     "when": "martedì 09:00-14:00",
     "cost": "gratuito",
-    "tip": "Il mercato più grande della zona. Polo, borse, orologi di marca a prezzi stracciati (ma contratta sempre — partono alti). La guida video lo consiglia caldamente per lo shopping low-cost."
+    "tip": "Il mercato più grande della zona. Polo, borse, orologi di marca a prezzi stracciati (ma contratta sempre — partono alti). La guida video lo consiglia caldamente per lo shopping low-cost.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mercado+Fuengirola+Recinto+Ferial",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mercado+Fuengirola"
   },
   {
     "title": "Visita a un borgo bianco",
     "where": "Mijas Pueblo o Casares",
     "when": "Mattina presto (09:00-11:00)",
     "cost": "gratuito",
-    "tip": "Arriva prima che arrivino i tour. Le strade deserte sono magiche"
+    "tip": "Arriva prima che arrivino i tour. Le strade deserte sono magiche",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mijas+Pueblo+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mijas+Pueblo+Malaga"
   },
   {
     "title": "Giro a Puerto Banús da locale",
     "where": "Puerto Banús",
     "when": "Tramonto (20:00-22:00)",
     "cost": "€10-20 (un drink)",
-    "tip": "Ordina UN drink, goditi lo spettacolo delle barche e della gente. Poi vai a cena altrove"
+    "tip": "Ordina UN drink, goditi lo spettacolo delle barche e della gente. Poi vai a cena altrove",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Marbella",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Puerto+Banus+Marbella"
   },
   {
     "title": "Pescaíto fritto in chiringuito",
     "where": "Pedregalejo (La Deriva o El Candado)",
     "when": "Pranzo (14:00-15:30)",
     "cost": "€15-25",
-    "tip": "Condividi. Ordina 3-4 fritti diversi e una insalata. Birra ghiacciata"
+    "tip": "Condividi. Ordina 3-4 fritti diversi e una insalata. Birra ghiacciata",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Pedregalejo+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pedregalejo+Malaga+chiringuito"
   },
   {
     "title": "Pomeriggio di siesta",
     "where": "A casa tua o in spiaggia",
     "when": "15:00-17:00",
     "cost": "gratuito",
-    "tip": "Non combattere il caldo. Riposa. La sera ti ringrazierai"
+    "tip": "Non combattere il caldo. Riposa. La sera ti ringrazierai",
+    "mapLink": null,
+    "tripadvisorLink": null
   },
   {
     "title": "Degustazione di vino dolce di Málaga",
     "where": "El Pimpi o enoteca specializzata",
     "when": "Dopo cena (23:00+)",
     "cost": "€10-15",
-    "tip": "Ordina un 'Málaga Virgen' dolce. Bevilo lentamente. È dessert e digestivo insieme"
+    "tip": "Ordina un 'Málaga Virgen' dolce. Bevilo lentamente. È dessert e digestivo insieme",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Pimpi+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El+Pimpi+Malaga"
   },
   {
     "title": "Notte di San Juan in spiaggia",
     "where": "Pedregalejo o Malagueta",
     "when": "23 giugno — dalle 22:00",
     "cost": "€10-20",
-    "tip": "PORTA TUTTO: birra, costume, felpa, amici. È la notte più bella dell'anno"
+    "tip": "PORTA TUTTO: birra, costume, felpa, amici. È la notte più bella dell'anno",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Pedregalejo+Malaga+San+Juan",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pedregalejo+San+Juan+Malaga"
   }
 ]

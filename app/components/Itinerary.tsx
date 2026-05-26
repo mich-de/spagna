@@ -27,7 +27,7 @@ export default function Itinerary() {
   const [openDay, setOpenDay] = useState<number | null>(0)
 
   return (
-    <section id="itinerary" className="px-4 sm:px-6 pt-16 pb-8">
+    <section id="itinerary" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

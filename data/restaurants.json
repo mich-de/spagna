@@ -11,7 +11,8 @@
     "parking": "Parking centro (€2/h)",
     "bestTime": "pranzo o cena (18:00 o 21:30 per evitare ressa)",
     "localTip": "VAI ALLE 18:00 per l'aperitivo. Meno folla, più atmosfera. Ordina il vino dolce della casa",
-    "mapLink": "https://www.google.com/maps/place/El+Pimpi/@36.7218,-4.4178,17z"
+    "mapLink": "https://www.google.com/maps/place/El+Pimpi/@36.7218,-4.4178,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Pimpi+M%C3%A1laga%20centro"
   },
   {
     "name": "Casa Lola",
@@ -25,7 +26,8 @@
     "parking": "Parking Merced (€2.5/h)",
     "bestTime": "pranzo (13:30-15:00)",
     "localTip": "Perfetto per un pasto veloce tra una visita e l'altra. Non ti sedere, resta al bancone",
-    "mapLink": "https://www.google.com/maps/place/Casa+Lola/@36.7215,-4.4185,17z"
+    "mapLink": "https://www.google.com/maps/place/Casa+Lola/@36.7215,-4.4185,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Casa%20Lola+M%C3%A1laga%20centro"
   },
   {
     "name": "La Deriva",
@@ -39,7 +41,8 @@
     "parking": "Vie laterali Pedregalejo",
     "bestTime": "cena al tramonto",
     "localTip": "Prendi gli espetos e siediti fuori. Con le pinte e i piedi sulla sabbia",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Deriva+Pedregalejo+Malaga"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Deriva+Pedregalejo+Malaga",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Deriva+Pedregalejo%20(M%C3%A1laga)"
   },
   {
     "name": "Lekune",
@@ -53,7 +56,8 @@
     "parking": "Parking calle Nuestra Señora de Gracia",
     "bestTime": "cena",
     "localTip": "Chiedi al pescivendolo cosa è arrivato fresco oggi. Non guardare il menu, fidati",
-    "mapLink": "https://www.google.com/maps/place/Lekune+Bar+de+Pintxos/@36.5085,-4.8915,17z"
+    "mapLink": "https://www.google.com/maps/place/Lekune+Bar+de+Pintxos/@36.5085,-4.8915,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Lekune+Marbella"
   },
   {
     "name": "Bar El Estrecho",
@@ -67,7 +71,8 @@
     "parking": "Parking Casco Antiguo",
     "bestTime": "aperitivo (20:00-21:00)",
     "localTip": "NON è Instagrammabile. È vero. Vieni per il pesce e l'atmosfera, non per le foto",
-    "mapLink": "https://www.google.com/maps/place/Bar+El+Estrecho/@36.5105,-4.8845,17z"
+    "mapLink": "https://www.google.com/maps/place/Bar+El+Estrecho/@36.5105,-4.8845,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Bar%20El%20Estrecho+Marbella%20centro"
   },
   {
     "name": "Casa Eladio",
@@ -81,7 +86,8 @@
     "parking": "Parking La Fontanilla",
     "bestTime": "pranzo",
     "localTip": "Il gazpacho qui è il migliore della città. Ordinalo come primo, non come accompagnamento",
-    "mapLink": "https://www.google.com/maps/place/Restaurante+Casa+Eladio/@36.5108,-4.8838,17z"
+    "mapLink": "https://www.google.com/maps/place/Restaurante+Casa+Eladio/@36.5108,-4.8838,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Casa%20Eladio+Marbella"
   },
   {
     "name": "Trocadero Playa",
@@ -95,7 +101,8 @@
     "parking": "Parking Puerto Banús (€3/h)",
     "bestTime": "tramonto o cena",
     "localTip": "Il prezzo è alto ma la qualità è reale. Ordina il riso e condividi. Prenota TAVOLO ESTERNO",
-    "mapLink": "https://www.google.com/maps/place/Trocadero+Playa/@36.5045,-4.9115,17z"
+    "mapLink": "https://www.google.com/maps/place/Trocadero+Playa/@36.5045,-4.9115,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Trocadero%20Playa+Puerto%20Ban%C3%BAs"
   },
   {
     "name": "La Escollera",
@@ -109,7 +116,8 @@
     "parking": "Lungomare gratuito",
     "bestTime": "tramonto (vista impagabile)",
     "localTip": "IL MIGLIOR FRITTO MISTO della Costa del Sol. Vieni al tramonto e ordina tutto quello che vedi",
-    "mapLink": "https://www.google.com/maps/place/Restaurante+La+Escollera/@36.4135,-5.1585,17z"
+    "mapLink": "https://www.google.com/maps/place/Restaurante+La+Escollera/@36.4135,-5.1585,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Escollera+Estepona"
   },
   {
     "name": "Chiringuito Cabopino",
@@ -123,7 +131,8 @@
     "parking": "Parcheggio gratuito dune",
     "bestTime": "pranzo",
     "localTip": "Vieni a piedi nudi. Ordina le sardine e una birra. Non c'è niente di meglio",
-    "mapLink": "https://www.google.com/maps/place/Chiringuito+Las+Dunas/@36.4845,-4.7435,17z"
+    "mapLink": "https://www.google.com/maps/place/Chiringuito+Las+Dunas/@36.4845,-4.7435,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Chiringuito%20Cabopino+Cabopino%20(Marbella)"
   },
   {
     "name": "Chiringuito Los Troncos",
@@ -137,7 +146,8 @@
     "parking": "Lungomare gratis",
     "bestTime": "pranzo (13:30-15:00)",
     "localTip": "Se vedi tanti spagnoli, sei nel posto giusto. Qui ci viene chi vive a San Pedro tutto l'anno",
-    "mapLink": "https://www.google.com/maps/place/Chiringuito+Los+Troncos/@36.4785,-4.9885,17z"
+    "mapLink": "https://www.google.com/maps/place/Chiringuito+Los+Troncos/@36.4785,-4.9885,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Chiringuito%20Los%20Troncos+San%20Pedro%20de%20Alc%C3%A1ntara"
   },
   {
     "name": "La Taberna de Mijas",
@@ -151,7 +161,8 @@
     "parking": "Parking Mijas (€1.5/h)",
     "bestTime": "pranzo (vista incredibile)",
     "localTip": "Chiedi di sederti sul lato panorama. Il rabo de toro è il loro piatto forte",
-    "mapLink": "https://www.google.com/maps/place/La+Taberna+de+Mijas/@36.5955,-4.6385,17z"
+    "mapLink": "https://www.google.com/maps/place/La+Taberna+de+Mijas/@36.5955,-4.6385,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Taberna%20de%20Mijas+Mijas%20Pueblo"
   },
   {
     "name": "El Candado",
@@ -165,7 +176,8 @@
     "parking": "Paseo Marítimo Pedregalejo",
     "bestTime": "cena",
     "localTip": "Va lì da 50 anni. Se vuoi capire cos'è un chiringuito vero, vieni qui",
-    "mapLink": "https://www.google.com/maps/place/Restaurante+El+Candado+Beach/@36.7165,-4.3485,17z"
+    "mapLink": "https://www.google.com/maps/place/Restaurante+El+Candado+Beach/@36.7165,-4.3485,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Candado+Pedregalejo%20(M%C3%A1laga)"
   },
   {
     "name": "Amàre Marbella",
@@ -179,7 +191,8 @@
     "parking": "Parking Amàre (gratuito per clienti)",
     "bestTime": "tutto il giorno",
     "localTip": "Prenota LETTINO + PRANZO. Se arrivi solo per mangiare, perdi metà dell'esperienza",
-    "mapLink": "https://www.google.com/maps/place/Am%C3%A0re+Beach+Hotel+Marbella/@36.5085,-4.8815,17z"
+    "mapLink": "https://www.google.com/maps/place/Am%C3%A0re+Beach+Hotel+Marbella/@36.5085,-4.8815,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Am%C3%A0re%20Marbella+Marbella"
   },
   {
     "name": "Nikki Beach",
@@ -193,7 +206,8 @@
     "parking": "Valet parking (incluso)",
     "bestTime": "pomeriggio (dalle 15:00)",
     "localTip": "Non venire per il silenzio. Vieni per vedere e farti vedere. Domenica è il giorno migliore",
-    "mapLink": "https://www.google.com/maps/place/Nikki+Beach+Marbella/@36.4895,-4.7735,17z"
+    "mapLink": "https://www.google.com/maps/place/Nikki+Beach+Marbella/@36.4895,-4.7735,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Nikki%20Beach+Marbella"
   },
   {
     "name": "Central Malagueta",
@@ -207,7 +221,8 @@
     "parking": "Parking Plaza de Toros",
     "bestTime": "mattina (08:30-10:30)",
     "localTip": "Ordina un 'pitufo mixto' e impara i 9 modi di chiedere il caffè a Málaga. Chiedi la storia delle piastrelle originali.",
-    "mapLink": "https://www.google.com/maps/place/Central+Malagueta/@36.7195,-4.4115,17z"
+    "mapLink": "https://www.google.com/maps/place/Central+Malagueta/@36.7195,-4.4115,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Central%20Malagueta+M%C3%A1laga"
   },
   {
     "name": "Victor's Beach",
@@ -221,7 +236,8 @@
     "parking": "Parcheggio sterrato vicino",
     "bestTime": "pomeriggio tardo/tramonto",
     "localTip": "È il posto preferito dai residenti storici. Non venire qui per il glamour, vieni per il pesce e il tramonto.",
-    "mapLink": "https://www.google.com/maps/place/Victor's+Beach/@36.5015,-4.9215,17z"
+    "mapLink": "https://www.google.com/maps/place/Victor's+Beach/@36.5015,-4.9215,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Victor's%20Beach+Marbella%20(Golden%20Mile)"
   },
   {
     "name": "El Pirata",
@@ -235,7 +251,8 @@
     "parking": "Lungomare",
     "bestTime": "pranzo (14:00-16:00)",
     "localTip": "La paella qui è tra le migliori di Estepona. Da gustare rigorosamente con i piedi nella sabbia.",
-    "mapLink": "https://www.google.com/maps/place/Chiringuito+El+Pirata/@36.4515,-5.0585,17z"
+    "mapLink": "https://www.google.com/maps/place/Chiringuito+El+Pirata/@36.4515,-5.0585,17z",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Pirata+Estepona"
   },
   {
     "name": "Pizzeria Picasso",
@@ -249,7 +266,8 @@
     "parking": "Parking Puerto Banús",
     "bestTime": "sempre busy",
     "localTip": "Nonostante la fama, mantiene un buon rapporto qualità-prezzo per la zona. Ideale per famiglie.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Picasso+Puerto+Banus"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Picasso+Puerto+Banus",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pizzeria%20Picasso+Puerto%20Ban%C3%BAs"
   },
   {
     "name": "Los Bandidos",
@@ -263,7 +281,8 @@
     "parking": "Parking Puerto Banús",
     "bestTime": "sera",
     "localTip": "Chiuso in alcuni giorni festivi o bassa stagione, verifica sempre. Molto amato dalla clientela storica.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Los+Bandidos+Puerto+Banus"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Los+Bandidos+Puerto+Banus",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Los%20Bandidos+Puerto%20Ban%C3%BAs"
   },
   {
     "name": "Asia Restaurant",
@@ -277,7 +296,8 @@
     "parking": "Parking Puerto Deportivo (€1.5/h)",
     "bestTime": "cena (20:00-22:00)",
     "localTip": "Prezzo fisso €20 — paghi una volta e mangi quanto vuoi. Ottimo rapporto qualità/prezzo.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Asia+Restaurant+Benalmadena+Marina"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Asia+Restaurant+Benalmadena+Marina",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Asia%20Restaurant+Benalm%C3%A1dena%20Marina"
   },
   {
     "name": "W Restaurant",
@@ -291,7 +311,8 @@
     "parking": "Parking Puerto Deportivo (€1.5/h)",
     "bestTime": "cena",
     "localTip": "Alternativa più tranquilla ad Asia. Buono per una cena meno caotica.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=W+Restaurant+Benalmadena+Marina"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=W+Restaurant+Benalmadena+Marina",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=W%20Restaurant+Benalm%C3%A1dena%20Marina"
   },
   {
     "name": "Los Pescadores",
@@ -305,7 +326,8 @@
     "parking": "Parking Marina Estepona",
     "bestTime": "pranzo (14:00-16:00)",
     "localTip": "L'atmosfera è spartana ma il pesce è appena pescato. Accompagna con vino bianco locale.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Los+Pescadores+Estepona+Marina"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Los+Pescadores+Estepona+Marina",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Los%20Pescadores+Estepona%20marina"
   },
   {
     "name": "El Patio de Macarena",
@@ -319,6 +341,7 @@
     "parking": "Parking Centro Estepona",
     "bestTime": "cena (21:00-22:30)",
     "localTip": "Il patio è il posto più bello. Vieni per le tapas e resta per l'atmosfera. Spesso c'è musica dal vivo.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Patio+de+Macarena+Estepona"
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Patio+de+Macarena+Estepona",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Patio%20de%20Macarena+Estepona%20centro"
   }
 ]
