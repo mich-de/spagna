@@ -1,6 +1,6 @@
 {
   "medium": {
-    "accommodation_total": 840,
+    "accommodation_total": 700,
     "car_rental_total": 350,
     "fuel_total": 60,
     "parking_total": 70,
@@ -9,8 +9,8 @@
     "nightlife_total": 150,
     "museums_total": 40,
     "groceries_spuntini_total": 80,
-    "total_estimated": 2110,
-    "per_day": 350
+    "total_estimated": 1970,
+    "per_day": 280
   },
   "comfort": {
     "accommodation_total": 1260,

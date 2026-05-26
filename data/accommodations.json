@@ -1,0 +1,46 @@
+[
+  {
+    "id": "benalmadena-casa-rosa",
+    "name": "Hotel Casa Rosa",
+    "zone": "Benalmádena Pueblo",
+    "type": "Hotel Boutique",
+    "price_per_night": 75,
+    "features": ["Cancellazione gratuita", "Parcheggio pubblico facile", "Vista mare", "Atmosfera tradizionale"],
+    "description": "Situato nell'autentico Pueblo, lontano dal caos della costa. Gestione familiare, pulizia impeccabile.",
+    "mapLink": "https://www.google.com/maps/place/Hotel+Casa+Rosa/@36.5945,-4.5735,17z",
+    "bookingUrl": "https://www.booking.com/searchresults.html?ss=Hotel+Casa+Rosa+Benalmadena"
+  },
+  {
+    "id": "benalmadena-spirit",
+    "name": "Spirit Hotel Benalmádena",
+    "zone": "Benalmádena Costa",
+    "type": "Hotel",
+    "price_per_night": 95,
+    "features": ["Cancellazione gratuita", "WiFi gratis", "Piscina infinity", "Vicino alla spiaggia"],
+    "description": "Ottima posizione per chi vuole essere vicino a Puerto Marina e alle spiagge.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Spirit+Hotel+Benalmadena+Beach",
+    "bookingUrl": "https://www.booking.com/searchresults.html?ss=Spirit+Hotel+Benalmadena"
+  },
+  {
+    "id": "estepona-casa-azul",
+    "name": "CASA AZUL - Boutique Apartments",
+    "zone": "Estepona Centro",
+    "type": "Appartamento",
+    "price_per_night": 98,
+    "features": ["Cancellazione gratuita", "Parcheggio pubblico €3/giorno vicino", "300m dalla spiaggia", "Design moderno"],
+    "description": "Appartamenti eleganti nel cuore di Estepona. Perfetti per vivere come un locale.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Casa+Azul+Estepona+Boutique+Apartments",
+    "bookingUrl": "https://www.booking.com/searchresults.html?ss=Casa+Azul+Estepona"
+  },
+  {
+    "id": "estepona-oasis",
+    "name": "Oasis in Estepona with Parking",
+    "zone": "Estepona Centro/Porto",
+    "type": "Airbnb / Appartamento",
+    "price_per_night": 90,
+    "features": ["Cancellazione gratuita", "Parcheggio incluso", "5min a piedi dalla spiaggia", "Punteggio 9.6/10"],
+    "description": "Uno dei pochi appartamenti in centro con parcheggio privato incluso nel prezzo.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Oasis+Estepona+Apartment+Parking",
+    "bookingUrl": "https://www.airbnb.it/s/Estepona/homes"
+  }
+]
