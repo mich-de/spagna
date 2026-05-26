@@ -11,31 +11,36 @@
         "name": "La Tranca",
         "type": "bar de vinos",
         "price": "€",
-        "vibe": "vino, conversazione, autentico"
+        "vibe": "vino, conversazione, autentico",
+        "mapLink": "https://www.google.com/maps/place/La+Tranca/@36.7242,-4.4178,17z"
       },
       {
         "name": "Orellana",
         "type": "cocktail bar",
         "price": "€€",
-        "vibe": "speakeasy, cocktail di qualità"
+        "vibe": "speakeasy, cocktail di qualità",
+        "mapLink": "https://www.google.com/maps/place/Orellana/@36.7215,-4.4185,17z"
       },
       {
         "name": "Velvet",
         "type": "club",
         "price": "€€",
-        "vibe": "musica, dance, giovane"
+        "vibe": "musica, dance, giovane",
+        "mapLink": "https://www.google.com/maps/place/Velvet+Club+M%C3%A1laga/@36.7225,-4.4215,17z"
       },
       {
         "name": "La Cochera",
         "type": "live music",
         "price": "€",
-        "vibe": "flamenco, autentico, piccolo"
+        "vibe": "flamenco, autentico, piccolo",
+        "mapLink": "https://www.google.com/maps/place/La+Cochera+Cabaret/@36.7025,-4.4445,17z"
       }
     ],
     "dressCode": "casual chic",
     "transport": "taxi/Uber (€8-12 in centro)",
     "socialEase": 9,
-    "notes": "Málaga è la città più facile per socializzare. La gente è aperta, ci sono molti locali, i prezzi sono bassi. Perfetta per la sera."
+    "notes": "Málaga è la città più facile per socializzare. La gente è aperta, ci sono molti locali, i prezzi sono bassi. Perfetta per la sera.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Nightlife"
   },
   {
     "zone": "Marbella casco antiguo",
@@ -49,25 +54,29 @@
         "name": "The Farm",
         "type": "cocktail bar",
         "price": "€€€",
-        "vibe": "naturale, fresco, giardino"
+        "vibe": "naturale, fresco, giardino",
+        "mapLink": "https://www.google.com/maps/place/The+Farm/@36.5108,-4.8838,17z"
       },
       {
         "name": "La Plaza",
         "type": "wine bar",
         "price": "€€",
-        "vibe": "elegante, conversazione"
+        "vibe": "elegante, conversazione",
+        "mapLink": "https://www.google.com/maps/place/La+Plaza+Village/@36.5025,-4.9185,17z"
       },
       {
         "name": "Gran Marbella",
         "type": "club",
         "price": "€€€",
-        "vibe": "classico, esclusivo"
+        "vibe": "classico, esclusivo",
+        "mapLink": "https://www.google.com/maps/place/Casino+Marbella/@36.4885,-4.9655,17z"
       }
     ],
     "dressCode": "elegante curato",
     "transport": "taxi (€10-15)",
     "socialEase": 7,
-    "notes": "Marbella è più 'formale' per socializzare. Più status, più apparenza. Ma la qualità è alta."
+    "notes": "Marbella è più 'formale' per socializzare. Più status, più apparenza. Ma la qualità è alta.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Marbella+Old+Town+Nightlife"
   },
   {
     "zone": "Puerto Banús",
@@ -81,31 +90,36 @@
         "name": "TIBU Marbella",
         "type": "club",
         "price": "€€€€",
-        "vibe": "party, internazionale, glamour"
+        "vibe": "party, internazionale, glamour",
+        "mapLink": "https://www.google.com/maps/place/TIBU+Marbella/@36.4875,-4.9535,17z"
       },
       {
         "name": "Mirage",
         "type": "club",
         "price": "€€€€",
-        "vibe": "high-end, visual incredibili"
+        "vibe": "high-end, visual incredibili",
+        "mapLink": "https://www.google.com/maps/place/Mirage+Marbella/@36.4895,-4.9585,17z"
       },
       {
         "name": "Olivia Valère",
         "type": "club iconico",
         "price": "€€€€€",
-        "vibe": "lussuoso, orientale, vedere e farsi vedere"
+        "vibe": "lussuoso, orientale, vedere e farsi vedere",
+        "mapLink": "https://www.google.com/maps/place/Olivia+Val%C3%A8re/@36.5025,-4.9215,17z"
       },
       {
         "name": "Mogli Marbella",
         "type": "pool club/nightlife",
         "price": "€€€€",
-        "vibe": "Mayan vibes, trendy, party in piscina"
+        "vibe": "Mayan vibes, trendy, party in piscina",
+        "mapLink": "https://www.google.com/maps/place/Mogli+Marbella/@36.4915,-4.9545,17z"
       }
     ],
     "dressCode": "elegante/serale (niente shorts o ciabatte)",
     "transport": "taxi/Uber (€15-20) o auto (parcheggio porto €3/h)",
     "socialEase": 5,
-    "notes": "Socializzare qui è più difficile. Gruppi chiusi, barriere sociali. Meglio andarci come esperienza visiva."
+    "notes": "Socializzare qui è più difficile. Gruppi chiusi, barriere sociali. Meglio andarci come esperienza visiva.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Nightlife"
   },
   {
     "zone": "Benalmádena Marina",
@@ -119,19 +133,22 @@
         "name": "Palacio de la Papaya",
         "type": "club",
         "price": "€€",
-        "vibe": "latino, dance, divertente"
+        "vibe": "latino, dance, divertente",
+        "mapLink": "https://www.google.com/maps/place/Palacio+de+la+Papaya/@36.5985,-4.5125,17z"
       },
       {
         "name": "Lin's Irish Pub",
         "type": "pub",
         "price": "€",
-        "vibe": "birra, internazionale"
+        "vibe": "birra, internazionale",
+        "mapLink": "https://www.google.com/maps/place/Lin's+Irish+Pub/@36.5965,-4.5145,17z"
       }
     ],
     "dressCode": "casual",
     "transport": "taxi (€5-10 in zona)",
     "socialEase": 8,
-    "notes": "Benalmádena è easy. Gente in vacanza, atmosfera leggera. Non è autentica ma è divertente."
+    "notes": "Benalmádena è easy. Pentita in vacanza, atmosfera leggera. Non è autentica ma è divertente.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Benalmadena+Marina+Nightlife"
   },
   {
     "zone": "Estepona centro",
@@ -145,18 +162,21 @@
         "name": "La Casita",
         "type": "wine bar",
         "price": "€",
-        "vibe": "vino, chiacchiere"
+        "vibe": "vino, chiacchiere",
+        "mapLink": "https://www.google.com/maps/place/La+Casita+de+Estepona/@36.4265,-5.1465,17z"
       },
       {
         "name": "Bar La Plaza",
         "type": "tapas bar",
         "price": "€",
-        "vibe": "locale, autentico"
+        "vibe": "locale, autentico",
+        "mapLink": "https://www.google.com/maps/place/Bar+La+Plaza+Estepona/@36.4255,-5.1455,17z"
       }
     ],
     "dressCode": "casual",
     "transport": "auto o taxi",
     "socialEase": 6,
-    "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare."
+    "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Centro+Nightlife"
   }
 ]

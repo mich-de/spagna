@@ -7,7 +7,8 @@
     "parking": "Parking Alcazaba o Centro",
     "cost": "gratuito",
     "pairWith": "Museo Picasso + pranzo da Casa Lola",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Centro+Historico+Malaga"
   },
   {
     "name": "Museo Picasso Málaga",
@@ -17,7 +18,8 @@
     "parking": "Parking Alcazaba (€2/h)",
     "cost": "€10",
     "pairWith": "Alcazaba + pranzo zona centro",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Museo+Picasso+Malaga"
   },
   {
     "name": "Alcazaba di Málaga",
@@ -27,7 +29,8 @@
     "parking": "Parking Alcazaba",
     "cost": "€5",
     "pairWith": "Castillo Gibralfaro (salita a piedi 15min)",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Alcazaba+Malaga"
   },
   {
     "name": "Castillo de Gibralfaro",
@@ -37,7 +40,8 @@
     "parking": "Strada in salita (parcheggio ridotto)",
     "cost": "€3.50 (combinato Alcazaba €5.50)",
     "pairWith": "Alcazaba + aperitivo al Parador",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Castillo+de+Gibralfaro+Malaga"
   },
   {
     "name": "Mercado de Atarazanas",
@@ -47,7 +51,8 @@
     "parking": "Parking Centro",
     "cost": "gratuito (cibo extra)",
     "pairWith": "Pranzo al banco del mercato",
-    "priority": "consigliato"
+    "priority": "consigliato",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mercado+de+Atarazanas+Malaga"
   },
   {
     "name": "Centre Pompidou Málaga",
@@ -57,7 +62,8 @@
     "parking": "Parking Muelle Uno",
     "cost": "€9",
     "pairWith": "Passeggiata Muelle Uno + aperitivo",
-    "priority": "se piace arte moderna"
+    "priority": "se piace arte moderna",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Centre+Pompidou+Malaga"
   },
   {
     "name": "Casco antiguo di Marbella",
@@ -67,7 +73,8 @@
     "parking": "Parking Casco Antiguo (€2/h)",
     "cost": "gratuito",
     "pairWith": "Pranzo da Bar El Estrecho",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Casco+Antiguo+Marbella"
   },
   {
     "name": "Puerto Banús",
@@ -77,7 +84,8 @@
     "parking": "Parking Puerto Banús (€3/h)",
     "cost": "gratuito (caffè €5)",
     "pairWith": "Cena da Trocadero + passeggiata",
-    "priority": "esperienza"
+    "priority": "esperienza",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus"
   },
   {
     "name": "Mijas Pueblo",
@@ -87,7 +95,8 @@
     "parking": "Parking Mijas (€1.5/h)",
     "cost": "gratuito",
     "pairWith": "Pranzo da La Taberna de Mijas + Estepona",
-    "priority": "must"
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Mijas+Pueblo"
   },
   {
     "name": "Ronda",
@@ -97,7 +106,8 @@
     "parking": "Parking Ronda centro (€2/h)",
     "cost": "gratuito (musei extra)",
     "pairWith": "Giornata intera — pranzo a Ronda",
-    "priority": "se hai tempo"
+    "priority": "se hai tempo",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Ronda+Spain"
   },
   {
     "name": "Centro storico di Estepona",
@@ -107,7 +117,8 @@
     "parking": "Parking Centro (€1/h)",
     "cost": "gratuito",
     "pairWith": "Spiaggia del Cristo + cena La Escollera",
-    "priority": "consigliato"
+    "priority": "consigliato",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Casco+Antiguo+Estepona"
   },
   {
     "name": "Murales di Estepona",
@@ -117,6 +128,7 @@
     "parking": "Parking Centro",
     "cost": "gratuito",
     "pairWith": "Giro centro + gelato",
-    "priority": "consigliato"
+    "priority": "consigliato",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Murales+Estepona"
   }
 ]
