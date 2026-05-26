@@ -26,12 +26,13 @@ export default function Home() {
 
   const handleSectionChange = useCallback((id: string) => {
     setActiveSection(id)
-    requestAnimationFrame(() => {
+    // Use setTimeout instead of rAF for reliable mobile scrolling
+    setTimeout(() => {
       const el = document.getElementById(id)
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }
-    })
+    }, 150)
   }, [])
 
   useEffect(() => {

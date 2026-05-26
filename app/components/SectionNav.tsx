@@ -120,7 +120,11 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                   {sections.map((s) => (
                     <button
                       key={s.id}
-                      onClick={() => { onSectionChange(s.id); setMobileOpen(false) }}
+                      onClick={() => {
+                        // Close menu first, then scroll with delay for exit animation
+                        setMobileOpen(false)
+                        setTimeout(() => onSectionChange(s.id), 200)
+                      }}
                       className={`flex items-center gap-2.5 px-3 py-3 rounded-lg text-sm transition-all ${
                         activeSection === s.id
                           ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 font-medium shadow-sm shadow-terracotta-500/20'
