@@ -41,9 +41,16 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 
   useEffect(() => {
     if (!mobileOpen) return
-    const handleScroll = () => setMobileOpen(false)
-    window.addEventListener('scroll', handleScroll, { once: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    let timer: ReturnType<typeof setTimeout>
+    const handleScroll = () => {
+      clearTimeout(timer)
+      timer = setTimeout(() => setMobileOpen(false), 300)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      clearTimeout(timer)
+    }
   }, [mobileOpen])
 
   return (

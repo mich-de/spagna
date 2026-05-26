@@ -26,10 +26,12 @@ export default function Home() {
 
   const handleSectionChange = useCallback((id: string) => {
     setActiveSection(id)
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
+    requestAnimationFrame(() => {
+      const el = document.getElementById(id)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    })
   }, [])
 
   useEffect(() => {
