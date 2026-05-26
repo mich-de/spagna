@@ -33,7 +33,7 @@ export default function Itinerary() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="glass p-4 sm:p-6 rounded-2xl mb-8"
         >
           <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Piano giornaliero</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Itinerario</h2>
@@ -65,12 +65,12 @@ export default function Itinerary() {
 
                 <div
                   onClick={() => setOpenDay(isOpen ? null : i)}
-                  className={`rounded-2xl p-4 sm:p-6 cursor-pointer border transition-all ${
+                  className={`rounded-2xl p-4 sm:p-6 cursor-pointer border transition-all card-shadow card-hover ${
                     isSanJuan
                       ? 'bg-gradient-to-r from-red-50 to-amber-50 border-red-200'
                       : isOpen
                         ? 'bg-white/90 border-terracotta-200 shadow-md'
-                        : 'bg-white/70 border-terracotta-100/40 card-hover'
+                        : 'bg-white/70 border-terracotta-100/40'
                   }`}
                 >
                   <div className="flex items-start justify-between gap-4">
@@ -89,8 +89,8 @@ export default function Itinerary() {
                       <p className="text-sm text-mare-700/60 mt-1">{day.zone}</p>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
-                      <span className={`px-2 py-1 rounded-lg text-xs font-medium ${energy.color}`}>{energy.label}</span>
-                      <span className={`px-2 py-1 rounded-lg text-xs font-medium ${budget.color}`}>{budget.label}</span>
+                      <span className={`badge-pill ${energy.color}`}>{energy.label}</span>
+                      <span className={`badge-pill ${budget.color}`}>{budget.label}</span>
                       <ChevronDown className={`w-5 h-5 text-mare-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </div>
                   </div>
@@ -164,22 +164,22 @@ export default function Itinerary() {
 
                           <div className="flex flex-wrap gap-2 mt-3">
                             {day.beach && (
-                              <span className="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs">
+                              <span className="badge-pill bg-blue-50 text-blue-700">
                                 🏖 {day.beach}
                               </span>
                             )}
                             {day.restaurant && (
-                              <span className="px-2.5 py-1 bg-orange-50 text-orange-700 rounded-lg text-xs">
+                              <span className="badge-pill bg-orange-50 text-orange-700">
                                 🍽 {day.restaurant}
                               </span>
                             )}
                             {day.attraction && (
-                              <span className="px-2.5 py-1 bg-green-50 text-green-700 rounded-lg text-xs">
+                              <span className="badge-pill bg-green-50 text-green-700">
                                 🎭 {day.attraction}
                               </span>
                             )}
                             {day.club && (
-                              <span className="px-2.5 py-1 bg-purple-50 text-purple-700 rounded-lg text-xs">
+                              <span className="badge-pill bg-purple-50 text-purple-700">
                                 🎵 {day.club}
                               </span>
                             )}

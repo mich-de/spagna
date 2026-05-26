@@ -7,12 +7,18 @@ import recommendedBase from '@/data/recommended-base.json'
 
 export default function Overview() {
   return (
-    <section id="overview" className="scroll-mt-20 px-4 sm:px-6 pt-8 pb-4">
+    <section
+      id="overview"
+      className="scroll-mt-20 px-4 sm:px-6 pt-8 pb-4 relative
+        bg-gradient-to-b from-terracotta-50/20 via-transparent to-mare-50/10"
+    >
       <div className="max-w-7xl mx-auto">
+        {/* ─── Hero title ─── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
           className="mb-8"
         >
           <div className="flex items-center gap-2 text-terracotta-500 mb-2">
@@ -27,7 +33,14 @@ export default function Overview() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+        {/* ─── Trip metadata grid ─── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.15 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8"
+        >
           {[
             { icon: CalendarDays, label: 'Date', value: '19 → 25 Giu 2026' },
             { icon: Plane, label: 'Arrivo', value: trip.arrival },
@@ -40,8 +53,8 @@ export default function Overview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 border border-terracotta-100/40 card-hover"
+              transition={{ delay: 0.15 + i * 0.08 }}
+              className="glass rounded-2xl p-4 border border-terracotta-100/40 card-shadow card-hover"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-terracotta-100 to-crema flex items-center justify-center">
@@ -54,28 +67,37 @@ export default function Overview() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap gap-2 mb-8">
+        {/* ─── Trip badges ─── */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.25 }}
+          className="flex flex-wrap gap-2 mb-8"
+        >
           {trip.badges.map((badge: string, i: number) => (
             <motion.span
               key={badge}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3 + i * 0.05 }}
-              className="px-4 py-1.5 rounded-full bg-gradient-to-r from-terracotta-50 to-crema text-sm text-mare-700 border border-terracotta-100/50"
+              transition={{ delay: 0.25 + i * 0.05 }}
+              className="badge-pill text-sm"
             >
               {badge}
             </motion.span>
           ))}
-        </div>
+        </motion.div>
 
+        {/* ─── Recommendation card ─── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative rounded-2xl overflow-hidden"
+          transition={{ delay: 0.35 }}
+          className="relative rounded-2xl overflow-hidden card-shadow card-hover img-zoom"
         >
           {/* Main card */}
           <div className="bg-gradient-to-br from-mare-800 via-mare-700 to-mare-900 p-6 sm:p-8 text-white relative overflow-hidden">
@@ -83,18 +105,19 @@ export default function Overview() {
             <div className="absolute top-0 right-0 w-80 h-80 bg-terracotta-500/8 rounded-full -translate-y-1/3 translate-x-1/4 blur-xl" />
             <div className="absolute bottom-0 left-0 w-56 h-56 bg-oro/10 rounded-full translate-y-1/3 -translate-x-1/4 blur-lg" />
             <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
-            
+
             {/* Andalusian-inspired geometric pattern overlay */}
-            <div className="absolute inset-0 opacity-[0.04]"
+            <div
+              className="absolute inset-0 opacity-[0.04]"
               style={{
                 backgroundImage: `
                   linear-gradient(45deg, #ffffff 1px, transparent 1px),
                   linear-gradient(-45deg, #ffffff 1px, transparent 1px)
                 `,
-                backgroundSize: '24px 24px'
+                backgroundSize: '24px 24px',
               }}
             />
-            
+
             {/* Decorative border accent */}
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-oro to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-oro/50 to-transparent" />
@@ -109,13 +132,10 @@ export default function Overview() {
                       <stop offset="100%" stopColor="#E07A5F" />
                     </linearGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="none" stroke="url(#seal-grad)" strokeWidth="1.5"
-                    strokeDasharray="4 3" opacity="0.6" />
+                  <circle cx="40" cy="40" r="38" fill="none" stroke="url(#seal-grad)" strokeWidth="1.5" strokeDasharray="4 3" opacity="0.6" />
                   <circle cx="40" cy="40" r="35" fill="none" stroke="url(#seal-grad)" strokeWidth="0.5" opacity="0.3" />
-                  <text x="40" y="36" textAnchor="middle" fill="#D4A373" fontSize="9" fontWeight="600"
-                    fontFamily="serif" letterSpacing="1">TOUR</text>
-                  <text x="40" y="48" textAnchor="middle" fill="#E07A5F" fontSize="7" fontWeight="600"
-                    fontFamily="sans-serif" letterSpacing="0.5">PICK</text>
+                  <text x="40" y="36" textAnchor="middle" fill="#D4A373" fontSize="9" fontWeight="600" fontFamily="serif" letterSpacing="1">TOUR</text>
+                  <text x="40" y="48" textAnchor="middle" fill="#E07A5F" fontSize="7" fontWeight="600" fontFamily="sans-serif" letterSpacing="0.5">PICK</text>
                 </svg>
               </div>
             </div>
@@ -164,11 +184,11 @@ export default function Overview() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.4 + i * 0.08 }}
+                    transition={{ delay: 0.35 + i * 0.08 }}
                     className="group relative"
                   >
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full 
-                      bg-white/5 hover:bg-white/10 border border-white/10 hover:border-oro/30 
+                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full
+                      bg-white/5 hover:bg-white/10 border border-white/10 hover:border-oro/30
                       transition-all duration-300 cursor-default"
                     >
                       <span className="text-xs">{item.emoji}</span>
