@@ -24,3 +24,4 @@ Oppure usa `start.bat` su Windows.
 
 ## Deployment
 Il sito è configurato per il deploy automatico su **GitHub Pages** tramite GitHub Actions.
+Last update: 2026-05-26 12:00
