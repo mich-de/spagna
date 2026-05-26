@@ -16,6 +16,7 @@ const levels = [
 ]
 
 const categories = [
+  { key: 'flights_total', label: 'Volo A/R', color: '#1B4965' },
   { key: 'accommodation_total', label: 'Alloggio', color: '#E07A5F' },
   { key: 'car_rental_total', label: 'Auto', color: '#D4A373' },
   { key: 'restaurants_total', label: 'Ristoranti', color: '#3B89A8' },

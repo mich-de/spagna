@@ -1,7 +1,8 @@
 {
   "medium": {
-    "accommodation_total": 700,
-    "car_rental_total": 350,
+    "flights_total": 145,
+    "accommodation_total": 600,
+    "car_rental_total": 245,
     "fuel_total": 60,
     "parking_total": 70,
     "restaurants_total": 420,
@@ -9,12 +10,13 @@
     "nightlife_total": 150,
     "museums_total": 40,
     "groceries_spuntini_total": 80,
-    "total_estimated": 1970,
-    "per_day": 280
+    "total_estimated": 1910,
+    "per_day": 273
   },
   "comfort": {
-    "accommodation_total": 1260,
-    "car_rental_total": 450,
+    "flights_total": 145,
+    "accommodation_total": 900,
+    "car_rental_total": 350,
     "fuel_total": 70,
     "parking_total": 100,
     "restaurants_total": 700,
@@ -22,12 +24,13 @@
     "nightlife_total": 400,
     "museums_total": 60,
     "groceries_spuntini_total": 120,
-    "total_estimated": 3460,
-    "per_day": 575
+    "total_estimated": 3145,
+    "per_day": 449
   },
   "premium": {
-    "accommodation_total": 2100,
-    "car_rental_total": 600,
+    "flights_total": 145,
+    "accommodation_total": 1200,
+    "car_rental_total": 500,
     "fuel_total": 80,
     "parking_total": 150,
     "restaurants_total": 1200,
@@ -35,7 +38,7 @@
     "nightlife_total": 1000,
     "museums_total": 80,
     "groceries_spuntini_total": 150,
-    "total_estimated": 6160,
-    "per_day": 1025
+    "total_estimated": 5305,
+    "per_day": 758
   }
 }

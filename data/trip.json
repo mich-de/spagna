@@ -7,7 +7,10 @@
     "end": "2026-06-25"
   },
   "arrival": "Málaga Airport (AGP)",
-  "transport": "auto a noleggio (necessaria)",
+  "transport": "Ryanair FR9660 NAP→AGP 10:15-13:10 + auto a noleggio (35€/g)",
+  "flight_price": 145,
+  "car_price": 35,
+  "hotel_price": 100,
   "style": "mediterranean lifestyle & authentic vibes",
   "badges": [
     "🌊 Mare Cristallino",
