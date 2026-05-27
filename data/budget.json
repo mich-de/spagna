@@ -1,4 +1,18 @@
 {
+  "low": {
+    "flights_total": 145,
+    "accommodation_total": 280,
+    "car_rental_total": 140,
+    "fuel_total": 40,
+    "parking_total": 20,
+    "restaurants_total": 140,
+    "beach_clubs_total": 0,
+    "nightlife_total": 50,
+    "museums_total": 15,
+    "groceries_spuntini_total": 70,
+    "total_estimated": 900,
+    "per_day": 128
+  },
   "medium": {
     "flights_total": 145,
     "accommodation_total": 480,

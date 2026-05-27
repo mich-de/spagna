@@ -9,9 +9,10 @@ import {
 import budgetData from '@/data/budget.json'
 
 const levels = [
-  { key: 'medium', label: 'Medio', icon: '€' },
-  { key: 'comfort', label: 'Comfort', icon: '€€' },
-  { key: 'premium', label: 'Premium', icon: '€€€' },
+  { key: 'low', label: 'Low', icon: '€' },
+  { key: 'medium', label: 'Medio', icon: '€€' },
+  { key: 'comfort', label: 'Comfort', icon: '€€€' },
+  { key: 'premium', label: 'Premium', icon: '€€€€' },
 ]
 
 const categories = [
@@ -74,7 +75,7 @@ export default function Budget() {
         </motion.div>
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <div className="flex gap-2">
+          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
             {levels.map((lvl) => (
               <button
                 key={lvl.key}

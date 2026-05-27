@@ -1,247 +1,190 @@
 [
   {
-    "zone": "Málaga centro",
-    "clientType": "giovani, studenti, internazionali, artisti",
-    "vibe": "autentica, sociale, varia",
-    "bestTime": "23:00-03:00",
-    "start": "Calle Marín García o Plaza de la Merced",
-    "continueTo": "Soho (zona MUAC) o Tejeros",
+    "zone": "Málaga Centro",
+    "vibe": "autentica, giovane, vibrante",
+    "clientType": "locali, studenti, viaggiatori",
+    "bestTime": "23:00 - 04:00",
+    "dressCode": "casual / smart casual",
+    "socialEase": 9,
     "venues": [
       {
         "name": "La Tranca",
-        "type": "bar de vinos",
+        "type": "Vermuteria / Tapas",
         "price": "€",
-        "vibe": "vino, conversazione, autentico",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Tranca%20Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Tranca+M%C3%A1laga%20centro"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Tranca+Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Tranca%20Malaga"
       },
       {
         "name": "Orellana",
-        "type": "cocktail bar",
+        "type": "Cocktail Bar storico",
         "price": "€€",
-        "vibe": "speakeasy, cocktail di qualità",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Orellana%20Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Orellana+M%C3%A1laga%20centro"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Orellana+Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Orellana%20Malaga"
       },
       {
         "name": "Velvet",
-        "type": "club",
+        "type": "Musica Live / Club",
         "price": "€€",
-        "vibe": "musica, dance, giovane",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Velvet%20Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Velvet+M%C3%A1laga%20centro"
-      },
-      {
-        "name": "La Cochera",
-        "type": "live music",
-        "price": "€",
-        "vibe": "flamenco, autentico, piccolo",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Cochera%20Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Cochera+M%C3%A1laga%20centro"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Velvet+Malaga",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Velvet%20Malaga"
       }
     ],
-    "dressCode": "casual chic",
-    "transport": "taxi/Uber (€8-12 in centro)",
-    "socialEase": 9,
-    "notes": "Málaga è la città più facile per socializzare. La gente è aperta, ci sono molti locali, i prezzi sono bassi. Perfetta per la sera.",
+    "start": "Calle Carretería",
+    "continueTo": "Plaza de Uncibay",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=M%C3%A1laga%20centro+Nightlife+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Malaga%20Nightlife",
+    "notes": "Il cuore della movida vera. Qui si fanno amicizie facilmente parlando al bancone."
   },
   {
-    "zone": "Marbella casco antiguo",
-    "clientType": "middle-up, internazionali, coppie, gruppi",
-    "vibe": "elegante, raffinato, conversazione",
-    "bestTime": "22:00-01:00",
-    "start": "Plaza de los Naranjos o Calle Nueva",
-    "continueTo": "Puerto Banús",
+    "zone": "Marbella / Puerto Banús",
+    "vibe": "luxury, glamour, esclusiva",
+    "clientType": "jet-set, turisti premium, clubber",
+    "bestTime": "01:00 - 06:00",
+    "dressCode": "elegante (obbligatorio)",
+    "socialEase": 5,
     "venues": [
-      {
-        "name": "The Farm",
-        "type": "cocktail bar",
-        "price": "€€€",
-        "vibe": "naturale, fresco, giardino",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=The%20Farm%20Marbella%20Old%20Town",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=The%20Farm+Marbella%20casco%20antiguo"
-      },
-      {
-        "name": "La Plaza",
-        "type": "wine bar",
-        "price": "€€",
-        "vibe": "elegante, conversazione",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Plaza%20Marbella%20Old%20Town",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Plaza+Marbella%20casco%20antiguo"
-      },
-      {
-        "name": "Gran Marbella",
-        "type": "club",
-        "price": "€€€",
-        "vibe": "classico, esclusivo",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Gran%20Marbella%20Marbella%20Old%20Town",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Gran%20Marbella+Marbella%20casco%20antiguo"
-      }
-    ],
-    "dressCode": "elegante curato",
-    "transport": "taxi (€10-15)",
-    "socialEase": 7,
-    "notes": "Marbella è più 'formale' per socializzare. Più status, più apparenza. Ma la qualità è alta.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Marbella+Old+Town+Nightlife",
-    "videos": [
-      "https://www.youtube.com/watch?v=_p48aPaVjgc",
-      "https://www.youtube.com/watch?v=ronOs-MxuPs"
-    ],
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Marbella%20casco%20antiguo+Nightlife+Costa+del+Sol"
-  },
-  {
-    "zone": "Puerto Banús",
-    "clientType": "VIP, modelle, turisti ricchi, celebrità wannabe",
-    "vibe": "lusso, esibizione, party",
-    "bestTime": "01:00-06:00",
-    "start": "Cena in un ristorante sul porto",
-    "continueTo": "Discoteche del porto",
-    "venues": [
-      {
-        "name": "TIBU Marbella",
-        "type": "club",
-        "price": "€€€€",
-        "vibe": "party, internazionale, glamour",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=TIBU%20Marbella%20Puerto%20Banus%20Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=TIBU%20Marbella+Puerto%20Ban%C3%BAs"
-      },
-      {
-        "name": "Mirage",
-        "type": "club",
-        "price": "€€€€",
-        "vibe": "high-end, visual incredibili",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Mirage%20Puerto%20Banus%20Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mirage+Puerto%20Ban%C3%BAs"
-      },
       {
         "name": "Olivia Valère",
-        "type": "club iconico",
-        "price": "€€€€€",
-        "vibe": "lussuoso, orientale, vedere e farsi vedere",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Olivia%20Val%C3%A8re%20Puerto%20Banus%20Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Olivia%20Val%C3%A8re+Puerto%20Ban%C3%BAs"
-      },
-      {
-        "name": "Mogli Marbella",
-        "type": "pool club/nightlife",
+        "type": "Mega Club",
         "price": "€€€€",
-        "vibe": "Mayan vibes, trendy, party in piscina",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Mogli%20Marbella%20Puerto%20Banus%20Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Mogli%20Marbella+Puerto%20Ban%C3%BAs"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Olivia+Valere+Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Olivia%20Valere%20Marbella"
+      },
+      {
+        "name": "Pangea",
+        "type": "Rooftop Club",
+        "price": "€€€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Pangea+Marbella",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pangea%20Marbella"
+      },
+      {
+        "name": "News Café",
+        "type": "Lounge Bar",
+        "price": "€€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=News+Cafe+Puerto+Banus",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=News%20Cafe%20Puerto%20Banus"
       }
     ],
-    "dressCode": "elegante/serale (niente shorts o ciabatte)",
-    "transport": "taxi/Uber (€15-20) o auto (parcheggio porto €3/h)",
-    "socialEase": 5,
-    "notes": "Socializzare qui è più difficile. Gruppi chiusi, barriere sociali. Meglio andarci come esperienza visiva.",
+    "start": "Front line Puerto Banús",
+    "continueTo": "Milla de Oro",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Nightlife",
-    "videos": [
-      "https://www.youtube.com/watch?v=ronOs-MxuPs",
-      "https://www.youtube.com/watch?v=1UVEFm2Loe4",
-      "https://www.youtube.com/watch?v=WujtSTv4hYY"
-    ],
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Puerto%20Ban%C3%BAs+Nightlife+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Marbella%20Nightlife",
+    "notes": "Preparati a spendere. L'ingresso nei club può costare €50-100."
   },
   {
-    "zone": "Benalmádena Marina",
-    "clientType": "turisti, giovani, famiglie",
-    "vibe": "vivace, easy, accessibile",
-    "bestTime": "22:00-03:00",
-    "start": "Bar sulla marina",
-    "continueTo": "Discoteche vicino",
+    "zone": "Benalmádena (Puerto Marina)",
+    "vibe": "turistica, energica, varia",
+    "clientType": "giovani, turisti, addii al celibato",
+    "bestTime": "00:00 - 05:00",
+    "dressCode": "casual curato",
+    "socialEase": 7,
     "venues": [
       {
-        "name": "Palacio de la Papaya",
-        "type": "club",
+        "name": "Kiu",
+        "type": "Disco gigante",
         "price": "€€",
-        "vibe": "latino, dance, divertente",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20la%20Papaya%20Benalmadena%20Marina",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Palacio%20de%20la%20Papaya+Benalm%C3%A1dena%20Marina"
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Discoteca+Kiu+Benalmadena",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Kiu%20Benalmadena"
       },
       {
-        "name": "Lin's Irish Pub",
-        "type": "pub",
-        "price": "€",
-        "vibe": "birra, internazionale",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Lin's%20Irish%20Pub%20Benalmadena%20Marina",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Lin's%20Irish%20Pub+Benalm%C3%A1dena%20Marina"
+        "name": "Maracas",
+        "type": "Beach Club / Bar",
+        "price": "€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Maracas+Puerto+Marina",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Maracas%20Puerto%20Marina"
       }
     ],
-    "dressCode": "casual",
-    "transport": "taxi (€5-10 in zona)",
-    "socialEase": 8,
-    "notes": "Benalmádena è easy. Pentita in vacanza, atmosfera leggera. Non è autentica ma è divertente.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Benalmadena+Marina+Nightlife",
-    "videos": [
-      "https://www.youtube.com/watch?v=1SvMpmZYlnI",
-      "https://www.youtube.com/watch?v=FLW3g2Rcya0"
-    ],
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Benalm%C3%A1dena%20Marina+Nightlife+Costa+del+Sol"
-  },
-  {
-    "zone": "Estepona centro",
-    "clientType": "residenti, coppie, over 30",
-    "vibe": "tranquillo, chilleroso, conversazione",
-    "bestTime": "21:00-00:00",
-    "start": "Plaza de las Flores",
-    "continueTo": "Bar sul paseo",
-    "venues": [
-      {
-        "name": "La Casita",
-        "type": "wine bar",
-        "price": "€",
-        "vibe": "vino, chiacchiere",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=La%20Casita%20Estepona",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Casita+Estepona%20centro"
-      },
-      {
-        "name": "Bar La Plaza",
-        "type": "tapas bar",
-        "price": "€",
-        "vibe": "locale, autentico",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Bar%20La%20Plaza%20Estepona",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Bar%20La%20Plaza+Estepona%20centro"
-      }
-    ],
-    "dressCode": "casual",
-    "transport": "auto o taxi",
-    "socialEase": 6,
-    "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare.",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Centro+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Estepona%20centro+Nightlife+Costa+del+Sol"
+    "start": "Plaza Solymar",
+    "continueTo": "Puerto Marina",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+Nightlife",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Benalmadena%20Nightlife",
+    "notes": "Molto commerciale ma divertente se cerchi una serata senza troppi pensieri."
   },
   {
     "zone": "Nerja (Plaza Tutti Frutti)",
-    "clientType": "giovani, turisti, internazionali, coppie",
-    "vibe": "rilassata, informale, festosa",
-    "bestTime": "22:00-03:00",
-    "start": "Balcón de Europa per un drink panoramico",
-    "continueTo": "Plaza Tutti Frutti",
+    "vibe": "familiare, vivace, accogliente",
+    "clientType": "locali, turisti europei, coppie",
+    "bestTime": "22:00 - 03:00",
+    "dressCode": "casual",
+    "socialEase": 8,
     "venues": [
       {
-        "name": "Cochran's Irish Pub",
-        "type": "Irish pub / bar sul mare",
+        "name": "Cochran's",
+        "type": "Irish Pub / Terrazza",
         "price": "€€",
-        "vibe": "terrazza vista mare, birra, musica dal vivo/rock",
         "mapLink": "https://www.google.com/maps/search/?api=1&query=Cochrans+Irish+Pub+Nerja",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cochran%27s%20Irish%20Pub+Nerja"
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cochran%27s%20Nerja"
       },
       {
         "name": "Agora Bar",
-        "type": "cocktail bar",
+        "type": "Cocktail Bar",
         "price": "€€",
-        "vibe": "cocktail estivi, musica all'aperto",
         "mapLink": "https://www.google.com/maps/search/?api=1&query=Agora+Bar+Nerja",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Agora%20Bar+Nerja"
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Agora%20Bar%20Nerja"
       }
     ],
-    "dressCode": "casual",
-    "transport": "a piedi (il centro è pedonale)",
-    "socialEase": 8,
-    "notes": "Tutta la vita notturna giovanile si concentra nella storica Plaza Tutti Frutti, con una decina di locali vicinissimi. Cochran's è spettacolare perché arroccato sulla scogliera con discesa a mare.",
+    "start": "Balcón de Europa",
+    "continueTo": "Plaza Tutti Frutti",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Plaza+Tutti+Frutti+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Plaza%20Tutti%20Frutti%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Nerja%20Nightlife",
+    "notes": "Ambiente meno caotico di Málaga, perfetto per un drink lungo il mare."
+  },
+  {
+    "zone": "Torremolinos (La Carihuela & Centro)",
+    "vibe": "inclusiva, festaiola, retrò",
+    "clientType": "LGBTQ+ friendly, turisti, locali",
+    "bestTime": "23:00 - 05:00",
+    "dressCode": "libero / creativo",
+    "socialEase": 10,
+    "venues": [
+      {
+        "name": "Eden Beach Club",
+        "type": "Beach Club",
+        "price": "€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Eden+Beach+Club+Torremolinos",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Eden%20Beach%20Club%20Torremolinos"
+      },
+      {
+        "name": "El Gato Lounge",
+        "type": "Chill-out Bar",
+        "price": "€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Gato+Lounge+Torremolinos",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Gato%20Lounge%20Torremolinos"
+      }
+    ],
+    "start": "La Nogalera (Centro)",
+    "continueTo": "Paseo Marítimo La Carihuela",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Torremolinos+Nightlife",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Torremolinos%20Nightlife",
+    "notes": "Torremolinos è l'anima libera della costa. La Nogalera è il centro nevralgico della vita notturna inclusiva."
+  },
+  {
+    "zone": "Estepona (Puerto Deportivo)",
+    "vibe": "rilassata, locale, marinara",
+    "clientType": "residenti, yacht owner, turisti tranquilli",
+    "bestTime": "22:00 - 02:30",
+    "dressCode": "casual chic",
+    "socialEase": 7,
+    "venues": [
+      {
+        "name": "Louie Louie",
+        "type": "Rock Club / Live Music",
+        "price": "€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Louie+Louie+Estepona",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Louie%20Louie%20Estepona"
+      },
+      {
+        "name": "Jazz Pub",
+        "type": "Cocktail & Jazz",
+        "price": "€€",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Jazz+Pub+Estepona",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Jazz%20Pub%20Estepona"
+      }
+    ],
+    "start": "Calle Real",
+    "continueTo": "Puerto Deportivo",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Marina+Nightlife",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Estepona%20Nightlife",
+    "notes": "Estepona offre una notte più 'adulta' e centrata sulla musica di qualità nel porto."
   }
 ]

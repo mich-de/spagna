@@ -1,10 +1,22 @@
 'use client'
 
+import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { Users, Clock, VenetianMask, DollarSign, MapPin, Map, Star } from 'lucide-react'
 import nightlife from '@/data/nightlife.json'
 
+const zones = ['Tutte', ...Array.from(new Set(nightlife.map((n: any) => n.zone))).sort()]
+
 export default function Nightlife() {
+  const [zoneFilter, setZoneFilter] = useState('Tutte')
+
+  const filteredNightlife = useMemo(() => 
+    nightlife.filter((n: any) => {
+      if (zoneFilter !== 'Tutte' && n.zone !== zoneFilter) return false
+      return true
+    }),
+  [zoneFilter])
+
   return (
     <section id="nightlife" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
@@ -18,8 +30,30 @@ export default function Nightlife() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Vita notturna</h2>
         </motion.div>
 
+        {/* Zone filter buttons */}
+        <div className="glass p-3 rounded-2xl border border-terracotta-100/40 mb-8">
+          <div className="flex flex-col gap-2">
+            <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per zona:</span>
+            <div className="flex flex-wrap gap-1.5">
+              {zones.map((z) => (
+                <button
+                  key={z}
+                  onClick={() => setZoneFilter(z)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${
+                    zoneFilter === z
+                      ? 'bg-terracotta-500 text-white shadow-md'
+                      : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600 hover:border-terracotta-200'
+                  }`}
+                >
+                  {z === 'Tutte' ? 'Tutte le zone' : z}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-4">
-          {nightlife.map((zone: any, i: number) => (
+          {filteredNightlife.map((zone: any, i: number) => (
             <motion.div
               key={zone.zone}
               initial={{ opacity: 0, y: 15 }}
@@ -118,6 +152,12 @@ export default function Nightlife() {
               )}
             </motion.div>
           ))}
+          
+          {filteredNightlife.length === 0 && (
+            <div className="text-center py-12 text-mare-400">
+              <p className="font-body">Nessuna zona nightlife trovata per questa selezione.</p>
+            </div>
+          )}
         </div>
 
         <div className="mt-6 p-5 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl border border-indigo-200/50">

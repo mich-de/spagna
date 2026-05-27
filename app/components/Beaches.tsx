@@ -35,51 +35,61 @@ export default function Beaches() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Spiagge consigliate</h2>
         </motion.div>
 
-        {/* FILTER BAR — glass container */}
-        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl overflow-hidden">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mare-400" />
-            <input
-              type="text"
-              placeholder="Cerca spiaggia o zona..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white/80 border border-terracotta-100/50 text-sm text-notte placeholder:text-mare-300 focus:outline-none focus:ring-2 focus:ring-terracotta-300/50"
-            />
+        {/* FILTER BAR — responsive container */}
+        <div className="glass flex flex-col gap-4 mb-8 p-4 rounded-2xl border border-terracotta-100/40">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mare-400" />
+              <input
+                type="text"
+                placeholder="Cerca spiaggia o zona..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white/80 border border-terracotta-100/50 text-sm text-notte placeholder:text-mare-300 focus:outline-none focus:ring-2 focus:ring-terracotta-300/50 transition-all"
+              />
+            </div>
           </div>
 
-          {/* Zona filter buttons */}
-          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
-            {zones.map((z) => (
-              <button
-                key={z}
-                onClick={() => setZoneFilter(z)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                  zoneFilter === z
-                    ? 'bg-terracotta-500 text-white shadow-sm'
-                    : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600'
-                }`}
-              >
-                {z === 'Tutte' ? 'Tutte le zone' : z}
-              </button>
-            ))}
-          </div>
+          <div className="space-y-4">
+            {/* Zona filter */}
+            <div className="flex flex-col gap-2">
+              <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per zona:</span>
+              <div className="flex flex-wrap gap-1.5">
+                {zones.map((z) => (
+                  <button
+                    key={z}
+                    onClick={() => setZoneFilter(z)}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${
+                      zoneFilter === z
+                        ? 'bg-terracotta-500 text-white shadow-md'
+                        : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600 hover:border-terracotta-200'
+                    }`}
+                  >
+                    {z === 'Tutte' ? 'Tutte le zone' : z}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-          {/* Atmosfera filter buttons */}
-          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
-            {atmospheres.map((a) => (
-              <button
-                key={a}
-                onClick={() => setAtmosFilter(a)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                  atmosFilter === a
-                    ? 'bg-terracotta-500 text-white shadow-sm'
-                    : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600'
-                }`}
-              >
-                {a === 'Tutte' ? 'Tutte atmosfere' : a}
-              </button>
-            ))}
+            {/* Atmosfera filter */}
+            <div className="flex flex-col gap-2">
+              <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per atmosfera:</span>
+              <div className="flex flex-wrap gap-1.5">
+                {atmospheres.map((a) => (
+                  <button
+                    key={a}
+                    onClick={() => setAtmosFilter(a)}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 ${
+                      atmosFilter === a
+                        ? 'bg-terracotta-500 text-white shadow-md'
+                        : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600 hover:border-terracotta-200'
+                    }`}
+                  >
+                    {a === 'Tutte' ? 'Tutte atmosfere' : a}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 

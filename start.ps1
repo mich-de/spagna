@@ -21,8 +21,8 @@ foreach ($port in $ports) {
 
 Start-Sleep -Seconds 1
 
-Write-Host "  [>] Pulizia cache di compilazione (.next)..." -ForegroundColor Yellow
-Remove-Item -Recurse -Force .next -ErrorAction SilentlyContinue
+Write-Host "  [>] Pulizia cache di compilazione e file temporanei..." -ForegroundColor Yellow
+npm run clean
 
 Write-Host ""
 Write-Host "  [v] Avvio del server in corso..." -ForegroundColor Green

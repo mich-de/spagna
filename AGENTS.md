@@ -1,82 +1,73 @@
 # Costa del Sol Travel Dashboard
 
-## Quick start
+Static Next.js 15 dashboard — premium travel guide for Costa del Sol (19–25 Jun 2026).
+
+## Commands
 
 ```bash
-npm run dev     # dev server at http://localhost:3000
-npm run build   # production build
+npm run dev     # dev at http://localhost:3000 (predev hook auto-deletes .next)
+npm run build   # production build, static export to out/
 ```
 
-Or double-click `start.bat` / `start.ps1`.
+No test / lint / typecheck scripts exist.
 
 ## Data
 
-All content lives in `data/*.json` — one file per category. Add or edit data in the JSON files, not in components. Components only import from `@/data/*.json`.
+All content in `data/*.json`, imported by components from `@/data/*.json`. Edit JSON, not JSX.
 
-| File | Ruolo |
-|------|-------|
-| `trip.json` | Metadati viaggio: date, arrivo, trasporto, meteo, badges, videos[] (YouTube) |
-| `recommended-base.json` | Raccomandazione finale base ({winner, reason, alternatives}) |
-| `bases.json` | Array confronto basi: score, pro/cons, distanze, parcheggio, nightlife |
-| `itinerary.json` | Array 7 giorni: programma mattina→notte, ristoranti, tempi, livello energia |
-| `san-juan.json` | Evento 23→24 giugno: piano ora-ora, spot consigliati, cosa portare |
-| `beaches.json` | Array 12 spiagge: atmosfera, parcheggio, chiringuiti, tip |
-| `restaurants.json` | Array 15 ristoranti: zona, tipo, prezzo, specialità, prenotazione |
-| `nightlife.json` | Array 5 zone notte: venue, orari, dress code, facilità socializzare |
-| `attractions.json` | Array musei/luoghi: durata, costo, abbinamento ideale |
-| `food.json` | Array 15 piatti tipici: descrizione, abbinamento, autenticità score |
-| `local-experiences.json` | Array 15 esperienze da locale: dove, quando, costo, tip |
-| `logistics.json` | Guida auto: noleggio, parcheggi, tempi guida, mobilità notturna |
-| `budget.json` | 3 livelli spesa (medio/comfort/premium) con breakdown categorie |
+| File | Content |
+|------|---------|
+| `trip.json` | Trip metadata + YouTube videos[] |
+| `recommended-base.json` | Final base recommendation |
+| `bases.json` | 5 base comparison array |
+| `itinerary.json` | 7-day program |
+| `san-juan.json` | 23→24 June event |
+| `beaches.json` | 12+ beaches |
+| `restaurants.json` | 15+ restaurants |
+| `nightlife.json` | Nightlife zones |
+| `attractions.json` | Museums/sights |
+| `food.json` | 15+ typical dishes |
+| `local-experiences.json` | 15+ experiences |
+| `logistics.json` | Car rental, parking, driving times |
+| `budget.json` | 3 spending levels |
 
 ## Tech stack
 
-- **Next.js 15** (App Router, static export)
-- **React 19** with client components (`'use client'` in all interactive files)
-- **Tailwind v4** — uses `@import "tailwindcss"` + `@config "../tailwind.config.mts"` in `globals.css`, NOT `@tailwind` directives. Custom colors/fonts are defined in `tailwind.config.mts` and loaded via the `@config` directive.
-- **Fonts**: Playfair Display (headings), DM Sans (body) — imported via `@fontsource` packages in `globals.css`
+- **Next.js 15** (App Router, static export via `next.config.js` `output: 'export'`)
+- **React 19** — all interactive components are `'use client'`
+- **Tailwind v4** — uses `@import "tailwindcss"` + **`@config`** in `globals.css` (see gotcha below)
+- **Framer Motion** for animations (`whileInView` + `viewport={{ once: true }}`)
 - **Recharts** for budget bar charts
-- **Framer Motion** for animations (`framer-motion`)
-- **Lucide React** for icons
+- **Lucide React** for icons (camelCase: `Sunrise`, `Sunset` — NOT `SunRise`, `SunSet`)
 
-## Build gotchas
+## Critical gotchas
 
-- **⚠️ Tailwind v4 `@config` is MANDATORY**: `tailwind.config.mts` is **NOT** auto-loaded in v4. You MUST have `@config "../tailwind.config.mts"` in `globals.css` right after `@import "tailwindcss"`. Without it, ALL custom color classes (`text-notte`, `bg-terracotta-*`, `text-mare-*`, `bg-crema`, `text-oro`, etc.) silently produce NO CSS → text becomes invisible (white on white).
-- Tailwind v4 + PostCSS: PostCSS config uses `@tailwindcss/postcss` plugin, not the legacy `tailwindcss` package directly.
-- Fontsource v5: import exact weight files (`400.css`, `700.css`), NOT `italic.css` (use `400-italic.css`).
-- `tsconfig.json` targets `es2016` — needed for `Array.from(Set)` iteration.
-- The workspace root warning from Next.js about multiple lockfiles is harmless; suppress via `outputFileTracingRoot` in `next.config.js` if desired.
+- **Tailwind v4 `@config`**: `tailwind.config.mts` is NOT auto-loaded. `globals.css` MUST have `@config "../tailwind.config.mts"` right after `@import "tailwindcss"`. Missing it → all custom color classes (`text-notte`, `bg-terracotta-*`, etc.) silently produce zero CSS → invisible text.
+- **Fontsource v5**: Import exact weight files (`400.css`, `700.css`), NOT `italic.css` — use `400-italic.css`.
+- **`tsconfig.json` targets `es2016`** — needed for `Array.from(Set)` iteration.
+- **Hydration mismatches**: Browser extensions (Brave, adblockers) inject `bis_skin_checked` attributes. Root layout has an inline `<script>` that scrubs these via MutationObserver. Keep `suppressHydrationWarning` on `<html>` and `<body>`.
+- **Webpack compiler crashes**: Delete `.next` or use `npm run dev` (predev hook does it). `start.bat`/`start.ps1` also kill ports 3000/3001 before starting.
+- **PostCSS**: Uses `@tailwindcss/postcss` plugin, not legacy `tailwindcss` package.
 
-## Structure
+## Architecture
 
-```
-app/
-├── layout.tsx          # root HTML + metadata
-├── page.tsx            # main dashboard — scroll spy nav + section components
-├── globals.css         # fonts + Tailwind v4 + custom classes
-└── components/
-    ├── SectionNav.tsx  # sticky nav with mobile menu + sliding indicator
-    ├── Overview.tsx    # hero + badges + recommendation card
-    ├── Videos.tsx      # YouTube video grid with zone/type filters
-    ├── BaseSelection.tsx
-    ├── Itinerary.tsx   # accordion timeline (7 days)
-    ├── Beaches.tsx     # filterable cards + Maps/TA links
-    ├── Food.tsx        # dishes + restaurants + Maps/TA links
-    ├── Nightlife.tsx   # venues + Maps/TA links
-    ├── SanJuan.tsx     # 23→24 June event + Maps/TA links
-    ├── LocalExperiences.tsx  # + Maps/TA links
-    ├── Logistics.tsx
-    └── Budget.tsx      # Recharts bar chart
-data/                   # 13 JSON files, one per category
-```
+- Single-page dashboard: `page.tsx` renders 11 sections with scroll-spy (IntersectionObserver) + sticky `SectionNav`
+- Sections in order: overview, videos, base, itinerary, beaches, food, nightlife, sanjuan, experiences, logistics, budget
+- No API routes, no database, no state management
+- JSON data uses `any` casts in `.map()` callbacks (no TypeScript types for data)
+- `next.config.js`: `basePath: '/spagna'` in production for GitHub Pages
 
-## Conventions
+## Code conventions
 
-- Components are all client components (`'use client'`).
-- Data flows one way: `data/*.json` → component import → render.
-- No API routes, no database. Static export.
-- No TypeScript types for JSON data — use `any` casts in `.map()` callbacks.
-- Animations: `framer-motion` with `whileInView` + `viewport={{ once: true }}`.
-- Icons: import from `lucide-react` (camelCase: `Sunrise`, `Sunset`, not `SunRise`, `SunSet`).
-- **Text contrast**: Always use explicit text color classes on `<p>`, `<span>`, etc. — never rely on inheritance. Bare `text-xs` or `text-sm` without a color class is a smell. Use at minimum `text-mare-700/70` or a contextual color matching the parent `bg-*`.
-- **Card shadows**: All interactive cards should use `card-shadow card-hover` classes for visual consistency. The `card-shadow` provides the Airbnb-inspired three-layer shadow at rest.
+- `'use client'` on all components
+- `<section id="...">` with `scroll-mt-20` for anchor offset
+- Cards: `card-shadow card-hover` classes (Airbnb-inspired three-layer shadow)
+- Text: always explicit color class (never rely on inheritance; `text-mare-700/70` minimum)
+- Animations: `motion.div` with `whileInView`, `viewport={{ once: true }}`, staggered `transition.delay`
+- `lucide-react` imports: camelCase (`Menu`, `X`, `Play`, `MapPin`, etc.)
+
+## Deployment
+
+- **GitHub Actions** (`.github/workflows/pages-deploy.yml`): push to `main` → `npm ci` + `npm run build` → deploy `out/` to GitHub Pages
+- `basePath: '/spagna'` only active when `NODE_ENV=production`
+- Static export: all images unoptimized, `output: 'export'` in config

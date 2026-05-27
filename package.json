@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Costa del Sol Travel Dashboard",
   "scripts": {
-    "predev": "if exist .next rmdir /s /q .next",
+    "clean": "if exist .next rmdir /s /q .next && if exist out rmdir /s /q out && if exist node_modules\\.cache rmdir /s /q node_modules\\.cache",
+    "predev": "npm run clean",
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run clean && next build",
     "start": "next start"
   },
   "dependencies": {
@@ -13,7 +14,7 @@
     "@fontsource/playfair-display": "^5.2.5",
     "framer-motion": "^12.7.4",
     "lucide-react": "^0.487.0",
-    "next": "^15.3.1",
+    "next": "15.5.18",
     "puppeteer-core": "^25.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

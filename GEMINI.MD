@@ -52,7 +52,13 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Added Plaza Tutti Frutti to nightlife, including Cochran's Irish Pub and Agora Bar.
 - Added typical dishes (Paella de Burriana, Boquerones fritos, Canaíllas) and local experiences (Maro Cliffs kayak tour, Balcón de Europa sunset walk).
 - Added natural/historical attractions (Cueva de Nerja, Balcón de Europa) and an inspirational YouTube travel guide.
-- Added Nerja as a 5th comparison base option in `data/bases.json` with pros, cons, and stats to help the user evaluate eastern base options.
+### 2026-05-27 — Risoluzione Runtime Error (Vendor Chunks)
+- Risolto errore `Cannot find module './vendor-chunks/next.js'` causato da cache corrotta in Next.js 15 su Windows.
+- Aggiunto script `npm run clean` in `package.json` che rimuove `.next`, `out` e `node_modules/.cache`.
+- Aggiornati `start.bat` e `start.ps1` per eseguire una pulizia profonda automatica prima dell'avvio.
+- Creata pagina `app/not-found.tsx` personalizzata per evitare crash del componente di default di Next.js.
+- Semplificato `next.config.js` rimuovendo `outputFileTracingRoot`.
+- Fissata versione Next.js a `15.5.18` per coerenza con l'ambiente dell'utente.
 
 ## Known Gotchas
 
