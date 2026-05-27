@@ -27,13 +27,22 @@ function getColor(score: number, invert = false) {
 export default function BaseSelection() {
   const sorted = [...bases].sort((a: any, b: any) => b.score - a.score)
   const tableRef = useRef<HTMLDivElement>(null)
+  const cardsRef = useRef<HTMLDivElement>(null)
   const [showScrollHint, setShowScrollHint] = useState(true)
   const [isOverflowing, setIsOverflowing] = useState(false)
+  const [showCardsHint, setShowCardsHint] = useState(true)
+  const [isCardsOverflowing, setIsCardsOverflowing] = useState(false)
 
   const checkOverflow = useCallback(() => {
     const el = tableRef.current
     if (!el) return
     setIsOverflowing(el.scrollWidth > el.clientWidth + 4)
+  }, [])
+
+  const checkCardsOverflow = useCallback(() => {
+    const el = cardsRef.current
+    if (!el) return
+    setIsCardsOverflowing(el.scrollWidth > el.clientWidth + 4)
   }, [])
 
   useEffect(() => {
@@ -50,6 +59,21 @@ export default function BaseSelection() {
       window.removeEventListener('resize', checkOverflow)
     }
   }, [checkOverflow])
+
+  useEffect(() => {
+    const el = cardsRef.current
+    if (!el) return
+    checkCardsOverflow()
+    const onScroll = () => {
+      if (el.scrollLeft > 10) setShowCardsHint(false)
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', checkCardsOverflow)
+    return () => {
+      el.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', checkCardsOverflow)
+    }
+  }, [checkCardsOverflow])
 
   return (
     <section id="base" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
@@ -144,47 +168,72 @@ export default function BaseSelection() {
         </AnimatePresence>
       </div>
 
-        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8">
-          {sorted.map((base, i) => (
-            <motion.div
-              key={base.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className={`rounded-2xl p-5 border card-shadow card-hover min-w-[85vw] xs:min-w-[300px] md:min-w-0 snap-center ${
-                recommendedBase.winner === base.name
-                  ? 'bg-gradient-to-br from-terracotta-50 to-crema border-terracotta-200'
-                  : 'bg-white/70 border-terracotta-100/40'
-              }`}
-            >
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="font-display text-lg font-semibold text-notte">{base.name}</h3>
-                <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${
-                  base.score >= 9 ? 'bg-emerald-100 text-emerald-800' :
-                  base.score >= 8 ? 'bg-blue-100 text-blue-800' :
-                  'bg-amber-100 text-amber-800'
-                }`}>
-                  {base.score}/10
-                </span>
-              </div>
-              <p className="text-xs text-mare-700/50 uppercase tracking-wider mb-2">{base.cost_level}</p>
-              <div className="space-y-1.5 mb-3">
-                {base.pros.map((p: string) => (
-                  <p key={p} className="text-xs text-mare-700/70 flex items-start gap-1.5">
-                    <Check className="w-3 h-3 text-emerald-500 mt-0.5 shrink-0" />
-                    {p}
-                  </p>
-                ))}
-                {base.cons.map((c: string) => (
-                  <p key={c} className="text-xs text-mare-700/50 flex items-start gap-1.5">
-                    <XIcon className="w-3 h-3 text-red-400 mt-0.5 shrink-0" />
-                    {c}
-                  </p>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+        <div className="relative">
+          <div ref={cardsRef} className="flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8">
+            {sorted.map((base, i) => (
+              <motion.div
+                key={base.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`rounded-2xl p-5 border card-shadow card-hover min-w-[85vw] xs:min-w-[300px] md:min-w-0 snap-center ${
+                  recommendedBase.winner === base.name
+                    ? 'bg-gradient-to-br from-terracotta-50 to-crema border-terracotta-200'
+                    : 'bg-white/70 border-terracotta-100/40'
+                }`}
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-display text-lg font-semibold text-notte">{base.name}</h3>
+                  <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${
+                    base.score >= 9 ? 'bg-emerald-100 text-emerald-800' :
+                    base.score >= 8 ? 'bg-blue-100 text-blue-800' :
+                    'bg-amber-100 text-amber-800'
+                  }`}>
+                    {base.score}/10
+                  </span>
+                </div>
+                <p className="text-xs text-mare-700/50 uppercase tracking-wider mb-2">{base.cost_level}</p>
+                <div className="space-y-1.5 mb-3">
+                  {base.pros.map((p: string) => (
+                    <p key={p} className="text-xs text-mare-700/70 flex items-start gap-1.5">
+                      <Check className="w-3 h-3 text-emerald-500 mt-0.5 shrink-0" />
+                      {p}
+                    </p>
+                  ))}
+                  {base.cons.map((c: string) => (
+                    <p key={c} className="text-xs text-mare-700/50 flex items-start gap-1.5">
+                      <XIcon className="w-3 h-3 text-red-400 mt-0.5 shrink-0" />
+                      {c}
+                    </p>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <AnimatePresence>
+            {showCardsHint && isCardsOverflowing && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-sabbia via-sabbia/90 to-transparent flex items-center justify-end pr-3 pointer-events-none md:hidden"
+              >
+                <div className="flex items-center gap-0.5">
+                  {[0, 0.15, 0.3].map((d) => (
+                    <motion.div
+                      key={d}
+                      animate={{ x: [0, 4, 0] }}
+                      transition={{ duration: 1.2, repeat: Infinity, delay: d, ease: 'easeInOut' }}
+                    >
+                      <ChevronRight className="w-4 h-4 text-terracotta-400" />
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>
