@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  // Se distribuito su GitHub Pages, decommenta la riga sotto
-  // basePath: process.env.NODE_ENV === 'production' ? '/spagna' : '',
+  // Necessario per GitHub Pages (dominio.github.io/spagna/)
+  basePath: process.env.NODE_ENV === 'production' ? '/spagna' : '',
   images: {
     unoptimized: true,
   },
