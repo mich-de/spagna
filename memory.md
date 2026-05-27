@@ -10,12 +10,13 @@ Sol & Local — dashboard viaggio Costa del Sol (19–25 Giu 2026). Next.js 15, 
 
 ## Build gotchas (already fixed)
 
-- **Tailwind v4** → `@import "tailwindcss"` in CSS, NOT `@tailwind` directives. Custom colors defined in `tailwind.config.ts`, loaded via `@config "../tailwind.config.ts"` in `globals.css`. Without this, ALL custom color classes silently produce no CSS → white-on-white.
+- **Tailwind v4** → `@import "tailwindcss"` in CSS, NOT `@tailwind` directives. Custom colors defined in `tailwind.config.mts`, loaded via `@config "../tailwind.config.mts"` in `globals.css`. Without this, ALL custom color classes silently produce no CSS → white-on-white.
 - **PostCSS** → uses `@tailwindcss/postcss` plugin, not legacy `tailwindcss` package.
 - **Fontsource v5** → import exact weight files (`400.css`), NOT bare `italic.css` (use `400-italic.css`).
 - **tsconfig** → target `es2016` (needed for `Array.from(Set)`).
 - **lucide-react** → camelCase: `Sunrise`, `Sunset`, NOT `SunRise`, `SunSet`.
 - **Body hydration** → `suppressHydrationWarning` on both `<html>` and `<body>` because browser extensions (BIS) inject attributes that cause React hydration mismatch.
+- **Webpack Cache Issues** → Next.js Webpack cache issues can be fixed by deleting the `.next` directory (`Remove-Item -Recurse -Force .next` or `rmdir /s /q .next`). Added a `"predev"` hook in `package.json` to automatically clean `.next` before running dev.
 
 ## Data split
 
@@ -36,6 +37,9 @@ Fixed white-on-light issues: star icon `text-white` changed to `text-mare-900`, 
 
 `start.bat` and `start.ps1` — kill ports 3000/3001 before starting dev server. Use plain ASCII art (avoids codepage corruption of box-drawing chars).
 
-## AGENTS.md
+## Recent Polish & Features (2026-05-27)
 
-Created with repo structure, tech stack, data conventions, and build gotchas. Includes table of 13 JSON files with their roles.
+- **Videos section**: Rendered 13 YouTube videos from `trip.json` with filtering by zone and type. External thumbnails load without iframes for optimized page load.
+- **Visual Consistency**: Unified design layout by applying `card-shadow` and `card-hover` to all card lists (Food, BaseSelection, SanJuan, LocalExperiences, Logistics).
+- **Documentation**: Updated `AGENTS.md` and created `GEMINI.MD`, `IMPLEMENTATION_PLAN.MD`, and `TASKS.MD` to preserve memory and follow local development workflows.
+- **Cleanups**: Removed unused imports in `Budget.tsx` and resolved webpack compiler caches. Build now outputs 0 errors / 0 warnings.
