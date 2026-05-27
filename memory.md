@@ -15,8 +15,8 @@ Sol & Local — dashboard viaggio Costa del Sol (19–25 Giu 2026). Next.js 15, 
 - **Fontsource v5** → import exact weight files (`400.css`), NOT bare `italic.css` (use `400-italic.css`).
 - **tsconfig** → target `es2016` (needed for `Array.from(Set)`).
 - **lucide-react** → camelCase: `Sunrise`, `Sunset`, NOT `SunRise`, `SunSet`.
-- **Body hydration** → `suppressHydrationWarning` on both `<html>` and `<body>` because browser extensions (BIS) inject attributes that cause React hydration mismatch.
-- **Webpack Cache Issues** → Next.js Webpack cache issues can be fixed by deleting the `.next` directory (`Remove-Item -Recurse -Force .next` or `rmdir /s /q .next`). Added a `"predev"` hook in `package.json` to automatically clean `.next` before running dev.
+- **Body hydration & Extension Mismatches** → Integrated a global inline script inside `RootLayout` (`app/layout.tsx`) that unbinds and dynamically removes the `bis_skin_checked` attribute (injected by Brave/extensions) before React hydrates, completely resolving Console/Runtime hydration warnings. Added `suppressHydrationWarning` on layout tags.
+- **Webpack Cache Issues** → Webpack compiler cache lock errors (`TypeError: a[d] is not a function`) can be fixed by deleting the `.next` directory. Cleaned automatically via a `"predev"` hook in `package.json`, and explicitly added as a cleanup step in `start.bat` and `start.ps1` before starting dev mode.
 
 ## Data split
 
