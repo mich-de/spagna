@@ -58,14 +58,14 @@ export default function Home() {
   }, [mounted])
 
   if (!mounted) {
-    return <div className="min-h-screen bg-sabbia" />
+    return <div className="min-h-screen bg-sabbia" suppressHydrationWarning />
   }
 
   return (
-    <main className="min-h-screen bg-sabbia">
+    <main className="min-h-screen bg-sabbia" suppressHydrationWarning>
       <SectionNav activeSection={activeSection} onSectionChange={handleSectionChange} />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" suppressHydrationWarning>
         {/* Hero decorative line */}
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-200 to-transparent mx-4 sm:mx-6 mt-2" />
 
