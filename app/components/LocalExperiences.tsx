@@ -19,7 +19,7 @@ export default function LocalExperiences() {
           <p className="text-mare-700/70 mt-1">15 modi per vivere la Costa del Sol come un residente</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
           {experiences.map((exp: any, i: number) => (
             <motion.div
               key={exp.title}
@@ -27,7 +27,7 @@ export default function LocalExperiences() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover"
+              className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center"
             >
               <div className="flex items-center gap-2 mb-2">
                 <Heart className="w-4 h-4 text-terracotta-500" />

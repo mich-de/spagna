@@ -91,7 +91,7 @@ export default function BaseSelection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8">
           {sorted.map((base, i) => (
             <motion.div
               key={base.name}
@@ -99,7 +99,7 @@ export default function BaseSelection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`rounded-2xl p-5 border card-shadow card-hover ${
+              className={`rounded-2xl p-5 border card-shadow card-hover min-w-[85vw] xs:min-w-[300px] md:min-w-0 snap-center ${
                 recommendedBase.winner === base.name
                   ? 'bg-gradient-to-br from-terracotta-50 to-crema border-terracotta-200'
                   : 'bg-white/70 border-terracotta-100/40'

@@ -54,9 +54,9 @@ export default function Videos() {
         </motion.div>
 
         {/* Filter bar */}
-        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl">
-          <div className="flex flex-wrap gap-1.5 items-center">
-            <span className="text-xs text-mare-500 font-medium mr-1">Zona:</span>
+        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl overflow-hidden">
+          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
+            <span className="text-xs text-mare-500 font-medium mr-1 shrink-0">Zona:</span>
             {zones.map((z) => (
               <button
                 key={z}
@@ -71,8 +71,8 @@ export default function Videos() {
               </button>
             ))}
           </div>
-          <div className="flex flex-wrap gap-1.5 items-center">
-            <span className="text-xs text-mare-500 font-medium mr-1">Tipo:</span>
+          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
+            <span className="text-xs text-mare-500 font-medium mr-1 shrink-0">Tipo:</span>
             {types.map((t) => (
               <button
                 key={t}
@@ -90,7 +90,7 @@ export default function Videos() {
         </div>
 
         {/* Video grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
           {filtered.map((video: any, i: number) => (
             <motion.a
               key={video.id}
@@ -101,7 +101,7 @@ export default function Videos() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="group bg-white/70 backdrop-blur-sm rounded-2xl overflow-hidden border border-terracotta-100/40 card-shadow card-hover block"
+              className="group bg-white/70 backdrop-blur-sm rounded-2xl overflow-hidden border border-terracotta-100/40 card-shadow card-hover block min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center"
             >
               {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden bg-mare-100">

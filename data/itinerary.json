@@ -135,26 +135,24 @@
   {
     "date": "2026-06-25",
     "dayName": "Gio",
-    "title": "Gran finale — Beach club & notte a Puerto Banús",
-    "zone": "Marbella / Puerto Banús",
-    "morning": "Colazione al porto di Puerto Banús. Giro tra i negozi (anche solo vetrine). Foto sulla spiaggia.",
-    "lunch": "Beach club: **Amàre Marbella** o **Nikki Beach**. Lettino + pranzo al ristorante del club. Pomeriggio party in piscina.",
-    "afternoon": "Musica, drink, gente. Pomeriggio da beach club. Se vuoi più calma, Playa de Nagüeles poco distante.",
-    "sunset": "Tramonto a Cabopino — il più bello della zona. Acqua calma, colori incredibili.",
-    "evening": "Cena da Trocadero Playa (Puerto Banús) — vista sul porto, pesce elegante. Prenotato. Ultima cena speciale.",
-    "night": "Notte a Puerto Banús — **TIBU** o **Mirage** per l'ultima uscita. Fino a tardi. Già che ci sei, brinda alla vacanza.",
-    "beach": "Amàre Marbella (beach club)",
-    "restaurant": "Trocadero Playa",
-    "attraction": "Puerto Banús",
-    "club": "TIBU / Mirage",
-    "drive_time_min": 20,
-    "energy_level": "intenso",
-    "budget_level": "alto",
-    "local_tip": "Se vai al beach club, PRENOTA con 1-2 settimane di anticipo. Amàre e Nikki Beach volano a giugno. Entra subito in acqua appena arrivato — il mare è perfetto. Dal vlog del Gran Marbella Resort: il beach club ha 4 piscine + area spa (in ristrutturazione), architettura rustica, no sovraffollamento. Al porto, il ristorante Picasso è citato come meta affidabile per pizza e insalate.",
+    "title": "Ultimo giorno & Volo di rientro",
+    "zone": "Marbella / Málaga Aeroporto",
+    "morning": "Ultimi acquisti a Puerto Banús. Colazione vista yacht. Chiusura bagagli e check-out.",
+    "lunch": "Pranzo presto da Picasso (Puerto Banús) — pizza o insalata, comodo e veloce. Ultimo saluto alla costa.",
+    "afternoon": "Spostamento verso l'aeroporto di Málaga (AGP) alle 15:45. Rifornimento carburante e riconsegna auto a noleggio per le 16:30. Controlli di sicurezza.",
+    "sunset": "Relax in aeroporto. Imbarco per il volo di rientro.",
+    "evening": "Volo Ryanair FR223 Málaga→Napoli (19:00 - 21:40). Cena leggera in volo o all'arrivo.",
+    "night": "Arrivo a Napoli NAP alle 21:40. Rientro a casa. Fine del viaggio.",
+    "beach": "Playa de Nagüeles (brief walk)",
+    "restaurant": "Picasso (Puerto Banús)",
+    "attraction": "Málaga Airport (AGP)",
+    "club": "Volo FR223 ✈",
+    "drive_time_min": 45,
+    "energy_level": "relax",
+    "budget_level": "medio",
+    "local_tip": "Avendo il volo Ryanair FR223 alle 19:00, devi essere in aeroporto a Málaga entro le 16:30/17:00. Consigliamo di lasciare Marbella al massimo alle 15:45 per gestire con calma il traffico della A-7, fare rifornimento e riconsegnare la vettura senza penalità. Pranza a Puerto Banús prima di partire.",
     "videos": [
-      "https://www.youtube.com/watch?v=WujtSTv4hYY",
-      "https://www.youtube.com/watch?v=1UVEFm2Loe4",
-      "https://www.youtube.com/watch?v=1SvMpmZYlnI"
+      "https://www.youtube.com/watch?v=WujtSTv4hYY"
     ]
   }
 ]

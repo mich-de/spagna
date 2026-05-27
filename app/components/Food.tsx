@@ -23,7 +23,7 @@ export default function Food() {
 
         <div className="mb-10">
           <h3 className="font-display text-xl font-semibold text-notte mb-4">🍤 Piatti da provare</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
             {foods.map((item: any, i: number) => (
               <motion.div
                 key={item.name}
@@ -31,7 +31,7 @@ export default function Food() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.03 }}
-                className="bg-white/70 rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover"
+                className="bg-white/70 rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center"
               >
                 <div className="flex items-start justify-between mb-1">
                   <h4 className="font-display font-bold text-notte">{item.name}</h4>
@@ -56,7 +56,7 @@ export default function Food() {
 
         <div>
           <h3 className="font-display text-xl font-semibold text-notte mb-4">🍽 Ristoranti & Chiringuiti</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
             {restaurants.map((r: any, i: number) => (
               <motion.div
                 key={r.name}
@@ -64,7 +64,7 @@ export default function Food() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.03 }}
-                className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-hover"
+                className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center"
               >
                 <div className="flex items-start justify-between mb-2">
                   <h4 className="font-display font-bold text-notte">{r.name}</h4>

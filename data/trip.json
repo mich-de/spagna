@@ -7,7 +7,7 @@
     "end": "2026-06-25"
   },
   "arrival": "Málaga Airport (AGP)",
-  "transport": "Ryanair FR9660 NAP→AGP 10:15-13:10 + auto a noleggio (35€/g)",
+  "transport": "Ryanair: NAP→AGP (FR9660) 10:15-13:10 | AGP→NAP (FR223) 19:00-21:40 + auto",
   "flight_price": 145,
   "car_price": 35,
   "hotel_price": 100,

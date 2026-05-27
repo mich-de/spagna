@@ -1,95 +1,80 @@
-# Frontend Production Polish — Costa del Sol Dashboard
+# Implementation Plan — Premium Mobile Design Enhancements
 
-Build passes with 0 errors and 0 warnings. The following plan focuses on **production-grade visual quality, consistency, and robustness** across all 11 components.
-
-## Audit Summary
-
-After reviewing every component, CSS file, data file, and the Tailwind config, I identified the following categories of improvements:
-
----
+This plan outlines design enhancements to optimize the **mobile layout (viewports < 640px)** of the Costa del Sol Travel Dashboard. The changes will implement premium mobile patterns (horizontal snap carousels, responsive tables, scrollable filters, and responsive charts) to create a native-app-like user experience.
 
 ## Proposed Changes
 
-### 1. Unused imports cleanup (0-risk)
+### 1. Unified Card Swipers on Mobile
+Instead of tall vertical stacks of cards that increase page height and scrolling fatigue, cards will render as **horizontally scrollable carousels on mobile** with snap alignment (`snap-x snap-mandatory`) and display as standard grids on desktop. By using `min-w-[85vw]`, the edge of the next card is partially visible, signaling scrollability.
 
-#### [MODIFY] [Budget.tsx](file:///d:/nodejs/spagna/app/components/Budget.tsx)
-- Remove unused `PieChart`, `Pie`, `Sector` imports from `recharts` — dead code, increases bundle.
-- Remove unused `DollarSign` import from `lucide-react`.
+#### [MODIFY] [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx)
+- Change video grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
+- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
 
----
-
-### 2. Video section — `trip.json` has 13 videos, but no component renders them
-
-The `trip.json` now contains a rich `videos[]` array (13 YouTube videos categorized by zone and type: guide, walking, nightlife, vlog, beach). This data is currently **unused**.
-
-#### [NEW] [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx)
-- New section component displaying embedded YouTube thumbnails in a filterable grid
-- Filter by zone (Benalmádena, Marbella, Estepona) using pill buttons like Beaches
-- Each card shows: thumbnail (YouTube `img.youtube.com/vi/{id}/mqdefault.jpg`), title, zone badge, duration, type badge
-- Clicking opens the YouTube link in a new tab (no iframe embed = no privacy/performance penalty)
-- Matches existing design language: `glass` cards, `card-shadow`, `card-hover`, `badge-pill`
-
-#### [MODIFY] [page.tsx](file:///d:/nodejs/spagna/app/page.tsx)
-- Import and render `<Videos />` between `<Overview />` and `<BaseSelection />`
-- Add `'videos'` to the `sections` scroll-spy array
-
-#### [MODIFY] [SectionNav.tsx](file:///d:/nodejs/spagna/app/components/SectionNav.tsx)
-- Add `{ id: 'videos', label: 'Video', icon: Play }` to the nav sections array
-
----
-
-### 3. Text contrast & consistency hardening
-
-#### [MODIFY] [Nightlife.tsx](file:///d:/nodejs/spagna/app/components/Nightlife.tsx)
-- `<p>` inside `bg-white/50` strategy panel has **no text color class** — relies on parent's `text-mare-700/80` which works but is inherited via `text-sm text-mare-700/80` on the parent `div`. Add explicit `text-mare-700/80` to be safe.
+#### [MODIFY] [Beaches.tsx](file:///d:/nodejs/spagna/app/components/Beaches.tsx)
+- Change beaches grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
+- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
 
 #### [MODIFY] [Food.tsx](file:///d:/nodejs/spagna/app/components/Food.tsx)
-- Add `card-shadow` to food dish cards for consistency with restaurant cards below
-
----
-
-### 4. Section visual consistency
-
-Several sections are missing `card-shadow` on their cards, creating inconsistency:
-
-#### [MODIFY] [BaseSelection.tsx](file:///d:/nodejs/spagna/app/components/BaseSelection.tsx)
-- Add `card-shadow` to the base comparison cards
-
-#### [MODIFY] [SanJuan.tsx](file:///d:/nodejs/spagna/app/components/SanJuan.tsx)
-- Add `card-shadow` to spot cards
+- Change dishes grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
+- Set dish card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+- Change restaurants grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
+- Set restaurant card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center` and add the missing `card-shadow` class.
 
 #### [MODIFY] [LocalExperiences.tsx](file:///d:/nodejs/spagna/app/components/LocalExperiences.tsx)
-- Add `card-shadow` to experience cards
+- Change experiences grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
+- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
 
-#### [MODIFY] [Logistics.tsx](file:///d:/nodejs/spagna/app/components/Logistics.tsx)
-- Add `card-shadow` to all logistics panels
+#### [MODIFY] [SanJuan.tsx](file:///d:/nodejs/spagna/app/components/SanJuan.tsx)
+- Change spots grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-4 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 mb-6`
+- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+
+#### [MODIFY] [BaseSelection.tsx](file:///d:/nodejs/spagna/app/components/BaseSelection.tsx)
+- Change bases grid container to `flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8`
+- Set card width to `min-w-[85vw] xs:min-w-[300px] md:min-w-0 snap-center`
 
 ---
 
-### 5. AGENTS.md & GEMINI.MD documentation
+### 2. Horizontal Scrolling Filters
+To prevent vertical stack clutter on mobile screens, category buttons in search and filter bars will be displayed in a single, horizontally scrollable row.
 
-#### [MODIFY] [AGENTS.md](file:///d:/nodejs/spagna/AGENTS.md)
-- Update Tech stack to document `@config "../tailwind.config.mts"` requirement
-- Add `@config` MANDATORY build gotcha
-- Add text contrast convention
-- Add Videos.tsx to the structure tree
-- Add `videos` entry to data table
+#### [MODIFY] [Beaches.tsx](file:///d:/nodejs/spagna/app/components/Beaches.tsx)
+- Wrap filter button groups in `flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap`
 
-#### [NEW] [GEMINI.MD](file:///d:/nodejs/spagna/GEMINI.MD)
-- Persistent memory log documenting architectural decisions, session history, and known gotchas
+#### [MODIFY] [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx)
+- Wrap filter button groups in `flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap`
+
+---
+
+### 3. Itinerary Layout Squish Fix
+Prevent long titles from wrapping awkwardly by moving the energy/budget badges under the title on mobile viewports.
+
+#### [MODIFY] [Itinerary.tsx](file:///d:/nodejs/spagna/app/components/Itinerary.tsx)
+- Adjust the layout of the day card header:
+  - On mobile (`flex-col sm:flex-row`), move the metadata badges (`energy` and `budget`) into a row directly below the title.
+  - On larger screens (`sm` and up), keep the side-by-side layout with badges on the right.
+  - Retain the `ChevronDown` arrow on the right at all times for clean interactivity.
+
+---
+
+### 4. Chart Label Collision Fix
+Eliminate messy text collisions on the budget chart when viewed on mobile screens.
+
+#### [MODIFY] [Budget.tsx](file:///d:/nodejs/spagna/app/components/Budget.tsx)
+- Introduce a window listener to track `isMobile` status.
+- When `isMobile` is true, hide the X-Axis labels (`tick={false}`) on the Recharts `BarChart`. Users can click individual bars to view tooltips, and refer to the itemized breakdown list located directly below the chart.
 
 ---
 
 ## Verification Plan
 
-### Automated Tests
+### Automated Verification
 ```bash
-npm run build   # Must pass with 0 errors, 0 warnings
+npm run build   # Must compile and bundle successfully with 0 errors/warnings
 ```
 
 ### Manual Verification
-- Visual check that all cards have consistent shadows
-- Verify the video filter buttons work
-- Verify YouTube thumbnails load
-- Check text contrast on all sections (no white-on-white)
-- Verify mobile responsive layout for Videos section
+- Verify that sections slide smoothly on mobile viewports, snap-center correctly, and retain grid columns on desktop.
+- Verify horizontal filter lists scroll cleanly.
+- Verify day titles in the itinerary accordion have ample width and badges render beautifully beneath them.
+- Check budget chart on mobile screens to ensure X-axis labels are cleanly hidden and tooltips trigger on bar click.

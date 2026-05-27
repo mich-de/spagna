@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { TrendingUp, Wallet } from 'lucide-react'
 import {
@@ -29,6 +29,14 @@ const categories = [
 
 export default function Budget() {
   const [activeLevel, setActiveLevel] = useState<string>('comfort')
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 640)
+    const handleResize = () => setIsMobile(window.innerWidth < 640)
+    window.addEventListener('resize', handleResize, { passive: true })
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const current = budgetData[activeLevel as keyof typeof budgetData] as any
 
@@ -96,7 +104,7 @@ export default function Budget() {
             <h3 className="font-display text-lg font-bold text-notte mb-3">Distribuzione spese</h3>
             <ResponsiveContainer width="100%" height={220}>
               <BarChart data={barData} margin={{ top: 5, right: 5, bottom: 5, left: 5 }}>
-                <XAxis dataKey="name" tick={{ fontSize: 10, fill: '#6B7280' }} axisLine={false} tickLine={false} />
+                <XAxis dataKey="name" tick={isMobile ? false : { fontSize: 10, fill: '#6B7280' }} axisLine={false} tickLine={false} />
                 <YAxis tick={{ fontSize: 10, fill: '#6B7280' }} axisLine={false} tickLine={false} />
                 <Tooltip
                   contentStyle={{ background: '#FAF8F5', border: '1px solid rgba(231,141,106,0.2)', borderRadius: '12px', fontSize: '12px' }}

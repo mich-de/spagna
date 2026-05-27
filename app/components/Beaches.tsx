@@ -36,7 +36,7 @@ export default function Beaches() {
         </motion.div>
 
         {/* FILTER BAR — glass container */}
-        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl">
+        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl overflow-hidden">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mare-400" />
             <input
@@ -49,7 +49,7 @@ export default function Beaches() {
           </div>
 
           {/* Zona filter buttons */}
-          <div className="flex flex-wrap gap-1.5 items-center">
+          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
             {zones.map((z) => (
               <button
                 key={z}
@@ -66,7 +66,7 @@ export default function Beaches() {
           </div>
 
           {/* Atmosfera filter buttons */}
-          <div className="flex flex-wrap gap-1.5 items-center">
+          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
             {atmospheres.map((a) => (
               <button
                 key={a}
@@ -83,7 +83,7 @@ export default function Beaches() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
           {filtered.map((beach: any, i: number) => (
             <motion.div
               key={beach.name}
@@ -91,7 +91,7 @@ export default function Beaches() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover"
+              className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center"
             >
               <div className="flex items-start justify-between mb-2">
                 <h3 className="font-display text-lg font-bold text-notte">{beach.name}</h3>

@@ -68,7 +68,7 @@ export default function SanJuan() {
         <h3 className="font-display text-xl font-semibold text-notte mb-4 flex items-center gap-2">
           <MapPin className="w-5 h-5 text-terracotta-500" /> Dove andare
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 mb-6">
           {sj.spots.map((spot: any, i: number) => (
             <motion.div
               key={spot.name}
@@ -76,7 +76,7 @@ export default function SanJuan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-2xl p-4 border card-shadow card-hover ${
+              className={`rounded-2xl p-4 border card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center ${
                 spot.name === sj.recommendedSpot
                   ? 'bg-gradient-to-br from-red-50 to-amber-50 border-red-200 ring-1 ring-red-300'
                   : 'bg-white/70 border-terracotta-100/40'
