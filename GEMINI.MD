@@ -42,8 +42,8 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Added card-shadow to Food, BaseSelection, SanJuan, LocalExperiences, Logistics
 - Updated AGENTS.md with current architecture
 - Created this GEMINI.MD
-- Resolved Webpack runtime compiler crashes by clearing `.next` cache and adding a `predev` cleanup hook to `package.json`
-- Silenced React hydration mismatch errors caused by browser extensions (e.g., Brave) injecting custom attributes like `bis_skin_checked="1"` by adding `suppressHydrationWarning` to the main container elements in `app/page.tsx`
+- Resolved Webpack runtime compiler crashes by clearing `.next` cache, adding a `predev` cleanup hook to `package.json`, and explicitly adding the cleanup step to `start.bat` and `start.ps1`.
+- Silenced React hydration mismatch errors caused by browser extensions (e.g., Brave) injecting custom attributes like `bis_skin_checked="1"` by adding a global DOM observer script in `app/layout.tsx` to scrub attributes before hydration, in addition to `suppressHydrationWarning` on root tags.
 
 ## Known Gotchas
 
@@ -51,4 +51,4 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 2. **Fontsource v5**: Import `400-italic.css`, not `italic.css`
 3. **Bundle note**: Page is ~177 kB (279 kB first load). YouTube thumbnails are external images, not bundled.
 4. **Port**: Dev server may use 3001 if 3000 is occupied.
-5. **Hydration Mismatches (Browser Extensions)**: Extensions (like Brave or adblockers) can inject attributes such as `bis_skin_checked` during load. Keep `suppressHydrationWarning` active on root and key container wrapper nodes (`html`, `body`, `main`, etc.) to prevent console runtime crash overlays.
+5. **Hydration Mismatches (Browser Extensions)**: Extensions (like Brave or adblockers) can inject attributes such as `bis_skin_checked` during load. A global inline script in `RootLayout` observes and removes them before React hydrates, resolving console hydration overlays. Keep `suppressHydrationWarning` active on root wrapper nodes (`html`, `body`, etc.) as a fallback.
