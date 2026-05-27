@@ -1,7 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { Check, X as XIcon } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Check, ChevronRight, X as XIcon } from 'lucide-react'
+import { useState, useEffect, useRef } from 'react'
 import bases from '@/data/bases.json'
 import recommendedBase from '@/data/recommended-base.json'
 
@@ -25,6 +26,20 @@ function getColor(score: number, invert = false) {
 
 export default function BaseSelection() {
   const sorted = [...bases].sort((a: any, b: any) => b.score - a.score)
+  const tableRef = useRef<HTMLDivElement>(null)
+  const [showScrollHint, setShowScrollHint] = useState(true)
+  const [isOverflowing, setIsOverflowing] = useState(false)
+
+  useEffect(() => {
+    const el = tableRef.current
+    if (!el) return
+    setIsOverflowing(el.scrollWidth > el.clientWidth)
+    const onScroll = () => {
+      if (el.scrollLeft > 10) setShowScrollHint(false)
+    }
+    el.addEventListener('scroll', onScroll)
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <section id="base" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
@@ -39,7 +54,21 @@ export default function BaseSelection() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Scelta della base</h2>
         </motion.div>
 
-        <div className="overflow-x-auto -mx-4 sm:mx-0">
+        <AnimatePresence>
+          {showScrollHint && isOverflowing && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              className="flex items-center gap-1.5 mb-3 text-xs text-terracotta-500/70 font-medium md:hidden"
+            >
+              <span>Scorri per confrontare</span>
+              <ChevronRight className="w-3.5 h-3.5 animate-pulse" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <div ref={tableRef} className="overflow-x-auto -mx-4 sm:mx-0">
           <div className="inline-block min-w-full px-4 sm:px-0">
             <table className="w-full border-collapse">
               <thead>
