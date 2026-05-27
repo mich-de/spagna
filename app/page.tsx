@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import SectionNav from '@/app/components/SectionNav'
 import Overview from '@/app/components/Overview'
+import Videos from '@/app/components/Videos'
 import BaseSelection from '@/app/components/BaseSelection'
 import Itinerary from '@/app/components/Itinerary'
 import Beaches from '@/app/components/Beaches'
@@ -14,7 +15,7 @@ import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
 import Budget from '@/app/components/Budget'
 
-const sections = ['overview', 'base', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
+const sections = ['overview', 'videos', 'base', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
@@ -69,6 +70,8 @@ export default function Home() {
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-200 to-transparent mx-4 sm:mx-6 mt-2" />
 
         <Overview />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <Videos />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <BaseSelection />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />

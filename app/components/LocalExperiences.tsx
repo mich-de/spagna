@@ -27,7 +27,7 @@ export default function LocalExperiences() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-terracotta-100/40 card-hover"
+              className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover"
             >
               <div className="flex items-center gap-2 mb-2">
                 <Heart className="w-4 h-4 text-terracotta-500" />

@@ -76,7 +76,7 @@ export default function SanJuan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-2xl p-4 border card-hover ${
+              className={`rounded-2xl p-4 border card-shadow card-hover ${
                 spot.name === sj.recommendedSpot
                   ? 'bg-gradient-to-br from-red-50 to-amber-50 border-red-200 ring-1 ring-red-300'
                   : 'bg-white/70 border-terracotta-100/40'

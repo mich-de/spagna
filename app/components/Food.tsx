@@ -31,7 +31,7 @@ export default function Food() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.03 }}
-                className="bg-white/70 rounded-xl p-4 border border-terracotta-100/40 card-hover"
+                className="bg-white/70 rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover"
               >
                 <div className="flex items-start justify-between mb-1">
                   <h4 className="font-display font-bold text-notte">{item.name}</h4>

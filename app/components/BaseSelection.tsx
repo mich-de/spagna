@@ -99,7 +99,7 @@ export default function BaseSelection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`rounded-2xl p-5 border card-hover ${
+              className={`rounded-2xl p-5 border card-shadow card-hover ${
                 recommendedBase.winner === base.name
                   ? 'bg-gradient-to-br from-terracotta-50 to-crema border-terracotta-200'
                   : 'bg-white/70 border-terracotta-100/40'

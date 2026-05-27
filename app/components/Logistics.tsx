@@ -20,7 +20,7 @@ export default function Logistics() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40">
+            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40 card-shadow">
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <Car className="w-5 h-5 text-terracotta-500" /> Noleggio auto
               </h3>
@@ -45,7 +45,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40">
+            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40 card-shadow">
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <ParkingCircle className="w-5 h-5 text-terracotta-500" /> Parcheggi
               </h3>
@@ -64,7 +64,7 @@ export default function Logistics() {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40">
+            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40 card-shadow">
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <Clock className="w-5 h-5 text-terracotta-500" /> Tempi di guida
               </h3>
@@ -78,7 +78,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40">
+            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40 card-shadow">
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <Gauge className="w-5 h-5 text-terracotta-500" /> Consigli guida
               </h3>
@@ -96,7 +96,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40">
+            <div className="bg-white/70 rounded-2xl p-5 border border-terracotta-100/40 card-shadow">
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-terracotta-500" /> Mobilità notturna
               </h3>

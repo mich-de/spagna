@@ -2,10 +2,9 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { DollarSign, TrendingUp, Wallet } from 'lucide-react'
+import { TrendingUp, Wallet } from 'lucide-react'
 import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
-  PieChart, Pie, Sector
+  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell
 } from 'recharts'
 import budgetData from '@/data/budget.json'
 

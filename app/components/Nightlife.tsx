@@ -125,11 +125,11 @@ export default function Nightlife() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-mare-700/80">
             <div className="p-3 bg-white/50 rounded-xl">
               <p className="font-medium text-terracotta-600 mb-1">2 sere a Marbella / Puerto Banús</p>
-              <p>Per l&apos;esperienza luxury, vedere e farsi vedere, il lato patinato della Costa del Sol</p>
+              <p className="text-sm text-mare-700/80">Per l&apos;esperienza luxury, vedere e farsi vedere, il lato patinato della Costa del Sol</p>
             </div>
             <div className="p-3 bg-white/50 rounded-xl">
               <p className="font-medium text-terracotta-600 mb-1">2 sere a Málaga</p>
-              <p>Per socializzare davvero, gente autentica, locali veri, costi contenuti. La notte migliore per conoscere persone</p>
+              <p className="text-sm text-mare-700/80">Per socializzare davvero, gente autentica, locali veri, costi contenuti. La notte migliore per conoscere persone</p>
             </div>
           </div>
         </div>

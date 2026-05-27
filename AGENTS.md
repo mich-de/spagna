@@ -15,7 +15,7 @@ All content lives in `data/*.json` — one file per category. Add or edit data i
 
 | File | Ruolo |
 |------|-------|
-| `trip.json` | Metadati viaggio: date, arrivo, trasporto, meteo, badges |
+| `trip.json` | Metadati viaggio: date, arrivo, trasporto, meteo, badges, videos[] (YouTube) |
 | `recommended-base.json` | Raccomandazione finale base ({winner, reason, alternatives}) |
 | `bases.json` | Array confronto basi: score, pro/cons, distanze, parcheggio, nightlife |
 | `itinerary.json` | Array 7 giorni: programma mattina→notte, ristoranti, tempi, livello energia |
@@ -33,7 +33,7 @@ All content lives in `data/*.json` — one file per category. Add or edit data i
 
 - **Next.js 15** (App Router, static export)
 - **React 19** with client components (`'use client'` in all interactive files)
-- **Tailwind v4** — uses `@import "tailwindcss"` + `@config "../tailwind.config.ts"` in `globals.css`, NOT `@tailwind` directives. Custom colors/fonts are defined in `tailwind.config.ts` and loaded via the `@config` directive.
+- **Tailwind v4** — uses `@import "tailwindcss"` + `@config "../tailwind.config.mts"` in `globals.css`, NOT `@tailwind` directives. Custom colors/fonts are defined in `tailwind.config.mts` and loaded via the `@config` directive.
 - **Fonts**: Playfair Display (headings), DM Sans (body) — imported via `@fontsource` packages in `globals.css`
 - **Recharts** for budget bar charts
 - **Framer Motion** for animations (`framer-motion`)
@@ -41,7 +41,7 @@ All content lives in `data/*.json` — one file per category. Add or edit data i
 
 ## Build gotchas
 
-- **⚠️ Tailwind v4 `@config` is MANDATORY**: `tailwind.config.ts` is **NOT** auto-loaded in v4. You MUST have `@config "../tailwind.config.ts"` in `globals.css` right after `@import "tailwindcss"`. Without it, ALL custom color classes (`text-notte`, `bg-terracotta-*`, `text-mare-*`, `bg-crema`, `text-oro`, etc.) silently produce NO CSS → text becomes invisible (white on white).
+- **⚠️ Tailwind v4 `@config` is MANDATORY**: `tailwind.config.mts` is **NOT** auto-loaded in v4. You MUST have `@config "../tailwind.config.mts"` in `globals.css` right after `@import "tailwindcss"`. Without it, ALL custom color classes (`text-notte`, `bg-terracotta-*`, `text-mare-*`, `bg-crema`, `text-oro`, etc.) silently produce NO CSS → text becomes invisible (white on white).
 - Tailwind v4 + PostCSS: PostCSS config uses `@tailwindcss/postcss` plugin, not the legacy `tailwindcss` package directly.
 - Fontsource v5: import exact weight files (`400.css`, `700.css`), NOT `italic.css` (use `400-italic.css`).
 - `tsconfig.json` targets `es2016` — needed for `Array.from(Set)` iteration.
@@ -55,15 +55,16 @@ app/
 ├── page.tsx            # main dashboard — scroll spy nav + section components
 ├── globals.css         # fonts + Tailwind v4 + custom classes
 └── components/
-    ├── SectionNav.tsx  # sticky nav with mobile menu
+    ├── SectionNav.tsx  # sticky nav with mobile menu + sliding indicator
     ├── Overview.tsx    # hero + badges + recommendation card
+    ├── Videos.tsx      # YouTube video grid with zone/type filters
     ├── BaseSelection.tsx
     ├── Itinerary.tsx   # accordion timeline (7 days)
-    ├── Beaches.tsx     # filterable cards
-    ├── Food.tsx        # dishes + restaurants
-    ├── Nightlife.tsx
-    ├── SanJuan.tsx     # 23→24 June event
-    ├── LocalExperiences.tsx
+    ├── Beaches.tsx     # filterable cards + Maps/TA links
+    ├── Food.tsx        # dishes + restaurants + Maps/TA links
+    ├── Nightlife.tsx   # venues + Maps/TA links
+    ├── SanJuan.tsx     # 23→24 June event + Maps/TA links
+    ├── LocalExperiences.tsx  # + Maps/TA links
     ├── Logistics.tsx
     └── Budget.tsx      # Recharts bar chart
 data/                   # 13 JSON files, one per category
@@ -78,3 +79,4 @@ data/                   # 13 JSON files, one per category
 - Animations: `framer-motion` with `whileInView` + `viewport={{ once: true }}`.
 - Icons: import from `lucide-react` (camelCase: `Sunrise`, `Sunset`, not `SunRise`, `SunSet`).
 - **Text contrast**: Always use explicit text color classes on `<p>`, `<span>`, etc. — never rely on inheritance. Bare `text-xs` or `text-sm` without a color class is a smell. Use at minimum `text-mare-700/70` or a contextual color matching the parent `bg-*`.
+- **Card shadows**: All interactive cards should use `card-shadow card-hover` classes for visual consistency. The `card-shadow` provides the Airbnb-inspired three-layer shadow at rest.
