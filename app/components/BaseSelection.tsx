@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { Check, ChevronRight, X as XIcon } from 'lucide-react'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import bases from '@/data/bases.json'
 import recommendedBase from '@/data/recommended-base.json'
 
@@ -30,16 +30,26 @@ export default function BaseSelection() {
   const [showScrollHint, setShowScrollHint] = useState(true)
   const [isOverflowing, setIsOverflowing] = useState(false)
 
+  const checkOverflow = useCallback(() => {
+    const el = tableRef.current
+    if (!el) return
+    setIsOverflowing(el.scrollWidth > el.clientWidth + 4)
+  }, [])
+
   useEffect(() => {
     const el = tableRef.current
     if (!el) return
-    setIsOverflowing(el.scrollWidth > el.clientWidth)
+    checkOverflow()
     const onScroll = () => {
       if (el.scrollLeft > 10) setShowScrollHint(false)
     }
-    el.addEventListener('scroll', onScroll)
-    return () => el.removeEventListener('scroll', onScroll)
-  }, [])
+    el.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', checkOverflow)
+    return () => {
+      el.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', checkOverflow)
+    }
+  }, [checkOverflow])
 
   return (
     <section id="base" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
@@ -54,21 +64,11 @@ export default function BaseSelection() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Scelta della base</h2>
         </motion.div>
 
-        <AnimatePresence>
-          {showScrollHint && isOverflowing && (
-            <motion.div
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              className="flex items-center gap-1.5 mb-3 text-xs text-terracotta-500/70 font-medium md:hidden"
-            >
-              <span>Scorri per confrontare</span>
-              <ChevronRight className="w-3.5 h-3.5 animate-pulse" />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <div ref={tableRef} className="overflow-x-auto -mx-4 sm:mx-0">
+        <div className="relative">
+          <div
+            ref={tableRef}
+            className="overflow-x-auto -mx-4 sm:mx-0"
+          >
           <div className="inline-block min-w-full px-4 sm:px-0">
             <table className="w-full border-collapse">
               <thead>
@@ -119,6 +119,30 @@ export default function BaseSelection() {
             </table>
           </div>
         </div>
+
+        <AnimatePresence>
+          {showScrollHint && isOverflowing && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-sabbia via-sabbia/90 to-transparent flex items-center justify-end pr-3 pointer-events-none md:hidden"
+            >
+              <div className="flex items-center gap-0.5">
+                {[0, 0.15, 0.3].map((d) => (
+                  <motion.div
+                    key={d}
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{ duration: 1.2, repeat: Infinity, delay: d, ease: 'easeInOut' }}
+                  >
+                    <ChevronRight className="w-4 h-4 text-terracotta-400" />
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
 
         <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8">
           {sorted.map((base, i) => (
