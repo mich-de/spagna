@@ -14,7 +14,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it" suppressHydrationWarning>
-      <body className="noise-bg" suppressHydrationWarning>{children}</body>
+      <body className="noise-bg" suppressHydrationWarning>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function removeAttribute() {
+                  document.querySelectorAll('[bis_skin_checked]').forEach(el => el.removeAttribute('bis_skin_checked'));
+                }
+                removeAttribute();
+                try {
+                  const observer = new MutationObserver(removeAttribute);
+                  observer.observe(document.documentElement, { 
+                    attributes: true, 
+                    subtree: true, 
+                    attributeFilter: ['bis_skin_checked'] 
+                  });
+                } catch (e) {}
+              })();
+            `
+          }}
+        />
+      </body>
     </html>
   )
 }

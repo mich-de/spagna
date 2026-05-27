@@ -17,6 +17,9 @@ for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3001 "') do (
 )
 timeout /t 1 /nobreak >nul
 
+echo   [>] Pulizia cache di compilazione (.next)...
+if exist .next rmdir /s /q .next
+
 echo   [v] Avvio del server in corso...
 echo   [^>] Apri http://localhost:3000 nel browser
 echo.

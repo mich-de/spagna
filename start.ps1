@@ -21,6 +21,9 @@ foreach ($port in $ports) {
 
 Start-Sleep -Seconds 1
 
+Write-Host "  [>] Pulizia cache di compilazione (.next)..." -ForegroundColor Yellow
+Remove-Item -Recurse -Force .next -ErrorAction SilentlyContinue
+
 Write-Host ""
 Write-Host "  [v] Avvio del server in corso..." -ForegroundColor Green
 Write-Host "  [>] Apri http://localhost:3000 nel browser" -ForegroundColor Yellow
