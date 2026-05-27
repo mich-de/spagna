@@ -29,6 +29,7 @@ const categories = [
 
 export default function Budget() {
   const [activeLevel, setActiveLevel] = useState<string>('comfort')
+  const [splitMode, setSplitMode] = useState<'single' | 'split'>('split')
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -40,15 +41,24 @@ export default function Budget() {
 
   const current = budgetData[activeLevel as keyof typeof budgetData] as any
 
+  const sharedKeys = ['accommodation_total', 'car_rental_total', 'fuel_total', 'parking_total']
+
+  const getCategoryValue = (key: string) => {
+    const val = current[key] || 0
+    if (splitMode === 'split' && sharedKeys.includes(key)) {
+      return Math.round(val / 2)
+    }
+    return val
+  }
+
   const barData = categories.map((cat) => ({
     name: cat.label,
-    value: current[cat.key] || 0,
+    value: getCategoryValue(cat.key),
     fill: cat.color,
   }))
 
-  const pieData = categories
-    .map((cat) => ({ name: cat.label, value: current[cat.key] || 0 }))
-    .filter((d) => d.value > 0)
+  const totalEstimated = barData.reduce((sum, item) => sum + item.value, 0)
+  const perDay = Math.round(totalEstimated / 7)
 
   return (
     <section id="budget" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-12">
@@ -63,20 +73,46 @@ export default function Budget() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Budget</h2>
         </motion.div>
 
-        <div className="flex gap-2 mb-6">
-          {levels.map((lvl) => (
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div className="flex gap-2">
+            {levels.map((lvl) => (
+              <button
+                key={lvl.key}
+                onClick={() => setActiveLevel(lvl.key)}
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+                  activeLevel === lvl.key
+                    ? 'bg-terracotta-500 text-white shadow-md'
+                    : 'bg-white/70 text-mare-600 border border-terracotta-100/40 hover:bg-terracotta-50'
+                }`}
+              >
+                  {lvl.icon} {lvl.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Divisione Spese Toggle */}
+          <div className="flex bg-white/70 p-1 rounded-xl border border-terracotta-100/40 self-start sm:self-auto shadow-sm">
             <button
-              key={lvl.key}
-              onClick={() => setActiveLevel(lvl.key)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
-                activeLevel === lvl.key
-                  ? 'bg-terracotta-500 text-white shadow-md'
-                  : 'bg-white/70 text-mare-600 border border-terracotta-100/40 hover:bg-terracotta-50'
+              onClick={() => setSplitMode('single')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                splitMode === 'single'
+                  ? 'bg-terracotta-500 text-white shadow-sm'
+                  : 'text-mare-600 hover:text-terracotta-600'
               }`}
             >
-              {lvl.icon} {lvl.label}
+              👤 Singolo
             </button>
-          ))}
+            <button
+              onClick={() => setSplitMode('split')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                splitMode === 'split'
+                  ? 'bg-terracotta-500 text-white shadow-sm'
+                  : 'text-mare-600 hover:text-terracotta-600'
+              }`}
+            >
+              👥 2 Amici (Dividi spese)
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
@@ -86,15 +122,15 @@ export default function Budget() {
             </h3>
             <div className="space-y-3">
               <div className="p-3 bg-gradient-to-r from-terracotta-50 to-crema rounded-xl">
-                <p className="text-xs text-mare-500">Totale stimato</p>
+                <p className="text-xs text-mare-500">Totale stimato {splitMode === 'split' && '(a persona)'}</p>
                 <p className="font-display text-2xl font-bold text-notte">
-                  €{current.total_estimated.toLocaleString()}
+                  €{totalEstimated.toLocaleString()}
                 </p>
               </div>
               <div className="p-3 bg-mare-50 rounded-xl">
-                <p className="text-xs text-mare-500">Costo giornaliero</p>
+                <p className="text-xs text-mare-500">Costo giornaliero {splitMode === 'split' && '(a persona)'}</p>
                 <p className="font-display text-xl font-bold text-notte">
-                  €{current.per_day.toLocaleString()}/giorno
+                  €{perDay.toLocaleString()}/giorno
                 </p>
               </div>
             </div>
@@ -121,15 +157,21 @@ export default function Budget() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-          {categories.map((cat) => (
-            <div key={cat.key} className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-terracotta-100/30">
-              <div className="flex items-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: cat.color }} />
-                <span className="text-xs text-mare-700">{cat.label}</span>
+          {categories.map((cat) => {
+            const isShared = sharedKeys.includes(cat.key);
+            const val = getCategoryValue(cat.key);
+            return (
+              <div key={cat.key} className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-terracotta-100/30">
+                <div className="flex items-center gap-2">
+                  <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: cat.color }} />
+                  <span className="text-xs text-mare-700">
+                    {cat.label} {splitMode === 'split' && isShared && <span className="text-[10px] text-mare-400 font-normal">(condiviso)</span>}
+                  </span>
+                </div>
+                <span className="text-sm font-medium text-notte">€{val}</span>
               </div>
-              <span className="text-sm font-medium text-notte">€{current[cat.key]}</span>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-4 p-4 bg-gradient-to-r from-mare-50 to-terracotta-50 rounded-xl text-xs text-mare-600">
