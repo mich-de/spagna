@@ -211,5 +211,37 @@
     "notes": "Estepona la sera è per cene e passeggiate. Non per nightlife. Perfetta per staccare.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Centro+Nightlife",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Estepona%20centro+Nightlife+Costa+del+Sol"
+  },
+  {
+    "zone": "Nerja (Plaza Tutti Frutti)",
+    "clientType": "giovani, turisti, internazionali, coppie",
+    "vibe": "rilassata, informale, festosa",
+    "bestTime": "22:00-03:00",
+    "start": "Balcón de Europa per un drink panoramico",
+    "continueTo": "Plaza Tutti Frutti",
+    "venues": [
+      {
+        "name": "Cochran's Irish Pub",
+        "type": "Irish pub / bar sul mare",
+        "price": "€€",
+        "vibe": "terrazza vista mare, birra, musica dal vivo/rock",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Cochrans+Irish+Pub+Nerja",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cochran%27s%20Irish%20Pub+Nerja"
+      },
+      {
+        "name": "Agora Bar",
+        "type": "cocktail bar",
+        "price": "€€",
+        "vibe": "cocktail estivi, musica all'aperto",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Agora+Bar+Nerja",
+        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Agora%20Bar+Nerja"
+      }
+    ],
+    "dressCode": "casual",
+    "transport": "a piedi (il centro è pedonale)",
+    "socialEase": 8,
+    "notes": "Tutta la vita notturna giovanile si concentra nella storica Plaza Tutti Frutti, con una decina di locali vicinissimi. Cochran's è spettacolare perché arroccato sulla scogliera con discesa a mare.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Plaza+Tutti+Frutti+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Plaza%20Tutti%20Frutti%20Nerja"
   }
 ]

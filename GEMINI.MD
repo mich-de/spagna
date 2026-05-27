@@ -45,6 +45,15 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Resolved Webpack runtime compiler crashes by clearing `.next` cache, adding a `predev` cleanup hook to `package.json`, and explicitly adding the cleanup step to `start.bat` and `start.ps1`.
 - Silenced React hydration mismatch errors caused by browser extensions (e.g., Brave) injecting custom attributes like `bis_skin_checked="1"` by adding a global DOM observer script in `app/layout.tsx` to scrub attributes before hydration, in addition to `suppressHydrationWarning` on root tags.
 
+### 2026-05-27 — Costa de Nerja & Maro Integration
+- Integrated Eastern Costa del Sol region (**Costa de Nerja / Maro**) into all dashboard components dynamically through data files.
+- Added 3 beaches (Burriana, Maro, Calahonda) under `"zone": "Nerja"`.
+- Added 3 restaurants (Chiringuito Ayo, El Pulguilla, Restaurante Oliva).
+- Added Plaza Tutti Frutti to nightlife, including Cochran's Irish Pub and Agora Bar.
+- Added typical dishes (Paella de Burriana, Boquerones fritos, Canaíllas) and local experiences (Maro Cliffs kayak tour, Balcón de Europa sunset walk).
+- Added natural/historical attractions (Cueva de Nerja, Balcón de Europa) and an inspirational YouTube travel guide.
+- Added Nerja as a 5th comparison base option in `data/bases.json` with pros, cons, and stats to help the user evaluate eastern base options.
+
 ## Known Gotchas
 
 1. **Tailwind v4 `@config`**: Must be present. See above.

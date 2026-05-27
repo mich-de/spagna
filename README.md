@@ -8,6 +8,7 @@ Dashboard di viaggio premium per la Costa del Sol (19-25 Giugno 2026).
 - 🍽 Ristoranti e Chiringuitos autentici verificati.
 - 🚗 Logistica e guida ai parcheggi.
 - 💰 Gestione budget su 3 livelli.
+- 🏖 Costa de Nerja & Maro: spiagge selvagge, paella cotta a legna e attrazioni della costa orientale.
 
 ## Tech Stack
 - Next.js 15
@@ -24,4 +25,4 @@ Oppure usa `start.bat` su Windows.
 
 ## Deployment
 Il sito è configurato per il deploy automatico su **GitHub Pages** tramite GitHub Actions.
-Last update: 2026-05-26 12:00
+Last update: 2026-05-27 10:30

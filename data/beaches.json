@@ -193,5 +193,50 @@
     "turismLevel": "bassissimo",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Viborilla+Benalmadena",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Viborilla+Costa+del+Sol"
+  },
+  {
+    "name": "Playa de Burriana",
+    "zone": "Nerja",
+    "description": "La spiaggia più famosa di Nerja. Lunga, attrezzata, con un lungomare vivace pieno di negozi e ristoranti.",
+    "atmosphere": "vivace/turistica",
+    "parking": "Parcheggio in strada o parcheggio sotterraneo Burriana (€2/h)",
+    "sand": "sabbia dorata e ciottoli fini",
+    "chiringuitos": true,
+    "bestTime": "tutto il giorno",
+    "distance_min": 50,
+    "localTip": "Famosissima per il Chiringuito de Ayo. Puoi noleggiare kayak qui per andare verso le scogliere di Maro.",
+    "turismLevel": "alto",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Burriana%20Nerja"
+  },
+  {
+    "name": "Playa de Maro",
+    "zone": "Nerja",
+    "description": "Una delle calette selvagge più belle dell'Andalusia, circondata da scogliere nel Parco Naturale Maro-Cerro Gordo.",
+    "atmosphere": "wild/naturale",
+    "parking": "Parcheggio sterrato in alto (gratis), poi discesa a piedi di 10 min",
+    "sand": "sabbia scura e ciottoli",
+    "chiringuitos": true,
+    "bestTime": "mattina e primo pomeriggio",
+    "distance_min": 55,
+    "localTip": "Acqua limpidissima ideale per lo snorkeling. Fai il tour in kayak per vedere la cascata d'acqua dolce che cade in mare.",
+    "turismLevel": "medio",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Maro+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Maro%20Nerja"
+  },
+  {
+    "name": "Playa de Calahonda",
+    "zone": "Nerja",
+    "description": "Piccola e pittoresca spiaggia da cartolina proprio sotto il famoso Balcón de Europa. Simbolo di Nerja.",
+    "atmosphere": "intima/suggestiva",
+    "parking": "Parcheggio Plaza de España (€2.5/h), poi discesa a piedi",
+    "sand": "sabbia scura fine",
+    "chiringuitos": false,
+    "bestTime": "mattina (pomeriggio tardi va in ombra)",
+    "distance_min": 50,
+    "localTip": "Molto fotogenica. Ideale per un bagno veloce prima di passeggiare in centro.",
+    "turismLevel": "alto",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Calahonda+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Calahonda%20Nerja"
   }
 ]

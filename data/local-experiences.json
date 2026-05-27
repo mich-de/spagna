@@ -142,5 +142,23 @@
     "tip": "PORTA TUTTO: birra, costume, felpa, amici. È la notte più bella dell'anno",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Pedregalejo+Malaga+San+Juan",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pedregalejo+San+Juan+Malaga"
+  },
+  {
+    "title": "Kayak ai Cliff di Maro",
+    "where": "Playa de Maro o Burriana (Nerja)",
+    "when": "Mattina (09:00 - 12:00)",
+    "cost": "€20-30",
+    "tip": "Noleggia un kayak o partecipa a un tour guidato per esplorare le scogliere, le grotte marine e la spettacolare cascata di Maro che si getta in mare. Porta scarpette da scoglio e borsa impermeabile.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Maro+Cliffs+Kayak+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Maro+Cliffs+Kayak+Nerja"
+  },
+  {
+    "title": "Passeggiata al Balcón de Europa",
+    "where": "Nerja centro",
+    "when": "Tramonto o sera (19:30 - 21:30)",
+    "cost": "gratuito",
+    "tip": "Partecipa al classico rito del 'paseo' serale lungo il viale alberato fino alla terrazza panoramica a picco sul mare. Goditi un gelato artigianale da Albi o un aperitivo con vista spettacolare.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Balcon+de+Europa+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Balcon+de+Europa+Nerja"
   }
 ]

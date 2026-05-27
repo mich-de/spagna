@@ -343,5 +343,50 @@
     "localTip": "Il patio è il posto più bello. Vieni per le tapas e resta per l'atmosfera. Spesso c'è musica dal vivo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Patio+de+Macarena+Estepona",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Patio%20de%20Macarena+Estepona%20centro"
+  },
+  {
+    "name": "Chiringuito Ayo",
+    "zone": "Nerja",
+    "type": "chiringuito storico",
+    "description": "Leggendario chiringuito sulla Playa de Burriana dal 1969. Famoso in tutta la Spagna per la paella gigante cotta a legna sulla spiaggia.",
+    "specialty": "paella a leña (con ricarica gratuita se hai ancora fame!)",
+    "price": "€",
+    "vibe": "informale/rustico/popolare",
+    "reservation": "no (ti mettono in coda, ma scorre velocissima)",
+    "parking": "Parcheggio spiaggia Burriana",
+    "bestTime": "pranzo (13:30 - 16:00)",
+    "localTip": "Ordina la paella, osserva i maestri cuocerla in padelle enormi sul fuoco e ricordati che puoi chiedere il bis gratuito!",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Chiringuito+Ayo+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Chiringuito%20Ayo%20Nerja"
+  },
+  {
+    "name": "El Pulguilla",
+    "zone": "Nerja",
+    "type": "tapas bar tradizionale",
+    "description": "Il classico dei classici a Nerja. Enorme bar de tapas con un grande patio interno. Frequentatissimo sia da locali che da turisti.",
+    "specialty": "pesce fritto, boquerones, calamari, tapa di polpo",
+    "price": "€",
+    "vibe": "vivace/rumoroso/autentico",
+    "reservation": "no",
+    "parking": "Parcheggio Plaza de España (€2.5/h)",
+    "bestTime": "aperitivo (13:00 o 20:30)",
+    "localTip": "Ordina una birra o vino al banco per ricevere una tapa di pesce a scelta inclusa. Resta al bancone per l'atmosfera autentica.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Pulguilla+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Pulguilla%20Nerja"
+  },
+  {
+    "name": "Restaurante Oliva",
+    "zone": "Nerja",
+    "type": "ristorante moderno/fine dining",
+    "description": "Ristorante elegante premiato dalla Guida Michelin. Cucina andalusa reinventata con tocco moderno e ingredienti locali di alta qualità.",
+    "specialty": "menù degustazione, baccalà marinato, guancia iberica",
+    "price": "€€€€",
+    "vibe": "elegante/romantico",
+    "reservation": "obbligatoria (consigliata con 1 settimana di anticipo)",
+    "parking": "Parcheggio Plaza de España (€2.5/h)",
+    "bestTime": "cena (21:00)",
+    "localTip": "Ottimo per una cena speciale. Il menù degustazione offre un viaggio straordinario nei sapori della provincia di Malaga.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Restaurante+Oliva+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Restaurante%20Oliva%20Nerja"
   }
 ]

@@ -166,5 +166,36 @@
       "Avvertimento: attenzione ai costi gonfiati in alta stagione a Puerto Banús",
       "Marbella definita 'ein wunderschöner Ort' — città bellissima da entrambi i vlogger"
     ]
+  },
+  {
+    "name": "Nerja",
+    "score": 8.0,
+    "pros": [
+      "Spiagge e calette naturali tra le migliori dell'Andalusia (Maro)",
+      "Centro storico pedonale caratteristico e Balcón de Europa",
+      "Costi medi inferiori rispetto alla costa occidentale (Marbella)",
+      "Attrazioni naturali spettacolari (Cueva de Nerja, fiumi, kayak)"
+    ],
+    "cons": [
+      "Lontana dalla costa occidentale (Marbella dista oltre 1h 10m auto)",
+      "Parcheggio in centro molto trafficato in estate",
+      "Meno comoda per fare escursioni a Ronda o Gibilterra"
+    ],
+    "distance_airport_min": 50,
+    "distance_marbella_min": 70,
+    "parking_ease": 5,
+    "nightlife_level": 7,
+    "beach_quality": 10,
+    "authenticity": 8,
+    "cost_level": "medio",
+    "social_ease": 8,
+    "videos": [
+      "https://www.youtube.com/watch?v=kYc5e1_N7E0"
+    ],
+    "transcript_insights": [
+      "Playa de Burriana famosa per l'offerta gastronomica, in particolare la paella cotta a legna da Ayo sulla spiaggia",
+      "Cueva de Nerja: attrazione archeologica e naturale con stalattiti da record",
+      "Scogliere di Maro: kayak per esplorare grotte e cascate d'acqua dolce in mare"
+    ]
   }
 ]

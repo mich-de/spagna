@@ -1,80 +1,87 @@
-# Implementation Plan — Premium Mobile Design Enhancements
+# Implementation Plan — Costa de Nerja / Maro Integration
 
-This plan outlines design enhancements to optimize the **mobile layout (viewports < 640px)** of the Costa del Sol Travel Dashboard. The changes will implement premium mobile patterns (horizontal snap carousels, responsive tables, scrollable filters, and responsive charts) to create a native-app-like user experience.
+This plan outlines the integration of **Costa de Nerja / Maro** (eastern Costa del Sol, Malaga) into the travel dashboard. We will enrich the static JSON data files under the `data/` folder, adding beautiful beaches, nightlife hubs, typical regional dishes, local experiences, top tourist attractions, and inspirational travel videos. Since the dashboard components dynamically load and filter by zones directly from these files, this data enrichment will update the frontend automatically.
+
+We will also add "Nerja" as a 5th comparison base in the strategic base selection table to help the user weigh its pros, cons, and characteristics.
 
 ## Proposed Changes
 
-### 1. Unified Card Swipers on Mobile
-Instead of tall vertical stacks of cards that increase page height and scrolling fatigue, cards will render as **horizontally scrollable carousels on mobile** with snap alignment (`snap-x snap-mandatory`) and display as standard grids on desktop. By using `min-w-[85vw]`, the edge of the next card is partially visible, signaling scrollability.
+### 1. Data Enrichment Component-by-Component
 
-#### [MODIFY] [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx)
-- Change video grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
-- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+#### [MODIFY] [beaches.json](file:///d:/nodejs/spagna/data/beaches.json)
+Append 3 iconic beaches from the Nerja/Maro area:
+- **Playa de Burriana**: Main tourist beach, famous for water sports and wood-fired paella.
+- **Playa de Maro**: Wild cove in the cliffs of the Maro-Cerro Gordo natural park.
+- **Playa de Calahonda**: High-contrast, scenic cove directly below the Balcón de Europa.
 
-#### [MODIFY] [Beaches.tsx](file:///d:/nodejs/spagna/app/components/Beaches.tsx)
-- Change beaches grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
-- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+#### [MODIFY] [restaurants.json](file:///d:/nodejs/spagna/data/restaurants.json)
+Append 3 typical dining options in Nerja:
+- **Chiringuito Ayo**: Landmark restaurant on Burriana beach, famous for giant pans of wood-fired paella.
+- **El Pulguilla**: Traditional, lively tapas bar in the center of Nerja, known for seafood tapas served with drinks.
+- **Restaurante Oliva**: Premium modern Andalusian fine dining restaurant in the heart of Nerja.
 
-#### [MODIFY] [Food.tsx](file:///d:/nodejs/spagna/app/components/Food.tsx)
-- Change dishes grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
-- Set dish card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
-- Change restaurants grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
-- Set restaurant card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center` and add the missing `card-shadow` class.
+#### [MODIFY] [nightlife.json](file:///d:/nodejs/spagna/data/nightlife.json)
+Append 1 nightlife entry for Nerja:
+- **Plaza Tutti Frutti**: The primary nightlife district in Nerja with multiple bars and pubs.
+- Include venues like **Cochran's Irish Pub** (terrace overlooking the sea) and **Agora Bar** (cocktails).
 
-#### [MODIFY] [LocalExperiences.tsx](file:///d:/nodejs/spagna/app/components/LocalExperiences.tsx)
-- Change experiences grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0`
-- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+#### [MODIFY] [food.json](file:///d:/nodejs/spagna/data/food.json)
+Append 3 regional delicacies related to Nerja:
+- **Paella de Burriana (Ayo)**: Beach-cooked wood-fired paella.
+- **Boquerones de Nerja**: Locally sourced fried anchovies.
+- **Canaíllas**: Sea snails cooked with herbs and garlic.
 
-#### [MODIFY] [SanJuan.tsx](file:///d:/nodejs/spagna/app/components/SanJuan.tsx)
-- Change spots grid container to `flex sm:grid sm:grid-cols-2 lg:grid-cols-4 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 mb-6`
-- Set card width to `min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center`
+#### [MODIFY] [local-experiences.json](file:///d:/nodejs/spagna/data/local-experiences.json)
+Append 2 iconic experiences from the area:
+- **Kayak ai Cliff di Maro**: Kayaking tour along the cliffs to discover caves and marine waterfalls.
+- **Passeggiata al Balcón de Europa**: The traditional evening promenade (paseo) at the Balcón de Europa viewpoint.
 
-#### [MODIFY] [BaseSelection.tsx](file:///d:/nodejs/spagna/app/components/BaseSelection.tsx)
-- Change bases grid container to `flex md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 mt-8`
-- Set card width to `min-w-[85vw] xs:min-w-[300px] md:min-w-0 snap-center`
+#### [MODIFY] [attractions.json](file:///d:/nodejs/spagna/data/attractions.json)
+Append 2 major landmarks:
+- **Cueva de Nerja**: Prehistoric cave complex with spectacular stalactites.
+- **Balcón de Europa**: Scenic viewpoint overlooking the Mediterranean built on a former fortress.
 
----
+#### [MODIFY] [trip.json](file:///d:/nodejs/spagna/data/trip.json)
+Append 1 YouTube video featuring Nerja to the `videos` array:
+- **Nerja: The Jewel of Costa del Sol (4K)** (ID: `kYc5e1_N7E0`) to show walking tours and guide content.
 
-### 2. Horizontal Scrolling Filters
-To prevent vertical stack clutter on mobile screens, category buttons in search and filter bars will be displayed in a single, horizontally scrollable row.
-
-#### [MODIFY] [Beaches.tsx](file:///d:/nodejs/spagna/app/components/Beaches.tsx)
-- Wrap filter button groups in `flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap`
-
-#### [MODIFY] [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx)
-- Wrap filter button groups in `flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap`
-
----
-
-### 3. Itinerary Layout Squish Fix
-Prevent long titles from wrapping awkwardly by moving the energy/budget badges under the title on mobile viewports.
-
-#### [MODIFY] [Itinerary.tsx](file:///d:/nodejs/spagna/app/components/Itinerary.tsx)
-- Adjust the layout of the day card header:
-  - On mobile (`flex-col sm:flex-row`), move the metadata badges (`energy` and `budget`) into a row directly below the title.
-  - On larger screens (`sm` and up), keep the side-by-side layout with badges on the right.
-  - Retain the `ChevronDown` arrow on the right at all times for clean interactivity.
+#### [MODIFY] [bases.json](file:///d:/nodejs/spagna/data/bases.json)
+Append "Nerja" to the base comparison system:
+- Set stats: distance_airport_min: 50, distance_marbella_min: 70, parking_ease: 6, nightlife_level: 7, beach_quality: 10, authenticity: 8, cost_level: "medio", social_ease: 8.
+- Add pros: beaches/coves, authentic white town feel, Balcón de Europa & Caves, Plaza Tutti Frutti nightlife.
+- Add cons: distant from Marbella (western side), busy summer parking, less practical for Estepona/Ronda day-trips.
 
 ---
 
-### 4. Chart Label Collision Fix
-Eliminate messy text collisions on the budget chart when viewed on mobile screens.
+### 2. Documentation Updates
 
-#### [MODIFY] [Budget.tsx](file:///d:/nodejs/spagna/app/components/Budget.tsx)
-- Introduce a window listener to track `isMobile` status.
-- When `isMobile` is true, hide the X-Axis labels (`tick={false}`) on the Recharts `BarChart`. Users can click individual bars to view tooltips, and refer to the itemized breakdown list located directly below the chart.
+#### [MODIFY] [IMPLEMENTATION_PLAN.MD](file:///d:/nodejs/spagna/IMPLEMENTATION_PLAN.MD)
+- Document the integration strategy and details.
+
+#### [MODIFY] [TASKS.MD](file:///d:/nodejs/spagna/TASKS.MD)
+- Add tasks for data modification, checking compile/hydration, and verification.
+
+#### [MODIFY] [GEMINI.MD](file:///d:/nodejs/spagna/GEMINI.MD)
+- Record current session details, including the addition of Costa de Nerja.
+
+#### [MODIFY] [README.md](file:///d:/nodejs/spagna/README.md)
+- Update with details about the new Nerja features.
 
 ---
 
 ## Verification Plan
 
-### Automated Verification
-```bash
-npm run build   # Must compile and bundle successfully with 0 errors/warnings
-```
+### Automated Tests
+- Run Next.js production build:
+  ```bash
+  npm run build
+  ```
+  Verify that the compiler finishes with `0 errors` and `0 warnings`.
 
 ### Manual Verification
-- Verify that sections slide smoothly on mobile viewports, snap-center correctly, and retain grid columns on desktop.
-- Verify horizontal filter lists scroll cleanly.
-- Verify day titles in the itinerary accordion have ample width and badges render beautifully beneath them.
-- Check budget chart on mobile screens to ensure X-axis labels are cleanly hidden and tooltips trigger on bar click.
+- Launch the development server and verify:
+  1. The beaches filter bar shows a "Nerja" button. Clicking it displays only Nerja beaches.
+  2. The videos filter bar shows a "Nerja" button. Clicking it displays the new Nerja video.
+  3. The base selection table renders 5 columns instead of 4, correctly sorting them by score and displaying the new Nerja card.
+  4. The food, experiences, attractions, and nightlife sections display the new cards.
+  5. The mobile horizontal scrolling carousels function correctly with the new items.

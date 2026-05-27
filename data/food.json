@@ -118,5 +118,29 @@
     "where": "El Pimpi o enoteca",
     "pairing": "dessert o da solo",
     "authenticity": 10
+  },
+  {
+    "name": "Paella de Burriana (Ayo)",
+    "description": "La celebre paella cotta a legna in enormi padelle direttamente sulla spiaggia. Un'istituzione locale.",
+    "when": "pranzo sulla spiaggia",
+    "where": "Chiringuito Ayo (Playa de Burriana)",
+    "pairing": "tinto de verano o sangria",
+    "authenticity": 10
+  },
+  {
+    "name": "Boquerones fritos de Nerja",
+    "description": "Acciughe freschissime del mare di Nerja, infarinate e fritte in olio caldissimo. Croccanti fuori, tenere dentro.",
+    "when": "pranzo o aperitivo",
+    "where": "El Pulguilla o chiringuiti",
+    "pairing": "vino bianco secco o birra",
+    "authenticity": 10
+  },
+  {
+    "name": "Canaíllas",
+    "description": "Lumache di mare tipiche della costa orientale, bollite in acqua salata con alloro e spezie. Molto saporite.",
+    "when": "aperitivo",
+    "where": "Tapas bar a Nerja centro",
+    "pairing": "vino bianco manzanilla",
+    "authenticity": 9
   }
 ]

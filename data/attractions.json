@@ -163,5 +163,27 @@
     "pairWith": "Giro Porto Marina + pranzo",
     "priority": "se hai bambini",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Sea+Life+Benalmadena"
+  },
+  {
+    "name": "Cueva de Nerja",
+    "zone": "Nerja",
+    "whyVisit": "Una delle grotte preistoriche più spettacolari d'Europa. Conserva colonne gigantesche e la stalattite più grande del mondo.",
+    "duration": "1.5h",
+    "parking": "Parcheggio riservato in loco (€2)",
+    "cost": "€15",
+    "pairWith": "Pranzo a Nerja + Spiaggia di Maro",
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Cueva+de+Nerja"
+  },
+  {
+    "name": "Balcón de Europa",
+    "zone": "Nerja",
+    "whyVisit": "Terrazza panoramica mozzafiato a picco sul mare nel cuore di Nerja. Simbolo della Costa del Sol.",
+    "duration": "30m - 1h",
+    "parking": "Parcheggio Plaza de España (€2.5/h)",
+    "cost": "gratuito",
+    "pairWith": "Aperitivo in centro + cena da El Pulguilla",
+    "priority": "must",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Balcon+de+Europa+Nerja"
   }
 ]
