@@ -6,7 +6,8 @@ Static Next.js 15 dashboard — premium travel guide for Costa del Sol (19–25 
 
 ```bash
 npm run dev     # dev at http://localhost:3000 (predev hook auto-deletes .next)
-npm run build   # production build, static export to out/
+npm run build   # clean + next build → static export to out/
+npm run clean   # rimraf .next out node_modules/.cache
 ```
 
 No test / lint / typecheck scripts exist.
@@ -53,7 +54,8 @@ All content in `data/*.json`, imported by components from `@/data/*.json`. Edit 
 
 - Single-page dashboard: `page.tsx` renders 11 sections with scroll-spy (IntersectionObserver) + sticky `SectionNav`
 - Sections in order: overview, videos, base, itinerary, beaches, food, nightlife, sanjuan, experiences, logistics, budget
-- No API routes, no database, no state management
+- **TripPlanner** ("Il Mio Piano"): floating drawer syncing via `localStorage` + `CustomEvent('sol-local-planner-update')`. BaseSelection shares selected base state through the same mechanism.
+- No API routes, no database, no state management library
 - JSON data uses `any` casts in `.map()` callbacks (no TypeScript types for data)
 - `next.config.js`: `basePath: '/spagna'` in production for GitHub Pages
 

@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Clock, Sunrise, Sunset, Moon, Car, DollarSign, Sparkles } from 'lucide-react'
-import itinerary from '@/data/itinerary.json'
+import itineraryData from '@/data/itinerary.json'
 
 function getEnergyBadge(level: string) {
   switch (level) {
@@ -23,8 +23,105 @@ function getBudgetBadge(level: string) {
   }
 }
 
+const baseDriveTimes: Record<string, number[]> = {
+  "San Pedro de Alcántara": [65, 45, 60, 95, 60, 10, 65],
+  "Marbella (Centro/Casco Antiguo)": [55, 0, 50, 70, 50, 24, 55],
+  "Estepona": [85, 50, 85, 100, 85, 0, 85],
+  "Benalmádena": [20, 80, 20, 140, 20, 0, 20],
+  "Nerja": [50, 200, 50, 250, 50, 0, 50]
+}
+
+function getAdjustedContent(dayIndex: number, selectedBase: string, originalDay: any) {
+  let morning = originalDay.morning
+  let afternoon = originalDay.afternoon
+  let sunset = originalDay.sunset
+  let local_tip = originalDay.local_tip
+
+  const normalizedBase = selectedBase || "San Pedro de Alcántara"
+
+  if (dayIndex === 1) { // Day 2 (Sab)
+    if (normalizedBase === "Marbella (Centro/Casco Antiguo)") {
+      morning = morning.replace("Spostamento a Marbella / Cabopino (22min).", "Spostamento a Cabopino (15min).")
+    } else if (normalizedBase === "Estepona") {
+      morning = morning.replace("Spostamento a Marbella / Cabopino (22min).", "Spostamento a Marbella / Cabopino (35min).")
+    } else if (normalizedBase === "Benalmádena") {
+      morning = morning.replace("Spostamento a Marbella / Cabopino (22min).", "Spostamento a Marbella / Cabopino (25min).")
+    } else if (normalizedBase === "Nerja") {
+      morning = morning.replace("Spostamento a Marbella / Cabopino (22min).", "Spostamento a Marbella / Cabopino (65min).")
+    }
+  }
+
+  if (dayIndex === 3) { // Day 4 (Lun)
+    if (normalizedBase === "Marbella (Centro/Casco Antiguo)") {
+      morning = morning.replace("Mattina a Mijas Pueblo (35min da San Pedro).", "Mattina a Mijas Pueblo (20min da Marbella).")
+      afternoon = afternoon.replace("Spostamento a Estepona (50min).", "Spostamento a Estepona (25min).")
+    } else if (normalizedBase === "Estepona") {
+      morning = morning.replace("Mattina a Mijas Pueblo (35min da San Pedro).", "Mattina a Mijas Pueblo (50min da Estepona).")
+      afternoon = afternoon.replace("Spostamento a Estepona (50min).", "Spiaggia a Estepona direttamente sotto casa (0min).")
+    } else if (normalizedBase === "Benalmádena") {
+      morning = morning.replace("Mattina a Mijas Pueblo (35min da San Pedro).", "Mattina a Mijas Pueblo (10min da Benalmádena).")
+      afternoon = afternoon.replace("Spostamento a Estepona (50min).", "Spostamento a Estepona (65min).")
+    } else if (normalizedBase === "Nerja") {
+      morning = morning.replace("Mattina a Mijas Pueblo (35min da San Pedro).", "Mattina a Mijas Pueblo (60min da Nerja).")
+      afternoon = afternoon.replace("Spostamento a Estepona (50min).", "Spostamento a Estepona (95min).")
+    }
+  }
+
+  if (dayIndex === 4) { // Day 5 (Mar)
+    if (normalizedBase === "Marbella (Centro/Casco Antiguo)") {
+      sunset = sunset.replace("Aperitivo soft a San Pedro, poi spostamento verso Málaga (60min).", "Aperitivo a Marbella, poi spostamento verso Málaga (50min).")
+    } else if (normalizedBase === "Estepona") {
+      sunset = sunset.replace("Aperitivo soft a San Pedro, poi spostamento verso Málaga (60min).", "Aperitivo a Estepona, poi spostamento verso Málaga (85min).")
+    } else if (normalizedBase === "Benalmádena") {
+      sunset = sunset.replace("Aperitivo soft a San Pedro, poi spostamento verso Málaga (60min).", "Aperitivo a Benalmádena, poi spostamento verso Málaga (20min).")
+    } else if (normalizedBase === "Nerja") {
+      sunset = sunset.replace("Aperitivo soft a San Pedro, poi spostamento verso Málaga (60min).", "Aperitivo a Nerja, poi spostamento verso Málaga (50min).")
+    }
+  }
+
+  if (dayIndex === 6) { // Day 7 (Gio)
+    if (normalizedBase === "Marbella (Centro/Casco Antiguo)") {
+      afternoon = afternoon.replace("alle 15:25", "alle 15:35")
+      local_tip = local_tip.replace("lasciare Marbella al massimo alle 15:35", "lasciare Marbella al massimo alle 15:35")
+    } else if (normalizedBase === "Estepona") {
+      afternoon = afternoon.replace("alle 15:25", "alle 15:05")
+      local_tip = local_tip.replace("lasciare Marbella al massimo alle 15:35", "lasciare Estepona al massimo alle 15:05")
+    } else if (normalizedBase === "Benalmádena") {
+      afternoon = afternoon.replace("alle 15:25", "alle 16:10")
+      local_tip = local_tip.replace("lasciare Marbella al massimo alle 15:35", "lasciare Benalmádena al massimo alle 16:10")
+    } else if (normalizedBase === "Nerja") {
+      afternoon = afternoon.replace("alle 15:25", "alle 15:40")
+      local_tip = local_tip.replace("lasciare Marbella al massimo alle 15:35", "lasciare Nerja al massimo alle 15:40")
+    } else { // San Pedro
+      local_tip = local_tip.replace("lasciare Marbella al massimo alle 15:35", "lasciare San Pedro al massimo alle 15:25")
+    }
+  }
+
+  return { ...originalDay, morning, afternoon, sunset, local_tip }
+}
+
 export default function Itinerary() {
   const [openDay, setOpenDay] = useState<number | null>(0)
+  const [selectedBase, setSelectedBase] = useState<string>("San Pedro de Alcántara")
+
+  useEffect(() => {
+    const stored = localStorage.getItem('sol_local_planner')
+    if (stored) {
+      try {
+        const data = JSON.parse(stored)
+        if (data.selectedBase) setSelectedBase(data.selectedBase)
+      } catch (e) {}
+    }
+
+    const handleUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent
+      if (customEvent.detail && customEvent.detail.selectedBase !== undefined) {
+        setSelectedBase(customEvent.detail.selectedBase || "San Pedro de Alcántara")
+      }
+    }
+    window.addEventListener('sol-local-planner-update', handleUpdate)
+    return () => window.removeEventListener('sol-local-planner-update', handleUpdate)
+  }, [])
 
   return (
     <section id="itinerary" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
@@ -39,10 +136,30 @@ export default function Itinerary() {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Itinerario</h2>
         </motion.div>
 
+        {/* BASE ADAPTATION BADGE */}
+        <div className="mb-6 p-4 rounded-2xl bg-crema/40 border border-terracotta-100/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <div className="flex items-center gap-2">
+            <span className="flex h-2.5 w-2.5 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-terracotta-500"></span>
+            </span>
+            <p className="text-xs text-mare-700/80 font-medium">
+              Tempi di guida e percorsi adattati alla base attiva:
+            </p>
+          </div>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-terracotta-500 text-white text-xs font-bold shadow-sm self-start sm:self-auto">
+            📍 {selectedBase}
+          </span>
+        </div>
+
         <div className="relative">
           <div className="absolute left-4 sm:left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-terracotta-300 via-terracotta-500 to-mare-300 rounded-full" />
           
-          {itinerary.map((day, i) => {
+          {itineraryData.map((originalDay, i) => {
+            const day = getAdjustedContent(i, selectedBase, originalDay)
+            const driveTimes = baseDriveTimes[selectedBase] || baseDriveTimes["San Pedro de Alcántara"]
+            const calculatedDriveTime = driveTimes[i]
+            
             const energy = getEnergyBadge(day.energy_level)
             const budget = getBudgetBadge(day.budget_level)
             const isOpen = openDay === i
@@ -192,9 +309,9 @@ export default function Itinerary() {
                                 🎵 {day.club}
                               </span>
                             )}
-                            {day.drive_time_min > 0 && (
+                            {calculatedDriveTime > 0 && (
                               <span className="px-2.5 py-1 bg-gray-50 text-gray-700 rounded-lg text-xs flex items-center gap-1">
-                                <Car className="w-3 h-3" /> ~{day.drive_time_min} min
+                                <Car className="w-3 h-3" /> ~{calculatedDriveTime} min
                               </span>
                             )}
                           </div>

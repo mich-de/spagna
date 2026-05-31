@@ -14,6 +14,7 @@ import SanJuan from '@/app/components/SanJuan'
 import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
 import Budget from '@/app/components/Budget'
+import TripPlanner from '@/app/components/TripPlanner'
 
 const sections = ['overview', 'videos', 'base', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
 
@@ -64,6 +65,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-sabbia" suppressHydrationWarning>
       <SectionNav activeSection={activeSection} onSectionChange={handleSectionChange} />
+      <TripPlanner />
 
       <div className="max-w-7xl mx-auto" suppressHydrationWarning>
         {/* Hero decorative line */}

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare } from 'lucide-react'
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: Compass },
@@ -24,8 +24,8 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
-  const menuRef = useRef<HTMLDivElement>(null)
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 })
+  const [plannerStats, setPlannerStats] = useState({ bookmarksCount: 0, completedTasks: 0, totalTasks: 0 })
 
   useEffect(() => {
     if (!navRef.current) return
@@ -41,6 +41,28 @@ export default function SectionNav({ activeSection, onSectionChange }: {
   }, [activeSection])
 
   useEffect(() => {
+    const updateStats = () => {
+      const stored = localStorage.getItem('sol_local_planner')
+      if (stored) {
+        try {
+          const data = JSON.parse(stored)
+          const bookmarksCount = data.bookmarks?.length || 0
+          const predefinedTasks = data.predefinedTasks || {}
+          const customTasks = data.customTasks || []
+          const completedPredefined = Object.values(predefinedTasks).filter(Boolean).length
+          const completedCustom = customTasks.filter((t: any) => t.completed).length
+          const completedTasks = completedPredefined + completedCustom
+          const totalTasks = Object.keys(predefinedTasks).length + customTasks.length
+          setPlannerStats({ bookmarksCount, completedTasks, totalTasks })
+        } catch (e) {}
+      }
+    }
+    updateStats()
+    window.addEventListener('sol-local-planner-update', updateStats)
+    return () => window.removeEventListener('sol-local-planner-update', updateStats)
+  }, [])
+
+  useEffect(() => {
     if (!mobileOpen) return
     let timer: ReturnType<typeof setTimeout>
     const handleScroll = () => {
@@ -51,6 +73,18 @@ export default function SectionNav({ activeSection, onSectionChange }: {
     return () => {
       window.removeEventListener('scroll', handleScroll)
       clearTimeout(timer)
+    }
+  }, [mobileOpen])
+
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
     }
   }, [mobileOpen])
 
@@ -93,52 +127,106 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-mare-700 hover:bg-terracotta-50 rounded-lg transition-colors"
+              className="lg:hidden p-2 text-mare-700 hover:bg-terracotta-50 rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center"
+              aria-label="Toggle menu"
             >
-              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              <motion.div
+                animate={{ rotate: mobileOpen ? 180 : 0 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                className="absolute"
+              >
+                {mobileOpen ? <X className="w-6 h-6 text-terracotta-600" /> : <Menu className="w-6 h-6" />}
+              </motion.div>
             </button>
           </div>
         </div>
 
         <AnimatePresence>
           {mobileOpen && (
-            <>
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
+              className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-sabbia/98 backdrop-blur-2xl border-t border-terracotta-100/50 flex flex-col justify-between"
+            >
+              {/* Menu Links with Staggered Fade-in */}
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setMobileOpen(false)}
-                className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
-              />
-              <motion.div
-                ref={menuRef}
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                className="lg:hidden border-t border-terracotta-100/50 bg-sabbia/95 backdrop-blur-xl overflow-hidden relative z-50"
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.03,
+                      delayChildren: 0.05
+                    }
+                  }
+                }}
+                initial="hidden"
+                animate="show"
+                className="flex-1 overflow-y-auto px-6 py-6 space-y-2"
               >
-                <div className="grid grid-cols-2 gap-1 p-4 pb-6">
+                <div className="grid grid-cols-2 gap-2">
                   {sections.map((s) => (
-                    <button
+                    <motion.button
                       key={s.id}
-                      onClick={() => {
-                        // Close menu first, then scroll with delay for exit animation
-                        setMobileOpen(false)
-                        setTimeout(() => onSectionChange(s.id), 200)
+                      variants={{
+                        hidden: { opacity: 0, y: 15 },
+                        show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 300, damping: 25 } }
                       }}
-                      className={`flex items-center gap-2.5 px-3 py-3 rounded-lg text-sm transition-all ${
+                      onClick={() => {
+                        setMobileOpen(false)
+                        setTimeout(() => onSectionChange(s.id), 250)
+                      }}
+                      className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all ${
                         activeSection === s.id
-                          ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 font-medium shadow-sm shadow-terracotta-500/20'
-                          : 'text-mare-700/60 hover:text-terracotta-700 hover:bg-terracotta-100/50'
+                          ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 shadow-md shadow-terracotta-500/25'
+                          : 'text-mare-700 hover:text-terracotta-600 hover:bg-terracotta-50/50 border border-terracotta-100/20 bg-white/40'
                       }`}
                     >
-                      <s.icon className="w-4 h-4" />
+                      <s.icon className={`w-4 h-4 ${activeSection === s.id ? 'text-white' : 'text-terracotta-500'}`} />
                       {s.label}
-                    </button>
+                    </motion.button>
                   ))}
                 </div>
               </motion.div>
-            </>
+
+              {/* Progress Summary Footer inside Mobile Menu */}
+              {(plannerStats.bookmarksCount > 0 || plannerStats.totalTasks > 0) && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="p-6 bg-white/70 border-t border-terracotta-100/50 backdrop-blur-md space-y-3 shrink-0 pb-safe"
+                >
+                  <div className="flex items-center justify-between text-xs font-bold text-mare-600">
+                    <span className="flex items-center gap-1.5">
+                      <Briefcase className="w-3.5 h-3.5 text-terracotta-500" /> Il Mio Piano
+                    </span>
+                    <span className="flex items-center gap-3">
+                      {plannerStats.bookmarksCount > 0 && (
+                        <span className="flex items-center gap-1 text-[11px] text-mare-500">
+                          <Heart className="w-3 h-3 text-red-500 fill-red-500" /> {plannerStats.bookmarksCount} preferiti
+                        </span>
+                      )}
+                      {plannerStats.totalTasks > 0 && (
+                        <span className="flex items-center gap-1 text-[11px] text-mare-500">
+                          <CheckSquare className="w-3 h-3 text-emerald-500" /> {plannerStats.completedTasks}/{plannerStats.totalTasks} task
+                        </span>
+                      )}
+                    </span>
+                  </div>
+                  {plannerStats.totalTasks > 0 && (
+                    <div className="w-full h-1.5 rounded-full bg-terracotta-100 overflow-hidden">
+                      <div
+                        className="h-full bg-gradient-to-r from-terracotta-500 to-emerald-500 rounded-full transition-all duration-500"
+                        style={{ width: `${(plannerStats.completedTasks / plannerStats.totalTasks) * 100}%` }}
+                      />
+                    </div>
+                  )}
+                </motion.div>
+              )}
+            </motion.div>
           )}
         </AnimatePresence>
       </nav>

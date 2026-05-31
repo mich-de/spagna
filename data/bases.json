@@ -15,7 +15,7 @@
       "Pochi grandi beach club (devi spostarti)",
       "Negozi/comfort meno internazionali di Marbella"
     ],
-    "distance_airport_min": 50,
+    "distance_airport_min": 65,
     "distance_marbella_min": 12,
     "parking_ease": 7,
     "nightlife_level": 6,
@@ -93,12 +93,12 @@
       "Ristoranti locali di pesce incredibili"
     ],
     "cons": [
-      "Lontana da Málaga (65min auto)",
+      "Lontana da Málaga (85min auto)",
       "Nightlife quasi assente",
       "Scomoda per andare a Málaga o Benalmádena",
       "Richiede più guida per variare"
     ],
-    "distance_airport_min": 65,
+    "distance_airport_min": 85,
     "distance_marbella_min": 25,
     "parking_ease": 8,
     "nightlife_level": 3,
@@ -123,7 +123,7 @@
       "Orquidario: 1500 specie di orchidee in serra di vetro",
       "Ristoranti: Los Pescadores (pesce, porto), El Patio de Macarena (tapas autentiche, patio fiorito)",
       "Mercato domenicale al porto per souvenir",
-      "80km da Málaga, ~1hr sulla A-7"
+      "80km da Málaga, ~1h 25m sulla A-7"
     ]
   },
   {
@@ -141,7 +141,7 @@
       "Traffico intenso",
       "Alta stagione = sovraffollata"
     ],
-    "distance_airport_min": 45,
+    "distance_airport_min": 55,
     "distance_marbella_min": 0,
     "parking_ease": 3,
     "nightlife_level": 9,
@@ -177,12 +177,12 @@
       "Attrazioni naturali spettacolari (Cueva de Nerja, fiumi, kayak)"
     ],
     "cons": [
-      "Lontana dalla costa occidentale (Marbella dista oltre 1h 10m auto)",
+      "Lontana dalla costa occidentale (Marbella dista oltre 1h 40m auto)",
       "Parcheggio in centro molto trafficato in estate",
       "Meno comoda per fare escursioni a Ronda o Gibilterra"
     ],
     "distance_airport_min": 50,
-    "distance_marbella_min": 70,
+    "distance_marbella_min": 100,
     "parking_ease": 5,
     "nightlife_level": 7,
     "beach_quality": 10,
