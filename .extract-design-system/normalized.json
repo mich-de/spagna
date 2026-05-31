@@ -1,33 +1,32 @@
 {
   "colors": {
-    "primary": "#FF763F",
-    "primaryHover": "#E05A26",
-    "secondary": "#5C6BFF",
-    "neutralDark": "#0D1117",
-    "neutralMedium": "#656E7B",
-    "neutralLight": "#F8F9FB",
-    "white": "#FFFFFF",
-    "border": "#EBEFF3"
+    "primary": "#ffc14a",
+    "secondary": "#13c892",
+    "neutralDark": "#0f3e4a",
+    "neutralMedium": "#658c96",
+    "neutralLight": "#dde9ed",
+    "accentPink": "#ea5681",
+    "white": "#ffffff"
   },
   "fonts": {
-    "display": "Plus Jakarta Sans, sans-serif",
-    "body": "Plus Jakarta Sans, sans-serif"
+    "display": "Poppins, sans-serif",
+    "body": "Rubik, sans-serif"
   },
   "spacing": {
     "xs": "4px",
     "sm": "8px",
     "md": "16px",
     "lg": "24px",
-    "xl": "32px"
+    "xl": "32px",
+    "xxl": "48px"
   },
   "borderRadius": {
     "sm": "8px",
-    "md": "12px",
-    "lg": "16px",
-    "full": "9999px"
+    "md": "16px",
+    "lg": "32px",
+    "full": "50%"
   },
   "shadows": {
-    "sm": "0 2px 8px -1px rgba(13, 17, 23, 0.02)",
-    "md": "0 4px 20px -2px rgba(13, 17, 23, 0.04)"
+    "sm": "rgba(0, 0, 0, 0.12) 0px 1px 14px 0px"
   }
 }

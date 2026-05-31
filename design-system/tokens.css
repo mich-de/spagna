@@ -1,25 +1,27 @@
 :root {
-  --color-primary: #FF763F;
-  --color-primary-hover: #E05A26;
-  --color-secondary: #5C6BFF;
-  --color-neutral-dark: #0D1117;
-  --color-neutral-medium: #656E7B;
-  --color-neutral-light: #F8F9FB;
-  --color-white: #FFFFFF;
-  --color-border: #EBEFF3;
+  --color-primary: #ffc14a;
+  --color-secondary: #13c892;
+  --color-accent-pink: #ea5681;
+  --color-neutral-dark: #0f3e4a;
+  --color-neutral-medium: #658c96;
+  --color-neutral-light: #dde9ed;
+  --color-bg-light: #fcf7ec;
+  --color-white: #ffffff;
 
-  --font-family-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-body: 'Rubik', sans-serif;
 
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
 
   --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
   --radius-full: 9999px;
 
-  --shadow-card: 0 4px 20px -2px rgba(13, 17, 23, 0.04), 0 2px 8px -1px rgba(13, 17, 23, 0.02);
+  --shadow-sm: rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
 }
