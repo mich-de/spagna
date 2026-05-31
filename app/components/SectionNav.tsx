@@ -62,20 +62,6 @@ export default function SectionNav({ activeSection, onSectionChange }: {
     return () => window.removeEventListener('sol-local-planner-update', updateStats)
   }, [])
 
-  useEffect(() => {
-    if (!mobileOpen) return
-    let timer: ReturnType<typeof setTimeout>
-    const handleScroll = () => {
-      clearTimeout(timer)
-      timer = setTimeout(() => setMobileOpen(false), 300)
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-      clearTimeout(timer)
-    }
-  }, [mobileOpen])
-
   // Prevent scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
@@ -148,6 +134,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
+              onClick={() => setMobileOpen(false)}
               className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-sabbia/98 backdrop-blur-2xl border-t border-terracotta-100/50 flex flex-col justify-between"
             >
               {/* Menu Links with Staggered Fade-in */}
