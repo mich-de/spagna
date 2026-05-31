@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   // Necessario per GitHub Pages (dominio.github.io/spagna/)
-  basePath: process.env.NODE_ENV === 'production' ? '/spagna' : '',
+  basePath: process.env.GITHUB_ACTIONS === 'true' ? '/spagna' : '',
   images: {
     unoptimized: true,
   },
