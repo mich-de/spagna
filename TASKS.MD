@@ -2,6 +2,13 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 4: Webapp Inspiration Hub & Matcher
+- [x] `[FRONTEND]` Create `app/components/QuickInspiration.tsx` component
+- [x] `[FRONTEND]` Integrate inspiration component into `app/page.tsx`
+- [x] `[FRONTEND]` Wire inspiration section into `app/components/SectionNav.tsx`
+- [x] `[DEVOPS]` Validate static export build with `npm run build`
+- [x] `[DOCUMENTATION]` Update local `GEMINI.MD` and `README.md`
+
 ## Phase 3: Costa de Nerja / Maro Integration
 - [x] `[BACKEND]` Append Nerja/Maro beaches to `data/beaches.json`
 - [x] `[BACKEND]` Append Nerja restaurants to `data/restaurants.json`

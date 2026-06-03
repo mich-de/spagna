@@ -9,6 +9,7 @@ Dashboard di viaggio premium per la Costa del Sol (19-25 Giugno 2026).
 - 🚗 Logistica e guida ai parcheggi.
 - 💰 Gestione budget su 3 livelli.
 - 🏖 Costa de Nerja & Maro: spiagge selvagge, paella cotta a legna e attrazioni della costa orientale.
+- ✨ Centro Ispirazione: Deck interattivo per idee al volo e Matcher per generare la "Giornata Perfetta" in una zona specifica salvandola nel piano di viaggio con 1 clic.
 
 ## Tech Stack
 - Next.js 15
@@ -25,4 +26,4 @@ Oppure usa `start.bat` su Windows.
 
 ## Deployment
 Il sito è configurato per il deploy automatico su **GitHub Pages** tramite GitHub Actions.
-Last update: 2026-05-27 10:30
+Last update: 2026-06-03 13:00

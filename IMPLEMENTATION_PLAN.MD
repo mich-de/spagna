@@ -1,87 +1,40 @@
-# Implementation Plan — Costa de Nerja / Maro Integration
+# Implementation Plan — Premium travel webapp inspiration deck and matcher
 
-This plan outlines the integration of **Costa de Nerja / Maro** (eastern Costa del Sol, Malaga) into the travel dashboard. We will enrich the static JSON data files under the `data/` folder, adding beautiful beaches, nightlife hubs, typical regional dishes, local experiences, top tourist attractions, and inspirational travel videos. Since the dashboard components dynamically load and filter by zones directly from these files, this data enrichment will update the frontend automatically.
+We will redesign the dashboard layout to focus on mobile-first, high-engagement, and rapid idea generation. The centerpiece will be a **Quick Inspiration Hub** (`QuickInspiration.tsx`) containing two interactive widgets:
 
-We will also add "Nerja" as a 5th comparison base in the strategic base selection table to help the user weigh its pros, cons, and characteristics.
-
-## Proposed Changes
-
-### 1. Data Enrichment Component-by-Component
-
-#### [MODIFY] [beaches.json](file:///d:/nodejs/spagna/data/beaches.json)
-Append 3 iconic beaches from the Nerja/Maro area:
-- **Playa de Burriana**: Main tourist beach, famous for water sports and wood-fired paella.
-- **Playa de Maro**: Wild cove in the cliffs of the Maro-Cerro Gordo natural park.
-- **Playa de Calahonda**: High-contrast, scenic cove directly below the Balcón de Europa.
-
-#### [MODIFY] [restaurants.json](file:///d:/nodejs/spagna/data/restaurants.json)
-Append 3 typical dining options in Nerja:
-- **Chiringuito Ayo**: Landmark restaurant on Burriana beach, famous for giant pans of wood-fired paella.
-- **El Pulguilla**: Traditional, lively tapas bar in the center of Nerja, known for seafood tapas served with drinks.
-- **Restaurante Oliva**: Premium modern Andalusian fine dining restaurant in the heart of Nerja.
-
-#### [MODIFY] [nightlife.json](file:///d:/nodejs/spagna/data/nightlife.json)
-Append 1 nightlife entry for Nerja:
-- **Plaza Tutti Frutti**: The primary nightlife district in Nerja with multiple bars and pubs.
-- Include venues like **Cochran's Irish Pub** (terrace overlooking the sea) and **Agora Bar** (cocktails).
-
-#### [MODIFY] [food.json](file:///d:/nodejs/spagna/data/food.json)
-Append 3 regional delicacies related to Nerja:
-- **Paella de Burriana (Ayo)**: Beach-cooked wood-fired paella.
-- **Boquerones de Nerja**: Locally sourced fried anchovies.
-- **Canaíllas**: Sea snails cooked with herbs and garlic.
-
-#### [MODIFY] [local-experiences.json](file:///d:/nodejs/spagna/data/local-experiences.json)
-Append 2 iconic experiences from the area:
-- **Kayak ai Cliff di Maro**: Kayaking tour along the cliffs to discover caves and marine waterfalls.
-- **Passeggiata al Balcón de Europa**: The traditional evening promenade (paseo) at the Balcón de Europa viewpoint.
-
-#### [MODIFY] [attractions.json](file:///d:/nodejs/spagna/data/attractions.json)
-Append 2 major landmarks:
-- **Cueva de Nerja**: Prehistoric cave complex with spectacular stalactites.
-- **Balcón de Europa**: Scenic viewpoint overlooking the Mediterranean built on a former fortress.
-
-#### [MODIFY] [trip.json](file:///d:/nodejs/spagna/data/trip.json)
-Append 1 YouTube video featuring Nerja to the `videos` array:
-- **Nerja: The Jewel of Costa del Sol (4K)** (ID: `kYc5e1_N7E0`) to show walking tours and guide content.
-
-#### [MODIFY] [bases.json](file:///d:/nodejs/spagna/data/bases.json)
-Append "Nerja" to the base comparison system:
-- Set stats: distance_airport_min: 50, distance_marbella_min: 70, parking_ease: 6, nightlife_level: 7, beach_quality: 10, authenticity: 8, cost_level: "medio", social_ease: 8.
-- Add pros: beaches/coves, authentic white town feel, Balcón de Europa & Caves, Plaza Tutti Frutti nightlife.
-- Add cons: distant from Marbella (western side), busy summer parking, less practical for Estepona/Ronda day-trips.
+1. **Inspiration Deck (Schede Ispirazione)**: A beautiful, swipeable/interactive card deck showing a curated or randomized card from Beaches, Restaurants, Experiences, or Attractions. Each card is loaded with visual details, drive times, tips, and an inline heart button to quickly add the item to "Il Mio Piano".
+2. **Perfect Day Matcher (Generatore Giornata Perfetta)**: A magical "slot-machine" style generator that rolls a themed daily schedule (Morning Beach/Attraction -> Lunch at Chiringuito -> Afternoon/Evening Local Experience). The generator calculates drive times from the currently selected base and includes a button to "Salva Intera Giornata" (add all 3 items to "Il Mio Piano" in one click).
 
 ---
 
-### 2. Documentation Updates
+## Proposed Changes
 
-#### [MODIFY] [IMPLEMENTATION_PLAN.MD](file:///d:/nodejs/spagna/IMPLEMENTATION_PLAN.MD)
-- Document the integration strategy and details.
+### [FRONTEND] Costa del Sol Travel Dashboard
 
-#### [MODIFY] [TASKS.MD](file:///d:/nodejs/spagna/TASKS.MD)
-- Add tasks for data modification, checking compile/hydration, and verification.
+#### [NEW] [QuickInspiration.tsx](file:///d:/nodejs/spagna/app/components/QuickInspiration.tsx)
+Create a new file containing the `QuickInspiration` component:
+- State management for current random card, active inspiration category (Spiagge, Ristoranti, Esperienze, Attrazioni), and generated "Perfect Day" packages.
+- A "Shuffle" button to randomize the card or the day.
+- Direct synchronization with the local storage planner using the `sol-local-planner-update` custom event.
+- Visual elements with Framer Motion (card flips, slides, and stagger transitions).
 
-#### [MODIFY] [GEMINI.MD](file:///d:/nodejs/spagna/GEMINI.MD)
-- Record current session details, including the addition of Costa de Nerja.
+#### [MODIFY] [page.tsx](file:///d:/nodejs/spagna/app/page.tsx)
+- Import `QuickInspiration` and add the `<QuickInspiration />` section right between `Overview` and `Videos`.
+- Add `"inspiration"` to the scroll-spy section array.
 
-#### [MODIFY] [README.md](file:///d:/nodejs/spagna/README.md)
-- Update with details about the new Nerja features.
+#### [MODIFY] [SectionNav.tsx](file:///d:/nodejs/spagna/app/components/SectionNav.tsx)
+- Add the `inspiration` item to the sections list using the `Sparkles` icon from `lucide-react`.
 
 ---
 
 ## Verification Plan
 
 ### Automated Tests
-- Run Next.js production build:
-  ```bash
-  npm run build
-  ```
-  Verify that the compiler finishes with `0 errors` and `0 warnings`.
+- Run `npm run build` to verify the static export builds successfully without compiler or TypeScript errors.
 
 ### Manual Verification
-- Launch the development server and verify:
-  1. The beaches filter bar shows a "Nerja" button. Clicking it displays only Nerja beaches.
-  2. The videos filter bar shows a "Nerja" button. Clicking it displays the new Nerja video.
-  3. The base selection table renders 5 columns instead of 4, correctly sorting them by score and displaying the new Nerja card.
-  4. The food, experiences, attractions, and nightlife sections display the new cards.
-  5. The mobile horizontal scrolling carousels function correctly with the new items.
+- Open the webapp in dev mode:
+  1. Verify the "Ispirazione" section appears at the top and works with SectionNav scroll-spy.
+  2. Test the **Inspiration Deck**: filter by category, tap the "Genera Idea" button, and verify different items appear.
+  3. Test the **Bookmark** functionality: click the heart button on an inspiration card and verify it immediately updates the floating "Il Mio Piano" count and bookmark list.
+  4. Test the **Perfect Day Matcher**: click "Genera Giornata Perfetta", inspect the Morning -> Lunch -> Afternoon timeline, and click "Aggiungi Intera Giornata al Piano". Open "Il Mio Piano" to verify all three items were correctly added.
