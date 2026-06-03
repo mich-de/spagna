@@ -9,6 +9,27 @@ import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
 const zones = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.zone))).sort()]
 const atmospheres = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.atmosphere))).sort()]
 
+const zoneIcons: Record<string, string> = {
+  'Tutte': '🗺️',
+  'Málaga': '🏛️',
+  'Marbella': '💎',
+  'Estepona': '🌸',
+  'Nerja': '🏖️',
+  'Mijas': '🏔️',
+  'Benalmádena': '⛵',
+  'Ronda': '🍷',
+  'Fuengirola': '🛍️'
+}
+
+const atmosIcons: Record<string, string> = {
+  'Tutte': '🌊',
+  'Attrezzata': '🏖️',
+  'Rilassata': '🧘',
+  'Selvaggia': '🌿',
+  'Popolare': '👥',
+  'Snorkeling': '🤿'
+}
+
 export default function Beaches() {
   const [search, setSearch] = useState('')
   const [zoneFilter, setZoneFilter] = useState('Tutte')
@@ -133,10 +154,13 @@ export default function Beaches() {
             </button>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {/* Zona filter */}
             <div className="flex flex-col gap-2">
-              <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per zona:</span>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
+                <MapPin className="w-3.5 h-3.5 text-terracotta-500" />
+                <span>Filtra per zona</span>
+              </div>
               <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
                 <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
                 <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
@@ -145,13 +169,16 @@ export default function Beaches() {
                     <button
                       key={z}
                       onClick={() => setZoneFilter(z)}
-                      className={`relative px-4 py-2 rounded-xl text-xs font-semibold tracking-wide transition-colors duration-300 snap-center cursor-pointer ${
+                      className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
                         zoneFilter === z
-                          ? 'text-white'
-                          : 'text-mare-700/80 hover:text-terracotta-600 hover:bg-terracotta-50/50'
+                          ? 'text-white font-bold'
+                          : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 hover:border-terracotta-200 shadow-sm hover:scale-102'
                       }`}
                     >
-                      <span className="relative z-10">{z === 'Tutte' ? 'Tutte le zone' : z}</span>
+                      <span className="relative z-10 flex items-center gap-1.5">
+                        <span>{zoneIcons[z] || '📍'}</span>
+                        <span>{z === 'Tutte' ? 'Tutte le zone' : z}</span>
+                      </span>
                       {zoneFilter === z && (
                         <motion.span
                           layoutId="beachZoneBg"
@@ -167,7 +194,10 @@ export default function Beaches() {
 
             {/* Atmosfera filter */}
             <div className="flex flex-col gap-2">
-              <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per atmosfera:</span>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
+                <Waves className="w-3.5 h-3.5 text-terracotta-500" />
+                <span>Filtra per atmosfera</span>
+              </div>
               <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
                 <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
                 <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
@@ -176,13 +206,16 @@ export default function Beaches() {
                     <button
                       key={a}
                       onClick={() => setAtmosFilter(a)}
-                      className={`relative px-4 py-2 rounded-xl text-xs font-semibold tracking-wide transition-colors duration-300 snap-center cursor-pointer ${
+                      className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
                         atmosFilter === a
-                          ? 'text-white'
-                          : 'text-mare-700/80 hover:text-terracotta-600 hover:bg-terracotta-50/50'
+                          ? 'text-white font-bold'
+                          : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 hover:border-terracotta-200 shadow-sm hover:scale-102'
                       }`}
                     >
-                      <span className="relative z-10">{a === 'Tutte' ? 'Tutte atmosfere' : a}</span>
+                      <span className="relative z-10 flex items-center gap-1.5">
+                        <span>{atmosIcons[a] || '✨'}</span>
+                        <span>{a === 'Tutte' ? 'Tutte atmosfere' : a}</span>
+                      </span>
                       {atmosFilter === a && (
                         <motion.span
                           layoutId="beachAtmosBg"

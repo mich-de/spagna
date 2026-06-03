@@ -2,12 +2,24 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Map, Star, Search, Heart, Car, Clock } from 'lucide-react'
+import { Map, Star, Search, Heart, Car, Clock, MapPin } from 'lucide-react'
 import foods from '@/data/food.json'
 import restaurants from '@/data/restaurants.json'
 import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
 
 const zones = ['Tutte', ...Array.from(new Set(restaurants.map((r: any) => r.zone))).sort()]
+
+const zoneIcons: Record<string, string> = {
+  'Tutte': '🗺️',
+  'Málaga': '🏛️',
+  'Marbella': '💎',
+  'Estepona': '🌸',
+  'Nerja': '🏖️',
+  'Mijas': '🏔️',
+  'Benalmádena': '⛵',
+  'Ronda': '🍷',
+  'Fuengirola': '🛍️'
+}
 
 export default function Food() {
   const [zoneFilter, setZoneFilter] = useState('Tutte')
@@ -137,7 +149,10 @@ export default function Food() {
             <div className="glass p-3 rounded-2xl border border-terracotta-100/40">
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-mare-400 ml-1">Filtra per zona:</span>
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
+                    <MapPin className="w-3.5 h-3.5 text-terracotta-500" />
+                    <span>Filtra per zona</span>
+                  </div>
                   <button
                     onClick={() => setSortByDriveTime(!sortByDriveTime)}
                     className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all border flex items-center gap-1.5 self-start sm:self-auto cursor-pointer ${
@@ -158,13 +173,16 @@ export default function Food() {
                       <button
                         key={z}
                         onClick={() => setZoneFilter(z)}
-                        className={`relative px-4 py-2 rounded-xl text-xs font-semibold tracking-wide transition-colors duration-300 snap-center cursor-pointer ${
+                        className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
                           zoneFilter === z
-                            ? 'text-white'
-                            : 'text-mare-700/80 hover:text-terracotta-600 hover:bg-terracotta-50/50'
+                            ? 'text-white font-bold'
+                            : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 hover:border-terracotta-200 shadow-sm hover:scale-102'
                         }`}
                       >
-                        <span className="relative z-10">{z === 'Tutte' ? 'Tutte le zone' : z}</span>
+                        <span className="relative z-10 flex items-center gap-1.5">
+                          <span>{zoneIcons[z] || '📍'}</span>
+                          <span>{z === 'Tutte' ? 'Tutte le zone' : z}</span>
+                        </span>
                         {zoneFilter === z && (
                           <motion.span
                             layoutId="foodZoneBg"
