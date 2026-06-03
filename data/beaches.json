@@ -12,7 +12,8 @@
     "localTip": "Qui si viene per vedere la 'Ola del Melillero' (l'onda del traghetto da Melilla che bagna tutti alle 19:30).",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Misericordia+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Misericordia+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/PlayadelaMisericordia%28M%C3%A1laga%29.jpg"
   },
   {
     "name": "Playa de la Malagueta",
@@ -27,7 +28,8 @@
     "localTip": "Perfetta per un tuffo veloce dopo il centro. Noleggia ombrellone in anticipo a giugno",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Malagueta+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Malagueta+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Playa_de_la_Malagueta.jpg"
   },
   {
     "name": "Playa de Pedregalejo",
@@ -42,7 +44,8 @@
     "localTip": "Vieni per mangiare. I chiringuiti qui sono i migliori della città. Ordina espetos de sardinas",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Pedregalejo+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Pedregalejo+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio_%281%29.jpg"
   },
   {
     "name": "Playa de Bil Bil",
@@ -57,7 +60,8 @@
     "localTip": "Carina ma turistica. Usala per un'ora se sei in zona, non è il top. La guida video sottolinea che il lungomare ha una palestra gratuita all'aperto e chiringuiti con camerieri che servono nella sabbia.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Bil+Bil+Benalmadena",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Bil%20Bil+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Bil%20Bil+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Playa_de_Bil_Bil%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_64.jpg"
   },
   {
     "name": "Playa de Carvajal",
@@ -72,7 +76,8 @@
     "localTip": "Ombrelloni economici rispetto a Marbella. Ottima per una giornata senza pretese",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carvajal+Fuengirola",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carvajal+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carvajal+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Playa_de_Carvajal%2C_Fuengirola_03.jpg"
   },
   {
     "name": "Playa de Cabopino",
@@ -87,7 +92,8 @@
     "localTip": "LA MIGLIORE nei dintorni di Marbella. Parcheggio gratuito, acqua pulita, atmosfera rilassata. Vai presto in stagione",
     "turismLevel": "medio-basso",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Cabopino+Marbella",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Cabopino+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Cabopino+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Artola-Cabopino_02.jpg"
   },
   {
     "name": "Playa de Nagüeles",
@@ -102,7 +108,8 @@
     "localTip": "È la spiaggia dove va chi ha casa a Marbella. Meno turistica del previsto, molto civile",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Nagüeles+Marbella",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Nag%C3%BCeles+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Nag%C3%BCeles+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Early_morning_at_a_beach_in_Marbella_%2829569682065%29.jpg"
   },
   {
     "name": "Playa del Cristo",
@@ -117,7 +124,8 @@
     "localTip": "Acqua caldissima e piatta. Perfetta per nuotare lontano. I chiringuiti sulla sinistra sono i migliori. La guida video locale la descrive come 'baia riparata con acque calme e sabbi morbide — ideale per famiglie'. Vicino c'è Sonora Beach Club per socializzare con musica dal vivo.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cristo+Estepona",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Cristo+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Cristo+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Playa_del_cristo_winter_-_Estepona_beach.jpg"
   },
   {
     "name": "Playa de la Rada",
@@ -132,7 +140,8 @@
     "localTip": "Dopo le 18:00 si riempie di locali che fanno sport. Bel mix di gente",
     "turismLevel": "medio-basso",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Rada+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Rada+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Playa_de_la_Rada_-_Estepona_beach.jpg"
   },
   {
     "name": "Playa de San Pedro de Alcántara",
@@ -147,7 +156,8 @@
     "localTip": "Il parcheggio è gratis sul lungomare. Meno famosa delle vicine, quindi più spaziosa. Perfetta per giornate intere",
     "turismLevel": "basso",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+San+Pedro+de+Alcantara",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20San%20Pedro%20de%20Alc%C3%A1ntara+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20San%20Pedro%20de%20Alc%C3%A1ntara+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/San_Pedro_de_Alc%C3%A1ntara_-_IMG_20210904_143358.jpg"
   },
   {
     "name": "Playa de Fontanilla",
@@ -162,7 +172,8 @@
     "localTip": "Il sabato pomeriggio è un runway della moda marbellí. Divertente da guardare la gente",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Fontanilla+Marbella",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Fontanilla+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Fontanilla+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Playa_de_la_Fontanilla_Marbella.jpg"
   },
   {
     "name": "Playa de la Carihuela",
@@ -177,7 +188,8 @@
     "localTip": "I chiringuiti qui sono leggendari per il pesce. Molto frequentata dalla comunità olandese. Perfetta per lo shopping e passeggiate tra Torremolinos e Benalmádena.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Carihuela+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Carihuela+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/La_Carihuela.jpg"
   },
   {
     "name": "Playa de la Viborilla",
@@ -192,7 +204,8 @@
     "localTip": "Porta ombrellone, acqua e cibo. Non ci sono servizi. È selvaggia e bellissima",
     "turismLevel": "bassissimo",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Viborilla+Benalmadena",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Viborilla+Costa+del+Sol"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Viborilla+Costa+del+Sol",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Benalmadena-plaza-la-viborilla-hiszpania.jpg"
   },
   {
     "name": "Playa de Burriana",
@@ -207,7 +220,8 @@
     "localTip": "Famosissima per il Chiringuito de Ayo. Puoi noleggiare kayak qui per andare verso le scogliere di Maro.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Burriana%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Burriana%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Burriana_%286861858288%29.jpg"
   },
   {
     "name": "Playa de Maro",
@@ -222,7 +236,8 @@
     "localTip": "Acqua limpidissima ideale per lo snorkeling. Fai il tour in kayak per vedere la cascata d'acqua dolce che cade in mare.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Maro+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Maro%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Maro%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/2010_06_010._Playa_de_Maro.jpg"
   },
   {
     "name": "Playa de Calahonda",
@@ -237,7 +252,8 @@
     "localTip": "Molto fotogenica. Ideale per un bagno veloce prima di passeggiare in centro.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Calahonda+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Calahonda%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Calahonda%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Playa_de_Calahonda%2C_Nerja.jpg"
   },
   {
     "name": "Playa de la Torrecilla",
@@ -252,7 +268,8 @@
     "localTip": "Ottima se alloggi nel centro di Nerja e non vuoi prendere l'auto. Molto pulita.",
     "turismLevel": "alto",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Torrecilla+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Torrecilla%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Torrecilla%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Playa_de_la_Torrecilla_Nerja.jpg"
   },
   {
     "name": "Playa El Playazo",
@@ -267,7 +284,8 @@
     "localTip": "Ideale per lunghe passeggiate e per chi cerca spazio anche in alta stagione.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Playazo+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Playazo%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Playazo%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Playazo_Beach_Nerja.jpg"
   },
   {
     "name": "Playa del Salón",
@@ -282,7 +300,8 @@
     "localTip": "Atmosfera d'altri tempi con le casette dei pescatori ancora presenti sulla sabbia.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Salon+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Salon%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Salon%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Nerja%2C_view_to_the_beach_%22Playa_El_Sal%C3%B3n%22_and_to_the_Church_of_El_Salvador.jpg"
   },
   {
     "name": "Playa de Carabeo",
@@ -297,6 +316,7 @@
     "localTip": "Meno affollata di Calahonda, ideale per chi cerca un po' più di privacy vicino al centro.",
     "turismLevel": "medio",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeo+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeo%20Nerja"
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeo%20Nerja",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Carabeo_beach_%287007970949%29.jpg"
   }
 ]

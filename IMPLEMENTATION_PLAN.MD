@@ -38,3 +38,26 @@ Create a new file containing the `QuickInspiration` component:
   2. Test the **Inspiration Deck**: filter by category, tap the "Genera Idea" button, and verify different items appear.
   3. Test the **Bookmark** functionality: click the heart button on an inspiration card and verify it immediately updates the floating "Il Mio Piano" count and bookmark list.
   4. Test the **Perfect Day Matcher**: click "Genera Giornata Perfetta", inspect the Morning -> Lunch -> Afternoon timeline, and click "Aggiungi Intera Giornata al Piano". Open "Il Mio Piano" to verify all three items were correctly added.
+
+---
+
+## Layout Bug Fix: Filter Clipping (2026-06-03)
+
+### Problem
+- Filter options under "Filtra per zona" and "Filtra per atmosfera" on desktop were clipped/truncated on the right edge with no visible scrollbar to scroll, making them inaccessible.
+
+### Proposed Changes
+- Modify the flex containers in the filter areas to support responsive styles:
+  - On mobile: horizontal scrolling carousel (`overflow-x-auto whitespace-nowrap snap-x`).
+  - On desktop (`sm:` screens and above): wrap items to the next line (`sm:flex-wrap sm:overflow-visible sm:whitespace-normal sm:snap-none`).
+- Affected components:
+  1. [Beaches.tsx](file:///d:/nodejs/spagna/app/components/Beaches.tsx) (Zones, Atmospheres)
+  2. [Food.tsx](file:///d:/nodejs/spagna/app/components/Food.tsx) (Zones)
+  3. [Nightlife.tsx](file:///d:/nodejs/spagna/app/components/Nightlife.tsx) (Zones)
+  4. [Videos.tsx](file:///d:/nodejs/spagna/app/components/Videos.tsx) (Zones, Types)
+  5. [Budget.tsx](file:///d:/nodejs/spagna/app/components/Budget.tsx) (Budget levels)
+  6. [QuickInspiration.tsx](file:///d:/nodejs/spagna/app/components/QuickInspiration.tsx) (Quick categories)
+
+### Verification Plan
+- Run `npm run build` to verify there are no compilation errors.
+- Inspect the filter layouts on desktop (elements wrap neatly instead of getting truncated) and mobile (horizontal carousel scrolling remains active).

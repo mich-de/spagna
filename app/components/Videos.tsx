@@ -54,14 +54,14 @@ export default function Videos() {
         </motion.div>
 
         {/* Filter bar */}
-        <div className="glass flex flex-col sm:flex-row gap-3 mb-6 p-3 rounded-xl overflow-hidden">
-          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
+        <div className="glass flex flex-col gap-3 mb-6 p-3 rounded-xl">
+          <div className="flex flex-row flex-nowrap sm:flex-wrap overflow-x-auto sm:overflow-x-visible scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap sm:whitespace-normal">
             <span className="text-xs text-mare-500 font-medium mr-1 shrink-0">Zona:</span>
             {zones.map((z) => (
               <button
                 key={z}
                 onClick={() => setZoneFilter(z)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 shrink-0 ${
                   zoneFilter === z
                     ? 'bg-terracotta-500 text-white shadow-sm'
                     : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600'
@@ -71,13 +71,13 @@ export default function Videos() {
               </button>
             ))}
           </div>
-          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
+          <div className="flex flex-row flex-nowrap sm:flex-wrap overflow-x-auto sm:overflow-x-visible scrollbar-hide gap-1.5 items-center pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap sm:whitespace-normal">
             <span className="text-xs text-mare-500 font-medium mr-1 shrink-0">Tipo:</span>
             {types.map((t) => (
               <button
                 key={t}
                 onClick={() => setTypeFilter(t)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 shrink-0 ${
                   typeFilter === t
                     ? 'bg-terracotta-500 text-white shadow-sm'
                     : 'bg-white/60 text-mare-600 border border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600'

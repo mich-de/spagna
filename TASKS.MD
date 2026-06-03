@@ -2,12 +2,38 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 5: Forum Comments, Adult Club Prices & Dating App links
+- [x] `[BACKEND]` Populate `data/movida-over35.json` with exactly 10 comments for each Malaga and Nerja venue
+- [x] `[BACKEND]` Include average prices for adult clubs (Sala Divas and Puticlubs) in description and safety guidelines
+- [x] `[BACKEND]` Add Google Play Store package links for Meetic, Badoo, Adopta, Tinder, Bumble, and Happn in JSON data
+- [x] `[BACKEND]` Append the new Costa del Sol multi-zone guide (San Pedro, Marbella, Estepona, Nerja, Benalmádena) to `data/movida-over35.json`
+- [x] `[FRONTEND]` Update `SingleGuide.tsx` to support newlines in descriptions and render Android download buttons
+- [x] `[FRONTEND]` Update `SingleGuide.tsx` to dynamically render comments in a styled container
+- [x] `[FRONTEND]` Reorder sections (place "Movida Over 35" / `SingleGuide.tsx` immediately after "Overview" and before "Base") in `page.tsx` and `SectionNav.tsx`
+- [x] `[FRONTEND]` Fix mobile hamburger menu click event bubbling (accidental closures on drag/footer click) and speed up scroll triggers to 100ms in `SectionNav.tsx`
+- [x] `[FRONTEND]` Integrate the new "Mappa Costa" tab in `SingleGuide.tsx` to render the outer Costa zones and hotspots
+- [x] `[DOCUMENTATION]` Integrate the pragmatic travel companion preface inside both the markdown guide and the webapp dashboard JSON/UI
+- [x] `[DOCUMENTATION]` Add 10 comments, average prices, and Google Play Store links to downloaded guide `guida_malaga_single_giugno_2026.md`
+- [x] `[DOCUMENTATION]` Append the multi-zone Costa guide as Section 8 in the downloaded guide `guida_malaga_single_giugno_2026.md`
+- [x] `[DEVOPS]` Validate static export build with `npm run build`
+
+
 ## Phase 4: Webapp Inspiration Hub & Matcher
 - [x] `[FRONTEND]` Create `app/components/QuickInspiration.tsx` component
 - [x] `[FRONTEND]` Integrate inspiration component into `app/page.tsx`
 - [x] `[FRONTEND]` Wire inspiration section into `app/components/SectionNav.tsx`
+- [x] `[FRONTEND]` Fix clipping and truncation of filter options on desktop (Beaches, Food, Nightlife, Videos, Budget, QuickInspiration)
+- [x] `[FRONTEND]` Add Over-35 Local Nightlife Guide in `Nightlife.tsx`
+- [x] `[FRONTEND]` Create dedicated `SingleGuide.tsx` section and wire into `page.tsx` & `SectionNav.tsx`
+- [x] `[FRONTEND]` Integrate Focus Nerja (Costa del Sol Est) for single over-35 into `SingleGuide.tsx`
+- [x] `[FRONTEND]` Enrich SingleGuide.tsx with Google Maps links, addresses, and Instagram profiles for Málaga and Nerja venues
+- [x] `[FRONTEND]` Update Spain-specific Dating Apps mapping and rules of thumb in SingleGuide.tsx and the downloaded guide
+- [x] `[DOCUMENTATION]` Enrich local downloaded guide `guida_malaga_single_giugno_2026.md` with addresses, maps links, and social links
+- [x] `[BACKEND]` Extract SingleGuide content to `data/movida-over35.json` and load it dynamically in `SingleGuide.tsx`
 - [x] `[DEVOPS]` Validate static export build with `npm run build`
 - [x] `[DOCUMENTATION]` Update local `GEMINI.MD` and `README.md`
+
+
 
 ## Phase 3: Costa de Nerja / Maro Integration
 - [x] `[BACKEND]` Append Nerja/Maro beaches to `data/beaches.json`

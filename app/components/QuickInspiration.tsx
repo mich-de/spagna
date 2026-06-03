@@ -345,7 +345,7 @@ export default function QuickInspiration() {
         {activeTab === 'deck' && (
           <div className="space-y-6">
             {/* Category Quick Filters */}
-            <div className="flex flex-wrap gap-2 pb-2 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+             <div className="flex flex-row flex-nowrap sm:flex-wrap gap-2 pb-2 overflow-x-auto sm:overflow-x-visible scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 whitespace-nowrap sm:whitespace-normal">
               {[
                 { id: 'tutti', label: 'Tutti i tipi ✨' },
                 { id: 'spiagge', label: 'Spiagge 🏖' },
@@ -356,7 +356,7 @@ export default function QuickInspiration() {
                 <button
                   key={cat.id}
                   onClick={() => setCategoryFilter(cat.id as any)}
-                  className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all border cursor-pointer ${
+                  className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all border cursor-pointer shrink-0 ${
                     categoryFilter === cat.id
                       ? 'bg-notte text-white border-notte'
                       : 'bg-white/80 text-mare-750 border-terracotta-100/50 hover:bg-terracotta-50/50 hover:border-terracotta-200'

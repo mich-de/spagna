@@ -1,6 +1,7 @@
 [
   {
     "name": "El Pimpi",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/El_Pimpi_1.jpg",
     "zone": "Málaga centro",
     "type": "ristorante iconico",
     "description": "Istituzione malagueña. Cortili interni, botti firmate, vino dolce. Turistico? Sì, ma merita.",
@@ -16,6 +17,7 @@
   },
   {
     "name": "Casa Lola",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Plaza_Constituci%C3%B3n_M%C3%A1laga.jpg",
     "zone": "Málaga centro",
     "type": "tapas bar",
     "description": "Tapas moderne in Piazza della Merced. Fresco, veloce, di qualità.",
@@ -31,6 +33,7 @@
   },
   {
     "name": "La Deriva",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio.jpg",
     "zone": "Pedregalejo (Málaga)",
     "type": "chiringuito moderno",
     "description": "Sulla spiaggia di Pedregalejo. Espetos de sardinas sulla griglia all'aperto. Ambiente giovane.",
@@ -46,6 +49,7 @@
   },
   {
     "name": "Lekune",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "Marbella",
     "type": "ristorante di pesce",
     "description": "Pesce freschissimo, preparazione basca incontra Andalusia. Raffinato ma senza snobismo.",
@@ -61,6 +65,7 @@
   },
   {
     "name": "Bar El Estrecho",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Calle_del_Peral%2C_Marbella.jpg",
     "zone": "Marbella centro",
     "type": "bar de tapas storico",
     "description": "Il più antico bar di Marbella (dal 1936). Autentico, senza pretese, frequentato da locali e pescatori.",
@@ -76,6 +81,7 @@
   },
   {
     "name": "Casa Eladio",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "Marbella",
     "type": "ristorante tradizionale",
     "description": "Cucina marbellí autentica. Niente fronzoli, solo qualità. I locali lo conoscono bene.",
@@ -91,6 +97,7 @@
   },
   {
     "name": "Trocadero Playa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Puerto_Banus_Marina%2C_Marbella_-_Spain.jpg",
     "zone": "Puerto Banús",
     "type": "ristorante elegante vista mare",
     "description": "Sul porto di Puerto Banús. Pesce raffinato, vista yacht, atmosfera esclusiva.",
@@ -106,6 +113,7 @@
   },
   {
     "name": "La Escollera",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Puerto_deportivo_de_Estepona.jpg",
     "zone": "Estepona",
     "type": "chiringuito autentico",
     "description": "Sulla scogliera di Estepona. Pesce appena pescato, frittura perfetta. Il più autentico della zona.",
@@ -121,6 +129,7 @@
   },
   {
     "name": "Chiringuito Cabopino",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Cabopino_beach%2C_Costa_del_Sol%2C_Spain_2005.jpg",
     "zone": "Cabopino (Marbella)",
     "type": "chiringuito sulla spiaggia",
     "description": "Sulla spiaggia di Cabopino, tra le dune. Tavoli sulla sabbia, piedi nell'acqua.",
@@ -136,6 +145,7 @@
   },
   {
     "name": "Chiringuito Los Troncos",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "San Pedro de Alcántara",
     "type": "chiringuito locale",
     "description": "Frequentato da residenti. Pesce fresco, prezzi onesti, atmosfera senza fronzoli.",
@@ -151,6 +161,7 @@
   },
   {
     "name": "La Taberna de Mijas",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mijas_10.jpg",
     "zone": "Mijas Pueblo",
     "type": "ristorante con vista",
     "description": "Terrazza panoramica sul borgo bianco. Cucina tradizionale andalusa.",
@@ -166,6 +177,7 @@
   },
   {
     "name": "El Candado",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio.jpg",
     "zone": "Pedregalejo (Málaga)",
     "type": "chiringuito storico",
     "description": "Storico chiringuito di Pedregalejo. Quello vero. Quello che c'è da sempre.",
@@ -181,6 +193,7 @@
   },
   {
     "name": "Amàre Marbella",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "Marbella",
     "type": "beach club + ristorante",
     "description": "Beach club elegante con ristorante di pesce. Lettini, musica, pranzo vista mare.",
@@ -196,6 +209,7 @@
   },
   {
     "name": "Nikki Beach",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "Marbella",
     "type": "beach club internazionale",
     "description": "Iconico beach club. Party, musica, gente bella. Più evento che spiaggia.",
@@ -211,6 +225,7 @@
   },
   {
     "name": "Central Malagueta",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Plaza_Constituci%C3%B3n_M%C3%A1laga.jpg",
     "zone": "Málaga",
     "type": "caffè/ristorante",
     "description": "L'erede dello storico Café Central. Stessa famiglia, stessa qualità, sistema iconico per ordinare il caffè. Vicino alla Plaza de Toros.",
@@ -226,6 +241,7 @@
   },
   {
     "name": "Victor's Beach",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Playa_de_la_Fontanilla_Marbella.jpg",
     "zone": "Marbella (Golden Mile)",
     "type": "chiringuito storico",
     "description": "Aperto dal 1978. Uno degli ultimi posti autentici sulla Golden Mile. Atmosfera rilassata, niente lusso finto.",
@@ -241,6 +257,7 @@
   },
   {
     "name": "El Pirata",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Puerto_deportivo_de_Estepona.jpg",
     "zone": "Estepona",
     "type": "chiringuito rustico",
     "description": "Da oltre 40 anni un punto di riferimento. Semplice, piedi sulla sabbia, qualità estrema della materia prima.",
@@ -256,6 +273,7 @@
   },
   {
     "name": "Pizzeria Picasso",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Puerto_Banus_Marina%2C_Marbella_-_Spain.jpg",
     "zone": "Puerto Banús",
     "type": "italiano iconico",
     "description": "Uno dei ristoranti più famosi del porto. Sempre pieno, porzioni generose, vibe vibrante.",
@@ -271,6 +289,7 @@
   },
   {
     "name": "Los Bandidos",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Puerto_Banus_Marina%2C_Marbella_-_Spain.jpg",
     "zone": "Puerto Banús",
     "type": "ristorante storico",
     "description": "Istituzione di Puerto Banús da oltre 30 anni. Cucina classica, atmosfera intima.",
@@ -286,6 +305,7 @@
   },
   {
     "name": "Asia Restaurant",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/El_Embarcadero_Benalm%C3%A1dena.jpg",
     "zone": "Benalmádena Marina",
     "type": "all-you-can-eat asiatico",
     "description": "Ristorante asiatico all-you-can-eat sul Porto Marina. Segnalato dalla guida video di Benalmádena come il suo preferito sulla marina.",
@@ -301,6 +321,7 @@
   },
   {
     "name": "W Restaurant",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/El_Embarcadero_Benalm%C3%A1dena.jpg",
     "zone": "Benalmádena Marina",
     "type": "ristorante asiatico",
     "description": "Ristorante asiatico di qualità sul Porto Marina. Raccomandato dalla travel guide insieme ad Asia Restaurant.",
@@ -316,6 +337,7 @@
   },
   {
     "name": "Los Pescadores",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Puerto_deportivo_de_Estepona.jpg",
     "zone": "Estepona marina",
     "type": "pescheria/ristorante",
     "description": "Ristorante di pesce sulla marina di Estepona. Amato dai locali per il pesce freschissimo del giorno. Nessun fronzolo, solo qualità.",
@@ -331,6 +353,7 @@
   },
   {
     "name": "El Patio de Macarena",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Puerto_deportivo_de_Estepona.jpg",
     "zone": "Estepona centro",
     "type": "tapas bar",
     "description": "Tapas bar nascosto nel centro storico di Estepona con patio fiorito. Cucina andalusa tradizionale con musica di chitarra spagnola dal vivo.",
@@ -346,6 +369,7 @@
   },
   {
     "name": "Chiringuito Ayo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/View_from_Balc%C3%B3n_de_Europa_in_Nerja_2014.jpg",
     "zone": "Nerja",
     "type": "chiringuito storico",
     "description": "Leggendario chiringuito sulla Playa de Burriana dal 1969. Famoso in tutta la Spagna per la paella gigante cotta a legna sulla spiaggia.",
@@ -361,6 +385,7 @@
   },
   {
     "name": "El Pulguilla",
+    "imageUrl": "https://www.elpulguilla.com/wp-content/uploads/el-pulguilla-bar-nerja.jpg",
     "zone": "Nerja",
     "type": "tapas bar tradizionale",
     "description": "Il classico dei classici a Nerja. Enorme bar de tapas con un grande patio interno. Frequentatissimo sia da locali che da turisti.",
@@ -376,6 +401,7 @@
   },
   {
     "name": "Restaurante Oliva",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/View_from_Balc%C3%B3n_de_Europa_in_Nerja_2014.jpg",
     "zone": "Nerja",
     "type": "ristorante moderno/fine dining",
     "description": "Ristorante elegante premiato dalla Guida Michelin. Cucina andalusa reinventata con tocco moderno e ingredienti locali di alta qualità.",

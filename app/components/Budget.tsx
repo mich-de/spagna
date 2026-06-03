@@ -75,12 +75,12 @@ export default function Budget() {
         </motion.div>
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <div className="flex overflow-x-auto scrollbar-hide gap-1.5 pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap">
+          <div className="flex flex-row flex-nowrap sm:flex-wrap overflow-x-auto sm:overflow-x-visible scrollbar-hide gap-1.5 pb-1 -mx-2 px-2 sm:mx-0 sm:px-0 whitespace-nowrap sm:whitespace-normal">
             {levels.map((lvl) => (
               <button
                 key={lvl.key}
                 onClick={() => setActiveLevel(lvl.key)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all shrink-0 ${
                   activeLevel === lvl.key
                     ? 'bg-terracotta-500 text-white shadow-md'
                     : 'bg-white/70 text-mare-600 border border-terracotta-100/40 hover:bg-terracotta-50'

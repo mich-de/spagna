@@ -10,6 +10,7 @@ import Itinerary from '@/app/components/Itinerary'
 import Beaches from '@/app/components/Beaches'
 import Food from '@/app/components/Food'
 import Nightlife from '@/app/components/Nightlife'
+import SingleGuide from '@/app/components/SingleGuide'
 import SanJuan from '@/app/components/SanJuan'
 import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
@@ -17,7 +18,7 @@ import Budget from '@/app/components/Budget'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 
-const sections = ['overview', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
+const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
@@ -73,6 +74,8 @@ export default function Home() {
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-200 to-transparent mx-4 sm:mx-6 mt-2" />
 
         <Overview />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <SingleGuide />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <BaseSelection />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />

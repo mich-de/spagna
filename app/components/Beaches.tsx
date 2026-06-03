@@ -164,7 +164,7 @@ export default function Beaches() {
               <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
                 <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
                 <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="flex gap-1.5 overflow-x-auto scrollbar-hide py-1.5 px-0.5 whitespace-nowrap snap-x">
+                <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
                   {zones.map((z) => (
                     <button
                       key={z}
@@ -201,7 +201,7 @@ export default function Beaches() {
               <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
                 <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
                 <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="flex gap-1.5 overflow-x-auto scrollbar-hide py-1.5 px-0.5 whitespace-nowrap snap-x">
+                <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
                   {atmospheres.map((a) => (
                     <button
                       key={a}
@@ -243,24 +243,31 @@ export default function Beaches() {
                 transition={{ delay: i * 0.04 }}
                 className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover w-[290px] xs:w-[325px] sm:w-auto shrink-0 snap-center"
               >
-                <div className="flex items-start justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-display text-lg font-bold text-notte">{beach.name}</h3>
-                    <button
-                      onClick={() => toggleBookmark(beach)}
-                      className="p-1 text-mare-400 hover:text-red-500 hover:scale-115 transition-all cursor-pointer"
-                      title={isBookmarked ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti"}
-                    >
-                      <Heart
-                        className={`w-4 h-4 transition-colors ${
-                          isBookmarked ? 'fill-red-500 text-red-500' : 'text-mare-300'
-                        }`}
-                      />
-                    </button>
-                  </div>
-                  <span className="badge-pill">
+                <div className="relative w-full aspect-[16/9] -mx-5 -mt-5 mb-3 overflow-hidden rounded-t-2xl">
+                  <img
+                    src={beach.imageUrl}
+                    alt={beach.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <button
+                    onClick={() => toggleBookmark(beach)}
+                    className="absolute top-2.5 right-2.5 p-1.5 bg-white/70 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all cursor-pointer shadow-sm"
+                    title={isBookmarked ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti"}
+                  >
+                    <Heart
+                      className={`w-3.5 h-3.5 transition-colors ${
+                        isBookmarked ? 'fill-red-500 text-red-500' : 'text-mare-600'
+                      }`}
+                    />
+                  </button>
+                  <span className="absolute bottom-2 left-2.5 badge-pill text-white bg-black/40 backdrop-blur-sm border-0 text-[10px]">
                     {beach.atmosphere}
                   </span>
+                </div>
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="font-display text-lg font-bold text-notte">{beach.name}</h3>
                 </div>
               <p className="text-xs text-mare-700/50 mb-2">{beach.description}</p>
               <div className="space-y-1.5 mb-3">

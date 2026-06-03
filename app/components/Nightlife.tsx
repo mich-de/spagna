@@ -113,7 +113,7 @@ export default function Nightlife() {
             <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
               <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
               <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-              <div className="flex gap-1.5 overflow-x-auto scrollbar-hide py-1.5 px-0.5 whitespace-nowrap snap-x">
+              <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
                 {zones.map((z) => (
                   <button
                     key={z}
@@ -266,16 +266,16 @@ export default function Nightlife() {
           )}
         </div>
 
-        <div className="mt-6 p-5 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl border border-indigo-200/50">
+        <div className="mt-6 p-5 bg-gradient-to-r from-indigo-50/70 to-purple-50/70 rounded-2xl border border-indigo-200/40">
           <h4 className="font-display text-lg font-semibold text-notte mb-2">🌙 Strategia nightlife consigliata</h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-mare-700/80">
-            <div className="p-3 bg-white/50 rounded-xl">
+            <div className="p-3 bg-white/60 rounded-xl">
               <p className="font-medium text-terracotta-600 mb-1">2 sere a Marbella / Puerto Banús</p>
-              <p className="text-sm text-mare-700/80">Per l&apos;esperienza luxury, vedere e farsi vedere, il lato patinato della Costa del Sol</p>
+              <p className="text-xs text-mare-750/90">Per l&apos;esperienza luxury, vedere e farsi vedere, il lato patinato della Costa del Sol</p>
             </div>
-            <div className="p-3 bg-white/50 rounded-xl">
+            <div className="p-3 bg-white/60 rounded-xl">
               <p className="font-medium text-terracotta-600 mb-1">2 sere a Málaga</p>
-              <p className="text-sm text-mare-700/80">Per socializzare davvero, gente autentica, locali veri, costi contenuti. La notte migliore per conoscere persone</p>
+              <p className="text-xs text-mare-750/90">Per socializzare davvero, gente autentica, locali veri, costi contenuti. La notte migliore per conoscere persone</p>
             </div>
           </div>
         </div>

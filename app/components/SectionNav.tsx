@@ -2,10 +2,11 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users } from 'lucide-react'
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: Compass },
+  { id: 'single-guide', label: 'Movida Over 35', icon: Users },
   { id: 'base', label: 'Base', icon: MapPin },
   { id: 'inspiration', label: 'Ispirazione', icon: Sparkles },
   { id: 'videos', label: 'Video', icon: Play },
@@ -135,7 +136,6 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              onClick={() => setMobileOpen(false)}
               className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-sabbia/98 backdrop-blur-2xl border-t border-terracotta-100/50 flex flex-col justify-between"
             >
               {/* Menu Links with Staggered Fade-in */}
@@ -164,7 +164,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                       }}
                       onClick={() => {
                         setMobileOpen(false)
-                        setTimeout(() => onSectionChange(s.id), 250)
+                        setTimeout(() => onSectionChange(s.id), 100)
                       }}
                       className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all ${
                         activeSection === s.id

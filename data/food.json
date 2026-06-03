@@ -1,6 +1,7 @@
 [
   {
     "name": "Espetos de sardinas",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Espetos_de_sardinas_%281435081938%29.jpg",
     "description": "Sardine infilzate in canna e cotte sulla brace sulla spiaggia. Il re della Costa del Sol.",
     "when": "pranzo sulla spiaggia",
     "where": "chiringuiti di Pedregalejo o Cabopino",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Pescaíto frito",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Pescaito_frito.jpg",
     "description": "Frittura di pesce piccolo (boquerones, calamares, chanquetes, pijotas). Leggera e croccante.",
     "when": "pranzo o aperitivo",
     "where": "Bar El Estrecho o La Escollera",
@@ -17,6 +19,7 @@
   },
   {
     "name": "Boquerones en vinagre",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Boquerones_en_vinagre.jpg",
     "description": "Acciughe marinate in aceto, aglio e prezzemolo. Fresche, leggere, incredibili.",
     "when": "aperitivo",
     "where": "qualsiasi bar de tapas",
@@ -25,6 +28,7 @@
   },
   {
     "name": "Gazpacho",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gazpacho.jpg",
     "description": "Zuppa fredda di pomodoro, cetriolo, peperone. Rinfrescante e salutare.",
     "when": "pranzo (caldo) o cena leggera",
     "where": "ovunque",
@@ -33,6 +37,7 @@
   },
   {
     "name": "Salmorejo",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Salmorejo.jpg",
     "description": "Più denso del gazpacho. Pomodoro, pane, aglio, olio. Guarnito con uovo sodo e jamón.",
     "when": "pranzo",
     "where": "Casa Eladio o El Pimpi",
@@ -41,6 +46,7 @@
   },
   {
     "name": "Ajoblanco",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Ajoblanco.jpg",
     "description": "Zuppa fredda di mandorle, aglio, pane, olio. Dolceamaro unico.",
     "when": "estate, pranzo",
     "where": "ristoranti tradizionali",
@@ -49,6 +55,7 @@
   },
   {
     "name": "Porra Antequerana",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Porra_antequerana.jpg",
     "description": "Variante del salmorejo ma più densa. Originaria di Antequera. Cremosa.",
     "when": "pranzo",
     "where": "Trattorie di Málaga e Antequera",
@@ -57,6 +64,7 @@
   },
   {
     "name": "Gambas pil-pil",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gambas_al_ajillo%2C_2024.jpg",
     "description": "Gamberi saltati in olio bollente, aglio e peperoncino. Serviti sfrigolanti.",
     "when": "aperitivo o cena",
     "where": "Bar El Estrecho",
@@ -65,6 +73,7 @@
   },
   {
     "name": "Jamón ibérico",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Sliced_Iberico_ham_%28Jam%C3%B3n_ib%C3%A9rico%29.jpg",
     "description": "Prosciutto di ghianda. Fette sottili, sapore pieno. Non serve nient'altro.",
     "when": "aperitivo",
     "where": "El Pimpi o enoteca",
@@ -73,6 +82,7 @@
   },
   {
     "name": "Croquetas",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croquetas.jpg",
     "description": "Crocchette cremose. Jamón, bacalao, pollo, funghi. Ogni bar ha le sue.",
     "when": "aperitivo o tapas crawl",
     "where": "ovunque",
@@ -81,6 +91,7 @@
   },
   {
     "name": "Tortilla española",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tortilla_de_patatas.jpg",
     "description": "Uova e patate. Cotta o poco cotta. Con o senza cipolla. Dibattito nazionale.",
     "when": "pranzo o tapas",
     "where": "Casa Lola o bar locale",
@@ -89,6 +100,7 @@
   },
   {
     "name": "Churros con chocolate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chocolate_con_churros_de_lazo.jpg",
     "description": "Fritti di pasta choux, cioccolato denso. Colazione o dopo-festa.",
     "when": "colazione (08:00) o notte(04:00)",
     "where": "Churrería Los Arcos",
@@ -97,6 +109,7 @@
   },
   {
     "name": "Tinto de verano",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Tinto_de_Verano_2.jpg",
     "description": "Vino rosso + limonata + ghiaccio. Il drink dell'estate spagnola. Più locale della sangria.",
     "when": "sempre",
     "where": "ovunque",
@@ -105,6 +118,7 @@
   },
   {
     "name": "Vermut",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vermut-2009.jpg",
     "description": "Vino aromatizzato. Servito con ghiaccio, oliva e arancia. Rito del pre-cena.",
     "when": "aperitivo (13:00 o 20:00)",
     "where": "bar tradizionali",
@@ -113,6 +127,7 @@
   },
   {
     "name": "Vino dulce de Málaga",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/M%C3%A1laga_Virgen_Dunkel.jpg",
     "description": "Vino dolce passito. Moscato o Pedro Ximénez. Oro liquido.",
     "when": "dopo cena",
     "where": "El Pimpi o enoteca",
@@ -121,6 +136,7 @@
   },
   {
     "name": "Paella de Burriana (Ayo)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Cooking_a_paella.jpg",
     "description": "La celebre paella cotta a legna in enormi padelle direttamente sulla spiaggia. Un'istituzione locale.",
     "when": "pranzo sulla spiaggia",
     "where": "Chiringuito Ayo (Playa de Burriana)",
@@ -129,6 +145,7 @@
   },
   {
     "name": "Boquerones fritos de Nerja",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Pescaito_frito.jpg",
     "description": "Acciughe freschissime del mare di Nerja, infarinate e fritte in olio caldissimo. Croccanti fuori, tenere dentro.",
     "when": "pranzo o aperitivo",
     "where": "El Pulguilla o chiringuiti",
@@ -137,6 +154,7 @@
   },
   {
     "name": "Canaíllas",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ca%C3%B1aillas.jpg",
     "description": "Lumache di mare tipiche della costa orientale, bollite in acqua salata con alloro e spezie. Molto saporite.",
     "when": "aperitivo",
     "where": "Tapas bar a Nerja centro",

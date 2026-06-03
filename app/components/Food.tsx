@@ -117,9 +117,21 @@ export default function Food() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.03 }}
-                className="bg-white/70 rounded-xl p-4 border border-terracotta-100/40 card-shadow card-hover w-[290px] xs:w-[325px] sm:w-auto shrink-0 snap-center"
+                className="bg-white/70 rounded-xl border border-terracotta-100/40 card-shadow card-hover w-[290px] xs:w-[325px] sm:w-auto shrink-0 snap-center overflow-hidden"
               >
-                <div className="flex items-start justify-between mb-1">
+                {item.image && (
+                  <div className="relative h-36 sm:h-40 overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent" />
+                  </div>
+                )}
+                <div className="p-4">
+                  <div className="flex items-start justify-between mb-1">
                   <h4 className="font-display font-bold text-notte">{item.name}</h4>
                   <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${
                     item.authenticity >= 9 ? 'bg-emerald-100 text-emerald-700' :
@@ -135,6 +147,7 @@ export default function Food() {
                   <span className="px-2 py-0.5 bg-terracotta-50 rounded">📍 {item.where}</span>
                 </div>
                 <p className="text-xs text-terracotta-600 mt-1.5 italic">🍷 {item.pairing}</p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -168,7 +181,7 @@ export default function Food() {
                 <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
                   <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
                   <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                  <div className="flex gap-1.5 overflow-x-auto scrollbar-hide py-1.5 px-0.5 whitespace-nowrap snap-x">
+                  <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
                     {zones.map((z) => (
                       <button
                         key={z}
@@ -210,21 +223,33 @@ export default function Food() {
                   transition={{ delay: i * 0.03 }}
                   className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover w-[290px] xs:w-[325px] sm:w-auto shrink-0 snap-center"
                 >
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-display font-bold text-notte">{r.name}</h4>
+                  {r.imageUrl && (
+                    <div className="relative w-full aspect-[16/9] -mx-5 -mt-5 mb-3 overflow-hidden rounded-t-2xl">
+                      <img
+                        src={r.imageUrl}
+                        alt={r.name}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <button
                         onClick={() => toggleBookmark(r)}
-                        className="p-1 text-mare-400 hover:text-red-500 hover:scale-115 transition-all cursor-pointer"
+                        className="absolute top-2.5 right-2.5 p-1.5 bg-white/70 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all cursor-pointer shadow-sm"
                         title={isBookmarked ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti"}
                       >
                         <Heart
                           className={`w-3.5 h-3.5 transition-colors ${
-                            isBookmarked ? 'fill-red-500 text-red-500' : 'text-mare-300'
+                            isBookmarked ? 'fill-red-500 text-red-500' : 'text-mare-600'
                           }`}
                         />
                       </button>
+                      <span className="absolute bottom-2 left-2.5 badge-pill text-white bg-black/40 backdrop-blur-sm border-0 text-[10px]">
+                        {r.vibe}
+                      </span>
                     </div>
+                  )}
+                  <div className="flex items-start justify-between mb-2">
+                    <h4 className="font-display font-bold text-notte">{r.name}</h4>
                     <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-mare-100 text-mare-700">
                       {r.price}
                     </span>

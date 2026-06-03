@@ -67,6 +67,47 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Integrato il componente in `page.tsx` come sezione indipendente e registrato in `SectionNav.tsx` sotto l'icona `Sparkles`.
 - Eseguito con successo `npm run build` per verificare che la build statica di Next.js compili correttamente senza errori di compilazione o type-checking.
 
+### 2026-06-03 — Risoluzione Taglio Voci nei Filtri (Desktop Wrapping)
+- Risolto il problema del taglio delle voci nei filtri su desktop in `Beaches.tsx`, `Food.tsx`, `Nightlife.tsx`, `Videos.tsx`, `Budget.tsx` e `QuickInspiration.tsx`.
+- Modificati i contenitori flex dei filtri per permettere il wrapping degli elementi (`sm:flex-wrap`) e rendere visibile l'overflow (`sm:overflow-visible` e `sm:whitespace-normal`) su schermi desktop, mantenendo la visualizzazione a carosello orizzontale a scorrimento solo su schermi mobili.
+
+### 2026-06-03 — Guida Movida Over 35 (Locali & Socializzazione)
+- Aggiunta una sezione dedicata in `Nightlife.tsx` con una guida premium sulla movida autentica per un pubblico over 35, focalizzata sulla socializzazione con persone locali anziché turisti.
+- Inclusi dettagli specifici per il centro di Málaga (La Tranca, Barsovia), la costa Est (Pedregalejo e Baños del Carmen per il tardeo) e la zona moderna locale (Teatinos), incrociando feedback e report aggiornati per il 2026.
+
+### 2026-06-03 — Sezione Dedicata Movida Over 35 & Single Guide
+- Creata una sezione indipendente e dedicata `SingleGuide.tsx` ("Movida Over 35") inserita dopo Nightlife nel layout di `page.tsx` e registrata in `SectionNav.tsx` con l'icona `Users`.
+- Integrato il report completo `guida_malaga_single_giugno_2026.md` con 6 tab interattive: Briefing & Mindset, Mappa Locali (inclusi Discoteca Liceo, Rocknrolla, Sala Divas, Clubs de Alterne), Tardeo al Perreo, Dating & Social App, Piano d'Azione Day-by-Day (19-25 Giugno 2026) e Sicurezza & Logistica.
+- Risolto avviso Next.js sui molteplici lockfile e ripristinato `outputFileTracingRoot` in `next.config.js` usando `path.resolve(__dirname)` per evitare errori di PageNotFoundError durante l'export statico.
+
+### 2026-06-03 — Focus Nerja (Costa del Sol Est) in Single Guide
+- Integrato il focus logistico e strategico per single over 35 su Nerja in `SingleGuide.tsx` aggiungendo un tab dedicato ("Focus Nerja") con zone (Centro, Plaza Tutti Frutti, Burriana), locali target (El Molino, Tamareo Latino, Seven/Rockefeller), dinamica per la Noche de San Juan a Playa de Burriana, e strategia micro-localizzata di dating app allargando il raggio a Torre del Mar e Vélez-Málaga.
+- Aggiornata la guida cartacea locale `guida_malaga_single_giugno_2026.md` aggiungendo la sezione appendice 7 al fondo.
+
+### 2026-06-03 — Integrazione Mappe, Instagram e Dating App (Polishing Single Guide)
+- Aggiunti gli indirizzi fisici, link diretti a Google Maps e profili Instagram ufficiali (o tag di ricerca rilevanti) per tutti i locali menzionati nella guida strategica "Movida Over 35" sia nel componente interattivo `SingleGuide.tsx` che nel file scaricato `guida_malaga_single_giugno_2026.md`.
+- Integrata la nuova mappatura approfondita per le Dating App in Spagna (Meetic.es, Badoo, Adopta, Tinder/Bumble con filtro bio e geofencing, Happn) e le relative "Regole d'Oro" per il profilo, sincronizzando i contenuti del tab "Dating & Social App" e della sezione 3 del file di testo.
+- Verificata la corretta compilazione statica del progetto Next.js tramite `npm run build` con esito positivo e zero errori.
+
+### 2026-06-03 — Estrazione Dati Single Guide in JSON
+- Creato il file di dati `data/movida-over35.json` in cui è stato estratto tutto il contenuto informativo della guida strategica per single over 35 (briefing, locali di Málaga e Nerja, tardeo, dating app, itinerario settimanale e sicurezza).
+- Rifattorizzato il componente `SingleGuide.tsx` in modo che carichi i dati dinamicamente dal JSON, semplificando il codice JSX e rispettando le convenzioni dell'architettura del progetto.
+- Eseguito con successo `npm run build` per validare l'assenza di errori nella compilazione statica di Next.js.
+
+### 2026-06-03 — Integrazione 10 Voci Forum, Prezzi Locali Adulti & Link Dating App
+- Popolato `data/movida-over35.json` con esattamente 10 commenti per ciascun locale di Málaga e Nerja.
+- Aggiornata la guida scaricabile `guida_malaga_single_giugno_2026.md` inserendo le 10 recensioni/commenti per Sala Divas, Bar Típico El Molino, Pub Tamareo, Seven e Rockefeller Premium.
+- Inserite le tariffe medie di riferimento per i locali per adulti (Sala Divas e Clubs de Alterne) sia nella descrizione del JSON che nella guida markdown.
+- Aggiunti i link diretti al Google Play Store per tutte le Dating App (Meetic, Badoo, Adopta, Tinder, Bumble, Happn) sia nel JSON che nella guida markdown.
+- Rifattorizzato `SingleGuide.tsx` per abilitare `whitespace-pre-line` per le descrizioni a capo e visualizzare dinamicamente i pulsanti di download Android per le app.
+- Riposizionata la sezione "Movida Over 35" (`SingleGuide.tsx` / `single-guide`) subito dopo "Overview" e prima di "Scelta della Base" (`BaseSelection.tsx` / `base`) sia in `page.tsx` che in `SectionNav.tsx` per assecondare la richiesta dell'utente.
+- Risolto il problema del menu hamburger mobile in `SectionNav.tsx` rimuovendo l'handler `onClick` sul contenitore principale per evitare che tap, trascinamenti per lo scrolling o click sul footer chiudessero accidentalmente il menu, e ottimizzato il tempo di risposta dello scroll a 100ms.
+- Integrata la nota introduttiva pragmatica (franchezza ed empatia del compagno di viaggio digitale sulle mete ad alto rendimento) sia come banner nel tab "Briefing & Mindset" di `SingleGuide.tsx` (tramite `data/movida-over35.json`) sia all'inizio della sezione 2 di `guida_malaga_single_giugno_2026.md`.
+- Integrata la mappatura strategica Costa del Sol (San Pedro, Marbella, Estepona, Nerja, Benalmádena) con gli hotspots di socializzazione, pro/contro e dettagli sul target local e latina residente sia nel JSON (`data/movida-over35.json`) che come nuovo tab "Mappa Costa" in `SingleGuide.tsx` e Appendice 8 nel file markdown.
+- Eseguito con successo `npm run build` per validare la correttezza della build statica.
+
+
+
 ## Known Gotchas
 
 1. **Tailwind v4 `@config`**: Must be present. See above.
@@ -74,3 +115,4 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 3. **Bundle note**: Page is ~177 kB (279 kB first load). YouTube thumbnails are external images, not bundled.
 4. **Port**: Dev server may use 3001 if 3000 is occupied.
 5. **Hydration Mismatches (Browser Extensions)**: Extensions (like Brave or adblockers) can inject attributes such as `bis_skin_checked` during load. A global inline script in `RootLayout` observes and removes them before React hydrates, resolving console hydration overlays. Keep `suppressHydrationWarning` active on root wrapper nodes (`html`, `body`, etc.) as a fallback.
+6. **Next.js static export race condition on Windows**: When running `npm run build` immediately after a clean sweep, Next.js page generation might occasionally fail with a `PageNotFoundError` or `webpack-runtime.js` type error due to Windows disk write latency. Simply running `npm run build` a second time resolves it.

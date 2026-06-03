@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  outputFileTracingRoot: path.join(__dirname, './'),
+  outputFileTracingRoot: path.resolve(__dirname),
 };
 
 module.exports = nextConfig;
