@@ -128,6 +128,45 @@ export default function QuickInspiration() {
     }
   }, [])
 
+  // Find 5 closest suggestions to the selected base
+  const nearbySuggestions = useMemo(() => {
+    const all = normalizedItems.tutti
+    // Filter out items with general location 'ovunque'
+    const localized = all.filter((item, index, self) => 
+      !item.zone.toLowerCase().includes('ovunque') &&
+      self.findIndex(t => t.name === item.name) === index
+    )
+
+    // Sort by drive time
+    const sorted = [...localized].sort((a, b) => {
+      const timeA = getDriveTime(selectedBase, a.zone)
+      const timeB = getDriveTime(selectedBase, b.zone)
+      return timeA - timeB
+    })
+
+    // Try to pick a diverse set of 5 items
+    const selected: InspirationItem[] = []
+    const types = ['beach', 'restaurant', 'experience'] as const
+
+    types.forEach(t => {
+      const match = sorted.find(item => item.type === t && !selected.some(s => s.name === item.name))
+      if (match) selected.push(match)
+    })
+
+    for (const item of sorted) {
+      if (selected.length >= 5) break
+      if (!selected.some(s => s.name === item.name)) {
+        selected.push(item)
+      }
+    }
+
+    return selected.sort((a, b) => {
+      const timeA = getDriveTime(selectedBase, a.zone)
+      const timeB = getDriveTime(selectedBase, b.zone)
+      return timeA - timeB
+    })
+  }, [normalizedItems, selectedBase])
+
   // Helper helper to get stable id
   function expId(e: any) {
     return e.title
@@ -636,6 +675,85 @@ export default function QuickInspiration() {
             </div>
           </div>
         )}
+
+        {/* ─── SUGGESTIONS BY SELECTED BASE ─── */}
+        <div className="mt-16 pt-8 border-t border-terracotta-100/50">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-terracotta-500 to-oro flex items-center justify-center">
+              <MapPin className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <h3 className="font-display text-lg font-bold text-notte">Idee Consigliate vicino a te</h3>
+              <p className="text-xs text-mare-400">Le 5 cose più vicine a {selectedBase} (ordinate per tempo di guida ⏱)</p>
+            </div>
+          </div>
+
+          <div className="flex sm:grid sm:grid-cols-5 overflow-x-auto sm:overflow-visible gap-4 pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+            {nearbySuggestions.map((item, i) => {
+              const meta = getTypeMeta(item.type)
+              const isSaved = bookmarks.some(b => b.id === item.id)
+              const driveTime = getDriveTime(selectedBase, item.zone)
+              return (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05 }}
+                  className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 border border-terracotta-100/30 card-shadow card-hover w-[240px] sm:w-auto shrink-0 snap-center flex flex-col justify-between"
+                >
+                  <div>
+                    {/* Header: Type icon & Heart */}
+                    <div className="flex items-center justify-between mb-2">
+                      <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold border flex items-center gap-1 ${meta.color}`}>
+                        <meta.icon className="w-2.5 h-2.5" />
+                        {meta.label}
+                      </span>
+                      <button
+                        onClick={() => toggleBookmark(item)}
+                        className="p-1 text-mare-400 hover:text-red-500 transition-colors cursor-pointer"
+                        title={isSaved ? "Rimuovi" : "Salva"}
+                      >
+                        <Heart className={`w-3.5 h-3.5 ${isSaved ? 'fill-red-500 text-red-500' : 'text-mare-300'}`} />
+                      </button>
+                    </div>
+
+                    <h4 className="font-display font-bold text-sm text-notte line-clamp-1 mb-1" title={item.name}>
+                      {item.name}
+                    </h4>
+                    <p className="text-[10px] text-mare-700/60 line-clamp-2 min-h-[30px] mb-3">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-terracotta-50/50">
+                    {/* Drive time & Zone */}
+                    <div className="flex items-center justify-between text-[9px] text-mare-400">
+                      <span className="truncate">📍 {item.zone}</span>
+                      <span className="font-semibold text-terracotta-600 flex items-center gap-0.5 shrink-0">
+                        <Car className="w-3 h-3 text-terracotta-500" />
+                        ~{driveTime} min
+                      </span>
+                    </div>
+
+                    {/* Google Maps link */}
+                    {item.mapLink && (
+                      <a
+                        href={item.mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full py-1 text-center rounded-lg text-[9px] font-semibold bg-sabbia text-mare-750 hover:bg-terracotta-50 transition-colors border border-terracotta-100/30 flex items-center justify-center gap-1"
+                      >
+                        <Map className="w-2.5 h-2.5" />
+                        Vedi Mappa
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
 
       </div>
     </section>
