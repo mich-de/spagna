@@ -17,7 +17,7 @@ import Budget from '@/app/components/Budget'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 
-const sections = ['overview', 'inspiration', 'videos', 'base', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
+const sections = ['overview', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
@@ -74,11 +74,11 @@ export default function Home() {
 
         <Overview />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <BaseSelection />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <QuickInspiration />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Videos />
-        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
-        <BaseSelection />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Itinerary />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />

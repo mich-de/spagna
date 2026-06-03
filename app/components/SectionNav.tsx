@@ -6,9 +6,9 @@ import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarS
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: Compass },
+  { id: 'base', label: 'Base', icon: MapPin },
   { id: 'inspiration', label: 'Ispirazione', icon: Sparkles },
   { id: 'videos', label: 'Video', icon: Play },
-  { id: 'base', label: 'Base', icon: MapPin },
   { id: 'itinerary', label: 'Itinerario', icon: Sun },
   { id: 'beaches', label: 'Spiagge', icon: Waves },
   { id: 'food', label: 'Food', icon: Utensils },
