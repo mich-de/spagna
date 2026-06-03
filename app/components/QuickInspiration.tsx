@@ -525,7 +525,7 @@ export default function QuickInspiration() {
             <div className="relative">
               {/* Overlay loader */}
               {isMatching && (
-                <div className="absolute inset-0 bg-sabbia/60 backdrop-blur-sm z-20 flex items-center justify-center rounded-3xl">
+                <div className="absolute inset-0 bg-[#fcf7ec]/60 backdrop-blur-sm z-20 flex items-center justify-center rounded-3xl">
                   <div className="text-center space-y-3">
                     <Shuffle className="w-8 h-8 text-terracotta-500 animate-spin mx-auto" />
                     <p className="text-xs font-semibold text-mare-700">Abbinando la tua giornata ideale...</p>

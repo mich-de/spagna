@@ -117,6 +117,13 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Risolti i problemi di glitch del menu mobile in `SectionNav.tsx` prevenendo la propagazione dei click sul menu interno ed accelerando il timeout del cambio sezione a 50ms per rendere gli switch istantanei e fluidi su smartphone.
 - Eseguito con successo `npm run build` verificando l'assenza di errori e la corretta esportazione statica Next.js.
 
+### 2026-06-03 — Ottimizzazione Layout Mobile & Pulizia JSON
+- **Mobile Carousels**: Trasformate le griglie verticali in caroselli orizzontali swipabili su mobile per la tab "Mappa Costa" e per entrambe le sezioni delle Dating App in `SingleGuide.tsx`, migliorando drasticamente la leggibilità ed evitando l'affaticamento da scorrimento verticale.
+- **Accorgimenti Visuali & Accenti**: Ridotta la dimensione e il padding dei bottoni delle tab su mobile, e applicate maschere di sfumatura laterale (fade masks) per segnalare lo scorrimento. Aggiunti accenti cromatici alle icone Lucide (MapPin, Instagram, ExternalLink) ed evitato il wrap selvaggio di indirizzi lunghi con stili truncate.
+- **Pulizia Chiavi Duplicate JSON**: Eseguito uno script Python automatizzato per rimuovere le chiavi duplicate e le sezioni obsolete nel file `data/movida-over35.json` mantenendo solo il blocco dati corretto e aggiornato.
+- **Validazione Build**: Compilata con successo l'esportazione statica tramite `npm run build` con esito positivo e zero errori.
+
+
 ## Known Gotchas
 
 1. **Tailwind v4 `@config`**: Must be present. See above.

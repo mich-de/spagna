@@ -49,26 +49,32 @@ export default function SingleGuide() {
           <p className="text-mare-700/70 mt-1">Guida strategica di socializzazione per residenti locali, tardeo tropicale ed intrattenimento per adulti (Giugno 2026)</p>
         </motion.div>
 
-        <div className="glass p-5 rounded-2xl border border-terracotta-100/40 card-shadow bg-gradient-to-br from-indigo-50/20 via-purple-50/15 to-crema/20">
+        <div className="glass p-3 sm:p-6 rounded-2xl border border-terracotta-100/40 card-shadow bg-gradient-to-br from-indigo-50/20 via-purple-50/15 to-crema/20">
           
           {/* Tabs Container */}
-          <div className="flex overflow-x-auto sm:flex-wrap sm:overflow-visible gap-1.5 pb-2 mb-6 border-b border-terracotta-100/30 whitespace-nowrap sm:whitespace-normal scrollbar-hide snap-x sm:snap-none">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
-                  activeTab === tab.id
-                    ? 'bg-terracotta-500 text-white shadow-sm'
-                    : 'bg-white/80 text-mare-750 border border-terracotta-100/40 hover:bg-terracotta-50 hover:text-terracotta-600'
-                }`}
-              >
-                <span className="relative z-10 flex items-center gap-1.5">
-                  <span>{tab.icon}</span>
-                  <span>{tab.label}</span>
-                </span>
-              </button>
-            ))}
+          <div className="relative mb-6">
+            {/* Left and Right Fade Masks for Horizontal Scrolling on Mobile */}
+            <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#faf8f5] via-[#faf8f5]/80 to-transparent pointer-events-none z-10 md:hidden" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#faf8f5] via-[#faf8f5]/80 to-transparent pointer-events-none z-10 md:hidden" />
+            
+            <div className="flex overflow-x-auto md:flex-wrap md:overflow-visible gap-1.5 pb-2 border-b border-terracotta-100/30 whitespace-nowrap md:whitespace-normal scrollbar-hide snap-x md:snap-none px-4 md:px-0">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`relative px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-[11px] sm:text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
+                    activeTab === tab.id
+                      ? 'bg-terracotta-500 text-white shadow-sm'
+                      : 'bg-white/80 text-mare-750 border border-terracotta-100/40 hover:bg-terracotta-50 hover:text-terracotta-600'
+                  }`}
+                >
+                  <span className="relative z-10 flex items-center gap-1.5">
+                    <span>{tab.icon}</span>
+                    <span>{tab.label}</span>
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Tab Content */}
@@ -76,7 +82,7 @@ export default function SingleGuide() {
             
             {/* BRIEFING & MINDSET */}
             {activeTab === 'mindset' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>🧠 Briefing Iniziale e Mindset (Stile &quot;Field Report&quot;)</span>
                 </h3>
@@ -84,7 +90,7 @@ export default function SingleGuide() {
                 <p>{movidaData.briefing.subIntro}</p>
 
                 {movidaData.briefing.disclaimer && (
-                  <div className="p-4 bg-amber-50/40 rounded-xl border border-amber-250/20 text-xs italic text-mare-750/95 leading-relaxed mt-3 flex items-start gap-2">
+                  <div className="p-3 bg-amber-50/40 rounded-xl border border-amber-250/20 text-xs italic text-mare-750/95 leading-relaxed mt-3 flex items-start gap-2">
                     <span className="text-sm shrink-0">💡</span>
                     <div>
                       <strong>Nota di Pragmatismo:</strong> {movidaData.briefing.disclaimer}
@@ -94,7 +100,7 @@ export default function SingleGuide() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                   {movidaData.briefing.cards.map((card: any, idx: number) => (
-                    <div key={idx} className="p-4 bg-terracotta-50/50 rounded-xl border border-terracotta-100/30">
+                    <div key={idx} className="p-3.5 bg-terracotta-50/50 rounded-xl border border-terracotta-100/30">
                       <p className="font-bold text-sm text-terracotta-600 mb-1 flex items-center gap-1.5">
                         <span>{card.icon}</span> {card.title}
                       </p>
@@ -109,7 +115,7 @@ export default function SingleGuide() {
 
             {/* MAPPA LOCALI */}
             {activeTab === 'locali' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
                   <h3 className="font-display text-base font-bold text-notte flex items-center gap-2">
                     <span>🍹 Mappa Strategica dei Locali (Residenti vs Adult Entertainment)</span>
@@ -127,7 +133,7 @@ export default function SingleGuide() {
 
                 <div className="space-y-3">
                   {movidaData.locali.map((locale: any) => (
-                    <div key={locale.id} className={`p-4 rounded-xl border ${locale.id === 'divas' ? 'bg-red-50/30 border-red-200/40' : 'bg-white/80 border-terracotta-100/20'}`}>
+                    <div key={locale.id} className={`p-3 sm:p-4 rounded-xl border ${locale.id === 'divas' ? 'bg-red-50/30 border-red-200/40' : 'bg-white/80 border-terracotta-100/20'}`}>
                       <p className={`text-sm font-bold flex items-center gap-2 ${locale.id === 'divas' ? 'text-red-700' : 'text-terracotta-600'}`}>
                         <span className={`badge-pill text-white border-0 py-0 px-2 text-[10px] ${locale.categoryColor || 'bg-terracotta-500'}`}>
                           {locale.category}
@@ -142,29 +148,31 @@ export default function SingleGuide() {
                         <div className="mt-3 pt-2.5 border-t border-terracotta-150/10 space-y-3">
                           {locale.venues?.map((venue: any, vIdx: number) => (
                             <div key={vIdx} className="flex flex-col space-y-1 pt-0.5">
-                              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
-                                <span className="font-semibold text-mare-800">{venue.label}</span>
-                                <a
-                                  href={venue.mapLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
-                                >
-                                  <MapPin className="w-3.5 h-3.5" />
-                                  <span>{venue.address}</span>
-                                </a>
-                                <a
-                                  href={venue.instagram}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
-                                >
-                                  <Instagram className="w-3.5 h-3.5" />
-                                  <span>{venue.instagramHandle}</span>
-                                </a>
+                              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-4 gap-y-1.5 text-xs">
+                                <span className="font-semibold text-mare-800 shrink-0">{venue.label}</span>
+                                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                                  <a
+                                    href={venue.mapLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
+                                  >
+                                    <MapPin className="w-3.5 h-3.5 shrink-0 text-terracotta-500" />
+                                    <span className="truncate max-w-[200px] sm:max-w-none">{venue.address}</span>
+                                  </a>
+                                  <a
+                                    href={venue.instagram}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
+                                  >
+                                    <Instagram className="w-3.5 h-3.5 shrink-0 text-pink-500" />
+                                    <span className="truncate max-w-[150px] sm:max-w-none">{venue.instagramHandle}</span>
+                                  </a>
+                                </div>
                               </div>
                               {venue.comments && (
-                                <div className="pl-3 border-l border-terracotta-200/40 mt-1 space-y-1">
+                                <div className="pl-3 border-l border-terracotta-200/40 mt-1 space-y-1 max-h-28 overflow-y-auto pr-1">
                                   {venue.comments.map((comment: string, cIdx: number) => (
                                     <p key={cIdx} className="text-[10px] text-mare-600 italic leading-relaxed">
                                       &ldquo;{comment}&rdquo;
@@ -177,25 +185,29 @@ export default function SingleGuide() {
                         </div>
                       ) : (
                         <>
-                          <div className={`flex flex-wrap gap-3 mt-3 pt-2.5 border-t ${locale.id === 'divas' ? 'border-red-200/20' : 'border-terracotta-150/10'}`}>
+                          <div className={`flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-3 pt-2.5 border-t ${locale.id === 'divas' ? 'border-red-200/20' : 'border-terracotta-150/10'}`}>
                             <a
                               href={locale.mapLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className={`inline-flex items-center gap-1 text-xs transition-colors ${locale.id === 'divas' ? 'text-red-700 hover:text-red-900' : 'text-mare-600 hover:text-terracotta-600'}`}
+                              className={`inline-flex items-center gap-1 text-xs transition-colors ${
+                                locale.id === 'divas' 
+                                  ? 'text-red-700 hover:text-red-900' 
+                                  : 'text-mare-600 hover:text-terracotta-600'
+                              } py-0.5`}
                             >
-                              <MapPin className="w-3.5 h-3.5" />
-                              <span>{locale.address}</span>
+                              <MapPin className={`w-3.5 h-3.5 shrink-0 ${locale.id === 'divas' ? 'text-red-500' : 'text-terracotta-500'}`} />
+                              <span className="truncate max-w-[220px] sm:max-w-none">{locale.address}</span>
                             </a>
                             {locale.instagram && (
                               <a
                                 href={locale.instagram}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-xs text-mare-600 hover:text-terracotta-600 transition-colors"
+                                className="inline-flex items-center gap-1 text-xs text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                               >
-                                <Instagram className="w-3.5 h-3.5" />
-                                <span>{locale.instagramHandle}</span>
+                                <Instagram className="w-3.5 h-3.5 shrink-0 text-pink-500" />
+                                <span className="truncate max-w-[150px] sm:max-w-none">{locale.instagramHandle}</span>
                               </a>
                             )}
                           </div>
@@ -205,7 +217,7 @@ export default function SingleGuide() {
                                 <MessageSquare className="w-3 h-3" />
                                 <span>Voci dai Forum (Reddit &amp; GnoccaTravel):</span>
                               </p>
-                              <div className="space-y-1 pl-3 border-l border-terracotta-200/40">
+                              <div className="space-y-1.5 pl-3 border-l border-terracotta-200/40 max-h-36 overflow-y-auto pr-1">
                                 {locale.comments.map((comment: string, cIdx: number) => (
                                   <p key={cIdx} className="text-[10px] text-mare-600 italic leading-relaxed">
                                     &ldquo;{comment}&rdquo;
@@ -224,7 +236,7 @@ export default function SingleGuide() {
 
             {/* MAPPA COSTA */}
             {activeTab === 'costa' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>🏝️ Mappa Strategica Costa del Sol (Località Esterne)</span>
                 </h3>
@@ -234,7 +246,7 @@ export default function SingleGuide() {
 
                 <div className="space-y-4">
                   {movidaData.costa?.zones.map((zone: any) => (
-                    <div key={zone.id} className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20 card-shadow">
+                    <div key={zone.id} className="p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20 card-shadow">
                       <p className="text-sm font-bold text-terracotta-600 flex items-center gap-1.5">
                         <span>📍</span> {zone.name}
                       </p>
@@ -244,12 +256,12 @@ export default function SingleGuide() {
                       
                       <div className="mt-3 pt-3 border-t border-terracotta-150/10 space-y-3">
                         <p className="text-[10px] font-semibold text-mare-400 uppercase tracking-wider">Hotspots & Strategia:</p>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div className="flex md:grid overflow-x-auto md:overflow-visible gap-3 pb-3 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-3 px-3 md:mx-0 md:px-0">
                           {zone.venues.map((venue: any, vIdx: number) => (
-                            <div key={vIdx} className="p-3 bg-terracotta-50/40 rounded-lg border border-terracotta-100/10 flex flex-col justify-between">
+                            <div key={vIdx} className="min-w-[85vw] sm:min-w-[45%] md:min-w-0 snap-center p-3 bg-terracotta-50/40 rounded-lg border border-terracotta-100/10 flex flex-col justify-between">
                               <div>
                                 <span className="font-bold text-xs text-mare-800 flex items-center gap-1">
-                                  <span className="w-1.5 h-1.5 bg-terracotta-500 rounded-full animate-pulse"></span>
+                                  <span className="w-1.5 h-1.5 bg-terracotta-500 rounded-full animate-pulse shrink-0"></span>
                                   {venue.name}
                                 </span>
                                 <p className="text-[10px] text-mare-700/80 mt-1.5 leading-relaxed">
@@ -261,7 +273,7 @@ export default function SingleGuide() {
                                       <MessageSquare className="w-2.5 h-2.5 shrink-0" />
                                       <span>Voci dai Forum:</span>
                                     </p>
-                                    <div className="space-y-1 pl-2 border-l border-terracotta-200/35">
+                                    <div className="space-y-1 pl-2 border-l border-terracotta-200/35 max-h-24 overflow-y-auto pr-1">
                                       {venue.comments.map((comment: string, cIdx: number) => (
                                         <p key={cIdx} className="text-[9px] text-mare-600 italic leading-normal">
                                           &ldquo;{comment}&rdquo;
@@ -278,10 +290,10 @@ export default function SingleGuide() {
                                       href={venue.mapLink}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                                     >
                                       <MapPin className="w-3 h-3 text-terracotta-500 shrink-0" />
-                                      <span className="truncate">{venue.address}</span>
+                                      <span className="truncate max-w-[220px] sm:max-w-none">{venue.address}</span>
                                     </a>
                                   )}
                                   {venue.instagram && (
@@ -289,10 +301,10 @@ export default function SingleGuide() {
                                       href={venue.instagram}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                                     >
                                       <Instagram className="w-3 h-3 text-pink-500 shrink-0" />
-                                      <span className="truncate">{venue.instagramHandle}</span>
+                                      <span className="truncate max-w-[150px] sm:max-w-none">{venue.instagramHandle}</span>
                                     </a>
                                   )}
                                 </div>
@@ -309,7 +321,7 @@ export default function SingleGuide() {
 
             {/* TARDEO AL PERREO */}
             {activeTab === 'tardeo' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
                   <h3 className="font-display text-base font-bold text-notte flex items-center gap-2">
                     <span>🌊 Il Fenomeno &quot;Del Tardeo al Perreo&quot;</span>
@@ -328,7 +340,7 @@ export default function SingleGuide() {
 
                 <div className="space-y-3 mt-3">
                   {movidaData.tardeo.steps.map((step: any, idx: number) => (
-                    <div key={idx} className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
+                    <div key={idx} className="p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
                       <p className="text-xs font-bold text-terracotta-600">{step.title}</p>
                       <p className="text-xs text-mare-700 mt-1 leading-relaxed">
                         {step.description}
@@ -341,14 +353,14 @@ export default function SingleGuide() {
 
             {/* FOCUS NERJA */}
             {activeTab === 'nerja' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>🏖️ Focus Logistico e Strategico: Nerja (Costa del Sol Est)</span>
                 </h3>
                 <p>{movidaData.nerja.intro}</p>
 
                 <div className="space-y-3">
-                  <div className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
+                  <div className="p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
                     <p className="text-xs font-bold text-terracotta-600 flex items-center gap-1">
                       <span>📍</span> Mappatura delle Zone (La Logica della Notte)
                     </p>
@@ -363,7 +375,7 @@ export default function SingleGuide() {
                     </div>
                   </div>
 
-                  <div className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
+                  <div className="p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20">
                     <p className="text-xs font-bold text-terracotta-600 mb-2">🍹 Locali Target (Over 35 & Latino-Spagnoli)</p>
                     <div className="space-y-3 text-xs">
                       {movidaData.nerja.venues.map((venue: any, idx: number) => (
@@ -376,31 +388,33 @@ export default function SingleGuide() {
                               <div className="mt-2 pt-1.5 border-t border-terracotta-100/5 space-y-3 text-[11px]">
                                 {venue.venues?.map((subV: any, sIdx: number) => (
                                   <div key={sIdx} className="flex flex-col space-y-1">
-                                    <div className="flex flex-wrap gap-x-3 gap-y-1">
-                                      <span className="font-semibold text-mare-750">{subV.label}</span>
-                                      <a
-                                        href={subV.mapLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
-                                      >
-                                        <MapPin className="w-3 h-3" />
-                                        <span>{subV.address}</span>
-                                      </a>
-                                      {subV.facebookUrl && (
+                                    <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-3 gap-y-1">
+                                      <span className="font-semibold text-mare-750 shrink-0">{subV.label}</span>
+                                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                                         <a
-                                          href={subV.facebookUrl}
+                                          href={subV.mapLink}
                                           target="_blank"
                                           rel="noopener noreferrer"
-                                          className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                          className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                                         >
-                                          <ExternalLink className="w-3 h-3" />
-                                          <span>Facebook</span>
+                                          <MapPin className="w-3 h-3 shrink-0 text-terracotta-500" />
+                                          <span className="truncate max-w-[200px] sm:max-w-none">{subV.address}</span>
                                         </a>
-                                      )}
+                                        {subV.facebookUrl && (
+                                          <a
+                                            href={subV.facebookUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
+                                          >
+                                            <ExternalLink className="w-3 h-3 shrink-0 text-blue-500" />
+                                            <span>Facebook</span>
+                                          </a>
+                                        )}
+                                      </div>
                                     </div>
                                     {subV.comments && (
-                                      <div className="pl-3 border-l border-terracotta-200/40 mt-1 space-y-1">
+                                      <div className="pl-3 border-l border-terracotta-200/40 mt-1 space-y-1 max-h-28 overflow-y-auto pr-1">
                                         {subV.comments.map((comment: string, cIdx: number) => (
                                           <p key={cIdx} className="text-[10px] text-mare-600 italic leading-relaxed">
                                             &ldquo;{comment}&rdquo;
@@ -417,24 +431,24 @@ export default function SingleGuide() {
                               <div>
                                 <strong>{venue.name}:</strong> {venue.description}
                               </div>
-                              <div className="flex flex-wrap gap-3 mt-2 pt-1.5 border-t border-terracotta-100/5 text-[11px]">
+                              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-2 pt-1.5 border-t border-terracotta-100/5 text-[11px]">
                                 <a
                                   href={venue.mapLink}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                                 >
-                                  <MapPin className="w-3 h-3" />
-                                  <span>{venue.address}</span>
+                                  <MapPin className="w-3 h-3 shrink-0 text-terracotta-500" />
+                                  <span className="truncate max-w-[200px] sm:max-w-none">{venue.address}</span>
                                 </a>
                                 <a
                                   href={venue.instagram}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                  className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors py-0.5"
                                 >
-                                  <Instagram className="w-3 h-3" />
-                                  <span>{venue.instagramHandle}</span>
+                                  <Instagram className="w-3 h-3 shrink-0 text-pink-500" />
+                                  <span className="truncate max-w-[150px] sm:max-w-none">{venue.instagramHandle}</span>
                                 </a>
                               </div>
                               {venue.comments && (
@@ -443,7 +457,7 @@ export default function SingleGuide() {
                                     <MessageSquare className="w-3 h-3" />
                                     <span>Voci dai Forum (Reddit &amp; GnoccaTravel):</span>
                                   </p>
-                                  <div className="space-y-1 pl-3 border-l border-terracotta-200/40">
+                                  <div className="space-y-1 pl-3 border-l border-terracotta-200/40 max-h-36 overflow-y-auto pr-1">
                                     {venue.comments.map((comment: string, cIdx: number) => (
                                       <p key={cIdx} className="text-[10px] text-mare-600 italic leading-relaxed">
                                         &ldquo;{comment}&rdquo;
@@ -483,7 +497,7 @@ export default function SingleGuide() {
 
             {/* DATING & APPS */}
             {activeTab === 'dating' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>📱 Mappatura e Strategia Digitale delle Dating App in Spagna</span>
                 </h3>
@@ -494,9 +508,9 @@ export default function SingleGuide() {
                 <div className="font-display text-xs font-bold text-notte pt-2 border-t border-terracotta-100/20 uppercase tracking-wider text-terracotta-600">
                   {movidaData.dating.puroLocal.title}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="flex md:grid overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-3 px-3 md:mx-0 md:px-0">
                   {movidaData.dating.puroLocal.apps.map((app: any, idx: number) => (
-                    <div key={idx} className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20 flex flex-col justify-between">
+                    <div key={idx} className="min-w-[85vw] sm:min-w-[45%] md:min-w-0 snap-center p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20 flex flex-col justify-between">
                       <div>
                         <p className="font-bold text-xs text-notte mb-1 flex items-center gap-1.5">
                           <span>{app.icon}</span> {app.name}
@@ -530,9 +544,9 @@ export default function SingleGuide() {
                 <div className="font-display text-xs font-bold text-notte pt-2 border-t border-terracotta-100/20 uppercase tracking-wider text-terracotta-600">
                   {movidaData.dating.mainstream.title}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex md:grid overflow-x-auto md:overflow-visible gap-4 pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-3 px-3 md:mx-0 md:px-0">
                   {movidaData.dating.mainstream.apps.map((app: any, idx: number) => (
-                    <div key={idx} className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20 flex flex-col justify-between">
+                    <div key={idx} className="min-w-[85vw] sm:min-w-[45%] md:min-w-0 snap-center p-3 sm:p-4 bg-white/80 rounded-xl border border-terracotta-100/20 flex flex-col justify-between">
                       <div>
                         <p className="font-bold text-xs text-notte mb-1 flex items-center gap-1.5">
                           <span>{app.icon}</span> {app.name}
@@ -579,7 +593,7 @@ export default function SingleGuide() {
 
             {/* PIANO D'AZIONE */}
             {activeTab === 'plan' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>📅 Integrazione nel Piano d&apos;Azione (19 - 25 Giugno 2026)</span>
                 </h3>
@@ -602,7 +616,7 @@ export default function SingleGuide() {
 
             {/* SICUREZZA & LOGISTICA */}
             {activeTab === 'sicurezza' && (
-              <div className="space-y-4 bg-white/60 p-5 rounded-xl border border-terracotta-100/30">
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
                 <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
                   <span>🛡️ Sicurezza, Budget e Logistica Operativa</span>
                 </h3>

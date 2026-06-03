@@ -82,3 +82,23 @@ Create a new file containing the `QuickInspiration` component:
 - Run `npm run build` to confirm a 100% clean Next.js static build.
 - Manually check the "Mappa Costa" tab in the UI to verify comments show up correctly under all 11+ hotspots.
 - Verify the offline guide markdown formatting is clean and without duplicates.
+
+---
+
+## Mobile Layout Optimization & JSON Key Cleanup (2026-06-03)
+
+### Problem
+- The "Movida Over 35" section was vertically very long on mobile, stacking multiple large components, zone lists, and app cards, leading to scroll fatigue.
+- Horizontal tab buttons on small screens had large text and padding, causing them to push cards too far down.
+- Obsolete duplicate sections in `movida-over35.json` caused file bloat and potential parsing mismatches.
+- Text overflow could occur on long physical addresses or Instagram handles on small viewports.
+
+### Proposed Changes
+- **Horizontal Swipeable Layouts (Carousels)**: Changed vertical stacks in "Mappa Costa" and both sections of "Dating & Social App" to horizontal swipeable lists on mobile while preserving the grid display on desktop.
+- **Tab Padding & Fade Masks**: Reduced the horizontal tab buttons padding and text size on mobile screens, and wrapped the container in side fade gradients for visual scrolling hints.
+- **JSON Cleanup**: Ran an automated Python script to strip the duplicate keys and legacy sections from `data/movida-over35.json`.
+- **Text Safety & Accents**: Added truncate styles to physical addresses and Instagram handles, and added color accents (pink for Instagram, terracotta/red for MapPin) to enrich user interface visuals.
+
+### Verification Plan
+- Run `npm run build` to compile the static application and verify zero compilation/linting/TypeScript errors.
+- Inspect the dashboard UI on mobile viewports: verify horizontal swiping behaves smoothly, fade masks blend seamlessly, and addresses/handles wrap gracefully.

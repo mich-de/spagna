@@ -2,6 +2,14 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 6: Mobile Optimization & JSON Cleanup (2026-06-03)
+- [x] `[BACKEND]` Clean duplicate keys and obsolete sections from `movida-over35.json` via automated Python script
+- [x] `[FRONTEND]` Add left/right fade masks to horizontal scroll tabs in `SingleGuide.tsx`
+- [x] `[FRONTEND]` Optimize tab buttons text size and padding to fit better on small mobile screens
+- [x] `[FRONTEND]` Convert vertical cards under "Mappa Costa" and "Dating & Social App" tabs to horizontal swipeable carousels on mobile
+- [x] `[FRONTEND]` Protect address and handle elements from text overflows with truncate styles, and add color accents to MapPin/Instagram icons
+- [x] `[DEVOPS]` Verify static Next.js export compilation with `npm run build`
+
 ## Phase 5: Forum Comments, Adult Club Prices & Dating App links
 - [x] `[BACKEND]` Populate `data/movida-over35.json` with exactly 10 comments for each Malaga and Nerja venue
 - [x] `[BACKEND]` Include average prices for adult clubs (Sala Divas and Puticlubs) in description and safety guidelines
