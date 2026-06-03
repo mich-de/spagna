@@ -60,6 +60,11 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Semplificato `next.config.js` rimuovendo `outputFileTracingRoot`.
 - Fissata versione Next.js a `15.5.18` per coerenza con l'ambiente dell'utente.
 
+### 2026-06-03 — Git Pull & Validation
+- Scaricati gli aggiornamenti da Git (5 commit fast-forwarded).
+- Eseguito `npm ci` per allineare le dipendenze locali.
+- Eseguito con successo `npm run build` per verificare che la build statica di Next.js compili correttamente senza errori di compilazione o type-checking.
+
 ## Known Gotchas
 
 1. **Tailwind v4 `@config`**: Must be present. See above.
