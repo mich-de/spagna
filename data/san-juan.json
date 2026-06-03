@@ -54,6 +54,58 @@
       "authenticity": 8,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Cabopino+Playa+Marbella",
       "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cabopino+Playa+Marbella"
+    },
+    {
+      "name": "Playa de la Carihuela",
+      "zone": "Torremolinos (Plaza del Remo)",
+      "vibe": "Moragas tradizionali, alta densità local e latina residenti over 35",
+      "pros": "Sardine grigliate sulla sabbia, atmosfera caldissima ed approccio facile nei pressi del fuoco",
+      "cons": "Parcheggio inesistente, traffico congestionato, conviene usare il treno C-1",
+      "parking": "Parcheggio remoto o sotterraneo Carihuela (sempre saturo)",
+      "transport": "Treno Cercanías C-1 (fermata Montemar Alto) o taxi",
+      "social": 10,
+      "authenticity": 9,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Carihuela+Torremolinos"
+    },
+    {
+      "name": "Playa de Santa Ana / Bil-Bil",
+      "zone": "Benalmádena Costa",
+      "vibe": "Mix di residenti locali, espatriati e tardeo sulla sabbia",
+      "pros": "Chiringuitos con musica all'aperto, atmosfera meno caotica e più matura di Puerto Marina",
+      "cons": "Spazi ristretti per i falò privati",
+      "parking": "Parcheggio vicino al Castello di Bil-Bil (da parcheggiare nel pomeriggio)",
+      "transport": "Treno C-1 (fermata Arroyo de la Miel) + 15min a piedi, o bus M-110",
+      "social": 8,
+      "authenticity": 8,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Santa+Ana+Benalmadena",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Santa+Ana+Benalmadena"
+    },
+    {
+      "name": "Playa del Cable",
+      "zone": "Marbella centro-est",
+      "vibe": "Festa 100% locale, falò autorizzati sulla sabbia, zero esibizionismo",
+      "pros": "Atmosfera genuina andalusa, prezzi popolari, zero turismo da speculazione di Puerto Banús",
+      "cons": "Sabbia non finissima e meno servizi commerciali rispetto al centro",
+      "parking": "Parcheggio sterrato adiacente alla spiaggia (arriva prima delle 19:00)",
+      "transport": "Auto o Bus locale Marbella L-1",
+      "social": 9,
+      "authenticity": 10,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cable+Marbella",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+del+Cable+Marbella"
+    },
+    {
+      "name": "Playa de la Rada",
+      "zone": "Estepona centro",
+      "vibe": "Festa di provincia andalusa, folklore locale e júas tradizionali",
+      "pros": "Concerti comunali gratuiti, target 30-50 locale, appeal dell'italiano al massimo",
+      "cons": "Molto lontana da Málaga città (circa 50 minuti di auto)",
+      "parking": "Parcheggio sotterraneo Avenida de España",
+      "transport": "Auto consigliata, o bus diretto da Málaga (Avanza)",
+      "social": 7,
+      "authenticity": 10,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Rada+Estepona"
     }
   ],
   "schedule": {

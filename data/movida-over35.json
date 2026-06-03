@@ -383,8 +383,248 @@
       "details": "Lunedì Sera: Esplora i pub di Teatinos (Avenida Plutarco). Essendo fuori dalle zone turistiche, il fattore italiano incuriosisce molto le donne residenti."
     },
     {
+      "name": "Playa de la Rada",
+      "zone": "Estepona centro",
+      "vibe": "Festa di provincia andalusa, folklore locale e júas tradizionali",
+      "pros": "Concerti comunali gratuiti, target 30-50 locale, appeal dell'italiano al massimo",
+      "cons": "Molto lontana da Málaga città (circa 50 minuti di auto)",
+      "parking": "Parcheggio sotterraneo Avenida de España",
+      "transport": "Auto consigliata, o bus diretto da Málaga (Avanza)",
+      "social": 7,
+      "authenticity": 10,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Rada+Estepona"
+    }
+  ],
+  "tardeo": {
+    "intro": "Dall'analisi delle tendenze estive e dei vlog musicali locali emerge chiaramente la linea di transizione vissuta dai residenti della Costa del Sol nelle giornate estive.",
+    "steps": [
+      {
+        "title": "🍹 1. Il Preserale in Spiaggia (Pedregalejo)",
+        "description": "Nei chiringuitos sul mare della zona Est di Málaga la festa comincia già nel tardo pomeriggio con mojito giganti e musica sulla spiaggia. È un ambiente libero e informale, ideale per socializzare spontaneamente evitando le dinamiche rigide dei club in città."
+      },
+      {
+        "title": "🌴 2. Il Calentón Tropical",
+        "description": "Man mano che il sole tramonta, l'aperitivo sfuma senza interruzioni verso ritmi più caldi e ballati (musica caraibica, salsa, bachata, dembow per adulti) direttamente sulle terrazze affacciate sul porto e sul mare. Questo \"flow\" è ideale per socializzare con donne della comunità locale e latina."
+      }
+    ]
+  },
+  "nerja": {
+    "intro": "Nei forum di reportistica, Nerja è spesso etichettata erroneamente come una meta puramente familiare o per pensionati nordeuropei. In realtà, a fine giugno, il turismo stagionale si incrocia con i residenti e con la forza lavoro locale (ragazze spagnole e latine impiegate nel settore ricettivo/turistico). La scala ridotta della città rende la socializzazione molto meno dispersiva rispetto a Málaga.",
+    "zones": [
+      {
+        "title": "Zona 1: Centro & Balcón",
+        "time": "Tardo pomeriggio (19:30-22:00)",
+        "description": "Calle Pintada e Calle San José sono piene di piccoli wine bar e tascas. Ottimo per agganci informali davanti a un piattino di tapas."
+      },
+      {
+        "title": "Zona 2: Plaza Tutti Frutti",
+        "time": "Dalle 23:00 in poi",
+        "description": "Epicentro circondato da disco-pub. Ideale per fare bar-hopping veloce."
+      },
+      {
+        "title": "Zona 3: Spiaggia di Burriana",
+        "time": "Tardo pomeriggio",
+        "description": "Chiringuitos sulla spiaggia, aperitivo costiero rilassato."
+      }
+    ],
+    "venues": [
+      {
+        "name": "Bar Típico El Molino",
+        "description": "Tasca tradizionale andalusa con flamenco dal vivo vicino al centro storico. I clienti finiscono spesso per ballare spontaneamente tra i tavoli. Perfetto per over 35.",
+        "address": "Calle San José, 4",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Bar+El+Molino+Calle+San+Jose+4+Nerja",
+        "instagram": "https://www.instagram.com/explore/tags/barelmolinonerja/",
+        "instagramHandle": "#BarElMolinoNerja",
+        "comments": [
+          "Reddit: Flamenco vero, non la solita trappola per turisti. Vecchio stile, vino locale fantastico.",
+          "Reddit: Molto caratteristico, le pareti sono piene di vecchi attrezzi agricoli. Un salto nel passato.",
+          "Reddit: Si riempie velocemente, andateci presto se volete un tavolo vicino allo spettacolo.",
+          "Reddit: I musicisti suonano col cuore, niente a che vedere con gli show commerciali per turisti.",
+          "Reddit: Ottimo per assaggiare formaggi locali e prosciutto andaluso originale.",
+          "GnoccaTravel: Tasca andalusa verace. Quando c'è il flamenco le ragazze locali si lasciano andare e ballano spontaneamente.",
+          "GnoccaTravel: L'atmosfera intima facilita i contatti. Offrire un bicchiere di vino dolce locale è il gancio perfetto.",
+          "GnoccaTravel: Clientela over 30-35 locale e turisti selezionati che cercano qualcosa di vero. Super socievole.",
+          "GnoccaTravel: I prezzi sono onesti e l'accoglienza del personale ti fa sentire subito a casa.",
+          "GnoccaTravel: Perfetto per rompere il ghiaccio a inizio serata a Nerja in modo rilassato e divertente."
+        ]
+      },
+      {
+        "name": "Pub Tamareo",
+        "description": "Punto di riferimento per la musica latina (Salsa, Bachata, pop español). L'età media è matura e ideale, ed è facilissimo socializzare al bancone o in pista con la comunità latina residente.",
+        "address": "Plaza Tutti Frutti",
+        "mapLink": "https://www.google.com/maps/search/?api=1&query=Pub+Tamareo+Plaza+Tutti+Frutti+Nerja",
+        "instagram": "https://www.instagram.com/explore/tags/plazatuttifrutti/",
+        "instagramHandle": "#PlazaTuttifrutti",
+        "comments": [
+          "Reddit: Il miglior posto a Plaza Tutti Frutti per ballare salsa e bachata. Clientela locale e latina amichevole.",
+          "Reddit: Musica latina a palla, cocktail estivi giganti e tanta energia positiva.",
+          "Reddit: Bellissima terrazza esterna per riposarsi tra un ballo e l'altro.",
+          "Reddit: Animazione divertente che coinvolge tutti, anche chi non sa muovere un passo.",
+          "Reddit: Ingresso libero, i cocktail costano il giusto per essere in centro a Nerja.",
+          "GnoccaTravel: Il punto di riferimento per la comunità latina locale che lavora nella ristorazione a Nerja.",
+          "GnoccaTravel: Se sai fare due passi di salsa rimorchi facile. Le ragazze latine e spagnole qui adorano ballare.",
+          "GnoccaTravel: Ambiente caldissimo e ravvicinato, l'approccio fisico durante il ballo è naturale ed accettato.",
+          "GnoccaTravel: Età media perfetta, molti over 30 e 35. Clima festoso e zero barriere all'ingresso.",
+          "GnoccaTravel: Consigliatissimo il sabato sera quando c'è il picco di presenze locali interessanti."
+        ]
+      },
+      {
+        "name": "Seven & Rockefeller Premium",
+        "description": "Seven (DJ set e commerciale/latina fino alle 4:30). Per i tiratardi della notte fonda, la transizione naturale si sposta verso Rockefeller o Jimmy's (fino alle 6:00/7:00).",
+        "isDouble": true,
+        "venues": [
+          {
+            "label": "Seven:",
+            "address": "Plaza Tutti Frutti",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Seven+Plaza+Tutti+Frutti+Nerja",
+            "comments": [
+              "Reddit: Sempre strapieno nel fine settimana, musica commerciale e reggaeton. Buona atmosfera.",
+              "Reddit: Buona musica e bella gente. Ottimo per ballare fino a tardi senza spendere troppo.",
+              "Reddit: Baristi veloci e cocktail ben fatti nonostante la calca al bancone.",
+              "Reddit: Interni moderni e pista da ballo spaziosa per gli standard di Tutti Frutti.",
+              "Reddit: Stupenda atmosfera, ideale per chiudere la serata in allegria con gli amici.",
+              "GnoccaTravel: Il pub più commerciale e movimentato di Tutti Frutti. Bel ricircolo di turisti e locali.",
+              "GnoccaTravel: Molto affollato dopo mezzanotte. L'approccio fisico in pista o al bancone è lo standard.",
+              "GnoccaTravel: Clientela mista ma con una forte presenza di trentenni locali e latine residenti nel weekend.",
+              "GnoccaTravel: I drink costano il giusto e i buttadentro offrono spesso sconti e shot omaggio all'ingresso.",
+              "GnoccaTravel: Ottimo per fare bar-hopping veloce e testare l'atmosfera della piazza in pochi minuti."
+            ]
+          },
+          {
+            "label": "Rockefeller:",
+            "address": "Calle el Chaparil, 7",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Sala+Rockefeller+Calle+el+Chaparil+7+Nerja",
+            "facebookUrl": "https://www.facebook.com/sala.rockefeller",
+            "comments": [
+              "Reddit: Due piani con generi musicali diversi, ottimi cocktail e ambiente selezionato.",
+              "Reddit: Ambiente selezionato all'ingresso, dress code curato consigliato per evitare problemi.",
+              "Reddit: I DJ sanno il fatto loro, ottima selezione di musica house e commerciale.",
+              "Reddit: Bella terrazza per fumatori ed ottimi gin tonic premium.",
+              "Reddit: Uno dei club storici di Nerja, garanzia di divertimento di notte.",
+              "GnoccaTravel: La meta finale della notte a Nerja. Quando Tutti Frutti chiude, tutti si spostano qui.",
+              "GnoccaTravel: Spagnole locali tiratissime e turiste del nord. Selezione all'ingresso basata sull'abbigliamento.",
+              "GnoccaTravel: Atmosfera da vero club, buio e musica alta, ma ci sono aree divanetti per parlare meglio.",
+              "GnoccaTravel: Età media leggermente superiore rispetto ad altri pub di Tutti Frutti, molti over 30.",
+              "GnoccaTravel: Perfetto per concretizzare i contatti della serata prima della chiusura all'alba."
+            ]
+          }
+        ]
+      }
+    ],
+    "sanJuan": {
+      "title": "San Juan a Nerja (23 Giugno)",
+      "description": "La festa si sposta interamente sulla spiaggia di Burriana. I residenti organizzano falò, grigliate di pesce e tavolate sulla sabbia. L'apertura sociale è ai massimi storici ed il tradizionale bagno di mezzanotte è l'occasione definitiva per stringere amicizia in cerchie spontanee."
+    },
+    "datingTricks": {
+      "title": "Trucco Dating Micro-Localizzato",
+      "description": "Le app in centro a Nerja propongono quasi solo turiste temporanee. Per trovare residenti e donne latine locali over 35, amplia il raggio dell'app fino a 15-20 km includendo Torre del Mar e Vélez-Málaga, centri non turistici ad alta densità di popolazione locale."
+    }
+  },
+  "dating": {
+    "intro": "Se l'obiettivo è intercettare donne locali spagnole e latine residenti, scavalcando la massa di turiste \"mordi e fuggi\" del Nord Europa, il panorama delle app di dating in Spagna cambia parecchio rispetto all'Italia. Ecco la mappatura definitiva delle app più utilizzate dalla gente del posto, con i relativi trucchi per tarare l'algoritmo.",
+    "puroLocal": {
+      "title": "1. Le App a Target \"Puro Local\" (Zero Turisti)",
+      "apps": [
+        {
+          "name": "Meetic.es",
+          "icon": "💼",
+          "who": "Donne spagnole (professioniste, separate, locali) che evitano Tinder. Percentuale turisti vicina allo zero (richiede abbonamento e profilo strutturato).",
+          "why": "Se cerchi interazioni di qualità con donne del posto che vivono e lavorano a Málaga o in provincia.",
+          "playStoreLinks": [
+            {
+              "label": "Meetic",
+              "url": "https://play.google.com/store/apps/details?id=net.ilius.android.meetic"
+            }
+          ]
+        },
+        {
+          "name": "Badoo",
+          "icon": "🔥",
+          "who": "Altissima densità di donne locali della provincia e una percentuale enorme di donne latine residenti stabili (colombiane, venezuelane, dominicane).",
+          "why": "Molto diretta, geolocalizzata al millimetro. Ideale se ci si sposta fuori dal centro storico (es. Fuengirola, Torremolinos o Vélez-Málaga).",
+          "playStoreLinks": [
+            {
+              "label": "Badoo",
+              "url": "https://play.google.com/store/apps/details?id=com.badoo.mobile"
+            }
+          ]
+        },
+        {
+          "name": "Adopta (ex AdoptaUnTío)",
+          "icon": "🛒",
+          "who": "Donne spagnole molto dinamiche, urbane e ironiche (fascia 28-40).",
+          "why": "Ti garantisce che il 100% delle utenti sia residente. Devi mandare una \"stella\" e attendere l'approvazione. L'italiano funziona molto bene in bio.",
+          "playStoreLinks": [
+            {
+              "label": "Adopta",
+              "url": "https://play.google.com/store/apps/details?id=com.adopteunmec.androidfr"
+            }
+          ]
+        }
+      ]
+    },
+    "mainstream": {
+      "title": "2. Le App Mainstream (Da usare con \"Filtro Residenti\")",
+      "apps": [
+        {
+          "name": "Tinder & Bumble",
+          "icon": "💬",
+          "details": "In Costa del Sol queste due app soffrono di iper-saturazione turistica in centro. Usale applicando questi accorgimenti per trovare le locali:\nFiltro Bio: Scrivi la biografia in spagnolo o in un mix italo-spagnolo per scartare le turiste.\nGeofencing: Fai swiping quando ti trovi nei quartieri residenziali (come Teatinos) o imposta la distanza sui 15-20 km per pescare nei paesi della costa non turistica o nell'entroterra.",
+          "playStoreLinks": [
+            {
+              "label": "Tinder",
+              "url": "https://play.google.com/store/apps/details?id=com.tinder"
+            },
+            {
+              "label": "Bumble",
+              "url": "https://play.google.com/store/apps/details?id=com.bumble.app"
+            }
+          ]
+        },
+        {
+          "name": "Happn",
+          "icon": "📍",
+          "details": "L'app che ti mostra le persone che hai incrociato per strada.\nPerché funziona con le locali: Se passi il pomeriggio a Pedregalejo per il tardeo, o ti muovi per Teatinos o i negozi del centro frequentati dai residenti, ti mostrerà la sera stessa le donne che vivono o frequentano abitualmente quelle zone.",
+          "playStoreLinks": [
+            {
+              "label": "Happn",
+              "url": "https://play.google.com/store/apps/details?id=com.ftw_and_co.happn"
+            }
+          ]
+        }
+      ]
+    },
+    "rules": {
+      "title": "💡 Regole d'Oro per il Profilo in Spagna",
+      "items": [
+        {
+          "label": "Usa lo spagnolo:",
+          "text": "Anche se non lo parli perfettamente, usa frasi come \"Italiano in viaggio a Málaga, mi piacerebbe conoscere gente locale per un buen tardeo o unas tapas\". Questo fa capire subito che non sei il classico turista nordeuropeo."
+        },
+        {
+          "label": "Specifica cosa cerchi senza pesantezza:",
+          "text": "Le donne spagnole over 35 sono molto dirette ma odiano la volgarità. Un approccio spontaneo per condividere un drink (tomar algo) in un posto tipico e la chiave che sblocca il 90% delle chat."
+        }
+      ]
+    }
+  },
+  "plan": [
+    {
+      "days": "VEN 19 / SAB 20",
+      "details": "Venerdì: Aperitivo a La Tranca posizionandosi al bancone, seguito da una ricognizione al Barsovia Club.\nSabato: Inizia con una birra al Rocknrolla per rompere il ghiaccio, per poi spostarti alla Discoteca Liceo (età ideale 30-45) dove l'approccio è facilitato."
+    },
+    {
+      "days": "DOM 21",
+      "details": "Domenica Pomeriggio: Segui il flusso costiero Del Tardeo al Perreo a Pedregalejo, posizionandoti nei chiringuitos all'aperto che suonano musica tropicale e caraibica a ridosso del mare."
+    },
+    {
+      "days": "LUN 22",
+      "details": "Lunedì Sera: Esplora i pub di Teatinos (Avenida Plutarco). Essendo fuori dalle zone turistiche, il fattore italiano incuriosisce molto le donne residenti."
+    },
+    {
       "days": "MAR 23",
-      "details": "Noche de San Juan: Festa sulla spiaggia con falò. Posizionati a Pedregalejo per un target d'età maturo ed evita la Malagueta, che attrae folle di giovanissimi."
+      "details": "Noche de San Juan: Festa sulla spiaggia con falò. Se sei a Málaga, posizionati a Pedregalejo per un target d'età maturo ed evita la Malagueta (piena di giovanissimi). Se sei in provincia, le mete calde over 35 con alta concentrazione local e latina sono Playa de la Carihuela (Torremolinos) per le moragas, Playa de Santa Ana (Benalmádena) per i chiringuitos, o Playa del Cable (Marbella) per un'atmosfera 100% locale."
     },
     {
       "days": "MER 24 / GIO 25",
