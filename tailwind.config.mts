@@ -38,7 +38,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ['Poppins', 'system-ui', 'sans-serif'],
-        body: ['Rubik', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',

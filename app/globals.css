@@ -1,9 +1,10 @@
 @import '@fontsource/poppins/400.css';
 @import '@fontsource/poppins/600.css';
 @import '@fontsource/poppins/700.css';
-@import '@fontsource/rubik/400.css';
-@import '@fontsource/rubik/500.css';
-@import '@fontsource/rubik/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
 
 @import "tailwindcss";
 
@@ -18,13 +19,17 @@
 /* ─── Root ─── */
 html {
   scroll-behavior: smooth;
-  font-size: clamp(16px, 1vw + 15px, 18px);
+  font-size: clamp(15px, 0.5vw + 14px, 17px);
 }
 
 body {
-  font-family: 'Rubik', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #fcf7ec;
   color: #0f3e4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.011em;
 }
 
 /* ─── Typography ─── */

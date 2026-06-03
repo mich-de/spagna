@@ -69,7 +69,7 @@ export default function Home() {
       <SectionNav activeSection={activeSection} onSectionChange={handleSectionChange} />
       <TripPlanner />
 
-      <div className="max-w-7xl mx-auto" suppressHydrationWarning>
+      <div className="max-w-[1920px] mx-auto" suppressHydrationWarning>
         {/* Hero decorative line */}
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-200 to-transparent mx-4 sm:mx-6 mt-2" />
 
@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
       <footer className="border-t border-terracotta-100/50 bg-white/40 py-8 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1920px] mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-2">
             <div className="w-5 h-5 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded flex items-center justify-center">
               <span className="text-white text-[10px] font-bold">S</span>

@@ -12,7 +12,7 @@ export default function Overview() {
       className="scroll-mt-20 px-4 sm:px-6 pt-8 pb-4 relative
         bg-gradient-to-b from-terracotta-50/20 via-transparent to-mare-50/10"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1920px] mx-auto">
         {/* ─── Hero title ─── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

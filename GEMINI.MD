@@ -123,6 +123,13 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Pulizia Chiavi Duplicate JSON**: Eseguito uno script Python automatizzato per rimuovere le chiavi duplicate e le sezioni obsolete nel file `data/movida-over35.json` mantenendo solo il blocco dati corretto e aggiornato.
 - **Validazione Build**: Compilata con successo l'esportazione statica tramite `npm run build` con esito positivo e zero errori.
 
+### 2026-06-03 — Font Leggibile (Inter) & Layout Full-Width
+- **Font Change**: Sostituito il font body da Rubik a **Inter** (installato via `@fontsource/inter`), universalmente riconosciuto come uno dei font più leggibili per interfacce web. Aggiornati `globals.css` (importazioni + body font-family) e `tailwind.config.mts` (fontFamily.body).
+- **Rendering Quality**: Aggiunti `-webkit-font-smoothing: antialiased`, `-moz-osx-font-smoothing: grayscale`, `text-rendering: optimizeLegibility` e `letter-spacing: -0.011em` al body per una resa tipografica cristallina.
+- **Full-Width Layout**: Cambiato il container principale e tutti i componenti (14 file) da `max-w-7xl` (1280px) a `max-w-[1920px]` per sfruttare l'intera larghezza dello schermo mantenendo un cap ragionevole per monitor ultrawide.
+- **Font Size**: Ridotto leggermente il clamp del font-size root da `clamp(16px, 1vw + 15px, 18px)` a `clamp(15px, 0.5vw + 14px, 17px)` per adattarsi meglio al layout più ampio.
+- **Validazione Build**: Compilata con successo l'esportazione statica tramite `npm run build` con esito positivo e zero errori (218 kB page, 320 kB first load).
+
 
 ## Known Gotchas
 

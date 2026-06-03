@@ -303,7 +303,7 @@ export default function QuickInspiration() {
 
   return (
     <section id="inspiration" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8 relative bg-gradient-to-b from-transparent to-terracotta-50/10">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1920px] mx-auto">
         
         {/* Title */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-8">

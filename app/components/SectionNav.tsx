@@ -79,7 +79,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fcf7ece6] backdrop-blur-xl border-b border-terracotta-100/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 shrink-0">
               <div className="w-8 h-8 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded-lg flex items-center justify-center">
