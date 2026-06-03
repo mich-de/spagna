@@ -429,7 +429,9 @@
               "Reddit: Atmosfera rilassatissima. I prezzi sono umani rispetto a Puerto Banús.",
               "GnoccaTravel: Ottimo spot preserale. Molte ragazze locali si fermano qui per un drink veloce prima di rientrare. Approccio semplice e amichevole.",
               "GnoccaTravel: Target sui 30-40 anni, locale. Se ti siedi alle terrazze all'aperto attacchi bottone con una scusa sui cocktail."
-            ]
+            ],
+            "category": "TARDEO",
+            "categoryColor": "bg-amber-500"
           },
           {
             "name": "Cervecería La Solera (e vie interne come Calle Andalucía)",
@@ -444,7 +446,9 @@
               "Reddit: Ottimo rapporto qualità/prezzo. Si sta in piedi vicino al bancone.",
               "GnoccaTravel: Questa cervecería è una miniera di locali over 35. L'italiano ha un fascino raddoppiato qui perché non vedono mai stranieri. Mettiti al bancone.",
               "GnoccaTravel: Età media sui 35-45 anni. Molto facile fare amicizia commentando i piatti o il vino della casa."
-            ]
+            ],
+            "category": "TAPAS",
+            "categoryColor": "bg-emerald-500"
           },
           {
             "name": "I Disco-Pub del Centro Urbano",
@@ -459,7 +463,9 @@
               "Reddit: Clima accogliente, i baristi ti fanno sentire subito a casa.",
               "GnoccaTravel: C'è un bel giro di ragazze latine residenti che lavorano a Marbella e vivono qui. Clima festoso e barriere basse.",
               "GnoccaTravel: Si balla reggaeton e pop spagnolo. L'approccio fisico in pista è molto naturale."
-            ]
+            ],
+            "category": "PUB",
+            "categoryColor": "bg-sky-500"
           }
         ]
       },
@@ -481,7 +487,9 @@
               "Reddit: Frequentato da gente del posto di tutte le età, atmosfera molto festosa.",
               "GnoccaTravel: La Polaca è una calamita per le single di Marbella over 35. L'ambiente è goliardico, informale e perfetto per attaccare bottone tra le stanze.",
               "GnoccaTravel: Il fine settimana è caldissimo. La gente canta la musica rétro spagnola e si diverte senza puzza sotto il naso."
-            ]
+            ],
+            "category": "CLUB",
+            "categoryColor": "bg-terracotta-500"
           },
           {
             "name": "Bar El Estrecho (e i vicoli di Plaza de los Naranjos)",
@@ -496,7 +504,9 @@
               "Reddit: Molto caratteristico e prezzi onesti per essere a Marbella.",
               "GnoccaTravel: I vicoli sono strettissimi e il locale è minuscolo. Questo costringe al contatto fisico e facilita l'approccio spontaneo all'aperitivo.",
               "GnoccaTravel: Clientela locale mista a turisti informati. Le spagnole locali vengono qui per le tapas prima di uscire."
-            ]
+            ],
+            "category": "TAPAS",
+            "categoryColor": "bg-emerald-500"
           },
           {
             "name": "Lemmon (Paseo Marítimo)",
@@ -511,7 +521,9 @@
               "Reddit: DJ set validi, si balla fino a tardi senza la calca delle grandi discoteche.",
               "GnoccaTravel: Lemmon è il ritrovo del pubblico adulto di Marbella che non vuole spendere €50 a Puerto Banús. Molte locali over 30.",
               "GnoccaTravel: Si balla pop commerciale. Ottimo posizionamento sui divanetti all'aperto sul lungomare."
-            ]
+            ],
+            "category": "CLUB",
+            "categoryColor": "bg-terracotta-500"
           }
         ]
       },
@@ -533,7 +545,9 @@
               "Reddit: Piena di vita locale nei fine settimana.",
               "GnoccaTravel: Il punto di ritrovo per l'aperitivo lungo over 35. Le persone sono aperte e la socializzazione segue i ritmi lenti della provincia.",
               "GnoccaTravel: Sedersi all'aperto favorisce l'approccio leggero e tranquillo. Zero stress."
-            ]
+            ],
+            "category": "TARDEO",
+            "categoryColor": "bg-amber-500"
           },
           {
             "name": "Il Puerto Deportivo (Porto Turistico)",
@@ -548,7 +562,9 @@
               "Reddit: Ottimi cocktail e prezzi competitivi.",
               "GnoccaTravel: Epicentro della comunità latina residente a Estepona (colombiane, venezuelane). I pub offrono musica tropicale e salsa.",
               "GnoccaTravel: Le barriere d'ingresso sulle terrazze all'aperto sono bassissime. Basta saper accennare due passi di ballo."
-            ]
+            ],
+            "category": "PUB",
+            "categoryColor": "bg-sky-500"
           }
         ]
       },
@@ -569,7 +585,9 @@
               "GnoccaTravel: Tasca andalusa verace. Quando c'è il flamenco le ragazze locali si lasciano andare e ballano spontaneamente.",
               "GnoccaTravel: L'atmosfera intima facilita i contatti. Offrire un bicchiere di vino dolce locale è il gancio perfetto.",
               "GnoccaTravel: Clientela over 30-35 locale e turisti selezionati che cercano qualcosa di vero. Super socievole."
-            ]
+            ],
+            "category": "TAPAS",
+            "categoryColor": "bg-emerald-500"
           },
           {
             "name": "Pub Tamareo (Plaza Tutti Frutti)",
@@ -583,7 +601,9 @@
               "GnoccaTravel: Il punto di riferimento per la comunità latina locale che lavora nella ristorazione a Nerja.",
               "GnoccaTravel: Se sai fare due passi di salsa rimorchi facile. Le ragazze latine e spagnole qui adorano ballare.",
               "GnoccaTravel: Ambiente caldissimo e ravvicinato, l'approccio fisico durante il ballo è naturale ed accettato."
-            ]
+            ],
+            "category": "LATINO",
+            "categoryColor": "bg-pink-500"
           },
           {
             "name": "Disco Pub Seven & Rockefeller Premium",
@@ -597,7 +617,9 @@
               "GnoccaTravel: Il pub più commerciale e movimentato di Tutti Frutti. Bel ricircolo di turisti e locali.",
               "GnoccaTravel: Molto affollato dopo mezzanotte. L'approccio fisico in pista o al bancone è lo standard.",
               "GnoccaTravel: Clientela mista ma con una forte presenza di trentenni locali e latine residenti nel weekend."
-            ]
+            ],
+            "category": "CLUB",
+            "categoryColor": "bg-terracotta-500"
           },
           {
             "name": "Playa de Burriana (Chiringuitos)",
@@ -610,7 +632,9 @@
               "Reddit: Chiringuitos fantastici sulla spiaggia, paella ottima ed aperitivo rilassante.",
               "GnoccaTravel: Spiaggia caldissima durante il tardeo. I falò di San Juan qui sono pieni di residenti e latine del posto.",
               "GnoccaTravel: Socializzazione facile sulla sabbia con una scusa per dividere da bere."
-            ]
+            ],
+            "category": "TARDEO",
+            "categoryColor": "bg-amber-500"
           }
         ]
       },
@@ -632,7 +656,9 @@
               "Reddit: Clima molto vivace e feste all'aperto nei weekend d'estate.",
               "GnoccaTravel: L'equivalente locale di Tutti Frutti a Nerja ma a Arroyo de la Miel. Molte donne single residenti della fascia 30-50 anni.",
               "GnoccaTravel: Si fa bar-hopping in lingua spagnola. L'italiano qui desta subito curiosità."
-            ]
+            ],
+            "category": "PUB",
+            "categoryColor": "bg-sky-500"
           },
           {
             "name": "I Disco-Bar Caraibici di Arroyo",
@@ -647,7 +673,9 @@
               "Reddit: Atmosfera divertente, tutti ballano con tutti.",
               "GnoccaTravel: Club di ballo sociale frequentatissimi da donne latine residenti. Clima caldo e approccio diretto in pista.",
               "GnoccaTravel: Se sai guidare nel ballo, qui hai le porte spalancate. Molte over 30."
-            ]
+            ],
+            "category": "LATINO",
+            "categoryColor": "bg-pink-500"
           },
           {
             "name": "Circuito Adult Entertainment (Statale N-340)",
@@ -662,7 +690,9 @@
               "Reddit: I drink costano cari, mettete in conto spese significative.",
               "GnoccaTravel: I puticlubs storici della costa. Ragazze di livello, prevalentemente latine ed est-europee.",
               "GnoccaTravel: Chiedere sempre la tariffa al bancone prima di far sedere una ragazza per evitare conti a sorpresa."
-            ]
+            ],
+            "category": "ADULT",
+            "categoryColor": "bg-red-600"
           }
         ]
       }

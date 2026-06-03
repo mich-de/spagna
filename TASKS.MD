@@ -8,6 +8,7 @@ Roadmap for Costa del Sol Travel Dashboard.
 - [x] `[FRONTEND]` Optimize tab buttons text size and padding to fit better on small mobile screens
 - [x] `[FRONTEND]` Convert vertical cards under "Mappa Costa" and "Dating & Social App" tabs to horizontal swipeable carousels on mobile
 - [x] `[FRONTEND]` Protect address and handle elements from text overflows with truncate styles, and add color accents to MapPin/Instagram icons
+- [x] `[FRONTEND]` Integrate dynamic multi-city filtering (Málaga, San Pedro, Marbella, Estepona, Nerja, Benalmádena) inside the "Mappa Locali" tab
 - [x] `[DEVOPS]` Verify static Next.js export compilation with `npm run build`
 
 ## Phase 5: Forum Comments, Adult Club Prices & Dating App links

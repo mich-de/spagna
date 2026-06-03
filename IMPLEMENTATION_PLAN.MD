@@ -102,3 +102,19 @@ Create a new file containing the `QuickInspiration` component:
 ### Verification Plan
 - Run `npm run build` to compile the static application and verify zero compilation/linting/TypeScript errors.
 - Inspect the dashboard UI on mobile viewports: verify horizontal swiping behaves smoothly, fade masks blend seamlessly, and addresses/handles wrap gracefully.
+
+---
+
+## Multi-City Filter in Mappa Locali (2026-06-03)
+
+### Problem
+- The "Mappa Strategica dei Locali (Residenti vs Adult Entertainment)" tab (`activeTab === 'locali'`) was limited to displaying only Málaga Centro venues, neglecting hot spots for San Pedro de Alcántara, Marbella, Estepona, Nerja, and Benalmádena.
+
+### Proposed Changes
+- **Data Enrichment**: Added category labels (TARDEO, TAPAS, PUB, CLUB, LATINO, ADULT) and categoryColors directly into the Costa zones' venues within `data/movida-over35.json`.
+- **City Selector Tabs**: Added a horizontal city filter bar (Málaga Centro, San Pedro, Marbella, Estepona, Nerja, Benalmádena) at the top of the "Mappa Locali" tab in `SingleGuide.tsx`.
+- **Dynamic Normalizer Hook**: Added an `activeLocali` computed array. It reads the selected city state, dynamically retrieves corresponding venues from `movidaData.costa.zones` or `movidaData.locali`, maps the details into standard descriptions, and unified styling rendering for adult locales (identifying them by `"ADULT"` category instead of hardcoded `"divas"` ID).
+
+### Verification Plan
+- Run `npm run build` to confirm compilation.
+- Verify selection: click on San Pedro, Marbella, Estepona, Nerja, or Benalmádena tabs inside "Mappa Locali" and verify they show their respective venues with correct titles, badges, and comments.

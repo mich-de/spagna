@@ -23,6 +23,46 @@ import movidaData from '@/data/movida-over35.json'
 
 export default function SingleGuide() {
   const [activeTab, setActiveTab] = useState('mindset')
+  const [selectedCity, setSelectedCity] = useState('malaga')
+
+  const cities = [
+    { id: 'malaga', label: 'Málaga Centro' },
+    { id: 'sanpedro', label: 'San Pedro' },
+    { id: 'marbella', label: 'Marbella' },
+    { id: 'estepona', label: 'Estepona' },
+    { id: 'nerja', label: 'Nerja' },
+    { id: 'benalmadena', label: 'Benalmádena' },
+  ]
+
+  const getActiveLocali = () => {
+    if (selectedCity === 'malaga') {
+      return movidaData.locali
+    }
+    const zoneMap: Record<string, string> = {
+      sanpedro: 'sanpedro',
+      marbella: 'marbella',
+      estepona: 'estepona',
+      nerja: 'nerjacosta',
+      benalmadena: 'benalmadena'
+    }
+    const targetZoneId = zoneMap[selectedCity]
+    const zone = movidaData.costa.zones.find((z: any) => z.id === targetZoneId)
+    if (!zone) return []
+    return zone.venues.map((v: any, idx: number) => ({
+      id: `${selectedCity}-venue-${idx}`,
+      name: v.name,
+      description: v.details,
+      category: v.category || 'LOCALE',
+      categoryColor: v.categoryColor || 'bg-terracotta-500',
+      address: v.address,
+      mapLink: v.mapLink,
+      instagram: v.instagram,
+      instagramHandle: v.instagramHandle,
+      comments: v.comments
+    }))
+  }
+
+  const activeLocali = getActiveLocali()
 
   const tabs = [
     { id: 'mindset', label: 'Briefing & Mindset', icon: '🧠' },
@@ -131,10 +171,33 @@ export default function SingleGuide() {
                   </a>
                 </div>
 
+                {/* City Filter Selection */}
+                <div className="relative">
+                  {/* Left and Right Fade Masks for Horizontal Scrolling on Mobile */}
+                  <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-[#faf8f5] via-[#faf8f5]/85 to-transparent pointer-events-none z-10 sm:hidden" />
+                  <div className="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-[#faf8f5] via-[#faf8f5]/85 to-transparent pointer-events-none z-10 sm:hidden" />
+                  
+                  <div className="flex overflow-x-auto sm:flex-wrap gap-1.5 pb-2.5 mb-2 whitespace-nowrap scrollbar-hide snap-x px-2 sm:px-0">
+                    {cities.map((city) => (
+                      <button
+                        key={city.id}
+                        onClick={() => setSelectedCity(city.id)}
+                        className={`px-3 py-1 rounded-lg text-[10px] sm:text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
+                          selectedCity === city.id
+                            ? 'bg-mare-600 text-white shadow-sm'
+                            : 'bg-white text-mare-750 border border-terracotta-100/20 hover:bg-mare-50'
+                        }`}
+                      >
+                        {city.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <div className="space-y-3">
-                  {movidaData.locali.map((locale: any) => (
-                    <div key={locale.id} className={`p-3 sm:p-4 rounded-xl border ${locale.id === 'divas' ? 'bg-red-50/30 border-red-200/40' : 'bg-white/80 border-terracotta-100/20'}`}>
-                      <p className={`text-sm font-bold flex items-center gap-2 ${locale.id === 'divas' ? 'text-red-700' : 'text-terracotta-600'}`}>
+                  {activeLocali.map((locale: any) => (
+                    <div key={locale.id} className={`p-3 sm:p-4 rounded-xl border ${locale.category === 'ADULT' ? 'bg-red-50/30 border-red-200/40' : 'bg-white/80 border-terracotta-100/20'}`}>
+                      <p className={`text-sm font-bold flex items-center gap-2 ${locale.category === 'ADULT' ? 'text-red-700' : 'text-terracotta-600'}`}>
                         <span className={`badge-pill text-white border-0 py-0 px-2 text-[10px] ${locale.categoryColor || 'bg-terracotta-500'}`}>
                           {locale.category}
                         </span>
@@ -185,18 +248,18 @@ export default function SingleGuide() {
                         </div>
                       ) : (
                         <>
-                          <div className={`flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-3 pt-2.5 border-t ${locale.id === 'divas' ? 'border-red-200/20' : 'border-terracotta-150/10'}`}>
+                          <div className={`flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-3 pt-2.5 border-t ${locale.category === 'ADULT' ? 'border-red-200/20' : 'border-terracotta-150/10'}`}>
                             <a
                               href={locale.mapLink}
                               target="_blank"
                               rel="noopener noreferrer"
                               className={`inline-flex items-center gap-1 text-xs transition-colors ${
-                                locale.id === 'divas' 
+                                locale.category === 'ADULT' 
                                   ? 'text-red-700 hover:text-red-900' 
                                   : 'text-mare-600 hover:text-terracotta-600'
                               } py-0.5`}
                             >
-                              <MapPin className={`w-3.5 h-3.5 shrink-0 ${locale.id === 'divas' ? 'text-red-500' : 'text-terracotta-500'}`} />
+                              <MapPin className={`w-3.5 h-3.5 shrink-0 ${locale.category === 'ADULT' ? 'text-red-500' : 'text-terracotta-500'}`} />
                               <span className="truncate max-w-[220px] sm:max-w-none">{locale.address}</span>
                             </a>
                             {locale.instagram && (
