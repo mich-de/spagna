@@ -658,15 +658,48 @@
         "venues": [
           {
             "name": "Il Bulevar de San Pedro (Fascia Tardeo)",
-            "details": "Consigliato nel tardo pomeriggio (18:00 - 21:00). Le strutture all'aperto sono piene di giovani professioniste e residenti che si fermano per un drink post-lavoro in un'atmosfera molto rilassata."
+            "details": "Consigliato nel tardo pomeriggio (18:00 - 21:00). Le strutture all'aperto sono piene di giovani professioniste e residenti che si fermano per un drink post-lavoro in un'atmosfera molto rilassata.",
+            "address": "Av. Luis Braille, 29670 San Pedro de Alcántara",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Bulevar+de+San+Pedro+Alcantara",
+            "instagram": "https://www.instagram.com/explore/tags/bulevardesanpedro/",
+            "instagramHandle": "#BulevarSanPedro",
+            "comments": [
+              "Reddit: Bellissima passeggiata all'aperto, i bar hanno terrazze perfette per bersi una caña dopo il mare.",
+              "Reddit: Pieno di famiglie locali di giorno, ma dalle 18:30 in poi si riempie di professionisti di Marbella che si fermano a fare tardeo.",
+              "Reddit: Atmosfera rilassatissima. I prezzi sono umani rispetto a Puerto Banús.",
+              "GnoccaTravel: Ottimo spot preserale. Molte ragazze locali si fermano qui per un drink veloce prima di rientrare. Approccio semplice e amichevole.",
+              "GnoccaTravel: Target sui 30-40 anni, locale. Se ti siedi alle terrazze all'aperto attacchi bottone con una scusa sui cocktail."
+            ]
           },
           {
             "name": "Cervecería La Solera (e vie interne come Calle Andalucía)",
-            "details": "Taverna andalusa tradizionale con età media sui 30-45 anni. Al bancone l'approccio è molto naturale e l'assenza di turisti favorisce la socializzazione spontanea."
+            "details": "Taverna andalusa tradizionale con età media sui 30-45 anni. Al bancone l'approccio è molto naturale e l'assenza di turisti favorisce la socializzazione spontanea.",
+            "address": "Calle Andalucía, 11, 29670 San Pedro de Alcántara",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Cerveceria+La+Solera+San+Pedro+Alcantara",
+            "instagram": "https://www.instagram.com/explore/tags/cervecerialasolera/",
+            "instagramHandle": "#CerveceriaLaSolera",
+            "comments": [
+              "Reddit: Taverna andalusa verace. Tapas fantastiche, jamón di prima scelta e birra freddissima.",
+              "Reddit: Sempre pieno di gente del posto, zero turisti inglesi o tedeschi.",
+              "Reddit: Ottimo rapporto qualità/prezzo. Si sta in piedi vicino al bancone.",
+              "GnoccaTravel: Questa cervecería è una miniera di locali over 35. L'italiano ha un fascino raddoppiato qui perché non vedono mai stranieri. Mettiti al bancone.",
+              "GnoccaTravel: Età media sui 35-45 anni. Molto facile fare amicizia commentando i piatti o il vino della casa."
+            ]
           },
           {
             "name": "I Disco-Pub del Centro Urbano",
-            "details": "Piccoli locali notturni frequentati esclusivamente da ragazzi del posto e dalla forte comunità latina residente che lavora nell'indotto di Marbella."
+            "details": "Piccoli locali notturni frequentati esclusivamente da ragazzi del posto e dalla forte comunità latina residente che lavora nell'indotto di Marbella.",
+            "address": "Calle Córdoba, 29670 San Pedro de Alcántara",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Calle+Cordoba+San+Pedro+Alcantara+Pubs",
+            "instagram": "https://www.instagram.com/explore/tags/sanpedrodealcantara/",
+            "instagramHandle": "#SanPedroNightlife",
+            "comments": [
+              "Reddit: Piccoli pub nelle vie interne, musica commerciale spagnola e prezzi modici.",
+              "Reddit: Frequentato solo da residenti. Se cerchi la vera movida di paese, questo è il posto.",
+              "Reddit: Clima accogliente, i baristi ti fanno sentire subito a casa.",
+              "GnoccaTravel: C'è un bel giro di ragazze latine residenti che lavorano a Marbella e vivono qui. Clima festoso e barriere basse.",
+              "GnoccaTravel: Si balla reggaeton e pop spagnolo. L'approccio fisico in pista è molto naturale."
+            ]
           }
         ]
       },
@@ -677,15 +710,48 @@
         "venues": [
           {
             "name": "La Polaca (Calle San Lázaro)",
-            "details": "Il locale over 35 più recensito nei diari di viaggio. Arredamento rétro, su più piani, definito una \"calamita per le single residenti\". Ambiente informale perfetto per attaccare bottone al bancone."
+            "details": "Il locale over 35 più recensito nei diari di viaggio. Arredamento rétro, su più piani, definito una \"calamita per le single residenti\". Ambiente informale perfetto per attaccare bottone al bancone.",
+            "address": "Calle San Lázaro, 9, 29601 Marbella",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Polaca+Marbella",
+            "instagram": "https://www.instagram.com/lapolacamarbella/",
+            "instagramHandle": "@lapolacamarbella",
+            "comments": [
+              "Reddit: Locale eccentrico, arredamento anni '70 e '80 fantastico. Ottimo cibo andaluso.",
+              "Reddit: Ha una terrazza e diverse stanze su più piani. Un labirinto molto caratteristico.",
+              "Reddit: Frequentato da gente del posto di tutte le età, atmosfera molto festosa.",
+              "GnoccaTravel: La Polaca è una calamita per le single di Marbella over 35. L'ambiente è goliardico, informale e perfetto per attaccare bottone tra le stanze.",
+              "GnoccaTravel: Il fine settimana è caldissimo. La gente canta la musica rétro spagnola e si diverte senza puzza sotto il naso."
+            ]
           },
           {
             "name": "Bar El Estrecho (e i vicoli di Plaza de los Naranjos)",
-            "details": "I vicoli strettissimi sono perennemente stipati di tapas bar. Questo costringe al contatto fisico e rende l'attacco bottone spontaneo durante l'aperitivo lungo."
+            "details": "I vicoli strettissimi sono perennemente stipati di tapas bar. Questo costringe al contatto fisico e rende l'attacco bottone spontaneo durante l'aperitivo lungo.",
+            "address": "Calle San Lázaro, 12, 29601 Marbella",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Bar+El+Estrecho+Marbella",
+            "instagram": "https://www.instagram.com/barelestrecho/",
+            "instagramHandle": "@barelestrecho",
+            "comments": [
+              "Reddit: Nascosto in un vicolo strettissimo, tapas leggendarie da decenni. Provate le acciughe e i calamari.",
+              "Reddit: Sempre strapieno, devi farti spazio per ordinare al bancone.",
+              "Reddit: Molto caratteristico e prezzi onesti per essere a Marbella.",
+              "GnoccaTravel: I vicoli sono strettissimi e il locale è minuscolo. Questo costringe al contatto fisico e facilita l'approccio spontaneo all'aperitivo.",
+              "GnoccaTravel: Clientela locale mista a turisti informati. Le spagnole locali vengono qui per le tapas prima di uscire."
+            ]
           },
           {
             "name": "Lemmon (Paseo Marítimo)",
-            "details": "Disco-bar sul lungomare del centro. L'alternativa economica e \"safe\" alle discoteche commerciali. Frequentato da pubblico adulto che balla pop spagnolo e commerciale."
+            "details": "Disco-bar sul lungomare del centro. L'alternativa economica e \"safe\" alle discoteche commerciali. Frequentato da pubblico adulto che balla pop spagnolo e commerciale.",
+            "address": "Paseo Marítimo, Edificio Skol, 29602 Marbella",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Lemmon+Marbella+Paseo+Maritimo",
+            "instagram": "https://www.instagram.com/lemmonmarbella/",
+            "instagramHandle": "@lemmonmarbella",
+            "comments": [
+              "Reddit: Ottimo disco-bar sul lungomare. Musica divertente e bella vista.",
+              "Reddit: I prezzi dei cocktail sono onesti, atmosfera estiva perfetta.",
+              "Reddit: DJ set validi, si balla fino a tardi senza la calca delle grandi discoteche.",
+              "GnoccaTravel: Lemmon è il ritrovo del pubblico adulto di Marbella che non vuole spendere €50 a Puerto Banús. Molte locali over 30.",
+              "GnoccaTravel: Si balla pop commerciale. Ottimo posizionamento sui divanetti all'aperto sul lungomare."
+            ]
           }
         ]
       },
@@ -696,11 +762,33 @@
         "venues": [
           {
             "name": "Plaza de las Flores (e Centro Storico)",
-            "details": "Il punto di ritrovo per la prima serata (30-45 anni). La socializzazione segue i ritmi lenti della provincia: ci si siede all'aperto, si beve e l'approccio ravvicinato è ben tollerato."
+            "details": "Il punto di ritrovo per la prima serata (30-45 anni). La socializzazione segue i ritmi lenti della provincia: ci si siede all'aperto, si beve e l'approccio ravvicinato è ben tollerato.",
+            "address": "Plaza de las Flores, 29680 Estepona",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Plaza+de+las+Flores+Estepona",
+            "instagram": "https://www.instagram.com/explore/tags/plazadelasfloresestepona/",
+            "instagramHandle": "#PlazaLasFlores",
+            "comments": [
+              "Reddit: La piazza più bella di Estepona, piena di fiori e tavolini all'aperto.",
+              "Reddit: Atmosfera rilassante, ideale per un drink serale sotto gli alberi.",
+              "Reddit: Piena di vita locale nei fine settimana.",
+              "GnoccaTravel: Il punto di ritrovo per l'aperitivo lungo over 35. Le persone sono aperte e la socializzazione segue i ritmi lenti della provincia.",
+              "GnoccaTravel: Sedersi all'aperto favorisce l'approccio leggero e tranquillo. Zero stress."
+            ]
           },
           {
             "name": "Il Puerto Deportivo (Porto Turistico)",
-            "details": "Nei weekend è l'epicentro della comunità latina locale (venezuelane, colombiane, argentine). I pub offrono pop spagnolo e musica tropical, con barriere d'ingresso bassissime."
+            "details": "Nei weekend è l'epicentro della comunità latina locale (venezuelane, colombiane, argentine). I pub offrono pop spagnolo e musica tropical, con barriere d'ingresso bassissime nelle terrazze all'aperto.",
+            "address": "Puerto Deportivo de Estepona, 29680 Estepona",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Deportivo+Estepona",
+            "instagram": "https://www.instagram.com/explore/tags/puertodeestepona/",
+            "instagramHandle": "#PuertoEstepona",
+            "comments": [
+              "Reddit: Bella zona portuale con pub, ristoranti e mercatini nei weekend.",
+              "Reddit: Molto vivo il sabato sera con musica latina e commerciale.",
+              "Reddit: Ottimi cocktail e prezzi competitivi.",
+              "GnoccaTravel: Epicentro della comunità latina residente a Estepona (colombiane, venezuelane). I pub offrono musica tropicale e salsa.",
+              "GnoccaTravel: Le barriere d'ingresso sulle terrazze all'aperto sono bassissime. Basta saper accennare due passi di ballo."
+            ]
           }
         ]
       },
@@ -711,19 +799,58 @@
         "venues": [
           {
             "name": "Bar Típico El Molino (La Tasca de Frasco)",
-            "details": "Tasca tradizionale con spettacoli di flamenco dal vivo. L'ambiente è travolgente, le donne locali ballano spontaneamente tra i tavoli ed è facile integrarsi offrendo un bicchiere di vino dolce."
+            "details": "Tasca tradizionale con spettacoli di flamenco dal vivo. L'ambiente è travolgente, le donne locali ballano spontaneamente tra i tavoli ed è facile integrarsi offrendo un bicchiere di vino dolce.",
+            "address": "Calle San José, 4, 29780 Nerja",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Bar+El+Molino+Calle+San+Jose+4+Nerja",
+            "instagram": "https://www.instagram.com/explore/tags/barelmolinonerja/",
+            "instagramHandle": "#BarElMolinoNerja",
+            "comments": [
+              "Reddit: Flamenco vero, non la solita trappola per turisti. Vecchio stile, vino locale fantastico.",
+              "GnoccaTravel: Tasca andalusa verace. Quando c'è il flamenco le ragazze locali si lasciano andare e ballano spontaneamente.",
+              "GnoccaTravel: L'atmosfera intima facilita i contatti. Offrire un bicchiere di vino dolce locale è il gancio perfetto.",
+              "GnoccaTravel: Clientela over 30-35 locale e turisti selezionati che cercano qualcosa di vero. Super socievole."
+            ]
           },
           {
             "name": "Pub Tamareo (Plaza Tutti Frutti)",
-            "details": "Meta obbligatoria per la connessione latina. Disco-pub specializzato in Salsa, Bachata e ritmi caraibici con età media over 35. Saper fare i passi base sblocca gran parte delle opportunità."
+            "details": "Meta obbligatoria per la connessione latina. Disco-pub specializzato in Salsa, Bachata e ritmi caraibici con età media over 35. Saper fare i passi base sblocca gran parte delle opportunità.",
+            "address": "Plaza Tutti Frutti, 29780 Nerja",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Pub+Tamareo+Plaza+Tutti+Frutti+Nerja",
+            "instagram": "https://www.instagram.com/explore/tags/plazatuttifrutti/",
+            "instagramHandle": "#PlazaTuttiFrutti",
+            "comments": [
+              "Reddit: Il miglior posto a Plaza Tutti Frutti per ballare salsa e bachata. Clientela locale e latina amichevole.",
+              "GnoccaTravel: Il punto di riferimento per la comunità latina locale che lavora nella ristorazione a Nerja.",
+              "GnoccaTravel: Se sai fare due passi di salsa rimorchi facile. Le ragazze latine e spagnole qui adorano ballare.",
+              "GnoccaTravel: Ambiente caldissimo e ravvicinato, l'approccio fisico durante il ballo è naturale ed accettato."
+            ]
           },
           {
             "name": "Disco Pub Seven & Rockefeller Premium",
-            "details": "Punti di riferimento in Plaza Tutti Frutti per la seconda serata. Musica commerciale, show e target adulto che si sposta poi alla Discoteca Jimmy's fino all'alba (6:00 - 7:00)."
+            "details": "Punti di riferimento in Plaza Tutti Frutti per la seconda serata. Musica commerciale, show e target adulto che si sposta poi alla Discoteca Jimmy's fino all'alba (6:00 - 7:00).",
+            "address": "Plaza Tutti Frutti, 29780 Nerja",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Seven+Plaza+Tutti+Frutti+Nerja",
+            "instagram": "https://www.instagram.com/explore/tags/plazatuttifrutti/",
+            "instagramHandle": "#SevenNerja",
+            "comments": [
+              "Reddit: Sempre strapieno nel fine settimana, musica commerciale e reggaeton. Buona atmosfera.",
+              "GnoccaTravel: Il pub più commerciale e movimentato di Tutti Frutti. Bel ricircolo di turisti e locali.",
+              "GnoccaTravel: Molto affollato dopo mezzanotte. L'approccio fisico in pista o al bancone è lo standard.",
+              "GnoccaTravel: Clientela mista ma con una forte presenza di trentenni locali e latine residenti nel weekend."
+            ]
           },
           {
             "name": "Playa de Burriana (Chiringuitos)",
-            "details": "Perfetta per il tardeo costiero. Il 23 giugno (Noche de San Juan) si riempie di falò sulla sabbia con musica e alcol, offrendo il tasso di socializzazione spontanea più alto dell'anno."
+            "details": "Perfetta per il tardeo costiero. Il 23 giugno (Noche de San Juan) si riempie di falò sulla sabbia con musica e alcol, offrendo il tasso di socializzazione spontanea più alto dell'anno.",
+            "address": "Playa de Burriana, 29780 Nerja",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
+            "instagram": "https://www.instagram.com/explore/tags/playaburriana/",
+            "instagramHandle": "#PlayaBurriana",
+            "comments": [
+              "Reddit: Chiringuitos fantastici sulla spiaggia, paella ottima ed aperitivo rilassante.",
+              "GnoccaTravel: Spiaggia caldissima durante il tardeo. I falò di San Juan qui sono pieni di residenti e latine del posto.",
+              "GnoccaTravel: Socializzazione facile sulla sabbia con una scusa per dividere da bere."
+            ]
           }
         ]
       },
@@ -733,16 +860,49 @@
         "description": "Evita Puerto Marina (turisti inglesi e addii al celibato) e sali a Arroyo de la Miel (zona residenziale), dove si concentra la vera popolazione locale e latina over 35.",
         "venues": [
           {
-            "name": "Plaza di la Mezquita (Arroyo de la Miel)",
-            "details": "Circondata da bar e taverne economiche frequentate quasi al 100% da residenti e latine della fascia 30-50 anni. Perfetta per il bar-hopping in lingua spagnola."
+            "name": "Plaza de la Mezquita (Arroyo de la Miel)",
+            "details": "Circondata da bar e taverne economiche frequentate quasi al 100% da residenti e latine della fascia 30-50 anni. Perfetta per il bar-hopping in lingua spagnola.",
+            "address": "Plaza de la Mezquita, 29631 Arroyo de la Miel",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Plaza+de+la+Mezquita+Arroyo+de+la+Miel",
+            "instagram": "https://www.instagram.com/explore/tags/plazadelamezquita/",
+            "instagramHandle": "#PlazaMezquita",
+            "comments": [
+              "Reddit: Piazza enorme circondata da bar e pub locali. Prezzi della birra stracciati.",
+              "Reddit: Frequentato al 100% da residenti spagnoli. Ottimo per sfuggire ai turisti inglesi del porto.",
+              "Reddit: Clima molto vivace e feste all'aperto nei weekend d'estate.",
+              "GnoccaTravel: L'equivalente locale di Tutti Frutti a Nerja ma a Arroyo de la Miel. Molte donne single residenti della fascia 30-50 anni.",
+              "GnoccaTravel: Si fa bar-hopping in lingua spagnola. L'italiano qui desta subito curiosità."
+            ]
           },
           {
             "name": "I Disco-Bar Caraibici di Arroyo",
-            "details": "Piccoli club di Social Dance nelle vie adiacenti alla piazza. Meno commerciali del porto, basano tutto sulla musica latina e l'interazione diretta nel ballo."
+            "details": "Piccoli club di Social Dance nelle vie adiacenti alla piazza. Meno commerciali del porto, basano tutto sulla musica latina e l'interazione diretta nel ballo.",
+            "address": "Calle de las Flores, 29631 Arroyo de la Miel",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Calle+de+las+Flores+Arroyo+de+la+Miel+Pubs",
+            "instagram": "https://www.instagram.com/explore/tags/arroyodelamiel/",
+            "instagramHandle": "#ArroyoNightlife",
+            "comments": [
+              "Reddit: Piccoli club accoglienti con ottimi ballerini di salsa e bachata.",
+              "Reddit: Musica caraibica autentica e drink estivi fantastici.",
+              "Reddit: Atmosfera divertente, tutti ballano con tutti.",
+              "GnoccaTravel: Club di ballo sociale frequentatissimi da donne latine residenti. Clima caldo e approccio diretto in pista.",
+              "GnoccaTravel: Se sai guidare nel ballo, qui hai le porte spalancate. Molte over 30."
+            ]
           },
           {
             "name": "Circuito Adult Entertainment (Statale N-340)",
-            "details": "Ospita i grandi puticlubs storici della costa. Alta percentuale di ragazze latine ed est-europee. Attenzione fissa ai prezzi al bancone per evitare sorprese alla cassa."
+            "details": "Ospita i grandi puticlubs storici della costa. Alta percentuale di ragazze latine ed est-europee. Attenzione fissa ai prezzi al bancone per evitare sorprese alla cassa.",
+            "address": "Carretera N-340 Torremolinos-Benalmádena",
+            "mapLink": "https://www.google.com/maps/search/?api=1&query=Carretera+N-340+Torremolinos+Benalmadena",
+            "instagram": "https://www.instagram.com/explore/tags/costadelsol/",
+            "instagramHandle": "#CostaDelSol",
+            "comments": [
+              "Reddit: Grandi puticlubs lungo la statale. Molto visibili di notte.",
+              "Reddit: All'interno l'ambiente è sicuro e controllato dai buttafuori.",
+              "Reddit: I drink costano cari, mettete in conto spese significative.",
+              "GnoccaTravel: I puticlubs storici della costa. Ragazze di livello, prevalentemente latine ed est-europee.",
+              "GnoccaTravel: Chiedere sempre la tariffa al bancone prima di far sedere una ragazza per evitare conti a sorpresa."
+            ]
           }
         ]
       }

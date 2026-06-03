@@ -8,7 +8,7 @@ echo   ^|   Dashboard di viaggio premium           ^|
 echo   +------------------------------------------+
 echo.
 
-echo   [>] Libero porte 3000 e 3001...
+echo   [^>] Libero porte 3000 e 3001...
 for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3000 "') do (
   if not "%%a"=="" taskkill /f /pid %%a >nul 2>&1
 )
@@ -17,7 +17,7 @@ for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3001 "') do (
 )
 timeout /t 1 /nobreak >nul
 
-echo   [>] Pulizia cache di compilazione e file temporanei...
+echo   [^>] Pulizia cache di compilazione e file temporanei...
 call npm run clean
 
 echo   [v] Avvio del server in corso...

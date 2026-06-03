@@ -36,7 +36,7 @@ export default function Home() {
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }
-    }, 150)
+    }, 50)
   }, [])
 
   useEffect(() => {

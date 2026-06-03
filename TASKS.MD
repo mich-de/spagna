@@ -14,10 +14,13 @@ Roadmap for Costa del Sol Travel Dashboard.
 - [x] `[FRONTEND]` Reorder sections (place "Movida Over 35" / `SingleGuide.tsx` immediately after "Overview" and before "Base") in `page.tsx` and `SectionNav.tsx`
 - [x] `[FRONTEND]` Fix mobile hamburger menu click event bubbling (accidental closures on drag/footer click) and speed up scroll triggers to 100ms in `SectionNav.tsx`
 - [x] `[FRONTEND]` Integrate the new "Mappa Costa" tab in `SingleGuide.tsx` to render the outer Costa zones and hotspots
+- [x] `[FRONTEND]` Render Reddit & GnoccaTravel forum comments for outer Costa zones inside `SingleGuide.tsx`
 - [x] `[DOCUMENTATION]` Integrate the pragmatic travel companion preface inside both the markdown guide and the webapp dashboard JSON/UI
 - [x] `[DOCUMENTATION]` Add 10 comments, average prices, and Google Play Store links to downloaded guide `guida_malaga_single_giugno_2026.md`
 - [x] `[DOCUMENTATION]` Append the multi-zone Costa guide as Section 8 in the downloaded guide `guida_malaga_single_giugno_2026.md`
+- [x] `[DOCUMENTATION]` Add Reddit & GnoccaTravel comments for all Costa hotspots inside the downloaded guide `guida_malaga_single_giugno_2026.md`
 - [x] `[DEVOPS]` Validate static export build with `npm run build`
+
 
 
 ## Phase 4: Webapp Inspiration Hub & Matcher

@@ -61,3 +61,24 @@ Create a new file containing the `QuickInspiration` component:
 ### Verification Plan
 - Run `npm run build` to verify there are no compilation errors.
 - Inspect the filter layouts on desktop (elements wrap neatly instead of getting truncated) and mobile (horizontal carousel scrolling remains active).
+
+---
+
+## Mappa Costa Comments & Mobile Menu Refinements (2026-06-03)
+
+### Problem
+- The "Mappa Costa" tab in the UI (`SingleGuide.tsx`) did not render the Reddit and GnoccaTravel forum comments for the external Costa del Sol zones, despite the comments being present in `movida-over35.json`.
+- The offline guide `guida_malaga_single_giugno_2026.md` was also missing these comments under Section 8.
+- The mobile hamburger menu suffered from a laggy scroll-into-view transition and gesture bubble conflicts that made navigation feel glitchy.
+
+### Proposed Changes
+- **Frontend Comments Rendering**: Modified the `costa` tab in `SingleGuide.tsx` to loop through `venue.comments` and render each comment in an italicized, compact container using the `MessageSquare` icon.
+- **Offline Guide Synchronization**: Updated Section 8 in `guida_malaga_single_giugno_2026.md` to append the Reddit & GnoccaTravel comments list for all Costa hotspots.
+- **Hamburger Menu Polishing**:
+  - Restored outer overlay backdrop clicks in `SectionNav.tsx` while calling `e.stopPropagation()` on the inner links and footer containers to prevent accidental menu closure on dragging or tapping footer stats.
+  - Reduced scroll-spy and menu exit transition timeouts to 50ms in both `SectionNav.tsx` and `page.tsx` for instant section jumping.
+
+### Verification Plan
+- Run `npm run build` to confirm a 100% clean Next.js static build.
+- Manually check the "Mappa Costa" tab in the UI to verify comments show up correctly under all 11+ hotspots.
+- Verify the offline guide markdown formatting is clean and without duplicates.

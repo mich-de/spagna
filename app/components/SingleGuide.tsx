@@ -246,14 +246,57 @@ export default function SingleGuide() {
                         <p className="text-[10px] font-semibold text-mare-400 uppercase tracking-wider">Hotspots & Strategia:</p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                           {zone.venues.map((venue: any, vIdx: number) => (
-                            <div key={vIdx} className="p-3 bg-terracotta-50/40 rounded-lg border border-terracotta-100/10 flex flex-col">
-                              <span className="font-bold text-xs text-mare-800 flex items-center gap-1">
-                                <span className="w-1.5 h-1.5 bg-terracotta-500 rounded-full animate-pulse"></span>
-                                {venue.name}
-                              </span>
-                              <p className="text-[10px] text-mare-700/80 mt-1.5 leading-relaxed flex-1">
-                                {venue.details}
-                              </p>
+                            <div key={vIdx} className="p-3 bg-terracotta-50/40 rounded-lg border border-terracotta-100/10 flex flex-col justify-between">
+                              <div>
+                                <span className="font-bold text-xs text-mare-800 flex items-center gap-1">
+                                  <span className="w-1.5 h-1.5 bg-terracotta-500 rounded-full animate-pulse"></span>
+                                  {venue.name}
+                                </span>
+                                <p className="text-[10px] text-mare-700/80 mt-1.5 leading-relaxed">
+                                  {venue.details}
+                                </p>
+                                {venue.comments && (
+                                  <div className="mt-2.5 pt-2 border-t border-terracotta-150/10">
+                                    <p className="text-[9px] font-semibold text-terracotta-600 flex items-center gap-1 mb-1">
+                                      <MessageSquare className="w-2.5 h-2.5 shrink-0" />
+                                      <span>Voci dai Forum:</span>
+                                    </p>
+                                    <div className="space-y-1 pl-2 border-l border-terracotta-200/35">
+                                      {venue.comments.map((comment: string, cIdx: number) => (
+                                        <p key={cIdx} className="text-[9px] text-mare-600 italic leading-normal">
+                                          &ldquo;{comment}&rdquo;
+                                        </p>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                              {(venue.address || venue.instagram) && (
+                                <div className="mt-2.5 pt-2 border-t border-terracotta-100/20 flex flex-col gap-1 text-[9px]">
+                                  {venue.address && (
+                                    <a
+                                      href={venue.mapLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                    >
+                                      <MapPin className="w-3 h-3 text-terracotta-500 shrink-0" />
+                                      <span className="truncate">{venue.address}</span>
+                                    </a>
+                                  )}
+                                  {venue.instagram && (
+                                    <a
+                                      href={venue.instagram}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="inline-flex items-center gap-1 text-mare-600 hover:text-terracotta-600 transition-colors"
+                                    >
+                                      <Instagram className="w-3 h-3 text-pink-500 shrink-0" />
+                                      <span className="truncate">{venue.instagramHandle}</span>
+                                    </a>
+                                  )}
+                                </div>
+                              )}
                             </div>
                           ))}
                         </div>

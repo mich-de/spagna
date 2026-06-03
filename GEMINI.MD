@@ -106,13 +106,16 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Integrata la mappatura strategica Costa del Sol (San Pedro, Marbella, Estepona, Nerja, Benalmádena) con gli hotspots di socializzazione, pro/contro e dettagli sul target local e latina residente sia nel JSON (`data/movida-over35.json`) che come nuovo tab "Mappa Costa" in `SingleGuide.tsx` e Appendice 8 nel file markdown.
 - Eseguito con successo `npm run build` per validare la correttezza della build statica.
 
-### 2026-06-03 — Noche de San Juan Playas & Strategie
+### 2026-06-03 — Noche de San Juan Playas & Strategies
 - Integrate 4 spiagge della Costa del Sol oltre a quelle di Málaga per i festeggiamenti di San Juan (La Carihuela a Torremolinos, Santa Ana a Benalmádena, El Cable a Marbella, La Rada a Estepona) in `data/san-juan.json`.
 - Aggiornata la pianificazione giornaliera in `data/movida-over35.json` per fare riferimento a queste località target over 35 e con presenza local/latina.
 - Aggiunta la sezione 9 ("Speciale Noche de San Juan Fuori Málaga") nel report `guida_malaga_single_giugno_2026.md` con l'analisi delle spiagge e le "Regole d'Oro" per il posizionamento strategico e l'approccio sulla sabbia.
 - Eseguito con successo `npm run build` ed effettuato il commit e push su git.
 
-
+### 2026-06-03 — Integrazione Commenti Forum Mappa Costa & Risoluzione Menu Mobile
+- Integrati i commenti reali dei forum Reddit e GnoccaTravel per tutti gli hotspot della sezione "Mappa Costa" sia nel file JSON (`data/movida-over35.json`), sia nel componente `SingleGuide.tsx` sia all'interno della sezione 8 della guida offline `guida_malaga_single_giugno_2026.md`.
+- Risolti i problemi di glitch del menu mobile in `SectionNav.tsx` prevenendo la propagazione dei click sul menu interno ed accelerando il timeout del cambio sezione a 50ms per rendere gli switch istantanei e fluidi su smartphone.
+- Eseguito con successo `npm run build` verificando l'assenza di errori e la corretta esportazione statica Next.js.
 
 ## Known Gotchas
 

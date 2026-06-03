@@ -136,10 +136,12 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
+              onClick={() => setMobileOpen(false)}
               className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-sabbia/98 backdrop-blur-2xl border-t border-terracotta-100/50 flex flex-col justify-between"
             >
               {/* Menu Links with Staggered Fade-in */}
               <motion.div
+                onClick={(e) => e.stopPropagation()}
                 variants={{
                   hidden: { opacity: 0 },
                   show: {
@@ -164,7 +166,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                       }}
                       onClick={() => {
                         setMobileOpen(false)
-                        setTimeout(() => onSectionChange(s.id), 100)
+                        setTimeout(() => onSectionChange(s.id), 50)
                       }}
                       className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all ${
                         activeSection === s.id
@@ -182,6 +184,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               {/* Progress Summary Footer inside Mobile Menu */}
               {(plannerStats.bookmarksCount > 0 || plannerStats.totalTasks > 0) && (
                 <motion.div
+                  onClick={(e) => e.stopPropagation()}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
