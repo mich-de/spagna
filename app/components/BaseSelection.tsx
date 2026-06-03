@@ -221,7 +221,7 @@ export default function BaseSelection() {
     })
 
     for (const item of sorted) {
-      if (selected.length >= 5) break
+      if (selected.length >= 10) break
       if (!selected.some(s => s.name === item.name)) {
         selected.push(item)
       }
@@ -490,7 +490,7 @@ export default function BaseSelection() {
               </div>
               <div>
                 <h3 className="font-display text-lg font-bold text-notte">Idee Consigliate vicino a te</h3>
-                <p className="text-xs text-mare-400">Le 5 cose più vicine a {selectedBase} (ordinate per tempo di guida ⏱)</p>
+                <p className="text-xs text-mare-400">Le 10 cose più vicine a {selectedBase} (ordinate per tempo di guida ⏱)</p>
               </div>
             </div>
 
