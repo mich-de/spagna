@@ -66,6 +66,7 @@ export default function SingleGuide() {
 
   const tabs = [
     { id: 'mindset', label: 'Briefing & Mindset', icon: '🧠' },
+    { id: 'alloggio', label: 'Dove Alloggiare', icon: '🏨' },
     { id: 'locali', label: 'Mappa Locali', icon: '🍹' },
     { id: 'costa', label: 'Mappa Costa', icon: '🏝️' },
     { id: 'tardeo', label: 'Tardeo al Perreo', icon: '🌊' },
@@ -147,6 +148,61 @@ export default function SingleGuide() {
                       <p className="text-xs text-mare-700/80 leading-relaxed">
                         {card.description}
                       </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* DOVE ALLOGGIARE */}
+            {activeTab === 'alloggio' && (
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
+                <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
+                  <span>🏨 Dove Alloggiare per la Movida Over 35 &amp; Dating</span>
+                </h3>
+                <p className="text-xs text-mare-750 leading-relaxed mb-4">
+                  {movidaData.alloggio?.intro || "La scelta dell'area in cui alloggiare è fondamentale per ottimizzare il tasso di conversione delle dating app, ridurre i costi di parcheggio/trasferimento e facilitare i rientri notturni."}
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {movidaData.alloggio?.zone?.map((zona: any) => (
+                    <div 
+                      key={zona.id} 
+                      className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20 card-shadow card-hover flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex justify-between items-start gap-2 mb-2.5">
+                          <h4 className="font-display text-sm font-bold text-notte">{zona.name}</h4>
+                          <span className="px-2 py-0.5 bg-terracotta-50 text-terracotta-700 border border-terracotta-100/30 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                            {zona.vibe}
+                          </span>
+                        </div>
+
+                        <div className="space-y-2 mb-3.5">
+                          <div className="text-[11px] text-mare-800">
+                            <span className="font-bold text-emerald-600 uppercase tracking-wide block mb-0.5 text-[9px]">🟢 PRO:</span>
+                            <ul className="list-disc pl-4 space-y-0.5">
+                              {zona.pro.map((pro: string, idx: number) => (
+                                <li key={idx} className="leading-relaxed">{pro}</li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          <div className="text-[11px] text-mare-800 pt-1.5 border-t border-terracotta-100/5">
+                            <span className="font-bold text-red-500 uppercase tracking-wide block mb-0.5 text-[9px]">🔴 CONTRO:</span>
+                            <ul className="list-disc pl-4 space-y-0.5">
+                              {zona.contro.map((contro: string, idx: number) => (
+                                <li key={idx} className="leading-relaxed">{contro}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="pt-2.5 border-t border-terracotta-150/10 text-xs text-mare-750">
+                        <span className="font-bold text-terracotta-600 block text-[10px] mb-0.5 uppercase tracking-wide">💡 Strategia di Socializzazione:</span>
+                        <p className="italic leading-relaxed">{zona.strategia}</p>
+                      </div>
                     </div>
                   ))}
                 </div>

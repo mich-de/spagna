@@ -130,6 +130,13 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Font Size**: Ridotto leggermente il clamp del font-size root da `clamp(16px, 1vw + 15px, 18px)` a `clamp(15px, 0.5vw + 14px, 17px)` per adattarsi meglio al layout più ampio.
 - **Validazione Build**: Compilata con successo l'esportazione statica tramite `npm run build` con esito positivo e zero errori (218 kB page, 320 kB first load).
 
+### 2026-06-03 — Lodging Guide & Detailed Action Plan for Single Over 35
+- **Lodging Guide**: Created and populated a new `"alloggio"` key in `data/movida-over35.json` detailing the pros, cons, and strategies for 4 key target areas: Málaga Centro, Teatinos, San Pedro, and Nerja.
+- **SingleGuide Tab**: Integrated the new `alloggio` ("Dove Alloggiare") tab under the `SingleGuide.tsx` component, displaying the data in a responsive card grid with colored badges, list elements, and card-shadows.
+- **Detailed Action Plan**: Expanded the `"plan"` key in `data/movida-over35.json` to feature a highly detailed day-by-day itinerary (June 19 to June 25, 2026) instead of grouped days, incorporating dating setup, tardeo, social dance, Teatinos tour, Playa de Burriana San Juan, and adult entertainment venues.
+- **Offline Guide Synchronization**: Updated Section 5 (Piano d'Azione) and appended Section 10 (Dove Alloggiare) in the downloaded guide `C:\Users\mdeangelis\Downloads\guida_malaga_single_giugno_2026.md`.
+- **Validation**: Compiled the static build successfully (`npm run build`) with zero compiler or type errors.
+
 
 ## Known Gotchas
 

@@ -414,24 +414,32 @@
   },
   "plan": [
     {
-      "days": "VEN 19 / SAB 20",
-      "details": "Venerdì: Aperitivo a La Tranca posizionandosi al bancone, seguito da una ricognizione al Barsovia Club.\nSabato: Inizia con una birra al Rocknrolla per rompere il ghiaccio, per poi spostarti alla Discoteca Liceo (età ideale 30-45) dove l'approccio è facilitato."
+      "days": "VEN 19 GIU",
+      "details": "Arrivo & Riscaldamento a Málaga Centro\n- Setup Dating App: Geofencing a 15-20km per intercettare residenti ed evitare turiste mordi e fuggi.\n- Ore 20:00: Vermut e tapas al bancone di La Tranca (Calle Carretería). Ottima bolgia per rompere il ghiaccio ed approcciare spontaneamente.\n- Ore 23:30: Scouting al Barsovia Club (clientela over 35 locale e curata)."
     },
     {
-      "days": "DOM 21",
-      "details": "Domenica Pomeriggio: Segui il flusso costiero Del Tardeo al Perreo a Pedregalejo, posizionandoti nei chiringuitos all'aperto che suonano musica tropicale e caraibica a ridosso del mare."
+      "days": "SAB 20 GIU",
+      "details": "Tardeo al Tramonto & Discoteca\n- Ore 18:00: Tardeo a Baños del Carmen (El Balneario). Aperitivo al tramonto frequentato da professioniste locali over 35.\n- Ore 23:00: Rocknrolla (Teatinos) per una birra in un ambiente 100% locale.\n- Ore 01:30: Discoteca Liceo (Málaga Centro), picco del sabato per il target 30-45 anni."
     },
     {
-      "days": "LUN 22",
-      "details": "Lunedì Sera: Esplora i pub di Teatinos (Avenida Plutarco). Essendo fuori dalle zone turistiche, il fattore italiano incuriosisce molto le donne residenti."
+      "days": "DOM 21 GIU",
+      "details": "Tardeo al Perreo & Social Dance\n- Pomeriggio (17:00-21:00): Flusso caraibico a Pedregalejo o nei disco-bar di Arroyo de la Miel (social dance, salsa/bachata con latine residenti).\n- Sera: Matchmaking online sulle app (Meetic/Badoo/Happn) posizionandosi in zone residenziali per pianificare la settimana."
     },
     {
-      "days": "MAR 23",
-      "details": "Noche de San Juan: Festa sulla spiaggia con falò. Se sei a Málaga, posizionati a Pedregalejo per un target d'età maturo ed evita la Malagueta (piena di giovanissimi). Se sei in provincia, le mete calde over 35 con alta concentrazione local e latina sono Playa de la Carihuela (Torremolinos) per le moragas, Playa de Santa Ana (Benalmádena) per i chiringuitos, o Playa del Cable (Marbella) per un'atmosfera 100% locale."
+      "days": "LUN 22 GIU",
+      "details": "Scouting Residenti Ovest vs Est\n- Málaga: Tour preserale di cervecerías e tapas a Teatinos (Avenida Plutarco) per azzerare la concorrenza di turisti.\n- Nerja: Cena a Bar Típico El Molino con flamenco dal vivo e socializzazione informale, seguita da birra a Plaza Tutti Frutti."
     },
     {
-      "days": "MER 24 / GIO 25",
-      "details": "Mercoledì: Ideale per concretizzare i contatti delle sere precedenti a Soho. Per intrattenimento adulti puro (stile report Gnocca Travel), la meta da pianificare è la Sala Divas.\nGiovedì: Ultimo tardeo nel centro storico prima del rientro."
+      "days": "MAR 23 GIU",
+      "details": "EVENTO CRITICO – La Noche de San Juan\n- Pomeriggio: Compra da bere e organizza la serata in spiaggia.\n- Notte (21:00 - alba): Spiagge calde per over 35 con alta presenza local/latina. A Málaga: Pedregalejo (evita la Malagueta). A Nerja: Playa de Burriana. A Ovest: Playa de la Carihuela (Torremolinos) o Playa del Cable (Marbella). Il bagno a mezzanotte e i falò abbattono qualsiasi barriera d'approccio."
+    },
+    {
+      "days": "MER 24 GIU",
+      "details": "Concretizzazione Contatti & Adult Circuit\n- Ore 18:00: Aperitivo/caffè a Soho con i contatti della Noche de San Juan o match delle app.\n- Notte fonda (opzionale): Per andare al sodo, Sala Divas (Málaga Centro), New Scandalo (puticlub con ragazze latine) o Velasquez24 (escort a domicilio, ~150€/h cash)."
+    },
+    {
+      "days": "GIO 25 GIU",
+      "details": "Ultimo Tardeo & Saluti\n- Ore 18:30: Ultimo brindisi in centro storico (La Tranca o Lemmon a Marbella) prima del volo di rientro Ryanair."
     }
   ],
   "safety": [
@@ -738,6 +746,72 @@
             "categoryColor": "bg-red-600"
           }
         ]
+      }
+    ]
+  },
+  "alloggio": {
+    "intro": "La scelta dell'area in cui alloggiare è fondamentale per ottimizzare il tasso di conversione delle dating app, ridurre i costi di parcheggio e di trasferimento e facilitare i rientri notturni. Di seguito trovi l'analisi strategica delle 4 zone chiave della Costa del Sol pensata specificamente per il target single over 35.",
+    "zone": [
+      {
+        "id": "alloggio-centro",
+        "name": "Málaga Centro (Soho / Centro Histórico)",
+        "vibe": "Nightlife & Dating a piedi",
+        "pro": [
+          "Zero spese di taxi/auto la sera: tutti i locali principali (La Tranca, Barsovia, Liceo) sono raggiungibili a piedi.",
+          "Altissima densità di contatti e tardeo tropicale sotto casa.",
+          "Ideale per appuntamenti veloci durante il giorno nel quartiere Soho."
+        ],
+        "contro": [
+          "Parcheggio inesistente o carissimo (€20-30/giorno se si noleggia un'auto).",
+          "Molto rumoroso nei weekend a causa della movida.",
+          "Prezzi degli alloggi mediamente più elevati rispetto al resto della costa."
+        ],
+        "strategia": "Consigliato se viaggi senza noleggiare l'auto (ti muovi esclusivamente con treno, metro e Uber) e vuoi vivere al 100% l'energia del centro e la movida notturna a piedi senza preoccupazioni di guida o alcol."
+      },
+      {
+        "id": "alloggio-teatinos",
+        "name": "Teatinos (Málaga Ovest - Zona Residenti)",
+        "vibe": "100% Local, Sicuro & Budget Friendly",
+        "pro": [
+          "Alloggi moderni, spaziosi e a prezzi inferiori del 30% rispetto al centro storico.",
+          "Parcheggio gratuito e facilissimo in strada.",
+          "Zona sicura circondata da locali frequentati esclusivamente da residenti e giovani professionisti (Rocknrolla)."
+        ],
+        "contro": [
+          "Distanza dal centro storico: richiede l'uso della metropolitana o Uber (10-15 minuti).",
+          "Atmosfera meno pittoresca e assenza del mare sotto casa."
+        ],
+        "strategia": "La scelta migliore se hai l'auto a noleggio per girare le spiagge di giorno, vuoi risparmiare sull'alloggio e preferisci la socializzazione con residenti locali ed espatriati rispetto ai flussi turistici commerciali."
+      },
+      {
+        "id": "alloggio-sanpedro",
+        "name": "San Pedro de Alcántara (Costa Ovest - Marbella)",
+        "vibe": "Hub Strategico Costa Ovest & Parcheggio Free",
+        "pro": [
+          "Parcheggio gratuito illimitato e sicuro vicino al lungomare (risparmio reale di oltre €150-200 a settimana).",
+          "Atmosfera da vero pueblo andaluso, ristoranti e locali a prezzi andalusi tradizionali.",
+          "Posizione centrale perfetta per girare tra Marbella (12 min) ed Estepona (15 min)."
+        ],
+        "contro": [
+          "Richiede l'auto o taxi per qualsiasi spostamento notturno fuori dal pueblo.",
+          "Nightlife locale tranquilla: per i club principali del weekend devi spostarti a Marbella centro."
+        ],
+        "strategia": "Consigliatissimo se vuoi una base strategica per esplorare la costa ovest, hai l'auto a noleggio, vuoi evitare il caos e le trappole per turisti di Marbella e cerchi un clima rilassato con ampie spiagge libere."
+      },
+      {
+        "id": "alloggio-nerja",
+        "name": "Nerja Centro (Costa Est)",
+        "vibe": "Spiagge Spettacolari & Movida Compatta a piedi",
+        "pro": [
+          "Si fa tutto a piedi: alloggi vicino a spiagge bellissime (Burriana) e a Plaza Tutti Frutti (disco-pub).",
+          "Atmosfera accogliente e ad altissima socializzazione spontanea, ideale per la Noche de San Juan.",
+          "Prezzi degli alloggi medi ed accessibili."
+        ],
+        "contro": [
+          "Geograficamente isolata: Marbella ed Estepona sono a più di 1 ora e mezza di auto.",
+          "Per le dating app, è necessario ampliare il raggio d'azione fino a Torre del Mar per trovare residenti stabili."
+        ],
+        "strategia": "Consigliatissimo se cerchi un viaggio incentrato sulla costa orientale (snorkeling, calette di Maro, kayak) e vuoi azzerare lo stress da guida o taxi la sera facendo tutto a piedi."
       }
     ]
   }

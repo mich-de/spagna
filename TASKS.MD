@@ -2,6 +2,14 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 7: Lodging Guide & Detailed Action Plan for Single Over 35 (2026-06-03)
+- [x] `[BACKEND]` Create and populate `"alloggio"` key in `data/movida-over35.json` with detailed strategies for 4 key areas
+- [x] `[FRONTEND]` Add `"alloggio"` tab ("Dove Alloggiare") to `SingleGuide.tsx` and render its contents beautifully in a responsive grid
+- [x] `[BACKEND]` Expand `"plan"` key in `data/movida-over35.json` to feature a detailed day-by-day action plan for June 19-25
+- [x] `[DOCUMENTATION]` Update Section 5 and append Section 10 to `C:\Users\mdeangelis\Downloads\guida_malaga_single_giugno_2026.md`
+- [x] `[DEVOPS]` Verify static Next.js export compilation with `npm run build`
+- [x] `[DOCUMENTATION]` Update local memory logs `GEMINI.MD`
+
 ## Phase 6: Mobile Optimization & JSON Cleanup (2026-06-03)
 - [x] `[BACKEND]` Clean duplicate keys and obsolete sections from `movida-over35.json` via automated Python script
 - [x] `[FRONTEND]` Add left/right fade masks to horizontal scroll tabs in `SingleGuide.tsx`
