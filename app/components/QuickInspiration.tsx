@@ -77,7 +77,7 @@ export default function QuickInspiration() {
       name: b.name,
       type: 'beach',
       description: b.description,
-      zone: b.zone,
+      zone: b.zone || 'Ovunque',
       tip: b.localTip || '',
       additionalInfo: `Best Time: ${b.bestTime} · Sabbia: ${b.sand}`,
       mapLink: b.mapLink,
@@ -89,7 +89,7 @@ export default function QuickInspiration() {
       name: r.name,
       type: 'restaurant',
       description: r.description,
-      zone: r.zone,
+      zone: r.zone || 'Ovunque',
       tip: r.localTip || `Specialità: ${r.specialty}`,
       additionalInfo: `Prezzo: ${r.price} · Tipo: ${r.type}`,
       mapLink: r.mapLink,
@@ -101,7 +101,7 @@ export default function QuickInspiration() {
       name: e.title,
       type: 'experience',
       description: e.tip || 'Un\'esperienza autentica consigliata da locali.',
-      zone: e.where,
+      zone: e.where || 'Ovunque',
       tip: e.when ? `Quando: ${e.when}` : '',
       additionalInfo: `Costo: ${e.cost}`,
       mapLink: e.mapLink,
@@ -113,7 +113,7 @@ export default function QuickInspiration() {
       name: a.name,
       type: 'experience', // Map to experience for plan simplicity
       description: a.whyVisit,
-      zone: a.zone,
+      zone: a.zone || 'Ovunque',
       tip: a.pairWith ? `Abbina con: ${a.pairWith}` : '',
       additionalInfo: `Durata: ${a.duration} · Costo: ${a.cost}`,
       mapLink: a.mapLink,
@@ -133,7 +133,7 @@ export default function QuickInspiration() {
     const all = normalizedItems.tutti
     // Filter out items with general location 'ovunque'
     const localized = all.filter((item, index, self) => 
-      !item.zone.toLowerCase().includes('ovunque') &&
+      (!item.zone || !item.zone.toLowerCase().includes('ovunque')) &&
       self.findIndex(t => t.name === item.name) === index
     )
 
@@ -174,7 +174,23 @@ export default function QuickInspiration() {
 
   // Shuffle logic for card deck
   const rollCard = () => {
-    const list = normalizedItems[categoryFilter]
+    let maxDistance = 60
+    let list: InspirationItem[] = []
+    
+    // Dynamically increase distance threshold until we have at least 5 items in the pool
+    while (list.length < 5 && maxDistance <= 150) {
+      list = normalizedItems[categoryFilter].filter(item => {
+        if (item.zone && item.zone.toLowerCase().includes('ovunque')) return true
+        return getDriveTime(selectedBase, item.zone) <= maxDistance
+      })
+      maxDistance += 30
+    }
+
+    // Fallback to all items if we still don't have enough
+    if (list.length === 0) {
+      list = normalizedItems[categoryFilter]
+    }
+
     if (list.length === 0) return
     let rolled = list[Math.floor(Math.random() * list.length)]
     // Avoid rolling the exact same card twice in a row if possible
@@ -186,10 +202,10 @@ export default function QuickInspiration() {
     setShuffleTrigger(prev => prev + 1)
   }
 
-  // Initial card roll
+  // Initial card roll or when category/base changes
   useEffect(() => {
     rollCard()
-  }, [categoryFilter])
+  }, [categoryFilter, selectedBase])
 
   // Toggle bookmark helper
   const toggleBookmark = (item: InspirationItem) => {
@@ -222,9 +238,21 @@ export default function QuickInspiration() {
     setShowMatcherSuccess(false)
     
     setTimeout(() => {
-      // Step 1: Select a focus zone
-      const availableZones = ['Nerja', 'Málaga', 'Marbella', 'Estepona', 'Benalmádena']
-      const chosenZone = availableZones[Math.floor(Math.random() * availableZones.length)]
+      // Step 1: Select a focus zone within 60 minutes driving distance of chosen base, expanding threshold if needed to get variety
+      let maxDistance = 60
+      let availableZones: string[] = []
+      const allZones = ['Nerja', 'Málaga', 'Marbella', 'Estepona', 'Benalmádena', 'Mijas']
+      
+      while (availableZones.length < 2 && maxDistance <= 150) {
+        availableZones = allZones.filter(zoneName => {
+          return getDriveTime(selectedBase, zoneName) <= maxDistance
+        })
+        maxDistance += 30
+      }
+      
+      const chosenZone = availableZones.length > 0 
+        ? availableZones[Math.floor(Math.random() * availableZones.length)]
+        : 'Marbella'
 
       // Step 2: Get morning activity (Beach or Attraction) in that zone
       const morningCandidates = [
@@ -260,12 +288,10 @@ export default function QuickInspiration() {
     }, 600)
   }
 
-  // Generate initial match
+  // Re-generate perfect day when base changes
   useEffect(() => {
-    if (!matchedDay) {
-      generatePerfectDay()
-    }
-  }, [])
+    generatePerfectDay()
+  }, [selectedBase])
 
   // Save the entire matched day
   const saveEntireDay = () => {
