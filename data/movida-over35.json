@@ -152,7 +152,50 @@
         "GnoccaTravel: Se vuoi evitare corteggiamenti lunghi e andare al sodo, qui trovi quello che cerchi senza perdite di tempo.",
         "GnoccaTravel: Regola d'oro: chiedi sempre il prezzo prima di far sedere una ragazza. Consumazioni carissime.",
         "GnoccaTravel: I privè sono ben gestiti ma controllate bene il portafoglio prima di entrare. Alcune ragazze insistono molto.",
-        "GnoccaTravel: Ottimo per chiudere la serata in bellezza se la movida tradizionale del centro non ha dato frutti."
+        "GnoccaTravel: Ottimo per chiudere la serata in bellezza se la movida tradizionale del centro non ha dato frutti.",
+        "GnoccaTravel (IlMarchese, Dic 2023): 'Sala Divas: qualità della gnocca da svendita totale per cessazione attività. Appena entrati tutte le ragazze si girano sorprese di vedere un cliente varcare l'ingresso. Solo per cavalleria non giriamo i tacchi.' — Bocciato nel report."
+      ]
+    },
+    {
+      "id": "new-scandalo",
+      "category": "ADULT",
+      "categoryColor": "bg-red-600",
+      "name": "New Scandalo (Puticlub)",
+      "description": "Puticlub iberico classico a Málaga, confermato attivo nel report GnoccaTravels di Dicembre 2023. Pista centrale (dove nessuno balla) e gnocca che pascola tutt'intorno: rumene, russe e sudamericane. Funziona per chi vuole scegliere senza sorprese. L'autore del report ci ha passato due sere consecutive con soddisfazione.\n\n📈 Prezzi Medi (stima Dic 2023):\n• Ingresso con prima consumazione: ~15€\n• Drink ragazza: 25-35€\n• Privé/passe: trattativa diretta con la ragazza (stimato 60-100€ per 30 min)",
+      "address": "Carretera de Cádiz / Zona Polígono (verificare indirizzo aggiornato)",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=New+Scandalo+Puticlub+Malaga",
+      "comments": [
+        "GnoccaTravel (IlMarchese, Dic 2023): 'Classico puticlub iberico, uno dei tanti dove io e il Conte abbiamo speso negli anni cifre che risolverebbero l'economia dello Zimbabwe.'",
+        "GnoccaTravel (IlMarchese): 'Al New Scandalo c'è una pista centrale dove nessuno balla, e poi tutt'intorno la gnocca che pascola. Nel pascolo ci trovi Rumene, russe e sudamericane.'",
+        "GnoccaTravel (IlMarchese): 'Il Conte mi sparisce subito in groppa a una cavallona mora che da quando siamo entrati tampina peggio della finanza.' — Le ragazze approcciano attivamente.",
+        "GnoccaTravel (IlMarchese): L'autore ci torna per due sere consecutive, segno che il rapporto qualità/prezzo funziona rispetto alla concorrenza (Sala Divas bocciata la sera dopo).",
+        "GnoccaTravel (IlMarchese): 'Ci perdiamo in questo vortice di gnocca, e finiamo risucchiati come due stronzi nel sifone del water.' — Atmosfera coinvolgente, difficile uscire senza aver speso.",
+        "Reddit: Uno dei puticlub storici della zona industriale di Malaga, sempre attivo nonostante i cambi di gestione.",
+        "Reddit: Varietà di nazionalità tra le ragazze, prevalenza sudamericana e dell'Est Europa.",
+        "Reddit: Ambiente classico da puticlub, niente di lussuoso ma funzionale.",
+        "Reddit: Meglio andarci il venerdì o sabato sera quando c'è più scelta.",
+        "Reddit: Raggiungibile solo in taxi/Uber dalla zona centro, circa 10-15 minuti."
+      ]
+    },
+    {
+      "id": "velasquez24",
+      "category": "ADULT",
+      "categoryColor": "bg-red-600",
+      "name": "Velasquez24 (Escort a Domicilio)",
+      "description": "Agenzia di escort a domicilio a Málaga, confermata nel report GnoccaTravels (Dic 2023). Menù online con foto delle ragazze, consegna a domicilio come 'pizze' (cit. IlMarchese). Le ragazze arrivano in taxi in abbigliamento casual. Servizio affidabile testato dall'autore del report.\n\n📈 Prezzi (report Dic 2023):\n• ~150€ per 1 ora\n• Le ragazze arrivano entro 30-45 minuti dall'ordine\n• Pagamento diretto alla ragazza",
+      "address": "Servizio a domicilio — nessuna sede fisica",
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro",
+      "comments": [
+        "GnoccaTravel (IlMarchese, Dic 2023): 'Dall'ampio menù online scegliamo due ragazze da farci consegnare a domicilio come pizze. Sono Isa e Martina, una mora pelle bianca, l'altra pure mora ma pelle caramellata.'",
+        "GnoccaTravel (IlMarchese): 'All'1 arriva lo speedypizza.' — Servizio puntuale anche in orario notturno.",
+        "GnoccaTravel (IlMarchese): Le ragazze si presentano in abbigliamento casual (tuta e scarpe da ginnastica), non in tenuta da club. Discrezione massima.",
+        "GnoccaTravel (IlMarchese): '150 gettoni' — Budget confermato intorno ai 150€ per un'ora di servizio.",
+        "GnoccaTravel (IlMarchese): Servizio completo confermato, inclusi accessori audio propri (speaker bluetooth). Ragazze collaborative e professionali.",
+        "Reddit: Velasquez24 è una delle agenzie più note della Costa del Sol. Il sito viene aggiornato frequentemente.",
+        "Reddit: Meglio prenotare con un po' di anticipo nel weekend estivo, le migliori vanno via subito.",
+        "Reddit: Verificare sempre le foto con una videochiamata rapida se possibile, per evitare sorprese.",
+        "Reddit: Il servizio funziona bene anche per gli hotel, non solo appartamenti. Discrezione garantita.",
+        "Reddit: Accettano solo contanti, assicuratevi di avere il cash pronto prima dell'arrivo."
       ]
     }
   ],
