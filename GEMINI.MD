@@ -106,6 +106,12 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - Integrata la mappatura strategica Costa del Sol (San Pedro, Marbella, Estepona, Nerja, Benalmádena) con gli hotspots di socializzazione, pro/contro e dettagli sul target local e latina residente sia nel JSON (`data/movida-over35.json`) che come nuovo tab "Mappa Costa" in `SingleGuide.tsx` e Appendice 8 nel file markdown.
 - Eseguito con successo `npm run build` per validare la correttezza della build statica.
 
+### 2026-06-03 — Noche de San Juan Playas & Strategie
+- Integrate 4 spiagge della Costa del Sol oltre a quelle di Málaga per i festeggiamenti di San Juan (La Carihuela a Torremolinos, Santa Ana a Benalmádena, El Cable a Marbella, La Rada a Estepona) in `data/san-juan.json`.
+- Aggiornata la pianificazione giornaliera in `data/movida-over35.json` per fare riferimento a queste località target over 35 e con presenza local/latina.
+- Aggiunta la sezione 9 ("Speciale Noche de San Juan Fuori Málaga") nel report `guida_malaga_single_giugno_2026.md` con l'analisi delle spiagge e le "Regole d'Oro" per il posizionamento strategico e l'approccio sulla sabbia.
+- Eseguito con successo `npm run build` ed effettuato il commit e push su git.
+
 
 
 ## Known Gotchas

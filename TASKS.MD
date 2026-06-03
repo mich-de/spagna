@@ -7,6 +7,8 @@ Roadmap for Costa del Sol Travel Dashboard.
 - [x] `[BACKEND]` Include average prices for adult clubs (Sala Divas and Puticlubs) in description and safety guidelines
 - [x] `[BACKEND]` Add Google Play Store package links for Meetic, Badoo, Adopta, Tinder, Bumble, and Happn in JSON data
 - [x] `[BACKEND]` Append the new Costa del Sol multi-zone guide (San Pedro, Marbella, Estepona, Nerja, Benalmádena) to `data/movida-over35.json`
+- [x] `[BACKEND]` Integrate alternative beaches and strategic positioning for Noche de San Juan outside Málaga in `data/san-juan.json` and `data/movida-over35.json`
+- [x] `[DOCUMENTATION]` Append Section 9 (Speciale Noche de San Juan Fuori Málaga) to the downloaded travel guide `guida_malaga_single_giugno_2026.md`
 - [x] `[FRONTEND]` Update `SingleGuide.tsx` to support newlines in descriptions and render Android download buttons
 - [x] `[FRONTEND]` Update `SingleGuide.tsx` to dynamically render comments in a styled container
 - [x] `[FRONTEND]` Reorder sections (place "Movida Over 35" / `SingleGuide.tsx` immediately after "Overview" and before "Base") in `page.tsx` and `SectionNav.tsx`
