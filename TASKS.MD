@@ -2,6 +2,17 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 9: Password Protection, Expense Tracker & Dynamic Routing (2026-06-09)
+- [x] `[DEVOPS]` Comment out static export configurations in `next.config.js` to enable Next.js server-side dynamic routing
+- [x] `[BACKEND]` Implement authorization checker in `middleware.ts` based on `sol-auth` cookie verification
+- [x] `[FRONTEND]` Create secure dynamic `/login` route utilizing Next.js server actions to handle user sessions
+- [x] `[FRONTEND]` Create and integrate the `Expenses.tsx` tracker component using JSON static data files
+- [x] `[BACKEND]` Populate `data/expenses.json` with trip expenses details (flights, lodging, car rental)
+- [x] `[DEVOPS]` Update GitHub actions workflow `.github/workflows/pages-deploy.yml` to compile and verify rather than static pages deployment
+- [x] `[FRONTEND]` Style and render driving route types (AP-7 vs A-7) dynamically in `Logistics.tsx`
+- [x] `[BACKEND]` Streamline descriptions and add new target locales and zones (Fuengirola, Torremolinos) in `data/movida-over35.json`
+- [x] `[DEVOPS]` Verify compilation with `npm run build` and push changes to git
+
 ## Phase 8: Historical Report 2013 & Restaurant Images Integration (2026-06-09)
 - [x] `[BACKEND]` Replace placeholder image URLs in `data/restaurants.json` with authentic Feverup, Tripadvisor, and official restaurant site images
 - [x] `[BACKEND]` Create and populate `"historicalReport"` key in `data/movida-over35.json` with analysis and status tracking from the 2013 GnoccaTravel Malaga forum thread

@@ -142,6 +142,15 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Historical Report 2013 Tab**: Integrated the new `"historical"` tab ("Report Storico 2013") inside `SingleGuide.tsx` dynamically driven by `"historicalReport"` in `data/movida-over35.json`. This visualizes the evolution/status tracking of historical venues from a 2013 GnoccaTravel Málaga forum thread (Velazquez 24, Vendeja 24, Duquesa de Parcent 2, Gagarin Bar).
 - **Venue Previews & Official Links**: Enabled image rendering (`imageUrl`) and official site links (`website`) inside the venues list cards in `SingleGuide.tsx` dynamically if they are provided in the backend JSON data.
 
+### 2026-06-09 — Password Protection, Expense Tracker & Dynamic Routing
+- **Dynamic Routing & Password Protection**: Commented out static export (`output: 'export'`) in `next.config.js` to support dynamic routes and middleware. Added [middleware.ts](file:///d:/nodejs/spagna/middleware.ts) to enforce authorization check using a `sol-auth` cookie (comparing sha256 hash against a password).
+- **Authentication Pages**: Added a dynamic `/login` route (`app/login/page.tsx`, `actions.ts`, and `LoginPageClient.tsx`) utilizing Next.js server actions for login and logout operations.
+- **Expense Tracker Component**: Added and integrated [Expenses.tsx](file:///d:/nodejs/spagna/app/components/Expenses.tsx) component (under `#expenses` section) using [expenses.json](file:///d:/nodejs/spagna/data/expenses.json) data to compute and display total spending, individual payments (MDA vs. ROG), balances, and itemized receipts.
+- **Workflow Build Adjustments**: Renamed `.github/workflows/pages-deploy.yml` to "Build & Verify" to compile the dynamic application on push/PR (since static pages export is no longer used).
+- **Data & UI Refinement**: Streamlined/cleaned descriptions in `movida-over35.json`, added new spots in Malaga Centro and new regions (Fuengirola, Torremolinos) in Costa map, reordered lodging bases with Nerja at the top, and styled driving routes (AP-7 vs A-7) in [Logistics.tsx](file:///d:/nodejs/spagna/app/components/Logistics.tsx).
+- **Validation**: Compiled the production build successfully (`npm run build`) with dynamic routes.
+
+
 
 
 ## Known Gotchas

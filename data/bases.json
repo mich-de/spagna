@@ -1,27 +1,67 @@
 [
   {
+    "name": "Nerja",
+    "score": 9.5,
+    "pros": [
+      "Spiagge e calette naturali tra le migliori dell'Andalusia (Maro, Burriana)",
+      "Centro storico pedonale caratteristico e Balcón de Europa",
+      "Costi medi inferiori rispetto alla costa occidentale",
+      "Attrazioni naturali spettacolari (Cueva de Nerja, Grotte, kayak)",
+      "Plaza Tutti Frutti: movida over 35 autentica con comunità latina",
+      "Burriana: chiringuiti leggendari (Ayo paella a legna)",
+      "Frigiliana: villaggio moresco a 10 minuti, uno dei più belli di Spagna",
+      "Base ideale per costa est: Almuñécar, Vélez-Málaga, Torre del Mar"
+    ],
+    "cons": [
+      "Lontana dalla costa occidentale (Marbella 1h 40min, Estepona 2h)",
+      "Parcheggio in centro molto trafficato in estate",
+      "Meno comoda per escursioni a Ronda o Gibilterra"
+    ],
+    "distance_airport_min": 50,
+    "distance_marbella_min": 100,
+    "distance_nerja_min": 0,
+    "cost_level": "medio",
+    "cost_score": 5,
+    "parking_ease": 5,
+    "nightlife_level": 7,
+    "beach_quality": 10,
+    "authenticity": 9,
+    "social_ease": 9,
+    "videos": [
+      "https://www.youtube.com/watch?v=kYc5e1_N7E0"
+    ],
+    "transcript_insights": [
+      "Playa de Burriana famosa per la paella cotta a legna da Ayo sulla spiaggia",
+      "Cueva de Nerja: 59.000 anni di storia, stalattiti da record mondiale",
+      "Scogliere di Maro: kayak per grotte e cascate d'acqua dolce in mare",
+      "Frigiliana: villaggio moresco bianco, vino moscatello, atmosfera unica",
+      "Plaza Tutti Frutti: epicentro movida 35+ con musica latina"
+    ]
+  },
+  {
     "name": "San Pedro de Alcántara",
-    "score": 9,
+    "score": 8.5,
     "pros": [
       "Posizione centrale tra Marbella e Estepona",
       "Spiagge lunghe e poco affollate",
       "Atmosfera da vero pueblo andaluso",
       "Parcheggi più facili di Marbella",
-      "Ristoranti locali eccellenti",
-      "Vita serale autentica non esclusiva"
+      "Ristoranti locali eccellenti"
     ],
     "cons": [
       "Meno nightlife estrema rispetto a Puerto Banús",
-      "Pochi grandi beach club (devi spostarti)",
-      "Negozi/comfort meno internazionali di Marbella"
+      "Pochi grandi beach club",
+      "Lontana dalla costa est (Nerja 1h 40min)"
     ],
     "distance_airport_min": 65,
     "distance_marbella_min": 12,
+    "distance_nerja_min": 100,
+    "cost_level": "medio-alto",
+    "cost_score": 7,
     "parking_ease": 7,
     "nightlife_level": 6,
     "beach_quality": 9,
     "authenticity": 9,
-    "cost_level": "medio-alto",
     "social_ease": 7,
     "videos": [
       "https://www.youtube.com/watch?v=_p48aPaVjgc",
@@ -30,100 +70,9 @@
       "https://www.youtube.com/watch?v=1UVEFm2Loe4"
     ],
     "transcript_insights": [
-      "Marbella descritta come 'ein ganz anderen Level' rispetto a Mallorca — più esclusiva, più qualità",
-      "Puerto Banús ha 'geile Restaurants, geile Clubs' secondo vlogger tedesco",
-      "Disponibili beach club con 4 piscine + piscina beach club",
-      "Ristorante Picasso a Puerto Banús citato come meta affidabile",
+      "Marbella descritta come 'ein ganz anderen Level' rispetto a Mallorca",
+      "Puerto Banús ha 'geile Restaurants, geile Clubs'",
       "Avvertimento: 'molti Betrügern' (truffatori) dove c'è tanto denaro"
-    ]
-  },
-  {
-    "name": "Benalmádena",
-    "score": 7.5,
-    "pros": [
-      "Vicina all'aeroporto di Málaga (20min)",
-      "Marina con nightlife vivace",
-      "Ottima per la prima notte",
-      "Prezzi più contenuti",
-      "Spiagge carine e ben servite"
-    ],
-    "cons": [
-      "Molto turistica, meno autentica",
-      "Lontana da Marbella (40min)",
-      "Spostamento quotidiano stancante",
-      "Vibe più 'vacanza al pacchetto'"
-    ],
-    "distance_airport_min": 20,
-    "distance_marbella_min": 40,
-    "parking_ease": 6,
-    "nightlife_level": 8,
-    "beach_quality": 6,
-    "authenticity": 4,
-    "cost_level": "medio",
-    "social_ease": 8,
-    "videos": [
-      "https://www.youtube.com/watch?v=XXGBSaAnaWQ",
-      "https://www.youtube.com/watch?v=653y_5dsDjg",
-      "https://www.youtube.com/watch?v=sb83E2t_n6M",
-      "https://www.youtube.com/watch?v=1SvMpmZYlnI",
-      "https://www.youtube.com/watch?v=FLW3g2Rcya0"
-    ],
-    "transcript_insights": [
-      "320+ giorni di sole all'anno, clima perfetto tutto l'anno",
-      "Porto Marina ha ristoranti consigliati: 'Asia' (all-you-can-eat, €20), 'W Restaurant' (cucina asiatica)",
-      "Menu del día (3 portate) €13-15, lun-ven 12:00-16:00 — miglior rapporto qualità/prezzo",
-      "Birra piccola €1.50-2, caffè €1.30, bottiglia vino €7.50, pinta San Miguel €3",
-      "Taxi da AGP 20min (€20-25), treno per Arroyo de la Miel €3",
-      "Palestra gratuita all'aperto sul lungomare",
-      "Spiaggia con chiringuito sulla sabbia, camerieri in acqua",
-      "Sea Life Centre consigliato per famiglie (sconto con Groupon)",
-      "Mercato di Fuengirola il martedì — copie di marca a poco prezzo",
-      "Scherzato: 'Britain in the sun' — grande comunità britannica/irlandese/tedesca/scandinava",
-      "Gita in Marocco via catamarano da Tarifa (45min) consigliata"
-    ]
-  },
-  {
-    "name": "Estepona",
-    "score": 8,
-    "pros": [
-      "Centro storico bellissimo e autentico",
-      "Spiagge eccellenti (Playa del Cristo)",
-      "Atmosfera rilassata e genuina",
-      "Perfetta per giorni slow",
-      "Ristoranti locali di pesce incredibili"
-    ],
-    "cons": [
-      "Lontana da Málaga (85min auto)",
-      "Nightlife quasi assente",
-      "Scomoda per andare a Málaga o Benalmádena",
-      "Richiede più guida per variare"
-    ],
-    "distance_airport_min": 85,
-    "distance_marbella_min": 25,
-    "parking_ease": 8,
-    "nightlife_level": 3,
-    "beach_quality": 9,
-    "authenticity": 9,
-    "cost_level": "medio",
-    "social_ease": 5,
-    "videos": [
-      "https://www.youtube.com/watch?v=FxbwAMf13Ss",
-      "https://www.youtube.com/watch?v=PaifPnJVj6o",
-      "https://www.youtube.com/watch?v=TzruQTWoiT4"
-    ],
-    "transcript_insights": [
-      "Soprannome: 'The Garden of the Costa del Sol'",
-      "325+ giorni di sole all'anno, microclima privilegiato",
-      "20km di costa, centro storico con vie colorate e vasi di fiori",
-      "Plaza de las Flores: il cuore della città, piena di caffetterie",
-      "Playa del Cristo: baia riparata, acqua calma, perfetta per famiglie",
-      "Selwo Aventura: safari park con 2000+ animali",
-      "Ruta de los Murales Artistici: oltre 50 murales nelle strade",
-      "Paseo Marítimo: lungomare frequentato da locali per jogging/passeggiate",
-      "Orquidario: 1500 specie di orchidee in serra di vetro",
-      "Ristoranti: Los Pescadores (pesce, porto), El Patio de Macarena (tapas autentiche, patio fiorito)",
-      "Mercato domenicale al porto per souvenir",
-      "80km da Málaga, ~1h 25m sulla A-7"
     ]
   },
   {
@@ -139,15 +88,17 @@
       "Parcheggio difficilissimo",
       "Costi elevati",
       "Traffico intenso",
-      "Alta stagione = sovraffollata"
+      "Lontana da Nerja (1h 40min)"
     ],
     "distance_airport_min": 55,
     "distance_marbella_min": 0,
+    "distance_nerja_min": 100,
+    "cost_level": "alto",
+    "cost_score": 9,
     "parking_ease": 3,
     "nightlife_level": 9,
     "beach_quality": 7,
     "authenticity": 6,
-    "cost_level": "alto",
     "social_ease": 9,
     "videos": [
       "https://www.youtube.com/watch?v=_p48aPaVjgc",
@@ -157,45 +108,80 @@
       "https://www.youtube.com/watch?v=1UVEFm2Loe4"
     ],
     "transcript_insights": [
-      "Puerto Banús descritto come 'Herz 4 von Marbella' — cuore pulsante",
-      "Parcheggio porto: '25000€ per 3 Monaten' (yacht) — standard di lusso estremo",
-      "Ristorante Picasso a Puerto Banús: pizza, insalata, avocado — citato come meta sicura",
-      "Gran Marbella Resort: 4 piscine + beach club, architettura rustica, palestra con functional training",
-      "Beach club 'Coba Beach Club' a Puerto Banús — consigliato per giornate relax/lusso",
-      "Volo da Germania 3.5h — 'Super gemütlich' per weekende lunghi",
-      "Avvertimento: attenzione ai costi gonfiati in alta stagione a Puerto Banús",
-      "Marbella definita 'ein wunderschöner Ort' — città bellissima da entrambi i vlogger"
+      "Puerto Banús descritto come 'Herz 4 von Marbella'",
+      "Ristorante Picasso a Puerto Banús: citato come meta sicura",
+      "Avvertimento: attenzione ai costi gonfiati in alta stagione"
     ]
   },
   {
-    "name": "Nerja",
-    "score": 8.0,
+    "name": "Estepona",
+    "score": 8,
     "pros": [
-      "Spiagge e calette naturali tra le migliori dell'Andalusia (Maro)",
-      "Centro storico pedonale caratteristico e Balcón de Europa",
-      "Costi medi inferiori rispetto alla costa occidentale (Marbella)",
-      "Attrazioni naturali spettacolari (Cueva de Nerja, fiumi, kayak)"
+      "Centro storico bellissimo e autentico",
+      "Spiagge eccellenti (Playa del Cristo)",
+      "Atmosfera rilassata e genuina",
+      "Perfetta per giorni slow"
     ],
     "cons": [
-      "Lontana dalla costa occidentale (Marbella dista oltre 1h 40m auto)",
-      "Parcheggio in centro molto trafficato in estate",
-      "Meno comoda per fare escursioni a Ronda o Gibilterra"
+      "Lontana da Málaga (85min) e Nerja (2h)",
+      "Nightlife quasi assente",
+      "Richiede più guida per variare"
     ],
-    "distance_airport_min": 50,
-    "distance_marbella_min": 100,
-    "parking_ease": 5,
-    "nightlife_level": 7,
-    "beach_quality": 10,
-    "authenticity": 8,
+    "distance_airport_min": 85,
+    "distance_marbella_min": 25,
+    "distance_nerja_min": 125,
     "cost_level": "medio",
-    "social_ease": 8,
+    "cost_score": 5,
+    "parking_ease": 8,
+    "nightlife_level": 3,
+    "beach_quality": 9,
+    "authenticity": 9,
+    "social_ease": 5,
     "videos": [
-      "https://www.youtube.com/watch?v=kYc5e1_N7E0"
+      "https://www.youtube.com/watch?v=FxbwAMf13Ss",
+      "https://www.youtube.com/watch?v=PaifPnJVj6o",
+      "https://www.youtube.com/watch?v=TzruQTWoiT4"
     ],
     "transcript_insights": [
-      "Playa de Burriana famosa per l'offerta gastronomica, in particolare la paella cotta a legna da Ayo sulla spiaggia",
-      "Cueva de Nerja: attrazione archeologica e naturale con stalattiti da record",
-      "Scogliere di Maro: kayak per esplorare grotte e cascate d'acqua dolce in mare"
+      "Soprannome: 'The Garden of the Costa del Sol'",
+      "325+ giorni di sole all'anno",
+      "Plaza de las Flores: il cuore della città"
+    ]
+  },
+  {
+    "name": "Benalmádena",
+    "score": 7,
+    "pros": [
+      "Vicina all'aeroporto di Málaga (20min)",
+      "Marina con nightlife vivace",
+      "Prezzi più contenuti"
+    ],
+    "cons": [
+      "Molto turistica, meno autentica",
+      "Lontana da Nerja (50min)",
+      "Vibe più 'vacanza al pacchetto'"
+    ],
+    "distance_airport_min": 20,
+    "distance_marbella_min": 40,
+    "distance_nerja_min": 50,
+    "cost_level": "medio",
+    "cost_score": 5,
+    "parking_ease": 6,
+    "nightlife_level": 8,
+    "beach_quality": 6,
+    "authenticity": 4,
+    "social_ease": 8,
+    "videos": [
+      "https://www.youtube.com/watch?v=XXGBSaAnaWQ",
+      "https://www.youtube.com/watch?v=653y_5dsDjg",
+      "https://www.youtube.com/watch?v=sb83E2t_n6M",
+      "https://www.youtube.com/watch?v=1SvMpmZYlnI",
+      "https://www.youtube.com/watch?v=FLW3g2Rcya0"
+    ],
+    "transcript_insights": [
+      "Porto Marina ha ristoranti consigliati",
+      "Menu del día €13-15",
+      "Grande comunità britannica/irlandese/tedesca"
     ]
   }
 ]

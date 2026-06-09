@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt } from 'lucide-react'
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: Compass },
@@ -17,6 +17,7 @@ const sections = [
   { id: 'sanjuan', label: 'San Juan', icon: Flame },
   { id: 'experiences', label: 'Local', icon: Heart },
   { id: 'logistics', label: 'Logistica', icon: Car },
+  { id: 'expenses', label: 'Expenses', icon: Receipt },
   { id: 'budget', label: 'Budget', icon: DollarSign },
 ]
 

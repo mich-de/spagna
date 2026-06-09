@@ -15,10 +15,11 @@ import SanJuan from '@/app/components/SanJuan'
 import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
 import Budget from '@/app/components/Budget'
+import Expenses from '@/app/components/Expenses'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 
-const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'budget']
+const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
@@ -96,6 +97,8 @@ export default function Home() {
         <LocalExperiences />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Logistics />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <Expenses />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Budget />
       </div>

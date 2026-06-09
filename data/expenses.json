@@ -1,0 +1,75 @@
+{
+  "travelers": [
+    { "id": "MDA", "name": "MDA", "color": "#1B4965" },
+    { "id": "ROG", "name": "ROG", "color": "#E07A5F" }
+  ],
+  "expenses": [
+    {
+      "id": "flight-outbound",
+      "category": "Voli",
+      "description": "Volo andata NAP→AGP (FR9660 Ryanair) — 2 pax",
+      "date": "2026-06-04",
+      "paid_by": "MDA",
+      "split": false,
+      "items": [
+        { "label": "MDA — Tariffa Basic", "amount": 93.99 },
+        { "label": "MDA — Bagaglio 20 kg (CONDIVISO con ROG)", "amount": 29.99 },
+        { "label": "MDA — Bagaglio piccolo", "amount": 0, "note": "Compreso" },
+        { "label": "ROG — Tariffa Basic", "amount": 93.99 },
+        { "label": "ROG — Bagaglio piccolo", "amount": 0, "note": "Compreso" }
+      ],
+      "total": 217.97,
+      "payment_method": "PayPal",
+      "note": "MDA ha pagato entrambi i biglietti + bagaglio 20kg condiviso con ROG"
+    },
+    {
+      "id": "flight-return",
+      "category": "Voli",
+      "description": "Volo ritorno AGP→FCO→NAP (ITA Airways AZ91+AZ1271) — 2 pax",
+      "date": "2026-06-04",
+      "paid_by": "MDA",
+      "split": false,
+      "items": [
+        { "label": "MDA — Biglietto ritorno", "amount": 96 },
+        { "label": "MDA — Bagagli + tasse (1x23kg + 1x8kg + rinfresco)", "amount": 37 },
+        { "label": "ROG — Biglietto ritorno + bagagli", "amount": 97, "note": "ROG ha pagato la sua parte" },
+        { "label": "Bagaglio stiva condiviso", "amount": 0, "note": "Condividono lo stesso 23kg bagaglio" }
+      ],
+      "total": 230,
+      "payment_method": "MDA ha pagato 133€, ROG ha pagato 97€",
+      "note": "MDA ha prenotato e pagato il volo ritorno per entrambi (133€). ROG ha pagato 97€ per la sua parte. Condividono 1 solo bagaglio 23kg in stiva."
+    },
+    {
+      "id": "accommodation",
+      "category": "Alloggio",
+      "description": "El Capistrano Village — 6 notti (19-25 giu 2026)",
+      "date": "2026-06-04",
+      "paid_by": "ROG",
+      "split": true,
+      "items": [
+        { "label": "6 notti appartamento/bungalow", "amount": 608 }
+      ],
+      "total": 608,
+      "payment_method": "Booking.com",
+      "note": "Condiviso 50/50 tra MDA e ROG"
+    },
+    {
+      "id": "car-rental",
+      "category": "Auto",
+      "description": "All In Car Hire — Seat Ibiza/Opel Corsa (R/Nº 204429)",
+      "date": "2026-06-04",
+      "paid_by": "TBD",
+      "split": true,
+      "items": [
+        { "label": "Noleggio 6 giorni (19/06 13:30 → 25/06 11:00)", "amount": 137 },
+        { "label": "Costo giornaliero", "amount": 0, "note": "€22,83/giorno" },
+        { "label": "Assicurazione completa", "amount": 0, "note": "Inclusa" },
+        { "label": "Km illimitati Andalusia", "amount": 0, "note": "Inclusi" },
+        { "label": "Assistenza stradale", "amount": 0, "note": "Inclusa" }
+      ],
+      "total": 137,
+      "payment_method": "Da definire (137€ carta / 135€ contanti)",
+      "note": "Condiviso 50/50. Prezzo contanti 135€ se pagato in contanti."
+    }
+  ]
+}

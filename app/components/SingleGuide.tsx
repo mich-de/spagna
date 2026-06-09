@@ -32,6 +32,8 @@ export default function SingleGuide() {
     { id: 'estepona', label: 'Estepona' },
     { id: 'nerja', label: 'Nerja' },
     { id: 'benalmadena', label: 'Benalmádena' },
+    { id: 'fuengirola', label: 'Fuengirola' },
+    { id: 'torremolinos', label: 'Torremolinos' },
   ]
 
   const getActiveLocali = () => {
@@ -43,7 +45,9 @@ export default function SingleGuide() {
       marbella: 'marbella',
       estepona: 'estepona',
       nerja: 'nerjacosta',
-      benalmadena: 'benalmadena'
+      benalmadena: 'benalmadena',
+      fuengirola: 'fuengirola',
+      torremolinos: 'torremolinos'
     }
     const targetZoneId = zoneMap[selectedCity]
     const zone = movidaData.costa.zones.find((z: any) => z.id === targetZoneId)

@@ -185,5 +185,16 @@
     "pairWith": "Aperitivo in centro + cena da El Pulguilla",
     "priority": "must",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Balcon+de+Europa+Nerja"
+  },
+  {
+    "name": "Reale Alcázar di Siviglia",
+    "zone": "Siviglia",
+    "whyVisit": "Palazzo reale mozzafiato con giardini, pavimenti di piastrellate e architettura mudéjar. Patrimonio UNESCO. Le giardini sono le stesse usate per girare Game of Thrones.",
+    "duration": "2-3h",
+    "parking": "Parking Plaza de España (€2/h) o Parking Saba Estación Santa Justa",
+    "cost": "€14.50 (biglietto base) - €21 (con audioguida)",
+    "pairWith": "Cattedrale di Siviglia + tapas nella Triana",
+    "priority": "recommended",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Real+Alcazar+Sevilla"
   }
 ]

@@ -9,33 +9,38 @@
   "driving": {
     "highway": "AP-7 (autostrada costiera, pedaggio) o A-7 (gratuita). AP-7 costa ~€12 da Málaga a Estepona ma è più veloce",
     "recommendation": "Usa AP-7 per spostamenti lunghi e di fretta. A-7 per tratti brevi o panoramici",
-    "traffic_warning": "EVITA: 07:30-09:30 e 17:00-19:30 (ingresso/uscita Málaga e Marbella). SABATO pomeriggio = peggiore",
-    "summer_heat": "Stimata del traffico a giugno: medio-alta. Spostamenti brevi (Marbella-Estepona) gestibili"
+    "traffic_warning": "EVITA: 07:30-09:30 e 17:00-19:30 (ingresso/uscita Málaga). SABATO pomeriggio = peggiore",
+    "summer_heat": "Stimata del traffico a giugno: medio-alta. Spostamenti da Nerja verso ovest gestibili con AP-7"
   },
   "parking": {
+    "nerja": "Parking Burriana (€1.5/h), Parking Centro (€2/h). In estate pieno dalle 11:00 — arrivare presto",
     "malaga": "Parking Alcazaba (€2/h), Parking La Malagueta (€2/h), Parking Centro (€1.5/h)",
-    "marbella": "Parking Casco Antiguo (€2.5/h), Parking Fontanilla (€2/h). ZTL limitata — segui i cartelli",
+    "marbella": "Parking Casco Antiguo (€2.5/h), Parking Fontanilla (€2/h). ZTL limitata",
     "san_pedro": "Lungomare gratuito (vasta area). Raramente pieno",
     "estepona": "Parking Centro (€1/h), Lungomare (€1.5/h)",
     "puerto_banus": "Parking Puerto Banús (€3/h). Costoso ma sicuro",
     "benalmadena": "Parking Puerto Deportivo (€1.5/h)",
+    "frigiliana": "Parking Plaza de la Constitución (gratis, ma pieno). Alternate superiore",
     "general_tip": "MAI lasciare oggetti visibili in auto. MAI. Anche per 5 minuti. ZTL esistono a Málaga e Marbella — segui i cartelli 'Zona Peatonal'",
-    "public_transport_tip": "Per Benalmádena in treno dall'aeroporto: la fermata è 'Arroyo de la Miel'. Non esiste una fermata chiamata 'Benalmádena'."
+    "public_transport_tip": "Per spostamenti locali: bus ALSA da Nerja a Frigiliana (€1.5, 15min), Torre del Mar (€2, 30min)"
   },
   "night_mobility": {
     "taxi": "Disponibili ovunque. App: Uber, Bolt, Cabify. Funzionano bene",
-    "cost": "Málaga centro €8-12, Marbella €10-15, Puerto Banús €15-20",
+    "cost": "Nerja centro €3-5, Málaga €15-20, Marbella €25-30",
     "tip": "SE BEVI >2 drink, NON GUIDARE. I controlli della Guardia Civil a giugno sono frequenti. Le multe per alcol sono salate (€500+)"
   },
-  "drive_times": {
-    "malaga_airport_to_benalmadena": "20min",
-    "malaga_airport_to_marbella": "55min",
-    "malaga_airport_to_san_pedro": "65min",
-    "malaga_airport_to_estepona": "85min",
-    "marbella_to_estepona": "25min",
-    "marbella_to_benalmadena": "40min",
-    "marbella_to_malaga": "50min",
-    "san_pedro_to_estepona": "15min",
-    "san_pedro_to_marbella": "12min"
-  }
+  "drive_times": [
+    { "from": "Málaga Aeroporto", "to": "Nerja", "toll": "45min", "free": "55min", "toll_cost": "~€5" },
+    { "from": "Málaga Aeroporto", "to": "Benalmádena", "toll": "20min", "free": "25min", "toll_cost": "~€2" },
+    { "from": "Málaga Aeroporto", "to": "Marbella", "toll": "40min", "free": "55min", "toll_cost": "~€5" },
+    { "from": "Nerja", "to": "Málaga", "toll": "45min", "free": "55min", "toll_cost": "~€5" },
+    { "from": "Nerja", "to": "Frigiliana", "toll": "10min", "free": "12min", "toll_cost": "Gratuito" },
+    { "from": "Nerja", "to": "Torre del Mar", "toll": "20min", "free": "25min", "toll_cost": "Gratuito" },
+    { "from": "Nerja", "to": "Almuñécar", "toll": "25min", "free": "30min", "toll_cost": "Gratuito" },
+    { "from": "Nerja", "to": "Vélez-Málaga", "toll": "25min", "free": "30min", "toll_cost": "Gratuito" },
+    { "from": "Nerja", "to": "Marbella", "toll": "85min", "free": "100min", "toll_cost": "~€8" },
+    { "from": "Nerja", "to": "Estepona", "toll": "105min", "free": "125min", "toll_cost": "~€10" },
+    { "from": "Marbella", "to": "Estepona", "toll": "20min", "free": "25min", "toll_cost": "~€3" },
+    { "from": "Marbella", "to": "Málaga", "toll": "40min", "free": "50min", "toll_cost": "~€5" }
+  ]
 }

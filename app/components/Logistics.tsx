@@ -68,11 +68,35 @@ export default function Logistics() {
               <h3 className="font-display text-lg font-bold text-notte mb-3 flex items-center gap-2">
                 <Clock className="w-5 h-5 text-terracotta-500" /> Tempi di guida
               </h3>
-              <div className="grid grid-cols-2 gap-2">
-                {Object.entries(log.drive_times).map(([key, val]) => (
-                  <div key={key} className="flex justify-between p-2 bg-terracotta-50/50 rounded-lg text-xs">
-                    <span className="text-mare-600">{key.replace(/_/g, ' ')}</span>
-                    <span className="font-medium text-notte">{val as string}</span>
+              <div className="flex gap-2 mb-3">
+                <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 bg-blue-100 text-blue-700 rounded-full">
+                  <span className="w-2 h-2 rounded-full bg-blue-500" /> AP-7 (pedaggio)
+                </span>
+                <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 bg-green-100 text-green-700 rounded-full">
+                  <span className="w-2 h-2 rounded-full bg-green-500" /> A-7 (gratuita)
+                </span>
+              </div>
+              <div className="space-y-2">
+                {log.drive_times.map((route, i) => (
+                  <div key={i} className="p-2.5 bg-terracotta-50/50 rounded-lg">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-xs font-medium text-notte">
+                        {route.from} → {route.to}
+                      </span>
+                      <span className="text-[10px] text-mare-400">{route.toll_cost}</span>
+                    </div>
+                    <div className="flex gap-2">
+                      <div className="flex-1 flex items-center gap-1.5 px-2 py-1 bg-blue-50 rounded-md">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                        <span className="text-[10px] text-blue-700 font-medium">{route.toll}</span>
+                        <span className="text-[9px] text-blue-500">pedaggio</span>
+                      </div>
+                      <div className="flex-1 flex items-center gap-1.5 px-2 py-1 bg-green-50 rounded-md">
+                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
+                        <span className="text-[10px] text-green-700 font-medium">{route.free}</span>
+                        <span className="text-[9px] text-green-500">gratuita</span>
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>

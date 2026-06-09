@@ -13,7 +13,9 @@ import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
 
 const attributes = [
   { key: 'distance_airport_min', label: 'Distanza aeroporto', suffix: ' min', invert: true },
+  { key: 'distance_nerja_min', label: 'Distanza da Nerja', suffix: ' min', invert: true },
   { key: 'distance_marbella_min', label: 'Distanza Marbella', suffix: ' min', invert: true },
+  { key: 'cost_score', label: 'Costi', suffix: '/10', invert: true },
   { key: 'parking_ease', label: 'Parcheggio', suffix: '/10', max: 10 },
   { key: 'nightlife_level', label: 'Nightlife', suffix: '/10', max: 10 },
   { key: 'beach_quality', label: 'Spiagge', suffix: '/10', max: 10 },
