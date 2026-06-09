@@ -2,6 +2,13 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 8: Historical Report 2013 & Restaurant Images Integration (2026-06-09)
+- [x] `[BACKEND]` Replace placeholder image URLs in `data/restaurants.json` with authentic Feverup, Tripadvisor, and official restaurant site images
+- [x] `[BACKEND]` Create and populate `"historicalReport"` key in `data/movida-over35.json` with analysis and status tracking from the 2013 GnoccaTravel Malaga forum thread
+- [x] `[FRONTEND]` Add `"historical"` tab ("Report Storico 2013") to `SingleGuide.tsx` rendering the historical report data, status updates of past venues, and original link
+- [x] `[FRONTEND]` Support rendering of venue image previews (`imageUrl`) and official websites (`website`) in the main venues listing in `SingleGuide.tsx`
+- [x] `[DEVOPS]` Verify compilation with `npm run build` and push the updates to git
+
 ## Phase 7: Lodging Guide & Detailed Action Plan for Single Over 35 (2026-06-03)
 - [x] `[BACKEND]` Create and populate `"alloggio"` key in `data/movida-over35.json` with detailed strategies for 4 key areas
 - [x] `[FRONTEND]` Add `"alloggio"` tab ("Dove Alloggiare") to `SingleGuide.tsx` and render its contents beautifully in a responsive grid

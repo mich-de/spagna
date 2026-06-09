@@ -137,6 +137,12 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Offline Guide Synchronization**: Updated Section 5 (Piano d'Azione) and appended Section 10 (Dove Alloggiare) in the downloaded guide `C:\Users\mdeangelis\Downloads\guida_malaga_single_giugno_2026.md`.
 - **Validation**: Compiled the static build successfully (`npm run build`) with zero compiler or type errors.
 
+### 2026-06-09 — Historical Report 2013 & Restaurant Images Integration
+- **Restaurant Images**: Replaced placeholder Wikipedia image URLs in `data/restaurants.json` with actual authentic photos from Feverup, Tripadvisor, and official restaurant websites to enhance premium aesthetics.
+- **Historical Report 2013 Tab**: Integrated the new `"historical"` tab ("Report Storico 2013") inside `SingleGuide.tsx` dynamically driven by `"historicalReport"` in `data/movida-over35.json`. This visualizes the evolution/status tracking of historical venues from a 2013 GnoccaTravel Málaga forum thread (Velazquez 24, Vendeja 24, Duquesa de Parcent 2, Gagarin Bar).
+- **Venue Previews & Official Links**: Enabled image rendering (`imageUrl`) and official site links (`website`) inside the venues list cards in `SingleGuide.tsx` dynamically if they are provided in the backend JSON data.
+
+
 
 ## Known Gotchas
 

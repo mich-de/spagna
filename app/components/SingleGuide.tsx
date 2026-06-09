@@ -73,6 +73,7 @@ export default function SingleGuide() {
     { id: 'nerja', label: 'Focus Nerja', icon: '🏖️' },
     { id: 'dating', label: 'Dating & Social App', icon: '📱' },
     { id: 'plan', label: 'Piano d\'Azione', icon: '📅' },
+    { id: 'historical', label: 'Report Storico 2013', icon: '📜' },
     { id: 'sicurezza', label: 'Sicurezza & Logistica', icon: '🛡️' },
   ]
 
@@ -259,6 +260,17 @@ export default function SingleGuide() {
                         </span>
                         {locale.name}
                       </p>
+
+                      {locale.imageUrl && (
+                        <div className="mt-3 relative h-32 sm:h-40 w-full overflow-hidden rounded-lg border border-terracotta-100/10">
+                          <img 
+                            src={locale.imageUrl} 
+                            alt={locale.name}
+                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          />
+                        </div>
+                      )}
+
                       <p className="text-xs text-mare-700 mt-2 leading-relaxed whitespace-pre-line">
                         {locale.description}
                       </p>
@@ -318,6 +330,21 @@ export default function SingleGuide() {
                               <MapPin className={`w-3.5 h-3.5 shrink-0 ${locale.category === 'ADULT' ? 'text-red-500' : 'text-terracotta-500'}`} />
                               <span className="truncate max-w-[220px] sm:max-w-none">{locale.address}</span>
                             </a>
+                            {locale.website && (
+                              <a
+                                href={locale.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center gap-1 text-xs transition-colors ${
+                                  locale.category === 'ADULT' 
+                                    ? 'text-red-700 hover:text-red-900' 
+                                    : 'text-mare-600 hover:text-terracotta-600'
+                                } py-0.5`}
+                              >
+                                <ExternalLink className={`w-3.5 h-3.5 shrink-0 ${locale.category === 'ADULT' ? 'text-red-500' : 'text-terracotta-500'}`} />
+                                <span className="truncate max-w-[150px] sm:max-w-none">Sito Ufficiale</span>
+                              </a>
+                            )}
                             {locale.instagram && (
                               <a
                                 href={locale.instagram}
@@ -729,6 +756,66 @@ export default function SingleGuide() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* REPORT STORICO 2013 */}
+            {activeTab === 'historical' && movidaData.historicalReport && (
+              <div className="space-y-4 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
+                <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-2">
+                  <span>📜 {movidaData.historicalReport.title}</span>
+                </h3>
+                
+                <div className="p-3 bg-red-50/40 rounded-xl border border-red-200/20 text-xs italic text-red-800 leading-relaxed mb-4 flex items-start gap-2">
+                  <ShieldAlert className="w-4 h-4 shrink-0" />
+                  <div>
+                    <strong>{movidaData.historicalReport.warning}</strong>
+                  </div>
+                </div>
+
+                <div className="bg-white/80 p-4 rounded-xl border border-terracotta-100/20 card-shadow mb-4">
+                  <p className="text-sm font-bold text-notte mb-2">Analisi dell&apos;epoca:</p>
+                  <p className="text-xs text-mare-750 leading-relaxed italic">
+                    &ldquo;{movidaData.historicalReport.analysis.vibe}&rdquo;
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <p className="text-xs font-bold text-terracotta-600 uppercase tracking-wider">Spot Citati (Evoluzione):</p>
+                    <div className="space-y-2">
+                      {movidaData.historicalReport.analysis.keySpots.map((spot: any, idx: number) => (
+                        <div key={idx} className="p-2.5 bg-white/80 rounded-lg border border-terracotta-100/10 text-xs">
+                          <div className="flex justify-between items-center mb-1">
+                            <span className="font-bold text-notte">{spot.name}</span>
+                            <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold ${spot.status === 'Chiuso/Scomparso' ? 'bg-red-100 text-red-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                              {spot.status}
+                            </span>
+                          </div>
+                          <p className="text-[10px] text-mare-600 italic leading-snug">{spot.note}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <p className="text-xs font-bold text-terracotta-600 uppercase tracking-wider">Tattiche del Tempo:</p>
+                    <div className="p-3 bg-amber-50/30 rounded-xl border border-amber-200/20 text-xs text-mare-750 leading-relaxed">
+                      {movidaData.historicalReport.analysis.tactics}
+                    </div>
+                    <div className="pt-2">
+                      <a 
+                        href={movidaData.historicalReport.analysis.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-2 bg-notte text-white rounded-lg text-xs font-bold hover:bg-terracotta-600 transition-all w-full justify-center shadow-sm"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        Leggi Report Originale (2013)
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
