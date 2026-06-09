@@ -18,15 +18,23 @@ import Budget from '@/app/components/Budget'
 import Expenses from '@/app/components/Expenses'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
+import PasswordWall from '@/app/components/PasswordWall'
 
 const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
   const [mounted, setMounted] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
 
   useEffect(() => {
     setMounted(true)
+    if (typeof window !== 'undefined') {
+      const savedHash = localStorage.getItem('sol-auth')
+      if (savedHash === '2beb6b5fe3d7bdf658da84d6ce4252d853f7d4865e025f6b3970e39a3777fd4f') {
+        setIsAuthenticated(true)
+      }
+    }
   }, [])
 
   const handleSectionChange = useCallback((id: string) => {
@@ -63,6 +71,10 @@ export default function Home() {
 
   if (!mounted) {
     return <div className="min-h-screen bg-sabbia" suppressHydrationWarning />
+  }
+
+  if (!isAuthenticated) {
+    return <PasswordWall onAuthenticated={() => setIsAuthenticated(true)} />
   }
 
   return (

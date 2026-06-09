@@ -2,6 +2,14 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 10: Client-side Password Protection & Static Export Restore (2026-06-09)
+- [x] `[DEVOPS]` Restore static export configuration (`output: 'export'`) in `next.config.js` for GitHub Pages hosting compatibility
+- [x] `[FRONTEND]` Implement client-side `PasswordWall.tsx` matching the visual design, storing hash checks in `localStorage`
+- [x] `[FRONTEND]` Wrap the main application entry in `app/page.tsx` with the `PasswordWall` component
+- [x] `[DEVOPS]` Delete server-side `middleware.ts` and the dynamic backend `/login` route
+- [x] `[DEVOPS]` Restore `.github/workflows/pages-deploy.yml` to compile and deploy to GitHub Pages
+- [x] `[DEVOPS]` Verify static build compilation locally and push changes to trigger deployment action
+
 ## Phase 9: Password Protection, Expense Tracker & Dynamic Routing (2026-06-09)
 - [x] `[DEVOPS]` Comment out static export configurations in `next.config.js` to enable Next.js server-side dynamic routing
 - [x] `[BACKEND]` Implement authorization checker in `middleware.ts` based on `sol-auth` cookie verification

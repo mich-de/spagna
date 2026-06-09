@@ -151,6 +151,14 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Validation**: Compiled the production build successfully (`npm run build`) with dynamic routes.
 - **Password Verification**: Verified that the `PASSWORD_HASH` value matches the SHA-256 hash of `"safado"` and confirmed that redirect behavior works correctly when accessing the root page without the cookie.
 
+### 2026-06-09 — Client-side Password Protection & Static Export Restore
+- **Static Hosting Fix**: Restored static export configuration (`output: 'export'` in `next.config.js`) so that updates can be deployed directly to GitHub Pages.
+- **Client-side Password Wall**: Replaced backend `middleware.ts` and dynamic route `/login` with a client-side [PasswordWall.tsx](file:///d:/nodejs/spagna/app/components/PasswordWall.tsx) wrapper. This reads and writes session validation to `localStorage` and hashes input client-side (comparing against the SHA-256 hash of `"safado"`).
+- **Home Integration**: Wrapped the main application entry in [page.tsx](file:///d:/nodejs/spagna/app/page.tsx) with the new `PasswordWall` component to enforce access check on initial mount.
+- **Workflow Restore**: Restored `.github/workflows/pages-deploy.yml` to compile and publish the `out/` folder to GitHub Pages.
+- **Validation**: Verified successful static export via local `npm run build`.
+
+
 
 
 
