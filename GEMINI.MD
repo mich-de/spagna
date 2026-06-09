@@ -149,6 +149,8 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Workflow Build Adjustments**: Renamed `.github/workflows/pages-deploy.yml` to "Build & Verify" to compile the dynamic application on push/PR (since static pages export is no longer used).
 - **Data & UI Refinement**: Streamlined/cleaned descriptions in `movida-over35.json`, added new spots in Malaga Centro and new regions (Fuengirola, Torremolinos) in Costa map, reordered lodging bases with Nerja at the top, and styled driving routes (AP-7 vs A-7) in [Logistics.tsx](file:///d:/nodejs/spagna/app/components/Logistics.tsx).
 - **Validation**: Compiled the production build successfully (`npm run build`) with dynamic routes.
+- **Password Verification**: Verified that the `PASSWORD_HASH` value matches the SHA-256 hash of `"safado"` and confirmed that redirect behavior works correctly when accessing the root page without the cookie.
+
 
 
 
