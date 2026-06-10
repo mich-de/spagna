@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Receipt, CreditCard, ArrowRight, Users } from 'lucide-react'
+import { Receipt, CreditCard, ArrowRight, Users, ReceiptText } from 'lucide-react'
 import expensesData from '@/data/expenses.json'
 
 const travelers = expensesData.travelers
@@ -28,10 +28,18 @@ export default function Expenses() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Spese sostenute</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Expenses</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <ReceiptText className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Cassa Comune</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Gestione <span className="italic font-medium text-terracotta-500">Spese</span> Effettive
+          </h2>
+          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-2xl font-body leading-relaxed">
+            Monitoraggio in tempo reale dei pagamenti effettuati e bilancio tra i partecipanti.
+          </p>
         </motion.div>
 
         {/* Riepilogo rapido */}

@@ -306,15 +306,23 @@ export default function QuickInspiration() {
       <div className="max-w-[1920px] mx-auto">
         
         {/* Title */}
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-8">
-          <div>
-            <div className="flex items-center gap-1.5 text-terracotta-500 mb-1">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-10">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-2 text-terracotta-500 mb-2">
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-semibold uppercase tracking-wider">Idee Volanti</span>
+              <span className="text-sm font-medium uppercase tracking-[0.3em]">Idee Volanti</span>
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Centro Ispirazione</h2>
-            <p className="text-mare-700/70 text-sm mt-1">Prendi spunti immediati ed esplora combinazioni ideali per la tua giornata</p>
-          </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+              Centro <span className="italic font-medium text-terracotta-500">Ispirazione</span>
+            </h2>
+            <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-2xl font-body leading-relaxed">
+              Prendi spunti immediati ed esplora combinazioni ideali per la tua giornata andalusa.
+            </p>
+          </motion.div>
 
           {/* Mode Switcher Tabs */}
           <div className="flex p-1 bg-white/60 border border-terracotta-100/40 rounded-xl max-w-sm w-full md:w-auto">

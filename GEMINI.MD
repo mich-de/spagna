@@ -173,11 +173,21 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 
 
 
+### 2026-06-10 — Premium Design Overhaul: "Mediterranean Luxury Revival"
+- **Design System Correction**: Fixed the `terracotta` scale in `tailwind.config.mts` (previously green, now actual reddish-clay clay shades).
+- **Typography Restoration**: Restored **Playfair Display** as the primary heading font, replacing the generic Poppins for a more refined, editorial feel.
+- **Atmospheric Texture**: Applied a global `.noise-bg` texture to the background to create an organic, high-end paper/sand surface feel.
+- **Ambient Depth**: Introduced soft, slowly animating mesh gradients (sabbia/mare/oro) in the background of main routes.
+- **Editorial Polish**: Refined all section headers with magazine-style typography, using tracking and italicized accents for key terms.
+- **Bespoke Interaction**: Implemented a custom `CustomCursor` (luxury gold ring) that reacts to hover states across the dashboard.
+- **Validation**: Verified with a clean static production build (`npm run build`).
+
 ## Known Gotchas
 
 1. **Tailwind v4 `@config`**: Must be present. See above.
 2. **Fontsource v5**: Import `400-italic.css`, not `italic.css`
-3. **Bundle note**: Page is ~177 kB (279 kB first load). YouTube thumbnails are external images, not bundled.
-4. **Port**: Dev server may use 3001 if 3000 is occupied.
-5. **Hydration Mismatches (Browser Extensions)**: Extensions (like Brave or adblockers) can inject attributes such as `bis_skin_checked` during load. A global inline script in `RootLayout` observes and removes them before React hydrates, resolving console hydration overlays. Keep `suppressHydrationWarning` active on root wrapper nodes (`html`, `body`, etc.) as a fallback.
-6. **Next.js static export race condition on Windows**: When running `npm run build` immediately after a clean sweep, Next.js page generation might occasionally fail with a `PageNotFoundError` or `webpack-runtime.js` type error due to Windows disk write latency. Simply running `npm run build` a second time resolves it.
+3. **Custom Cursor**: Only active on `lg` screens (hidden on mobile) for better UX.
+4. **Bundle note**: Page is ~187 kB (348 kB first load). YouTube thumbnails are external images, not bundled.
+5. **Port**: Dev server may use 3001 if 3000 is occupied.
+6. **Hydration Mismatches (Browser Extensions)**: Extensions (like Brave or adblockers) can inject attributes such as `bis_skin_checked` during load. A global inline script in `RootLayout` observes and removes them before React hydrates, resolving console hydration overlays. Keep `suppressHydrationWarning` active on root wrapper nodes (`html`, `body`, etc.) as a fallback.
+7. **Next.js static export race condition on Windows**: When running `npm run build` immediately after a clean sweep, Next.js page generation might occasionally fail with a `PageNotFoundError` or `webpack-runtime.js` type error due to Windows disk write latency. Simply running `npm run build` a second time resolves it.

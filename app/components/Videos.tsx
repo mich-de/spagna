@@ -46,11 +46,18 @@ export default function Videos() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Ispirati</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Video & Guide</h2>
-          <p className="text-mare-700/70 mt-1">Video selezionati per scoprire la Costa del Sol prima di partire</p>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Film className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Ispirati</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Video & <span className="italic font-medium text-terracotta-500">Guide</span>
+          </h2>
+          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-2xl font-body leading-relaxed">
+            Video selezionati per scoprire le atmosfere e i segreti della Costa del Sol prima di partire.
+          </p>
         </motion.div>
 
         {/* Filter bar */}

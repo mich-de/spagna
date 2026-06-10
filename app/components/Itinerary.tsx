@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, Clock, Sunrise, Sunset, Moon, Car, DollarSign, Sparkles } from 'lucide-react'
+import { ChevronDown, Clock, Sunrise, Sunset, Moon, Car, DollarSign, Sparkles, Calendar } from 'lucide-react'
 import itineraryData from '@/data/itinerary.json'
 
 function getEnergyBadge(level: string) {
@@ -130,10 +130,24 @@ export default function Itinerary() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass p-4 sm:p-6 rounded-2xl mb-8"
+          className="glass p-6 sm:p-8 rounded-2xl mb-10 border border-terracotta-100/40 relative overflow-hidden"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Piano giornaliero</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Itinerario</h2>
+          {/* Decorative accents */}
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-terracotta-100/20 rounded-full blur-3xl" />
+          <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-mare-100/20 rounded-full blur-2xl" />
+
+          <div className="relative z-10">
+            <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+              <Calendar className="w-4 h-4" />
+              <span className="text-sm font-medium uppercase tracking-[0.3em]">Piano giornaliero</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+              Il Tuo <span className="italic font-medium text-terracotta-500">Programma</span> di Viaggio
+            </h2>
+            <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+              Sette giorni tra <span className="text-terracotta-400 font-semibold">Málaga</span> e la <span className="text-terracotta-400 font-semibold">Costa del Sol</span>. Un itinerario dinamico che unisce relax, scoperta e la magia della Noche de San Juan.
+            </p>
+          </div>
         </motion.div>
 
         {/* BASE ADAPTATION BADGE */}

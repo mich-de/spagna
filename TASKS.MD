@@ -2,6 +2,14 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 12: Premium Design Overhaul — "Mediterranean Luxury Revival" (2026-06-10)
+- [x] `[DESIGN]` Correct `terracotta` color scale (reddish-clay) and restore `Playfair Display` typography
+- [x] `[FRONTEND]` Implement global atmospheric noise texture (`.noise-bg`)
+- [x] `[FRONTEND]` Add ambient animating mesh gradients to home and itinerary backgrounds
+- [x] `[FRONTEND]` Refine all section headers with editorial magazine-style typography (italics, tracking)
+- [x] `[FRONTEND]` Create and integrate bespoke `CustomCursor` (luxury gold ring interaction)
+- [x] `[FRONTEND]` Production build verification (0 errors)
+
 ## Phase 11: Boat Tours, Markets & Multi-page Routing (2026-06-10)
 - [x] `[FRONTEND]` Create `BoatTours.tsx` loading data from `boat-tours.json` with filters and search
 - [x] `[FRONTEND]` Create `Markets.tsx` loading data from `markets.json` with city/day filters and tips accordion

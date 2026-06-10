@@ -113,10 +113,18 @@ export default function Beaches() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Costa del Sol</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Spiagge consigliate</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Waves className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Costa del Sol</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Spiagge <span className="italic font-medium text-terracotta-500">Consigliate</span>
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Una selezione curata dei litorali più iconici, dalle calette selvagge di <span className="text-terracotta-400 font-semibold">Maro</span> alle spiagge esclusive di <span className="text-terracotta-400 font-semibold">Marbella</span>.
+          </p>
         </motion.div>
 
         {/* FILTER BAR — responsive container */}

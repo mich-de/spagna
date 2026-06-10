@@ -87,10 +87,18 @@ export default function Nightlife() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Dopo il tramonto</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Vita notturna</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <VenetianMask className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Dopo il Tramonto</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Vita <span className="italic font-medium text-terracotta-500">Notturna</span>
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Dal glamour scintillante di <span className="text-terracotta-400 font-semibold">Puerto Banús</span> alle piazze vibranti di <span className="text-terracotta-400 font-semibold">Málaga Centro</span>. Una mappa delle notti andaluse.
+          </p>
         </motion.div>
 
         {/* Zone filter buttons */}

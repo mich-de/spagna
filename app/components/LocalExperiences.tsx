@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { Heart, MapPin, Clock, DollarSign, Lightbulb, Map, Star, Car } from 'lucide-react'
+import { Heart, MapPin, Clock, DollarSign, Lightbulb, Map, Star, Car, Compass } from 'lucide-react'
 import experiences from '@/data/local-experiences.json'
 import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
 
@@ -74,15 +74,22 @@ export default function LocalExperiences() {
   return (
     <section id="experiences" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
       <div className="max-w-[1920px] mx-auto">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Autenticità</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Esperienze da locale</h2>
-            <p className="text-mare-700/70 mt-1">15 modi per vivere la Costa del Sol come un residente</p>
+            <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+              <Compass className="w-4 h-4" />
+              <span className="text-sm font-medium uppercase tracking-[0.3em]">Vivere come un Locale</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+              Esperienze <span className="italic font-medium text-terracotta-500">Autentiche</span>
+            </h2>
+            <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-2xl font-body leading-relaxed">
+              Una selezione curata per scoprire l&apos;anima vera dell&apos;Andalusia, oltre i circuiti turistici convenzionali.
+            </p>
           </motion.div>
           
           <button

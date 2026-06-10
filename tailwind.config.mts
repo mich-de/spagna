@@ -9,6 +9,18 @@ const config: Config = {
       colors: {
         sabbia: '#fcf7ec',
         terracotta: {
+          50: '#fdf4f2',
+          100: '#fbe6e1',
+          200: '#f8cdc2',
+          300: '#f3a996',
+          400: '#eb7a5f',
+          500: '#e07a5f',
+          600: '#c95d43',
+          700: '#a74b37',
+          800: '#8a3f2f',
+          900: '#74382b',
+        },
+        salvia: {
           50: '#e8f9f5',
           100: '#c5f3e4',
           200: '#9aeac8',
@@ -37,7 +49,7 @@ const config: Config = {
         notte: '#0f3e4a',
       },
       fontFamily: {
-        display: ['Poppins', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Poppins', 'system-ui', 'sans-serif'],
         body: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {

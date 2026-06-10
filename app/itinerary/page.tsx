@@ -6,6 +6,8 @@ import SectionNav from '@/app/components/SectionNav'
 import Itinerary from '@/app/components/Itinerary'
 import TripPlanner from '@/app/components/TripPlanner'
 import PasswordWall from '@/app/components/PasswordWall'
+import CustomCursor from '@/app/components/CustomCursor'
+import { motion } from 'framer-motion'
 
 export default function ItineraryPage() {
   const router = useRouter()
@@ -41,11 +43,43 @@ export default function ItineraryPage() {
   }
 
   return (
-    <main className="min-h-screen bg-sabbia" suppressHydrationWarning>
+    <main className="min-h-screen bg-sabbia relative overflow-x-hidden" suppressHydrationWarning>
+      <CustomCursor />
+
+      {/* ─── Ambient Mesh Gradients ─── */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <motion.div 
+          animate={{
+            scale: [1, 1.1, 1],
+            rotate: [0, 5, 0],
+            x: [0, 50, 0],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute -top-[20%] -right-[10%] w-[60%] h-[60%] bg-terracotta-100/20 rounded-full blur-[120px]" 
+        />
+        <motion.div 
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, -10, 0],
+            x: [0, -40, 0],
+          }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute top-[20%] -left-[15%] w-[50%] h-[70%] bg-mare-100/20 rounded-full blur-[100px]" 
+        />
+        <motion.div 
+          animate={{
+            scale: [1, 1.15, 1],
+            y: [0, 60, 0],
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+          className="absolute bottom-[10%] right-[5%] w-[45%] h-[50%] bg-oro/10 rounded-full blur-[140px]" 
+        />
+      </div>
+
       <SectionNav activeSection="itinerary" onSectionChange={handleSectionChange} />
       <TripPlanner />
 
-      <div className="max-w-[1920px] mx-auto py-8" suppressHydrationWarning>
+      <div className="max-w-[1920px] mx-auto py-8 relative z-10" suppressHydrationWarning>
         <Itinerary />
       </div>
 

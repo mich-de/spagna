@@ -285,10 +285,18 @@ export default function BaseSelection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Analisi strategica</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Scelta della base</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <MapPin className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Analisi Strategica</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Scelta della <span className="italic font-medium text-terracotta-500">Base</span> Operativa
+          </h2>
+          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-3xl font-body leading-relaxed">
+            Dove alloggiare per ottimizzare spostamenti e atmosfera? Un confronto analitico tra le perle della costa per trovare il tuo punto di partenza ideale.
+          </p>
         </motion.div>
 
         <div className="relative">

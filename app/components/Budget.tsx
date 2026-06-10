@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { TrendingUp, Wallet } from 'lucide-react'
+import { TrendingUp, Wallet, DollarSign } from 'lucide-react'
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell
 } from 'recharts'
@@ -68,10 +68,18 @@ export default function Budget() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Pianificazione finanziaria</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Budget</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <DollarSign className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Finanze di Viaggio</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Analisi del <span className="italic font-medium text-terracotta-500">Budget</span>
+          </h2>
+          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-2xl font-body leading-relaxed">
+            Una stima dettagliata dei costi per garantire un&apos;esperienza premium senza sorprese.
+          </p>
         </motion.div>
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">

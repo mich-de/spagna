@@ -47,11 +47,16 @@ export default function Markets() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Tradizioni Locali</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Mercati & Rastro</h2>
-          <p className="text-sm text-mare-600 mt-2 max-w-3xl leading-relaxed">
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Store className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Tradizioni Locali</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Mercati & <span className="italic font-medium text-terracotta-500">Rastro</span>
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
             {marketsData.intro}
           </p>
         </motion.div>

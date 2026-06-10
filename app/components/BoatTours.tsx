@@ -2,16 +2,17 @@
 
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Search, MapPin, Clock, Users, Anchor, ExternalLink, MessageSquare, Ship, DollarSign } from 'lucide-react'
+import { Search, MapPin, Clock, Users, Anchor, ExternalLink, MessageSquare, Ship, DollarSign, Phone, Globe } from 'lucide-react'
 import toursData from '@/data/boat-tours.json'
 
-const tourTypes = ['Tutti', 'catamaran', 'boat', 'sailboat', 'rental']
+const tourTypes = ['Tutti', 'catamaran', 'boat', 'sailboat', 'rental', 'kayak']
 
 const typeLabels: Record<string, { label: string; icon: string; bg: string; text: string }> = {
   catamaran: { label: 'Catamarano', icon: '⛵', bg: 'bg-blue-500/10', text: 'text-blue-500' },
   boat: { label: 'Motoscafo', icon: '🚤', bg: 'bg-emerald-500/10', text: 'text-emerald-500' },
   sailboat: { label: 'Barca a Vela', icon: '⛵', bg: 'bg-indigo-500/10', text: 'text-indigo-500' },
   rental: { label: 'Noleggio', icon: '⚓', bg: 'bg-amber-500/10', text: 'text-amber-500' },
+  kayak: { label: 'Kayak', icon: '🚣', bg: 'bg-teal-500/10', text: 'text-teal-500' },
 }
 
 export default function BoatTours() {
@@ -39,10 +40,18 @@ export default function BoatTours() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Esperienze in Mare</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Giri in Barca & Catamarano</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Anchor className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Esperienze in Mare</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Escursioni in <span className="italic font-medium text-terracotta-500">Barca</span>
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Dal catamarano al tramonto alle spedizioni per l&apos;avvistamento dei delfini. Scopri il fascino del <span className="text-terracotta-400 font-semibold">Mediterraneo</span> da una prospettiva privilegiata.
+          </p>
         </motion.div>
 
         {/* Filters */}
@@ -157,6 +166,50 @@ export default function BoatTours() {
                         </span>
                       ))}
                     </div>
+
+                    {/* Recommended Agency Card */}
+                    {tour.agency && (
+                      <div className="mb-4 p-3 bg-[#faf8f5]/80 rounded-xl border border-terracotta-100/20 text-xs shadow-sm">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-bold text-notte text-xs flex items-center gap-1.5">
+                            <Ship className="w-3.5 h-3.5 text-terracotta-500" /> {tour.agency.name}
+                          </span>
+                          <span className="text-[9px] text-emerald-600 bg-emerald-50 border border-emerald-100/50 px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">
+                            Consigliata
+                          </span>
+                        </div>
+                        <div className="space-y-1.5 text-mare-750/90 text-[11px]">
+                          {tour.agency.phone && (
+                            <div className="flex items-center gap-1.5">
+                              <Phone className="w-3 h-3 text-mare-400" />
+                              <a href={`tel:${tour.agency.phone.replace(/\s+/g, '')}`} className="hover:text-terracotta-600 transition-colors font-medium">
+                                {tour.agency.phone}
+                              </a>
+                            </div>
+                          )}
+                          {tour.agency.address && (
+                            <div className="flex items-start gap-1.5">
+                              <MapPin className="w-3 h-3 text-mare-400 shrink-0 mt-0.5" />
+                              <span className="line-clamp-1 hover:line-clamp-none transition-all cursor-default">
+                                {tour.agency.address}
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                        {tour.agency.website && (
+                          <div className="mt-2 flex justify-end">
+                            <a
+                              href={tour.agency.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 text-[10px] font-bold text-mare-600 hover:text-terracotta-600 transition-colors bg-white px-2.5 py-1 rounded-lg border border-terracotta-100/30 shadow-sm"
+                            >
+                              <Globe className="w-3 h-3" /> Sito Web <ExternalLink className="w-2.5 h-2.5" />
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Booking and Comments Footer */}

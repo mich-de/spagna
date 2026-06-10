@@ -21,6 +21,7 @@ import Expenses from '@/app/components/Expenses'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 import PasswordWall from '@/app/components/PasswordWall'
+import CustomCursor from '@/app/components/CustomCursor'
 
 const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'beaches', 'boat-tours', 'food', 'markets', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
 
@@ -98,11 +99,43 @@ function HomeContent() {
   }
 
   return (
-    <main className="min-h-screen bg-sabbia" suppressHydrationWarning>
+    <main className="min-h-screen bg-sabbia relative overflow-x-hidden" suppressHydrationWarning>
+      <CustomCursor />
+      
+      {/* ─── Ambient Mesh Gradients ─── */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <motion.div 
+          animate={{
+            scale: [1, 1.1, 1],
+            rotate: [0, 5, 0],
+            x: [0, 50, 0],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute -top-[20%] -right-[10%] w-[60%] h-[60%] bg-terracotta-100/20 rounded-full blur-[120px]" 
+        />
+        <motion.div 
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, -10, 0],
+            x: [0, -40, 0],
+          }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute top-[20%] -left-[15%] w-[50%] h-[70%] bg-mare-100/20 rounded-full blur-[100px]" 
+        />
+        <motion.div 
+          animate={{
+            scale: [1, 1.15, 1],
+            y: [0, 60, 0],
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+          className="absolute bottom-[10%] right-[5%] w-[45%] h-[50%] bg-oro/10 rounded-full blur-[140px]" 
+        />
+      </div>
+
       <SectionNav activeSection={activeSection} onSectionChange={handleSectionChange} />
       <TripPlanner />
 
-      <div className="max-w-[1920px] mx-auto" suppressHydrationWarning>
+      <div className="max-w-[1920px] mx-auto relative z-10" suppressHydrationWarning>
         {/* Hero decorative line */}
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-200 to-transparent mx-4 sm:mx-6 mt-2" />
 

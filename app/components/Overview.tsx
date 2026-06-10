@@ -22,13 +22,14 @@ export default function Overview() {
           className="mb-8"
         >
           <div className="flex items-center gap-2 text-terracotta-500 mb-2">
-            <Star className="w-4 h-4" />
-            <span className="text-sm font-medium uppercase tracking-widest">Tour Operator Premium</span>
+            <Star className="w-4 h-4 fill-current" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Tour Operator Premium</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-notte leading-tight">
-            <span className="gradient-text">{trip.title}</span>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-notte leading-[1.1] tracking-tight">
+            <span className="gradient-text">{trip.title.split(' ').slice(0, -1).join(' ')} </span>
+            <span className="italic font-medium text-terracotta-500">{trip.title.split(' ').slice(-1)}</span>
           </h1>
-          <p className="text-lg sm:text-xl text-mare-700/70 mt-3 max-w-2xl font-body">
+          <p className="text-lg sm:text-xl text-mare-700/70 mt-4 max-w-2xl font-body leading-relaxed">
             {trip.subtitle}
           </p>
         </motion.div>

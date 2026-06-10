@@ -12,13 +12,18 @@ export default function SanJuan() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-10"
         >
-          <p className="text-sm text-red-500 font-medium uppercase tracking-widest mb-1 flex items-center gap-2">
-            <Flame className="w-4 h-4" /> Evento speciale
+          <div className="flex items-center gap-2 text-red-500 mb-2">
+            <Flame className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Evento Speciale</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            La <span className="italic font-medium text-red-500">Noche</span> de San Juan
+          </h2>
+          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-3xl font-body leading-relaxed">
+            {sj.description}
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">{sj.title}</h2>
-          <p className="text-mare-700/70 mt-2 max-w-2xl">{sj.description}</p>
         </motion.div>
 
         <div className="bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border border-red-200/50 san-juan-glow mb-6">

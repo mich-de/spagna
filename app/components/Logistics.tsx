@@ -12,10 +12,18 @@ export default function Logistics() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Muoversi</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Logistica & Auto</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Car className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Muoversi in Libertà</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Logistica & <span className="italic font-medium text-terracotta-500">Mobilità</span>
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Guida pratica per esplorare la costa in autonomia. Dai consigli sul noleggio auto ai segreti per evitare il traffico andaluso.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

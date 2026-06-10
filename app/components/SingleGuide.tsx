@@ -88,11 +88,18 @@ export default function SingleGuide() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Single & Local</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Movida Over 35 (Locali e Non Turisti)</h2>
-          <p className="text-mare-700/70 mt-1">Guida strategica di socializzazione per residenti locali, tardeo tropicale ed intrattenimento per adulti (Giugno 2026)</p>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Users className="w-4 h-4" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Single & Local</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Movida <span className="italic font-medium text-terracotta-500">Over 35</span> (Locali e Non Turisti)
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Guida strategica di socializzazione per residenti locali, tardeo tropicale ed intrattenimento per adulti <span className="text-terracotta-400 font-semibold">(Giugno 2026)</span>
+          </p>
         </motion.div>
 
         <div className="glass p-3 sm:p-6 rounded-2xl border border-terracotta-100/40 card-shadow bg-gradient-to-br from-indigo-50/20 via-purple-50/15 to-crema/20">

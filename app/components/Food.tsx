@@ -100,10 +100,18 @@ export default function Food() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8"
+          className="mb-10"
         >
-          <p className="text-sm text-terracotta-500 font-medium uppercase tracking-widest mb-1">Gastronomia andalusa</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-notte">Piatti tipici & Ristoranti</h2>
+          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+            <Star className="w-4 h-4 fill-current" />
+            <span className="text-sm font-medium uppercase tracking-[0.3em]">Gastronomia Andalusa</span>
+          </div>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
+            Piatti <span className="italic font-medium text-terracotta-500">Tipici</span> & Ristoranti
+          </h2>
+          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
+            Dalla croccantezza del <span className="text-terracotta-400 font-semibold">Pescaíto Frito</span> alla convivialità dei chiringuiti sulla sabbia. Un viaggio tra i sapori autentici del Sud.
+          </p>
         </motion.div>
 
         {/* PIATTI TIPICI */}

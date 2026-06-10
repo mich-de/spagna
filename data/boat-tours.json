@@ -9,8 +9,14 @@
     "description": "Giro in catamarano di lusso fino alle Cascate di Maro. Include colazione/pranzo/cena + bevande a seconda dell'orario. Snorkeling e paddle surf inclusi. Doccia e spogliatoi a bordo.",
     "highlights": ["Cascate di Maro dal mare", "Snorkeling in acque cristalline", "Paddle surf", "Pasto incluso", "Doccia a bordo"],
     "capacity": "12 persone",
-    "booking": "marinalia.es | tel: 96 574 00 36",
+    "booking": "alborancharters.es | tel: +34 606 31 16 02",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+del+Este+La+Herradura",
+    "agency": {
+      "name": "Alboran Charters",
+      "website": "https://www.alborancharters.es/",
+      "phone": "+34 606 31 16 02",
+      "address": "Puerto Deportivo Marina del Este, Local 8, 18697 La Herradura, Granada"
+    },
     "comments": [
       "Reddit: Esperienza imperdibile. Le cascate dal mare sono spettacolari.",
       "TripAdvisor: Personale gentile, cibo buono, paesaggi mozzafiato.",
@@ -29,14 +35,20 @@
     "description": "Giro in barca lungo la costa di Nerja con scoperta delle scogliere di Maro e la cascata dal mare. Stop per snorkeling con attrezzatura inclusa. Bevanda inclusa. Portare cibo e bevande own.",
     "highlights": ["Scogliere di Maro", "Cascata dal mare", "Snorkeling con maschera inclusa", "Bevanda inclusa"],
     "capacity": "10 persone",
-    "booking": "marinalia.es | tel: 96 574 00 36",
+    "booking": "alborancharters.es | tel: +34 606 31 16 02",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+el+Playazo+Nerja",
+    "agency": {
+      "name": "Alboran Charters",
+      "website": "https://www.alborancharters.es/",
+      "phone": "+34 606 31 16 02",
+      "address": "Playa el Playazo, Nerja, Málaga"
+    },
     "comments": [
       "Reddit: Perfetto per chi ha poco tempo. Breve ma intenso.",
       "TripAdvisor: Acqua talmente limpida che si vedono i pesci dal barco.",
       "Viaggio: Minimo 5 persone per far partire il giro.",
       "Foro: Consigliato per famiglie con bambini. Acqua calma.",
-      "Google: Lo snorkeling vicino alle cascate è indimenticabile."
+      "Google: Lo snorkeling vicino alle cascate is indimenticabile."
     ]
   },
   {
@@ -49,8 +61,14 @@
     "description": "Escursione privata in catamarano lungo la costa di Nerja e Maro. Include: skipper, carburante, bevande (cava, birra, soft), panini freschi, asciugamani. Snorkeling e swimming stop.",
     "highlights": ["Escursione privata", "Paella o panini a bordo", "Bevande premium incluse", "Asciugamani freschi", "Delfini (con fortuna)"],
     "capacity": "6 persone (gruppo privato)",
-    "booking": "costaboattrips.com",
+    "booking": "costaboattrips.com | tel: +34 616 59 85 15",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "agency": {
+      "name": "Costa Boat Trips",
+      "website": "https://costaboattrips.com/",
+      "phone": "+34 616 59 85 15",
+      "address": "Puerto de la Caleta, S/N, 29751 Caleta de Vélez, Málaga"
+    },
     "comments": [
       "Reddit: Il meglio che possiamo fare. Privato, relax totale, paella fantastica.",
       "TripAdvisor: Skipper professionista, route bellissima.",
@@ -69,8 +87,14 @@
     "description": "Vela su uno yacht di 12m (Bavaria 37 Cruiser) lungo il Parco Naturale Maro-Cerro Gordo. Catering di benvenuto incluso. Stop per bagno e attività acquatiche in alta stagione. Condiviso con max 9 persone.",
     "highlights": ["Yacht di 12m", "Parco Naturale Maro-Cerro Gordo", "Catering incluso", "Tramonto mozzafiato", "Max 9 persone"],
     "capacity": "9 persone",
-    "booking": "marinalia.es",
+    "booking": "granadasailing.es | tel: +34 685 99 88 22",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Marina+del+Este+La+Herradura",
+    "agency": {
+      "name": "Granada Sailing",
+      "website": "https://granadasailing.es/",
+      "phone": "+34 685 99 88 22",
+      "address": "Puerto Deportivo Marina del Este, Atraque 72, 18697 La Herradura, Granada"
+    },
     "comments": [
       "Reddit: Il tramonto dalla barca è surreal. Bevanda calda e coperta inclusa.",
       "TripAdvisor: Esperienza romantica e rilassante. Perfetta per coppie.",
@@ -89,14 +113,124 @@
     "description": "Noleggio barca senza patente per esplorare la costa in autonomia. Route consigliate: Cascate di Maro, Grotte costiere, spiagge segrete. Il GPS e le istruzioni sono inclusi.",
     "highlights": ["Nessuna patente richiesta", "Libertà totale", "Route personalizzabili", "GPS incluso"],
     "capacity": "4-8 persone",
-    "booking": "Diversi fornitori locali",
+    "booking": "enjoyboat.net | tel: +34 642 00 96 16",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Nerja+boat+rental",
+    "agency": {
+      "name": "Enjoy Boat",
+      "website": "https://enjoyboat.net/",
+      "phone": "+34 642 00 96 16",
+      "address": "Puerto de Caleta de Vélez s/n, 29751 Vélez-Málaga, Málaga"
+    },
     "comments": [
       "Reddit: Fantastico poter andare dove vuoi. Abbiamo scoperto calette nascoste.",
       "TripAdvisor: Facile da guidare, anche per principianti.",
       "Viaggio: Ottimo per famiglie. I bambini adorano.",
-      "Foro: Portare cibo e bevande own. Non è incluso.",
+      "Foro: Portare cibo e bevande own. Non è inclusa.",
       "Google: Consiglio di prenotare la mattina presto per evitare la calca."
+    ]
+  },
+  {
+    "name": "Tour in Kayak e Snorkeling — Scogliere di Maro",
+    "type": "kayak",
+    "duration": "2h 30min",
+    "price": "€30/persona",
+    "departure": "Playa de Burriana, Nerja (Base Educare)",
+    "times": ["10:00", "13:00", "16:00"],
+    "description": "Spettacolare escursione guidata in kayak lungo l'area marina protetta di Maro-Cerro Gordo. Si passa sotto la famosa Cascata di Maro e si entra all'interno della Cueva del Lobo Marino. Snorkeling incluso in acque limpidissime. Il prezzo include tutte le foto e video scattati con GoPro subacquea.",
+    "highlights": ["Cascata di Maro", "Cueva del Lobo Marino", "Foto & Video GoPro inclusi", "Guida certificata", "Adatto a tutti"],
+    "capacity": "Fino a 20 persone",
+    "booking": "educare-aventura.com | tel: +34 952 03 90 26",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Educare+Aventura+Playa+de+Burriana+Nerja",
+    "agency": {
+      "name": "Educare Aventura",
+      "website": "https://educare-aventura.com/",
+      "phone": "+34 952 03 90 26",
+      "address": "Playa de Burriana, Camino de Burriana, 29780 Nerja, Málaga"
+    },
+    "comments": [
+      "Reddit: Le guide fanno foto subacquee bellissime e te le mandano via email gratis. Pagaiare sotto la cascata è stupendo.",
+      "TripAdvisor: Molto organizzati e sicuri. La spiegazione iniziale è ottima per chi non ha mai usato un kayak.",
+      "Google: Le scogliere viste dal kayak sono imponenti. L'acqua è talmente trasparente che si vedono i fondali.",
+      "Foro: Ottima esperienza di mezza giornata a Nerja. Consiglio la partenza delle 10:00 per mare calmo.",
+      "Viaggio: Obbligatorio l'uso delle scarpette da scoglio fornite da loro. Organizzazione impeccabile."
+    ]
+  },
+  {
+    "name": "Catamarano al Tramonto con Cava — Baia di Málaga",
+    "type": "catamaran",
+    "duration": "1h 30min",
+    "price": "€22/persona",
+    "departure": "Muelle Uno, Porto di Málaga",
+    "times": ["Tardo pomeriggio (es: 20:00 in estate)"],
+    "description": "Rilassante crociera serale nella baia di Málaga a bordo di un grande catamarano a vela. Ammira lo skyline della città e della fortezza dell'Alcazaba illuminati alla luce dorata. Include un calice di Cava (spumante spagnolo) o soft drink di benvenuto e musica lounge.",
+    "highlights": ["Tramonto spettacolare", "Bicchiere di Cava o soft drink", "Skyline di Málaga", "Grande catamarano stabile", "Musica Lounge"],
+    "capacity": "Fino a 100 persone",
+    "booking": "fly-blue.es | tel: +34 665 60 00 40",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Muelle+Uno+Puerto+de+Malaga",
+    "agency": {
+      "name": "Fly Blue Gran Catamarán",
+      "website": "https://www.fly-blue.es/",
+      "phone": "+34 665 60 00 40",
+      "address": "Paseo del Muelle Uno, 29001 Puerto de Málaga, Málaga"
+    },
+    "comments": [
+      "Reddit: Ottima atmosfera prima di andare a cena nel centro storico. Lo skyline dal mare è molto bello.",
+      "TripAdvisor: Il catamarano è grande e stabile, non si soffre il mal di mare. Bar a bordo economico.",
+      "Google: Il tramonto dietro le montagne di Málaga visto dalla barca è stupendo. Un must se visiti la città.",
+      "Foro: Molto piacevole e romantico. Consigliatissimo per le coppie.",
+      "Viaggio: Arricate almeno 15 minuti prima per prendere i posti migliori a prua sulle reti."
+    ]
+  },
+  {
+    "name": "Avvistamento Delfini e Bagno in Mare — Costa Benalmádena",
+    "type": "catamaran",
+    "duration": "2 ore",
+    "price": "€20/persona",
+    "departure": "Puerto Marina, Benalmádena",
+    "times": ["10:30", "12:30", "14:30", "16:30"],
+    "description": "Navigazione alla ricerca di delfini nel loro habitat naturale nel Mar di Alborán. Il catamarano moderno dispone di un ponte superiore aperto per foto e un'area coperta con bar. Se le condizioni meteo lo permettono, è prevista una sosta per nuotare in mare aperto.",
+    "highlights": ["Avvistamento delfini", "Bagno in mare aperto", "Puerto Marina di Benalmádena", "Ponte panoramico", "Bar e snacks a bordo"],
+    "capacity": "Fino a 120 persone",
+    "booking": "costasolcruceros.com | tel: +34 678 61 85 85",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+Benalmadena",
+    "agency": {
+      "name": "Costasol Cruceros",
+      "website": "https://www.costasolcruceros.com/",
+      "phone": "+34 678 61 85 85",
+      "address": "Puerto Marina, Calle la Fragata, 6, 29630 Benalmádena, Málaga"
+    },
+    "comments": [
+      "Reddit: Abbiamo visto diversi delfini giocare vicinissimo allo scafo. Ottima gita di mezza giornata.",
+      "TripAdvisor: Bellissima esperienza. Se non si avvistano delfini a causa del meteo, a volte ti regalano un buono.",
+      "Google: Adatto anche a chi viaggia solo o in gruppo, molto socievole. Il porto di Benalmádena è magnifico.",
+      "Foro: Bagno rinfrescante al largo, acqua blu profondo. Portare il costume da bagno!",
+      "Viaggio: Escursione economica e divertente. Molto consigliata per respirare l'aria di mare."
+    ]
+  },
+  {
+    "name": "Charter Privato con Skipper & Open Bar — Puerto Banús (Marbella)",
+    "type": "sailboat",
+    "duration": "2, 4 o 8 ore",
+    "price": "A partire da €350 per 2 ore (fino a 8 persone)",
+    "departure": "Puerto Banús, Marbella",
+    "times": ["Flessibili (su prenotazione)"],
+    "description": "Esclusivo noleggio privato di una barca a vela Bavaria 37 Cruiser con skipper professionista da Puerto Banús. Include open bar a bordo (cava, birra fresca, soft drink), snacks andalusi, asciugamani puliti e tavole da paddle surf/attrezzatura da snorkeling. Perfetto per piccoli gruppi.",
+    "highlights": ["Barca privata esclusiva", "Skipper e carburante inclusi", "Open bar con birra e Cava", "Snacks andalusi", "Attrezzatura paddle surf"],
+    "capacity": "Fino a 8-10 persone (gruppo privato)",
+    "booking": "marbellaboatcharter.com | tel: +34 622 15 67 02",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Marbella",
+    "agency": {
+      "name": "Marbella Boat Charter",
+      "website": "https://marbellaboatcharter.com/",
+      "phone": "+34 622 15 67 02",
+      "address": "Puerto Banús, Pantalán 3, 29660 Marbella, Málaga"
+    },
+    "comments": [
+      "Reddit: Ideale se si è in 5-6 amici. Dividere il costo lo rende accessibile e l'esperienza privata è fantastica.",
+      "TripAdvisor: Skipper molto cortese, ci ha portato a fare snorkeling vicino a una cassa di scogliere e abbiamo visto delfini.",
+      "Google: Open bar generoso e snacks freschi. Puerto Banús visto dal mare al tramonto è pazzesco.",
+      "Foro: Ottima organizzazione, barca pulitissima e confortevole. Il paddle surf al largo è stato divertentissimo.",
+      "Viaggio: Un'esperienza di lusso ma rilassata. Ne vale ogni centesimo per festeggiare a Marbella."
     ]
   }
 ]

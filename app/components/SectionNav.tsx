@@ -88,8 +88,8 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               <div className="w-8 h-8 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded-lg flex items-center justify-center">
                 <Compass className="w-4 h-4 text-white" />
               </div>
-              <span className="font-display text-base sm:text-lg font-semibold text-notte">
-                Sol & Local
+              <span className="font-display text-lg sm:text-xl font-bold text-notte tracking-tight">
+                Sol <span className="italic font-medium text-terracotta-500">&</span> Local
               </span>
             </div>
 
