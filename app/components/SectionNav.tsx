@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt, Ship, Store } from 'lucide-react'
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: Compass },
@@ -12,7 +12,9 @@ const sections = [
   { id: 'videos', label: 'Video', icon: Play },
   { id: 'itinerary', label: 'Itinerario', icon: Sun },
   { id: 'beaches', label: 'Spiagge', icon: Waves },
+  { id: 'boat-tours', label: 'Giri in Barca', icon: Ship },
   { id: 'food', label: 'Food', icon: Utensils },
+  { id: 'markets', label: 'Mercati', icon: Store },
   { id: 'nightlife', label: 'Nightlife', icon: Moon },
   { id: 'sanjuan', label: 'San Juan', icon: Flame },
   { id: 'experiences', label: 'Local', icon: Heart },

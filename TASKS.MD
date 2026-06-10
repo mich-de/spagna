@@ -2,6 +2,14 @@
 
 Roadmap for Costa del Sol Travel Dashboard.
 
+## Phase 11: Boat Tours, Markets & Multi-page Routing (2026-06-10)
+- [x] `[FRONTEND]` Create `BoatTours.tsx` loading data from `boat-tours.json` with filters and search
+- [x] `[FRONTEND]` Create `Markets.tsx` loading data from `markets.json` with city/day filters and tips accordion
+- [x] `[FRONTEND]` Spin off 7-day program from main page to separate `/itinerary` subpage
+- [x] `[FRONTEND]` Integrate dynamic cross-page linking between home page `/` and `/itinerary` via query parameters and route push
+- [x] `[FRONTEND]` Add Suspense boundaries to `/` layout to support static build pre-rendering with search parameters
+- [x] `[DEVOPS]` Compile and verify static export build successfully using `npm run build`
+
 ## Phase 10: Client-side Password Protection & Static Export Restore (2026-06-09)
 - [x] `[DEVOPS]` Restore static export configuration (`output: 'export'`) in `next.config.js` for GitHub Pages hosting compatibility
 - [x] `[FRONTEND]` Implement client-side `PasswordWall.tsx` matching the visual design, storing hash checks in `localStorage`

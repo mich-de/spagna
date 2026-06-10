@@ -1,14 +1,16 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, Suspense } from 'react'
 import { motion } from 'framer-motion'
 import SectionNav from '@/app/components/SectionNav'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Overview from '@/app/components/Overview'
 import Videos from '@/app/components/Videos'
 import BaseSelection from '@/app/components/BaseSelection'
-import Itinerary from '@/app/components/Itinerary'
 import Beaches from '@/app/components/Beaches'
+import BoatTours from '@/app/components/BoatTours'
 import Food from '@/app/components/Food'
+import Markets from '@/app/components/Markets'
 import Nightlife from '@/app/components/Nightlife'
 import SingleGuide from '@/app/components/SingleGuide'
 import SanJuan from '@/app/components/SanJuan'
@@ -20,9 +22,13 @@ import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 import PasswordWall from '@/app/components/PasswordWall'
 
-const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'itinerary', 'beaches', 'food', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
+const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'beaches', 'boat-tours', 'food', 'markets', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
 
-export default function Home() {
+function HomeContent() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const scrollTarget = searchParams ? searchParams.get('scroll') : null
+
   const [activeSection, setActiveSection] = useState('overview')
   const [mounted, setMounted] = useState(false)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -38,15 +44,29 @@ export default function Home() {
   }, [])
 
   const handleSectionChange = useCallback((id: string) => {
-    setActiveSection(id)
-    // Use setTimeout instead of rAF for reliable mobile scrolling
-    setTimeout(() => {
-      const el = document.getElementById(id)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-    }, 50)
-  }, [])
+    if (id === 'itinerary') {
+      router.push('/itinerary')
+    } else {
+      setActiveSection(id)
+      setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 50)
+    }
+  }, [router])
+
+  useEffect(() => {
+    if (mounted && scrollTarget) {
+      setTimeout(() => {
+        const el = document.getElementById(scrollTarget)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 300)
+    }
+  }, [mounted, scrollTarget])
 
   useEffect(() => {
     if (!mounted) return
@@ -96,11 +116,13 @@ export default function Home() {
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Videos />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
-        <Itinerary />
-        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Beaches />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <BoatTours />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Food />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <Markets />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Nightlife />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
@@ -132,5 +154,13 @@ export default function Home() {
         </div>
       </footer>
     </main>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-sabbia" />}>
+      <HomeContent />
+    </Suspense>
   )
 }

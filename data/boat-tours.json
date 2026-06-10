@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Catamarano alle Cascate di Maro",
+    "type": "catamaran",
+    "duration": "4 ore",
+    "price": "€69/persona (gruppo) | €132+1188 privato 12px",
+    "departure": "Puerto Marina del Este, La Herradura",
+    "times": ["09:00-13:00", "13:30-17:30", "18:00-22:00"],
+    "description": "Giro in catamarano di lusso fino alle Cascate di Maro. Include colazione/pranzo/cena + bevande a seconda dell'orario. Snorkeling e paddle surf inclusi. Doccia e spogliatoi a bordo.",
+    "highlights": ["Cascate di Maro dal mare", "Snorkeling in acque cristalline", "Paddle surf", "Pasto incluso", "Doccia a bordo"],
+    "capacity": "12 persone",
+    "booking": "marinalia.es | tel: 96 574 00 36",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+del+Este+La+Herradura",
+    "comments": [
+      "Reddit: Esperienza imperdibile. Le cascate dal mare sono spettacolari.",
+      "TripAdvisor: Personale gentile, cibo buono, paesaggi mozzafiato.",
+      "Viaggio: Prenota la fascia del tramonto (18:00-22:00) per l'atmosfera più magica.",
+      "Foro: Ottimo rapporto qualità/prezzo. Il pranzo a bordo è abbondante.",
+      "Google: Pesci colorati durante lo snorkeling. Acqua calda e trasparente."
+    ]
+  },
+  {
+    "name": "Giro in barca con snorkeling — Scogliere di Maro",
+    "type": "boat",
+    "duration": "1h 30min",
+    "price": "€25/persona",
+    "departure": "Playa el Playazo, Nerja",
+    "times": ["12:00", "16:00"],
+    "description": "Giro in barca lungo la costa di Nerja con scoperta delle scogliere di Maro e la cascata dal mare. Stop per snorkeling con attrezzatura inclusa. Bevanda inclusa. Portare cibo e bevande own.",
+    "highlights": ["Scogliere di Maro", "Cascata dal mare", "Snorkeling con maschera inclusa", "Bevanda inclusa"],
+    "capacity": "10 persone",
+    "booking": "marinalia.es | tel: 96 574 00 36",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+el+Playazo+Nerja",
+    "comments": [
+      "Reddit: Perfetto per chi ha poco tempo. Breve ma intenso.",
+      "TripAdvisor: Acqua talmente limpida che si vedono i pesci dal barco.",
+      "Viaggio: Minimo 5 persone per far partire il giro.",
+      "Foro: Consigliato per famiglie con bambini. Acqua calma.",
+      "Google: Lo snorkeling vicino alle cascate è indimenticabile."
+    ]
+  },
+  {
+    "name": "Catamarano Privato 4h con Paella",
+    "type": "catamaran",
+    "duration": "4 ore",
+    "price": "€375 (fino a 6px) | €425 (fino a 6px con bevande premium)",
+    "departure": "Puerto Caleta de Vélez-Málaga",
+    "times": ["10:00-14:00", "15:00-19:00"],
+    "description": "Escursione privata in catamarano lungo la costa di Nerja e Maro. Include: skipper, carburante, bevande (cava, birra, soft), panini freschi, asciugamani. Snorkeling e swimming stop.",
+    "highlights": ["Escursione privata", "Paella o panini a bordo", "Bevande premium incluse", "Asciugamani freschi", "Delfini (con fortuna)"],
+    "capacity": "6 persone (gruppo privato)",
+    "booking": "costaboattrips.com",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "comments": [
+      "Reddit: Il meglio che possiamo fare. Privato, relax totale, paella fantastica.",
+      "TripAdvisor: Skipper professionista, route bellissima.",
+      "Viaggio: Abbiamo visto i delfini! Esperienza magica.",
+      "Foro: Costoso ma ne vale la pena per un'occasione speciale.",
+      "Google: Panini preparati al momento, freschissimi. Consigliatissimo."
+    ]
+  },
+  {
+    "name": "Vela al Tramonto — Scogliere di Maro e La Herradura",
+    "type": "sailboat",
+    "duration": "2-3 ore",
+    "price": "€57.85/persona",
+    "departure": "Marina del Este, La Herradura",
+    "times": ["Pomeriggio (orari vari in base alla stagione)"],
+    "description": "Vela su uno yacht di 12m (Bavaria 37 Cruiser) lungo il Parco Naturale Maro-Cerro Gordo. Catering di benvenuto incluso. Stop per bagno e attività acquatiche in alta stagione. Condiviso con max 9 persone.",
+    "highlights": ["Yacht di 12m", "Parco Naturale Maro-Cerro Gordo", "Catering incluso", "Tramonto mozzafiato", "Max 9 persone"],
+    "capacity": "9 persone",
+    "booking": "marinalia.es",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Marina+del+Este+La+Herradura",
+    "comments": [
+      "Reddit: Il tramonto dalla barca è surreal. Bevanda calda e coperta inclusa.",
+      "TripAdvisor: Esperienza romantica e rilassante. Perfetta per coppie.",
+      "Viaggio: Ottima organizzazione, arrivi puntualissimo.",
+      "Foro: In estate dura 3h, in inverno 2h. Verificare orari.",
+      "Google: La vista delle scogliere alla luce del tramonto è indimenticabile."
+    ]
+  },
+  {
+    "name": "Noleggio Barca senza Patente",
+    "type": "rental",
+    "duration": "2-4 ore",
+    "price": "€80-150 a seconda della durata",
+    "departure": "Diversi punti (Nerja, Torre del Mar, Caleta de Vélez)",
+    "times": ["Flessibili"],
+    "description": "Noleggio barca senza patente per esplorare la costa in autonomia. Route consigliate: Cascate di Maro, Grotte costiere, spiagge segrete. Il GPS e le istruzioni sono inclusi.",
+    "highlights": ["Nessuna patente richiesta", "Libertà totale", "Route personalizzabili", "GPS incluso"],
+    "capacity": "4-8 persone",
+    "booking": "Diversi fornitori locali",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Nerja+boat+rental",
+    "comments": [
+      "Reddit: Fantastico poter andare dove vuoi. Abbiamo scoperto calette nascoste.",
+      "TripAdvisor: Facile da guidare, anche per principianti.",
+      "Viaggio: Ottimo per famiglie. I bambini adorano.",
+      "Foro: Portare cibo e bevande own. Non è incluso.",
+      "Google: Consiglio di prenotare la mattina presto per evitare la calca."
+    ]
+  }
+]

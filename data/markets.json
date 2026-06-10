@@ -1,0 +1,257 @@
+{
+  "intro": "La Costa del Sol è un paradiso per gli amanti dei mercatini. Ogni città ha il suo mercato settimanale con prodotti freschi, artigianato, abbigliamento e curiosità. La maggior parte è aperta dalle 9:00 alle 14:00.",
+  "markets": [
+    {
+      "name": "Mercadillo de Nerja",
+      "city": "Nerja",
+      "day": "Martedì",
+      "time": "08:00 - 14:00",
+      "location": "Calle Mirto, Urbanización Almijara II",
+      "parking": "Parcheggio gratuito nell'urbanizzazione. Autobus lanzadera dal centro (€1, ogni 30-60min)",
+      "products": ["Frutta e verdura fresca", "Formaggi e insaccati locali", "Erbe aromatiche", "Abbigliamento", "Artigianato", "Cosmetica naturale"],
+      "stalls": 200,
+      "tips": [
+        "Arriva presto (8:00-9:00) per trovare i posti migliori.",
+        "Porta buste proprie — i venditori danno pochi sacchetti di plastica.",
+        "Negozia i prezzi verso le 13:00 quando i venditori sono più flessibili.",
+        "L'autobus lanzadera parte dalla stazione degli autobus (Av. Pescia) ogni 30 min."
+      ],
+      "comments": [
+        "Google: Mercato enorme, 200 puestos! Trovi di tutto. Frutta buonissima.",
+        "TripAdvisor: Consigliato per comprare frutta fresca a prezzi stracciati.",
+        "Viaggio: Piacevole passeggiata, organizzato bene. C'è anche il rastro la domenica.",
+        "Foro: Ottimo per erbe aromatiche e spezie. I venditori sono simpatici.",
+        "Reddit: Il martedì a Nerja è OBBLIGATORIO. Non perdertelo."
+      ]
+    },
+    {
+      "name": "Rastro de Nerja",
+      "city": "Nerja",
+      "day": "Domenica",
+      "time": "09:00 - 14:00",
+      "location": "Calle Mirto, Urbanización Almijara II",
+      "parking": "Parcheggio gratuito nell'urbanizzazione",
+      "products": ["Oggetti di seconda mano", "Antiquariato", "Vintage", "Libri usati", "Abbigliamento usato", "Curiosità"],
+      "stalls": 80,
+      "tips": [
+        "Ottimo per trovare pezzi unici e oggetti vintage.",
+        "I prezzi sono già bassi, ma si può ancora negoziare.",
+        "Combinalo con una colazione al centro di Nerja."
+      ],
+      "comments": [
+        "Google: Rastro carino, ho trovato un vinile raro a €2.",
+        "TripAdvisor: Per gli amanti del vintage. Atmosfera rilassata.",
+        "Viaggio: Meno affollato del mercato del martedì. Piacevole.",
+        "Foro: Ottimo per souvenir originali a poco prezzo.",
+        "Reddit: Consigliato per chi ama il treasure hunting."
+      ]
+    },
+    {
+      "name": "Mercadillo de Fuengirola",
+      "city": "Fuengirola",
+      "day": "Martedì",
+      "time": "09:00 - 14:00",
+      "location": "Recinto Ferial de Fuengirola (Los Boliches)",
+      "parking": "Parcheggio gratuito nel recinto fieristico",
+      "products": ["Abbigliamento", "Alimentari", "Artigianato", "Articoli per la casa", "Gioielli", "Spezie e frutta secca"],
+      "stalls": 400,
+      "tips": [
+        "È uno dei mercati più grandi dell'Andalusia. Dedica almeno 2 ore.",
+        "Porta un cappello e acqua — in estate fa molto caldo.",
+        "Le spezie e la frutta secca sono eccezionali.",
+        "Combinalo con una visita al mercato del martedì di Fuengirola."
+      ],
+      "comments": [
+        "Google: ENORME! 400 puestos. Mercato più grande della zona.",
+        "TripAdvisor: Imperdibile. Trovi di tutto a prezzi stracciati.",
+        "Viaggio: Organizzato bene, facile da girare.",
+        "Foro: Le spezie qui sono le migliori della Costa del Sol.",
+        "Reddit: Il mercato del martedì a Fuengirola è leggendario."
+      ]
+    },
+    {
+      "name": "Rastro de Fuengirola",
+      "city": "Fuengirola",
+      "day": "Sabato",
+      "time": "09:00 - 14:00",
+      "location": "Recinto Ferial de Fuengirola",
+      "parking": "Parcheggio gratuito nel recinto fieristico",
+      "products": ["Seconda mano", "Vintage", "Vinili", "Camerate antiche", "Libri", "Mobili"],
+      "stalls": 300,
+      "tips": [
+        "Uno dei rastri più grandi della Costa del Sol.",
+        "Ottimo per vinili e oggetti vintage.",
+        "I venditori internazionali offrono prodotti da tutto il mondo.",
+        "Combinalo con una colazione al centro di Fuengirola."
+      ],
+      "comments": [
+        "Google: Rastro gigantesco. Ho trovato una macchina fotografica vintage a €10.",
+        "TripAdvisor: Per gli amanti del vintage e del bargain hunting.",
+        "Viaggio: Atmosfera multiculturale, gente da tutto il mondo.",
+        "Foro: Ottimo per mobili e oggetti per la casa.",
+        "Reddit: Il sabato a Fuengirola è il giorno del rastro. Non perderlo."
+      ]
+    },
+    {
+      "name": "Mercadillo de Marbella",
+      "city": "Marbella",
+      "day": "Lunedì",
+      "time": "09:00 - 14:00",
+      "location": "Recinto Ferial Las Albarizas, Calle José Manuel Vallés",
+      "parking": "Parcheggio gratuito nel recinto fieristico",
+      "products": ["Abbigliamento", "Accessori", "Articoli per la casa", "Prodotti locali", "Frutta e verdura"],
+      "stalls": 360,
+      "tips": [
+        "Uno dei mercati più grandi di Marbella.",
+        "Combinalo con una visita al centro storico di Marbella.",
+        "I prezzi sono più alti rispetto ad altri mercati della zona.",
+        "Arriva presto per evitare la folla."
+      ],
+      "comments": [
+        "Google: Mercato grande e ben organizzato. Buona varietà.",
+        "TripAdvisor: Consigliato per shopping e atmosfera.",
+        "Viaggio: Buon mercato, ma i prezzi sono leggermente più alti.",
+        "Foro: Ottimo per abbigliamento e accessori.",
+        "Reddit: Il lunedì a Marbella è mercato. Da non perdere."
+      ]
+    },
+    {
+      "name": "Mercadillo de Estepona",
+      "city": "Estepona",
+      "day": "Mercoledì",
+      "time": "09:00 - 14:30",
+      "location": "Calle Eslovaquia",
+      "parking": "Parcheggio in strada (€1/h) o Parking Centro (€1/h)",
+      "products": ["Abbigliamento", "Artigianato", "Frutta e verdura", "Oggetti per la casa"],
+      "stalls": 150,
+      "tips": [
+        "Mercato ben organizzato nel centro di Estepona.",
+        "Combinalo con una passeggiata nei vicoli colorati.",
+        "I prezzi sono onesti.",
+        "Porta un cappello e acqua."
+      ],
+      "comments": [
+        "Google: Mercato carino nel centro di Estepona.",
+        "TripAdvisor: Ottimo per passeggiare e comprare qualcosa.",
+        "Viaggio: Atmosfera piacevole, non troppo affollato.",
+        "Foro: Buon posto per frutta e verdura fresca.",
+        "Reddit: Il mercoledì a Estepona c'è il mercato. Consigliato."
+      ]
+    },
+    {
+      "name": "Mercado Municipal de Estepona",
+      "city": "Estepona",
+      "day": "Domenica",
+      "time": "09:00 - 14:00",
+      "location": "Puerto Deportivo de Estepona",
+      "parking": "Parcheggio in strada (€1/h)",
+      "products": ["Artigianato", "Arte", "Souvenir", "Cibo locale"],
+      "stalls": 100,
+      "tips": [
+        "Mercato domenicale nel porto turistico.",
+        "Ottimo per souvenir e regali.",
+        "Combinalo con una colazione al porto.",
+        "Atmosfera rilassata e familiare."
+      ],
+      "comments": [
+        "Google: Mercato domenicale carino nel porto.",
+        "TripAdvisor: Buono per souvenir e cibo locale.",
+        "Viaggio: Atmosfera piacevole, ottimo per famiglie.",
+        "Foro: Artigianato di qualità a prezzi onesti.",
+        "Reddit: Il mercato domenicale di Estepona è carino."
+      ]
+    },
+    {
+      "name": "Mercadillo de San Pedro de Alcántara",
+      "city": "San Pedro de Alcántara",
+      "day": "Giovedì",
+      "time": "09:00 - 14:00",
+      "location": "Zona fieristica",
+      "parking": "Parcheggio gratuito",
+      "products": ["Abbigliamento", "Frutta e verdura", "Accessori", "Artigianato"],
+      "stalls": 250,
+      "tips": [
+        "Mercato grande con oltre 250 puestos.",
+        "Combinalo con una passeggiata al lungomare.",
+        "I prezzi sono onesti.",
+        "Arriva presto per trovare i posti migliori."
+      ],
+      "comments": [
+        "Google: Mercato grande e ben organizzato.",
+        "TripAdvisor: Ottimo per shopping e passeggiata.",
+        "Viaggio: Buona varietà di prodotti.",
+        "Foro: I prezzi sono più bassi rispetto a Marbella.",
+        "Reddit: Il giovedì a San Pedro c'è il mercato. Consigliato."
+      ]
+    },
+    {
+      "name": "Mercadillo de Torre del Mar",
+      "city": "Torre del Mar",
+      "day": "Giovedì",
+      "time": "09:00 - 14:00",
+      "location": "Centro cittadino",
+      "parking": "Parcheggio in strada (€1/h)",
+      "products": ["Abbigliamento", "Frutta e verdura", "Artigianato", "Oggetti per la casa"],
+      "stalls": 120,
+      "tips": [
+        "Mercato nel centro di Torre del Mar.",
+        "Combinalo con una passeggiata sul lungomare.",
+        "I prezzi sono onesti.",
+        "Porta un cappello e acqua."
+      ],
+      "comments": [
+        "Google: Mercato carino nel centro.",
+        "TripAdvisor: Ottimo per shopping e atmosfera.",
+        "Viaggio: Buona varietà di prodotti.",
+        "Foro: I prezzi sono accessibili.",
+        "Reddit: Il giovedì a Torre del Mar c'è il mercato."
+      ]
+    },
+    {
+      "name": "Mercadillo de Frigiliana",
+      "city": "Frigiliana",
+      "day": "Giovedì",
+      "time": "09:00 - 14:00",
+      "location": "Plaza de la Constitución",
+      "parking": "Parcheggio gratuito ai margini del paese",
+      "products": ["Artigianato locale", "Vino moscatello", "Olive", "Ceramiche", "Abbigliamento"],
+      "stalls": 60,
+      "tips": [
+        "Mercato nel cuore del villaggio moresco più bello di Spagna.",
+        "Combinalo con una visita al paese.",
+        "Il vino moscatello è un must.",
+        "Arriva presto per evitare la folla turistica."
+      ],
+      "comments": [
+        "Google: Mercato pittoresco nel villaggio più bello della zona.",
+        "TripAdvisor: Imperdibile! Atmosfera magica.",
+        "Viaggio: Ottimo per artigianato locale e vino.",
+        "Foro: Il vino moscatello qui è eccezionale.",
+        "Reddit: Frigiliana + mercato del giovedì = combo perfetta."
+      ]
+    },
+    {
+      "name": "Mercadillo de Vélez-Málaga",
+      "city": "Vélez-Málaga",
+      "day": "Giovedì",
+      "time": "09:00 - 14:00",
+      "location": "Centro cittadino",
+      "parking": "Parcheggio gratuito",
+      "products": ["Abbigliamento", "Frutta e verdura", "Artigianato", "Oggetti per la casa"],
+      "stalls": 200,
+      "tips": [
+        "Mercato grande nel centro di Vélez-Málaga.",
+        "Combinalo con una visita al centro storico.",
+        "I prezzi sono molto bassi.",
+        "Arriva presto per trovare i posti migliori."
+      ],
+      "comments": [
+        "Google: Mercato grande e economico.",
+        "TripAdvisor: Ottimo per shopping a prezzi stracciati.",
+        "Viaggio: Buona varietà di prodotti.",
+        "Foro: I prezzi sono i più bassi della zona.",
+        "Reddit: Il giovedì a Vélez-Málaga c'è il mercato. Consigliato."
+      ]
+    }
+  ]
+}

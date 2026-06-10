@@ -158,6 +158,16 @@ Costa del Sol Travel Dashboard — "Sol & Local" — a premium static Next.js 15
 - **Workflow Restore**: Restored `.github/workflows/pages-deploy.yml` to compile and publish the `out/` folder to GitHub Pages.
 - **Validation**: Verified successful static export via local `npm run build`.
 
+### 2026-06-10 — Boat Tours, Markets Integration & Multi-page Routing
+- **Boat Tours Integration**: Created [BoatTours.tsx](file:///d:/nodejs/spagna/app/components/BoatTours.tsx) loading data from [boat-tours.json](file:///d:/nodejs/spagna/data/boat-tours.json). Built with type filtering, search matching, expandable comments section, and styled design matching "Sol & Local" templates.
+- **Markets Integration**: Created [Markets.tsx](file:///d:/nodejs/spagna/app/components/Markets.tsx) loading data from [markets.json](file:///d:/nodejs/spagna/data/markets.json) showing weekly street markets and rastros. Configured with city/day filtering, search matching, tips accordion, and reviews.
+- **Separate Itinerary Route**: Spun off the 7-day program from the single-page dashboard to a dedicated route at `/itinerary` ([app/itinerary/page.tsx](file:///d:/nodejs/spagna/app/itinerary/page.tsx)). It retains the layout look, shares global trip planner elements, and wraps navigation dynamically.
+- **Cross-page Navigation Linkage**: Refactored [SectionNav.tsx](file:///d:/nodejs/spagna/app/components/SectionNav.tsx) and [page.tsx](file:///d:/nodejs/spagna/app/page.tsx) scroll/route systems:
+  - When on the home page `/`, clicking "Itinerario" navigates to `/itinerary`.
+  - When on the `/itinerary` subpage, clicking any other nav link redirects back to `/?scroll=sectionId`. The home page intercepts the query param and scrolls smoothly on load.
+- **Validation**: Compiled static production build (`npm run build`) successfully with 100% route generation for static export.
+
+
 
 
 
