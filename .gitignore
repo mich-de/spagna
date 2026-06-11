@@ -31,3 +31,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# temp / artifacts
+.extract-design-system/
+design-system/
+.transcripts/
+*.bak
+*.old
+*.tmp

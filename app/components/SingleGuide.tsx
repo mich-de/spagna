@@ -4,22 +4,18 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { 
   Users, 
-  Clock, 
-  VenetianMask, 
   MapPin, 
-  Flame, 
-  Smartphone, 
-  Music, 
-  Calendar, 
   ShieldAlert, 
   Youtube,
   ExternalLink,
-  ChevronRight,
-  Play,
   Instagram,
-  MessageSquare
+  MessageSquare,
+  Clock,
+  Lightbulb,
+  Car
 } from 'lucide-react'
 import movidaData from '@/data/movida-over35.json'
+import nightlifeData from '@/data/nightlife.json'
 
 export default function SingleGuide() {
   const [activeTab, setActiveTab] = useState('mindset')
@@ -75,6 +71,7 @@ export default function SingleGuide() {
     { id: 'costa', label: 'Mappa Costa', icon: '🏝️' },
     { id: 'tardeo', label: 'Tardeo al Perreo', icon: '🌊' },
     { id: 'nerja', label: 'Focus Nerja', icon: '🏖️' },
+    { id: 'nightlife', label: 'Nightlife Nerja', icon: '🌙' },
     { id: 'dating', label: 'Dating & Social App', icon: '📱' },
     { id: 'plan', label: 'Piano d\'Azione', icon: '📅' },
     { id: 'historical', label: 'Report Storico 2013', icon: '📜' },
@@ -647,6 +644,115 @@ export default function SingleGuide() {
                         {movidaData.nerja.datingTricks.description}
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* NIGHTLIFE NERJA */}
+            {activeTab === 'nightlife' && (
+              <div className="space-y-5 bg-white/60 p-3.5 sm:p-5 rounded-xl border border-terracotta-100/30">
+                <div>
+                  <h3 className="font-display text-base font-bold text-notte flex items-center gap-2 mb-1">
+                    <span>🌙 {nightlifeData.title}</span>
+                  </h3>
+                  <p className="text-xs text-mare-700/70">{nightlifeData.subtitle}</p>
+                </div>
+
+                {/* Zone Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {nightlifeData.zones.map((zone: any) => (
+                    <div key={zone.name} className="p-4 bg-white/80 rounded-xl border border-terracotta-100/20 card-shadow card-hover">
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h4 className="font-display text-sm font-bold text-notte">{zone.name}</h4>
+                        <span className="px-2 py-0.5 bg-mare-600 text-white rounded-full text-[9px] font-bold uppercase tracking-wider whitespace-nowrap">
+                          {zone.venues.length} locali
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-mare-700 leading-relaxed mb-3">{zone.description}</p>
+
+                      <div className="space-y-1.5 text-[10px] text-mare-600 mb-3">
+                        <div className="flex items-center gap-1.5">
+                          <Clock className="w-3 h-3 text-terracotta-500 shrink-0" />
+                          <span>{zone.hours}</span>
+                        </div>
+                        {zone.tip && (
+                          <div className="flex items-start gap-1.5">
+                            <Lightbulb className="w-3 h-3 text-amber-500 shrink-0 mt-0.5" />
+                            <span className="italic">{zone.tip}</span>
+                          </div>
+                        )}
+                        {zone.parking && (
+                          <div className="flex items-start gap-1.5">
+                            <Car className="w-3 h-3 text-mare-400 shrink-0 mt-0.5" />
+                            <span>{zone.parking}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="space-y-2">
+                        {zone.venues.map((venue: any) => (
+                          <div key={venue.name} className={`p-2.5 rounded-lg border ${venue.over35 ? 'bg-terracotta-50/60 border-terracotta-100/30' : 'bg-mare-50/30 border-mare-100/20'}`}>
+                            <div className="flex items-center justify-between gap-2 mb-1">
+                              <p className="font-bold text-xs text-notte">{venue.name}</p>
+                              <div className="flex items-center gap-1.5 shrink-0">
+                                {venue.over35 && (
+                                  <span className="px-1.5 py-0.5 bg-terracotta-500 text-white rounded text-[8px] font-bold">35+</span>
+                                )}
+                                <span className="text-[10px] text-mare-400">{venue.price}</span>
+                              </div>
+                            </div>
+                            <p className="text-[9px] text-mare-500 mb-1">{venue.type} · {venue.hours}</p>
+                            <p className="text-[10px] text-mare-700/80 leading-relaxed">{venue.vibe}</p>
+                            <p className="text-[9px] text-mare-500 mt-1 italic">🎵 {venue.music}</p>
+
+                            {venue.mapLink && (
+                              <a
+                                href={venue.mapLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 mt-2 text-[10px] text-mare-600 hover:text-terracotta-600 transition-colors"
+                              >
+                                <MapPin className="w-3 h-3 text-terracotta-500" />
+                                <span className="underline underline-offset-2">{venue.address}</span>
+                              </a>
+                            )}
+
+                            {venue.comments && venue.comments.length > 0 && (
+                              <div className="mt-2 pt-2 border-t border-terracotta-100/20 space-y-1.5">
+                                <p className="text-[9px] font-semibold text-terracotta-600 flex items-center gap-1">
+                                  <MessageSquare className="w-2.5 h-2.5" />
+                                  Voci dai Forum:
+                                </p>
+                                <div className="pl-2.5 border-l border-terracotta-200/40 space-y-1">
+                                  {venue.comments.map((comment: string, cIdx: number) => (
+                                    <p key={cIdx} className="text-[9px] text-mare-600 italic leading-relaxed">
+                                      &ldquo;{comment}&rdquo;
+                                    </p>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Tips Over 35 */}
+                <div className="p-4 bg-terracotta-50/50 rounded-xl border border-terracotta-100/30">
+                  <h4 className="font-display text-xs font-bold text-terracotta-700 mb-3 flex items-center gap-1.5">
+                    <Lightbulb className="w-3.5 h-3.5" />
+                    Consigli Pratici Over 35
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {nightlifeData.tipsOver35.map((tip: any) => (
+                      <div key={tip.title} className="p-2.5 bg-white/80 rounded-lg border border-terracotta-100/15">
+                        <p className="text-[11px] font-bold text-terracotta-600 mb-1">{tip.title}</p>
+                        <p className="text-[10px] text-mare-700 leading-relaxed">{tip.text}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

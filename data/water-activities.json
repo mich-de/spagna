@@ -1,0 +1,844 @@
+[
+  {
+    "name": "Kayak Cascada de Maro da Burriana",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "6,5 km A/R",
+    "duration": "2-2,5h",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€35/persona (giugno-ago)",
+    "description": "La route più iconica della Costa del Sol. Paddla da Playa Burriana fino alla Cascata de Maro — 15 metri d'acqua dolce che cadono direttamente in mare. Passa dalla Cueva del Lobo Marino e dal Jardín Vertical.",
+    "highlights": [
+      "Cascata de Maro 15m in mare",
+      "Cueva del Lobo Marino",
+      "Jardín Vertical",
+      "Snorkel nelle calas"
+    ],
+    "startPoint": "Playa de Burriana, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, pala, guida, foto GoPro",
+    "wikilocUrl": "https://www.wikiloc.com/kayaking-canoeing-trails/kayak-cascada-de-maro-desde-la-playa-de-burriana-nerja-76764993",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/5ece6c585a148.png/68.jpg",
+    "tags": [
+      "waterfall",
+      "caves",
+      "snorkel",
+      "beginner-friendly"
+    ]
+  },
+  {
+    "name": "Kayak VIP Maro–Nerja (Guidato)",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "6 km",
+    "duration": "2,5h",
+    "difficulty": "Facile",
+    "rating": 4.9,
+    "price": "€35-40/persona",
+    "description": "Tour guidato premium con gruppi piccoli. Partenza da Playa de Maro, attraversamento degli Acantilados de Maro-Cerro Gordo con visite a grotte marine, sosta snorkel e arrivo alla Cascata de Maro.",
+    "highlights": [
+      "Acantilados de Maro-Cerro Gordo",
+      "4 cascate dalla spiaggia",
+      "Sorgente d'acqua dolce potabile",
+      "Snorkel con guida"
+    ],
+    "startPoint": "Playa de Maro, Nerja",
+    "season": "Maggio-Ottobre (Lun/Mer)",
+    "includes": "Guada, attrezzatura, trasporto opzionale da Nerja",
+    "wikilocUrl": "https://localexperiences.es/en/experiencia/kayak-route-nerja-maro/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/8822fa43477e939b9c99bd40da71c10bd187d2decd631f48d6bf79009303a134.jpg/68.jpg",
+    "tags": [
+      "guided",
+      "waterfall",
+      "caves",
+      "small-group"
+    ]
+  },
+  {
+    "name": "Kayak La Herradura → Maro (Lungo)",
+    "activity": "kayak",
+    "zone": "Nerja/Granada",
+    "distance": "~19 km",
+    "duration": "4-5h",
+    "difficulty": "Media-Alta",
+    "rating": 4.5,
+    "price": "Noleggio ~€7,50/h",
+    "description": "La traversata lunga da La Herradura (Almuñécar) fino a Maro. Acque cristalline tra acantilados spettacolari con 12 km di costa protetta. Torri vigía arabe, Cascata de Maro e playe segrete.",
+    "highlights": [
+      "12 km di costa protetta",
+      "Torri vigía arabe",
+      "Playa de Cantarriján",
+      "Vista Africa nei giorni chiari"
+    ],
+    "startPoint": "Playa de La Herradura, Almuñécar",
+    "season": "Giugno-Settembre",
+    "includes": "Solo noleggio kayak",
+    "wikilocUrl": "https://es.wikiloc.com/rutas-kayac/la-herradura-maro-la-herradura-acantilados-cuevas-y-calas-desde-aguas-cristalinas-143215319",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/709315528f3ca18c006f26b57ba67461e82992b31a8e94398053cc422a4e2f1c.jpg/68.jpg",
+    "tags": [
+      "long-route",
+      "advanced",
+      "cliffs",
+      "crystal-waters"
+    ]
+  },
+  {
+    "name": "Snorkeling & Sea Scooter Nerja-Maro",
+    "activity": "snorkel",
+    "zone": "Nerja",
+    "distance": "~3 km",
+    "duration": "2h",
+    "difficulty": "Facile",
+    "rating": 4.7,
+    "price": "€39/persona",
+    "description": "Esplora gli Acantilados de Maro con scooter subacqueo. Trasferimento in barca fino alle grotte marine, snorkel con maschera e boccaglio, guida per punti di maggiore ricchezza marina. Vedi delfini se fortunato!",
+    "highlights": [
+      "Scooter subacqueo (nessun brevetto)",
+      "Grotte marine accessibili solo via mare",
+      "Acque cristalline 10-15m visibilità",
+      "Possibile avvistamento delfini"
+    ],
+    "startPoint": "Puerto Deportivo, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Barca, scooter sub, attrezzatura snorkel, guida",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-maro-snorkeling-sea-scooter-speedboat-trip-t430921/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/3628caf3ff496ca47d111c6fc895532913cd5ab4491294f74d1fe4456eb3d7ce.jpg/68.jpg",
+    "tags": [
+      "snorkel",
+      "sea-scooter",
+      "boat-transfer",
+      "dolphins"
+    ]
+  },
+  {
+    "name": "Kayak & Snorkel Tour Maro Waterfall",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "~6 km",
+    "duration": "3h",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€35/persona",
+    "description": "Tour guidato kayak + snorkellungo gli Acantilados de Maro. Partenza da Maro, visitagrotte marine (Cueva del Lobo), sosta snorkel con guida, arrivo alla Cascata de Maro. Gruppi max 10 persone.",
+    "highlights": [
+      "Cascata de Maro dall'acqua",
+      "Cueva del Lobo Marino",
+      "Snorkel con guida esperto",
+      "Gruppi piccoli (max 10)"
+    ],
+    "startPoint": "Playa de Maro, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, pala, guida, attrezzatura snorkel",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/maro-guided-kayak-route-cliffs-maro-waterfall-and-cueva-del-lobo-t1268260/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/8822fa43477e939b9c99bd40da71c10bd187d2decd631f48d6bf79009303a134.jpg/68.jpg",
+    "tags": [
+      "guided",
+      "snorkel",
+      "waterfall",
+      "small-group"
+    ]
+  },
+  {
+    "name": "Sendero Acantilados de Maro-Cerro Gordo",
+    "activity": "hiking",
+    "zone": "Nerja",
+    "distance": "~12 km A/R",
+    "duration": "4-5h",
+    "difficulty": "Media",
+    "rating": 4.7,
+    "price": "Gratis",
+    "description": "Il sentiero costiero più spettacolare dell'Axarquía. Da Maro ai miradores di Cerro Gordo passando per Playa del Cañuelo, Playa de Cantarriján e Cerro La Caleta con 250m di dislivello sugli acantilados.",
+    "highlights": [
+      "Mirador de Cerro Gordo",
+      "3 playe selvagge",
+      "Torre vigía del Pino",
+      "Vista Costa d'Africa"
+    ],
+    "startPoint": "Parcheggio N-340, km 302, Nerja",
+    "season": "Tutto l'anno",
+    "includes": "",
+    "wikilocUrl": "https://es.wikiloc.com/rutas-senderismo/sendero-acantilados-de-maro-cerro-gordo-maro-nerja-malaga-120651711",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/73ff7680fe0bca1445338b87f922e6e4931c3f517e6797fbf5e817d495425ce6.jpg/68.jpg",
+    "tags": [
+      "panoramic",
+      "cliffs",
+      "beaches",
+      "nature-reserve"
+    ]
+  },
+  {
+    "name": "Circular Acantilados de Maro (Wikiloc)",
+    "activity": "hiking",
+    "zone": "Nerja/Granada",
+    "distance": "~15 km",
+    "duration": "5-6h",
+    "difficulty": "Media-Alta",
+    "rating": 4.6,
+    "price": "Gratis",
+    "description": "Percorso circolare agreste e selvaggio tra sentieri stretti sugli acantilados. Da Maro a Cantarriján passando per Caleta de Maro, Torre del Pino e Cerro Gordo. Panoramiche mozzafiato.",
+    "highlights": [
+      "Percorso circolare",
+      "Sentieri agresti",
+      "Playa de Cantarriján",
+      "Torre de Cerro Gordo"
+    ],
+    "startPoint": "Parcheggio Maro, Nerja",
+    "season": "Marzo-Novembre",
+    "includes": "",
+    "wikilocUrl": "https://es.wikiloc.com/rutas-senderismo/acantilados-de-maro-cerro-gordo-paraje-natural-circular-81259458",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/98f307126c2d3af6ae31308fc0a0681f8203dfe731d59aeb6f79a6fc034d075b.jpg/68.jpg",
+    "tags": [
+      "circular",
+      "wild",
+      "challenging",
+      "panoramic"
+    ]
+  },
+  {
+    "name": "Nerja → Cala Barranco de Maro",
+    "activity": "hiking",
+    "zone": "Nerja",
+    "distance": "10,4 km A/R",
+    "duration": "3-4h",
+    "difficulty": "Media",
+    "rating": 4.4,
+    "price": "Gratis",
+    "description": "Passeggiata costiera da Burriana fino alla spiaggia segreta di Cala Barranco de Maro. Sentiero tra agrumeti e pini con vista panoramica, dislivello ripido verso la cala nascosta.",
+    "highlights": [
+      "Spiaggia segreta Cala Barranco",
+      "Panorama costiero",
+      "Acqua cristallina",
+      "Percorso tra gli agrumeti"
+    ],
+    "startPoint": "Mirador del Bendito, Nerja",
+    "season": "Tutto l'anno",
+    "includes": "",
+    "wikilocUrl": "https://www.wikiloc.com/hiking-trails/nerja-burriana-cala-barranco-de-maro-and-back-80582698",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/def0ce82d1256c9e2a779db42cd2f908ea463ac279835090f42ef80d1c873ccc.jpg/68.jpg",
+    "tags": [
+      "secret-beach",
+      "coastal",
+      "moderate",
+      "family-friendly"
+    ]
+  },
+  {
+    "name": "Nerja → Cueva de Nerja via Acueducto del Águila",
+    "activity": "hiking",
+    "zone": "Nerja",
+    "distance": "5,8 km A/R",
+    "duration": "2-3h",
+    "difficulty": "Facile",
+    "rating": 4.3,
+    "price": "Gratis (Cueva: €12)",
+    "description": "Percorso facile da Nerja alla Cueva de Nerja passando per l'imponente Acueducto del Águila (37 archi). Deviazione possibile verso Cala del Barranco de Maro.",
+    "highlights": [
+      "Acueducto del Águila (37 archi)",
+      "Cueva de Nerja",
+      "Cala del Barranco de Maro",
+      "Giardino Botanico"
+    ],
+    "startPoint": "Nerja centro",
+    "season": "Tutto l'anno",
+    "includes": "",
+    "wikilocUrl": "https://www.komoot.com/smarttour/e995575017/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/4f48cbea6846fdbb.jpeg/68.jpg",
+    "tags": [
+      "easy",
+      "aqueduct",
+      "caves",
+      "cultural"
+    ]
+  },
+  {
+    "name": "Crociera Catamarano Benalmadena (Delfini + Paella)",
+    "activity": "boat",
+    "zone": "Benalmadena",
+    "distance": "Costa de Malaga",
+    "duration": "2h",
+    "difficulty": "Facile",
+    "rating": 4.5,
+    "price": "€21/persona",
+    "description": "Crociera in catamarano lungo la costa di Malaga con osservazione delfini. Musica dal vivo, paella a bordo, bar aperto e tappa di bagno in mare. Porto di Benalmadena, partenze mattutine.",
+    "highlights": [
+      "Osservazione delfini (garanzia rimborso)",
+      "Paella inclusa",
+      "Musica dal vivo",
+      "Bagno in mare"
+    ],
+    "startPoint": "Puerto Marina, Benalmadena",
+    "season": "Tutto l'anno",
+    "includes": "Catamarano, paella, musica, 1 bevita",
+    "wikilocUrl": "https://www.getyourguide.com/benalmadena-l429/benalmadena-catamaran-cruise-with-paella-and-live-music-t1250820/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/09bc0d93bf159bcc25ef8c4b818484be5c39124c02b253ec26e40828441b27d4.png/53.jpg",
+    "tags": [
+      "catamaran",
+      "dolphins",
+      "paella",
+      "live-music",
+      "family-friendly"
+    ]
+  },
+  {
+    "name": "Catamarano Nerja-Maro con Pranzo (4,5h)",
+    "activity": "boat",
+    "zone": "Nerja",
+    "distance": "Costa de Nerja",
+    "duration": "4,5h",
+    "difficulty": "Facile",
+    "rating": 5.0,
+    "price": "€75/persona",
+    "description": "Tour in catamarano da 4,5 ore lungo gli Acantilados de Maro con pranzo a bordo (paella, insalata, anguria), bagno in mare e viste spettacolari sulla Costa del Sol. Possibile avvistamento delfini.",
+    "highlights": [
+      "Pranzo paella incluso",
+      "Acantilados de Maro",
+      "Bagno in mare aperto",
+      "Viste panoramiche Costa del Sol"
+    ],
+    "startPoint": "Puerto Deportivo, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Catamarano, pranzo, bevita, guida",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/45-hour-nerja-maro-catamaran-tour-with-lunch-t1264136/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/e3fd31301b6217844eab80faca2543433a160805fa29468fffa58f371cca2dd5.jpg/68.jpg",
+    "tags": [
+      "catamaran",
+      "lunch-included",
+      "cliffs",
+      "dolphins"
+    ]
+  },
+  {
+    "name": "Navigazione al Tramonto La Herradura-Maro-Nerja",
+    "activity": "boat",
+    "zone": "La Herradura/Nerja",
+    "distance": "Costa Tropical",
+    "duration": "~2h",
+    "difficulty": "Facile",
+    "rating": 4.9,
+    "price": "€70/persona",
+    "description": "Vela romantica al tramonto lungo la Costa Tropical da La Herradura a Maro e Nerja. Yacht con skipper, bevande e snack inclusi. Avvistamento delfini quasi garantito nella zona.",
+    "highlights": [
+      "Tramonto spettacolare sulla Costa Tropical",
+      "Avvistamento delfini",
+      "Bevande e snack inclusi",
+      "Yacht privato (max 9 persone)"
+    ],
+    "startPoint": "Puerto Deportivo, La Herradura",
+    "season": "Aprile-Ottobre",
+    "includes": "Yacht, skipper, bevande, snack",
+    "wikilocUrl": "https://www.getyourguide.com/la-herradura-l178933/la-herradura-maro-nerja-sailing-at-sunset-t686820/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/c1bed7629251c5be8390f9ca2a6acdb55f9ead19de4de72bf0ce2766d6bf2001.jpg/68.jpg",
+    "tags": [
+      "sunset",
+      "romantic",
+      "dolphins",
+      "small-group"
+    ]
+  },
+  {
+    "name": "Gita da Granada: Grotte di Nerja, Frigiliana e Spiaggia",
+    "activity": "excursion",
+    "zone": "Nerja/Frigiliana",
+    "distance": "Da Granada",
+    "duration": "Giornata intera",
+    "difficulty": "Facile",
+    "rating": 4.5,
+    "price": "€57/persona",
+    "description": "Escursione di un giorno da Granada alla Costa del Sol. Visita alle Grotte di Nerja (stalattiti spettacolari), passeggiata nel borgo bianco di Frigiliana e relax sulla spiaggia di Burriana o Cala de Maro.",
+    "highlights": [
+      "Grotte di Nerja (stalattiti 30m)",
+      "Frigiliana (borgo bianco)",
+      "Spiaggia di Burriana",
+      "Trasferimento da Granada incluso"
+    ],
+    "startPoint": "Granada (ritiro hotel)",
+    "season": "Tutto l'anno",
+    "includes": "Autobus, guida, ingresso Grotte",
+    "wikilocUrl": "https://www.getyourguide.com/salobrena-l209168/granada-nerja-caves-nerja-frigiliana-and-beach-day-trip-t1330768/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/4b0b18b3d2269c18067556bf17231d15fc43e2ea52b0489a81ebb13338efcf27.jpeg/68.jpg",
+    "tags": [
+      "excursion",
+      "caves",
+      "village",
+      "beach",
+      "from-granada"
+    ]
+  },
+  {
+    "name": "Kayak Libero Nerja-Maro (Senza Guida, 2,5h)",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "~6 km",
+    "duration": "2,5h",
+    "difficulty": "Facile",
+    "rating": 4.6,
+    "price": "€20/persona",
+    "description": "Percorso in kayak libero senza guida da Playa de Maro fino alla Cascata de Maro. Noleggio attrezzatura con mappa delle grotte e punti di interesse. Perfetto per chi vuole esplorare in totale libertà.",
+    "highlights": [
+      "Totale libertà di esplorazione",
+      "Cascata de Maro",
+      "Grotte marine accessibili",
+      "Prezzo accessibile"
+    ],
+    "startPoint": "Playa de Maro, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, pala, mappa",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-free-kayak-route-no-guide-25-hour-tour-nerja-maro-waterfall-t987541/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/7fa54f4eed58c325b146b719673d304c26c649c351ca65a1ab7c3a81e39d5df1.jpeg/68.jpg",
+    "tags": [
+      "self-guided",
+      "waterfall",
+      "budget-friendly",
+      "flexible"
+    ]
+  },
+  {
+    "name": "Kayak e Snorkel Acantilados de La Herradura",
+    "activity": "kayak",
+    "zone": "La Herradura",
+    "distance": "~8 km",
+    "duration": "3h",
+    "difficulty": "Facile",
+    "rating": 4.7,
+    "price": "€35/persona",
+    "description": "Tour guidato kayak e snorkel lungo gli Acantilados de La Herradura-Maro. Grotte marine, tuffi dagli scogli, snorkel con vista su pesci tropicali. Partenza da La Herradura, arrivo a Maro.",
+    "highlights": [
+      "Acantilados de La Herradura",
+      "Grotte marine e tuffi",
+      "Snorkel con pesci colorati",
+      "Guida specializzata"
+    ],
+    "startPoint": "Playa de La Herradura, Almuñécar",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, guida, attrezzatura snorkel",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/la-herradura-maros-cliffs-kayak-and-snorkeling-tour-t503102/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/88c85551df2f6a10226e5fa9b14abfe60b0a9d38dbd6c0929d75c0a0160faf35.jpg/68.jpg",
+    "tags": [
+      "guided",
+      "snorkel",
+      "cliffs",
+      "caves"
+    ]
+  },
+  {
+    "name": "Jet Ski Guidato Nerja-Maro Waterfall",
+    "activity": "boat",
+    "zone": "Nerja",
+    "distance": "~15 km",
+    "duration": "1,5h",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€70/persona",
+    "description": "Tour guidato in jet ski lungo la costa di Nerja fino alla Cascata de Maro. Acque cristalline, acantilados spettacolari, possibilité di tuffarsi in mare. Nessun brevetto richiesto.",
+    "highlights": [
+      "Jet ski lungo gli acantilados",
+      "Cascata de Maro dall'acqua",
+      "Tuffi in mare",
+      "Nessun brevetto richiesto"
+    ],
+    "startPoint": "Puerto Deportivo, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Jet ski, casco, guida,assicurazione",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-guided-jet-ski-tour-to-maro-waterfall-t1292256/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/d2073778b832a0f3f9e56deebcace53b15464d0d8740c7073923e4c2a35e0100.jpeg/68.jpg",
+    "tags": [
+      "jet-ski",
+      "waterfall",
+      "adrenaline",
+      "no-license"
+    ]
+  },
+  {
+    "name": "Barca Cascata de Maro + Paddleboard e Drink",
+    "activity": "boat",
+    "zone": "Nerja",
+    "distance": "~10 km",
+    "duration": "2,5h",
+    "difficulty": "Facile",
+    "rating": 4.7,
+    "price": "€25/persona",
+    "description": "Gita in barca alla Cascata de Maro con fermata per paddleboard e bevanda inclusa. Navigazione costiera tra grotte e acantilados con possibilità di nuoto in acque cristalline.",
+    "highlights": [
+      "Cascata de Maro in barca",
+      "Paddleboard incluso",
+      "Bevanda inclusa",
+      "Grotte marine"
+    ],
+    "startPoint": "Playa de Burriana, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Barca, paddleboard, bevanda, guida",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-maro-waterfall-boat-trip-with-paddleboarding-drink-t396353/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/d7321f09f43657e9c20fc1b4045763028bdf7142266b6341fe346b62a1a4975a.jpg/68.jpg",
+    "tags": [
+      "boat",
+      "paddleboard",
+      "waterfall",
+      "relaxing"
+    ]
+  },
+  {
+    "name": "Vela con Delfini La Herradura",
+    "activity": "boat",
+    "zone": "La Herradura",
+    "distance": "Costa di Almuñécar",
+    "duration": "~2h",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€30/persona",
+    "description": "Navigazione a vela lungo la costa di La Herradura con osservazione delfini. Yacht con skipper esperto che conosce le zone di avvistamento. Snack e bevande leggere incluse.",
+    "highlights": [
+      "Avvistamento delfini (90% successo)",
+      "Yacht a vela panoramico",
+      "Snack e bevande incluse",
+      "Skipper esperto locale"
+    ],
+    "startPoint": "Puerto Deportivo, La Herradura",
+    "season": "Aprile-Ottobre",
+    "includes": "Yacht, skipper, snack, bevande",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/la-herradura-sailing-with-a-view-of-dolphins-t684283/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/3f5a2731b0c871a413da466a8eb768d4c741441f3bb3f1690d979f090f4468d8.jpg/68.jpg",
+    "tags": [
+      "sailing",
+      "dolphins",
+      "relaxing",
+      "panoramic"
+    ]
+  },
+  {
+    "name": "Paddle Surf Acantilados e Cascata de Maro",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "~5 km",
+    "duration": "2,5h",
+    "difficulty": "Facile-Media",
+    "rating": 4.6,
+    "price": "€30/persona",
+    "description": "Tour guidato in paddle surf lungo gli acantilados de Maro con arrivo alla Cascata de Maro. Perfetto per chi cerca un'alternativa al kayak con vista differente sul paesaggio costiero.",
+    "highlights": [
+      "Paddle surf panoramico",
+      "Acantilados de Maro-Cerro Gordo",
+      "Cascata de Maro",
+      "Snorkel incluso"
+    ],
+    "startPoint": "Playa de Maro, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Paddleboard, guida, attrezzatura snorkel",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-guided-paddle-surf-cliffs-and-maro-waterfall-t387573/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/bd8fc7c1cd0b09177152c102f18fb6f549723bf85ac93abcdd1a04eb8b3e015b.jpg/68.jpg",
+    "tags": [
+      "paddle-surf",
+      "cliffs",
+      "waterfall",
+      "guided"
+    ]
+  },
+  {
+    "name": "Gita da Malaga: Grotte di Nerja, Nerja e Frigiliana",
+    "activity": "excursion",
+    "zone": "Nerja/Frigiliana",
+    "distance": "Da Malaga",
+    "duration": "9h",
+    "difficulty": "Facile",
+    "rating": 4.7,
+    "price": "€69/persona",
+    "description": "Escursione completa da Malaga con visita alle Grotte di Nerja (3km di stalattiti), passeggiata nel centro di Nerja e nel borgo bianco di Frigiliana. Guida multilingue, ritiro hotel incluso.",
+    "highlights": [
+      "Grotte di Nerja (stalattiti giganti)",
+      "Centro storico di Nerja",
+      "Frigiliana (borgo bianco)",
+      "Ritiro hotel Malaga"
+    ],
+    "startPoint": "Malaga (ritiro hotel)",
+    "season": "Tutto l'anno",
+    "includes": "Autobus, guida, ingresso Grotte",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/from-malaga-caves-of-nerja-nerja-and-frigiliana-day-tour-t518384/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/4f48cbea6846fdbb.jpeg/68.jpg",
+    "tags": [
+      "excursion",
+      "caves",
+      "village",
+      "from-malaga"
+    ]
+  },
+  {
+    "name": "Caminito del Rey da Nerja/Torrox",
+    "activity": "excursion",
+    "zone": "Nerja/El Chorro",
+    "distance": "Da Nerja",
+    "duration": "7-9h",
+    "difficulty": "Facile-Media",
+    "rating": 4.9,
+    "price": "€69/persona",
+    "description": "Gita al Caminito del Rey, il sentiero più spettacolare della Spagna. Ponti sospesi a 100m di altezza, gole impressionanti. Trasferimento da Nerja con guida. Perno obbligatorio.",
+    "highlights": [
+      "Caminito del Rey (sentiero più bello di Spagna)",
+      "Ponti sospesi a 100m",
+      "Gole di El Chorro",
+      "Trasferimento da Nerja"
+    ],
+    "startPoint": "Nerja/Torrox/Torre del Mar",
+    "season": "Tutto l'anno",
+    "includes": "Autobus, guida, ingresso, casco",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-torrox-or-torre-del-mar-caminito-del-rey-day-trip-t417380/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/6261d352ca8f6.jpeg/68.jpg",
+    "tags": [
+      "excursion",
+      "caminito-del-rey",
+      "adventure",
+      "landmark"
+    ]
+  },
+  {
+    "name": "Nerja e Frigiliana da Costa del Sol con Degustazione",
+    "activity": "excursion",
+    "zone": "Nerja/Frigiliana",
+    "distance": "Da Costa del Sol",
+    "duration": "8-9,5h",
+    "difficulty": "Facile",
+    "rating": 4.5,
+    "price": "€40/persona",
+    "description": "Escursione da Costa del Sol a Nerja e Frigiliana con degustazione di vini e prodotti locali. Passeggiata nel borgo di Frigiliana, tempo libero a Nerja, ritiro hotel.",
+    "highlights": [
+      "Degustazione vini e prodotti locali",
+      "Frigiliana (borgo bianco)",
+      "Tempo libero a Nerja",
+      "Ritiro hotel Costa del Sol"
+    ],
+    "startPoint": "Costa del Sol (ritiro hotel)",
+    "season": "Tutto l'anno",
+    "includes": "Autobus, guida, degustazione",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-frigiliana-from-costa-del-sol-with-local-tasting-t567034/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/6b40d1162489b47fd57deb133bc3c2de57ee6d4f7ba779bbf1588429accf9a98.jpeg/68.jpg",
+    "tags": [
+      "excursion",
+      "wine-tasting",
+      "village",
+      "from-costa-del-sol"
+    ]
+  },
+  {
+    "name": "Via Ferrata Zafarraya con Zip Line e Snack",
+    "activity": "excursion",
+    "zone": "Nerja/Zafarraya",
+    "distance": "Da Nerja",
+    "duration": "5,5h",
+    "difficulty": "Media-Alta",
+    "rating": 5.0,
+    "price": "€88/persona",
+    "description": "Via Ferrata panoramica sul Passo di Zafarraya con zip line, ponti sospesi e arrampicata su roccia. Snack tradizionale incluso. Vista sulla Costa d'Africa nei giorni chiari.",
+    "highlights": [
+      "Via Ferrata con zip line",
+      "Panorama Costa d'Africa",
+      "Snack tradizionale incluso",
+      "Avventura adrenalina"
+    ],
+    "startPoint": "Nerja (trasferimento)",
+    "season": "Aprile-Ottobre",
+    "includes": "Trasferimento, attrezzatura, guida, snack",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-zafarraya-via-ferrata-with-zip-lines-and-snack-t1155548/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/98f307126c2d3af6ae31308fc0a0681f8203dfe731d59aeb6f79a6fc034d075b.jpg/68.jpg",
+    "tags": [
+      "excursion",
+      "via-ferrata",
+      "zip-line",
+      "adventure"
+    ]
+  },
+  {
+    "name": "Jeep Open-Top Parco Nazionale Nerja",
+    "activity": "excursion",
+    "zone": "Nerja",
+    "distance": "Parco Nazionale",
+    "duration": "4h",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€58/persona",
+    "description": "Escursione in jeep scoperto nel Parco Nazionale di Nerja. Panoramiche sugli acantilados, stop foto, visita a Fuente del Esparto. Gruppi piccoli, massimo 8 persone.",
+    "highlights": [
+      "Jeep scoperto panoramico",
+      "Parco Nazionale di Nerja",
+      "Fuente del Esparto",
+      "Gruppi piccoli (max 8)"
+    ],
+    "startPoint": "Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Jeep, guida, snack",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/explore-the-nerja-national-park-nature-in-our-open-top-jeeps-t1024188/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/8b93f1b841c8d534e201dc198db2bcd85b60ea1a67e21483d7bd1d2247ed4cab.jpg/68.jpg",
+    "tags": [
+      "excursion",
+      "jeep",
+      "national-park",
+      "panoramic"
+    ]
+  },
+  {
+    "name": "Tour Fattoria del Caffè La Herradura",
+    "activity": "excursion",
+    "zone": "La Herradura",
+    "distance": "Da Nerja",
+    "duration": "70min",
+    "difficulty": "Facile",
+    "rating": 4.8,
+    "price": "€15/persona",
+    "description": "Visita guidata alla única piantagione di caffè d'Europa, a La Herradura. Percorso tra piante di caffè, degustazione e panorama sulla Costa Tropical. Esperienza unica e rilassante.",
+    "highlights": [
+      "Unica piantagione di caffè d'Europa",
+      "Degustazione caffè fresco",
+      "Panorama Costa Tropical",
+      "Esperienza culturale unica"
+    ],
+    "startPoint": "La Herradura, Almuñécar",
+    "season": "Tutto l'anno",
+    "includes": "Visita guidata, degustazione",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/la-herradura-coffee-farm-tour-in-europes-only-plantation-t513415/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/35fe054f7166a9b26dd845673537201de824a1f50097d81520a3315f67e62e2b.jpeg/68.jpg",
+    "tags": [
+      "excursion",
+      "coffee-farm",
+      "cultural",
+      "easy"
+    ]
+  },
+  {
+    "name": "4x4 Fuente del Esparto, La Civila e Giardino Botanico",
+    "activity": "excursion",
+    "zone": "Nerja",
+    "distance": "Parco Nazionale",
+    "duration": "3h",
+    "difficulty": "Facile",
+    "rating": 4.0,
+    "price": "€30/persona",
+    "description": "Tour in 4x4 nel cuore del Parco Nazionale di Nerja. Visita a Fuente del Esparto, La Civila e Giardino Botanico con panoramiche sugli acantilados e la costa.",
+    "highlights": [
+      "Fuente del Esparto",
+      "La Civila",
+      "Giardino Botanico",
+      "Panoramiche costiere"
+    ],
+    "startPoint": "Nerja",
+    "season": "Tutto l'anno",
+    "includes": "Jeep 4x4, guida",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-guided-4x4-route-to-fuente-del-esparto-and-la-civila-botanical-garden-t1253043/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/6b9247ddcf4375b74c28dad4f76e60d4d99a49aa889afa57da4c8888d726330c.png/68.jpg",
+    "tags": [
+      "excursion",
+      "4x4",
+      "botanical-garden",
+      "national-park"
+    ]
+  },
+  {
+    "name": "Escursione Nerja e Frigiliana con Ingresso Grotte",
+    "activity": "excursion",
+    "zone": "Nerja/Frigiliana",
+    "distance": "Da Granada",
+    "duration": "8h",
+    "difficulty": "Facile",
+    "rating": 4.6,
+    "price": "€63/persona",
+    "description": "Escursione di un giorno da Granada a Nerja e Frigiliana con ingresso alle Grotte di Nerja incluso. Passeggiata nel centro di Nerja, tempo libero, ritiro hotel.",
+    "highlights": [
+      "Ingresso Grotte di Nerja incluso",
+      "Frigiliana (borgo bianco)",
+      "Tempo libero a Nerja",
+      "Ritiro hotel Granada"
+    ],
+    "startPoint": "Granada (ritiro hotel)",
+    "season": "Tutto l'anno",
+    "includes": "Autobus, guida, ingresso Grotte",
+    "wikilocUrl": "https://www.getyourguide.com/salobrena-l209168/granada-excursion-to-nerja-and-frigiliana-with-entry-to-the-nerja-caves-t1316010/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/603b845e492aae250fc2e9c27870f6f03ee143aa859d673e96f8d40bcb5eabc6.png/68.jpg",
+    "tags": [
+      "excursion",
+      "caves",
+      "village",
+      "from-granada"
+    ]
+  },
+  {
+    "name": "Jet Ski Torrox Costa",
+    "activity": "boat",
+    "zone": "Torrox Costa",
+    "distance": "~20 km",
+    "duration": "1h",
+    "difficulty": "Facile",
+    "rating": 4.5,
+    "price": "€130/persona",
+    "description": "Escursione in jet ski da Torrox Costa lungo la costa verso Nerja. Acque cristalline, acantilados, possibilità di fermarsi a fare il bagno. Nessun brevetto richiesto.",
+    "highlights": [
+      "Jet ski lungo la costa",
+      "Acque cristalline",
+      "Fermata bagno",
+      "Nessun brevetto"
+    ],
+    "startPoint": "Torrox Costa",
+    "season": "Aprile-Ottobre",
+    "includes": "Jet ski, casco, guida",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/guided-jet-ski-excursion-in-torrox-costa-t1300783/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/e87a656e46434fa1affd2c27bdc8bb500c7b7601fe0f560e22733ced38679a54.jpg/68.jpg",
+    "tags": [
+      "jet-ski",
+      "adrenaline",
+      "coastal",
+      "no-license"
+    ]
+  },
+  {
+    "name": "Kayak Snorkel La Herradura-Maros-Cerro Gordo",
+    "activity": "kayak",
+    "zone": "La Herradura",
+    "distance": "~8 km",
+    "duration": "2,5h",
+    "difficulty": "Facile",
+    "rating": 4.7,
+    "price": "€25/persona",
+    "description": "Tour guidato kayak e snorkel nella Riserva Naturale Maros-Cerro Gordo. Grotte marine, acque cristalline, pesce tropicali. Partenza da La Herradura.",
+    "highlights": [
+      "Riserva Naturale Maros-Cerro Gordo",
+      "Snorkel con pesce tropicali",
+      "Grotte marine",
+      "Guida esperta"
+    ],
+    "startPoint": "Playa de La Herradura",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, guida, attrezzatura snorkel",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/la-herradura-kayak-snorkel-tour-maro-cerro-gordo-reserve-t493727/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/c651adaac8424f8767e7f9aeb4a5fd7ee8596136c914d5308599ca3320c668c7.jpeg/68.jpg",
+    "tags": [
+      "kayak",
+      "snorkel",
+      "nature-reserve",
+      "guided"
+    ]
+  },
+  {
+    "name": "Kayak El Playazo → Balcón de Europa",
+    "activity": "kayak",
+    "zone": "Nerja",
+    "distance": "~4 km",
+    "duration": "2h",
+    "difficulty": "Facile",
+    "rating": 4.5,
+    "price": "€48/persona",
+    "description": "Tour guidato in kayak da El Playazo fino al Balcón de Europa, il punto più iconico di Nerja. Vista unica sulla baia dall'acqua, passaggio sotto gli acantilados.",
+    "highlights": [
+      "Balcón de Europa dall'acqua",
+      "Vista unica sulla baia",
+      "Acantilados di Nerja",
+      "Guida locale"
+    ],
+    "startPoint": "Playa El Playazo, Nerja",
+    "season": "Aprile-Ottobre",
+    "includes": "Kayak, guida, attrezzatura",
+    "wikilocUrl": "https://www.getyourguide.com/nerja-l90213/nerja-guided-kayak-route-from-el-playazo-to-the-balcon-de-europa-t1350147/",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/477b3356000329cd39a658e0ed66d9b3d68a73ca01ace31924ffa19d927ce6c7.jpeg/68.jpg",
+    "tags": [
+      "kayak",
+      "balcon-de-europa",
+      "guided",
+      "scenic"
+    ]
+  }
+]

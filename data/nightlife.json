@@ -1,190 +1,349 @@
-[
-  {
-    "zone": "Málaga Centro",
-    "vibe": "autentica, giovane, vibrante",
-    "clientType": "locali, studenti, viaggiatori",
-    "bestTime": "23:00 - 04:00",
-    "dressCode": "casual / smart casual",
-    "socialEase": 9,
-    "venues": [
-      {
-        "name": "La Tranca",
-        "type": "Vermuteria / Tapas",
-        "price": "€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Tranca+Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Tranca%20Malaga"
-      },
-      {
-        "name": "Orellana",
-        "type": "Cocktail Bar storico",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Orellana+Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Orellana%20Malaga"
-      },
-      {
-        "name": "Velvet",
-        "type": "Musica Live / Club",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Velvet+Malaga",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Velvet%20Malaga"
-      }
-    ],
-    "start": "Calle Carretería",
-    "continueTo": "Plaza de Uncibay",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Malaga+Centro+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Malaga%20Nightlife",
-    "notes": "Il cuore della movida vera. Qui si fanno amicizie facilmente parlando al bancone."
-  },
-  {
-    "zone": "Marbella / Puerto Banús",
-    "vibe": "luxury, glamour, esclusiva",
-    "clientType": "jet-set, turisti premium, clubber",
-    "bestTime": "01:00 - 06:00",
-    "dressCode": "elegante (obbligatorio)",
-    "socialEase": 5,
-    "venues": [
-      {
-        "name": "Olivia Valère",
-        "type": "Mega Club",
-        "price": "€€€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Olivia+Valere+Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Olivia%20Valere%20Marbella"
-      },
-      {
-        "name": "Pangea",
-        "type": "Rooftop Club",
-        "price": "€€€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Pangea+Marbella",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Pangea%20Marbella"
-      },
-      {
-        "name": "News Café",
-        "type": "Lounge Bar",
-        "price": "€€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=News+Cafe+Puerto+Banus",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=News%20Cafe%20Puerto%20Banus"
-      }
-    ],
-    "start": "Front line Puerto Banús",
-    "continueTo": "Milla de Oro",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Marbella%20Nightlife",
-    "notes": "Preparati a spendere. L'ingresso nei club può costare €50-100."
-  },
-  {
-    "zone": "Benalmádena (Puerto Marina)",
-    "vibe": "turistica, energica, varia",
-    "clientType": "giovani, turisti, addii al celibato",
-    "bestTime": "00:00 - 05:00",
-    "dressCode": "casual curato",
-    "socialEase": 7,
-    "venues": [
-      {
-        "name": "Kiu",
-        "type": "Disco gigante",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Discoteca+Kiu+Benalmadena",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Kiu%20Benalmadena"
-      },
-      {
-        "name": "Maracas",
-        "type": "Beach Club / Bar",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Maracas+Puerto+Marina",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Maracas%20Puerto%20Marina"
-      }
-    ],
-    "start": "Plaza Solymar",
-    "continueTo": "Puerto Marina",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Benalmadena%20Nightlife",
-    "notes": "Molto commerciale ma divertente se cerchi una serata senza troppi pensieri."
-  },
-  {
-    "zone": "Nerja (Plaza Tutti Frutti)",
-    "vibe": "familiare, vivace, accogliente",
-    "clientType": "locali, turisti europei, coppie",
-    "bestTime": "22:00 - 03:00",
-    "dressCode": "casual",
-    "socialEase": 8,
-    "venues": [
-      {
-        "name": "Cochran's",
-        "type": "Irish Pub / Terrazza",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Cochrans+Irish+Pub+Nerja",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cochran%27s%20Nerja"
-      },
-      {
-        "name": "Agora Bar",
-        "type": "Cocktail Bar",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Agora+Bar+Nerja",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Agora%20Bar%20Nerja"
-      }
-    ],
-    "start": "Balcón de Europa",
-    "continueTo": "Plaza Tutti Frutti",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Plaza+Tutti+Frutti+Nerja",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Nerja%20Nightlife",
-    "notes": "Ambiente meno caotico di Málaga, perfetto per un drink lungo il mare."
-  },
-  {
-    "zone": "Torremolinos (La Carihuela & Centro)",
-    "vibe": "inclusiva, festaiola, retrò",
-    "clientType": "LGBTQ+ friendly, turisti, locali",
-    "bestTime": "23:00 - 05:00",
-    "dressCode": "libero / creativo",
-    "socialEase": 10,
-    "venues": [
-      {
-        "name": "Eden Beach Club",
-        "type": "Beach Club",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Eden+Beach+Club+Torremolinos",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Eden%20Beach%20Club%20Torremolinos"
-      },
-      {
-        "name": "El Gato Lounge",
-        "type": "Chill-out Bar",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Gato+Lounge+Torremolinos",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Gato%20Lounge%20Torremolinos"
-      }
-    ],
-    "start": "La Nogalera (Centro)",
-    "continueTo": "Paseo Marítimo La Carihuela",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Torremolinos+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Torremolinos%20Nightlife",
-    "notes": "Torremolinos è l'anima libera della costa. La Nogalera è il centro nevralgico della vita notturna inclusiva."
-  },
-  {
-    "zone": "Estepona (Puerto Deportivo)",
-    "vibe": "rilassata, locale, marinara",
-    "clientType": "residenti, yacht owner, turisti tranquilli",
-    "bestTime": "22:00 - 02:30",
-    "dressCode": "casual chic",
-    "socialEase": 7,
-    "venues": [
-      {
-        "name": "Louie Louie",
-        "type": "Rock Club / Live Music",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Louie+Louie+Estepona",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Louie%20Louie%20Estepona"
-      },
-      {
-        "name": "Jazz Pub",
-        "type": "Cocktail & Jazz",
-        "price": "€€",
-        "mapLink": "https://www.google.com/maps/search/?api=1&query=Jazz+Pub+Estepona",
-        "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Jazz%20Pub%20Estepona"
-      }
-    ],
-    "start": "Calle Real",
-    "continueTo": "Puerto Deportivo",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=Estepona+Marina+Nightlife",
-    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Estepona%20Nightlife",
-    "notes": "Estepona offre una notte più 'adulta' e centrata sulla musica di qualità nel porto."
-  }
-]
+{
+  "title": "Movida Nerja — Over 35",
+  "subtitle": "La guida per uscire a Nerja Centro e Plaza Tutti Frutti dopo i 35",
+  "zones": [
+    {
+      "name": "Plaza Tutti Frutti",
+      "description": "Il cuore della movida nerjeña. Di giorno piazza tranquilla con terrazze familiari, di notte si trasforma nel hub della vita notturna con bar, locali e discoteche aperti fino alle 4-6am.",
+      "hours": "Pubblici: 22:00-04:00 | Discoteche: 23:00-06:00",
+      "tip": "Arriva dopo le 23:00 — prima delle 22 la piazza è deserta. Il sabato è la serata più movimentata.",
+      "parking": "Parcheggio pubblico a 200m (Verano Azul). In estate, meglio andare a piedi.",
+      "venues": [
+        {
+          "name": "Sentir Nerja",
+          "type": "Cocktail Bar",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "12:00-03:00",
+          "music": "Cocktail bar tranquillo, musica chill",
+          "vibe": "Terrazza elegante, ottimi cocktail, atmosfera rilassata. Perfetto per iniziare la serata.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.5,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Sentir+Nerja+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Terrazza top per aperitivo, cocktail fatti bene. Il gin tonic è eccezionale.",
+            "Ci siamo andati sabato sera, ottima atmosfera, meno caos rispetto agli altri locali sulla piazza.",
+            "Personale simpatico, prezzi ragionevoli per la qualità. Consigliato per iniziare la serata."
+          ]
+        },
+        {
+          "name": "Pub Tamareo",
+          "type": "Pub",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "22:00-04:00",
+          "music": "Latin, salsa, pop, rock, house",
+          "vibe": "Terrazza grande, darts, pista da ballo. Misto turisti e locali. Buon posto per ballare senza troppo caos.",
+          "price": "€",
+          "over35": true,
+          "rating": 4.2,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Pub+Tamareo+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Gran terrazza, gli darts sono un ottimo scacciapensieri. Musica mixta, c'è per tutti.",
+            "Il sabato si riempie bene, pista da ballo grande. Birra a poco.",
+            "Atmosfera tranquilla rispetto al Seven, ci tornerei./locale ideale per over 30."
+          ]
+        },
+        {
+          "name": "Disco Pub Seven",
+          "type": "Disco Pub",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "23:00-04:00 (Ven/Sab fino 05:00)",
+          "music": "Dance, disco, Latin, pop, rock",
+          "vibe": "DJ live, show, terrazza. Più giovane la sera, ma il sabato è misto. Happy hour e serate tematiche.",
+          "price": "€",
+          "over35": false,
+          "rating": 4.0,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Disco+Pub+Seven+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Il più caotico della piazza. Giovani, ma il sabato trovi di tutto. Serate tematiche fighe.",
+            "DJ bravi, happy hour alle 23 con drink scontati. Consigliato per ballare.",
+            "Un po' troppo rumore per me, preferisco il Tamareo. Però la pista è grande."
+          ]
+        },
+        {
+          "name": "The Circles",
+          "type": "Pub/Bar",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "22:00-04:00",
+          "music": "Live music, cocktail",
+          "vibe": "Atmosfera magica, musica dal vivo, cocktail fino alle 4. Ottimo per chi cerca qualcosa di diverso dal solito pub.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.3,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=The+Circles+Pub+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Musica dal vivo ogni weekend, atmosfera unica. I cocktail sono un po' cari ma ne vale la pena.",
+            "Il mio preferito a Tutti Frutti. Meno folla, più qualità. Perfetto per chi ha più di 30 anni.",
+            "Servizio gentile, terrazza con vista sulla piazza. Ci tornerei domani."
+          ]
+        },
+        {
+          "name": "Obelix Plaza",
+          "type": "Pub",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "22:00-03:00",
+          "music": "Pop, rock, serate tematiche",
+          "vibe": "Serate comiche, karaoke, giochi da tavolo. Atmosfera informale e divertente, meno caotico degli altri.",
+          "price": "€",
+          "over35": true,
+          "rating": 4.1,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Obelix+Plaza+Pub+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Karaoke nights pazzesche! Ci siamo divertiti un sacco, atmosfera super informale.",
+            "Giochi da tavolo + birra = serata perfetta. Il posto giusto per rompere il ghiaccio.",
+            "Meno frequentato degli altri, ma per questo motivo più rilassato. Consigliato."
+          ]
+        },
+        {
+          "name": "Agora",
+          "type": "Bar",
+          "address": "Plaza Tutti Frutti, Nerja",
+          "hours": "22:00-03:00",
+          "music": "Pop,拉丁",
+          "vibe": "Bar centrale sulla piazza, ottima posizione per people watching. Cocktail a buon prezzo.",
+          "price": "€",
+          "over35": true,
+          "rating": 4.0,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Agora+Bar+Plaza+Tutti+Frutti+Nerja",
+          "comments": [
+            "Posizione top, people watching al top. Birra a 1.50€, che vuoi di più?",
+            "Il posto perfetto per osservare la piazza e decidere dove andare dopo. Prezzi bassi.",
+            "Atmosfera semplice, niente fronzoli. Per chi vuole un drink economico e basta."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calle Antonio Millón",
+      "description": "La strada pedonale che collega Plaza Tutti Frutti al centro. Meno caotica della piazza, piena di tapas bar e locali con terrazze. Perfetta per un giro tranquillo dopo cena.",
+      "hours": "19:00-02:00 (bar) | 23:00-04:00 (discoteche)",
+      "tip": "Inizia qui dopo cena, poi vai verso Tutti Frutti se vuoi più movimento.",
+      "venues": [
+        {
+          "name": "Jimmy's Nerja",
+          "type": "Discoteca",
+          "address": "C. Antonio Millón, 6, Nerja",
+          "hours": "23:30-06:00 (Ven/Sab fino 07:00)",
+          "music": "Commerciale, Latin, house, R&B",
+          "vibe": "La discoteca più grande di Nerja. Apre tardi, finisce presto (di mattina). Per i più energici.",
+          "price": "€€",
+          "over35": false,
+          "rating": 4.2,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Jimmy's+Nerja+Antonio+Millon+6+Nerja",
+          "comments": [
+            "Il grande classico di Nerja. Apre tardi, chiude quando vuole. Serate lunghe garantite.",
+            "Prezzo ingresso ~10€ con drink incluso. La pista è enorme, sound system top.",
+            "Per i più giovani, ma se hai energia anche a 35+ ti diverti. Il sabato è imperdibile."
+          ]
+        },
+        {
+          "name": "Rockefeller Hall",
+          "type": "Discoteca",
+          "address": "Calle el Chaparil, Nerja",
+          "hours": "23:00-04:00",
+          "music": "Latin, house, R&B, salsa, bachata",
+          "vibe": "Serate salsa/bachata con professori (sabato). Concerti jazz. Più raffinata di Jimmy's. Buona per over 35.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.3,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Rockefeller+Hall+Chaparil+Nerja",
+          "comments": [
+            "Le serate salsa del sabato sono incredibili, professori che ti insegnano i passi base.",
+            "Il mio locale preferito a Nerja. Più raffinato, gente che sa cosa vuole. Jazz night imperdibili.",
+            "Atmosfera elegante, non troppo caotica. Perfetto per chi ha superato i 25 anni."
+          ]
+        },
+        {
+          "name": "Buskers Irish Pub",
+          "type": "Irish Pub",
+          "address": "C. Antonio Millón, Nerja",
+          "hours": "18:00-02:00",
+          "music": "Live music, folk, pop",
+          "vibe": "Musica dal vivo ogni sera. Atmosfera accogliente, ottimo per iniziare la serata. Bere con i locals.",
+          "price": "€",
+          "over35": true,
+          "rating": 4.4,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Buskers+Irish+Pub+Antonio+Millon+Nerja",
+          "comments": [
+            "Musica live ogni sera, atmosfera irlandese autentica. Il guinness è buono.",
+            "Il posto perfetto per iniziare la serata. Locale piccolo ma accogliente, si conosce gente facile.",
+            "Frequentato da locals e expat britannici. Ottimo per chi vuole bere qualcosa di diverso dal solito."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Balcón de Europa & Centro Storico",
+      "description": "La zona più elegante di Nerja. Terrazze con vista mare, cocktail bar raffinati, ristoranti. Perfetto per il primo appuntamento o una serata romantica.",
+      "hours": "18:00-01:00",
+      "tip": "Inizia con il sunset al Balcón, poi scendi nelle vicine vie per i cocktail.",
+      "venues": [
+        {
+          "name": "Cochran's Irish Pub",
+          "type": "Irish Pub con Terrazza",
+          "address": "Calle Salón (Toboso complex), Nerja",
+          "hours": "12:00-21:00 | 23:00-04:00",
+          "music": "Live music, pop, rock",
+          "vibe": "Terrazza spettacolare con vista mare al Balcón de Europa. Il posto migliore per il sunset. Cibo britannico (burgers).",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.3,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Cochran's+Irish+Pub+Salon+Nerja",
+          "comments": [
+            "La terrazza con vista sul mare è semplicemente spettacolare. Il sunset qui è imperdibile.",
+            "Burgers buoni, guinness perfetto. Il posto ideale per un primo appuntamento.",
+            "Ci siamo stati per la serata di apertura, atmosfera fantastica. Consigliatissimo."
+          ]
+        },
+        {
+          "name": "Terraza Buddha Lounge Bar",
+          "type": "Cocktail Lounge",
+          "address": "Calle de la Gloria, 13, Nerja",
+          "hours": "17:00-02:00 (chiuso mercoledì)",
+          "music": "Chill-out, lounge, ambient",
+          "vibe": "La terraza chill-out più elegante di Nerja. Cocktail innovativi con ingredienti freschi. Vista panoramica sui tetti del centro. Perfetto per date romantici.",
+          "price": "€€€",
+          "over35": true,
+          "rating": 4.5,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Terraza+Buddha+Lounge+Gloria+13+Nerja",
+          "comments": [
+            "Il posto più elegante di Nerja. Cocktail a 12€ ma ne vale ogni centesimo. Vista assurda.",
+            "Ci ho portato la mia ragazza, è rimasta senza parole. Atmosfera perfetta per una cena romantica.",
+            "Il mojito più buono che abbia mai bevuto. Prezzo alto ma qualità altissima."
+          ]
+        },
+        {
+          "name": "Hemingway's",
+          "type": "Bar/Cocktail",
+          "address": "Calle Málaga, 12, Nerja",
+          "hours": "19:00-01:00",
+          "music": "Jazz, lounge, classic rock",
+          "vibe": "Atmosfera sofisticata, ottimi cocktail, vibe internazionale. Per chi cerca qualcosa di diverso dal solito pub spagnolo.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.4,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Hemingway's+Bar+Malaga+12+Nerja",
+          "comments": [
+            "Atmosfera da romanzo hemingwayano. Jazz dal vivo, cocktail perfetti. Il mio rifugio segreto.",
+            "Localetto intimo, ci vai per parlare e bere qualcosa di buono. Non per ballare.",
+            "Vibe internazionale, personale multilingue. Perfetto per chi cerca tranquillità."
+          ]
+        },
+        {
+          "name": "CK's Bar",
+          "type": "British Pub",
+          "address": "Calle el Chaparil, Local 3, Nerja",
+          "hours": "13:00-01:00",
+          "music": "Live music, pop, rock",
+          "vibe": "Pub britannico-friendly, terrazza people-watching. Proprietari simpatici (Cindy & Kurt). Ottimo per expat e turisti over 35. Sport dal vivo.",
+          "price": "€",
+          "over35": true,
+          "rating": 4.6,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=CK's+Bar+Chaparil+Nerja",
+          "comments": [
+            "Cindy e Kurt sono leggendari! Il pub più accogliente di Nerja. Ti senti a casa.",
+            "Sport dal vivo sulla TV, terrazza per people watching. Il posto perfetto per expat over 35.",
+            "Birra buona, prezzi onesti. Ci tornerei ogni sera se potessi. Consigliatissimo."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plaza Cavana",
+      "description": "Piazza tranquilla a passi dal Balcón. Cocktail bar moderni e ristoranti. Meno movimentata di Tutti Frutti, più adulta e raffinata.",
+      "hours": "18:00-01:00",
+      "tip": "Perfetta per la prima parte della serata — drink tranquillo prima di scendere verso Tutti Frutti.",
+      "venues": [
+        {
+          "name": "Blue Lounge Bar",
+          "type": "Cocktail Bar",
+          "address": "Plaza Cavana, 5, Nerja",
+          "hours": "12:00-01:00",
+          "music": "Lounge, chill, pop",
+          "vibe": "Cocktail premium, piatti da condividere, atmosfera moderna. Perfetto per aperitivo o cena leggera prima di uscire.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.4,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Blue+Lounge+Bar+Plaza+Cavana+5+Nerja",
+          "comments": [
+            "Cocktail moderni, piatti da condividere top. L'aperitivo qui è perfetto prima di uscire.",
+            "Atmosfera elegante ma non pretenziosa. I hummus e le empanadas sono buonissimi.",
+            "Il mio spot fisso per l'aperitivo. Prezzi medi, qualità alta. Consigliato."
+          ]
+        },
+        {
+          "name": "Isabel RestoBar",
+          "type": "RestoBar",
+          "address": "Vicino al Balcón de Europa, Nerja",
+          "hours": "19:00-01:00",
+          "music": "Soft, ambient",
+          "vibe": "Cucina mediterranea casereccia, empanadas argentine, tapas con ogni drink. Atmosfera familiare e accogliente. Perfetto per chi cerca qualità.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.5,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Isabel+RestoBar+Balcon+de+Europa+Nerja",
+          "comments": [
+            "Le empanadas argentine sono eccezionali. Ogni drink include tapas, ottimo rapporto qualità-prezzo.",
+            "Atmosfera familiare, la proprietaria è argentina e accoglie come a casa. Cibo top.",
+            "Il posto perfetto per una cena leggera prima di uscire. Tapas gratis con il drink!"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Playa Burriana",
+      "description": "La spiaggia principale di Nerja con beach bar e ristoranti di pesce. Non è movida da discoteca, ma perfetta per una serata estiva con i piedi nella sabbia.",
+      "hours": "19:00-01:00 (estate)",
+      "tip": "Prenota in advance nei weekend estivi. I ristoranti di pesce qui sono tra i migliori di Nerja.",
+      "venues": [
+        {
+          "name": "Beach Bars Burriana",
+          "type": "Beach Bar",
+          "address": "Playa de Burriana, Nerja",
+          "hours": "10:00-01:00 (estate)",
+          "music": "Chill, lounge, sunset sessions",
+          "vibe": "Cocktail al tramonto con vista mare. Atmosfera relaxed, perfetta per la prima uscita della serata.",
+          "price": "€€",
+          "over35": true,
+          "rating": 4.3,
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Beach+Bars+Burriana+Nerja",
+          "comments": [
+            "I piedi nella sabbia, cocktail in mano, tramonto davanti. La serata perfetta.",
+            "Non è movida da discoteca, ma per chi cerca relax è il posto giusto. Prezzi ragionevoli.",
+            "Il sunset qui è incomparabile. Consigliato per chi vuole una serata diversa dal solito."
+          ]
+        }
+      ]
+    }
+  ],
+  "tipsOver35": [
+    {
+      "title": "Timing perfetto",
+      "text": "A Nerja la serata inizia tardi. I ristoranti aprono alle 19-20, i bar si riempiono alle 22-23, le discoteche alle 23:30. Non arriving prima delle 22 a Tutti Frutti — troverai una piazza deserta."
+    },
+    {
+      "title": "Route consigliata",
+      "text": "1) Aperitivo al Balcón o Buddha (18-20) → 2) Cena tapas al centro (20-22) → 3) Drink a Buskers o CK's (22-23) → 4) Tutti Frutti per ballare (23-02) → 5) Notte a Jimmy's o Rockefeller (02-06)."
+    },
+    {
+      "title": "Dove trovare gente over 35",
+      "text": "CK's Bar, Cochran's, Buddha Lounge, Buskers, The Circles e Rockefeller Hall hanno il pubblico più maturo. Evita Seven e Jimmy's se cerchi meno caos."
+    },
+    {
+      "title": "Sicurezza",
+      "text": "Nerja è una delle località più sicure della Costa del Sol. La zona di Tutti Frutti è sorvegliata. Tuttavia, come ovunque, attento alle borse durante le notti affollate."
+    },
+    {
+      "title": "Tasse e drink",
+      "text": "Una caña (birra) costa €1,50-2. Un cocktail €5-8. Un giro per Tutti Frutti costa meno della metà di Marbella o Malaga. Happy hour spesso dalle 18-20."
+    },
+    {
+      "title": "Weekend vs Weekday",
+      "text": "Il sabato è la serata regina. Il venerdì è buono. Da lunedì a giovedì molti locali sono chiusi o con poca gente. Estate = ogni sera è weekend."
+    },
+    {
+      "title": "Lingua",
+      "text": "Nella zona turistica parlano inglese, spagnolo, italiano e tedesco. Molti bar sono gestiti da expat britannici."
+    }
+  ]
+}

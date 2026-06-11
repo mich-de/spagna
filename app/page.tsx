@@ -9,21 +9,22 @@ import Videos from '@/app/components/Videos'
 import BaseSelection from '@/app/components/BaseSelection'
 import Beaches from '@/app/components/Beaches'
 import BoatTours from '@/app/components/BoatTours'
+import WaterActivities from '@/app/components/WaterActivities'
 import Food from '@/app/components/Food'
 import Markets from '@/app/components/Markets'
-import Nightlife from '@/app/components/Nightlife'
 import SingleGuide from '@/app/components/SingleGuide'
 import SanJuan from '@/app/components/SanJuan'
 import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
 import Budget from '@/app/components/Budget'
 import Expenses from '@/app/components/Expenses'
+import PreTripChecklist from '@/app/components/PreTripChecklist'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 import PasswordWall from '@/app/components/PasswordWall'
 import CustomCursor from '@/app/components/CustomCursor'
 
-const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'beaches', 'boat-tours', 'food', 'markets', 'nightlife', 'sanjuan', 'experiences', 'logistics', 'expenses', 'budget']
+const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'beaches', 'boat-tours', 'water-activities', 'food', 'markets', 'sanjuan', 'experiences', 'pretrip-checklist', 'logistics', 'expenses', 'budget']
 
 function HomeContent() {
   const router = useRouter()
@@ -153,15 +154,17 @@ function HomeContent() {
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <BoatTours />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <WaterActivities />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Food />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Markets />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
-        <Nightlife />
-        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <SanJuan />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <LocalExperiences />
+        <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
+        <PreTripChecklist />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />
         <Logistics />
         <div className="h-px bg-gradient-to-r from-transparent via-terracotta-100 to-transparent mx-4 sm:mx-6" />

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Briefcase, Heart, CheckSquare, Trash2, Plus, X, MapPin, Calendar, Car, Edit3, Compass, Check, AlertCircle } from 'lucide-react'
+import { Briefcase, Heart, CheckSquare, Trash2, Plus, X, MapPin, Calendar, Car, Edit3, Compass } from 'lucide-react'
 import bases from '@/data/bases.json'
 
 interface Bookmark {

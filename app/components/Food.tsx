@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Map, Star, Search, Heart, Car, Clock, MapPin } from 'lucide-react'
+import { Map, Star, Heart, Car, Clock, MapPin } from 'lucide-react'
 import foods from '@/data/food.json'
 import restaurants from '@/data/restaurants.json'
 import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'

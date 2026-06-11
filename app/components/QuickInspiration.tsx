@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Sparkles, Shuffle, Heart, MapPin, Car, Clock, ArrowRight, Utensils, Waves, Compass, Map, Star, Check } from 'lucide-react'
+import { Sparkles, Shuffle, Heart, MapPin, Car, Utensils, Waves, Map, Star } from 'lucide-react'
 import beaches from '@/data/beaches.json'
 import restaurants from '@/data/restaurants.json'
 import experiences from '@/data/local-experiences.json'

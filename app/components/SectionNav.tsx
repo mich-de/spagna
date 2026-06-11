@@ -1,25 +1,33 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt, Ship, Store } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt, Ship, Store, ClipboardCheck, Droplets } from 'lucide-react'
 
-const sections = [
+interface SectionDef {
+  id: string
+  label: string
+  icon: React.ComponentType<{ className?: string }>
+  group?: string
+}
+
+const sections: SectionDef[] = [
   { id: 'overview', label: 'Overview', icon: Compass },
-  { id: 'single-guide', label: 'Movida Over 35', icon: Users },
+  { id: 'single-guide', label: 'Movida', icon: Users },
   { id: 'base', label: 'Base', icon: MapPin },
   { id: 'inspiration', label: 'Ispirazione', icon: Sparkles },
   { id: 'videos', label: 'Video', icon: Play },
-  { id: 'itinerary', label: 'Itinerario', icon: Sun },
+  { id: 'itinerary', label: 'Itinerario', icon: Sun, group: 'divider' },
   { id: 'beaches', label: 'Spiagge', icon: Waves },
-  { id: 'boat-tours', label: 'Giri in Barca', icon: Ship },
-  { id: 'food', label: 'Food', icon: Utensils },
+  { id: 'boat-tours', label: 'Barca', icon: Ship },
+  { id: 'water-activities', label: 'Kayak', icon: Droplets },
+  { id: 'food', label: 'Food', icon: Utensils, group: 'divider' },
   { id: 'markets', label: 'Mercati', icon: Store },
-  { id: 'nightlife', label: 'Nightlife', icon: Moon },
   { id: 'sanjuan', label: 'San Juan', icon: Flame },
-  { id: 'experiences', label: 'Local', icon: Heart },
+  { id: 'experiences', label: 'Esperienze', icon: Heart, group: 'divider' },
+  { id: 'pretrip-checklist', label: 'Checklist', icon: ClipboardCheck },
   { id: 'logistics', label: 'Logistica', icon: Car },
-  { id: 'expenses', label: 'Expenses', icon: Receipt },
+  { id: 'expenses', label: 'Spese', icon: Receipt },
   { id: 'budget', label: 'Budget', icon: DollarSign },
 ]
 
@@ -29,21 +37,25 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
-  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 })
   const [plannerStats, setPlannerStats] = useState({ bookmarksCount: 0, completedTasks: 0, totalTasks: 0 })
 
-  useEffect(() => {
+  const scrollToActive = useCallback(() => {
     if (!navRef.current) return
-    const activeEl = navRef.current.querySelector(`[data-nav-id="${activeSection}"]`) as HTMLElement | null
-    if (activeEl) {
-      const parentRect = navRef.current.getBoundingClientRect()
-      const elRect = activeEl.getBoundingClientRect()
-      setIndicatorStyle({
-        left: elRect.left - parentRect.left,
-        width: elRect.width,
-      })
+    const el = navRef.current.querySelector(`[data-nav-id="${activeSection}"]`) as HTMLElement | null
+    if (el) {
+      const container = navRef.current
+      const elLeft = el.offsetLeft
+      const elWidth = el.offsetWidth
+      const containerWidth = container.clientWidth
+      const scrollLeft = container.scrollLeft
+      const target = elLeft - containerWidth / 2 + elWidth / 2
+      container.scrollTo({ left: target, behavior: 'smooth' })
     }
   }, [activeSection])
+
+  useEffect(() => {
+    scrollToActive()
+  }, [activeSection, scrollToActive])
 
   useEffect(() => {
     const updateStats = () => {
@@ -67,55 +79,60 @@ export default function SectionNav({ activeSection, onSectionChange }: {
     return () => window.removeEventListener('sol-local-planner-update', updateStats)
   }, [])
 
-  // Prevent scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
     }
-    return () => {
-      document.body.style.overflow = ''
-    }
+    return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#fcf7ece6] backdrop-blur-xl border-b border-terracotta-100/50">
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2 shrink-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded-lg flex items-center justify-center">
+      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#fcf7ece6]/80 backdrop-blur-2xl border-b border-terracotta-100/40">
+        <div className="max-w-[1920px] mx-auto px-3 sm:px-5">
+          <div className="flex items-center justify-between h-14">
+            {/* Logo */}
+            <div className="flex items-center gap-2 shrink-0 mr-4">
+              <div className="w-8 h-8 bg-gradient-to-br from-terracotta-500 to-mare-600 rounded-lg flex items-center justify-center shadow-sm shadow-terracotta-500/20">
                 <Compass className="w-4 h-4 text-white" />
               </div>
-              <span className="font-display text-lg sm:text-xl font-bold text-notte tracking-tight">
+              <span className="font-display text-lg font-bold text-notte tracking-tight hidden sm:block">
                 Sol <span className="italic font-medium text-terracotta-500">&</span> Local
               </span>
             </div>
 
-            <div ref={navRef} className="hidden lg:flex items-center gap-0.5 overflow-x-auto scrollbar-hide relative">
-              {sections.map((s) => (
-                <button
-                  key={s.id}
-                  data-nav-id={s.id}
-                  onClick={() => onSectionChange(s.id)}
-                  className={`relative z-10 px-3 py-2 text-sm rounded-lg flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200 ${
-                    activeSection === s.id
-                      ? 'text-white'
-                      : 'text-mare-700/60 hover:text-terracotta-700'
-                  }`}
-                >
-                  <s.icon className="w-3.5 h-3.5" />
-                  {s.label}
-                </button>
-              ))}
-              <motion.div
-                className="absolute bottom-0 left-0 h-8 bg-gradient-to-r from-terracotta-500 to-terracotta-600 rounded-lg shadow-sm shadow-terracotta-500/20"
-                animate={{ left: indicatorStyle.left, width: indicatorStyle.width }}
-                transition={{ type: 'spring', stiffness: 380, damping: 32 }}
-              />
+            {/* Desktop nav — pill style with groups */}
+            <div
+              ref={navRef}
+              className="hidden lg:flex items-center gap-1 overflow-x-auto scrollbar-hide relative py-1"
+            >
+              {sections.map((s, i) => {
+                const isActive = activeSection === s.id
+                const showDivider = s.group === 'divider' && i > 0
+                return (
+                  <div key={s.id} className="flex items-center">
+                    {showDivider && <div className="w-px h-4 bg-terracotta-200/60 mx-1 shrink-0" />}
+                    <button
+                      data-nav-id={s.id}
+                      onClick={() => onSectionChange(s.id)}
+                      className={`relative shrink-0 px-3 py-1.5 text-[13px] font-medium rounded-full flex items-center gap-1.5 whitespace-nowrap transition-all duration-200 ${
+                        isActive
+                          ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 shadow-md shadow-terracotta-500/25'
+                          : 'text-mare-600/70 hover:text-terracotta-700 hover:bg-terracotta-50/80'
+                      }`}
+                    >
+                      <s.icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : ''}`} />
+                      <span className="hidden xl:inline">{s.label}</span>
+                      <span className="xl:hidden">{s.label.length > 6 ? s.label.slice(0, 5) + '…' : s.label}</span>
+                    </button>
+                  </div>
+                )
+              })}
             </div>
 
+            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden p-2 text-mare-700 hover:bg-terracotta-50 rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center"
@@ -126,85 +143,80 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 className="absolute"
               >
-                {mobileOpen ? <X className="w-6 h-6 text-terracotta-600" /> : <Menu className="w-6 h-6" />}
+                {mobileOpen ? <X className="w-5 h-5 text-terracotta-600" /> : <Menu className="w-5 h-5" />}
               </motion.div>
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile menu — rendered OUTSIDE nav to avoid z-index stacking issues */}
+      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <>
-            {/* Backdrop overlay */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setMobileOpen(false)}
-              className="lg:hidden fixed inset-0 z-[9997] bg-black/20"
+              className="lg:hidden fixed inset-0 z-[9997] bg-black/20 backdrop-blur-sm"
             />
-            {/* Menu panel */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-[9998] bg-[#fcf7ec] border-t border-terracotta-100/50 flex flex-col"
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="lg:hidden fixed inset-x-0 top-14 bottom-0 z-[9998] bg-[#fcf7ec]/95 backdrop-blur-2xl border-t border-terracotta-100/40 flex flex-col"
             >
-              {/* Menu Links */}
               <motion.div
                 onClick={(e) => e.stopPropagation()}
                 variants={{
-                  hidden: { opacity: 0, y: -10 },
-                  show: {
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      staggerChildren: 0.03,
-                      delayChildren: 0.05
-                    }
-                  }
+                  hidden: { opacity: 0 },
+                  show: { opacity: 1, transition: { staggerChildren: 0.025, delayChildren: 0.04 } }
                 }}
                 initial="hidden"
                 animate="show"
-                className="flex-1 overflow-y-auto px-6 py-6 space-y-2"
+                className="flex-1 overflow-y-auto px-5 py-5"
               >
-                <div className="grid grid-cols-2 gap-2">
-                  {sections.map((s) => (
-                    <motion.button
-                      key={s.id}
-                      variants={{
-                        hidden: { opacity: 0, y: 15 },
-                        show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 300, damping: 25 } }
-                      }}
-                      onClick={() => {
-                        setMobileOpen(false)
-                        setTimeout(() => onSectionChange(s.id), 50)
-                      }}
-                      className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all ${
-                        activeSection === s.id
-                          ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 shadow-md shadow-terracotta-500/25'
-                          : 'text-mare-700 hover:text-terracotta-600 hover:bg-terracotta-50/50 border border-terracotta-100/20 bg-white/40'
-                      }`}
-                    >
-                      <s.icon className={`w-4 h-4 ${activeSection === s.id ? 'text-white' : 'text-terracotta-500'}`} />
-                      {s.label}
-                    </motion.button>
-                  ))}
+                <div className="space-y-1">
+                  {sections.map((s) => {
+                    const isActive = activeSection === s.id
+                    const showDivider = s.group === 'divider'
+                    return (
+                      <div key={s.id}>
+                        {showDivider && <div className="h-px bg-terracotta-200/40 my-2" />}
+                        <motion.button
+                          variants={{
+                            hidden: { opacity: 0, x: -12 },
+                            show: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 400, damping: 30 } }
+                          }}
+                          onClick={() => {
+                            setMobileOpen(false)
+                            setTimeout(() => onSectionChange(s.id), 50)
+                          }}
+                          className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+                            isActive
+                              ? 'text-white bg-gradient-to-r from-terracotta-500 to-terracotta-600 shadow-md shadow-terracotta-500/25'
+                              : 'text-mare-700 hover:text-terracotta-600 hover:bg-terracotta-50/60'
+                          }`}
+                        >
+                          <s.icon className={`w-4 h-4 shrink-0 ${isActive ? 'text-white' : 'text-terracotta-500'}`} />
+                          {s.label}
+                        </motion.button>
+                      </div>
+                    )
+                  })}
                 </div>
               </motion.div>
 
-              {/* Progress Summary Footer */}
               {(plannerStats.bookmarksCount > 0 || plannerStats.totalTasks > 0) && (
                 <motion.div
                   onClick={(e) => e.stopPropagation()}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="p-6 bg-white/70 border-t border-terracotta-100/50 backdrop-blur-md space-y-3 shrink-0 pb-safe"
+                  className="p-5 bg-white/60 border-t border-terracotta-100/40 backdrop-blur-md space-y-2.5 shrink-0 pb-safe"
                 >
                   <div className="flex items-center justify-between text-xs font-bold text-mare-600">
                     <span className="flex items-center gap-1.5">
@@ -213,12 +225,12 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                     <span className="flex items-center gap-3">
                       {plannerStats.bookmarksCount > 0 && (
                         <span className="flex items-center gap-1 text-[11px] text-mare-500">
-                          <Heart className="w-3 h-3 text-red-500 fill-red-500" /> {plannerStats.bookmarksCount} preferiti
+                          <Heart className="w-3 h-3 text-red-500 fill-red-500" /> {plannerStats.bookmarksCount}
                         </span>
                       )}
                       {plannerStats.totalTasks > 0 && (
                         <span className="flex items-center gap-1 text-[11px] text-mare-500">
-                          <CheckSquare className="w-3 h-3 text-emerald-500" /> {plannerStats.completedTasks}/{plannerStats.totalTasks} task
+                          <CheckSquare className="w-3 h-3 text-emerald-500" /> {plannerStats.completedTasks}/{plannerStats.totalTasks}
                         </span>
                       )}
                     </span>
@@ -238,8 +250,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
         )}
       </AnimatePresence>
 
-      <div className="h-16" />
+      <div className="h-14" />
     </>
   )
 }
-
