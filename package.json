@@ -4,7 +4,6 @@
   "description": "Costa del Sol Travel Dashboard",
   "scripts": {
     "clean": "rimraf .next out node_modules/.cache",
-    "predev": "npm run clean",
     "dev": "next dev",
     "build": "npm run clean && next build",
     "start": "next start"

@@ -19,8 +19,8 @@ done
 
 sleep 1
 
-echo "  [>] Pulizia cache di compilazione..."
-npm run clean
+echo "  [i] Tip: il server hot-reload automaticamente. Non serve rilanciare start.sh ad ogni modifica!"
+echo "  [i] Se hai crash webpack usa: npm run clean && bash start.sh"
 
 echo ""
 echo "  [v] Avvio del server in corso..."
