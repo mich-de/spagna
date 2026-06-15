@@ -10,7 +10,7 @@ npm run build   # clean + next build → static export to out/
 npm run clean   # rimraf .next out node_modules/.cache
 ```
 
-No test / lint / typecheck scripts exist.
+No test / lint / typecheck scripts exist. Verification = `npm run build` passes.
 
 ## Data
 
@@ -25,10 +25,10 @@ All content in `data/*.json`, imported by components from `@/data/*.json`. Edit 
 | `san-juan.json` | 23→24 June event |
 | `beaches.json` | 12+ beaches |
 | `boat-tours.json` | Boat tours & catamarans |
-| `water-activities.json` | Kayak, hiking itineraries (Wikiloc) |
+| `water-activities.json` | 30 activities: kayak, boat, hiking, snorkel, excursion |
 | `restaurants.json` | 15+ restaurants |
 | `food.json` | 15+ typical dishes |
-| `nightlife.json` | Nightlife zones |
+| `nightlife.json` | Nerja nightlife zones/venues/tips — consumed by SingleGuide (Nightlife Nerja tab) |
 | `markets.json` | Weekly markets |
 | `attractions.json` | Museums/sights |
 | `local-experiences.json` | 15+ experiences |
@@ -36,7 +36,7 @@ All content in `data/*.json`, imported by components from `@/data/*.json`. Edit 
 | `budget.json` | 3 spending levels |
 | `expenses.json` | Expense tracking |
 | `accommodations.json` | Accommodation data |
-| `movida-over35.json` | Over-35 nightlife & dating guide |
+| `movida-over35.json` | Multi-city movida data (8 cities, briefing, venues) — consumed by SingleGuide |
 
 ## Tech stack
 
@@ -59,13 +59,14 @@ All content in `data/*.json`, imported by components from `@/data/*.json`. Edit 
 
 ## Architecture
 
-- Single-page dashboard: `page.tsx` renders 15 sections with scroll-spy (IntersectionObserver) + sticky `SectionNav`
-- Sections in order: overview, single-guide, base, inspiration, videos, beaches, boat-tours, water-activities, food, markets, nightlife, sanjuan, experiences, pretrip-checklist, logistics, expenses, budget
+- Single-page dashboard: `page.tsx` renders 16 sections with scroll-spy (IntersectionObserver) + sticky `SectionNav`
+- Sections in order: overview, single-guide, base, inspiration, videos, beaches, boat-tours, water-activities, food, markets, sanjuan, experiences, pretrip-checklist, logistics, expenses, budget
 - Dedicated itinerary page: `/itinerary` (separate route, reuses `Itinerary` component)
+- **SingleGuide** ("Movida Over 35"): 11-tab component combining movida-over35.json multi-city data + nightlife.json Nerja venues. Tabs: Briefing, Alloggio, Locali, Costa, Tardeo, Focus Nerja, Nightlife Nerja, Dating, Piano, Report, Sicurezza
 - **TripPlanner** ("Il Mio Piano"): floating drawer syncing via `localStorage` + `CustomEvent('sol-local-planner-update')`. BaseSelection shares selected base state through the same mechanism.
 - **PasswordWall**: client-side SHA-256 hash auth. Hash hardcoded in `PasswordWall.tsx:5` and `page.tsx:41`.
 - No API routes, no database, no state management library
-- `next.config.js`: `basePath: '/spagna'` only active when `GITHUB_ACTIONS === 'true'`
+- `next.config.js`: `output` and `basePath` only active when `GITHUB_ACTIONS === 'true'`
 
 ## Code conventions
 
