@@ -36,7 +36,7 @@ function getAdjustedContent(dayIndex: number, selectedBase: string, originalDay:
   let afternoon = originalDay.afternoon
   let sunset = originalDay.sunset
   let local_tip = originalDay.local_tip
-  const normalizedBase = selectedBase || "San Pedro de Alcántara"
+  const normalizedBase = selectedBase || "Nerja"
 
   if (dayIndex === 1) {
     if (normalizedBase === "Marbella (Centro/Casco Antiguo)") morning = morning.replace("Spostamento a Marbella / Cabopino (22min).", "Spostamento a Cabopino (15min).")
@@ -91,7 +91,7 @@ function getAdjustedContent(dayIndex: number, selectedBase: string, originalDay:
 
 export default function Itinerary() {
   const [openDay, setOpenDay] = useState<number | null>(0)
-  const [selectedBase, setSelectedBase] = useState<string>("San Pedro de Alcántara")
+  const [selectedBase, setSelectedBase] = useState<string>("Nerja")
 
   useEffect(() => {
     const stored = localStorage.getItem('sol_local_planner')
@@ -104,7 +104,7 @@ export default function Itinerary() {
     const handleUpdate = (e: Event) => {
       const customEvent = e as CustomEvent
       if (customEvent.detail && customEvent.detail.selectedBase !== undefined) {
-        setSelectedBase(customEvent.detail.selectedBase || "San Pedro de Alcántara")
+        setSelectedBase(customEvent.detail.selectedBase || "Nerja")
       }
     }
     window.addEventListener('sol-local-planner-update', handleUpdate)
@@ -148,7 +148,7 @@ export default function Itinerary() {
           
           {itineraryData.map((originalDay, i) => {
             const day = getAdjustedContent(i, selectedBase, originalDay)
-            const driveTimes = baseDriveTimes[selectedBase] || baseDriveTimes["San Pedro de Alcántara"]
+            const driveTimes = baseDriveTimes[selectedBase] || baseDriveTimes["Nerja"]
             const calculatedDriveTime = driveTimes[i]
             const energy = getEnergyBadge(day.energy_level)
             const budget = getBudgetBadge(day.budget_level)

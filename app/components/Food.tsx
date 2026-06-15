@@ -13,7 +13,7 @@ export default function Food() {
   const [zoneFilter, setZoneFilter] = useState('Tutte')
   const [sortByDriveTime, setSortByDriveTime] = useState(false)
   const [bookmarks, setBookmarks] = useState<any[]>([])
-  const [selectedBase, setSelectedBase] = useState<string>('San Pedro de Alcántara')
+  const [selectedBase, setSelectedBase] = useState<string>('Nerja')
 
   useEffect(() => {
     const stored = localStorage.getItem('sol_local_planner')
@@ -31,7 +31,7 @@ export default function Food() {
       const ce = e as CustomEvent
       if (ce.detail) {
         if (ce.detail.bookmarks !== undefined) setBookmarks(ce.detail.bookmarks)
-        if (ce.detail.selectedBase !== undefined) setSelectedBase(ce.detail.selectedBase || "San Pedro de Alcántara")
+        if (ce.detail.selectedBase !== undefined) setSelectedBase(ce.detail.selectedBase || "Nerja")
       }
     }
     window.addEventListener('sol-local-planner-update', handleUpdate)

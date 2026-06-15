@@ -67,7 +67,7 @@ const zoneDriveTimes: Record<string, Record<string, number>> = {
 };
 
 export function getShortBaseName(name: string): string {
-  if (!name) return 'San Pedro';
+  if (!name) return 'Nerja';
   if (name.includes('San Pedro')) return 'San Pedro';
   if (name.includes('Marbella')) return 'Marbella';
   return name;
@@ -91,8 +91,9 @@ export function getZoneKey(zone: string): string {
 }
 
 export function getDriveTime(selectedBase: string, zone: string): number {
-  const base = selectedBase || "San Pedro de Alcántara";
+  const base = selectedBase || "Nerja";
   const zoneKey = getZoneKey(zone);
-  const baseTimes = zoneDriveTimes[base] || zoneDriveTimes["San Pedro de Alcántara"];
+  const baseTimes = zoneDriveTimes[base] || zoneDriveTimes["Nerja"];
   return baseTimes[zoneKey] !== undefined ? baseTimes[zoneKey] : 0;
 }
+

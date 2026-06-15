@@ -17,7 +17,7 @@ export default function Beaches() {
   const [sortByDriveTime, setSortByDriveTime] = useState(false)
   const [balconFilter, setBalconFilter] = useState(false)
   const [bookmarks, setBookmarks] = useState<any[]>([])
-  const [selectedBase, setSelectedBase] = useState<string>('San Pedro de Alcántara')
+  const [selectedBase, setSelectedBase] = useState<string>('Nerja')
 
   const BALCON_BEACHES = ['Balcón de Europa', 'Playa de Calahonda', 'Playa de la Caletilla', 'Playa del Salón', 'Cale di El Chorrillo']
 
@@ -37,7 +37,7 @@ export default function Beaches() {
       const customEvent = e as CustomEvent
       if (customEvent.detail) {
         if (customEvent.detail.bookmarks !== undefined) setBookmarks(customEvent.detail.bookmarks)
-        if (customEvent.detail.selectedBase !== undefined) setSelectedBase(customEvent.detail.selectedBase || "San Pedro de Alcántara")
+        if (customEvent.detail.selectedBase !== undefined) setSelectedBase(customEvent.detail.selectedBase || "Nerja")
       }
     }
     window.addEventListener('sol-local-planner-update', handleUpdate)

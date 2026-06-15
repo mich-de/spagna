@@ -18,7 +18,7 @@ interface InspirationItem {
 export default function QuickInspiration() {
   const [activeTab, setActiveTab] = useState<'deck' | 'matcher'>('deck')
   const [categoryFilter, setCategoryFilter] = useState<'tutti' | 'spiagge' | 'cibo' | 'esperienze' | 'attrazioni'>('tutti')
-  const [selectedBase, setSelectedBase] = useState<string>('San Pedro de Alcántara')
+  const [selectedBase, setSelectedBase] = useState<string>('Nerja')
   const [bookmarks, setBookmarks] = useState<any[]>([])
   const [currentCard, setCurrentCard] = useState<InspirationItem | null>(null)
   const [shuffleTrigger, setShuffleTrigger] = useState(0)
@@ -37,7 +37,7 @@ export default function QuickInspiration() {
     const handleUpdate = (e: Event) => {
       const customEvent = e as CustomEvent
       if (customEvent.detail) {
-        if (customEvent.detail.selectedBase !== undefined) setSelectedBase(customEvent.detail.selectedBase || 'San Pedro de Alcántara')
+        if (customEvent.detail.selectedBase !== undefined) setSelectedBase(customEvent.detail.selectedBase || 'Nerja')
         if (customEvent.detail.bookmarks !== undefined) setBookmarks(customEvent.detail.bookmarks)
       }
     }
