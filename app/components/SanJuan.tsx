@@ -7,61 +7,52 @@ import sj from '@/data/san-juan.json'
 export default function SanJuan() {
   return (
     <section id="sanjuan" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
-      <div className="max-w-[1920px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10"
-        >
-          <div className="flex items-center gap-2 text-red-500 mb-2">
+      <div className="max-w-7xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
+          <div className="flex items-center gap-2 text-primary mb-2">
             <Flame className="w-4 h-4" />
-            <span className="text-sm font-medium uppercase tracking-[0.3em]">Evento Speciale</span>
+            <span className="font-label-sm text-label-sm uppercase tracking-[0.3em]">Evento Speciale</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
-            La <span className="italic font-medium text-red-500">Noche</span> de San Juan
-          </h2>
-          <p className="text-mare-700/70 text-base sm:text-lg mt-3 max-w-3xl font-body leading-relaxed">
-            {sj.description}
-          </p>
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface">La Noche de San Juan</h2>
+          <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">{sj.description}</p>
         </motion.div>
 
-        <div className="bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border border-red-200/50 san-juan-glow mb-6">
+        <div className="bg-surface-container rounded-xl p-6 sm:p-8 border border-primary/20 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] mb-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">
-              <h3 className="font-display text-lg font-semibold text-notte mb-4 flex items-center gap-2">
-                <Clock className="w-5 h-5 text-red-500" /> Piano ora per ora
+              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4 flex items-center gap-2">
+                <Clock className="w-5 h-5 text-primary" /> Piano ora per ora
               </h3>
               <div className="space-y-2">
                 {Object.entries(sj.schedule).map(([time, activity]) => (
-                  <div key={time} className="flex items-start gap-3 p-2.5 bg-white/60 rounded-xl">
-                    <span className="text-sm font-bold text-red-600 min-w-[60px]">{time}</span>
-                    <span className="text-sm text-mare-700/80">{activity as string}</span>
+                  <div key={time} className="flex items-start gap-3 p-2.5 bg-surface-container-lowest rounded-lg border border-outline-variant/20">
+                    <span className="font-label-md text-label-md text-primary min-w-[60px]">{time}</span>
+                    <span className="font-body-md text-[14px] text-on-surface-variant">{activity as string}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="space-y-4">
-              <div className="bg-white/60 rounded-xl p-4">
-                <h4 className="font-display font-semibold text-sm text-notte mb-2 flex items-center gap-1.5">
-                  <Backpack className="w-4 h-4 text-red-500" /> Cosa portare
+              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
+                <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
+                  <Backpack className="w-4 h-4 text-primary" /> Cosa portare
                 </h4>
                 <ul className="space-y-1">
                   {sj.whatToBring.map((item: string) => (
-                    <li key={item} className="text-xs text-mare-700/70 flex items-start gap-1.5">
-                      <span className="text-red-400 mt-0.5">•</span> {item}
+                    <li key={item} className="font-body-md text-[13px] text-on-surface-variant flex items-start gap-1.5">
+                      <span className="text-primary mt-0.5">•</span> {item}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-white/60 rounded-xl p-4">
-                <h4 className="font-display font-semibold text-sm text-notte mb-2 flex items-center gap-1.5">
-                  <AlertTriangle className="w-4 h-4 text-amber-500" /> Regole da sapere
+              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
+                <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
+                  <AlertTriangle className="w-4 h-4 text-tertiary" /> Regole da sapere
                 </h4>
                 <ul className="space-y-1">
                   {sj.restrictions.map((item: string) => (
-                    <li key={item} className="text-xs text-mare-700/70 flex items-start gap-1.5">
-                      <span className="text-amber-400 mt-0.5">⚠</span> {item}
+                    <li key={item} className="font-body-md text-[13px] text-on-surface-variant flex items-start gap-1.5">
+                      <span className="text-tertiary mt-0.5">⚠</span> {item}
                     </li>
                   ))}
                 </ul>
@@ -70,54 +61,45 @@ export default function SanJuan() {
           </div>
         </div>
 
-        <h3 className="font-display text-xl font-semibold text-notte mb-4 flex items-center gap-2">
-          <MapPin className="w-5 h-5 text-terracotta-500" /> Dove andare
+        <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4 flex items-center gap-2">
+          <MapPin className="w-5 h-5 text-primary" /> Dove andare
         </h3>
-        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 overflow-x-auto sm:overflow-visible gap-3 pb-4 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
           {sj.spots.map((spot: any, i: number) => (
-            <motion.div
-              key={spot.name}
+            <motion.div key={spot.name}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-2xl p-4 border card-shadow card-hover min-w-[85vw] xs:min-w-[300px] sm:min-w-0 snap-center ${
+              className={`rounded-xl p-4 border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all hover:scale-[0.98] ${
                 spot.name === sj.recommendedSpot
-                  ? 'bg-gradient-to-br from-red-50 to-amber-50 border-red-200 ring-1 ring-red-300'
-                  : 'bg-white/70 border-terracotta-100/40'
+                  ? 'bg-primary-container/20 border-primary/30 ring-1 ring-primary/20'
+                  : 'bg-surface-container-lowest border-outline-variant/30'
               }`}
             >
               <div className="flex items-start justify-between mb-2">
-                <h4 className="font-display font-bold text-sm text-notte">{spot.name}</h4>
+                <h4 className="font-label-md text-label-md text-on-surface font-bold">{spot.name}</h4>
                 {spot.name === sj.recommendedSpot && (
-                  <span className="text-[10px] px-1.5 py-0.5 bg-red-500 text-white rounded font-bold">TOP</span>
+                  <span className="font-label-sm text-label-sm px-1.5 py-0.5 bg-primary text-on-primary rounded font-bold">TOP</span>
                 )}
               </div>
-              <p className="text-xs text-mare-500 mb-1">{spot.zone}</p>
-              <p className="text-xs text-mare-700/70 mb-2">{spot.vibe}</p>
-              <div className="flex items-center gap-2 text-xs text-mare-600">
-                <Sparkles className="w-3 h-3 text-terracotta-500" />
+              <p className="font-body-md text-[13px] text-on-surface-variant mb-1">{spot.zone}</p>
+              <p className="font-body-md text-[13px] text-on-surface-variant mb-2">{spot.vibe}</p>
+              <div className="flex items-center gap-2 font-body-md text-[12px] text-on-surface-variant">
+                <Sparkles className="w-3 h-3 text-primary" />
                 Social: {spot.social}/10 · Autentico: {spot.authenticity}/10
               </div>
-              <div className="mt-2 text-[11px] text-mare-500">
+              <div className="mt-2 font-body-md text-[12px] text-on-surface-variant">
                 <p>🚗 {spot.parking}</p>
                 <p>🚕 {spot.transport}</p>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-2">
-                <a
-                  href={spot.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-sky-50 text-sky-700 hover:bg-sky-100 transition-colors"
-                >
+                <a href={spot.mapLink} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary/10 text-secondary hover:bg-secondary/20 transition-colors">
                   <Map className="w-3 h-3" /> Maps
                 </a>
-                <a
-                  href={spot.tripadvisorLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-medium bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors"
-                >
+                <a href={spot.tripadvisorLink} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors">
                   <Star className="w-3 h-3" /> TA
                 </a>
               </div>
@@ -125,9 +107,9 @@ export default function SanJuan() {
           ))}
         </div>
 
-        <div className="p-5 bg-gradient-to-r from-red-600 via-red-500 to-orange-500 rounded-2xl text-white text-center">
-          <p className="font-display text-xl font-bold mb-1">🔥 LA NOTTE PIÙ BELLA DELL&apos;ANNO</p>
-          <p className="text-white/80 text-sm">23 giugno 2026 — Arriva fresco, porta birra e costume, non fermarti fino all&apos;alba</p>
+        <div className="p-5 bg-gradient-to-r from-primary via-primary/90 to-secondary rounded-xl text-on-primary text-center shadow-md">
+          <p className="font-headline-sm text-headline-sm font-bold mb-1">🔥 LA NOTTE PIÙ BELLA DELL&apos;ANNO</p>
+          <p className="text-on-primary/80 font-body-md text-body-md">23 giugno 2026 — Arriva fresco, porta birra e costume, non fermarti fino all&apos;alba</p>
         </div>
       </div>
     </section>

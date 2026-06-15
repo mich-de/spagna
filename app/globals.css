@@ -2,10 +2,9 @@
 @import '@fontsource/playfair-display/600.css';
 @import '@fontsource/playfair-display/700.css';
 @import '@fontsource/playfair-display/400-italic.css';
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
-@import '@fontsource/inter/700.css';
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+@import '@fontsource/dm-sans/700.css';
 
 @import "tailwindcss";
 
@@ -13,8 +12,8 @@
 
 /* ─── Selection ─── */
 ::selection {
-  background-color: #E07A5F;
-  color: white;
+  background-color: #be5433;
+  color: #ffffff;
 }
 
 /* ─── Root ─── */
@@ -24,9 +23,9 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #fcf7ec;
-  color: #0f3e4a;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background-color: #fff8f3;
+  color: #221a0f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -38,56 +37,38 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #E07A5F 0%, #CD5C5C 50%, #D4A373 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ─── Surface & Cards ─── */
-.card-gradient {
-  background: linear-gradient(180deg, rgba(250,248,245,1) 0%, rgba(244,228,205,0.3) 100%);
-}
-
-/* Three-layer warm shadow (Airbnb-inspired) */
+/* ─── Stitch card shadow ─── */
 .card-shadow {
-  box-shadow:
-    rgba(0,0,0,0.02) 0px 0px 0px 1px,
-    rgba(0,0,0,0.04) 0px 2px 6px,
-    rgba(0,0,0,0.08) 0px 4px 12px;
+  box-shadow: 0 4px 12px rgba(30,58,95,0.08);
 }
 
 .card-shadow-hover {
-  box-shadow:
-    rgba(0,0,0,0.04) 0px 0px 0px 1px,
-    rgba(0,0,0,0.08) 0px 4px 12px,
-    rgba(0,0,0,0.12) 0px 8px 24px;
+  box-shadow: 0 4px 12px rgba(30,58,95,0.08);
+}
+.card-shadow-hover:hover {
+  box-shadow: 0 8px 24px rgba(30,58,95,0.12);
 }
 
-/* ─── Glass morphism ─── */
+/* ─── Glass morphism (Stitch) ─── */
 .glass {
-  background: rgba(250,248,245,0.75);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  background: rgba(255,248,243,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .glass-dark {
-  background: rgba(26,26,46,0.75);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  background: rgba(55,47,34,0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-/* ─── Card hover (enhanced) ─── */
+/* ─── Interactive card (Stitch tap) ─── */
 .card-hover {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-hover:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    rgba(224,122,95,0.06) 0px 0px 0px 1px,
-    rgba(0,0,0,0.06) 0px 4px 16px,
-    rgba(0,0,0,0.1) 0px 8px 32px;
+.card-hover:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(30,58,95,0.08);
 }
 
 /* ─── Image zoom on hover ─── */
@@ -99,21 +80,6 @@ body {
 }
 .img-zoom:hover img {
   transform: scale(1.08);
-}
-
-/* ─── Noise texture (CSS-only, per design principles) ─── */
-.noise-bg::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 40;
-  opacity: 0.025;
-  background:
-    repeating-conic-gradient(
-      rgba(27,73,101,0.04) 0% 25%,
-      transparent 0% 50%
-    ) 0 0 / 3px 3px;
 }
 
 /* ─── Section reveal animation ─── */
@@ -141,8 +107,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 5px rgba(205, 92, 92, 0.3); }
-  50% { box-shadow: 0 0 20px rgba(205, 92, 92, 0.6), 0 0 40px rgba(205, 92, 92, 0.2); }
+  0%, 100% { box-shadow: 0 0 5px rgba(158,61,29, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(158,61,29, 0.6), 0 0 40px rgba(158,61,29, 0.2); }
 }
 
 .san-juan-pulse {
@@ -150,7 +116,7 @@ body {
 }
 
 .san-juan-glow {
-  box-shadow: 0 0 20px rgba(205, 92, 92, 0.3), 0 0 40px rgba(205, 92, 92, 0.1);
+  box-shadow: 0 0 20px rgba(158,61,29, 0.3), 0 0 40px rgba(158,61,29, 0.1);
 }
 
 /* ─── Staggered animation delays ─── */
@@ -168,9 +134,9 @@ body {
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 500;
-  background: rgba(224,122,95,0.08);
-  color: #E07A5F;
-  border: 1px solid rgba(224,122,95,0.15);
+  background: rgba(190,84,51,0.08);
+  color: #9e3d1d;
+  border: 1px solid rgba(190,84,51,0.15);
 }
 
 /* ─── Scrollbar styling ─── */
@@ -181,11 +147,11 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(224,122,95,0.2);
+  background: rgba(190,84,51,0.2);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(224,122,95,0.4);
+  background: rgba(190,84,51,0.4);
 }
 
 /* ─── Scrollbar hide utility ─── */
@@ -203,13 +169,7 @@ body {
 /* ─── Grid pattern background ─── */
 .bg-grid-pattern {
   background-image:
-    linear-gradient(rgba(27, 73, 101, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(27, 73, 101, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(55, 47, 34, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(55, 47, 34, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
-}
-
-/* ─── Mobile fixes ─── */
-@media (max-width: 420px) {
-  section > .px-4 { padding-left: 0.75rem; padding-right: 0.75rem; }
-  .grid-cols-2.gap-1 { gap: 0.375rem; }
 }

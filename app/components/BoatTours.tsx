@@ -6,13 +6,12 @@ import { Search, MapPin, Clock, Users, Anchor, ExternalLink, MessageSquare, Ship
 import toursData from '@/data/boat-tours.json'
 
 const tourTypes = ['Tutti', 'catamaran', 'boat', 'sailboat', 'rental', 'kayak']
-
-const typeLabels: Record<string, { label: string; icon: string; bg: string; text: string }> = {
-  catamaran: { label: 'Catamarano', icon: '⛵', bg: 'bg-blue-500/10', text: 'text-blue-500' },
-  boat: { label: 'Motoscafo', icon: '🚤', bg: 'bg-emerald-500/10', text: 'text-emerald-500' },
-  sailboat: { label: 'Barca a Vela', icon: '⛵', bg: 'bg-indigo-500/10', text: 'text-indigo-500' },
-  rental: { label: 'Noleggio', icon: '⚓', bg: 'bg-amber-500/10', text: 'text-amber-500' },
-  kayak: { label: 'Kayak', icon: '🚣', bg: 'bg-teal-500/10', text: 'text-teal-500' },
+const typeLabels: Record<string, { label: string; icon: string }> = {
+  catamaran: { label: 'Catamarano', icon: '⛵' },
+  boat: { label: 'Motoscafo', icon: '🚤' },
+  sailboat: { label: 'Barca a Vela', icon: '⛵' },
+  rental: { label: 'Noleggio', icon: '⚓' },
+  kayak: { label: 'Kayak', icon: '🚣' },
 }
 
 export default function BoatTours() {
@@ -22,235 +21,140 @@ export default function BoatTours() {
 
   const filteredTours = useMemo(() => {
     return toursData.filter((tour: any) => {
-      const matchesSearch =
-        tour.name.toLowerCase().includes(search.toLowerCase()) ||
-        tour.departure.toLowerCase().includes(search.toLowerCase()) ||
-        tour.description.toLowerCase().includes(search.toLowerCase())
-
-      const matchesType = activeType === 'Tutti' || tour.type === activeType
-
-      return matchesSearch && matchesType
+      const q = search.toLowerCase()
+      const matchSearch = !q || tour.name.toLowerCase().includes(q) || tour.departure.toLowerCase().includes(q) || tour.description.toLowerCase().includes(q)
+      const matchType = activeType === 'Tutti' || tour.type === activeType
+      return matchSearch && matchType
     })
   }, [search, activeType])
 
   return (
     <section id="boat-tours" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
-      <div className="max-w-[1920px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10"
-        >
-          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+      <div className="max-w-7xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
+          <div className="flex items-center gap-2 text-primary mb-2">
             <Anchor className="w-4 h-4" />
-            <span className="text-sm font-medium uppercase tracking-[0.3em]">Esperienze in Mare</span>
+            <span className="font-label-sm text-label-sm uppercase tracking-[0.3em]">Esperienze in Mare</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
-            Escursioni in <span className="italic font-medium text-terracotta-500">Barca</span>
-          </h2>
-          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
-            Dal catamarano al tramonto alle spedizioni per l&apos;avvistamento dei delfini. Scopri il fascino del <span className="text-terracotta-400 font-semibold">Mediterraneo</span> da una prospettiva privilegiata.
-          </p>
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface">Escursioni in Barca</h2>
+          <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Dal catamarano al tramonto alle spedizioni per l&apos;avvistamento dei delfini.</p>
         </motion.div>
 
-        {/* Filters */}
-        <div className="glass flex flex-col gap-4 mb-8 p-4 rounded-2xl border border-terracotta-100/40">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mare-400" />
-            <input
-              type="text"
-              placeholder="Cerca tour, porto di partenza o descrizione..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white/80 border border-terracotta-100/50 text-sm text-notte placeholder:text-mare-300 focus:outline-none focus:ring-2 focus:ring-terracotta-300/50 transition-all focus:bg-white"
-            />
+        <div className="bg-surface-container rounded-xl p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+          <div className="relative mb-4">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
+            <input type="text" placeholder="Cerca tour, porto di partenza o descrizione..." value={search} onChange={(e) => setSearch(e.target.value)}
+              className="w-full pl-9 pr-4 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" />
           </div>
-
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
-              <Anchor className="w-3.5 h-3.5 text-terracotta-500" />
-              <span>Filtra per tipologia</span>
-            </div>
-            <div className="flex flex-wrap gap-1.5 py-1 px-0.5">
+          <div>
+            <span className="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Tipologia</span>
+            <div className="flex flex-wrap gap-1.5">
               {tourTypes.map((type) => (
-                <button
-                  key={type}
-                  onClick={() => setActiveType(type)}
-                  className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all cursor-pointer ${
+                <button key={type} onClick={() => setActiveType(type)}
+                  className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                     activeType === type
-                      ? 'text-white'
-                      : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 shadow-sm hover:scale-102'
-                  }`}
-                >
-                  <span className="relative z-10 flex items-center gap-1.5">
-                    <span>{type === 'Tutti' ? '🗺️' : typeLabels[type]?.icon}</span>
-                    <span>{type === 'Tutti' ? 'Tutti i tour' : typeLabels[type]?.label}</span>
-                  </span>
-                  {activeType === type && (
-                    <motion.span
-                      layoutId="tourTypeBg"
-                      className="absolute inset-0 bg-gradient-to-r from-terracotta-500 to-terracotta-600 rounded-xl shadow-sm shadow-terracotta-500/25 border border-terracotta-400/20"
-                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                    />
-                  )}
+                      ? 'bg-secondary text-on-secondary shadow-sm'
+                      : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                  }`}>
+                  {type === 'Tutti' ? '🗺️ Tutti' : `${typeLabels[type]?.icon} ${typeLabels[type]?.label}`}
                 </button>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filteredTours.map((tour: any, i: number) => {
               const details = typeLabels[tour.type]
               const isExpanded = expandedTour === tour.name
-
               return (
-                <motion.div
-                  key={tour.name}
-                  layout
+                <motion.div key={tour.name} layout
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover flex flex-col justify-between"
+                  className="bg-surface-container-lowest rounded-xl p-5 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
                 >
-                  <div>
-                    {/* Header */}
-                    <div className="flex items-start justify-between gap-3 mb-3">
-                      <h3 className="font-display text-lg font-bold text-notte leading-tight">{tour.name}</h3>
-                      <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold shrink-0 ${details?.bg} ${details?.text}`}>
-                        {details?.icon} {details?.label}
-                      </span>
-                    </div>
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface">{tour.name}</h3>
+                    <span className="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-variant text-on-surface-variant shrink-0">
+                      {details?.icon} {details?.label}
+                    </span>
+                  </div>
+                  <p className="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-4">{tour.description}</p>
 
-                    <p className="text-xs text-mare-700/80 leading-relaxed mb-4">{tour.description}</p>
+                  <div className="space-y-2 font-body-md text-[14px] text-on-surface-variant mb-4">
+                    <p className="flex items-center gap-2"><Clock className="w-3.5 h-3.5 text-outline shrink-0" /><strong>Durata:</strong> {tour.duration}</p>
+                    <p className="flex items-center gap-2"><Users className="w-3.5 h-3.5 text-outline shrink-0" /><strong>Capacità:</strong> {tour.capacity}</p>
+                    <p className="flex items-center gap-2"><DollarSign className="w-3.5 h-3.5 text-outline shrink-0" /><strong>Prezzo:</strong> {tour.price}</p>
+                    <p className="flex items-start gap-2"><MapPin className="w-3.5 h-3.5 text-outline shrink-0 mt-0.5" />
+                      <strong>Partenza:</strong>{' '}
+                      <a href={tour.mapLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-colors">
+                        {tour.departure} <ExternalLink className="inline w-3 h-3 ml-0.5" />
+                      </a>
+                    </p>
+                  </div>
 
-                    {/* Specifications */}
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center gap-2 text-xs text-mare-700/70">
-                        <Clock className="w-3.5 h-3.5 text-terracotta-400 shrink-0" />
-                        <span><strong>Durata:</strong> {tour.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-xs text-mare-700/70">
-                        <Users className="w-3.5 h-3.5 text-terracotta-400 shrink-0" />
-                        <span><strong>Capacità:</strong> {tour.capacity}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-xs text-mare-700/70">
-                        <DollarSign className="w-3.5 h-3.5 text-terracotta-400 shrink-0" />
-                        <span><strong>Prezzo:</strong> {tour.price}</span>
-                      </div>
-                      <div className="flex items-start gap-2 text-xs text-mare-700/70">
-                        <MapPin className="w-3.5 h-3.5 text-terracotta-400 shrink-0 mt-0.5" />
-                        <div>
-                          <strong>Partenza:</strong>{' '}
-                          <a
-                            href={tour.mapLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-mare-600 hover:text-terracotta-600 hover:underline transition-colors"
-                          >
-                            {tour.departure} <ExternalLink className="inline-block w-3 h-3 ml-0.5" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {tour.highlights.map((h: string, idx: number) => (
+                      <span key={idx} className="font-label-sm text-label-sm px-2 py-0.5 bg-primary/5 text-primary rounded-md">✓ {h}</span>
+                    ))}
+                  </div>
 
-                    {/* Highlights */}
-                    <div className="flex flex-wrap gap-1.5 mb-4">
-                      {tour.highlights.map((highlight: string, idx: number) => (
-                        <span key={idx} className="badge-pill text-[10px] py-0.5 px-2 bg-crema/60 border-terracotta-100/30 text-mare-750">
-                          ✓ {highlight}
+                  {tour.agency && (
+                    <div className="mb-4 p-3 bg-surface-container-low rounded-lg border border-outline-variant/20">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+                          <Ship className="w-3.5 h-3.5 text-primary" /> {tour.agency.name}
                         </span>
-                      ))}
-                    </div>
-
-                    {/* Recommended Agency Card */}
-                    {tour.agency && (
-                      <div className="mb-4 p-3 bg-[#faf8f5]/80 rounded-xl border border-terracotta-100/20 text-xs shadow-sm">
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="font-bold text-notte text-xs flex items-center gap-1.5">
-                            <Ship className="w-3.5 h-3.5 text-terracotta-500" /> {tour.agency.name}
-                          </span>
-                          <span className="text-[9px] text-emerald-600 bg-emerald-50 border border-emerald-100/50 px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">
-                            Consigliata
-                          </span>
-                        </div>
-                        <div className="space-y-1.5 text-mare-750/90 text-[11px]">
-                          {tour.agency.phone && (
-                            <div className="flex items-center gap-1.5">
-                              <Phone className="w-3 h-3 text-mare-400" />
-                              <a href={`tel:${tour.agency.phone.replace(/\s+/g, '')}`} className="hover:text-terracotta-600 transition-colors font-medium">
-                                {tour.agency.phone}
-                              </a>
-                            </div>
-                          )}
-                          {tour.agency.address && (
-                            <div className="flex items-start gap-1.5">
-                              <MapPin className="w-3 h-3 text-mare-400 shrink-0 mt-0.5" />
-                              <span className="line-clamp-1 hover:line-clamp-none transition-all cursor-default">
-                                {tour.agency.address}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                        {tour.agency.website && (
-                          <div className="mt-2 flex justify-end">
-                            <a
-                              href={tour.agency.website}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 text-[10px] font-bold text-mare-600 hover:text-terracotta-600 transition-colors bg-white px-2.5 py-1 rounded-lg border border-terracotta-100/30 shadow-sm"
-                            >
-                              <Globe className="w-3 h-3" /> Sito Web <ExternalLink className="w-2.5 h-2.5" />
-                            </a>
+                        <span className="font-label-sm text-label-sm text-primary bg-primary/10 px-1.5 py-0.5 rounded font-bold uppercase">Consigliata</span>
+                      </div>
+                      <div className="space-y-1 font-body-md text-[13px] text-on-surface-variant">
+                        {tour.agency.phone && (
+                          <a href={`tel:${tour.agency.phone.replace(/\s+/g, '')}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
+                            <Phone className="w-3 h-3 text-outline" /> {tour.agency.phone}
+                          </a>
+                        )}
+                        {tour.agency.address && (
+                          <div className="flex items-start gap-1.5">
+                            <MapPin className="w-3 h-3 text-outline shrink-0 mt-0.5" />
+                            <span className="line-clamp-1">{tour.agency.address}</span>
                           </div>
                         )}
                       </div>
-                    )}
-                  </div>
+                      {tour.agency.website && (
+                        <div className="mt-2">
+                          <a href={tour.agency.website} target="_blank" rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-primary/80 transition-colors bg-surface-container-lowest px-2.5 py-1 rounded-lg border border-outline-variant/30">
+                            <Globe className="w-3 h-3" /> Sito Web <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  )}
 
-                  {/* Booking and Comments Footer */}
-                  <div className="mt-auto pt-3 border-t border-terracotta-100/20">
+                  <div className="mt-auto pt-3 border-t border-outline-variant/30">
                     <div className="flex items-center justify-between gap-4">
-                      <span className="text-[10px] text-mare-400 truncate max-w-[150px]">
-                        📍 {tour.booking}
-                      </span>
-                      <button
-                        onClick={() => setExpandedTour(isExpanded ? null : tour.name)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-terracotta-50 hover:bg-terracotta-100 text-terracotta-700 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-sm shrink-0"
-                      >
+                      <span className="font-body-md text-[12px] text-outline truncate">📍 {tour.booking}</span>
+                      <button onClick={() => setExpandedTour(isExpanded ? null : tour.name)}
+                        className="flex items-center gap-1 px-3 py-1.5 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all">
                         <MessageSquare className="w-3.5 h-3.5" />
                         {isExpanded ? 'Chiudi' : `Forum (${tour.comments.length})`}
                       </button>
                     </div>
 
-                    {/* Expanded reviews */}
                     <AnimatePresence>
                       {isExpanded && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div className="mt-4 pt-3 border-t border-terracotta-100/10 space-y-2.5">
+                        <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="overflow-hidden">
+                          <div className="mt-4 pt-3 border-t border-outline-variant/10 space-y-2">
                             {tour.comments.map((comment: string, idx: number) => {
                               const [source, text] = comment.split(': ')
+                              const colors: Record<string, string> = { Reddit: 'bg-orange-100 text-orange-700', TripAdvisor: 'bg-emerald-100 text-emerald-700', Google: 'bg-blue-100 text-blue-700' }
                               return (
-                                <div key={idx} className="bg-white/80 p-2.5 rounded-lg border border-terracotta-100/10 text-[11px] leading-relaxed">
-                                  <span className={`font-bold uppercase tracking-wider text-[9px] px-1 py-0.5 rounded mr-1.5 ${
-                                    source === 'Reddit' ? 'bg-orange-100 text-orange-700' :
-                                    source === 'TripAdvisor' ? 'bg-emerald-100 text-emerald-700' :
-                                    source === 'Google' ? 'bg-blue-100 text-blue-700' :
-                                    'bg-mare-100 text-mare-700'
-                                  }`}>
-                                    {source}
-                                  </span>
-                                  <span className="text-mare-750">{text}</span>
+                                <div key={idx} className="bg-surface-container-low p-2.5 rounded-lg border border-outline-variant/20 text-[13px] leading-relaxed text-on-surface-variant">
+                                  <span className={`font-bold uppercase tracking-wider text-[10px] px-1.5 py-0.5 rounded mr-1.5 ${colors[source] || 'bg-surface-variant text-on-surface-variant'}`}>{source}</span>
+                                  {text}
                                 </div>
                               )
                             })}
@@ -266,9 +170,9 @@ export default function BoatTours() {
         </div>
 
         {filteredTours.length === 0 && (
-          <div className="text-center py-12 text-mare-400">
+          <div className="text-center py-12 text-outline">
             <Ship className="w-12 h-12 mx-auto mb-2 opacity-40" />
-            <p className="font-body">Nessun tour in barca trovato. Prova altri filtri.</p>
+            <p className="font-body-md text-body-md">Nessun tour trovato. Prova altri filtri.</p>
           </div>
         )}
       </div>

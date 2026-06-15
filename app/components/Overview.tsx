@@ -1,53 +1,77 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { CalendarDays, Plane, Car, Thermometer, MapPin, Star } from 'lucide-react'
+import { Star, CalendarDays, Plane, Car, Thermometer, MapPin, ArrowDown, Check, X, Plus, Minus, ChevronRight } from 'lucide-react'
 import trip from '@/data/trip.json'
 import recommendedBase from '@/data/recommended-base.json'
 
 export default function Overview() {
+  const nerjaHeroImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burriana_%286861858288%29.jpg/1280px-Burriana_%286861858288%29.jpg'
+
   return (
-    <section
-      id="overview"
-      className="scroll-mt-20 px-4 sm:px-6 pt-8 pb-4 relative
-        bg-gradient-to-b from-terracotta-50/20 via-transparent to-mare-50/10"
-    >
-      <div className="max-w-[1920px] mx-auto">
-        {/* ─── Hero title ─── */}
+    <section id="overview" className="scroll-mt-20">
+      {/* ─── Hero ─── */}
+      <div className="relative w-full h-[819px] md:h-screen flex items-center justify-center overflow-hidden bg-surface-container-high">
+        <img src={nerjaHeroImage} alt="Playa de Burriana, Nerja" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/40 via-surface-container-high/50 to-surface-container-high/90" />
+        <div className="absolute inset-0 bg-[rgba(34,26,15,0.45)]" />
+        <div className="relative z-10 text-center px-5 md:px-0 flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full border border-tertiary-container/50 bg-surface/10 backdrop-blur-sm"
+          >
+            <Star className="w-3.5 h-3.5 text-tertiary-fixed mr-2 fill-current" />
+            <span className="font-label-sm text-label-sm text-tertiary-fixed tracking-widest uppercase">Confirmed Journey</span>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="font-display-lg text-display-lg-mobile md:text-[80px] md:leading-[88px] text-on-primary mb-4"
+          >
+            {trip.title}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="font-headline-sm text-headline-sm text-surface-container-low font-light tracking-wide"
+          >
+            {trip.subtitle}
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mt-12 animate-bounce"
+          >
+            <ArrowDown className="w-8 h-8 text-on-primary opacity-80" />
+          </motion.div>
+        </div>
+        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-surface-container-high/95 via-surface-container-high/40 to-transparent z-10" />
+      </div>
+
+      {/* ─── Main content area ─── */}
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-12 relative z-20 -mt-16 md:-mt-32">
+        {/* ─── Overview Bento Grid ─── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mb-8"
-        >
-          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
-            <Star className="w-4 h-4 fill-current" />
-            <span className="text-sm font-medium uppercase tracking-[0.3em]">Tour Operator Premium</span>
-          </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-notte leading-[1.1] tracking-tight">
-            <span className="gradient-text">{trip.title.split(' ').slice(0, -1).join(' ')} </span>
-            <span className="italic font-medium text-terracotta-500">{trip.title.split(' ').slice(-1)}</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-mare-700/70 mt-4 max-w-2xl font-body leading-relaxed">
-            {trip.subtitle}
-          </p>
-        </motion.div>
-
-        {/* ─── Trip metadata grid ─── */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.15 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12"
         >
           {[
-            { icon: CalendarDays, label: 'Date', value: '19 → 25 Giu 2026' },
-            { icon: Plane, label: 'Arrivo', value: trip.arrival },
-            { icon: Car, label: 'Trasporto', value: trip.transport },
-            { icon: Thermometer, label: 'Clima', value: `${trip.weather.temp_min}°–${trip.weather.temp_max}°C, ${trip.weather.conditions}` },
-            { icon: MapPin, label: 'Stile', value: trip.style },
+            { icon: CalendarDays, label: 'Dates', value: '19→25 Giu 2026', sub: '7 Days, 6 Nights', circle: 'bg-secondary-container text-on-secondary-container' },
+            { icon: Plane, label: 'Arrival', value: 'AGP', sub: 'Málaga Airport', circle: 'bg-tertiary-container/20 text-tertiary' },
+            { icon: Car, label: 'Transport', value: 'SUV Rental', sub: 'Premium Class', circle: 'bg-surface-variant text-on-surface-variant' },
+            { icon: Thermometer, label: 'Weather', value: `${trip.weather.temp_max}°C`, sub: trip.weather.conditions, circle: 'bg-primary-fixed text-primary' },
+            { icon: MapPin, label: 'Style', value: 'Mediterranean', sub: 'Luxury Vibe', circle: 'bg-surface-tint/10 text-primary' },
           ].map((item, i) => (
             <motion.div
               key={item.label}
@@ -55,149 +79,89 @@ export default function Overview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 + i * 0.08 }}
-              className="glass rounded-2xl p-4 border border-terracotta-100/40 card-shadow card-hover"
+              className="bg-surface rounded-xl p-4 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col justify-between"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-terracotta-100 to-crema flex items-center justify-center">
-                  <item.icon className="w-5 h-5 text-terracotta-600" />
+              <div className="flex items-center justify-between mb-4">
+                <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">{item.label}</span>
+                <div className={`w-8 h-8 rounded-full ${item.circle} flex items-center justify-center`}>
+                  <item.icon className="w-4 h-4" />
                 </div>
-                <div>
-                  <p className="text-xs text-mare-700/50 uppercase tracking-wider">{item.label}</p>
-                  <p className="text-sm font-medium text-notte">{item.value}</p>
-                </div>
+              </div>
+              <div>
+                <div className="font-headline-sm text-headline-sm text-on-surface">{item.value}</div>
+                <div className="font-body-md text-body-md text-on-surface-variant mt-1">{item.sub}</div>
               </div>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* ─── Trip badges ─── */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.25 }}
-          className="flex flex-wrap gap-2 mb-8"
-        >
-          {trip.badges.map((badge: string, i: number) => (
-            <motion.span
-              key={badge}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.25 + i * 0.05 }}
-              className="badge-pill text-sm"
-            >
-              {badge}
-            </motion.span>
-          ))}
-        </motion.div>
+        {/* ─── Gradient Divider ─── */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent my-12" />
 
-        {/* ─── Recommendation card ─── */}
+        {/* ─── Recommendation Section ─── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.35 }}
-          className="relative rounded-2xl overflow-hidden card-shadow card-hover img-zoom"
         >
-          {/* Main card */}
-          <div className="bg-gradient-to-br from-mare-800 via-mare-700 to-mare-900 p-6 sm:p-8 text-white relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-terracotta-500/8 rounded-full -translate-y-1/3 translate-x-1/4 blur-xl" />
-            <div className="absolute bottom-0 left-0 w-56 h-56 bg-oro/10 rounded-full translate-y-1/3 -translate-x-1/4 blur-lg" />
-            <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-white/5 rounded-full blur-2xl" />
-
-            {/* Andalusian-inspired geometric pattern overlay */}
-            <div
-              className="absolute inset-0 opacity-[0.04]"
-              style={{
-                backgroundImage: `
-                  linear-gradient(45deg, #ffffff 1px, transparent 1px),
-                  linear-gradient(-45deg, #ffffff 1px, transparent 1px)
-                `,
-                backgroundSize: '24px 24px',
-              }}
-            />
-
-            {/* Decorative border accent */}
-            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-oro to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-oro/50 to-transparent" />
-
-            {/* Corner seal — Tour Operator Pick */}
-            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
-                <svg viewBox="0 0 80 80" className="w-full h-full">
-                  <defs>
-                    <linearGradient id="seal-grad" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#D4A373" />
-                      <stop offset="100%" stopColor="#E07A5F" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="40" cy="40" r="38" fill="none" stroke="url(#seal-grad)" strokeWidth="1.5" strokeDasharray="4 3" opacity="0.6" />
-                  <circle cx="40" cy="40" r="35" fill="none" stroke="url(#seal-grad)" strokeWidth="0.5" opacity="0.3" />
-                  <text x="40" y="36" textAnchor="middle" fill="#D4A373" fontSize="9" fontWeight="600" fontFamily="serif" letterSpacing="1">TOUR</text>
-                  <text x="40" y="48" textAnchor="middle" fill="#E07A5F" fontSize="7" fontWeight="600" fontFamily="sans-serif" letterSpacing="0.5">PICK</text>
-                </svg>
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-6">Base Consigliata</h2>
+          <div className="bg-surface rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/20 flex flex-col md:flex-row">
+            <div className="w-full md:w-2/5 h-64 md:h-auto relative bg-surface-container-high">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
+              <div className="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center shadow-md">
+                <Star className="w-3.5 h-3.5 mr-1 fill-current" /> Winner
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="font-display-lg text-[48px] md:text-[64px] text-primary/30">{recommendedBase.winner?.[0]}</span>
               </div>
             </div>
-
-            <div className="relative z-10 max-w-4xl">
-              {/* Section label */}
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-5 h-5 rounded-full bg-gradient-to-br from-oro to-terracotta-500 flex items-center justify-center">
-                  <span className="text-mare-900 text-[10px] font-bold">★</span>
+            <div className="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+              <h3 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-2">{recommendedBase.winner}</h3>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">{recommendedBase.reason}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <div className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-3 flex items-center">
+                    <Plus className="w-3.5 h-3.5 mr-2 text-secondary" />
+                    Advantages
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5 mr-2" />
+                      <span className="font-body-md text-body-md text-on-surface">Authentic Spanish atmosphere</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5 mr-2" />
+                      <span className="font-body-md text-body-md text-on-surface">Spectacular cliffside views</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5 mr-2" />
+                      <span className="font-body-md text-body-md text-on-surface">Excellent high-end gastronomy</span>
+                    </li>
+                  </ul>
                 </div>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-terracotta-300 font-medium">
-                  Raccomandazione Tour Operator
-                </span>
+                <div>
+                  <div className="font-label-md text-label-md text-tertiary uppercase tracking-widest mb-3 flex items-center">
+                    <Minus className="w-3.5 h-3.5 mr-2 text-tertiary" />
+                    Considerations
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <X className="w-4 h-4 text-outline shrink-0 mt-0.5 mr-2" />
+                      <span className="font-body-md text-body-md text-on-surface-variant">Further from AGP airport (45 min)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <X className="w-4 h-4 text-outline shrink-0 mt-0.5 mr-2" />
+                      <span className="font-body-md text-body-md text-on-surface-variant">Hilly terrain requires walking</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              {/* Editorial heading */}
-              <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
-                La scelta migliore?{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-oro via-oro to-terracotta-400">
-                  {recommendedBase.winner}
-                </span>
-              </h3>
-
-              {/* Decorative divider */}
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px flex-1 bg-gradient-to-r from-oro/40 via-oro/20 to-transparent" />
-                <div className="w-1.5 h-1.5 rounded-full bg-oro/60" />
-                <div className="h-px flex-1 bg-gradient-to-l from-oro/40 via-oro/20 to-transparent" />
-              </div>
-
-              {/* Reason */}
-              <p className="text-white/70 leading-relaxed text-sm sm:text-base max-w-3xl font-body">
-                {recommendedBase.reason}
-              </p>
-
-              {/* Badges */}
-              <div className="flex flex-wrap gap-2 mt-6">
-                {[
-                  { emoji: '🥇', label: 'Vincitore', value: recommendedBase.winner },
-                  { emoji: '🥈', label: 'Seconda scelta', value: recommendedBase.secondChoice },
-                  { emoji: '🌙', label: 'Nightlife', value: recommendedBase.alternativeNightlife },
-                  { emoji: '🧘', label: 'Relax', value: recommendedBase.alternativeRelax },
-                ].map((item, i) => (
-                  <motion.div
-                    key={item.label}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.35 + i * 0.08 }}
-                    className="group relative"
-                  >
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full
-                      bg-white/5 hover:bg-white/10 border border-white/10 hover:border-oro/30
-                      transition-all duration-300 cursor-default"
-                    >
-                      <span className="text-xs">{item.emoji}</span>
-                      <span className="text-xs text-white/50 hidden sm:inline">{item.label}:</span>
-                      <span className="text-xs font-medium text-white/90">{item.value}</span>
-                    </div>
-                  </motion.div>
-                ))}
+              <div className="mt-8 pt-6 border-t border-outline-variant/30">
+                <button className="w-full md:w-auto px-6 py-3 bg-secondary text-on-secondary rounded-full font-label-md hover:bg-secondary/90 transition-colors shadow-sm flex items-center justify-center">
+                  View Accommodations in {recommendedBase.winner}
+                  <ChevronRight className="w-4 h-4 ml-2" />
+                </button>
               </div>
             </div>
           </div>

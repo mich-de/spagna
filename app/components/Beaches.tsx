@@ -8,35 +8,13 @@ import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
 
 const zones = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.zone))).sort()]
 const atmospheres = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.atmosphere))).sort()]
-
-const zoneIcons: Record<string, string> = {
-  'Tutte': '🗺️',
-  'Málaga': '🏛️',
-  'Marbella': '💎',
-  'Estepona': '🌸',
-  'Nerja': '🏖️',
-  'Mijas': '🏔️',
-  'Benalmádena': '⛵',
-  'Ronda': '🍷',
-  'Fuengirola': '🛍️'
-}
-
-const atmosIcons: Record<string, string> = {
-  'Tutte': '🌊',
-  'Attrezzata': '🏖️',
-  'Rilassata': '🧘',
-  'Selvaggia': '🌿',
-  'Popolare': '👥',
-  'Snorkeling': '🤿'
-}
+const nerjaFallbackImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burriana_%286861858288%29.jpg/1280px-Burriana_%286861858288%29.jpg'
 
 export default function Beaches() {
   const [search, setSearch] = useState('')
   const [zoneFilter, setZoneFilter] = useState('Tutte')
   const [atmosFilter, setAtmosFilter] = useState('Tutte')
   const [sortByDriveTime, setSortByDriveTime] = useState(false)
-
-  // Bookmarks state
   const [bookmarks, setBookmarks] = useState<any[]>([])
   const [selectedBase, setSelectedBase] = useState<string>('San Pedro de Alcántara')
 
@@ -55,12 +33,8 @@ export default function Beaches() {
     const handleUpdate = (e: Event) => {
       const customEvent = e as CustomEvent
       if (customEvent.detail) {
-        if (customEvent.detail.bookmarks !== undefined) {
-          setBookmarks(customEvent.detail.bookmarks)
-        }
-        if (customEvent.detail.selectedBase !== undefined) {
-          setSelectedBase(customEvent.detail.selectedBase || "San Pedro de Alcántara")
-        }
+        if (customEvent.detail.bookmarks !== undefined) setBookmarks(customEvent.detail.bookmarks)
+        if (customEvent.detail.selectedBase !== undefined) setSelectedBase(customEvent.detail.selectedBase || "San Pedro de Alcántara")
       }
     }
     window.addEventListener('sol-local-planner-update', handleUpdate)
@@ -69,17 +43,9 @@ export default function Beaches() {
 
   const toggleBookmark = (beach: any) => {
     const isBookmarked = bookmarks.some(b => b.id === beach.name)
-    let nextBookmarks
-    if (isBookmarked) {
-      nextBookmarks = bookmarks.filter(b => b.id !== beach.name)
-    } else {
-      nextBookmarks = [...bookmarks, {
-        id: beach.name,
-        name: beach.name,
-        type: 'beach',
-        zone: beach.zone
-      }]
-    }
+    const nextBookmarks = isBookmarked
+      ? bookmarks.filter(b => b.id !== beach.name)
+      : [...bookmarks, { id: beach.name, name: beach.name, type: 'beach', zone: beach.zone }]
     setBookmarks(nextBookmarks)
     const stored = localStorage.getItem('sol_local_planner')
     const current = stored ? JSON.parse(stored) : {}
@@ -95,12 +61,9 @@ export default function Beaches() {
       if (atmosFilter !== 'Tutte' && b.atmosphere !== atmosFilter) return false
       return true
     })
-
     if (sortByDriveTime) {
       result = [...result].sort((a: any, b: any) => {
-        const timeA = getDriveTime(selectedBase, a.zone)
-        const timeB = getDriveTime(selectedBase, b.zone)
-        return timeA - timeB
+        return getDriveTime(selectedBase, a.zone) - getDriveTime(selectedBase, b.zone)
       })
     }
     return result
@@ -108,235 +71,144 @@ export default function Beaches() {
 
   return (
     <section id="beaches" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
-      <div className="max-w-[1920px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10"
-        >
-          <div className="flex items-center gap-2 text-terracotta-500 mb-2">
+      <div className="max-w-7xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
+          <div className="flex items-center gap-2 text-primary mb-2">
             <Waves className="w-4 h-4" />
-            <span className="text-sm font-medium uppercase tracking-[0.3em]">Costa del Sol</span>
+            <span className="font-label-sm text-label-sm uppercase tracking-[0.3em]">Costa del Sol</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-notte leading-tight">
-            Spiagge <span className="italic font-medium text-terracotta-500">Consigliate</span>
-          </h2>
-          <p className="text-mare-700/70 mt-3 max-w-3xl text-base sm:text-lg font-body leading-relaxed">
-            Una selezione curata dei litorali più iconici, dalle calette selvagge di <span className="text-terracotta-400 font-semibold">Maro</span> alle spiagge esclusive di <span className="text-terracotta-400 font-semibold">Marbella</span>.
-          </p>
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface">Spiagge Consigliate</h2>
+          <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Una selezione curata dei litorali più iconici, dalle calette selvagge di Maro alle spiagge esclusive di Marbella.</p>
         </motion.div>
 
-        {/* FILTER BAR — responsive container */}
-        <div className="glass flex flex-col gap-4 mb-8 p-4 rounded-2xl border border-terracotta-100/40">
-          <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between">
+        <div className="bg-surface-container rounded-xl p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+          <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between mb-4">
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-mare-400" />
-              <input
-                type="text"
-                placeholder="Cerca spiaggia o zona..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-10 py-2.5 rounded-xl bg-white/80 border border-terracotta-100/50 text-sm text-notte placeholder:text-mare-300 focus:outline-none focus:ring-2 focus:ring-terracotta-300/50 transition-all focus:bg-white"
-              />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
+              <input type="text" placeholder="Cerca spiaggia o zona..." value={search} onChange={(e) => setSearch(e.target.value)}
+                className="w-full pl-9 pr-10 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" />
               {search && (
-                <button
-                  onClick={() => setSearch('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-mare-400 hover:text-terracotta-600 hover:bg-terracotta-50 rounded-lg transition-colors cursor-pointer"
-                >
+                <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-outline hover:text-primary hover:bg-surface-variant rounded-lg transition-colors">
                   <X className="w-3.5 h-3.5" />
                 </button>
               )}
             </div>
-
-            <button
-              onClick={() => setSortByDriveTime(!sortByDriveTime)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all border flex items-center justify-center gap-2 cursor-pointer shrink-0 ${
+            <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
+              className={`px-4 py-2.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center justify-center gap-2 cursor-pointer shrink-0 ${
                 sortByDriveTime
-                  ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-md shadow-terracotta-500/25'
-                  : 'bg-white/80 text-mare-750 border-terracotta-100/50 hover:bg-terracotta-50 hover:text-terracotta-600'
-              }`}
-            >
-              <Car className="w-4 h-4 shrink-0" />
-              {sortByDriveTime ? 'Ordinato per vicinanza (⏱)' : 'Ordina per vicinanza (⏱)'}
+                  ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
+                  : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
+              }`}>
+              <Car className="w-4 h-4" />
+              {sortByDriveTime ? 'Ordinato per vicinanza' : 'Ordina per vicinanza'}
             </button>
           </div>
 
-          <div className="space-y-5">
-            {/* Zona filter */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
-                <MapPin className="w-3.5 h-3.5 text-terracotta-500" />
-                <span>Filtra per zona</span>
-              </div>
-              <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
-                <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
-                  {zones.map((z) => (
-                    <button
-                      key={z}
-                      onClick={() => setZoneFilter(z)}
-                      className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
-                        zoneFilter === z
-                          ? 'text-white font-bold'
-                          : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 hover:border-terracotta-200 shadow-sm hover:scale-102'
-                      }`}
-                    >
-                      <span className="relative z-10 flex items-center gap-1.5">
-                        <span>{zoneIcons[z] || '📍'}</span>
-                        <span>{z === 'Tutte' ? 'Tutte le zone' : z}</span>
-                      </span>
-                      {zoneFilter === z && (
-                        <motion.span
-                          layoutId="beachZoneBg"
-                          className="absolute inset-0 bg-gradient-to-r from-terracotta-500 to-terracotta-600 rounded-xl shadow-sm shadow-terracotta-500/25 border border-terracotta-400/20"
-                          transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                        />
-                      )}
-                    </button>
-                  ))}
-                </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1">
+              <span className="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Zona</span>
+              <div className="flex flex-wrap gap-1.5">
+                {zones.map((z) => (
+                  <button key={z} onClick={() => setZoneFilter(z)}
+                    className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
+                      zoneFilter === z
+                        ? 'bg-secondary text-on-secondary shadow-sm'
+                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                    }`}>
+                    {z}
+                  </button>
+                ))}
               </div>
             </div>
-
-            {/* Atmosfera filter */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-mare-600 ml-1 uppercase tracking-wider">
-                <Waves className="w-3.5 h-3.5 text-terracotta-500" />
-                <span>Filtra per atmosfera</span>
-              </div>
-              <div className="relative -mx-4 px-4 sm:mx-0 sm:px-0">
-                <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-sabbia to-transparent pointer-events-none z-10 sm:hidden" />
-                <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 overflow-x-auto sm:overflow-x-visible whitespace-nowrap sm:whitespace-normal scrollbar-hide py-1.5 px-0.5 snap-x sm:snap-none">
-                  {atmospheres.map((a) => (
-                    <button
-                      key={a}
-                      onClick={() => setAtmosFilter(a)}
-                      className={`relative px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all snap-center cursor-pointer ${
-                        atmosFilter === a
-                          ? 'text-white font-bold'
-                          : 'text-mare-750/90 hover:text-terracotta-600 bg-white border border-terracotta-100/40 hover:border-terracotta-200 shadow-sm hover:scale-102'
-                      }`}
-                    >
-                      <span className="relative z-10 flex items-center gap-1.5">
-                        <span>{atmosIcons[a] || '✨'}</span>
-                        <span>{a === 'Tutte' ? 'Tutte atmosfere' : a}</span>
-                      </span>
-                      {atmosFilter === a && (
-                        <motion.span
-                          layoutId="beachAtmosBg"
-                          className="absolute inset-0 bg-gradient-to-r from-terracotta-500 to-terracotta-600 rounded-xl shadow-sm shadow-terracotta-500/25 border border-terracotta-400/20"
-                          transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                        />
-                      )}
-                    </button>
-                  ))}
-                </div>
+            <div className="flex-1">
+              <span className="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Atmosfera</span>
+              <div className="flex flex-wrap gap-1.5">
+                {atmospheres.map((a) => (
+                  <button key={a} onClick={() => setAtmosFilter(a)}
+                    className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
+                      atmosFilter === a
+                        ? 'bg-secondary text-on-secondary shadow-sm'
+                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                    }`}>
+                    {a}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-visible gap-4 pt-2 pb-4 sm:pt-0 sm:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((beach: any, i: number) => {
             const isBookmarked = bookmarks.some(b => b.id === beach.name)
             return (
-              <motion.div
-                key={beach.name}
+              <motion.div key={beach.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 border border-terracotta-100/40 card-shadow card-hover w-[290px] xs:w-[325px] sm:w-auto shrink-0 snap-center"
+                className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
               >
-                <div className="relative w-full aspect-[16/9] -mx-5 -mt-5 mb-3 overflow-hidden rounded-t-2xl">
-                  <img
-                    src={beach.imageUrl}
-                    alt={beach.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  {beach.imageUrl ? (
+                    <img src={beach.imageUrl} alt={beach.name} className="w-full h-full object-cover" loading="lazy" />
+                  ) : (
+                    <div className="w-full h-full relative">
+                      <img src={nerjaFallbackImage} alt={`${beach.name} Nerja`} className="w-full h-full object-cover" loading="lazy" />
+                      <div className="absolute inset-0 bg-[rgba(34,26,15,0.2)]" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Waves className="w-12 h-12 text-on-surface/40" />
+                      </div>
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <button
-                    onClick={() => toggleBookmark(beach)}
-                    className="absolute top-2.5 right-2.5 p-1.5 bg-white/70 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all cursor-pointer shadow-sm"
-                    title={isBookmarked ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti"}
-                  >
-                    <Heart
-                      className={`w-3.5 h-3.5 transition-colors ${
-                        isBookmarked ? 'fill-red-500 text-red-500' : 'text-mare-600'
-                      }`}
-                    />
+                  <button onClick={() => toggleBookmark(beach)}
+                    className="absolute top-2.5 right-2.5 p-1.5 bg-surface/70 backdrop-blur-sm rounded-full hover:bg-surface hover:scale-110 transition-all cursor-pointer shadow-sm"
+                    title={isBookmarked ? "Rimuovi" : "Aggiungi"}>
+                    <Heart className={`w-3.5 h-3.5 transition-colors ${isBookmarked ? 'fill-red-500 text-red-500' : 'text-on-surface-variant'}`} />
                   </button>
-                  <span className="absolute bottom-2 left-2.5 badge-pill text-white bg-black/40 backdrop-blur-sm border-0 text-[10px]">
+                  <span className="absolute bottom-2 left-2.5 px-2 py-0.5 bg-surface/70 backdrop-blur-sm text-on-surface-variant font-label-sm text-label-sm rounded-full">
                     {beach.atmosphere}
                   </span>
                 </div>
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="font-display text-lg font-bold text-notte">{beach.name}</h3>
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="font-headline-sm text-headline-sm text-on-surface mb-1">{beach.name}</h3>
+                  <p className="font-body-md text-[14px] text-on-surface-variant mb-3">{beach.description}</p>
+                  <div className="space-y-1.5 font-body-md text-[13px] text-on-surface-variant mb-3">
+                    <p className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-outline" />{beach.zone}</p>
+                    <p className="flex items-center gap-1.5"><Car className="w-3.5 h-3.5 text-outline" />{beach.parking}</p>
+                    <p className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-primary" />Percorrenza: ~{getDriveTime(selectedBase, beach.zone)} min (da {getShortBaseName(selectedBase)})</p>
+                    <p className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-outline" />Miglior momento: {beach.bestTime}</p>
+                    <p className="flex items-center gap-1.5"><Waves className="w-3.5 h-3.5 text-outline" />{beach.sand}{beach.chiringuitos ? ' · Chiringuiti ✅' : ''}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <a href={beach.mapLink} target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">
+                      <Map className="w-3.5 h-3.5" /> Maps
+                    </a>
+                    <a href={beach.tripadvisorLink} target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm hover:bg-emerald-600 hover:text-white transition-all">
+                      <Star className="w-3.5 h-3.5" /> TripAdvisor
+                    </a>
+                  </div>
+                  {beach.localTip && (
+                    <div className="mt-auto pt-3 border-t border-outline-variant/30">
+                      <p className="font-body-md text-[13px] text-on-surface-variant italic">
+                        <span className="font-bold text-primary not-italic uppercase text-[10px] tracking-wider mr-1">Tip:</span>
+                        {beach.localTip}
+                      </p>
+                    </div>
+                  )}
                 </div>
-              <p className="text-xs text-mare-700/50 mb-2">{beach.description}</p>
-              <div className="space-y-1.5 mb-3">
-                <p className="text-xs text-mare-700/60 flex items-center gap-1.5">
-                  <MapPin className="w-3 h-3 text-terracotta-400" />
-                  {beach.zone}
-                </p>
-                <p className="text-xs text-mare-700/60 flex items-center gap-1.5">
-                  <Car className="w-3 h-3 text-terracotta-400" />
-                  {beach.parking}
-                </p>
-                <p className="text-xs font-semibold text-terracotta-600 flex items-center gap-1.5">
-                  <Clock className="w-3 h-3 text-terracotta-500" />
-                  Percorrenza: ~{getDriveTime(selectedBase, beach.zone)} min (da {getShortBaseName(selectedBase)})
-                </p>
-                <p className="text-xs text-mare-700/60 flex items-center gap-1.5">
-                  <Clock className="w-3 h-3 text-terracotta-400" />
-                  Miglior momento: {beach.bestTime}
-                </p>
-                <p className="text-xs text-mare-700/60 flex items-center gap-1.5">
-                  <Waves className="w-3 h-3 text-terracotta-400" />
-                  {beach.sand}{beach.chiringuitos ? ' · Chiringuiti ✅' : ''}
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2 mb-3">
-                <a
-                  href={beach.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="badge-pill hover:bg-terracotta-500 hover:text-white hover:border-terracotta-500 transition-all duration-200"
-                >
-                  <Map className="w-3.5 h-3.5" />
-                  Maps
-                </a>
-                <a
-                  href={beach.tripadvisorLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="badge-pill hover:bg-emerald-500 hover:text-white hover:border-emerald-500 transition-all duration-200"
-                >
-                  <Star className="w-3.5 h-3.5" />
-                  TripAdvisor
-                </a>
-              </div>
-              {beach.localTip && (
-                <div className="p-2.5 bg-gradient-to-r from-terracotta-50 to-crema/50 rounded-lg">
-                  <p className="text-xs text-mare-700/80">
-                    <span className="font-medium text-terracotta-600">💡 </span>
-                    {beach.localTip}
-                  </p>
-                </div>
-              )}
-            </motion.div>
-          )
-        })}
-      </div>
+              </motion.div>
+            )
+          })}
+        </div>
 
         {filtered.length === 0 && (
-          <div className="text-center py-12 text-mare-400">
+          <div className="text-center py-12 text-outline">
             <Waves className="w-12 h-12 mx-auto mb-2 opacity-40" />
-            <p className="font-body">Nessuna spiaggia trovata. Prova altri filtri.</p>
+            <p className="font-body-md text-body-md">Nessuna spiaggia trovata. Prova altri filtri.</p>
           </div>
         )}
       </div>
