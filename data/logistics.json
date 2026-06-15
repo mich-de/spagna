@@ -42,5 +42,47 @@
     { "from": "Nerja", "to": "Estepona", "toll": "105min", "free": "125min", "toll_cost": "~€10" },
     { "from": "Marbella", "to": "Estepona", "toll": "20min", "free": "25min", "toll_cost": "~€3" },
     { "from": "Marbella", "to": "Málaga", "toll": "40min", "free": "50min", "toll_cost": "~€5" }
-  ]
+  ],
+  "highways_comparison": {
+    "title": "AP-7 vs A-7 — Confronto Autostrade",
+    "description": "Guida completa per scegliere il percorso giusto: autostrada a pedaggio AP-7 (più veloce) o gratuita A-7 (panoramica). In alta stagione i pedaggi raddoppiano.",
+    "routes": [
+      {
+        "route": "Málaga → Nerja",
+        "via_ap7": "45min",
+        "via_a7": "65min",
+        "toll": "~€5",
+        "tip": "A-7 passa per Torre del Mar — panoramica ma lenta in estate"
+      },
+      {
+        "route": "Málaga → Marbella",
+        "via_ap7": "40min",
+        "via_a7": "60min",
+        "toll": "~€5",
+        "tip": "AP-7 quasi obbligatoria in alta stagione"
+      },
+      {
+        "route": "Málaga → Estepona",
+        "via_ap7": "60min",
+        "via_a7": "85min",
+        "toll": "~€9",
+        "tip": "Tratto più lungo, preferisci AP-7 per comfort"
+      },
+      {
+        "route": "Marbella → Estepona",
+        "via_ap7": "20min",
+        "via_a7": "30min",
+        "toll": "~€3",
+        "tip": "Tratto breve: A-7 accettabile fuori dalle ore di punta"
+      },
+      {
+        "route": "Nerja → Marbella",
+        "via_ap7": "85min",
+        "via_a7": "115min",
+        "toll": "~€8",
+        "tip": "Gita lunga: usa AP-7 all'andata, A-7 al ritorno se non hai fretta"
+      }
+    ],
+    "payment_tip": "I pedaggi AP-7 si pagano con carta di credito/debito o contanti. Le barriere automatiche accettano carte contactless. Alcuni tratti hanno il Telepeaje (via Vía-T). In giugno i pedaggi aumentano ~50% rispetto alla bassa stagione."
+  }
 }
