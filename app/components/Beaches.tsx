@@ -15,8 +15,11 @@ export default function Beaches() {
   const [zoneFilter, setZoneFilter] = useState('Tutte')
   const [atmosFilter, setAtmosFilter] = useState('Tutte')
   const [sortByDriveTime, setSortByDriveTime] = useState(false)
+  const [balconFilter, setBalconFilter] = useState(false)
   const [bookmarks, setBookmarks] = useState<any[]>([])
   const [selectedBase, setSelectedBase] = useState<string>('San Pedro de Alcántara')
+
+  const BALCON_BEACHES = ['Balcón de Europa', 'Playa de Calahonda', 'Playa de la Caletilla', 'Playa del Salón', 'Cale di El Chorrillo']
 
   useEffect(() => {
     const stored = localStorage.getItem('sol_local_planner')
@@ -56,6 +59,7 @@ export default function Beaches() {
 
   const filtered = useMemo(() => {
     let result = beaches.filter((b: any) => {
+      if (balconFilter && !BALCON_BEACHES.includes(b.name)) return false
       if (search && !b.name.toLowerCase().includes(search.toLowerCase()) && !b.zone.toLowerCase().includes(search.toLowerCase())) return false
       if (zoneFilter !== 'Tutte' && b.zone !== zoneFilter) return false
       if (atmosFilter !== 'Tutte' && b.atmosphere !== atmosFilter) return false
@@ -67,7 +71,7 @@ export default function Beaches() {
       })
     }
     return result
-  }, [search, zoneFilter, atmosFilter, sortByDriveTime, selectedBase])
+  }, [search, zoneFilter, atmosFilter, sortByDriveTime, selectedBase, balconFilter, BALCON_BEACHES])
 
   return (
     <section id="beaches" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
@@ -93,15 +97,26 @@ export default function Beaches() {
                 </button>
               )}
             </div>
-            <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
-              className={`px-4 py-2.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center justify-center gap-2 cursor-pointer shrink-0 ${
-                sortByDriveTime
-                  ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
-                  : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
-              }`}>
-              <Car className="w-4 h-4" />
-              {sortByDriveTime ? 'Ordinato per vicinanza' : 'Ordina per vicinanza'}
-            </button>
+            <div className="flex gap-2 shrink-0">
+              <button onClick={() => { setBalconFilter(!balconFilter); setZoneFilter('Tutte'); setAtmosFilter('Tutte'); setSearch('') }}
+                className={`px-4 py-2.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center justify-center gap-1.5 cursor-pointer ${
+                  balconFilter
+                    ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
+                    : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-amber-400/60'
+                }`}>
+                <span className="text-base leading-none">🏛️</span>
+                Balcón de Europa
+              </button>
+              <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
+                className={`px-4 py-2.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center justify-center gap-2 cursor-pointer ${
+                  sortByDriveTime
+                    ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
+                    : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
+                }`}>
+                <Car className="w-4 h-4" />
+                {sortByDriveTime ? 'Ordinato per vicinanza' : 'Ordina per vicinanza'}
+              </button>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
