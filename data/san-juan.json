@@ -1,6 +1,6 @@
 {
   "title": "🔥 Noche de San Juan — 23→24 Giugno 2026",
-  "description": "La notte più magica dell'estate spagnola. Solstizio d'estate: falò in spiaggia, bagni a mezzanotte e lo spirito andaluso al massimo. 2026: Martedì 23 giugno.",
+  "description": "La notte più magica dell'estate spagnola. Solstizio d'estate: falò in spiaggia, bagni a mezzanotte e lo spirito andaluso al massimo. 2026: Martedì 23 giugno. A Nerja l'epicentro è Playa de Burriana con la tipica bruciatura del Júa e le Moragas.",
   "recommendedSpot": "Playa de la Misericordia (Málaga)",
   "spots": [
     {
@@ -114,6 +114,20 @@
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
       "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Rada+Estepona",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Playa_de_la_Rada_-_Estepona_beach.jpg/1280px-Playa_de_la_Rada_-_Estepona_beach.jpg"
+    },
+    {
+      "name": "Playa de Burriana",
+      "zone": "Nerja",
+      "vibe": "Festa popolare e tradizionale",
+      "pros": "Moragas (barbecue) in famiglia, falò del Júa a mezzanotte, musica dal vivo",
+      "cons": "Bisogna arrivare presto per trovare posto e preparare la brace",
+      "parking": "Parcheggi della spiaggia (pieni dal pomeriggio)",
+      "transport": "Auto o a piedi dal centro",
+      "social": 9,
+      "authenticity": 10,
+      "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Burriana+Nerja",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burriana_%286861858288%29.jpg/1280px-Burriana_%286861858288%29.jpg"
     }
   ],
   "schedule": {
