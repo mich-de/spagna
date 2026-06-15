@@ -459,6 +459,23 @@
     "imageUrl": "https://esnerja.com/wp-content/uploads/2026/04/playa-el-salon-nerja-8-768x576.webp"
   },
   {
+    "name": "Balcón de Europa",
+    "zone": "Nerja",
+    "description": "Il simbolo di Nerja. Un magnifico belvedere con vista panoramica sul Mediterraneo, costruito su un antico bastione militare. Alle sue pendici si trovano le spiagge Calahonda e Caletilla, raggiungibili tramite scalinate. Punto di ritrovo obbligatorio a ogni ora del giorno.",
+    "atmosphere": "panoramica/iconica",
+    "parking": "Parking Plaza de España (€2.5/h) o Parking Paseo Nuevo. Accesso solo a piedi.",
+    "sand": "belvedere pavimentato (spiagge raggiungibili a piedi)",
+    "chiringuitos": false,
+    "bestTime": "tramonto — la luce dorata sul mare è spettacolare",
+    "distance_min": 50,
+    "localTip": "Arriva alle 19:30 per il tramonto — è il momento più bello. I musicisti di strada suonano spesso. Scendi le scale a destra per Calahonda, a sinistra per Caletilla.",
+    "turismLevel": "altissimo",
+    "food": "Ristoranti affacciati sul belvedere: El Balcón de Europa, Restaurante Marisco. Bar con terrazza. Centro di Nerja a 50m con tapas, heladerías, caffè.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Balcon+de+Europa+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Attraction_Review-g315917-d317296-Reviews-Balcon_de_Europa-Nerja_Costa_del_Sol_Province_of_Malaga_Andalucia.html",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/balcon-de-europa-nerja-768x512.jpg"
+  },
+  {
     "name": "Playa de Carabeo",
     "zone": "Nerja",
     "description": "Piccola e tranquilla caletta incastrata tra le scogliere, offre un'atmosfera più intima rispetto alle spiagge più grandi.",
