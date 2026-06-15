@@ -396,17 +396,3 @@ export default function QuickInspiration() {
     </section>
   )
 }
-            className="bg-tertiary/10 border border-tertiary/30 text-tertiary p-3 rounded-2xl text-center font-label-sm text-label-sm font-semibold max-w-sm mx-auto">
-                        ✅ Giornata salvata! Apri &ldquo;Il Mio Piano&rdquo; per vederla.
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-    </section>
-  )
-}
