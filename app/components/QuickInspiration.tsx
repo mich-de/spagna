@@ -48,12 +48,12 @@ export default function QuickInspiration() {
   const normalizedItems = useMemo(() => {
     const bItems: InspirationItem[] = beaches.map((b: any) => ({
       id: b.name, name: b.name, type: 'beach', description: b.description, zone: b.zone || 'Ovunque', tip: b.localTip || '',
-      additionalInfo: `Best Time: ${b.bestTime} · Sabbia: ${b.sand}`, mapLink: b.mapLink, tripadvisorLink: b.tripadvisorLink,
+      additionalInfo: `Best Time: ${b.bestTime} · Sabbia: ${b.sand}`, mapLink: b.mapLink, tripadvisorLink: b.tripadvisorLink, imageUrl: b.imageUrl
     }))
     const rItems: InspirationItem[] = restaurants.map((r: any) => ({
       id: r.name, name: r.name, type: 'restaurant', description: r.description, zone: r.zone || 'Ovunque',
       tip: r.localTip || `Specialità: ${r.specialty}`, additionalInfo: `Prezzo: ${r.price} · Tipo: ${r.type}`,
-      mapLink: r.mapLink, tripadvisorLink: r.tripadvisorLink,
+      mapLink: r.mapLink, tripadvisorLink: r.tripadvisorLink, imageUrl: r.imageUrl
     }))
     const eItems: InspirationItem[] = experiences.map((e: any) => ({
       id: e.title, name: e.title, type: 'experience', description: e.tip || "Un'esperienza autentica consigliata da locali.",
@@ -383,6 +383,20 @@ export default function QuickInspiration() {
                     {showMatcherSuccess && (
                       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
                         className="bg-tertiary/10 border border-tertiary/30 text-tertiary p-3 rounded-2xl text-center font-label-sm text-label-sm font-semibold max-w-sm mx-auto">
+                        ✅ Giornata salvata! Apri &ldquo;Il Mio Piano&rdquo; per vederla.
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+            className="bg-tertiary/10 border border-tertiary/30 text-tertiary p-3 rounded-2xl text-center font-label-sm text-label-sm font-semibold max-w-sm mx-auto">
                         ✅ Giornata salvata! Apri &ldquo;Il Mio Piano&rdquo; per vederla.
                       </motion.div>
                     )}

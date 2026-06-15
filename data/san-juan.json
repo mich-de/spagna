@@ -14,7 +14,8 @@
       "social": 10,
       "authenticity": 9,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Misericordia+Malaga"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Misericordia+Malaga",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/PlayadelaMisericordia%28M%C3%A1laga%29.jpg/1280px-PlayadelaMisericordia%28M%C3%A1laga%29.jpg"
     },
     {
       "name": "Playa de Pedregalejo",
@@ -27,7 +28,8 @@
       "social": 8,
       "authenticity": 10,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Pedregalejo+Malaga"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Pedregalejo+Malaga",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio_%281%29.jpg/1280px-Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio_%281%29.jpg"
     },
     {
       "name": "Playa de la Malagueta",
@@ -40,7 +42,8 @@
       "social": 9,
       "authenticity": 7,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Malagueta+Malaga"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Malagueta+Malaga",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Playa_de_la_Malagueta.jpg/1280px-Playa_de_la_Malagueta.jpg"
     },
     {
       "name": "Cabopino",
@@ -53,7 +56,8 @@
       "social": 6,
       "authenticity": 8,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Cabopino+Playa+Marbella",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cabopino+Playa+Marbella"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cabopino+Playa+Marbella",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Artola-Cabopino_02.jpg/1280px-Artola-Cabopino_02.jpg"
     },
     {
       "name": "Playa de la Carihuela",
@@ -66,7 +70,8 @@
       "social": 10,
       "authenticity": 9,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Carihuela+Torremolinos"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Carihuela+Torremolinos",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/La_Carihuela.jpg/1280px-La_Carihuela.jpg"
     },
     {
       "name": "Playa de Santa Ana / Bil-Bil",
@@ -79,7 +84,8 @@
       "social": 8,
       "authenticity": 8,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Santa+Ana+Benalmadena",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Santa+Ana+Benalmadena"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+Santa+Ana+Benalmadena",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Playa_de_Bil_Bil%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_64.jpg/1280px-Playa_de_Bil_Bil%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_64.jpg"
     },
     {
       "name": "Playa del Cable",
@@ -92,7 +98,8 @@
       "social": 9,
       "authenticity": 10,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cable+Marbella",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+del+Cable+Marbella"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+del+Cable+Marbella",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poste_del_Cable_en_Marbella_01.jpg"
     },
     {
       "name": "Playa de la Rada",
@@ -105,7 +112,8 @@
       "social": 7,
       "authenticity": 10,
       "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
-      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Rada+Estepona"
+      "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa+de+la+Rada+Estepona",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Playa_de_la_Rada_-_Estepona_beach.jpg/1280px-Playa_de_la_Rada_-_Estepona_beach.jpg"
     }
   ],
   "schedule": {

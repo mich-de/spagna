@@ -77,6 +77,12 @@ export default function SanJuan() {
                   : 'bg-surface-container-lowest border-outline-variant/30'
               }`}
             >
+              {spot.imageUrl && (
+                <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3">
+                  <img src={spot.imageUrl} alt={spot.name} className="w-full h-full object-cover" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+              )}
               <div className="flex items-start justify-between mb-2">
                 <h4 className="font-label-md text-label-md text-on-surface font-bold">{spot.name}</h4>
                 {spot.name === sj.recommendedSpot && (

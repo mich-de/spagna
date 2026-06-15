@@ -162,7 +162,7 @@
     "chiringuitos": true,
     "bestTime": "pomeriggio e tramonto",
     "distance_min": 30,
-    "localTip": "I beach club qui sono i più trendy di Torremolinos. Per l'atmosfera locale vai da Mari y Sergio o Ramos.",
+    "localTip": "I beach club qui sono i più trendy di Torremolinos. Per l'atmosphere locale vai da Mari y Sergio o Ramos.",
     "turismLevel": "alto",
     "food": "MARI Y SERGIO: chiringuito tradizionale — frittura malagueña, espetos, conchas finas, calamar alla griglia. RESTAURANTE RAMOS: dal 1980, mariscada, espetos, arroz negro (il migliore), paella di frutti di mare. PLAYA SANTA BEACH CLUB: sushi premium, fusión mediterránea, cocktails. LA PLAYA SURF HOUZE: cucina mediterránea-fusión, cocktails, atmosphere giovane.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+los+Alamos+Torremolinos",
@@ -303,7 +303,7 @@
     "food": "KIOSKO CRISTOBAL: espetos e frittura di pesce sulla spiaggia, hamacas. CHIRINGUITO LOS MORENO: espetos victorianos, paella de marisco, cazón en adobo, calamar al espeto (€20-30). DELFINES BEACH CLUB: cucina mediterránea de autor, ostras, jamón ibérico, tartar di tonno, lubina alla sale (€20-30). ANTONIO RESTAURANTE: chiringuito di moda a Miraflores, 30+ anni, hamacas sulla spiaggia.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Cala+de+Mijas+beach",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Cala%20de%20Mijas+Costa+del+Sol",
-    "imageUrl": "https://www.malagacar.com/images/beaches/calahonda.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Playa_de_la_Cala%2C_Mijas_01.JPG/1280px-Playa_de_la_Cala%2C_Mijas_01.JPG"
   },
   {
     "name": "El Bombo",
@@ -320,7 +320,7 @@
     "food": "Pochi chiringuiti tradizionali. Pesce grigliato ed espetos. Atmosfera semplice e rilassata.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Bombo+Mijas",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Bombo+Mijas",
-    "imageUrl": "https://s1.ppllstatics.com/diariosur/www/multimedia/201908/21/media/cortadas/7-kpFG-U801029578267fO-1968x1216@Diario%20Sur.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bombo_beach_-_panoramio.jpg/1280px-Bombo_beach_-_panoramio.jpg"
   },
   {
     "name": "Calahonda",
@@ -354,7 +354,7 @@
     "food": "Nessun servizio in spiaggia. Porta da mangiare. Dopo la passeggiata, ristoranti nel porto di Cabopino.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Senda+Litoral+Dunas+de+Artola+Marbella",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Senda%20Litoral%20Dunas%20de%20Artola+Marbella",
-    "imageUrl": "https://s1.wklcdn.com/image_4/120144/32185492/20751781Master.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Artola-Cabopino_03.jpg/1280px-Artola-Cabopino_03.jpg"
   },
   {
     "name": "Playa de Burriana",
@@ -473,7 +473,7 @@
     "food": "Nessun servizio. Ristoranti nel centro di Nerja a 5 minuti a piedi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeo%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Playa_de_Carabeo%2C_Nerja.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Playa_Carabeo.jpg/1280px-Playa_Carabeo.jpg"
   },
   {
     "name": "Playa de Carabeillo",
@@ -490,7 +490,7 @@
     "food": "Nessun servizio in spiaggia. Rientra al Balcón de Europa per tapas, gelato o cena.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeillo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeillo%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Playas_de_Nerja.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Playas_de_Nerja.jpg/1280px-Playas_de_Nerja.jpg"
   },
   {
     "name": "Playa de las Chorreras",
@@ -507,7 +507,7 @@
     "food": "Chiringuiti semplici con pesce fritto, espetos e paella. Atmosfera informale e prezzi più tranquilli.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+las+Chorreras+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20las%20Chorreras%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Playas_de_Nerja_2.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Playas_de_Nerja_2.jpg/1280px-Playas_de_Nerja_2.jpg"
   },
   {
     "name": "Cala del Cañuelo",
@@ -524,7 +524,7 @@
     "food": "Nessun servizio. Picnic obbligatorio: panini, frutta, acqua e snack salati.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+del+Ca%C3%B1uelo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20del%20Ca%C3%B1uelo%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Cala_del_Ca%C3%B1uelo%2C_Nerja%2C_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Cala_del_Ca%C3%B1uelo%2C_Nerja%2C_1.jpg/1280px-Cala_del_Ca%C3%B1uelo%2C_Nerja%2C_1.jpg"
   },
   {
     "name": "Cala del Pino",
@@ -558,7 +558,7 @@
     "food": "Nessun servizio in spiaggia. Bar, gelaterie e ristoranti del centro a due passi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Caletilla+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Caletilla%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Playa_Caletilla_en_Nerja.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Playa_Caletilla_en_Nerja.jpg/1280px-Playa_Caletilla_en_Nerja.jpg"
   },
   {
     "name": "Caletón de Maro",
@@ -575,6 +575,6 @@
     "food": "Pochi servizi. Porta acqua e snack, oppure mangia dopo a Maro.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Calet%C3%B3n+de+Maro+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Calet%C3%B3n%20de%20Maro%20Nerja",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Playa_de_la_Caleta_Maro.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Playa_de_la_Caleta_Maro.jpg/1280px-Playa_de_la_Caleta_Maro.jpg"
   }
 ]
