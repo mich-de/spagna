@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Car, ParkingCircle, AlertTriangle, Clock, Gauge, ShieldCheck, ExternalLink } from 'lucide-react'
+import { Car, ParkingCircle, AlertTriangle, Clock, Gauge, ShieldCheck, ExternalLink, Compass, Info } from 'lucide-react'
 import log from '@/data/logistics.json'
 
 export default function Logistics() {
@@ -123,6 +123,121 @@ export default function Logistics() {
             </div>
           </div>
         </div>
+
+        {/* Highway comparison container */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="mt-8"
+        >
+          <div className="bg-white/70 rounded-2xl p-6 sm:p-8 border border-terracotta-100/40 card-shadow card-hover">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+              <div>
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-notte flex items-center gap-2.5">
+                  <Compass className="w-6 h-6 text-terracotta-500" />
+                  {log.highways_comparison.title}
+                </h3>
+                <p className="text-sm text-mare-700/70 mt-1 max-w-3xl">
+                  {log.highways_comparison.description}
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-red-50 text-red-700 text-xs font-semibold border border-red-100">
+                  <AlertTriangle className="w-3.5 h-3.5" /> Alta Stagione: Tariffe Raddoppiate
+                </span>
+              </div>
+            </div>
+
+            {/* Comparison Table / Cards */}
+            <div className="overflow-hidden border border-mare-100/50 rounded-xl bg-white/40 mb-6">
+              {/* Desktop Table View */}
+              <div className="hidden md:block overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-mare-50 border-b border-mare-100/50 text-mare-800 text-xs font-bold uppercase tracking-wider">
+                      <th className="p-4">Percorso</th>
+                      <th className="p-4 text-center">AP-7 (Pedaggio)</th>
+                      <th className="p-4 text-center">A-7 (Gratuita)</th>
+                      <th className="p-4 text-center">Differenza</th>
+                      <th className="p-4">Pedaggio (Giugno)</th>
+                      <th className="p-4">Consiglio</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-mare-100/40 text-sm">
+                    {log.highways_comparison.routes.map((r, idx) => {
+                      const timeAp7 = parseInt(r.via_ap7);
+                      const timeA7 = parseInt(r.via_a7);
+                      const diff = timeA7 - timeAp7;
+                      return (
+                        <tr key={idx} className="hover:bg-terracotta-50/20 transition-colors">
+                          <td className="p-4 font-semibold text-notte">{r.route}</td>
+                          <td className="p-4 text-center font-semibold text-mare-700">{r.via_ap7}</td>
+                          <td className="p-4 text-center text-mare-600/80">{r.via_a7}</td>
+                          <td className="p-4 text-center">
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-terracotta-100 text-terracotta-800">
+                              -{diff} min
+                            </span>
+                          </td>
+                          <td className="p-4 text-amber-800 font-medium">{r.toll}</td>
+                          <td className="p-4 text-xs text-mare-700/80">{r.tip}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Mobile List/Cards View */}
+              <div className="block md:hidden divide-y divide-mare-100/40">
+                {log.highways_comparison.routes.map((r, idx) => {
+                  const timeAp7 = parseInt(r.via_ap7);
+                  const timeA7 = parseInt(r.via_a7);
+                  const diff = timeA7 - timeAp7;
+                  return (
+                    <div key={idx} className="p-4 space-y-3 bg-white/30">
+                      <div className="font-semibold text-notte text-sm">{r.route}</div>
+                      
+                      <div className="grid grid-cols-3 gap-2 text-center text-xs">
+                        <div className="p-2 bg-mare-50 rounded-lg">
+                          <div className="text-mare-500 text-[10px] uppercase font-bold">AP-7</div>
+                          <div className="font-semibold text-notte">{r.via_ap7}</div>
+                        </div>
+                        <div className="p-2 bg-mare-50/50 rounded-lg">
+                          <div className="text-mare-500 text-[10px] uppercase font-bold">A-7</div>
+                          <div className="text-mare-600">{r.via_a7}</div>
+                        </div>
+                        <div className="p-2 bg-terracotta-50 rounded-lg flex flex-col justify-center items-center">
+                          <div className="text-terracotta-600 text-[10px] uppercase font-bold">Salva</div>
+                          <div className="font-semibold text-terracotta-700">-{diff} min</div>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-mare-600">Pedaggio (Giugno):</span>
+                        <span className="font-semibold text-amber-800">{r.toll}</span>
+                      </div>
+
+                      <div className="p-2 bg-amber-50/40 rounded-lg border border-amber-100/20 text-xs text-mare-700/80">
+                        <strong>Nota:</strong> {r.tip}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Bottom Info Banner */}
+            <div className="flex gap-3 p-4 bg-blue-50/60 rounded-xl border border-blue-100/50 text-xs text-blue-800">
+              <Info className="w-5 h-5 flex-shrink-0 text-blue-600" />
+              <div>
+                <p className="font-semibold mb-0.5">Pagamento Pedaggi & Informazioni Utili</p>
+                <p className="text-blue-700/90 leading-relaxed">{log.highways_comparison.payment_tip}</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
