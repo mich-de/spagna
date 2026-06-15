@@ -371,11 +371,11 @@
     "food": "Chiringuito Ayo (paella a legna famosa), Moreno, La Barca. Tantissime opzioni lungo il paseo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Burriana%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-burriana-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/10/Playa-de-Burriana-Nerja-10-768x512.webp"
   },
   {
     "name": "Playa de Maro",
-    "zone": "Nerja",
+    "zone": "Maro (Nerja)",
     "description": "Una delle calette selvagge più belle dell'Andalusia, nel Parco Naturale Maro-Cerro Gordo. Famosa per le acque cristalline e le scogliere.",
     "atmosphere": "wild/naturale",
     "parking": "In estate accesso auto limitato: si parcheggia in alto e si scende a piedi o con bus navetta. Strada ripida.",
@@ -388,7 +388,7 @@
     "food": "Chiringuito de Maro presente sulla spiaggia (paella e pesce fresco).",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Maro+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Maro+Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-de-maro-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/playa-de-maro-768x444.webp"
   },
   {
     "name": "Playa de Calahonda",
@@ -405,7 +405,7 @@
     "food": "Un piccolo chiringuito/chiosco sulla sabbia. Piena di ristoranti appena si risalgono le scale in centro.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Calahonda+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Calahonda%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-calahonda-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/calahonda-7-768x1024.jpeg"
   },
   {
     "name": "Playa de la Torrecilla",
@@ -422,7 +422,7 @@
     "food": "Chiringuito Torrecilla e molti altri bar/ristoranti lungo il paseo retrostante.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Torrecilla+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Torrecilla%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-la-torrecilla-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/playatorrecilla-768x512.jpeg"
   },
   {
     "name": "Playa El Playazo",
@@ -439,7 +439,7 @@
     "food": "Chiringuiti rustici e tradizionali come Chiringuito El Playazo e Oasis.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Playazo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Playazo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-el-playazo-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/10/El-Playazo-Imagen-5-768x474.webp"
   },
   {
     "name": "Playa del Salón",
@@ -456,7 +456,7 @@
     "food": "Nessun chiringuito. Ristoranti raggiungibili a piedi nel centro storico di Nerja. Tapas, pesce, cucina locale.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Salon+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Salon%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-el-salon-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2026/04/playa-el-salon-nerja-8-768x576.webp"
   },
   {
     "name": "Playa de Carabeo",
@@ -473,7 +473,7 @@
     "food": "Nessun servizio sulla spiaggia, ma Calle Carabeo sopra offre ottime opzioni.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-carabeo-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/bajada-playa-carabeo-768x576.jpeg"
   },
   {
     "name": "Playa de Carabeillo",
@@ -490,7 +490,7 @@
     "food": "Nessun servizio. I bagnanti passeggiano fino alla vicina Burriana per cibo e chiringuitos.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeillo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeillo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-carabeillo-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/playa-de-carabeillo-8-768x512.jpeg"
   },
   {
     "name": "Cale di El Chorrillo",
@@ -507,7 +507,7 @@
     "food": "Nessun servizio. Risalire in centro per mangiare.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+las+Chorreras+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20las%20Chorreras%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-el-chorrillo-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/02/Playa-El-Chorrillo-Nerja-768x1152.webp"
   },
   {
     "name": "Cala del Cañuelo",
@@ -524,7 +524,7 @@
     "food": "Di solito presenti due chiringuitos (Las Piedras, El Cañuelo) in alta stagione.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+del+Ca%C3%B1uelo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20del%20Ca%C3%B1uelo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-el-canuelo-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-del-Cañuelo-2-768x576.webp"
   },
   {
     "name": "Cala del Pino",
@@ -541,7 +541,7 @@
     "food": "Nessun servizio. Porta tutto da te e riporti via i rifiuti.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+del+Pino+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20del%20Pino%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/cala-del-pino-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-del-Pino-Imagen-5-768x427.webp"
   },
   {
     "name": "Playa de la Caletilla",
@@ -558,7 +558,7 @@
     "food": "Nessun servizio in spiaggia. Bar, gelaterie e ristoranti del centro a due passi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Caletilla+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Caletilla%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-la-caletilla-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/Playa-de-La-Caletilla-768x511.jpeg"
   },
   {
     "name": "Caleta de Maro (La Caletilla)",
@@ -575,6 +575,108 @@
     "food": "Nessun servizio. Portare l'occorrente o pranzare nel villaggio di Maro.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Calet%C3%B3n+de+Maro+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Calet%C3%B3n%20de%20Maro%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2021/05/playa-la-caleta-de-maro-nerja.jpg"
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Playa-La-Caleta-768x432.webp"
+  },
+  {
+    "name": "Playa El Chucho",
+    "zone": "Nerja",
+    "description": "Piccola e tranquilla spiaggia urbana situata tra El Playazo e La Torrecilla, alla foce del fiume Chíllar.",
+    "atmosphere": "tranquilla/familiare",
+    "parking": "Parcheggi pubblici nelle vicinanze o accesso a piedi dal lungomare.",
+    "sand": "sabbia dorata e ciottoli",
+    "chiringuitos": false,
+    "bestTime": "mattina",
+    "distance_min": 48,
+    "localTip": "Essendo incastrata tra due spiagge grandi, sfugge spesso ai radar dei turisti offrendo un angolo più silenzioso.",
+    "turismLevel": "medio-basso",
+    "food": "Ristoranti e bar a pochi metri sulla passeggiata della Torrecilla.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Chucho+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Chucho%20Nerja",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/Playa-El-Chucho-Nerja-bg-768x512.webp"
+  },
+  {
+    "name": "Playa Piedra de Tarzán",
+    "zone": "Nerja",
+    "description": "Caratteristica piccola cala o punto di tuffi incastrata tra le rocce di Burriana.",
+    "atmosphere": "giovane/avventurosa",
+    "parking": "Parcheggio a Burriana e passeggiata sugli scogli.",
+    "sand": "rocce",
+    "chiringuitos": false,
+    "bestTime": "pomeriggio",
+    "distance_min": 50,
+    "localTip": "Famosa tra i giovani locali per i tuffi dalle rocce. Fai attenzione alla profondità prima di saltare.",
+    "turismLevel": "basso",
+    "food": "I chiringuitos di Burriana sono a pochi passi.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Piedra+de+Tarzan+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Piedra%20de%20Tarzan%20Nerja",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/Playa-Piedra-de-Tarzan-9-768x576.webp"
+  },
+  {
+    "name": "Cala Barranco de Maro",
+    "zone": "Maro (Nerja)",
+    "description": "Una caletta molto isolata alla foce dell'omonimo burrone (barranco). Selvaggia e priva di folla.",
+    "atmosphere": "wild/intima",
+    "parking": "Molto limitato sulla N-340. Accesso a piedi tramite un sentiero aspro di 10-15 minuti.",
+    "sand": "ciottoli e rocce",
+    "chiringuitos": false,
+    "bestTime": "mattina presto",
+    "distance_min": 55,
+    "localTip": "Ideale per chi cerca totale isolamento. Scarpe da trekking obbligatorie per la discesa.",
+    "turismLevel": "bassissimo",
+    "food": "Nessun servizio. Obbligatorio portare scorte abbondanti.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+Barranco+de+Maro",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20Barranco%20de%20Maro",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-Barranco-de-maro-Imagen-13-768x560.webp"
+  },
+  {
+    "name": "Playa del Molino de Papel",
+    "zone": "Maro (Nerja)",
+    "description": "Spiaggia storica e rocciosa nel Parco Naturale, vicina alle rovine di un antico mulino di carta.",
+    "atmosphere": "storica/selvaggia",
+    "parking": "Spiazzi liberi sulla N-340 e discesa a piedi lungo un sentiero o stradina.",
+    "sand": "ciottoli e ghiaia",
+    "chiringuitos": false,
+    "bestTime": "mattina",
+    "distance_min": 55,
+    "localTip": "Ottima se si vuole combinare spiaggia e un po' di storia locale, spesso poco frequentata.",
+    "turismLevel": "basso",
+    "food": "Nessun servizio.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+Molino+de+Papel+Nerja",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20Molino%20de%20Papel%20Nerja",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/09/playa-molino-de-papel-portada-768x432.jpg"
+  },
+  {
+    "name": "Playa de las Alberquillas",
+    "zone": "Maro (Nerja)",
+    "description": "Spiaggia magnifica e tranquilla, collegata a Cala del Pino. Acque incontaminate nel cuore di Maro-Cerro Gordo.",
+    "atmosphere": "naturale/incontaminata",
+    "parking": "Parcheggio sterrato sulla statale N-340 e discesa accessibile a piedi.",
+    "sand": "sabbia scura e ciottoli",
+    "chiringuitos": false,
+    "bestTime": "tutto il giorno",
+    "distance_min": 55,
+    "localTip": "Fai snorkeling intorno alle grotte sotterranee che la collegano a Cala del Pino.",
+    "turismLevel": "basso",
+    "food": "Nessun servizio disponibile. Porta acqua e cibo.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+las+Alberquillas",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20las%20Alberquillas",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/playa-de-las-alberquillas-2-768x573.jpeg"
+  },
+  {
+    "name": "Playa Nudista de Cantarriján",
+    "zone": "Maro (Nerja)",
+    "description": "Al confine tra Málaga e Granada, è la spiaggia naturista più celebre della zona, con ottimi servizi.",
+    "atmosphere": "naturista/rilassata",
+    "parking": "Bus navetta in estate dal parcheggio in alto sulla N-340. Auto vietate fino a giù.",
+    "sand": "sabbia scura e ghiaia",
+    "chiringuitos": true,
+    "bestTime": "tutto il giorno",
+    "distance_min": 55,
+    "localTip": "La spiaggia è divisa in due: la parte est è strettamente naturista, la parte ovest è mista.",
+    "turismLevel": "medio",
+    "food": "Ottimi ristoranti come La Barraca offrono pesce fresco e atmosfera bohémien.",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+Cantarrijan",
+    "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20Cantarrijan",
+    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/07/Playa-de-Cantarrijan-Nerja-768x576.webp"
   }
 ]
