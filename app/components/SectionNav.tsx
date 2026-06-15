@@ -88,10 +88,10 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-surface/80 backdrop-blur-2xl border-b border-outline-variant/30">
+      <nav className="fixed top-0 left-0 right-0 z-[9999] bg-surface/90 backdrop-blur-2xl border-b border-outline-variant/30 shadow-sm">
         <div className="max-w-[1920px] mx-auto px-3 sm:px-5">
-          <div className="flex items-center justify-between h-14">
-            <div className="flex items-center gap-2 shrink-0 mr-4">
+          <div className="flex items-start lg:items-center justify-between min-h-[3.5rem] py-2">
+            <div className="flex items-center gap-2 shrink-0 mr-4 mt-1 lg:mt-0">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center shadow-sm shadow-primary/20">
                 <Compass className="w-4 h-4 text-on-primary" />
               </div>
@@ -100,22 +100,21 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               </span>
             </div>
 
-            <div ref={navRef} className="hidden lg:flex items-center gap-1 overflow-x-auto scrollbar-hide relative py-1">
+            <div ref={navRef} className="hidden lg:flex flex-wrap items-center justify-end gap-x-1 gap-y-2 relative py-1 flex-1">
               {sections.map((s, i) => {
                 const isActive = activeSection === s.id
                 const showDivider = s.group === 'divider' && i > 0
                 return (
                   <div key={s.id} className="flex items-center">
-                    {showDivider && <div className="w-px h-4 bg-outline-variant/30 mx-1 shrink-0" />}
+                    {showDivider && <div className="w-px h-4 bg-outline-variant/40 mx-1 shrink-0 hidden xl:block" />}
                     <button data-nav-id={s.id} onClick={() => onSectionChange(s.id)}
                       className={`relative shrink-0 px-3 py-1.5 font-label-sm text-label-sm font-medium rounded-full flex items-center gap-1.5 whitespace-nowrap transition-all duration-200 ${
                         isActive
-                          ? 'text-on-primary bg-primary shadow-sm'
+                          ? 'text-on-primary bg-primary shadow-md'
                           : 'text-on-surface-variant hover:text-primary hover:bg-surface-variant'
                       }`}>
                       <s.icon className={`w-3.5 h-3.5 ${isActive ? 'text-on-primary' : ''}`} />
-                      <span className="hidden xl:inline">{s.label}</span>
-                      <span className="xl:hidden">{s.label.length > 6 ? s.label.slice(0, 5) + '…' : s.label}</span>
+                      <span>{s.label}</span>
                     </button>
                   </div>
                 )
@@ -123,7 +122,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
             </div>
 
             <button onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center"
+              className="lg:hidden p-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center mt-0.5"
               aria-label="Toggle menu">
               <motion.div animate={{ rotate: mobileOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: 'easeInOut' }} className="absolute">
                 {mobileOpen ? <X className="w-5 h-5 text-primary" /> : <Menu className="w-5 h-5" />}
@@ -196,7 +195,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
         )}
       </AnimatePresence>
 
-      <div className="h-14" />
+      <div className="h-14 lg:h-24 2xl:h-16" />
     </>
   )
 }
