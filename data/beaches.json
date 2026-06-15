@@ -14,7 +14,7 @@
     "food": "Chiringuiti con espetos di sardine a €4-5. Pesce fritto malagueño (boquerones, calamares) da €9,5. Pesce alla griglia (dorada, lubina, pulpo) da €6/100g. Paella casalinga.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Misericordia+Malaga",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Misericordia+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/PlayadelaMisericordia%28M%C3%A1laga%29.jpg/1280px-PlayadelaMisericordia%28M%C3%A1laga%29.jpg"
+    "imageUrl": "/images/beaches/playa-de-la-misericordia.jpg"
   },
   {
     "name": "Playa de la Malagueta",
@@ -31,7 +31,7 @@
     "food": "El Cachalote: espetos e pesce fritto. Paella de marisco nei ristoranti del paseo. Pesce spada alla griglia. Tarta de Santiago per dolce.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Malagueta+Malaga",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Malagueta+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Playa_de_la_Malagueta.jpg/1280px-Playa_de_la_Malagueta.jpg"
+    "imageUrl": "/images/beaches/playa-de-la-malagueta.jpg"
   },
   {
     "name": "Playa de Pedregalejo",
@@ -48,7 +48,7 @@
     "food": "I MEGLIORI chiringuiti di Málaga. Espetos de sardinas obbligatori. Pesce fritto misto (cazón en adobo, boquerones). Lubina al espeto. Pesce del giorno alla griglia. Prezzi medi: €12-18 a persona.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Pedregalejo+Malaga",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Pedregalejo+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio_%281%29.jpg/1280px-Pedregalejo_Playa%2C_M%C3%A1laga%2C_Spain_-_panoramio_%281%29.jpg"
+    "imageUrl": "/images/beaches/playa-de-pedregalejo.jpg"
   },
   {
     "name": "Playa del Palo",
@@ -65,7 +65,7 @@
     "food": "EL TINTERO: istituzione di Málaga — nessun menu, i camerieri passano urlando i piatti. Pesce fritto da €9. EL ZAGAL: storico dal 1975, espetos a €4, pesce alla griglia da €6/100g, tapas a €3. GABI: espetos e pesce fresco con vista mare. MAKIAN BEACH: brunch, hamburghesas fusión, cocktails.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Palo+Malaga",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Palo+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Playa_de_El_Palo%2C_M%C3%A1laga.jpg/1280px-Playa_de_El_Palo%2C_M%C3%A1laga.jpg"
+    "imageUrl": "/images/beaches/playa-del-palo.jpg"
   },
   {
     "name": "Playa de Bil Bil",
@@ -82,7 +82,7 @@
     "food": "Chiringuiti con espetos e pesce fritto. Paella de marisco. Tapas e vermút sul lungomare. Prezzi medi-alti per via del turismo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Bil+Bil+Benalmadena",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Bil%20Bil+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Playa_de_Bil_Bil%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_64.jpg/1280px-Playa_de_Bil_Bil%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_64.jpg"
+    "imageUrl": "/images/beaches/playa-de-bil-bil.jpg"
   },
   {
     "name": "Playa Arroyo de la Miel",
@@ -99,7 +99,7 @@
     "food": "Chiringuiti con espetos di sardine e pesce fritto. Ristoranti di pesce sul lungomare. Gelaterie e bar casual. Prezzi medi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+Arroyo+de+la+Miel+Benalmadena",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20Arroyo%20de%20la%20Miel+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Playa_de_Santa_Ana%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_65.jpg/1280px-Playa_de_Santa_Ana%2C_Benalm%C3%A1dena%2C_M%C3%A1laga%2C_Espa%C3%B1a%2C_2023-05-18%2C_DD_65.jpg"
+    "imageUrl": "/images/beaches/playa-arroyo-de-la-miel.jpg"
   },
   {
     "name": "Fuente de la Salud",
@@ -116,7 +116,7 @@
     "food": "Ristoranti di pesce e italiani sul lungomare. Chiringuito con espetos. Sushi e cucina fusion vicino al porto. Aperitivo al tramonto nei bar del molo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Fuente+de+la+Salud+Benalmadena",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Fuente%20de%20la%20Salud+Benalmadena",
-    "imageUrl": "https://media.vacalia.com/poi/reformat/1920/800/poi_786_5038d4b72264045d128387d2e82f5a60.webp?v=21092023"
+    "imageUrl": "/images/beaches/fuente-de-la-salud.webp"
   },
   {
     "name": "Playa de la Viborilla",
@@ -133,7 +133,7 @@
     "food": "Nessun servizio. Porta tutto da te: panini, frutta, acqua. picnic sulla roccia.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Viborilla+Benalmadena",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Viborilla+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Benalmadena-plaza-la-viborilla-hiszpania.jpg"
+    "imageUrl": "/images/beaches/playa-de-la-viborilla.jpg"
   },
   {
     "name": "Playa de Carvajal",
@@ -150,7 +150,7 @@
     "food": "Chiringuiti con espetos e frittura di pesce. Pesce fresco alla griglia. Paella. Prezzi economici rispetto a Marbella. €10-15 a persona.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carvajal+Fuengirola",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carvajal+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Playa_de_Carvajal%2C_Fuengirola_03.jpg/1280px-Playa_de_Carvajal%2C_Fuengirola_03.jpg"
+    "imageUrl": "/images/beaches/playa-de-carvajal.jpg"
   },
   {
     "name": "Playa de los Álamos",
@@ -167,7 +167,7 @@
     "food": "MARI Y SERGIO: chiringuito tradizionale — frittura malagueña, espetos, conchas finas, calamar alla griglia. RESTAURANTE RAMOS: dal 1980, mariscada, espetos, arroz negro (il migliore), paella di frutti di mare. PLAYA SANTA BEACH CLUB: sushi premium, fusión mediterránea, cocktails. LA PLAYA SURF HOUZE: cucina mediterránea-fusión, cocktails, atmosphere giovane.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+los+Alamos+Torremolinos",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20los%20%C3%81lamos+Costa+del+Sol",
-    "imageUrl": "https://turismotorremolinos.es/wp-content/uploads/2017/01/playa_los-alamos.jpg"
+    "imageUrl": "/images/beaches/playa-de-los-alamos.jpg"
   },
   {
     "name": "Playa de la Carihuela",
@@ -184,7 +184,7 @@
     "food": "I MIGLIORI CHIRINGUITI di Torremolinos. Pesce fritto, espetos, pesce spada alla griglia. Pesce fresco del giorno. Paella. Prezzi medi: €12-18.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Carihuela+Torremolinos",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Carihuela+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/La_Carihuela.jpg/1280px-La_Carihuela.jpg"
+    "imageUrl": "/images/beaches/playa-de-la-carihuela.jpg"
   },
   {
     "name": "Playa de Cabopino",
@@ -201,7 +201,7 @@
     "food": "Chiringuiti sulla spiaggia con espetos e pesce grigliato. Ristoranti di pesce nel porto di Cabopino. Aperitivo al tramonto. Prezzi medi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Cabopino+Marbella",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Cabopino+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Artola-Cabopino_02.jpg/1280px-Artola-Cabopino_02.jpg"
+    "imageUrl": "/images/beaches/playa-de-cabopino.jpg"
   },
   {
     "name": "Playa de Nagüeles",
@@ -218,7 +218,7 @@
     "food": "Marbella Club Beach Club: cucina di lusso. Puente Romano Beach Club: raffinato. Chiringuiti con espetos di qualità. Prezzi alti.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Nag%C3%BCeles+Marbella",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Nag%C3%BCeles+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Early_morning_at_a_beach_in_Marbella_%2829569682065%29.jpg/1280px-Early_morning_at_a_beach_in_Marbella_%2829569682065%29.jpg"
+    "imageUrl": "/images/beaches/playa-de-nagueles.jpg"
   },
   {
     "name": "Playa de Fontanilla",
@@ -235,7 +235,7 @@
     "food": "Chiringuiti eleganti con espetos e pesce fresco. Ristoranti di pesce sul paseo. Tiki cocktail bar. Prezzi alti: €15-25.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Fontanilla+Marbella",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Fontanilla+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Playa_de_la_Fontanilla_Marbella.jpg/1280px-Playa_de_la_Fontanilla_Marbella.jpg"
+    "imageUrl": "/images/beaches/playa-de-fontanilla.jpg"
   },
   {
     "name": "Playa del Cristo",
@@ -252,7 +252,7 @@
     "food": "Chiringuiti sulla baia con pesce grigliato. Sonora Beach Club: musica dal vivo + cucina mediterranea. Pesce fritto e espetos. Prezzi medi: €12-18.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Cristo+Estepona",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Cristo+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Playa_del_cristo_winter_-_Estepona_beach.jpg/1280px-Playa_del_cristo_winter_-_Estepona_beach.jpg"
+    "imageUrl": "/images/beaches/playa-del-cristo.jpg"
   },
   {
     "name": "Playa de la Rada",
@@ -269,7 +269,7 @@
     "food": "Chiringuiti con espetos e pesce fritto. El Madero e La Peseta: pesce fresco e paella. Ristoranti sul lungomare. Prezzi medi: €10-18.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Rada+Estepona",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Rada+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Playa_de_la_Rada_-_Estepona_beach.jpg/1280px-Playa_de_la_Rada_-_Estepona_beach.jpg"
+    "imageUrl": "/images/beaches/playa-de-la-rada.jpg"
   },
   {
     "name": "Playa de San Pedro de Alcántara",
@@ -286,7 +286,7 @@
     "food": "Alabardero Beach Club: raffinato, riso e pesce. Chiringuiti tradizionali con espetos. Ristoranti di pesce sul paseo. Prezzi medi: €12-20.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+San+Pedro+de+Alcantara",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20San%20Pedro%20de%20Alc%C3%A1ntara+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/San_Pedro_de_Alc%C3%A1ntara_-_IMG_20210904_143358.jpg/1280px-San_Pedro_de_Alc%C3%A1ntara_-_IMG_20210904_143358.jpg"
+    "imageUrl": "/images/beaches/playa-de-san-pedro-de-alcantara.jpg"
   },
   {
     "name": "La Cala de Mijas",
@@ -303,7 +303,7 @@
     "food": "KIOSKO CRISTOBAL: espetos e frittura di pesce sulla spiaggia, hamacas. CHIRINGUITO LOS MORENO: espetos victorianos, paella de marisco, cazón en adobo, calamar al espeto (€20-30). DELFINES BEACH CLUB: cucina mediterránea de autor, ostras, jamón ibérico, tartar di tonno, lubina alla sale (€20-30). ANTONIO RESTAURANTE: chiringuito di moda a Miraflores, 30+ anni, hamacas sulla spiaggia.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=La+Cala+de+Mijas+beach",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=La%20Cala%20de%20Mijas+Costa+del+Sol",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Playa_de_la_Cala%2C_Mijas_01.JPG/1280px-Playa_de_la_Cala%2C_Mijas_01.JPG"
+    "imageUrl": "/images/beaches/la-cala-de-mijas.jpg"
   },
   {
     "name": "El Bombo",
@@ -320,7 +320,7 @@
     "food": "Pochi chiringuiti tradizionali. Pesce grigliato ed espetos. Atmosfera semplice e rilassata.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Bombo+Mijas",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=El%20Bombo+Mijas",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bombo_beach_-_panoramio.jpg/1280px-Bombo_beach_-_panoramio.jpg"
+    "imageUrl": "/images/beaches/el-bombo.jpg"
   },
   {
     "name": "Calahonda",
@@ -337,7 +337,7 @@
     "food": "Chiringuiti con pesce fritto ed espetos. Ristoranti di pesce sul lungomare. Prezzi medi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Calahonda+beach+Mijas",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Calahonda+Mijas",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Torre_y_Playa_de_Calahonda_%28Mijas%29.jpg/1280px-Torre_y_Playa_de_Calahonda_%28Mijas%29.jpg"
+    "imageUrl": "/images/beaches/calahonda.jpg"
   },
   {
     "name": "Senda Litoral Dunas de Artola",
@@ -354,7 +354,7 @@
     "food": "Nessun servizio in spiaggia. Porta da mangiare. Dopo la passeggiata, ristoranti nel porto di Cabopino.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Senda+Litoral+Dunas+de+Artola+Marbella",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Senda%20Litoral%20Dunas%20de%20Artola+Marbella",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Artola-Cabopino_03.jpg/1280px-Artola-Cabopino_03.jpg"
+    "imageUrl": "/images/beaches/senda-litoral-dunas-de-artola.jpg"
   },
   {
     "name": "Playa de Burriana",
@@ -371,7 +371,7 @@
     "food": "Chiringuito Ayo (paella a legna famosa), Moreno, La Barca. Tantissime opzioni lungo il paseo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Burriana+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Burriana%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/10/Playa-de-Burriana-Nerja-10-768x512.webp"
+    "imageUrl": "/images/beaches/playa-de-burriana.webp"
   },
   {
     "name": "Playa de Maro",
@@ -388,7 +388,7 @@
     "food": "Chiringuito de Maro presente sulla spiaggia (paella e pesce fresco).",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Maro+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Maro+Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/playa-de-maro-768x444.webp"
+    "imageUrl": "/images/beaches/playa-de-maro.webp"
   },
   {
     "name": "Playa de Calahonda",
@@ -405,7 +405,7 @@
     "food": "Un piccolo chiringuito/chiosco sulla sabbia. Piena di ristoranti appena si risalgono le scale in centro.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Calahonda+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Calahonda%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/calahonda-7-768x1024.jpeg"
+    "imageUrl": "/images/beaches/playa-de-calahonda.jpg"
   },
   {
     "name": "Playa de la Torrecilla",
@@ -422,7 +422,7 @@
     "food": "Chiringuito Torrecilla e molti altri bar/ristoranti lungo il paseo retrostante.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Torrecilla+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Torrecilla%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/playatorrecilla-768x512.jpeg"
+    "imageUrl": "/images/beaches/playa-de-la-torrecilla.jpg"
   },
   {
     "name": "Playa El Playazo",
@@ -439,7 +439,7 @@
     "food": "Chiringuiti rustici e tradizionali come Chiringuito El Playazo e Oasis.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Playazo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Playazo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/10/El-Playazo-Imagen-5-768x474.webp"
+    "imageUrl": "/images/beaches/playa-el-playazo.webp"
   },
   {
     "name": "Playa del Salón",
@@ -456,7 +456,7 @@
     "food": "Nessun chiringuito. Ristoranti raggiungibili a piedi nel centro storico di Nerja. Tapas, pesce, cucina locale.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+del+Salon+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20del%20Salon%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2026/04/playa-el-salon-nerja-8-768x576.webp"
+    "imageUrl": "/images/beaches/playa-del-salon.webp"
   },
   {
     "name": "Balcón de Europa",
@@ -473,7 +473,7 @@
     "food": "Ristoranti affacciati sul belvedere: El Balcón de Europa, Restaurante Marisco. Bar con terrazza. Centro di Nerja a 50m con tapas, heladerías, caffè.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Balcon+de+Europa+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Attraction_Review-g315917-d317296-Reviews-Balcon_de_Europa-Nerja_Costa_del_Sol_Province_of_Malaga_Andalucia.html",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/balcon-de-europa-nerja-768x512.jpg"
+    "imageUrl": "/images/beaches/balcon-de-europa.jpg"
   },
   {
     "name": "Playa de Carabeo",
@@ -490,7 +490,7 @@
     "food": "Nessun servizio sulla spiaggia, ma Calle Carabeo sopra offre ottime opzioni.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/bajada-playa-carabeo-768x576.jpeg"
+    "imageUrl": "/images/beaches/playa-de-carabeo.jpg"
   },
   {
     "name": "Playa de Carabeillo",
@@ -507,7 +507,7 @@
     "food": "Nessun servizio. I bagnanti passeggiano fino alla vicina Burriana per cibo e chiringuitos.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+Carabeillo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20Carabeillo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/playa-de-carabeillo-8-768x512.jpeg"
+    "imageUrl": "/images/beaches/playa-de-carabeillo.jpg"
   },
   {
     "name": "Cale di El Chorrillo",
@@ -524,7 +524,7 @@
     "food": "Nessun servizio. Risalire in centro per mangiare.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+las+Chorreras+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20las%20Chorreras%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/02/Playa-El-Chorrillo-Nerja-768x1152.webp"
+    "imageUrl": "/images/beaches/cale-di-el-chorrillo.webp"
   },
   {
     "name": "Cala del Cañuelo",
@@ -541,7 +541,7 @@
     "food": "Di solito presenti due chiringuitos (Las Piedras, El Cañuelo) in alta stagione.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+del+Ca%C3%B1uelo+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20del%20Ca%C3%B1uelo%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-del-Cañuelo-2-768x576.webp"
+    "imageUrl": "/images/beaches/cala-del-canuelo.jpg"
   },
   {
     "name": "Cala del Pino",
@@ -558,7 +558,7 @@
     "food": "Nessun servizio. Porta tutto da te e riporti via i rifiuti.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+del+Pino+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20del%20Pino%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-del-Pino-Imagen-5-768x427.webp"
+    "imageUrl": "/images/beaches/cala-del-pino.webp"
   },
   {
     "name": "Playa de la Caletilla",
@@ -575,7 +575,7 @@
     "food": "Nessun servizio in spiaggia. Bar, gelaterie e ristoranti del centro a due passi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Caletilla+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20la%20Caletilla%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/08/Playa-de-La-Caletilla-768x511.jpeg"
+    "imageUrl": "/images/beaches/playa-de-la-caletilla.jpg"
   },
   {
     "name": "Caleta de Maro (La Caletilla)",
@@ -592,7 +592,7 @@
     "food": "Nessun servizio. Portare l'occorrente o pranzare nel villaggio di Maro.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Calet%C3%B3n+de+Maro+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Calet%C3%B3n%20de%20Maro%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Playa-La-Caleta-768x432.webp"
+    "imageUrl": "/images/beaches/caleta-de-maro-la-caletilla.webp"
   },
   {
     "name": "Playa El Chucho",
@@ -609,7 +609,7 @@
     "food": "Ristoranti e bar a pochi metri sulla passeggiata della Torrecilla.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+El+Chucho+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20El%20Chucho%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/Playa-El-Chucho-Nerja-bg-768x512.webp"
+    "imageUrl": "/images/beaches/playa-el-chucho.webp"
   },
   {
     "name": "Playa Piedra de Tarzán",
@@ -626,7 +626,7 @@
     "food": "I chiringuitos di Burriana sono a pochi passi.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Piedra+de+Tarzan+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Piedra%20de%20Tarzan%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/01/Playa-Piedra-de-Tarzan-9-768x576.webp"
+    "imageUrl": "/images/beaches/playa-piedra-de-tarzan.webp"
   },
   {
     "name": "Cala Barranco de Maro",
@@ -643,7 +643,7 @@
     "food": "Nessun servizio. Obbligatorio portare scorte abbondanti.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Cala+Barranco+de+Maro",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Cala%20Barranco%20de%20Maro",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/Cala-Barranco-de-maro-Imagen-13-768x560.webp"
+    "imageUrl": "/images/beaches/cala-barranco-de-maro.webp"
   },
   {
     "name": "Playa del Molino de Papel",
@@ -660,7 +660,7 @@
     "food": "Nessun servizio.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+Molino+de+Papel+Nerja",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20Molino%20de%20Papel%20Nerja",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/09/playa-molino-de-papel-portada-768x432.jpg"
+    "imageUrl": "/images/beaches/playa-del-molino-de-papel.jpg"
   },
   {
     "name": "Playa de las Alberquillas",
@@ -677,7 +677,7 @@
     "food": "Nessun servizio disponibile. Porta acqua e cibo.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+de+las+Alberquillas",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20de%20las%20Alberquillas",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2022/09/playa-de-las-alberquillas-2-768x573.jpeg"
+    "imageUrl": "/images/beaches/playa-de-las-alberquillas.jpg"
   },
   {
     "name": "Playa Nudista de Cantarriján",
@@ -694,6 +694,6 @@
     "food": "Ottimi ristoranti come La Barraca offrono pesce fresco e atmosfera bohémien.",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=Playa+Cantarrijan",
     "tripadvisorLink": "https://www.tripadvisor.com/Search?q=Playa%20Cantarrijan",
-    "imageUrl": "https://esnerja.com/wp-content/uploads/2024/07/Playa-de-Cantarrijan-Nerja-768x576.webp"
+    "imageUrl": "/images/beaches/playa-nudista-de-cantarrijan.webp"
   }
 ]
