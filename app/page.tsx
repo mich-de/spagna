@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useEffect, useCallback, Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import { useRouter, useSearchParams } from 'next/navigation'
 import SectionNav from '@/app/components/SectionNav'
 import Overview from '@/app/components/Overview'
 import Videos from '@/app/components/Videos'
-import NerjaMap from '@/app/components/NerjaMap'
 import BaseSelection from '@/app/components/BaseSelection'
 import Beaches from '@/app/components/Beaches'
 import BoatTours from '@/app/components/BoatTours'
@@ -16,7 +16,6 @@ import SingleGuide from '@/app/components/SingleGuide'
 import SanJuan from '@/app/components/SanJuan'
 import LocalExperiences from '@/app/components/LocalExperiences'
 import Logistics from '@/app/components/Logistics'
-import Budget from '@/app/components/Budget'
 import Expenses from '@/app/components/Expenses'
 import PreTripChecklist from '@/app/components/PreTripChecklist'
 import TripPlanner from '@/app/components/TripPlanner'
@@ -29,6 +28,9 @@ import CustomCursor from '@/app/components/CustomCursor'
 import AmbientGradients from '@/app/components/AmbientGradients'
 import Footer from '@/app/components/Footer'
 import { useAuth } from '@/app/hooks/useAuth'
+
+const Budget = dynamic(() => import('@/app/components/Budget'), { ssr: false })
+const NerjaMap = dynamic(() => import('@/app/components/NerjaMap'), { ssr: false })
 
 const sections = ['overview', 'events', 'single-guide', 'base', 'inspiration', 'videos', 'nerja-map', 'beaches', 'boat-tours', 'water-activities', 'food', 'markets', 'sanjuan', 'experiences', 'socials', 'pretrip-checklist', 'logistics', 'expenses', 'budget']
 

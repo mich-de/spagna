@@ -10,10 +10,7 @@
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.2.6",
-    "@fontsource/inter": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.5",
-    "@fontsource/poppins": "^5.2.7",
-    "@fontsource/rubik": "^5.2.8",
     "framer-motion": "^12.7.4",
     "lucide-react": "^0.487.0",
     "next": "15.5.18",
