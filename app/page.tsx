@@ -108,6 +108,8 @@ function HomeContent() {
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Videos />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
+        <NerjaMap />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Beaches />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <BoatTours />

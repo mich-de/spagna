@@ -17,6 +17,7 @@ const sections: SectionDef[] = [
   { id: 'base', label: 'Base', icon: MapPin },
   { id: 'inspiration', label: 'Ispirazione', icon: Sparkles },
   { id: 'videos', label: 'Video', icon: Play },
+  { id: 'nerja-map', label: 'Mappa', icon: MapPin },
   { id: 'itinerary', label: 'Itinerario', icon: Sun, group: 'divider' },
   { id: 'beaches', label: 'Spiagge', icon: Waves },
   { id: 'boat-tours', label: 'Barca', icon: Ship },
