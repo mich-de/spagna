@@ -21,13 +21,16 @@ import Expenses from '@/app/components/Expenses'
 import PreTripChecklist from '@/app/components/PreTripChecklist'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
+import ItineraryTeaser from '@/app/components/ItineraryTeaser'
+import Events from '@/app/components/Events'
+import Socials from '@/app/components/Socials'
 import PasswordWall from '@/app/components/PasswordWall'
 import CustomCursor from '@/app/components/CustomCursor'
 import AmbientGradients from '@/app/components/AmbientGradients'
 import Footer from '@/app/components/Footer'
 import { useAuth } from '@/app/hooks/useAuth'
 
-const sections = ['overview', 'single-guide', 'base', 'inspiration', 'videos', 'beaches', 'boat-tours', 'water-activities', 'food', 'markets', 'sanjuan', 'experiences', 'pretrip-checklist', 'logistics', 'expenses', 'budget']
+const sections = ['overview', 'events', 'single-guide', 'base', 'inspiration', 'videos', 'nerja-map', 'beaches', 'boat-tours', 'water-activities', 'food', 'markets', 'sanjuan', 'experiences', 'socials', 'pretrip-checklist', 'logistics', 'expenses', 'budget']
 
 function HomeContent() {
   const router = useRouter()
@@ -101,9 +104,13 @@ function HomeContent() {
         <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mx-4 sm:mx-6 mt-2" />
         <Overview />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
+        <Events />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <SingleGuide />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <BaseSelection />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
+        <ItineraryTeaser />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <QuickInspiration />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
@@ -124,6 +131,8 @@ function HomeContent() {
         <SanJuan />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <LocalExperiences />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
+        <Socials />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <PreTripChecklist />
         <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />

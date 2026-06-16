@@ -1,0 +1,291 @@
+[
+  {
+    "id": "san-juan-burriana-2026",
+    "date": "2026-06-23",
+    "endDate": "2026-06-24",
+    "title": "Noche de San Juan — Playa de Burriana",
+    "shortTitle": "San Juan a Burriana",
+    "location": "Playa de Burriana, Nerja",
+    "zone": "Nerja",
+    "category": "fiesta",
+    "time": "21:00 – 04:00",
+    "distance_min_from_nerja": 5,
+    "price": "Gratis (porta da bere)",
+    "description": "La notte più attesa dell'anno sulla Costa del Sol. A Burriana si accendono falò, si balla sulla sabbia e a mezzanotte tutti corrono in acqua per il bagno rituale. L'epicentro della San Juan a Nerja.",
+    "recommended_for": ["single over 35", "gruppi", "chi cerca atmosfera locale"],
+    "instagram_handle": "@ayto_nerja",
+    "website": "https://www.nerja.es/",
+    "tips": [
+      "Arriva entro le 19:00 per trovare parcheggio",
+      "Porta ombrellino, birra/bottiglia, e scarpe comode sulla sabbia",
+      "Il bagno a mezzanotte è un must — anche simbolico"
+    ],
+    "imageUrl": "/images/events/san-juan-burriana.jpg",
+    "confirmed": true,
+    "user_comments": [
+      {
+        "author": "Marco, 42, Roma",
+        "avatar": "M",
+        "text": "Festa incredibile. Locale al 90%, pochi turisti inglesi. Consiglio di fermarsi fino alle 3.",
+        "date": "2025-06-24",
+        "rating": 5
+      },
+      {
+        "author": "Sara, 38, Málaga",
+        "avatar": "S",
+        "text": "I falò sono belli ma la folla dopo mezzanotte è tanta. Prendete posto vicino ai chiringuiti.",
+        "date": "2024-06-25",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": "san-juan-malagueta-2026",
+    "date": "2026-06-23",
+    "endDate": "2026-06-24",
+    "title": "Hogueras de San Juan — La Malagueta",
+    "shortTitle": "San Juan a Málaga",
+    "location": "Playa de la Malagueta, Málaga",
+    "zone": "Málaga",
+    "category": "fiesta",
+    "time": "20:00 – 02:00",
+    "distance_min_from_nerja": 50,
+    "price": "Gratis",
+    "description": "La spiaggia urbana di Málaga si riempie di falò, chiringuiti aperti fino a tardi e gente di ogni età. Atmosfera più urbana e diversificata rispetto a Nerja.",
+    "recommended_for": ["chi preferisce città", "movida over 35", "coppie"],
+    "instagram_handle": "@malaga_turismo",
+    "website": "https://www.malaga.eu/",
+    "tips": [
+      "Parcheggia alle 18:00, le strade chiudono presto",
+      "Dopo la spiaggia, aperitivo in centro fino alle 4",
+      "Meno intima di Burriana, ma più scelta di locali"
+    ],
+    "imageUrl": "/images/events/san-juan-malagueta.jpg",
+    "confirmed": true,
+    "user_comments": [
+      {
+        "author": "Roberto, 45, Milano",
+        "avatar": "R",
+        "text": "Grande movida, ma molto caotica. Ideale se volete alternatives a Nerja.",
+        "date": "2023-06-24",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": "tardeo-tutti-frutti-ven",
+    "date": "2026-06-19",
+    "title": "Tardeo Latino — Plaza Tutti Frutti",
+    "shortTitle": "Tardeo Tutti Frutti",
+    "location": "Plaza Tutti Frutti, Nerja",
+    "zone": "Nerja",
+    "category": "music",
+    "time": "18:00 – 00:00",
+    "distance_min_from_nerja": 0,
+    "price": "Ingresso libero, drink €6-10",
+    "description": "L'aperitivo che diventa serata. Salsa, reggaeton e latin pop. Età media 35-45. Il punto di ritrovo più sociale di Nerja per chi viaggia da solo.",
+    "recommended_for": ["single over 35", "chi balla", "chi cerca incontri"],
+    "instagram_handle": "@plazatuttifruttinerja",
+    "website": null,
+    "tips": [
+      "Inizia alle 18:00 con drink sulle panche",
+      "Pub Tamareo e J.J. Café sono i locali di riferimento",
+      "Il weekend è molto più affollato del week day"
+    ],
+    "imageUrl": "/images/events/tardeo-tutti-frutti.jpg",
+    "confirmed": true,
+    "user_comments": [
+      {
+        "author": "Ale, 39, Bologna",
+        "avatar": "A",
+        "text": "Conosciuto gente subito. Musica non troppo alta, si parla. Drink onesti.",
+        "date": "2024-08-12",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": "tardeo-tutti-frutti-sab",
+    "date": "2026-06-20",
+    "title": "Salsa & Bachata Night — Plaza Tutti Frutti",
+    "shortTitle": "Salsa Night Nerja",
+    "location": "Plaza Tutti Frutti, Nerja",
+    "zone": "Nerja",
+    "category": "music",
+    "time": "19:00 – 02:00",
+    "distance_min_from_nerja": 0,
+    "price": "Ingresso libero",
+    "description": "Serata latinissima con DJ set e qualche corso improvvisato. Il sabato è il giorno più caldo per la movida over 35 a Nerja.",
+    "recommended_for": ["single over 35", "amanti salsa", "chi vuole socializzare"],
+    "instagram_handle": "@plazatuttifruttinerja",
+    "website": null,
+    "tips": [
+      "Cena leggera prima, tipo tapas al centro",
+      "Non serve saper ballare — basta sorridere",
+      "Dopo l'1:00 la folla si sposta tra i pub della piazza"
+    ],
+    "imageUrl": "/images/events/salsa-night-nerja.jpg",
+    "confirmed": true,
+    "user_comments": []
+  },
+  {
+    "id": "burriana-live-sab",
+    "date": "2026-06-20",
+    "title": "Live Acoustic al tramonto — Burriana",
+    "shortTitle": "Live al Burriana",
+    "location": "Chiringuito Burriana, Nerja",
+    "zone": "Nerja",
+    "category": "music",
+    "time": "19:30 – 22:00",
+    "distance_min_from_nerja": 5,
+    "price": "Gratis (consumazione)",
+    "description": "Musica acustica/live al tramonto con i piedi nella sabbia. Atmosfera rilassata, pubblico 35+, perfetta per iniziare la serata senza troppo casino.",
+    "recommended_for": ["single over 35", "chi ama il mare", "prima serata"],
+    "instagram_handle": "@chiringuitoayo",
+    "website": null,
+    "tips": [
+      "Prenota tavolo per cena se vuoi mangiare",
+      "Arriva per il tramonto intorno alle 20:45",
+      "Dopo il live, si sale a Tutti Frutti"
+    ],
+    "imageUrl": "/images/events/burriana-live.jpg",
+    "confirmed": false,
+    "user_comments": [
+      {
+        "author": "Laura, 41, Torino",
+        "avatar": "L",
+        "text": "Bellissimo il sabato sera con la musica dal vivo. Molto rilassato.",
+        "date": "2024-07-20",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": "marbella-beach-club-dim",
+    "date": "2026-06-21",
+    "title": "Sunday Sunset Sessions — Puerto Banús",
+    "shortTitle": "Sunset Banús",
+    "location": "Puerto Banús, Marbella",
+    "zone": "Marbella",
+    "category": "beach",
+    "time": "17:00 – 22:00",
+    "distance_min_from_nerja": 100,
+    "price": "Ingresso free, drink €12-18",
+    "description": "La domenica al porto di Marbella è spettacolo puro. Aperitivo con vista yacht, DJ set soft, gente ben vestita. Per chi vuole un assaggio di lusso senza spendere una fortuna.",
+    "recommended_for": ["single over 35", "chi ama eleganza", "aperitivo"],
+    "instagram_handle": "@puertobanusofficial",
+    "website": "https://www.puertobanus.com/",
+    "tips": [
+      "Vestiti smart-casual",
+      "Un drink e via — i prezzi salgono in fretta",
+      "Parcheggia a Puerto Banús centro o prenditi un taxi da Marbella"
+    ],
+    "imageUrl": "/images/events/puerto-banus-sunset.jpg",
+    "confirmed": false,
+    "user_comments": []
+  },
+  {
+    "id": "malaga-monday-night",
+    "date": "2026-06-22",
+    "title": "Noche de Málaga — Centro Histórico",
+    "shortTitle": "Noche Málaga",
+    "location": "Centro Histórico, Málaga",
+    "zone": "Málaga",
+    "category": "fiesta",
+    "time": "21:00 – 03:00",
+    "distance_min_from_nerja": 50,
+    "price": "Gratis / consumazione",
+    "description": "Il lunedì sera a Málaga è vivo. La Tranca, Orellana, Velvet e tanti altri locali offrono tapas, vino e musica. Pubblico adulto, studenti e turisti mischiati.",
+    "recommended_for": ["single over 35", "amanti vino", "chi cerca varietà"],
+    "instagram_handle": "@malaga_turismo",
+    "website": null,
+    "tips": [
+      "Inizia da La Tranca per vino e tapas",
+      "Spostati a Orellana per cocktail",
+      "L'ultimo drink al Velvet per chi resiste"
+    ],
+    "imageUrl": "/images/events/noche-malaga.jpg",
+    "confirmed": true,
+    "user_comments": [
+      {
+        "author": "Davide, 44, Firenze",
+        "avatar": "D",
+        "text": "Málaga di sera è una sorpresa. Molto più autentica di Marbella.",
+        "date": "2024-06-10",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": "san-juan-recovery",
+    "date": "2026-06-24",
+    "title": "San Juan Recovery — Brunch & Mare",
+    "shortTitle": "Recupero post San Juan",
+    "location": "Nerja Centro / Burriana",
+    "zone": "Nerja",
+    "category": "food",
+    "time": "11:00 – 16:00",
+    "distance_min_from_nerja": 0,
+    "price": "Brunch €12-20",
+    "description": "Dopo la notte di San Juan, Nerja rallenta. Brunch tranquillo, bagno riparatore e chiringuiti che servono frittura di pesce e birra gelata.",
+    "recommended_for": ["recupero", "gruppi", "single over 35"],
+    "instagram_handle": "@chiringuitoayo",
+    "website": null,
+    "tips": [
+      "Sveglia tarda, niente programmi stretti",
+      "Burriana è più tranquilla il 24 mattina",
+      "Prenota la Cueva de Nerja per il pomeriggio"
+    ],
+    "imageUrl": "/images/events/recovery-brunch.jpg",
+    "confirmed": true,
+    "user_comments": []
+  },
+  {
+    "id": "frigiliana-market-sun",
+    "date": "2026-06-21",
+    "title": "Mercadillo de Frigiliana",
+    "shortTitle": "Mercato Frigiliana",
+    "location": "Frigiliana",
+    "zone": "Frigiliana",
+    "category": "culture",
+    "time": "10:00 – 14:00",
+    "distance_min_from_nerja": 10,
+    "price": "Gratis",
+    "description": "Passeggiata tra i vicoli bianchi del villaggio moresco con artigianato locale, mieli, vini e oli. Perfetto per una domenica mattina tranquilla prima del mare.",
+    "recommended_for": ["cultura", "fotografia", "coppie"],
+    "instagram_handle": "@frigiliana.turismo",
+    "website": null,
+    "tips": [
+      "Arriva presto per posteggio",
+      "Assaggia il vino moscatello",
+      "Combinalo con pranzo a Frigiliana"
+    ],
+    "imageUrl": "/images/events/frigiliana-market.jpg",
+    "confirmed": false,
+    "user_comments": []
+  },
+  {
+    "id": "nerja-centro-live-dom",
+    "date": "2026-06-21",
+    "title": "Música en la Calle — Centro Histórico",
+    "shortTitle": "Musica Centro Nerja",
+    "location": "Centro Histórico, Nerja",
+    "zone": "Nerja",
+    "category": "music",
+    "time": "20:00 – 23:00",
+    "distance_min_from_nerja": 0,
+    "price": "Gratis",
+    "description": "Musicisti di strada, flamenco improvvisato e piccoli concerti nei vicoli del centro. Atmosfera da passeggio serale prima di cena.",
+    "recommended_for": ["single over 35", "cultura", "passeggio"],
+    "instagram_handle": "@turismonerja",
+    "website": null,
+    "tips": [
+      "Vicino al Balcón de Europa",
+      "Ideale prima di cena",
+      "Non mancare al tramonto"
+    ],
+    "imageUrl": "/images/events/nerja-street-music.jpg",
+    "confirmed": false,
+    "user_comments": []
+  }
+]

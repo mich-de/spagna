@@ -2,34 +2,37 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Compass, MapPin, Sun, Waves, Utensils, Moon, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt, Ship, Store, ClipboardCheck, Droplets } from 'lucide-react'
+import { Compass, MapPin, Sun, Waves, Utensils, Flame, Heart, Car, DollarSign, Menu, X, Play, Briefcase, CheckSquare, Sparkles, Users, Receipt, Ship, Store, ClipboardCheck, Droplets, CalendarDays, Instagram } from 'lucide-react'
 
 interface SectionDef {
   id: string
   label: string
+  shortLabel: string
   icon: React.ComponentType<{ className?: string }>
   group?: string
 }
 
 const sections: SectionDef[] = [
-  { id: 'overview', label: 'Overview', icon: Compass },
-  { id: 'single-guide', label: 'Movida', icon: Users },
-  { id: 'base', label: 'Base', icon: MapPin },
-  { id: 'inspiration', label: 'Ispirazione', icon: Sparkles },
-  { id: 'videos', label: 'Video', icon: Play },
-  { id: 'nerja-map', label: 'Mappa', icon: MapPin },
-  { id: 'itinerary', label: 'Itinerario', icon: Sun, group: 'divider' },
-  { id: 'beaches', label: 'Spiagge', icon: Waves },
-  { id: 'boat-tours', label: 'Barca', icon: Ship },
-  { id: 'water-activities', label: 'Kayak', icon: Droplets },
-  { id: 'food', label: 'Food', icon: Utensils, group: 'divider' },
-  { id: 'markets', label: 'Mercati', icon: Store },
-  { id: 'sanjuan', label: 'San Juan', icon: Flame },
-  { id: 'experiences', label: 'Esperienze', icon: Heart, group: 'divider' },
-  { id: 'pretrip-checklist', label: 'Checklist', icon: ClipboardCheck },
-  { id: 'logistics', label: 'Logistica', icon: Car },
-  { id: 'expenses', label: 'Spese', icon: Receipt },
-  { id: 'budget', label: 'Budget', icon: DollarSign },
+  { id: 'overview', label: 'Overview', shortLabel: 'Home', icon: Compass },
+  { id: 'events', label: 'Eventi', shortLabel: 'Eventi', icon: CalendarDays },
+  { id: 'single-guide', label: 'Movida 35+', shortLabel: 'Movida', icon: Users },
+  { id: 'base', label: 'Base', shortLabel: 'Base', icon: MapPin },
+  { id: 'inspiration', label: 'Ispirazione', shortLabel: 'Idee', icon: Sparkles },
+  { id: 'videos', label: 'Video', shortLabel: 'Video', icon: Play },
+  { id: 'nerja-map', label: 'Mappa', shortLabel: 'Mappa', icon: MapPin },
+  { id: 'itinerary', label: 'Itinerario', shortLabel: 'Sett.', icon: Sun, group: 'divider' },
+  { id: 'beaches', label: 'Spiagge', shortLabel: 'Mare', icon: Waves },
+  { id: 'boat-tours', label: 'Barca', shortLabel: 'Barca', icon: Ship },
+  { id: 'water-activities', label: 'Kayak', shortLabel: 'Sport', icon: Droplets },
+  { id: 'food', label: 'Food', shortLabel: 'Food', icon: Utensils, group: 'divider' },
+  { id: 'markets', label: 'Mercati', shortLabel: 'Mercati', icon: Store },
+  { id: 'sanjuan', label: 'San Juan', shortLabel: 'San Juan', icon: Flame },
+  { id: 'experiences', label: 'Esperienze', shortLabel: 'Exp.', icon: Heart },
+  { id: 'socials', label: 'Social', shortLabel: 'Social', icon: Instagram, group: 'divider' },
+  { id: 'pretrip-checklist', label: 'Checklist', shortLabel: 'ToDo', icon: ClipboardCheck },
+  { id: 'logistics', label: 'Logistica', shortLabel: 'Log.', icon: Car },
+  { id: 'expenses', label: 'Spese', shortLabel: 'Spese', icon: Receipt },
+  { id: 'budget', label: 'Budget', shortLabel: 'Budget', icon: DollarSign },
 ]
 
 export default function SectionNav({ activeSection, onSectionChange }: {
@@ -38,23 +41,26 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
+  const mobileNavRef = useRef<HTMLDivElement>(null)
   const [plannerStats, setPlannerStats] = useState({ bookmarksCount: 0, completedTasks: 0, totalTasks: 0 })
 
-  const scrollToActive = useCallback(() => {
-    if (!navRef.current) return
-    const el = navRef.current.querySelector(`[data-nav-id="${activeSection}"]`) as HTMLElement | null
+  const scrollToActive = useCallback((ref: React.RefObject<HTMLDivElement | null>, selector: string) => {
+    if (!ref.current) return
+    const el = ref.current.querySelector(selector) as HTMLElement | null
     if (el) {
-      const container = navRef.current
+      const container = ref.current
       const elLeft = el.offsetLeft
       const elWidth = el.offsetWidth
       const containerWidth = container.clientWidth
-      const scrollLeft = container.scrollLeft
       const target = elLeft - containerWidth / 2 + elWidth / 2
       container.scrollTo({ left: target, behavior: 'smooth' })
     }
-  }, [activeSection])
+  }, [])
 
-  useEffect(() => { scrollToActive() }, [activeSection, scrollToActive])
+  useEffect(() => {
+    scrollToActive(navRef, `[data-nav-id="${activeSection}"]`)
+    scrollToActive(mobileNavRef, `[data-mobile-nav-id="${activeSection}"]`)
+  }, [activeSection, scrollToActive])
 
   useEffect(() => {
     const updateStats = () => {
@@ -91,9 +97,9 @@ export default function SectionNav({ activeSection, onSectionChange }: {
     <>
       <nav className="fixed top-0 left-0 right-0 z-[9999] bg-surface/90 backdrop-blur-2xl border-b border-outline-variant/30 shadow-sm">
         <div className="max-w-[1920px] mx-auto px-3 sm:px-5">
-          <div className="flex items-start lg:items-center justify-between min-h-[3.5rem] py-2">
-            <div className="flex items-center gap-2 shrink-0 mr-4 mt-1 lg:mt-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center shadow-sm shadow-primary/20">
+          <div className="flex items-center justify-between min-h-[3.25rem] py-2">
+            <div className="flex items-center gap-2 shrink-0 mr-3">
+              <div className="w-9 h-9 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-sm shadow-primary/20">
                 <Compass className="w-4 h-4 text-on-primary" />
               </div>
               <span className="font-headline-sm text-on-surface font-bold tracking-tight hidden sm:block">
@@ -101,6 +107,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               </span>
             </div>
 
+            {/* Desktop nav */}
             <div ref={navRef} className="hidden lg:flex flex-wrap items-center justify-end gap-x-1 gap-y-2 relative py-1 flex-1">
               {sections.map((s, i) => {
                 const isActive = activeSection === s.id
@@ -122,13 +129,33 @@ export default function SectionNav({ activeSection, onSectionChange }: {
               })}
             </div>
 
-            <button onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center mt-0.5"
-              aria-label="Toggle menu">
-              <motion.div animate={{ rotate: mobileOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: 'easeInOut' }} className="absolute">
-                {mobileOpen ? <X className="w-5 h-5 text-primary" /> : <Menu className="w-5 h-5" />}
-              </motion.div>
-            </button>
+            <div className="flex items-center gap-2 shrink-0">
+              {/* Mobile compact quick nav */}
+              <div ref={mobileNavRef} className="lg:hidden flex items-center gap-1 overflow-x-auto max-w-[55vw] sm:max-w-[65vw] scrollbar-hide snap-x">
+                {sections.filter((s) => ['overview', 'events', 'single-guide', 'beaches', 'food', 'sanjuan', 'itinerary'].includes(s.id)).map((s) => {
+                  const isActive = activeSection === s.id
+                  return (
+                    <button key={s.id} data-mobile-nav-id={s.id} onClick={() => onSectionChange(s.id)}
+                      className={`shrink-0 snap-center px-2.5 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all ${
+                        isActive
+                          ? 'text-on-primary bg-primary shadow-sm'
+                          : 'text-on-surface-variant bg-surface-container-lowest border border-outline-variant/30 hover:text-primary'
+                      }`}>
+                      <s.icon className="w-3.5 h-3.5" />
+                      <span className="whitespace-nowrap">{s.shortLabel}</span>
+                    </button>
+                  )
+                })}
+              </div>
+
+              <button onClick={() => setMobileOpen(!mobileOpen)}
+                className="lg:hidden p-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center"
+                aria-label="Toggle menu">
+                <motion.div animate={{ rotate: mobileOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: 'easeInOut' }} className="absolute">
+                  {mobileOpen ? <X className="w-5 h-5 text-primary" /> : <Menu className="w-5 h-5" />}
+                </motion.div>
+              </button>
+            </div>
           </div>
         </div>
       </nav>

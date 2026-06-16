@@ -8,7 +8,7 @@ import nightlifeData from '@/data/nightlife.json'
 
 export default function SingleGuide() {
   const [activeTab, setActiveTab] = useState('mindset')
-  const [selectedCity, setSelectedCity] = useState('malaga')
+  const [selectedCity, setSelectedCity] = useState('nerja')
 
   const cities = [
     { id: 'malaga', label: 'Málaga Centro' },

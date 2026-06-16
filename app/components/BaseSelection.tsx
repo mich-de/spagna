@@ -39,7 +39,7 @@ export default function BaseSelection() {
   const [isOverflowing, setIsOverflowing] = useState(false)
   const [showCardsHint, setShowCardsHint] = useState(true)
   const [isCardsOverflowing, setIsCardsOverflowing] = useState(false)
-  const [selectedBase, setSelectedBase] = useState<string>('')
+  const [selectedBase, setSelectedBase] = useState<string>('Nerja')
 
   useEffect(() => {
     const stored = localStorage.getItem('sol_local_planner')
