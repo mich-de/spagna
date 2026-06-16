@@ -66,14 +66,14 @@
     "must_for_dates": false
   },
   {
-    "id": "plaza-tutti-frutti",
-    "name": "Plaza Tutti Frutti Nerja",
-    "handle": "@plazatuttifruttinerja",
+    "id": "solaris-nerja",
+    "name": "Solaris Nerja",
+    "handle": "@solarisnerja",
     "platform": "instagram",
-    "url": "https://www.instagram.com/plazatuttifruttinerja/",
-    "category": "nightlife",
-    "description": "L'epicentro della movida over 35 di Nerja: tardeo, salsa, pub.",
-    "why_follow": "Per sapere chi suona, a che ora inizia il tardeo e quali locali sono aperti.",
+    "url": "https://www.instagram.com/solarisnerja/",
+    "category": "events",
+    "description": "Festival sulla spiaggia di El Playazo (18-28 Giugno 2026): Chambao, Bresh, Claptone, flamenco e techno.",
+    "why_follow": "È il festival dell'estate a Nerja, cade esattamente nelle nostre date. Da non perdere.",
     "must_for_dates": true
   },
   {
@@ -110,25 +110,25 @@
     "must_for_dates": false
   },
   {
-    "id": "joe-music-cave",
-    "name": "Joe's Music Cave",
-    "handle": "@joemusiccave",
+    "id": "jimmys-nerja",
+    "name": "Jimmy's Disco Nerja",
+    "handle": "@jimmysnerja",
     "platform": "instagram",
-    "url": "https://www.instagram.com/joemusiccave/",
+    "url": "https://www.instagram.com/jimmysnerja/",
     "category": "nightlife",
-    "description": "Locale live music e jam session a Nerja.",
-    "why_follow": "Per concerti dal vivo e serate alternative al Tutti Frutti.",
+    "description": "Storica discoteca di Nerja con oltre 35 anni di attività, live band, karaoke e serate a tema.",
+    "why_follow": "Per serate over 35, tardeo e musica dal vivo nel cuore di Nerja.",
     "must_for_dates": false
   },
   {
-    "id": "el-burro-nerja",
-    "name": "El Burro Nerja",
-    "handle": "@elburronerja",
+    "id": "tablao-burro-blanco",
+    "name": "El Burro Blanco Tablao Flamenco",
+    "handle": "@tablaoburroblanco",
     "platform": "instagram",
-    "url": "https://www.instagram.com/elburronerja/",
+    "url": "https://www.instagram.com/tablaoburroblanco/",
     "category": "nightlife",
-    "description": "Pub irlandese/andaluso con musica e serate.",
-    "why_follow": "Per serate informali e incontrare expat e turisti.",
+    "description": "Tablao flamenco storico a Nerja, a due passi da Calle Pintada. Spettacoli ogni sera.",
+    "why_follow": "Per una serata flamenco autentica, con cena e spettacolo. Consigliatissimo.",
     "must_for_dates": false
   },
   {
@@ -167,9 +167,9 @@
   {
     "id": "olivia-valere",
     "name": "Olivia Valère",
-    "handle": "@oliviavalere",
+    "handle": "@oliviavalereclub",
     "platform": "instagram",
-    "url": "https://www.instagram.com/oliviavalere/",
+    "url": "https://www.instagram.com/oliviavalereclub/",
     "category": "nightlife",
     "description": "Club/ristorante iconico di Marbella.",
     "why_follow": "Per serate esclusive, DJ set e eventi glamour.",
@@ -178,9 +178,9 @@
   {
     "id": "la-sala-marbella",
     "name": "La Sala Marbella",
-    "handle": "@lasalamarbella",
+    "handle": "@lasalabanus",
     "platform": "instagram",
-    "url": "https://www.instagram.com/lasalamarbella/",
+    "url": "https://www.instagram.com/lasalabanus/",
     "category": "nightlife",
     "description": "Ristorante, lounge e nightclub a Puerto Banús.",
     "why_follow": "Per cene-show, live music e serate over 35.",

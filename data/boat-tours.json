@@ -182,6 +182,150 @@
     ]
   },
   {
+    "name": "Catamarano Nerja-Maro con Pranzo — da Caleta de Vélez",
+    "type": "catamaran",
+    "duration": "4h 30min",
+    "price": "€40/persona",
+    "departure": "Puerto de Caleta de Vélez (varco B, molo B, ormeggio 2-3)",
+    "times": ["Mattina (orario variabile)"],
+    "description": "Tour in catamarano da Caleta de Vélez lungo la costa fino a Nerja e Maro. Pranzo cucinato a bordo (insalata, riso ai frutti di mare, frutta, 1 bevanda). Sosta bagno in mare aperto davanti alle scogliere di Maro. Catamarano da 30 posti con area ombreggiata e servizi. Possibilità avvistamento delfini.",
+    "highlights": ["Panorami Costa del Sol", "Pranzo fresco a bordo", "Bagno a Maro", "Delfini (con fortuna)", "Ombra e servizi"],
+    "capacity": "30 persone",
+    "booking": "checkyeti.com/it/d/4629/33496",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "agency": {
+      "name": "Catamarán Zostera Caleta de Vélez",
+      "website": "https://www.checkyeti.com/it/d/4629/33496",
+      "phone": "Via CheckYeti",
+      "address": "Puerto de Caleta de Vélez, 29751 Caleta de Vélez, Málaga"
+    },
+    "comments": [
+      "CheckYeti: Vista straordinaria sulla costa, soprattutto a Nerja. Nuotare nelle acque cristalline di fronte alla cascata è stato fantastico.",
+      "CheckYeti: Abbiamo visto delfini e pesci volanti! La paella era deliziosa.",
+      "CheckYeti: Accoglienza calorosa dell'equipaggio, atmosfera piacevole, ottimo pasto.",
+      "Consiglio: Partenza da Caleta de Vélez a 15min in macchina da Nerja. Vale assolutamente la pena.",
+      "Nota: Portare costume, telo, crema solare e cambio."
+    ]
+  },
+  {
+    "name": "Catamarano Economico — Baia di Torre del Mar",
+    "type": "catamaran",
+    "duration": "2 ore",
+    "price": "€10/persona",
+    "departure": "Puerto de Caleta de Vélez",
+    "times": ["Orari variabili (vedi CheckYeti)"],
+    "description": "Tour economico in catamarano da Caleta de Vélez lungo la baia di Torre del Mar. Sosta bagno in mare aperto. Musica a bordo. Bar con bevande. Ponle spazioso. Il prezzo più basso della zona.",
+    "highlights": ["Sosta bagno", "Economico", "Musica a bordo", "Bar"],
+    "capacity": "30 persone",
+    "booking": "checkyeti.com/it/d/4629/33491",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "agency": {
+      "name": "Catamarán Zostera Caleta de Vélez",
+      "website": "https://www.checkyeti.com/it/d/4629/33491",
+      "phone": "Via CheckYeti",
+      "address": "Puerto de Caleta de Vélez, 29751 Caleta de Vélez, Málaga"
+    },
+    "comments": [
+      "Consiglio: Perfetto per un pomeriggio veloce senza impegno. Solo 10€!",
+      "Nota: Pranzo non incluso. Portare snack o mangiare prima."
+    ]
+  },
+  {
+    "name": "Catamarano al Tramonto — Baia di Torre del Mar",
+    "type": "catamaran",
+    "duration": "2 ore",
+    "price": "€15/persona",
+    "departure": "Puerto de Caleta de Vélez",
+    "times": ["Tramonto (orario variabile in base alla stagione)"],
+    "description": "Tour in catamarano al tramonto da Caleta de Vélez nella baia di Torre del Mar. Bevande disponibili a bordo. Cieli spettacolari sulla Costa del Sol al calar del sole. Atmosfera rilassante con musica.",
+    "highlights": ["Tramonto sulla Costa del Sol", "Bevande a bordo", "Musica rilassante", "Economico"],
+    "capacity": "30 persone",
+    "booking": "checkyeti.com/it/d/4629/33493",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "agency": {
+      "name": "Catamarán Zostera Caleta de Vélez",
+      "website": "https://www.checkyeti.com/it/d/4629/33493",
+      "phone": "Via CheckYeti",
+      "address": "Puerto de Caleta de Vélez, 29751 Caleta de Vélez, Málaga"
+    },
+    "comments": [
+      "Consiglio: Arrivare 15min prima per i posti migliori a prua.",
+      "Nota: Perfetto dopo una giornata in spiaggia. Solo 15€!"
+    ]
+  },
+  {
+    "name": "Catamarano alle Cascate di Maro — da La Herradura (Marinalia)",
+    "type": "catamaran",
+    "duration": "4 ore",
+    "price": "€100-110/persona (paga €9.09 caparra, saldo €90-99 all'arrivo)",
+    "departure": "Puerto Marina del Este, La Herradura",
+    "times": ["09:00-13:00", "13:30-17:30", "18:00-22:00"],
+    "description": "Giro in catamarano di lusso con partenza da La Herradura fino alle Cascate di Maro. Stessa rotta dell'Alboran Charters ma con prenotazione tramite Marinalia (deposito ridotto). Include pranzo/cena a bordo e bevande. Snorkeling e paddle surf. Doccia e spogliatoi. Max 12 persone.",
+    "highlights": ["Cascate di Maro dal mare", "Snorkeling", "Pranzo incluso", "Paga solo caparra", "Cancellazione facile 15gg"],
+    "capacity": "12 persone",
+    "booking": "marinalia.es | tel: +34 96 574 00 36",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Marina+del+Este+La+Herradura",
+    "agency": {
+      "name": "Marinalia",
+      "website": "https://marinalia.es/en/adventure-sports/maritime-tours/boat-trips/1080-catamaran-ride-nerja-maro-waterfall.html",
+      "phone": "+34 96 574 00 36",
+      "address": "Puerto Deportivo Marina del Este, 18697 La Herradura, Granada"
+    },
+    "comments": [
+      "Consiglio: Stessa barca e rotta di Alboran Charters ma paghi solo caparra online.",
+      "Nota: Bambini 4-10 anni metà prezzo. 0-3 anni €15 o gratis fuori stagione.",
+      "Nota: 3 mesi di validità dal pagamento per scegliere la data."
+    ]
+  },
+  {
+    "name": "Barca Privata con Skipper — Caleta de Vélez (Sailwiz)",
+    "type": "boat",
+    "duration": "4 ore (personalizzabili)",
+    "price": "Da €200 (fino a 11 persone, contattare skipper)",
+    "departure": "Puerto de Caleta de Vélez",
+    "times": ["Flessibili (mattina e pomeriggio)"],
+    "description": "Noleggio privato di un Sea Ray 240 Sundeck (8.5m, 280 CV) con skipper Fernando. Giro personalizzabile: Cascate di Maro, grotte costiere, snorkeling, musica a bordo. Snorkeling, drink e visite alle grotte inclusi. Barca perfetta per gruppi di amici.",
+    "highlights": ["Barca privata", "Skipper incluso", "Itinerario personalizzabile", "Musica a bordo", "Snorkeling", "Max 11 persone"],
+    "capacity": "11 persone",
+    "booking": "sailwiz.com (cerca 'Fernando Caleta de Velez')",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Caleta+de+Velez+Malaga",
+    "agency": {
+      "name": "Fernando / Sailwiz",
+      "website": "https://www.sailwiz.com/it/giorno/gita-in-barca-alle-scogliere-di-nerja-e-maro/a/504",
+      "phone": "Via Sailwiz",
+      "address": "Puerto de Caleta de Vélez, 29751 Caleta de Vélez, Málaga"
+    },
+    "comments": [
+      "Consiglio: Contattare Fernando direttamente su Sailwiz per prezzi e disponibilità.",
+      "Nota: Sea Ray 240 Sundeck, comodo e spazioso, perfetto per gruppi.",
+      "Consiglio: Ideale per chi vuole privacy e itinerario su misura."
+    ]
+  },
+  {
+    "name": "Catamarano con Snorkel da Marbella — Puerto Banús",
+    "type": "catamaran",
+    "duration": "3 ore",
+    "price": "€50/persona",
+    "departure": "Puerto Banús, Marbella (pantalán 1)",
+    "times": ["Orari variabili (vedi CheckYeti)"],
+    "description": "Gita in catamarano di lusso (Lagoon 380) da Puerto Banús lungo la costa di Marbella. Soste per nuotare, snorkeling, paddle surf e kayak inclusi. Bevande e snack a bordo (acqua, birra, vino, frutta secca, olive). Max 12 persone. Skipper incluso.",
+    "highlights": ["Puerto Banús", "Snorkeling & Paddle", "Kayak incluso", "Bevande e snack", "Max 12 persone"],
+    "capacity": "12 persone",
+    "booking": "checkyeti.com/it/d/2716/21506",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Puerto+Banus+Marbella",
+    "agency": {
+      "name": "Royal Catamaran Marbella",
+      "website": "https://www.checkyeti.com/it/d/2716/21506",
+      "phone": "Via CheckYeti",
+      "address": "Puerto Banús, Pantalán 1, 29660 Marbella, Málaga"
+    },
+    "comments": [
+      "CheckYeti: Personale gentilissimo e accogliente. Barca bellissima.",
+      "Consiglio: Ottimo per la giornata a Marbella. Si può abbinare a cena a Puerto Banús.",
+      "Nota: Parcheggio a pagamento nei pressi del porto."
+    ]
+  },
+  {
     "name": "Avvistamento Delfini e Bagno in Mare — Costa Benalmádena",
     "type": "catamaran",
     "duration": "2 ore",
