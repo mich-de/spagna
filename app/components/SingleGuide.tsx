@@ -71,7 +71,7 @@ export default function SingleGuide() {
             <div className="flex overflow-x-auto md:flex-wrap md:overflow-visible gap-1.5 pb-2 border-b border-outline-variant/20 whitespace-nowrap md:whitespace-normal scrollbar-hide snap-x md:snap-none px-4 md:px-0">
               {tabs.map((tab) => (
                 <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-                  className={`relative px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl font-label-sm text-label-sm font-bold tracking-wide transition-all snap-center ${
+                  className={`relative px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl font-label-sm text-label-sm font-bold tracking-wide transition-all snap-center active:scale-95 ${
                     activeTab === tab.id
                       ? 'bg-primary text-on-primary shadow-sm'
                       : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant hover:text-primary'
@@ -156,12 +156,12 @@ export default function SingleGuide() {
 
                   <div className="flex overflow-x-auto sm:flex-wrap gap-1.5 pb-2.5 mb-2 whitespace-nowrap scrollbar-hide snap-x px-2 sm:px-0">
                     {cities.map((city) => (
-                      <button key={city.id} onClick={() => setSelectedCity(city.id)}
-                        className={`px-3 py-1 rounded-lg font-label-sm text-label-sm font-bold tracking-wide transition-all snap-center ${
-                          selectedCity === city.id
-                            ? 'bg-secondary text-on-secondary shadow-sm'
-                            : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
-                        }`}>{city.label}</button>
+                    <button key={city.id} onClick={() => setSelectedCity(city.id)}
+                      className={`px-3 py-1 rounded-lg font-label-sm text-label-sm font-bold tracking-wide transition-all snap-center active:scale-95 ${
+                        selectedCity === city.id
+                          ? 'bg-secondary text-on-secondary shadow-sm'
+                          : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                      }`}>{city.label}</button>
                     ))}
                   </div>
                 </div>

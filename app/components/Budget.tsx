@@ -66,7 +66,7 @@ export default function Budget() {
           <div className="flex flex-wrap gap-1.5">
             {levels.map((lvl) => (
               <button key={lvl.key} onClick={() => setActiveLevel(lvl.key)}
-                className={`px-4 py-2 rounded-lg font-label-md text-label-md transition-all ${
+                className={`px-4 py-2 rounded-lg font-label-md text-label-md transition-all active:scale-95 ${
                   activeLevel === lvl.key
                     ? 'bg-secondary text-on-secondary shadow-sm'
                     : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
@@ -77,13 +77,13 @@ export default function Budget() {
           </div>
           <div className="flex bg-surface-container-lowest p-1 rounded-lg border border-outline-variant/30 self-start sm:self-auto shadow-sm">
             <button onClick={() => setSplitMode('single')}
-              className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all ${
+              className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all active:scale-95 ${
                 splitMode === 'single' ? 'bg-secondary text-on-secondary shadow-sm' : 'text-on-surface-variant hover:text-primary'
               }`}>
               👤 Singolo
             </button>
             <button onClick={() => setSplitMode('split')}
-              className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all ${
+              className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all active:scale-95 ${
                 splitMode === 'split' ? 'bg-secondary text-on-secondary shadow-sm' : 'text-on-surface-variant hover:text-primary'
               }`}>
               👥 2 Amici
