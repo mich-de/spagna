@@ -41,7 +41,6 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
-  const mobileNavRef = useRef<HTMLDivElement>(null)
   const [plannerStats, setPlannerStats] = useState({ bookmarksCount: 0, completedTasks: 0, totalTasks: 0 })
 
   const scrollToActive = useCallback((ref: React.RefObject<HTMLDivElement | null>, selector: string) => {
@@ -59,7 +58,6 @@ export default function SectionNav({ activeSection, onSectionChange }: {
 
   useEffect(() => {
     scrollToActive(navRef, `[data-nav-id="${activeSection}"]`)
-    scrollToActive(mobileNavRef, `[data-mobile-nav-id="${activeSection}"]`)
   }, [activeSection, scrollToActive])
 
   useEffect(() => {
@@ -130,24 +128,6 @@ export default function SectionNav({ activeSection, onSectionChange }: {
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
-              {/* Mobile compact quick nav — solo 4 essenziali */}
-              <div ref={mobileNavRef} className="lg:hidden flex items-center gap-1 overflow-x-auto max-w-[35vw] sm:max-w-[45vw] scrollbar-hide snap-x">
-                {sections.filter((s) => ['overview', 'beaches', 'food', 'itinerary'].includes(s.id)).map((s) => {
-                  const isActive = activeSection === s.id
-                  return (
-                    <button key={s.id} data-mobile-nav-id={s.id} onClick={() => onSectionChange(s.id)}
-                      className={`shrink-0 snap-center px-2.5 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all active:scale-95 ${
-                        isActive
-                          ? 'text-on-primary bg-primary shadow-sm'
-                          : 'text-on-surface-variant bg-surface-container-lowest border border-outline-variant/30 hover:text-primary'
-                      }`}>
-                      <s.icon className="w-3.5 h-3.5" />
-                      <span className="whitespace-nowrap">{s.shortLabel}</span>
-                    </button>
-                  )
-                })}
-              </div>
-
               <button onClick={() => setMobileOpen(!mobileOpen)}
                 className="lg:hidden p-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant rounded-xl transition-all cursor-pointer relative w-10 h-10 flex items-center justify-center"
                 aria-label="Toggle menu">

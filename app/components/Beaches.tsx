@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Search, MapPin, Waves, Car, Clock, Map, Star, Heart, X } from 'lucide-react'
 import beaches from '@/data/beaches.json'
 import { getDriveTime, getShortBaseName } from '@/app/utils/driveTimes'
+import { asset } from '@/app/utils/paths'
 
 const zones = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.zone))).sort()]
 const atmospheres = ['Tutte', ...Array.from(new Set(beaches.map((b: any) => b.atmosphere))).sort()]
@@ -166,7 +167,7 @@ export default function Beaches() {
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   {beach.imageUrl ? (
-                    <img src={beach.imageUrl} alt={beach.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
+                    <img src={asset(beach.imageUrl)} alt={beach.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
                   ) : (
                     <div className="w-full h-full relative">
                       <img src={nerjaFallbackImage} alt={`${beach.name} Nerja`} className="w-full h-full object-cover scale-hover" loading="lazy" />

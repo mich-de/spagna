@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Flame, Clock, AlertTriangle, Backpack, MapPin, Sparkles, Map, Star } from 'lucide-react'
 import sj from '@/data/san-juan.json'
+import { asset } from '@/app/utils/paths'
 
 export default function SanJuan() {
   return (
@@ -79,7 +80,7 @@ export default function SanJuan() {
             >
               {spot.imageUrl && (
                 <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3">
-                  <img src={spot.imageUrl} alt={spot.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
+                  <img src={asset(spot.imageUrl)} alt={spot.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
               )}

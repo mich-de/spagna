@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Calendar, MapPin, Clock, Car, Instagram, ExternalLink, Star, MessageSquare, Filter, Flame, Music, UtensilsCrossed, Palmtree, Landmark, ChevronDown, ChevronUp } from 'lucide-react'
 import events from '@/data/events.json'
+import { asset } from '@/app/utils/paths'
 
 const categories = [
   { id: 'all', label: 'Tutti', icon: Palmtree },
@@ -286,7 +287,7 @@ export default function Events() {
 
 function EventImage({ event }: { event: any }) {
   const [error, setError] = useState(false)
-  const src = event.imageUrl || `/images/events/${event.id}.jpg`
+  const src = asset(event.imageUrl || `/images/events/${event.id}.jpg`)
   if (error) {
     return (
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-surface-container-high flex items-center justify-center">
