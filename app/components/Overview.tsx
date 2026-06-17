@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Star, CalendarDays, Plane, Car, Thermometer, MapPin, ArrowDown, Check, X, Plus, Minus, ChevronRight } from 'lucide-react'
 import trip from '@/data/trip.json'
 import recommendedBase from '@/data/recommended-base.json'
-import { asset } from '@/utils/paths'
+import { asset } from '@/app/utils/paths'
 
 export default function Overview() {
   const nerjaHeroImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burriana_%286861858288%29.jpg/1280px-Burriana_%286861858288%29.jpg'
