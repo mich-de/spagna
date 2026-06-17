@@ -28,21 +28,22 @@ export default function Expenses() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
           {[
-            { label: 'Totale speso', value: `€${totalSpent.toFixed(2)}`, color: '' },
-            { label: 'Pagato da MDA', value: `€${paidByMDA.toFixed(2)}`, color: travelers[0].color },
-            { label: 'Pagato da ROG', value: `€${paidByROG.toFixed(2)}`, color: travelers[1].color },
-            { label: 'A testa (2 persone)', value: `€${perPerson.toFixed(2)}`, color: '' },
+            { label: 'Totale speso', value: `€${totalSpent.toFixed(2)}`, color: '', accent: 'primary' },
+            { label: 'Pagato da MDA', value: `€${paidByMDA.toFixed(2)}`, color: travelers[0].color, accent: '' },
+            { label: 'Pagato da ROG', value: `€${paidByROG.toFixed(2)}`, color: travelers[1].color, accent: '' },
+            { label: 'A testa (2 persone)', value: `€${perPerson.toFixed(2)}`, color: '', accent: '' },
           ].map((item) => (
-            <div key={item.label} className="bg-surface-container-lowest rounded-xl p-sm card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
-              <p className="font-label-sm text-label-sm text-on-surface-variant mb-1">{item.label}</p>
-              <p className="font-headline-sm text-headline-sm" style={item.color ? { color: item.color } : {}}>{item.value}</p>
+            <div key={item.label} className={`relative bg-surface-container-lowest rounded-xl px-4 py-3.5 shadow-sm border ${item.accent ? 'border-primary/20' : 'border-outline-variant/20'} overflow-hidden`}>
+              {item.accent && <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary to-secondary" />}
+              <p className="font-label-sm text-label-sm text-on-surface-variant mb-1.5">{item.label}</p>
+              <p className="font-headline-sm text-headline-sm text-on-surface" style={item.color ? { color: item.color } : {}}>{item.value}</p>
             </div>
           ))}
         </motion.div>
 
         {balance !== 0 && (
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }}
-            className="mb-6 p-sm bg-surface-container rounded-xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            className="mb-6 px-4 py-3.5 bg-surface-container rounded-xl shadow-sm border border-outline-variant/10">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-secondary" />
@@ -74,20 +75,20 @@ export default function Expenses() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.05 * i }}
-                className="bg-surface-container-lowest rounded-xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] overflow-hidden"
+                className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20"
               >
                 <div className="flex items-center gap-4 p-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <Receipt className="w-5 h-5 text-primary" />
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Receipt className="w-4 h-4 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-label-md text-label-md text-on-surface truncate">{expense.description}</p>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="font-label-sm text-label-sm px-1.5 py-0.5 rounded" style={{ backgroundColor: payer?.color + '20', color: payer?.color }}>
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="font-label-sm text-label-sm px-1.5 py-0.5 rounded-md" style={{ backgroundColor: payer?.color + '20', color: payer?.color }}>
                         {expense.paid_by}
                       </span>
                       <span className="font-label-sm text-label-sm text-outline">{expense.date}</span>
-                      <span className="text-outline">·</span>
+                      <span className="w-1 h-1 rounded-full bg-outline/30" />
                       <span className="font-label-sm text-label-sm text-outline">{expense.payment_method}</span>
                     </div>
                   </div>
@@ -95,8 +96,8 @@ export default function Expenses() {
                     <span className="font-headline-sm text-headline-sm text-on-surface">€{expense.total.toFixed(2)}</span>
                   </div>
                 </div>
-                <div className="border-t border-outline-variant/20">
-                  <div className="p-4 space-y-2">
+                <div className="border-t border-outline-variant/10 mx-4" />
+                <div className="p-4 space-y-2">
                     {expense.items.map((item, j) => (
                       <div key={j} className="flex items-center justify-between py-1.5">
                         <div className="flex items-center gap-2">
@@ -114,14 +115,13 @@ export default function Expenses() {
                         <p className="font-label-sm text-label-sm text-on-surface-variant italic">{expense.note}</p>
                       </div>
                     )}
-                  </div>
                 </div>
               </motion.div>
             )
           })}
         </div>
 
-        <div className="mt-4 p-4 bg-surface-container rounded-lg font-body-md text-[13px] text-on-surface-variant border border-outline-variant/20">
+        <div className="mt-4 px-4 py-3 bg-surface-container rounded-xl font-body-md text-[13px] text-on-surface-variant border border-outline-variant/10">
           <CreditCard className="w-4 h-4 inline mr-1" />
           Le spese vengono aggiornate man mano che vengono sostenute. Il bilancio tiene conto di chi ha pagato.
         </div>

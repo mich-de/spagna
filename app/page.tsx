@@ -21,6 +21,7 @@ import PreTripChecklist from '@/app/components/PreTripChecklist'
 import TripPlanner from '@/app/components/TripPlanner'
 import QuickInspiration from '@/app/components/QuickInspiration'
 import ItineraryTeaser from '@/app/components/ItineraryTeaser'
+import Accommodations from '@/app/components/Accommodations'
 import Events from '@/app/components/Events'
 import Socials from '@/app/components/Socials'
 import PasswordWall from '@/app/components/PasswordWall'
@@ -107,6 +108,7 @@ function HomeContent() {
         <Events />
         <SingleGuide />
         <BaseSelection />
+        <Accommodations />
         <ItineraryTeaser />
         <QuickInspiration />
         <Videos />

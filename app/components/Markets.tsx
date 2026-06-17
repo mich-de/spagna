@@ -37,7 +37,7 @@ export default function Markets() {
         </motion.div>
 
         {/* Search + Filters */}
-        <div className="glass-panel rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="bg-surface-container-lowest rounded-xl p-4 mb-8 shadow-sm border border-outline-variant/20">
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
             <input type="text" placeholder="Cerca per nome, città, indirizzo o prodotti..." value={search} onChange={(e) => setSearch(e.target.value)}
@@ -88,54 +88,57 @@ export default function Markets() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-surface-container-lowest rounded-xl p-md card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
+                  className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-col"
                 >
-                  <div className="flex items-start justify-between gap-3 mb-3">
-                    <h3 className="font-headline-sm text-headline-sm text-on-surface">{market.name}</h3>
-                    <span className="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-md shrink-0">
-                      {market.city}
-                    </span>
+                  <div className="p-4">
+                    <div className="flex items-start justify-between gap-3 mb-3">
+                      <h3 className="font-headline-sm text-headline-sm text-on-surface">{market.name}</h3>
+                      <span className="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-md shrink-0">
+                        {market.city}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mb-4 font-label-sm text-label-sm text-on-surface-variant">
+                      <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5 text-primary" />{market.day}</span>
+                      <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-primary" />{market.time}</span>
+                    </div>
+
+                    <div className="space-y-2.5 mb-4 font-body-md text-[14px] text-on-surface-variant">
+                      <div className="flex items-start gap-2.5">
+                        <MapPin className="w-4 h-4 text-outline shrink-0 mt-0.5" />
+                        <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(market.name + ' ' + market.location)}`} target="_blank" rel="noopener noreferrer"
+                          className="text-on-surface-variant hover:text-primary transition-colors">
+                          {market.location} <ExternalLink className="inline w-3 h-3 ml-0.5" />
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2.5">
+                        <Car className="w-4 h-4 text-outline shrink-0" />
+                        <span>{market.parking}</span>
+                      </div>
+                      <div className="flex items-center gap-2.5">
+                        <Store className="w-4 h-4 text-outline shrink-0" />
+                        <span>~{market.stalls} bancarelle</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="font-label-sm text-label-sm text-on-surface-variant mb-2">Prodotti</div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {market.products.map((product: string, idx: number) => (
+                          <span key={idx} className="font-label-sm text-label-sm px-2.5 py-1 bg-surface-variant/70 text-on-surface-variant rounded-full">
+                            {product}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-3 mb-4 font-label-sm text-label-sm text-on-surface-variant">
-                    <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-primary" />{market.day}</span>
-                    <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-primary" />{market.time}</span>
-                  </div>
-
-                  <div className="space-y-2 mb-4 font-body-md text-[14px] text-on-surface-variant">
-                    <div className="flex items-start gap-2">
-                      <MapPin className="w-3.5 h-3.5 text-outline shrink-0 mt-0.5" />
-                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(market.name + ' ' + market.location)}`} target="_blank" rel="noopener noreferrer"
-                        className="text-on-surface-variant hover:text-primary transition-colors">
-                        {market.location} <ExternalLink className="inline w-3 h-3 ml-0.5" />
-                      </a>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Car className="w-3.5 h-3.5 text-outline shrink-0" />
-                      <span><strong>Parcheggio:</strong> {market.parking}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Store className="w-3.5 h-3.5 text-outline shrink-0" />
-                      <span><strong>Bancarelle:</strong> ~{market.stalls} puestos</span>
-                    </div>
-                  </div>
-
-                  <div className="mb-4">
-                    <div className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1.5">Prodotti</div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {market.products.map((product: string, idx: number) => (
-                        <span key={idx} className="font-label-sm text-label-sm px-2 py-0.5 bg-surface-variant text-on-surface-variant rounded-md">
-                          {product}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-auto pt-3 border-t border-outline-variant/30">
+                  <div className="border-t border-outline-variant/10 mx-4" />
+                  <div className="p-3">
                     <button onClick={() => setExpandedNotes(isExpanded ? null : market.name)}
-                      className="w-full flex items-center justify-center gap-1 py-2 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all active:scale-95">
+                      className="w-full flex items-center justify-center gap-1.5 py-2 bg-surface-variant/70 hover:bg-surface-variant text-on-surface-variant rounded-xl font-label-sm text-label-sm transition-all active:scale-95">
                       <MessageSquare className="w-3.5 h-3.5" />
-                      {isExpanded ? 'Chiudi' : `Recensioni (${market.comments.length})`}
+                      {isExpanded ? 'Chiudi recensioni' : `Recensioni (${market.comments.length})`}
                       <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                     </button>
                     <AnimatePresence>
