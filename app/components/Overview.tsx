@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Star, CalendarDays, Plane, Car, Thermometer, MapPin, ArrowDown, Check, X, Plus, Minus, ChevronRight } from 'lucide-react'
 import trip from '@/data/trip.json'
 import recommendedBase from '@/data/recommended-base.json'
+import { asset } from '@/utils/paths'
 
 export default function Overview() {
   const nerjaHeroImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burriana_%286861858288%29.jpg/1280px-Burriana_%286861858288%29.jpg'
@@ -113,7 +114,7 @@ export default function Overview() {
                 <Star className="w-3.5 h-3.5 mr-1 fill-current" /> Winner
               </div>
               <img
-                src="/images/beaches/balcon-de-europa.jpg"
+                src={asset('/images/beaches/balcon-de-europa.jpg')}
                 alt="Nerja Centro"
                 className="w-full h-full object-cover"
                 loading="lazy"
