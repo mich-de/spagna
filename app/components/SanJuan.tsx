@@ -34,7 +34,7 @@ export default function SanJuan() {
               </div>
             </div>
             <div className="space-y-4">
-              <div className="bg-surface-container-lowest rounded-xl p-sm border border-outline-variant/20 shadow-sm">
+              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
                 <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
                   <Backpack className="w-4 h-4 text-primary" /> Cosa portare
                 </h4>
@@ -46,7 +46,7 @@ export default function SanJuan() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-surface-container-lowest rounded-xl p-sm border border-outline-variant/20 shadow-sm">
+              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
                 <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
                   <AlertTriangle className="w-4 h-4 text-tertiary" /> Regole da sapere
                 </h4>
@@ -72,7 +72,7 @@ export default function SanJuan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-xl p-sm card-hover border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all hover:scale-[0.98] ${
+              className={`rounded-xl p-4 card-hover border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all hover:scale-[0.98] ${
                 spot.name === sj.recommendedSpot
                   ? 'bg-primary-container/20 border-primary/30 ring-1 ring-primary/20'
                   : 'bg-surface-container-lowest border-outline-variant/30'

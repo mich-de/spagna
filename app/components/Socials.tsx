@@ -70,7 +70,7 @@ export default function Socials() {
             return (
               <motion.a key={s.id} href={s.url} target="_blank" rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.03 }}
-                className="group bg-surface-container-lowest rounded-2xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] p-sm hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] hover:scale-[0.98] transition-all duration-200 flex flex-col h-full">
+                className="group bg-surface-container-lowest rounded-2xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] p-4 hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] hover:scale-[0.98] transition-all duration-200 flex flex-col h-full">
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${s.platform === 'instagram' ? 'bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 text-white' : 'bg-surface-variant text-on-surface-variant'}`}>

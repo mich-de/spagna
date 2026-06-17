@@ -184,7 +184,7 @@ export default function QuickInspiration() {
 
         {activeTab === 'deck' && (
           <div className="space-y-6">
-            <div className="glass-panel rounded-xl p-sm mb-lg shadow-sm">
+            <div className="glass-panel rounded-xl p-4 mb-6 shadow-sm">
               <div className="flex flex-row flex-nowrap sm:flex-wrap gap-2 overflow-x-auto scrollbar-hide whitespace-nowrap sm:whitespace-normal pb-2">
                 {[
                   { id: 'tutti', label: 'Tutti i tipi' },

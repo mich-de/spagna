@@ -72,7 +72,7 @@ export default function Food() {
         </motion.div>
 
         {/* PIATTI TIPICI */}
-        <div className="mb-xl">
+        <div className="mb-8">
           <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Piatti da provare</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {foods.map((item: any, i: number) => (
@@ -89,7 +89,7 @@ export default function Food() {
                     <div className="absolute inset-0 bg-gradient-to-t from-surface/60 to-transparent" />
                   </div>
                 )}
-                <div className="p-sm">
+                <div className="p-4">
                   <div className="flex items-start justify-between mb-1">
                     <h4 className="font-label-md text-label-md text-on-surface font-bold">{item.name}</h4>
                     <span className={`px-2 py-0.5 rounded-full font-label-sm text-label-sm ${
@@ -116,7 +116,7 @@ export default function Food() {
         <div>
           <div className="flex flex-col gap-4 mb-8">
             <h3 className="font-headline-sm text-headline-sm text-on-surface">Ristoranti & Chiringuiti</h3>
-            <div className="glass-panel rounded-xl card-hover p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+            <div className="glass-panel rounded-xl card-hover p-4 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
                 <span className="font-label-sm text-label-sm text-on-surface-variant">Zona</span>
                 <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
@@ -169,7 +169,7 @@ className="bg-surface-container-lowest rounded-xl overflow-hidden card-hover sha
                       </span>
                     </div>
                   )}
-                  <div className="p-sm">
+                  <div className="p-4">
                     <div className="flex items-start justify-between mb-2">
                       <h4 className="font-label-md text-label-md text-on-surface font-bold">{r.name}</h4>
                       <span className="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-variant text-on-surface-variant">{r.price}</span>

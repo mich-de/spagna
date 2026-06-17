@@ -48,7 +48,7 @@ export default function Overview() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-xl animate-bounce"
+            className="mt-8 animate-bounce"
           >
             <ArrowDown className="w-8 h-8 text-on-primary opacity-80" />
           </motion.div>
@@ -64,7 +64,7 @@ export default function Overview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-sm md:gap-gutter mb-xl"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-8"
         >
           {[
             { icon: CalendarDays, label: 'Dates', value: '19→25 Giu 2026', sub: '7 Days, 6 Nights', circle: 'bg-secondary-container text-on-secondary-container' },
@@ -79,7 +79,7 @@ export default function Overview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 + i * 0.08 }}
-              className="bg-surface-container-lowest rounded-xl p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] card-hover border border-outline-variant/30 flex flex-col justify-between"
+              className="bg-surface-container-lowest rounded-xl p-4 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] card-hover border border-outline-variant/30 flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">{item.label}</span>
@@ -105,21 +105,24 @@ export default function Overview() {
           viewport={{ once: true }}
           transition={{ delay: 0.35 }}
         >
-          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-md">Base Consigliata</h2>
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-5">Base Consigliata</h2>
           <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] card-hover border border-outline-variant/20 flex flex-col md:flex-row">
             <div className="w-full md:w-2/5 h-64 md:h-auto relative bg-surface-container-high">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
               <div className="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center shadow-md">
                 <Star className="w-3.5 h-3.5 mr-1 fill-current" /> Winner
               </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-display-lg text-[48px] md:text-[64px] text-primary/30">{recommendedBase.winner?.[0]}</span>
-              </div>
+              <img
+                src="/images/beaches/balcon-de-europa.jpg"
+                alt="Nerja Centro"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <div className="p-lg w-full md:w-3/5 flex flex-col justify-center">
+            <div className="p-6 w-full md:w-3/5 flex flex-col justify-center">
               <h3 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-2">{recommendedBase.winner}</h3>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">{recommendedBase.reason}</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <div className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-3 flex items-center">
                     <Plus className="w-3.5 h-3.5 mr-2 text-secondary" />

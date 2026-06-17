@@ -19,7 +19,7 @@ export default function Logistics() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-surface-container-lowest rounded-xl p-md card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div className="bg-surface-container-lowest rounded-xl p-5 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
                 <Car className="w-5 h-5 text-primary" /> Noleggio auto
               </h3>
@@ -38,7 +38,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-surface-container-lowest rounded-xl p-md card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div className="bg-surface-container-lowest rounded-xl p-5 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
                 <ParkingCircle className="w-5 h-5 text-primary" /> Parcheggi
               </h3>
@@ -57,7 +57,7 @@ export default function Logistics() {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-surface-container-lowest rounded-xl p-md card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div className="bg-surface-container-lowest rounded-xl p-5 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
                 <Clock className="w-5 h-5 text-primary" /> Tempi di guida
               </h3>
@@ -93,7 +93,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-surface-container-lowest rounded-xl p-md card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div className="bg-surface-container-lowest rounded-xl p-5 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
                 <Gauge className="w-5 h-5 text-primary" /> Consigli guida
               </h3>
@@ -111,7 +111,7 @@ export default function Logistics() {
               </div>
             </div>
 
-            <div className="bg-surface-container-lowest rounded-xl p-md card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div className="bg-surface-container-lowest rounded-xl p-5 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-primary" /> Mobilità notturna
               </h3>

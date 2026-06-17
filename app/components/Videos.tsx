@@ -98,7 +98,7 @@ export default function Videos() {
                   {video.duration_min} min
                 </div>
               </div>
-              <div className="p-sm">
+              <div className="p-4">
                 <h3 className="font-label-md text-label-md text-on-surface font-bold mb-2 line-clamp-2 group-hover:text-primary transition-colors">{video.title}</h3>
                 <div className="flex flex-wrap gap-1.5">
                   <span className="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant rounded-full px-2 py-0.5 flex items-center gap-1">

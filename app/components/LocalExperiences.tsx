@@ -90,7 +90,7 @@ export default function LocalExperiences() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="bg-surface-container-lowest rounded-xl p-sm card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
+                className="bg-surface-container-lowest rounded-xl p-4 card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
               >
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
