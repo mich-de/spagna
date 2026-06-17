@@ -85,14 +85,14 @@ export default function Beaches() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Una selezione curata dei litorali più iconici, dalle calette selvagge di Maro alle spiagge esclusive di Marbella.</p>
         </motion.div>
 
-        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="glass-panel rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between mb-4">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
               <input type="text" placeholder="Cerca spiaggia o zona..." value={search} onChange={(e) => setSearch(e.target.value)}
                 className="w-full pl-9 pr-10 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" />
               {search && (
-                <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-outline hover:text-primary hover:bg-surface-variant rounded-lg transition-colors">
+                <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-outline hover:text-primary hover:bg-surface-variant rounded-lg transition-colors active:scale-95 transition-transform">
                   <X className="w-3.5 h-3.5" />
                 </button>
               )}
@@ -166,10 +166,10 @@ export default function Beaches() {
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   {beach.imageUrl ? (
-                    <img src={beach.imageUrl} alt={beach.name} className="w-full h-full object-cover" loading="lazy" />
+                    <img src={beach.imageUrl} alt={beach.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
                   ) : (
                     <div className="w-full h-full relative">
-                      <img src={nerjaFallbackImage} alt={`${beach.name} Nerja`} className="w-full h-full object-cover" loading="lazy" />
+                      <img src={nerjaFallbackImage} alt={`${beach.name} Nerja`} className="w-full h-full object-cover scale-hover" loading="lazy" />
                       <div className="absolute inset-0 bg-[rgba(34,26,15,0.2)]" />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <Waves className="w-12 h-12 text-on-surface/40" />
@@ -178,7 +178,7 @@ export default function Beaches() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <button onClick={() => toggleBookmark(beach)}
-                    className="absolute top-2.5 right-2.5 p-1.5 bg-surface/70 backdrop-blur-sm rounded-full hover:bg-surface hover:scale-110 transition-all cursor-pointer shadow-sm"
+                    className="absolute top-2.5 right-2.5 p-1.5 bg-surface/70 backdrop-blur-sm rounded-full hover:bg-surface hover:scale-110 transition-all cursor-pointer shadow-sm active:scale-95"
                     title={isBookmarked ? "Rimuovi" : "Aggiungi"}>
                     <Heart className={`w-3.5 h-3.5 transition-colors ${isBookmarked ? 'fill-red-500 text-red-500' : 'text-on-surface-variant'}`} />
                   </button>

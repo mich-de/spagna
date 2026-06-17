@@ -40,7 +40,7 @@ export default function BoatTours() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Dal catamarano al tramonto alle spedizioni per l&apos;avvistamento dei delfini.</p>
         </motion.div>
 
-        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="glass-panel rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
             <input type="text" placeholder="Cerca tour, porto di partenza o descrizione..." value={search} onChange={(e) => setSearch(e.target.value)}
@@ -138,7 +138,7 @@ export default function BoatTours() {
                     <div className="flex items-center justify-between gap-4">
                       <span className="font-body-md text-[12px] text-outline truncate">📍 {tour.booking}</span>
                       <button onClick={() => setExpandedTour(isExpanded ? null : tour.name)}
-                        className="flex items-center gap-1 px-3 py-1.5 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all">
+                        className="flex items-center gap-1 px-3 py-1.5 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all active:scale-95">
                         <MessageSquare className="w-3.5 h-3.5" />
                         {isExpanded ? 'Chiudi' : `Forum (${tour.comments.length})`}
                       </button>

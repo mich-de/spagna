@@ -42,7 +42,7 @@ export default function WaterActivities() {
         <div className="flex gap-2 mb-8 flex-wrap">
           {activityFilters.map(f => (
             <button key={f} onClick={() => setActiveFilter(f)}
-              className={`px-4 py-2 rounded-full font-label-sm text-label-sm transition-all ${
+              className={`px-4 py-2 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                 activeFilter === f
                   ? 'bg-secondary text-on-secondary shadow-sm'
                   : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
@@ -114,7 +114,7 @@ export default function WaterActivities() {
 
                 <div className="flex items-center gap-2">
                   <button onClick={() => setExpandedCard(expandedCard === activity.name ? null : activity.name)}
-                    className="flex-1 px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-variant text-primary hover:bg-primary/10 transition-colors cursor-pointer"
+                    className="flex-1 px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-variant text-primary hover:bg-primary/10 transition-colors cursor-pointer active:scale-95 transition-transform"
                   >{expandedCard === activity.name ? 'Meno dettagli' : 'Dettagli'}</button>
                   <a href={activity.wikilocUrl} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-1.5 px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-variant text-on-surface-variant hover:text-primary transition-colors">

@@ -85,7 +85,7 @@ export default function Food() {
               >
                 {item.image && (
                   <div className="relative h-36 sm:h-40 overflow-hidden">
-                    <img src={item.image} alt={item.name} className="w-full h-full object-cover" loading="lazy" />
+                    <img src={item.image} alt={item.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-surface/60 to-transparent" />
                   </div>
                 )}
@@ -116,11 +116,11 @@ export default function Food() {
         <div>
           <div className="flex flex-col gap-4 mb-8">
             <h3 className="font-headline-sm text-headline-sm text-on-surface">Ristoranti & Chiringuiti</h3>
-            <div className="bg-surface-container rounded-xl card-hover p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+            <div className="glass-panel rounded-xl card-hover p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
                 <span className="font-label-sm text-label-sm text-on-surface-variant">Zona</span>
                 <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
-                  className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto ${
+                  className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto active:scale-95 ${
                     sortByDriveTime
                       ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
                       : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
@@ -157,10 +157,10 @@ className="bg-surface-container-lowest rounded-xl overflow-hidden card-hover sha
                 >
                   {r.imageUrl && (
                     <div className="relative aspect-[16/9] overflow-hidden">
-                      <img src={r.imageUrl} alt={r.name} className="w-full h-full object-cover" loading="lazy" />
+                      <img src={r.imageUrl} alt={r.name} className="w-full h-full object-cover scale-hover" loading="lazy" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <button onClick={() => toggleBookmark(r)}
-                        className="absolute top-2.5 right-2.5 p-1.5 bg-surface/70 backdrop-blur-sm rounded-full hover:bg-surface hover:scale-110 transition-all cursor-pointer shadow-sm"
+                        className="absolute top-2.5 right-2.5 p-1.5 bg-surface/70 backdrop-blur-sm rounded-full hover:bg-surface hover:scale-110 transition-all cursor-pointer shadow-sm active:scale-95"
                         title={isBookmarked ? "Rimuovi" : "Aggiungi"}>
                         <Heart className={`w-3.5 h-3.5 transition-colors ${isBookmarked ? 'fill-red-500 text-red-500' : 'text-on-surface-variant'}`} />
                       </button>

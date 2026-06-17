@@ -184,21 +184,23 @@ export default function QuickInspiration() {
 
         {activeTab === 'deck' && (
           <div className="space-y-6">
-            <div className="flex flex-row flex-nowrap sm:flex-wrap gap-2 overflow-x-auto scrollbar-hide whitespace-nowrap sm:whitespace-normal -mx-4 px-4 sm:mx-0 sm:px-0 pb-2">
-              {[
-                { id: 'tutti', label: 'Tutti i tipi' },
-                { id: 'spiagge', label: 'Spiagge 🏖' },
-                { id: 'cibo', label: 'Ristoranti & Piatti 🍽' },
-                { id: 'esperienze', label: 'Esperienze Locali 🧘' },
-                { id: 'attrazioni', label: 'Attrazioni storiche 🏛' },
-              ].map(cat => (
-                <button key={cat.id} onClick={() => setCategoryFilter(cat.id as any)}
-                  className={`px-4 py-2 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap transition-all border shrink-0 ${
-                    categoryFilter === cat.id
-                      ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
-                      : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/30 hover:border-secondary/50'
-                  }`}>{cat.label}</button>
-              ))}
+            <div className="glass-panel rounded-xl p-sm mb-lg shadow-sm">
+              <div className="flex flex-row flex-nowrap sm:flex-wrap gap-2 overflow-x-auto scrollbar-hide whitespace-nowrap sm:whitespace-normal pb-2">
+                {[
+                  { id: 'tutti', label: 'Tutti i tipi' },
+                  { id: 'spiagge', label: 'Spiagge 🏖' },
+                  { id: 'cibo', label: 'Ristoranti & Piatti 🍽' },
+                  { id: 'esperienze', label: 'Esperienze Locali 🧘' },
+                  { id: 'attrazioni', label: 'Attrazioni storiche 🏛' },
+                ].map(cat => (
+                  <button key={cat.id} onClick={() => setCategoryFilter(cat.id as any)}
+                    className={`px-4 py-2 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap transition-all border shrink-0 active:scale-95 ${
+                      categoryFilter === cat.id
+                        ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
+                        : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/30 hover:border-secondary/50'
+                    }`}>{cat.label}</button>
+                ))}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[380px]">

@@ -51,12 +51,12 @@ export default function Videos() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-2xl">Video selezionati per scoprire le atmosfere e i segreti della Costa del Sol prima di partire.</p>
         </motion.div>
 
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl card-hover p-4 mb-6 space-y-3">
+        <div className="glass-panel border border-outline-variant/30 rounded-xl card-hover p-4 mb-6 space-y-3">
           <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 items-center overflow-x-auto scrollbar-hide whitespace-nowrap sm:whitespace-normal">
             <span className="font-label-sm text-label-sm text-on-surface-variant mr-1 shrink-0">Zona:</span>
             {zones.map((z) => (
               <button key={z} onClick={() => setZoneFilter(z)}
-                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 ${
+                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 active:scale-95 ${
                   zoneFilter === z
                     ? 'bg-secondary text-on-secondary shadow-sm'
                     : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
@@ -68,7 +68,7 @@ export default function Videos() {
             <span className="font-label-sm text-label-sm text-on-surface-variant mr-1 shrink-0">Tipo:</span>
             {types.map((t) => (
               <button key={t} onClick={() => setTypeFilter(t)}
-                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 ${
+                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 active:scale-95 ${
                   typeFilter === t
                     ? 'bg-secondary text-on-secondary shadow-sm'
                     : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'

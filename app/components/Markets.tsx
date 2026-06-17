@@ -37,7 +37,7 @@ export default function Markets() {
         </motion.div>
 
         {/* Search + Filters */}
-        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="glass-panel rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
             <input type="text" placeholder="Cerca per nome, città, indirizzo o prodotti..." value={search} onChange={(e) => setSearch(e.target.value)}
@@ -133,7 +133,7 @@ export default function Markets() {
 
                   <div className="mt-auto pt-3 border-t border-outline-variant/30">
                     <button onClick={() => setExpandedNotes(isExpanded ? null : market.name)}
-                      className="w-full flex items-center justify-center gap-1 py-2 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all">
+                      className="w-full flex items-center justify-center gap-1 py-2 bg-surface-variant hover:bg-surface-variant/80 text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-all active:scale-95">
                       <MessageSquare className="w-3.5 h-3.5" />
                       {isExpanded ? 'Chiudi' : `Recensioni (${market.comments.length})`}
                       <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />

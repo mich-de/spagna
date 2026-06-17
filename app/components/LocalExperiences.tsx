@@ -71,7 +71,7 @@ export default function LocalExperiences() {
             <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-2xl">Una selezione curata per scoprire l'anima vera dell'Andalusia, oltre i circuiti turistici convenzionali.</p>
           </motion.div>
           <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
-            className={`px-3 py-2 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto shrink-0 ${
+            className={`px-3 py-2 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto shrink-0 active:scale-95 ${
               sortByDriveTime
                 ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
                 : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
@@ -95,7 +95,7 @@ export default function LocalExperiences() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <button onClick={() => toggleBookmark(exp)}
-                      className="p-1 text-outline hover:text-red-500 hover:scale-110 transition-all cursor-pointer"
+                      className="p-1 text-outline hover:text-red-500 hover:scale-110 transition-all cursor-pointer active:scale-95"
                       title={isBookmarked ? "Rimuovi" : "Aggiungi"}>
                       <Heart className={`w-4 h-4 transition-colors ${isBookmarked ? 'fill-red-500 text-red-500' : 'text-outline'}`} />
                     </button>

@@ -55,7 +55,7 @@ export default function Socials() {
             const active = activeGroup === g.id
             return (
               <button key={g.id} onClick={() => setActiveGroup(g.id)}
-                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all ${active ? 'bg-secondary text-on-secondary shadow-sm' : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'}`}>
+                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all active:scale-95 ${active ? 'bg-secondary text-on-secondary shadow-sm' : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'}`}>
                 <Icon className="w-3.5 h-3.5" />
                 {g.label}
               </button>

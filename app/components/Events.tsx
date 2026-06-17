@@ -65,12 +65,12 @@ export default function Events() {
         <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2 block">Giorno</span>
         <div className="flex flex-wrap gap-2">
           <button onClick={() => setSelectedDate(null)}
-            className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium transition-all ${selectedDate === null ? 'bg-secondary text-on-secondary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
+            className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium transition-all active:scale-95 ${selectedDate === null ? 'bg-secondary text-on-secondary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
             Tutti
           </button>
           {uniqueDates.map((d) => (
             <button key={d} onClick={() => setSelectedDate(d)}
-              className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium transition-all ${selectedDate === d ? 'bg-secondary text-on-secondary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
+              className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium transition-all active:scale-95 ${selectedDate === d ? 'bg-secondary text-on-secondary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
               {formatDate(d)}
             </button>
           ))}
@@ -85,7 +85,7 @@ export default function Events() {
             const active = activeCategory === c.id
             return (
               <button key={c.id} onClick={() => setActiveCategory(c.id)}
-                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all ${active ? 'bg-primary text-on-primary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
+                className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all active:scale-95 ${active ? 'bg-primary text-on-primary shadow-sm' : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:bg-surface-variant'}`}>
                 <Icon className="w-3.5 h-3.5" />
                 {c.label}
               </button>
@@ -116,7 +116,7 @@ export default function Events() {
 
         <div className="lg:hidden mb-4">
           <button onClick={() => setShowFilters((s) => !s)}
-            className="w-full flex items-center justify-between px-4 py-3 bg-surface-container-lowest border border-outline-variant/30 rounded-xl font-label-md text-label-md text-on-surface">
+            className="w-full flex items-center justify-between px-4 py-3 bg-surface-container-lowest border border-outline-variant/30 rounded-xl font-label-md text-label-md text-on-surface active:scale-95 transition-transform">
             <span className="flex items-center gap-2"><Filter className="w-4 h-4 text-primary" /> Filtri</span>
             {showFilters ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
           </button>
@@ -136,7 +136,7 @@ export default function Events() {
           </span>
           {(selectedDate || activeCategory !== 'all') && (
             <button onClick={() => { setSelectedDate(null); setActiveCategory('all') }}
-              className="font-label-sm text-label-sm text-primary hover:underline">
+              className="font-label-sm text-label-sm text-primary hover:underline active:scale-95 transition-transform">
               Reset filtri
             </button>
           )}
@@ -259,7 +259,7 @@ export default function Events() {
                         <div className="mt-auto pt-3 border-t border-outline-variant/20 flex items-center justify-between">
                           <span className="font-label-sm text-label-sm text-on-surface-variant">{e.price}</span>
                           <button onClick={() => toggleExpand(e.id)}
-                            className="flex items-center gap-1 font-label-sm text-label-sm font-bold text-primary hover:text-secondary transition-colors">
+                            className="flex items-center gap-1 font-label-sm text-label-sm font-bold text-primary hover:text-secondary transition-all active:scale-95">
                             {isOpen ? 'Meno dettagli' : 'Dettagli'}
                             {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                           </button>

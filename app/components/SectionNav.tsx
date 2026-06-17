@@ -116,7 +116,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                   <div key={s.id} className="flex items-center">
                     {showDivider && <div className="w-px h-4 bg-outline-variant/40 mx-1 shrink-0 hidden xl:block" />}
                     <button data-nav-id={s.id} onClick={() => onSectionChange(s.id)}
-                      className={`relative shrink-0 px-3 py-1.5 font-label-sm text-label-sm font-medium rounded-full flex items-center gap-1.5 whitespace-nowrap transition-all duration-200 ${
+                      className={`relative shrink-0 px-3 py-1.5 font-label-sm text-label-sm font-medium rounded-full flex items-center gap-1.5 whitespace-nowrap transition-all duration-200 active:scale-95 ${
                         isActive
                           ? 'text-on-primary bg-primary shadow-md'
                           : 'text-on-surface-variant hover:text-primary hover:bg-surface-variant'
@@ -136,7 +136,7 @@ export default function SectionNav({ activeSection, onSectionChange }: {
                   const isActive = activeSection === s.id
                   return (
                     <button key={s.id} data-mobile-nav-id={s.id} onClick={() => onSectionChange(s.id)}
-                      className={`shrink-0 snap-center px-2.5 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all ${
+                      className={`shrink-0 snap-center px-2.5 py-1.5 rounded-full font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all active:scale-95 ${
                         isActive
                           ? 'text-on-primary bg-primary shadow-sm'
                           : 'text-on-surface-variant bg-surface-container-lowest border border-outline-variant/30 hover:text-primary'

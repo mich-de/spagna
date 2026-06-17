@@ -33,6 +33,21 @@
     "bookingUrl": "https://www.booking.com/searchresults.html?ss=Casa+Azul+Estepona"
   },
   {
+    "id": "nerja-el-capistrano",
+    "name": "El Capistrano",
+    "zone": "Nerja Centro",
+    "type": "Appartamento",
+    "price_total": 653.16,
+    "price_per_night": 109,
+    "features": ["Parcheggio", "Vicino al centro", "Zona tranquilla", "Cucina attrezzata"],
+    "description": "Appartamento completo a El Capistrano, Nerja. A 10 min a piedi dal Balcón de Europa. Zona residenziale tranquilla con parcheggio.",
+    "address": "Calle de Ronda 22, 29780 Nerja",
+    "phone": "+34 952 52 38 89",
+    "gps": { "lat": 36.759983, "lng": -3.8673 },
+    "mapLink": "https://www.google.com/maps/place/36%C2%B045'35.9%22N+3%C2%B052'02.3%22W/@36.759983,-3.8673,17z",
+    "bookingUrl": ""
+  },
+  {
     "id": "estepona-oasis",
     "name": "Oasis in Estepona with Parking",
     "zone": "Estepona Centro/Porto",
