@@ -39,3 +39,8 @@ design-system/
 *.bak
 *.old
 *.tmp
+
+# Capacitor generated
+android/
+capacitor.config.ts
+capacitor.config.json

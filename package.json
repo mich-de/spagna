@@ -9,6 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
     "@fontsource/dm-sans": "^5.2.6",
     "@fontsource/playfair-display": "^5.2.5",
     "framer-motion": "^12.7.4",
