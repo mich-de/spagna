@@ -74,7 +74,7 @@ export default function BoatTours() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-surface-container-lowest rounded-xl p-md card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
+                  className="bg-surface-container-lowest rounded-xl p-4 card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h3 className="font-headline-sm text-headline-sm text-on-surface">{tour.name}</h3>

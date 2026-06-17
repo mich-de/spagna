@@ -187,7 +187,7 @@ export default function Beaches() {
                     {beach.atmosphere}
                   </span>
                 </div>
-                <div className="p-sm flex flex-col flex-1">
+                <div className="p-4 flex flex-col flex-1">
                   <h3 className="font-headline-sm text-headline-sm text-on-surface mb-1">{beach.name}</h3>
                   <p className="font-body-md text-[14px] text-on-surface-variant mb-3">{beach.description}</p>
                   <div className="space-y-1.5 font-body-md text-[13px] text-on-surface-variant mb-3">

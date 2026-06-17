@@ -163,7 +163,7 @@ export default function Itinerary() {
                 } z-10`} />
 
                 <div onClick={() => setOpenDay(isOpen ? null : i)}
-                  className={`rounded-2xl p-4 sm:p-6 cursor-pointer border transition-all shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] hover:scale-[0.98] ${
+                  className={`rounded-2xl p-5 sm:p-6 cursor-pointer border transition-all shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] hover:scale-[0.98] ${
                     isSanJuan ? 'bg-red-50/30 border-red-200' :
                     isOpen ? 'bg-surface-container-lowest border-primary shadow-md' : 'bg-surface-container-lowest border-outline-variant/30'
                   }`}>

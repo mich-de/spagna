@@ -79,7 +79,7 @@ export default function WaterActivities() {
                 </div>
               </div>
 
-              <div className="p-md">
+              <div className="p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <h3 className="font-label-md text-label-md text-on-surface font-bold leading-tight">{activity.name}</h3>
                   <div className="flex items-center gap-1 shrink-0">
