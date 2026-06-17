@@ -130,9 +130,9 @@ export default function SectionNav({ activeSection, onSectionChange }: {
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
-              {/* Mobile compact quick nav */}
-              <div ref={mobileNavRef} className="lg:hidden flex items-center gap-1 overflow-x-auto max-w-[55vw] sm:max-w-[65vw] scrollbar-hide snap-x">
-                {sections.filter((s) => ['overview', 'events', 'single-guide', 'beaches', 'food', 'sanjuan', 'itinerary'].includes(s.id)).map((s) => {
+              {/* Mobile compact quick nav — solo 4 essenziali */}
+              <div ref={mobileNavRef} className="lg:hidden flex items-center gap-1 overflow-x-auto max-w-[35vw] sm:max-w-[45vw] scrollbar-hide snap-x">
+                {sections.filter((s) => ['overview', 'beaches', 'food', 'itinerary'].includes(s.id)).map((s) => {
                   const isActive = activeSection === s.id
                   return (
                     <button key={s.id} data-mobile-nav-id={s.id} onClick={() => onSectionChange(s.id)}
