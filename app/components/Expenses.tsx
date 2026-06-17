@@ -14,7 +14,7 @@ export default function Expenses() {
   const balance = paidByROG - paidByMDA
 
   return (
-    <section id="expenses" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-12">
+    <section id="expenses" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-12">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -33,7 +33,7 @@ export default function Expenses() {
             { label: 'Pagato da ROG', value: `€${paidByROG.toFixed(2)}`, color: travelers[1].color },
             { label: 'A testa (2 persone)', value: `€${perPerson.toFixed(2)}`, color: '' },
           ].map((item) => (
-            <div key={item.label} className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            <div key={item.label} className="bg-surface-container-lowest rounded-xl p-sm card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
               <p className="font-label-sm text-label-sm text-on-surface-variant mb-1">{item.label}</p>
               <p className="font-headline-sm text-headline-sm" style={item.color ? { color: item.color } : {}}>{item.value}</p>
             </div>
@@ -42,7 +42,7 @@ export default function Expenses() {
 
         {balance !== 0 && (
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }}
-            className="mb-6 p-4 bg-surface-container rounded-xl border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+            className="mb-6 p-sm bg-surface-container rounded-xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-secondary" />
@@ -74,7 +74,7 @@ export default function Expenses() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.05 * i }}
-                className="bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] overflow-hidden"
+                className="bg-surface-container-lowest rounded-xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] overflow-hidden"
               >
                 <div className="flex items-center gap-4 p-4">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">

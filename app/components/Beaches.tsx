@@ -74,7 +74,7 @@ export default function Beaches() {
   }, [search, zoneFilter, atmosFilter, sortByDriveTime, selectedBase, balconFilter, BALCON_BEACHES])
 
   return (
-    <section id="beaches" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="beaches" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -85,7 +85,7 @@ export default function Beaches() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Una selezione curata dei litorali più iconici, dalle calette selvagge di Maro alle spiagge esclusive di Marbella.</p>
         </motion.div>
 
-        <div className="bg-surface-container rounded-xl p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between mb-4">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
@@ -111,7 +111,7 @@ export default function Beaches() {
                 className={`px-4 py-2.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center justify-center gap-2 cursor-pointer ${
                   sortByDriveTime
                     ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
-                    : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
+                    : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                 }`}>
                 <Car className="w-4 h-4" />
                 {sortByDriveTime ? 'Ordinato per vicinanza' : 'Ordina per vicinanza'}
@@ -128,7 +128,7 @@ export default function Beaches() {
                     className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                       zoneFilter === z
                         ? 'bg-secondary text-on-secondary shadow-sm'
-                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                        : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                     }`}>
                     {z}
                   </button>
@@ -143,7 +143,7 @@ export default function Beaches() {
                     className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                       atmosFilter === a
                         ? 'bg-secondary text-on-secondary shadow-sm'
-                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                        : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                     }`}>
                     {a}
                   </button>
@@ -162,7 +162,7 @@ export default function Beaches() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
+                className="bg-surface-container-lowest rounded-xl overflow-hidden card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   {beach.imageUrl ? (
@@ -186,7 +186,7 @@ export default function Beaches() {
                     {beach.atmosphere}
                   </span>
                 </div>
-                <div className="p-4 flex flex-col flex-1">
+                <div className="p-sm flex flex-col flex-1">
                   <h3 className="font-headline-sm text-headline-sm text-on-surface mb-1">{beach.name}</h3>
                   <p className="font-body-md text-[14px] text-on-surface-variant mb-3">{beach.description}</p>
                   <div className="space-y-1.5 font-body-md text-[13px] text-on-surface-variant mb-3">

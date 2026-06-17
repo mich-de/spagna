@@ -29,7 +29,7 @@ export default function BoatTours() {
   }, [search, activeType])
 
   return (
-    <section id="boat-tours" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="boat-tours" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -40,7 +40,7 @@ export default function BoatTours() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">Dal catamarano al tramonto alle spedizioni per l&apos;avvistamento dei delfini.</p>
         </motion.div>
 
-        <div className="bg-surface-container rounded-xl p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
             <input type="text" placeholder="Cerca tour, porto di partenza o descrizione..." value={search} onChange={(e) => setSearch(e.target.value)}
@@ -54,7 +54,7 @@ export default function BoatTours() {
                   className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                     activeType === type
                       ? 'bg-secondary text-on-secondary shadow-sm'
-                      : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                      : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                   }`}>
                   {type === 'Tutti' ? '🗺️ Tutti' : `${typeLabels[type]?.icon} ${typeLabels[type]?.label}`}
                 </button>
@@ -74,7 +74,7 @@ export default function BoatTours() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-surface-container-lowest rounded-xl p-5 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
+                  className="bg-surface-container-lowest rounded-xl p-md card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h3 className="font-headline-sm text-headline-sm text-on-surface">{tour.name}</h3>

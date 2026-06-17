@@ -103,45 +103,25 @@ function HomeContent() {
       <TripPlanner />
 
       <div className="max-w-[1920px] mx-auto relative z-10" suppressHydrationWarning>
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mx-4 sm:mx-6 mt-2" />
         <Overview />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Events />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <SingleGuide />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <BaseSelection />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <ItineraryTeaser />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <QuickInspiration />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Videos />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <NerjaMap />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Beaches />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <BoatTours />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <WaterActivities />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Food />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Markets />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <SanJuan />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <LocalExperiences />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Socials />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <PreTripChecklist />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Logistics />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Expenses />
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mx-4 sm:mx-6" />
         <Budget />
       </div>
 

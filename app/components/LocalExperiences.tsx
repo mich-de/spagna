@@ -59,7 +59,7 @@ export default function LocalExperiences() {
   }, [sortByDriveTime, selectedBase])
 
   return (
-    <section id="experiences" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="experiences" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
@@ -74,7 +74,7 @@ export default function LocalExperiences() {
             className={`px-3 py-2 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto shrink-0 ${
               sortByDriveTime
                 ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
-                : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
+                : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
             }`}>
             <Car className="w-3.5 h-3.5" />
             {sortByDriveTime ? 'Ordinate per vicinanza' : 'Ordina per vicinanza'}
@@ -90,7 +90,7 @@ export default function LocalExperiences() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
+                className="bg-surface-container-lowest rounded-xl p-sm card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
               >
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">

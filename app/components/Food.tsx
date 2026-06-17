@@ -60,7 +60,7 @@ export default function Food() {
   }, [zoneFilter, sortByDriveTime, selectedBase])
 
   return (
-    <section id="food" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="food" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -72,7 +72,7 @@ export default function Food() {
         </motion.div>
 
         {/* PIATTI TIPICI */}
-        <div className="mb-12">
+        <div className="mb-xl">
           <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Piatti da provare</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {foods.map((item: any, i: number) => (
@@ -89,7 +89,7 @@ export default function Food() {
                     <div className="absolute inset-0 bg-gradient-to-t from-surface/60 to-transparent" />
                   </div>
                 )}
-                <div className="p-4">
+                <div className="p-sm">
                   <div className="flex items-start justify-between mb-1">
                     <h4 className="font-label-md text-label-md text-on-surface font-bold">{item.name}</h4>
                     <span className={`px-2 py-0.5 rounded-full font-label-sm text-label-sm ${
@@ -116,14 +116,14 @@ export default function Food() {
         <div>
           <div className="flex flex-col gap-4 mb-8">
             <h3 className="font-headline-sm text-headline-sm text-on-surface">Ristoranti & Chiringuiti</h3>
-            <div className="bg-surface-container rounded-xl p-4 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+            <div className="bg-surface-container rounded-xl card-hover p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3">
                 <span className="font-label-sm text-label-sm text-on-surface-variant">Zona</span>
                 <button onClick={() => setSortByDriveTime(!sortByDriveTime)}
                   className={`px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-all border flex items-center gap-1.5 self-start sm:self-auto ${
                     sortByDriveTime
                       ? 'bg-secondary text-on-secondary border-secondary shadow-sm'
-                      : 'bg-surface-container-lowest text-on-surface-variant border-outline-variant/50 hover:border-secondary/50'
+                      : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                   }`}>
                   <Car className="w-3.5 h-3.5" />
                   {sortByDriveTime ? 'Ordinato per vicinanza' : 'Ordina per vicinanza'}
@@ -135,7 +135,7 @@ export default function Food() {
                     className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                       zoneFilter === z
                         ? 'bg-secondary text-on-secondary shadow-sm'
-                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                        : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                     }`}>
                     {z}
                   </button>
@@ -153,7 +153,7 @@ export default function Food() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30"
+className="bg-surface-container-lowest rounded-xl overflow-hidden card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30"
                 >
                   {r.imageUrl && (
                     <div className="relative aspect-[16/9] overflow-hidden">
@@ -169,7 +169,7 @@ export default function Food() {
                       </span>
                     </div>
                   )}
-                  <div className="p-4">
+                  <div className="p-sm">
                     <div className="flex items-start justify-between mb-2">
                       <h4 className="font-label-md text-label-md text-on-surface font-bold">{r.name}</h4>
                       <span className="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-variant text-on-surface-variant">{r.price}</span>

@@ -25,7 +25,7 @@ export default function Markets() {
   }, [search, selectedDay, selectedCity])
 
   return (
-    <section id="markets" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8 bg-surface-container-high">
+    <section id="markets" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8 bg-surface-container-high">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -37,7 +37,7 @@ export default function Markets() {
         </motion.div>
 
         {/* Search + Filters */}
-        <div className="bg-surface-container rounded-xl p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
+        <div className="bg-surface-container rounded-xl card-hover p-4 mb-8 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/30">
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-outline" />
             <input type="text" placeholder="Cerca per nome, città, indirizzo o prodotti..." value={search} onChange={(e) => setSearch(e.target.value)}
@@ -52,7 +52,7 @@ export default function Markets() {
                     className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                       selectedCity === city
                         ? 'bg-secondary text-on-secondary shadow-sm'
-                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                        : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                     }`}>
                     {city}
                   </button>
@@ -67,7 +67,7 @@ export default function Markets() {
                     className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all active:scale-95 ${
                       selectedDay === day
                         ? 'bg-secondary text-on-secondary shadow-sm'
-                        : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                        : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                     }`}>
                     {day}
                   </button>
@@ -88,7 +88,7 @@ export default function Markets() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: i * 0.03 }}
-                  className="bg-surface-container-lowest rounded-xl p-5 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
+                  className="bg-surface-container-lowest rounded-xl p-md card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h3 className="font-headline-sm text-headline-sm text-on-surface">{market.name}</h3>

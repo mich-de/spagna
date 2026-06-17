@@ -25,7 +25,7 @@ export default function WaterActivities() {
   }, [activeFilter])
 
   return (
-    <section id="water-activities" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="water-activities" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -45,7 +45,7 @@ export default function WaterActivities() {
               className={`px-4 py-2 rounded-full font-label-sm text-label-sm transition-all ${
                 activeFilter === f
                   ? 'bg-secondary text-on-secondary shadow-sm'
-                  : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                  : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
               }`}
             >{f === 'Tutte' ? '🗺️ Tutte' : `${activityLabels[f]?.icon} ${activityLabels[f]?.label}`}</button>
           ))}
@@ -56,7 +56,7 @@ export default function WaterActivities() {
             <motion.div key={activity.name}
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group relative rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
+              className="group relative rounded-2xl overflow-hidden bg-surface-container-lowest card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98]"
             >
               <div className="relative h-48 overflow-hidden">
                 <img src={activity.imageUrl} alt={activity.name}
@@ -79,7 +79,7 @@ export default function WaterActivities() {
                 </div>
               </div>
 
-              <div className="p-5">
+              <div className="p-md">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <h3 className="font-label-md text-label-md text-on-surface font-bold leading-tight">{activity.name}</h3>
                   <div className="flex items-center gap-1 shrink-0">

@@ -180,7 +180,7 @@ export default function BaseSelection() {
   }, [checkCardsOverflow])
 
   return (
-    <section id="base" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="base" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">

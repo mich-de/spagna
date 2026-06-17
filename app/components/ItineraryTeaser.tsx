@@ -17,7 +17,7 @@ const dayIcons: Record<string, any> = {
 
 export default function ItineraryTeaser() {
   return (
-    <section id="itinerary-teaser" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="itinerary-teaser" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -37,7 +37,7 @@ export default function ItineraryTeaser() {
             const Icon = dayIcons[day.dayName] || Sun
             return (
               <motion.div key={day.date} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.05 }}
-                className="bg-surface rounded-2xl border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] p-4 hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.99]">
+                className="bg-surface-container-lowest rounded-2xl card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] p-sm hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.99]">
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">{day.dayName} {day.date.slice(8)}/{day.date.slice(5, 7)}</span>
                   <div className="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">

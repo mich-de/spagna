@@ -40,7 +40,7 @@ export default function Videos() {
   if (videos.length === 0) return null
 
   return (
-    <section id="videos" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="videos" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -51,7 +51,7 @@ export default function Videos() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-2xl">Video selezionati per scoprire le atmosfere e i segreti della Costa del Sol prima di partire.</p>
         </motion.div>
 
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-4 mb-6 space-y-3">
+        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl card-hover p-4 mb-6 space-y-3">
           <div className="flex flex-row flex-nowrap sm:flex-wrap gap-1.5 items-center overflow-x-auto scrollbar-hide whitespace-nowrap sm:whitespace-normal">
             <span className="font-label-sm text-label-sm text-on-surface-variant mr-1 shrink-0">Zona:</span>
             {zones.map((z) => (
@@ -59,7 +59,7 @@ export default function Videos() {
                 className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 ${
                   zoneFilter === z
                     ? 'bg-secondary text-on-secondary shadow-sm'
-                    : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                    : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                 }`}
               >{z === 'Tutte' ? 'Tutte le zone' : z}</button>
             ))}
@@ -71,7 +71,7 @@ export default function Videos() {
                 className={`px-3 py-1.5 rounded-full font-label-sm text-label-sm transition-all shrink-0 ${
                   typeFilter === t
                     ? 'bg-secondary text-on-secondary shadow-sm'
-                    : 'bg-surface-container-lowest text-on-surface-variant border border-outline-variant/30 hover:border-secondary/50'
+                    : 'border border-outline-variant text-on-surface-variant hover:border-tertiary transition-colors'
                 }`}
               >{t === 'Tutti' ? 'Tutti i tipi' : typeLabels[t] || t}</button>
             ))}
@@ -83,7 +83,7 @@ export default function Videos() {
             <motion.a key={video.id} href={video.url} target="_blank" rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               transition={{ delay: i * 0.04 }}
-              className="group bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] block"
+              className="group bg-surface-container-lowest rounded-2xl overflow-hidden card-hover border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] block"
             >
               <div className="relative aspect-video overflow-hidden bg-surface-variant">
                 <img src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`} alt={video.title}
@@ -98,7 +98,7 @@ export default function Videos() {
                   {video.duration_min} min
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-sm">
                 <h3 className="font-label-md text-label-md text-on-surface font-bold mb-2 line-clamp-2 group-hover:text-primary transition-colors">{video.title}</h3>
                 <div className="flex flex-wrap gap-1.5">
                   <span className="font-label-sm text-label-sm bg-surface-variant text-on-surface-variant rounded-full px-2 py-0.5 flex items-center gap-1">

@@ -96,7 +96,7 @@ export default function PreTripChecklist() {
   if (!mounted) return null
 
   return (
-    <section id="pretrip-checklist" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="pretrip-checklist" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -110,7 +110,7 @@ export default function PreTripChecklist() {
           </p>
         </motion.div>
 
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] mb-8">
+        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-md card-hover shadow-[0px_4px_12px_rgba(30,58,95,0.08)] mb-8">
           <div className="flex items-center justify-between mb-3">
             <span className="font-label-md text-label-md text-on-surface font-bold">Progresso preparativi</span>
             <span className="font-label-md text-label-md text-primary font-bold">{completedCount}/{totalItems}</span>
@@ -137,7 +137,7 @@ export default function PreTripChecklist() {
               <motion.div key={cat.id}
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className={`rounded-2xl p-5 border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] ${
+                className={`rounded-2xl p-md card-hover border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] ${
                   allDone
                     ? 'bg-tertiary/10 border-tertiary/30'
                     : 'bg-surface-container-lowest border-outline-variant/30'
@@ -179,7 +179,7 @@ export default function PreTripChecklist() {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-          className="mt-8 rounded-2xl p-5 bg-gradient-to-r from-surface-variant to-surface-container-lowest border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
+          className="mt-8 rounded-2xl p-md card-hover bg-gradient-to-r from-surface-variant to-surface-container-lowest border border-outline-variant/30 shadow-[0px_4px_12px_rgba(30,58,95,0.08)]">
           <div className="flex items-start gap-3">
             <Luggage className="w-6 h-6 text-on-surface-variant shrink-0 mt-0.5" />
             <div>

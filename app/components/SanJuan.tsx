@@ -6,7 +6,7 @@ import sj from '@/data/san-juan.json'
 
 export default function SanJuan() {
   return (
-    <section id="sanjuan" className="scroll-mt-20 px-4 sm:px-6 pt-16 pb-8">
+    <section id="sanjuan" className="scroll-mt-20 px-container-margin md:px-lg pt-16 pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
           <div className="flex items-center gap-2 text-primary mb-2">
@@ -17,7 +17,7 @@ export default function SanJuan() {
           <p className="font-body-md text-body-md text-on-surface-variant mt-3 max-w-3xl">{sj.description}</p>
         </motion.div>
 
-        <div className="bg-surface-container rounded-xl p-6 sm:p-8 border border-primary/20 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] mb-6">
+        <div className="bg-surface-container rounded-xl p-6 sm:p-8 card-hover border border-primary/20 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] mb-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4 flex items-center gap-2">
@@ -33,7 +33,7 @@ export default function SanJuan() {
               </div>
             </div>
             <div className="space-y-4">
-              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
+              <div className="bg-surface-container-lowest rounded-xl p-sm border border-outline-variant/20 shadow-sm">
                 <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
                   <Backpack className="w-4 h-4 text-primary" /> Cosa portare
                 </h4>
@@ -45,7 +45,7 @@ export default function SanJuan() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/20 shadow-sm">
+              <div className="bg-surface-container-lowest rounded-xl p-sm border border-outline-variant/20 shadow-sm">
                 <h4 className="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
                   <AlertTriangle className="w-4 h-4 text-tertiary" /> Regole da sapere
                 </h4>
@@ -71,7 +71,7 @@ export default function SanJuan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className={`rounded-xl p-4 border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all hover:scale-[0.98] ${
+              className={`rounded-xl p-sm card-hover border shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all hover:scale-[0.98] ${
                 spot.name === sj.recommendedSpot
                   ? 'bg-primary-container/20 border-primary/30 ring-1 ring-primary/20'
                   : 'bg-surface-container-lowest border-outline-variant/30'

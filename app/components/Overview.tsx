@@ -13,9 +13,9 @@ export default function Overview() {
       {/* ─── Hero ─── */}
       <div className="relative w-full h-[819px] md:h-screen flex items-center justify-center overflow-hidden bg-surface-container-high">
         <img src={nerjaHeroImage} alt="Playa de Burriana, Nerja" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/40 via-surface-container-high/50 to-surface-container-high/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-surface-container-high/50 to-surface-container-high/90" />
         <div className="absolute inset-0 bg-[rgba(34,26,15,0.45)]" />
-        <div className="relative z-10 text-center px-5 md:px-0 flex flex-col items-center">
+        <div className="relative z-10 text-center px-container-margin md:px-0 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function Overview() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-12 animate-bounce"
+            className="mt-xl animate-bounce"
           >
             <ArrowDown className="w-8 h-8 text-on-primary opacity-80" />
           </motion.div>
@@ -57,14 +57,14 @@ export default function Overview() {
       </div>
 
       {/* ─── Main content area ─── */}
-      <div className="max-w-7xl mx-auto px-5 md:px-8 py-12 relative z-20 -mt-16 md:-mt-32">
+      <div className="max-w-7xl mx-auto px-container-margin md:px-lg py-xl relative z-20 -mt-16 md:-mt-32">
         {/* ─── Overview Bento Grid ─── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-sm md:gap-gutter mb-xl"
         >
           {[
             { icon: CalendarDays, label: 'Dates', value: '19→25 Giu 2026', sub: '7 Days, 6 Nights', circle: 'bg-secondary-container text-on-secondary-container' },
@@ -79,7 +79,7 @@ export default function Overview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 + i * 0.08 }}
-              className="bg-surface rounded-xl p-4 shadow-[0px_4px_12px_rgba(30,58,95,0.08)] hover:shadow-[0px_12px_24px_rgba(30,58,95,0.12)] transition-all duration-200 hover:scale-[0.98] border border-outline-variant/30 flex flex-col justify-between"
+              className="bg-surface-container-lowest rounded-xl p-sm shadow-[0px_4px_12px_rgba(30,58,95,0.08)] card-hover border border-outline-variant/30 flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">{item.label}</span>
@@ -96,7 +96,7 @@ export default function Overview() {
         </motion.div>
 
         {/* ─── Gradient Divider ─── */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent my-12" />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent my-xl" />
 
         {/* ─── Recommendation Section ─── */}
         <motion.div
@@ -105,8 +105,8 @@ export default function Overview() {
           viewport={{ once: true }}
           transition={{ delay: 0.35 }}
         >
-          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-6">Base Consigliata</h2>
-          <div className="bg-surface rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] border border-outline-variant/20 flex flex-col md:flex-row">
+          <h2 className="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-md">Base Consigliata</h2>
+          <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_12px_rgba(30,58,95,0.08)] card-hover border border-outline-variant/20 flex flex-col md:flex-row">
             <div className="w-full md:w-2/5 h-64 md:h-auto relative bg-surface-container-high">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
               <div className="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center shadow-md">
@@ -116,10 +116,10 @@ export default function Overview() {
                 <span className="font-display-lg text-[48px] md:text-[64px] text-primary/30">{recommendedBase.winner?.[0]}</span>
               </div>
             </div>
-            <div className="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+            <div className="p-lg w-full md:w-3/5 flex flex-col justify-center">
               <h3 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-2">{recommendedBase.winner}</h3>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">{recommendedBase.reason}</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                 <div>
                   <div className="font-label-md text-label-md text-secondary uppercase tracking-widest mb-3 flex items-center">
                     <Plus className="w-3.5 h-3.5 mr-2 text-secondary" />
@@ -158,7 +158,7 @@ export default function Overview() {
                 </div>
               </div>
               <div className="mt-8 pt-6 border-t border-outline-variant/30">
-                <button className="w-full md:w-auto px-6 py-3 bg-secondary text-on-secondary rounded-full font-label-md hover:bg-secondary/90 transition-colors shadow-sm flex items-center justify-center">
+                <button className="w-full md:w-auto px-6 py-3 bg-secondary text-on-secondary rounded-full font-label-md text-label-md hover:bg-secondary/90 transition-colors shadow-sm flex items-center justify-center">
                   View Accommodations in {recommendedBase.winner}
                   <ChevronRight className="w-4 h-4 ml-2" />
                 </button>
